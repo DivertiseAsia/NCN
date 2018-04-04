@@ -4,10 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/default/CLionProjects/block_chain/block_chain/Client.cpp" "/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/Client.cpp.o"
   "/home/default/CLionProjects/block_chain/block_chain/Listener.cpp" "/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/Listener.cpp.o"
+  "/home/default/CLionProjects/block_chain/block_chain/Node.cpp" "/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/Node.cpp.o"
+  "/home/default/CLionProjects/block_chain/block_chain/Serializer.cpp" "/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/Serializer.cpp.o"
   "/home/default/CLionProjects/block_chain/block_chain/Validator.cpp" "/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/Validator.cpp.o"
-  "/home/default/CLionProjects/block_chain/block_chain/chain/Chain.cpp" "/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/Chain.cpp.o"
+  "/home/default/CLionProjects/block_chain/block_chain/chain/NodeState.cpp" "/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o"
   "/home/default/CLionProjects/block_chain/block_chain/chain/block/Block.cpp" "/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o"
   "/home/default/CLionProjects/block_chain/block_chain/chain/block/Hash.cpp" "/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/Hash.cpp.o"
   "/home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.cpp" "/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o"

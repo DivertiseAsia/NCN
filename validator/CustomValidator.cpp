@@ -4,10 +4,7 @@
 
 #include "CustomValidator.h"
 
-bool CustomValidator::operator()(Transaction* transaction){
-    return true;
-}
-bool CustomValidator::operator()(Block const& block){
+bool CustomValidator::operator()(Block* block){
     //TODO: I need to compute the Blocks fingerprint and check if it is equals to the provided fingerprint
     return true;
 }

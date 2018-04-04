@@ -123,33 +123,6 @@ block_chain/fast:
 	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/build
 .PHONY : block_chain/fast
 
-block_chain/Client.o: block_chain/Client.cpp.o
-
-.PHONY : block_chain/Client.o
-
-# target to build an object file
-block_chain/Client.cpp.o:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/Client.cpp.o
-.PHONY : block_chain/Client.cpp.o
-
-block_chain/Client.i: block_chain/Client.cpp.i
-
-.PHONY : block_chain/Client.i
-
-# target to preprocess a source file
-block_chain/Client.cpp.i:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/Client.cpp.i
-.PHONY : block_chain/Client.cpp.i
-
-block_chain/Client.s: block_chain/Client.cpp.s
-
-.PHONY : block_chain/Client.s
-
-# target to generate assembly for a file
-block_chain/Client.cpp.s:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/Client.cpp.s
-.PHONY : block_chain/Client.cpp.s
-
 block_chain/Listener.o: block_chain/Listener.cpp.o
 
 .PHONY : block_chain/Listener.o
@@ -176,6 +149,60 @@ block_chain/Listener.s: block_chain/Listener.cpp.s
 block_chain/Listener.cpp.s:
 	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/Listener.cpp.s
 .PHONY : block_chain/Listener.cpp.s
+
+block_chain/Node.o: block_chain/Node.cpp.o
+
+.PHONY : block_chain/Node.o
+
+# target to build an object file
+block_chain/Node.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/Node.cpp.o
+.PHONY : block_chain/Node.cpp.o
+
+block_chain/Node.i: block_chain/Node.cpp.i
+
+.PHONY : block_chain/Node.i
+
+# target to preprocess a source file
+block_chain/Node.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/Node.cpp.i
+.PHONY : block_chain/Node.cpp.i
+
+block_chain/Node.s: block_chain/Node.cpp.s
+
+.PHONY : block_chain/Node.s
+
+# target to generate assembly for a file
+block_chain/Node.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/Node.cpp.s
+.PHONY : block_chain/Node.cpp.s
+
+block_chain/Serializer.o: block_chain/Serializer.cpp.o
+
+.PHONY : block_chain/Serializer.o
+
+# target to build an object file
+block_chain/Serializer.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/Serializer.cpp.o
+.PHONY : block_chain/Serializer.cpp.o
+
+block_chain/Serializer.i: block_chain/Serializer.cpp.i
+
+.PHONY : block_chain/Serializer.i
+
+# target to preprocess a source file
+block_chain/Serializer.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/Serializer.cpp.i
+.PHONY : block_chain/Serializer.cpp.i
+
+block_chain/Serializer.s: block_chain/Serializer.cpp.s
+
+.PHONY : block_chain/Serializer.s
+
+# target to generate assembly for a file
+block_chain/Serializer.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/Serializer.cpp.s
+.PHONY : block_chain/Serializer.cpp.s
 
 block_chain/Validator.o: block_chain/Validator.cpp.o
 
@@ -204,32 +231,32 @@ block_chain/Validator.cpp.s:
 	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/Validator.cpp.s
 .PHONY : block_chain/Validator.cpp.s
 
-block_chain/chain/Chain.o: block_chain/chain/Chain.cpp.o
+block_chain/chain/NodeState.o: block_chain/chain/NodeState.cpp.o
 
-.PHONY : block_chain/chain/Chain.o
+.PHONY : block_chain/chain/NodeState.o
 
 # target to build an object file
-block_chain/chain/Chain.cpp.o:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/Chain.cpp.o
-.PHONY : block_chain/chain/Chain.cpp.o
+block_chain/chain/NodeState.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o
+.PHONY : block_chain/chain/NodeState.cpp.o
 
-block_chain/chain/Chain.i: block_chain/chain/Chain.cpp.i
+block_chain/chain/NodeState.i: block_chain/chain/NodeState.cpp.i
 
-.PHONY : block_chain/chain/Chain.i
+.PHONY : block_chain/chain/NodeState.i
 
 # target to preprocess a source file
-block_chain/chain/Chain.cpp.i:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/Chain.cpp.i
-.PHONY : block_chain/chain/Chain.cpp.i
+block_chain/chain/NodeState.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.i
+.PHONY : block_chain/chain/NodeState.cpp.i
 
-block_chain/chain/Chain.s: block_chain/chain/Chain.cpp.s
+block_chain/chain/NodeState.s: block_chain/chain/NodeState.cpp.s
 
-.PHONY : block_chain/chain/Chain.s
+.PHONY : block_chain/chain/NodeState.s
 
 # target to generate assembly for a file
-block_chain/chain/Chain.cpp.s:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/Chain.cpp.s
-.PHONY : block_chain/chain/Chain.cpp.s
+block_chain/chain/NodeState.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.s
+.PHONY : block_chain/chain/NodeState.cpp.s
 
 block_chain/chain/block/Block.o: block_chain/chain/block/Block.cpp.o
 
@@ -510,18 +537,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... block_chain"
-	@echo "... block_chain/Client.o"
-	@echo "... block_chain/Client.i"
-	@echo "... block_chain/Client.s"
 	@echo "... block_chain/Listener.o"
 	@echo "... block_chain/Listener.i"
 	@echo "... block_chain/Listener.s"
+	@echo "... block_chain/Node.o"
+	@echo "... block_chain/Node.i"
+	@echo "... block_chain/Node.s"
+	@echo "... block_chain/Serializer.o"
+	@echo "... block_chain/Serializer.i"
+	@echo "... block_chain/Serializer.s"
 	@echo "... block_chain/Validator.o"
 	@echo "... block_chain/Validator.i"
 	@echo "... block_chain/Validator.s"
-	@echo "... block_chain/chain/Chain.o"
-	@echo "... block_chain/chain/Chain.i"
-	@echo "... block_chain/chain/Chain.s"
+	@echo "... block_chain/chain/NodeState.o"
+	@echo "... block_chain/chain/NodeState.i"
+	@echo "... block_chain/chain/NodeState.s"
 	@echo "... block_chain/chain/block/Block.o"
 	@echo "... block_chain/chain/block/Block.i"
 	@echo "... block_chain/chain/block/Block.s"

@@ -3,11 +3,12 @@
 //
 
 #include "Hash.h"
+#include <utility>
 
 std::string Hash::to_string() const {
     return hash;
 }
 
 void Hash::set_hash(std::string str) {
-    hash = str;
+    hash = std::move(str);
 }

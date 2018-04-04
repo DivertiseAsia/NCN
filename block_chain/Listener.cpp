@@ -5,7 +5,7 @@
 #include "Listener.h"
 #include <iostream>
 
-Listener::Listener(Client* c, int p): client(c), port(p) {
+Listener::Listener(Node* c, int p): client(c), port(p) {
 
 }
 
@@ -13,6 +13,6 @@ Listener::~Listener(){
     delete thread;
 }
 
-void Listener::start(void (*func)(Client*, int)) {
+void Listener::start(void (*func)(Node*, int)) {
     thread = new std::thread(func, client, port);
 }

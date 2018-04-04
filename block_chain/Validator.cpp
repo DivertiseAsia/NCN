@@ -9,6 +9,6 @@ Validator::Validator() = default;
 bool Validator::operator()(Transaction* transaction){
     return (*transaction)();
 }
-bool Validator::operator()(Block const& block){
+bool Validator::operator()(Block* block){
     return true;
 }

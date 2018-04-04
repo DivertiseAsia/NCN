@@ -11,13 +11,13 @@
 #include "transaction/Transaction.h"
 
 class Block{
-    friend class Chain;
+    friend class NodeState;
 public:
     Block();
     explicit Block(std::vector<Transaction*> transactions);
 private:
     Metadata data;
-    Hash hash;
-    Hash parent_hash;
+    Hash fingerprint;
+    Hash parent_fingerprint;
 };
 #endif //BLOCK_CHAIN_BLOCK_H

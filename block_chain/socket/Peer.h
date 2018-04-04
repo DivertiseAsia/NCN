@@ -5,16 +5,22 @@
 #ifndef BLOCK_CHAIN_PEER_H
 #define BLOCK_CHAIN_PEER_H
 
+#include <string>
+#include "Socket.h"
+#include "../Serializer.h"
+#include "../chain/block/transaction/Transaction.h"
 
 class Peer {
+    friend class Node;
 public:
-    Peer(int c, int t, int b);
+    Peer(Serializer* s, std::string str, int c, int t, int b);
     void sign_out(Peer p) const;
-    void connect() const;
+    void send(Transaction* transaction);
 private:
-    int connect_port;
-    int transaction_port;
-    int block_port;
+    Socket* socket;
+    Socket* transaction_socket;
+    Socket* block_socket;
+    Serializer* serializer;
 };
 
 

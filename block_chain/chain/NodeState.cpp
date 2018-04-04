@@ -2,26 +2,29 @@
 // Created by default on 3/4/2561.
 //
 
-#include "Chain.h"
+#include "NodeState.h"
 
-Chain::Chain(int s): size(s) {
+NodeState::NodeState(int s): size(s) {
 
 }
 
-Block* Chain::create_block() const {
+Block* NodeState::create_block() const {
     return new Block(transactions);
 }
 
-Block* Chain::add(Transaction* transaction){
+Block* NodeState::add(Transaction* transaction){
     transactions.push_back(transaction);
     if(transactions.size() == size) {
         return create_block();
     }
     return nullptr;
 }
-void Chain::add(Block const& block){
+void NodeState::add(Block* block){
+    block->parent_fingerprint = top_fingerprint;
+    top_fingerprint = block->fingerprint;
+    //TODO : apply each transaction to the memory
     std::cout << "read files" << std::endl;
-    std::string id(block.parent_hash.to_string());
+    std::string id(block->parent_fingerprint.to_string());
     std::ofstream block_file ("blocks/"+id+".blk");
     std::string line;
     if(block_file.is_open()){
@@ -30,7 +33,7 @@ void Chain::add(Block const& block){
     }
 }
 
-void Chain::read_blocks() {
+void NodeState::read_blocks() {
     std::string id("0000000000000000");
     std::ifstream block_file ("blocks/"+id+".blk");
     std::string line;
@@ -39,7 +42,7 @@ void Chain::read_blocks() {
             std::cout << line << std::endl;
         block_file.close();
         id = "TODO";
-        block_file.open("blocks/"+id+".blk");//block.hash
+        block_file.open("blocks/"+id+".blk");//block.fingerprint
     }
-    top.set_hash(id);
+    top_fingerprint.set_hash(id);
 }

@@ -13,16 +13,16 @@
 #include "block/Hash.h"
 #include "block/transaction/Transaction.h"
 
-class Chain{
+class NodeState{
 public:
-    Chain(int s = 64);
+    explicit NodeState(int s = 64);
     Block* create_block() const;
     Block* add(Transaction* transaction);
-    void add(Block const& block);
+    void add(Block* block);
     void read_blocks();
 private:
     int size;
-    Hash top;
+    Hash top_fingerprint;
     std::vector<Transaction*>  transactions;
 };
 #endif //BLOCK_CHAIN_CHAIN_H

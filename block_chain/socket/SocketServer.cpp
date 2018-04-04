@@ -4,8 +4,9 @@
 
 #include "SocketServer.h"
 
-SocketServer::SocketServer(int port): master(NULL)
+SocketServer::SocketServer(int p): master(nullptr)
 {
+    port = p;
     #ifdef _WIN32
     WSADATA WSAData;
     WSAStartup(MAKEWORD(2,0), &WSAData);
@@ -22,7 +23,7 @@ SocketServer::SocketServer(int port): master(NULL)
     std::cout << "Server listening on port " << port << std::endl;
 }
 
-void SocketServer::run(std::function<bool(Socket*)> func)
+void SocketServer::run(std::function<bool(Socket*, int)> func)
 {
     while(this->wait(func));
 }
@@ -32,31 +33,33 @@ void SocketServer::run()
     this->run(SocketServer::defaultCallback);
 }
 
-bool SocketServer::wait(std::function<bool(Socket*)> func)
+bool SocketServer::wait(std::function<bool(Socket*, int port)> func)
 {
-    sockaddr_in csin = { 0 };
-    int sinsize = sizeof csin;
-    Socket* socket = master->_accept(&csin, sinsize);
+    sockaddr_in c_sin = { 0 };
+    int sin_size = sizeof c_sin;
+    Socket* socket = master->_accept(&c_sin, sin_size);
     #ifdef _WIN32
     std::thread connection (func, socket);
     connection.detach();
     #else
     if(!fork())
     {
-        func(socket);
+        func(socket, port);
         _exit(0);
     }
     #endif // _WIN32
     return true;
 }
 
-bool SocketServer::defaultCallback(Socket* socket)
+bool SocketServer::defaultCallback(Socket* socket, int port)
 {
     std::string buffer;
     socket->read(buffer);
     if(buffer.length()){
         auto start = std::chrono::high_resolution_clock::now();
+        std::cout << "Request received on port " << port << " : " << buffer <<std::endl;
         //TODO: buffer.c_str()
+        std::cout << buffer << std::endl;
         delete socket;
         auto end = std::chrono::high_resolution_clock::now();
         long long microseconds = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
@@ -68,5 +71,6 @@ bool SocketServer::defaultCallback(Socket* socket)
 
 SocketServer::~SocketServer()
 {
+    std::cout << " closed "<< std::endl;
     delete master;
 }

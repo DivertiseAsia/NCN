@@ -14,11 +14,4 @@ private:
     std::string hash;
 };
 
-struct HashCompare
-{
-    bool operator() (const Hash& hash1, const Hash& hash2) const
-    {
-        return true;
-    }
-};
 #endif //BLOCK_CHAIN_HASH_H

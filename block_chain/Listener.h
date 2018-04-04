@@ -8,14 +8,14 @@
 #include <thread>
 #include "socket/SocketServer.h"
 
-class Client;
+class Node;
 class Listener {
 public:
-    Listener(Client* client, int p);
+    Listener(Node* client, int p);
     ~Listener();
-    void start(void (*func)(Client*, int p));
+    void start(void (*func)(Node*, int p));
 private:
-    Client* client;
+    Node* client;
     std::thread* thread;
     int port;
 };

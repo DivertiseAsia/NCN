@@ -17,7 +17,7 @@
 #include <netinet/in.h>
 #include <arpa/inet.h>
 #include <unistd.h> /* close */
-#include <netdb.h> /* gethostbyname */
+#include <netdb.h> /* get host by name */
 #define INVALID_SOCKET -1
 #define SOCKET_ERROR -1
 #define closesocket(s) close(s)
@@ -35,14 +35,15 @@ class SocketServer
 {
 public:
     SocketServer(int port);
-    void run(std::function<bool(Socket*)> func);
+    void run(std::function<bool(Socket*, int)> func);
     void run();
     ~SocketServer();
     Socket* master;
 
 protected:
-    bool static defaultCallback(Socket* socket);
-    bool wait(std::function<bool(Socket*)> func);
+    bool static defaultCallback(Socket* socket, int port);
+    bool wait(std::function<bool(Socket*, int port)> func);
+    int port;
 };
 
 #endif //BLOCK_CHAIN_SOCKETSERVER_H

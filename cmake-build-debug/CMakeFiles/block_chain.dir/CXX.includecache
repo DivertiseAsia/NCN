@@ -6,24 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/default/CLionProjects/block_chain/block_chain/Client.cpp
-Client.h
-/home/default/CLionProjects/block_chain/block_chain/Client.h
-
-/home/default/CLionProjects/block_chain/block_chain/Client.h
-iostream
--
-chain/Chain.h
-/home/default/CLionProjects/block_chain/block_chain/chain/Chain.h
-Validator.h
-/home/default/CLionProjects/block_chain/block_chain/Validator.h
-Listener.h
-/home/default/CLionProjects/block_chain/block_chain/Listener.h
-socket/SocketServer.h
-/home/default/CLionProjects/block_chain/block_chain/socket/SocketServer.h
-socket/Peer.h
-/home/default/CLionProjects/block_chain/block_chain/socket/Peer.h
-
 /home/default/CLionProjects/block_chain/block_chain/Listener.cpp
 Listener.h
 /home/default/CLionProjects/block_chain/block_chain/Listener.h
@@ -36,6 +18,34 @@ thread
 socket/SocketServer.h
 /home/default/CLionProjects/block_chain/block_chain/socket/SocketServer.h
 
+/home/default/CLionProjects/block_chain/block_chain/Node.cpp
+Node.h
+/home/default/CLionProjects/block_chain/block_chain/Node.h
+
+/home/default/CLionProjects/block_chain/block_chain/Node.h
+iostream
+-
+chain/NodeState.h
+/home/default/CLionProjects/block_chain/block_chain/chain/NodeState.h
+Validator.h
+/home/default/CLionProjects/block_chain/block_chain/Validator.h
+Listener.h
+/home/default/CLionProjects/block_chain/block_chain/Listener.h
+socket/SocketServer.h
+/home/default/CLionProjects/block_chain/block_chain/socket/SocketServer.h
+socket/Peer.h
+/home/default/CLionProjects/block_chain/block_chain/socket/Peer.h
+
+/home/default/CLionProjects/block_chain/block_chain/Serializer.cpp
+Serializer.h
+/home/default/CLionProjects/block_chain/block_chain/Serializer.h
+
+/home/default/CLionProjects/block_chain/block_chain/Serializer.h
+chain/block/Block.h
+/home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
+chain/block/transaction/Transaction.h
+/home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
+
 /home/default/CLionProjects/block_chain/block_chain/Validator.cpp
 Validator.h
 /home/default/CLionProjects/block_chain/block_chain/Validator.h
@@ -46,11 +56,11 @@ chain/block/transaction/Transaction.h
 chain/block/Block.h
 /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
 
-/home/default/CLionProjects/block_chain/block_chain/chain/Chain.cpp
-Chain.h
-/home/default/CLionProjects/block_chain/block_chain/chain/Chain.h
+/home/default/CLionProjects/block_chain/block_chain/chain/NodeState.cpp
+NodeState.h
+/home/default/CLionProjects/block_chain/block_chain/chain/NodeState.h
 
-/home/default/CLionProjects/block_chain/block_chain/chain/Chain.h
+/home/default/CLionProjects/block_chain/block_chain/chain/NodeState.h
 fstream
 -
 iostream
@@ -85,6 +95,8 @@ transaction/Transaction.h
 /home/default/CLionProjects/block_chain/block_chain/chain/block/Hash.cpp
 Hash.h
 /home/default/CLionProjects/block_chain/block_chain/chain/block/Hash.h
+utility
+-
 
 /home/default/CLionProjects/block_chain/block_chain/chain/block/Hash.h
 string
@@ -103,6 +115,14 @@ Peer.h
 /home/default/CLionProjects/block_chain/block_chain/socket/Peer.h
 
 /home/default/CLionProjects/block_chain/block_chain/socket/Peer.h
+string
+-
+Socket.h
+/home/default/CLionProjects/block_chain/block_chain/socket/Socket.h
+../Serializer.h
+/home/default/CLionProjects/block_chain/block_chain/Serializer.h
+../chain/block/transaction/Transaction.h
+/home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
 
 /home/default/CLionProjects/block_chain/block_chain/socket/Socket.cpp
 Socket.h
@@ -122,6 +142,8 @@ arpa/inet.h
 unistd.h
 -
 netdb.h
+-
+string
 -
 cstring
 -
@@ -163,6 +185,44 @@ chrono
 /home/default/CLionProjects/block_chain/main.cpp
 iostream
 -
-block_chain/Client.h
-/home/default/CLionProjects/block_chain/block_chain/Client.h
+block_chain/Node.h
+/home/default/CLionProjects/block_chain/block_chain/Node.h
+transactions/StatusTransaction.h
+/home/default/CLionProjects/block_chain/transactions/StatusTransaction.h
+validator/CustomValidator.h
+/home/default/CLionProjects/block_chain/validator/CustomValidator.h
+
+/home/default/CLionProjects/block_chain/transactions/MessagesTransaction.cpp
+MessagesTransaction.h
+/home/default/CLionProjects/block_chain/transactions/MessagesTransaction.h
+cstring
+-
+
+/home/default/CLionProjects/block_chain/transactions/MessagesTransaction.h
+string
+-
+../block_chain/chain/block/transaction/Transaction.h
+/home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
+
+/home/default/CLionProjects/block_chain/transactions/StatusTransaction.cpp
+StatusTransaction.h
+/home/default/CLionProjects/block_chain/transactions/StatusTransaction.h
+iostream
+-
+cstring
+-
+
+/home/default/CLionProjects/block_chain/transactions/StatusTransaction.h
+string
+-
+../block_chain/chain/block/transaction/Transaction.h
+/home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
+
+/home/default/CLionProjects/block_chain/validator/CustomValidator.cpp
+CustomValidator.h
+/home/default/CLionProjects/block_chain/validator/CustomValidator.h
+
+/home/default/CLionProjects/block_chain/validator/CustomValidator.h
+../block_chain/Validator.h
+/home/default/CLionProjects/block_chain/block_chain/Validator.h
 

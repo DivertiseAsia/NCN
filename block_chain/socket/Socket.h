@@ -16,7 +16,7 @@
 #include <netinet/in.h>
 #include <arpa/inet.h>
 #include <unistd.h> /* close */
-#include <netdb.h> /* gethostbyname */
+#include <netdb.h> /* get host by name */
 #define INVALID_SOCKET -1
 #define SOCKET_ERROR -1
 #define closesocket(s) close(s)
@@ -28,6 +28,7 @@ typedef struct in_addr IN_ADDR;
 
 #endif
 
+#include <string>
 #include <cstring>
 #include <iostream>
 #include <functional>
@@ -35,13 +36,14 @@ typedef struct in_addr IN_ADDR;
 class Socket
 {
 public:
+    Socket(std::string, int port);
     Socket(SOCKET s);
     void _bind(sockaddr_in* sin);
     void _listen();
     void _close();
     int _recv(char* buff, int len, int flags, int to);
     void read(std::string& buffer);
-    void write(const char* buffer);
+    void write(char* buffer);
     Socket* _accept(sockaddr_in* csin, accept_size size);
     ~Socket();
 

@@ -6,34 +6,35 @@
 #define BLOCK_CHAIN_CLIENT_H
 
 #include <iostream>
-#include "chain/Chain.h"
+#include "chain/NodeState.h"
 #include "Validator.h"
 #include "Listener.h"
 #include "socket/SocketServer.h"
 #include "socket/Peer.h"
 
-class Client{
+class Node{
 public:
-    Client(int p = 3000, int p_t = 3001, int p_b = 3002);
-    ~Client();
+    Node(Validator* v, Serializer* serializer, int p = 3000, int p_t = 3001, int p_b = 3002);
+    ~Node();
+    void close();
+    void request_transaction(Transaction* transaction);
+    bool operator()(Transaction* transaction);
+    bool operator()(Block* block);
+private:
     void connect();
     void load();
     void store();
-    void close();
-    void request_transaction();
-    bool operator()(Transaction* transaction);
-    bool operator()(Block const& block);
-private:
     //Server to send data
     SocketServer server;
-    Chain block_chain;
-    Validator validator;
+    NodeState block_chain;
+    Validator* validator;
     Listener transactions_listener;
     Listener blocks_listener;
     std::vector<Peer> peers;
+    std::thread running;
 };
 
-template <typename T> void listen(Client* client, int port){
+template <typename T> void listen(Node* client, int port){
     SocketServer server(port);
     server.run();
     T object;

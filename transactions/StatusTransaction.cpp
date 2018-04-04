@@ -3,11 +3,20 @@
 //
 
 #include "StatusTransaction.h"
+#include <iostream>
+#include <cstring>
 
-bool operator()() const {
+bool StatusTransaction::operator()() const {
     return true;
 }
 
 StatusTransaction::StatusTransaction(std::string str): status(str) {
 
+}
+char* StatusTransaction::serialize() const {
+    std::string json("{\"status\": \"");
+    json += std::string(status) + std::string("\"};");
+    char* v = (char*)malloc((int)json.size());
+    strcpy(v, json.c_str());
+    return v;
 }

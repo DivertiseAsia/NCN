@@ -4,13 +4,14 @@
 
 #include "Peer.h"
 
-Peer::Peer(int c, int t, int b): connect_port(c), transaction_port(t), block_port(b){
+Peer::Peer(Serializer* s, std::string ip, int c, int t, int b): serializer(s), transaction_socket(new Socket(ip, t)), block_socket(new Socket(ip, b)), socket(new Socket(ip, c)){
 
 }
 
 void Peer::sign_out(Peer p) const{
 
 }
-void Peer::connect() const{
-
+void Peer::send(Transaction* transaction){
+    if(socket != nullptr)
+        transaction_socket->write(serializer->serialize(transaction));
 }
