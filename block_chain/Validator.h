@@ -11,7 +11,7 @@
 class Validator {
 public:
     Validator();
-    virtual bool operator()(Transaction* transaction);
+    bool operator()(Transaction* transaction);
     virtual bool operator()(Block const& block);
 };
 

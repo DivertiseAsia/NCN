@@ -8,6 +8,7 @@
 
 class Transaction {
 public:
+    virtual bool operator()() const = 0;
 private:
 };
 

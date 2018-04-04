@@ -10,6 +10,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/block_chain.dir/block_chain/socket/SocketServer.cpp.o"
   "CMakeFiles/block_chain.dir/block_chain/socket/Socket.cpp.o"
   "CMakeFiles/block_chain.dir/block_chain/socket/Peer.cpp.o"
+  "CMakeFiles/block_chain.dir/validator/CustomValidator.cpp.o"
+  "CMakeFiles/block_chain.dir/transactions/StatusTransaction.cpp.o"
+  "CMakeFiles/block_chain.dir/transactions/MessagesTransaction.cpp.o"
   "block_chain.pdb"
   "block_chain"
 )

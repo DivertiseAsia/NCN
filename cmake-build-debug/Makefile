@@ -420,6 +420,87 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+transactions/MessagesTransaction.o: transactions/MessagesTransaction.cpp.o
+
+.PHONY : transactions/MessagesTransaction.o
+
+# target to build an object file
+transactions/MessagesTransaction.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/transactions/MessagesTransaction.cpp.o
+.PHONY : transactions/MessagesTransaction.cpp.o
+
+transactions/MessagesTransaction.i: transactions/MessagesTransaction.cpp.i
+
+.PHONY : transactions/MessagesTransaction.i
+
+# target to preprocess a source file
+transactions/MessagesTransaction.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/transactions/MessagesTransaction.cpp.i
+.PHONY : transactions/MessagesTransaction.cpp.i
+
+transactions/MessagesTransaction.s: transactions/MessagesTransaction.cpp.s
+
+.PHONY : transactions/MessagesTransaction.s
+
+# target to generate assembly for a file
+transactions/MessagesTransaction.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/transactions/MessagesTransaction.cpp.s
+.PHONY : transactions/MessagesTransaction.cpp.s
+
+transactions/StatusTransaction.o: transactions/StatusTransaction.cpp.o
+
+.PHONY : transactions/StatusTransaction.o
+
+# target to build an object file
+transactions/StatusTransaction.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/transactions/StatusTransaction.cpp.o
+.PHONY : transactions/StatusTransaction.cpp.o
+
+transactions/StatusTransaction.i: transactions/StatusTransaction.cpp.i
+
+.PHONY : transactions/StatusTransaction.i
+
+# target to preprocess a source file
+transactions/StatusTransaction.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/transactions/StatusTransaction.cpp.i
+.PHONY : transactions/StatusTransaction.cpp.i
+
+transactions/StatusTransaction.s: transactions/StatusTransaction.cpp.s
+
+.PHONY : transactions/StatusTransaction.s
+
+# target to generate assembly for a file
+transactions/StatusTransaction.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/transactions/StatusTransaction.cpp.s
+.PHONY : transactions/StatusTransaction.cpp.s
+
+validator/CustomValidator.o: validator/CustomValidator.cpp.o
+
+.PHONY : validator/CustomValidator.o
+
+# target to build an object file
+validator/CustomValidator.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/validator/CustomValidator.cpp.o
+.PHONY : validator/CustomValidator.cpp.o
+
+validator/CustomValidator.i: validator/CustomValidator.cpp.i
+
+.PHONY : validator/CustomValidator.i
+
+# target to preprocess a source file
+validator/CustomValidator.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/validator/CustomValidator.cpp.i
+.PHONY : validator/CustomValidator.cpp.i
+
+validator/CustomValidator.s: validator/CustomValidator.cpp.s
+
+.PHONY : validator/CustomValidator.s
+
+# target to generate assembly for a file
+validator/CustomValidator.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/validator/CustomValidator.cpp.s
+.PHONY : validator/CustomValidator.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -462,6 +543,15 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... transactions/MessagesTransaction.o"
+	@echo "... transactions/MessagesTransaction.i"
+	@echo "... transactions/MessagesTransaction.s"
+	@echo "... transactions/StatusTransaction.o"
+	@echo "... transactions/StatusTransaction.i"
+	@echo "... transactions/StatusTransaction.s"
+	@echo "... validator/CustomValidator.o"
+	@echo "... validator/CustomValidator.i"
+	@echo "... validator/CustomValidator.s"
 .PHONY : help
 
 
