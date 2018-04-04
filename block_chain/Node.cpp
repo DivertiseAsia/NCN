@@ -19,8 +19,8 @@ Node::~Node(){
 void Node::connect(){
     store();
     load();
-    transactions_listener.start(listen<Transaction*>);
-    blocks_listener.start(listen<Block*>);
+    transactions_listener.start(Node::transactionsCallback, listen<Transaction*>);
+    blocks_listener.start(Node::blocksCallback, listen<Block*>);
 }
 void Node::load(){
     //TODO
@@ -57,4 +57,37 @@ bool Node::operator()(Block* block) {
     if(valid)
         block_chain.add(block);
     return valid;
+}
+
+
+bool Node::transactionsCallback(Socket* socket, int port) {
+    std::string buffer;
+    socket->read(buffer);
+    if(buffer.length()){
+        auto start = std::chrono::high_resolution_clock::now();
+        std::cout << "Request received on port " << port << " : " << buffer <<std::endl;
+        //TODO: unserialize buffer.c_str() into transaction
+        delete socket;
+        auto end = std::chrono::high_resolution_clock::now();
+        long long microseconds = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
+        std::cout << "Request performed in "<< (microseconds/1000.0) << " milliseconds" <<std::endl;
+    }
+
+    return true;
+}
+
+bool Node::blocksCallback(Socket* socket, int port) {
+    std::string buffer;
+    socket->read(buffer);
+    if(buffer.length()){
+        auto start = std::chrono::high_resolution_clock::now();
+        std::cout << "Request received on port " << port << " : " << buffer <<std::endl;
+        //TODO: unserialize buffer.c_str() into block
+        delete socket;
+        auto end = std::chrono::high_resolution_clock::now();
+        long long microseconds = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
+        std::cout << "Request performed in "<< (microseconds/1000.0) << " milliseconds" <<std::endl;
+    }
+
+    return true;
 }

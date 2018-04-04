@@ -5,10 +5,9 @@
 #include "validator/CustomValidator.h"
 
 int main() {
-    Node client(new CustomValidator(), new Serializer(), 7047, 7048, 7049);
+    Node client(new CustomValidator(), new Serializer(), 7050, 7051, 7052);
     Transaction* t = new StatusTransaction("The Game");
     client.request_transaction(t);
-    std::cout << "Hello, World!" << std::endl;
     while(1);
     return 0;
 }

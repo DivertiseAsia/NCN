@@ -13,7 +13,7 @@ class Listener {
 public:
     Listener(Node* client, int p);
     ~Listener();
-    void start(void (*func)(Node*, int p));
+    void start(bool(* callback)(Socket*, int), void (*func)(bool(* callback)(Socket*, int), Node*, int p));
 private:
     Node* client;
     std::thread* thread;

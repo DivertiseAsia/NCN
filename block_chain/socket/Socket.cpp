@@ -117,8 +117,6 @@ void Socket::read(std::string& buffer){
 }
 
 void Socket::write(char* buffer){
-    std::cout << "test" << std::endl;
-    std::cout << buffer << std::endl;
     send(socket, buffer, strlen(buffer), 0);
     free(buffer);
 }

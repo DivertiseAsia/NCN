@@ -32,11 +32,15 @@ private:
     Listener blocks_listener;
     std::vector<Peer> peers;
     std::thread running;
+
+    bool static transactionsCallback(Socket* socket, int port);
+    bool static blocksCallback(Socket* socket, int port);
 };
 
-template <typename T> void listen(Node* client, int port){
+
+template <typename T> void listen(bool(* callback)(Socket*, int), Node* client, int port){
     SocketServer server(port);
-    server.run();
+    server.run(callback);
     T object;
     (*client)(object);
 }

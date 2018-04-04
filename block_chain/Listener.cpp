@@ -13,6 +13,6 @@ Listener::~Listener(){
     delete thread;
 }
 
-void Listener::start(void (*func)(Node*, int)) {
-    thread = new std::thread(func, client, port);
+void Listener::start(bool(* callback)(Socket*, int), void (*func)(bool(*)(Socket*, int), Node*, int)) {
+    thread = new std::thread(func, callback, client, port);
 }

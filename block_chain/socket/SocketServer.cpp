@@ -59,7 +59,6 @@ bool SocketServer::defaultCallback(Socket* socket, int port)
         auto start = std::chrono::high_resolution_clock::now();
         std::cout << "Request received on port " << port << " : " << buffer <<std::endl;
         //TODO: buffer.c_str()
-        std::cout << buffer << std::endl;
         delete socket;
         auto end = std::chrono::high_resolution_clock::now();
         long long microseconds = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
