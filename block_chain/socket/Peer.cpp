@@ -11,7 +11,7 @@ Peer::Peer(Serializer* s, std::string ip, int c, int t, int b): serializer(s), t
 void Peer::sign_out(Peer p) const{
 
 }
-void Peer::send(Transaction* transaction){
+void Peer::send(char* text){
     if(socket != nullptr)
-        transaction_socket->write(serializer->serialize(transaction, "json"));
+        transaction_socket->write(text);
 }

@@ -56,8 +56,18 @@ void JsonCreator::parseContent(std::string& text, ElementInt* e) const
     text.append(patch::to_string(e->value));
 }
 
+void escape(std::string& text){
+    char c = '\\';
+    for(int i = 0; i < text.size(); i++){
+        //std::cout << text[i] << text << std::endl;
+        if(text[i] == '"' && (!i || text[i-1] != '\\'))
+            text.insert(i, 1, c);
+    }
+}
+
 void JsonCreator::parseContent(std::string& text, ElementString* e) const
 {
+    escape(e->value);
     text.append("\"").append(e->value).append("\"");
 }
 

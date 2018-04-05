@@ -19,6 +19,11 @@ ElementString* ElementCreator::create(const char* value) const{
 	e->value = value;
 	return e;
 }
+ElementString* ElementCreator::create(std::string value) const{
+	ElementString* e = new ElementString();
+	e->value = value;
+	return e;
+}
 ElementBoolean* ElementCreator::create(bool value) const{
 	ElementBoolean* e = new ElementBoolean();
 	e->value = value;

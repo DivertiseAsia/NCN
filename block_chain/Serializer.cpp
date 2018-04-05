@@ -6,7 +6,7 @@
 
 ElementObject* Serializer::getElement(std::string transaction, const char* key) const{
     Element* element = new ElementObject();
-    creators.get(key)->parse(transaction, &element);
+    parsers.get(key)->parse(transaction, &element);
     ElementObject* e = dynamic_cast<ElementObject*>(element);
     return e;
 }
@@ -22,6 +22,11 @@ Transaction* Serializer::unserializeTransaction(std::string transaction, const c
     Element* element = new Element();
     creators.get(key)->parse(transaction, &element);
     return nullptr;//TODO: new Transaction(element);
+}
+Message* Serializer::unserializeMessage(std::string message, const char* key) const {
+    Message* m = new Message();
+    m->__init__(getElement(message, key));
+    return m;
 }
 Block* Serializer::unserializeBlock(std::string block, const char* key) const {
     Block* b = new Block();

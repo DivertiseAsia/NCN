@@ -15,7 +15,7 @@ class Peer {
 public:
     Peer(Serializer* s, std::string str, int c, int t, int b);
     void sign_out(Peer p) const;
-    void send(Transaction* transaction);
+    void send(char* text);
 private:
     Serializer* serializer;
     Socket* transaction_socket;

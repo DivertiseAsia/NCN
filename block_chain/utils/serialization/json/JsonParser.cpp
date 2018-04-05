@@ -30,6 +30,7 @@ JsonParser::JsonParser(): ContentParser() {
 JsonParser::~JsonParser() {}
 
 void JsonParser::parse(std::string& text, Element** e) const{
+
     int i = 0;
     for(i = 0;text[i] == '\t' || text[i] == ' ' || text[i] == ','; i++);
     text = text.substr(i);
@@ -65,7 +66,6 @@ void JsonParser::parseContent(std::string& text, ElementDouble* e) const
     }
     e->value = total/div;
     text = text.substr(i);
-
 }
 
 void JsonParser::parseContent(std::string& text, ElementInt* e) const
@@ -152,8 +152,9 @@ void JsonParser::parseContent(std::string& text, ElementObject* e) const
                     if(!(cpt&1))
                         key += (text[i]);
                 }
-                else if(text[i] == '"' && !(cpt&1))
+                else if(text[i] == '"' && !(cpt&1)){
                     break;
+                }
                 else
                 {
                     key += (text[i]);

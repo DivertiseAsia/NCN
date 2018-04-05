@@ -40,6 +40,7 @@ class ElementCreator
 		ElementInt* create(int value) const;
 		ElementDouble* create(double value) const;
 		ElementString* create(const char* value) const;
+		ElementString* create(std::string value) const;
 		ElementBoolean* create(bool value) const;
 
 		ElementArray* array() const;

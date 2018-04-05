@@ -18,7 +18,7 @@ MessagesTransaction::MessagesTransaction() = default;
 Element* MessagesTransaction::toElement(){
     ElementObject* e = ElementCreator::creator.object();
     ElementCreator::creator.put(e, "message", ElementCreator::creator.create(message.c_str()))
-                        ->put(e, "type", ElementCreator::creator.create(1));
+                          ->put(e, "type", ElementCreator::creator.create(1));
     return e;
 }
 

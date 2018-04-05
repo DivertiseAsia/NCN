@@ -6,6 +6,16 @@
 #include "include/CustomSerializer.h"
 #include "block_chain/utils/serialization/json/JsonCreator.hpp"
 #include "block_chain/utils/serialization/json/JsonParser.hpp"
+#include <openssl/rsa.h>
+#include <openssl/pem.h>
+#include <openssl/err.h>
+#include <cstdio>
+#include <cstring>
+
+#define KEY_LENGTH  2048
+#define PUB_EXP     3
+#define PRINT_KEYS
+#define WRITE_TO_FILE
 
 int main() {
     Serializer* serial = new CustomSerializer();
