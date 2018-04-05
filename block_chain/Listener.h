@@ -7,17 +7,19 @@
 
 #include <thread>
 #include "socket/SocketServer.h"
+#include "Serializer.h"
 
 class Node;
 class Listener {
 public:
-    Listener(Node* client, int p);
+    Listener(Node* client, int p, Serializer* serializer);
     ~Listener();
-    void start(bool(* callback)(Socket*, int), void (*func)(bool(* callback)(Socket*, int), Node*, int p));
+    void start(bool(* callback)(Socket*, int, Serializer* serializer), void (*func)(bool(* callback)(Socket*, int, Serializer* serializer), Node*, int p));
 private:
     Node* client;
     std::thread* thread;
     int port;
+    Serializer* serializer;
 };
 
 

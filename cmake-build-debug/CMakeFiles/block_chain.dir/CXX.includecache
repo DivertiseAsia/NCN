@@ -17,6 +17,8 @@ thread
 -
 socket/SocketServer.h
 /home/default/CLionProjects/block_chain/block_chain/socket/SocketServer.h
+Serializer.h
+/home/default/CLionProjects/block_chain/block_chain/Serializer.h
 
 /home/default/CLionProjects/block_chain/block_chain/Node.cpp
 Node.h
@@ -173,6 +175,8 @@ unistd.h
 -
 netdb.h
 -
+../Serializer.h
+/home/default/CLionProjects/block_chain/block_chain/Serializer.h
 iostream
 -
 functional

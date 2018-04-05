@@ -26,6 +26,8 @@ typedef struct sockaddr_in SOCKADDR_IN;
 typedef struct sockaddr SOCKADDR;
 typedef struct in_addr IN_ADDR;
 #endif
+
+#include "../Serializer.h"
 #include <iostream>
 #include <functional>
 #include "Socket.h"
@@ -35,14 +37,14 @@ class SocketServer
 {
 public:
     SocketServer(int port);
-    void run(std::function<bool(Socket*, int)> func);
+    void run(std::function<bool(Socket*, int, Serializer* serializer)> func);
     void run();
     ~SocketServer();
     Socket* master;
 
 protected:
-    bool static defaultCallback(Socket* socket, int port);
-    bool wait(std::function<bool(Socket*, int port)> func);
+    bool static defaultCallback(Socket* socket, int port, Serializer* serializer);
+    bool wait(std::function<bool(Socket*, int port, Serializer* serializer)> func);
     int port;
 };
 

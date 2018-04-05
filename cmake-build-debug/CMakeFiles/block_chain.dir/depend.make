@@ -3,6 +3,11 @@
 
 CMakeFiles/block_chain.dir/block_chain/Listener.cpp.o: ../block_chain/Listener.cpp
 CMakeFiles/block_chain.dir/block_chain/Listener.cpp.o: ../block_chain/Listener.h
+CMakeFiles/block_chain.dir/block_chain/Listener.cpp.o: ../block_chain/Serializer.h
+CMakeFiles/block_chain.dir/block_chain/Listener.cpp.o: ../block_chain/chain/block/Block.h
+CMakeFiles/block_chain.dir/block_chain/Listener.cpp.o: ../block_chain/chain/block/Hash.h
+CMakeFiles/block_chain.dir/block_chain/Listener.cpp.o: ../block_chain/chain/block/Metadata.h
+CMakeFiles/block_chain.dir/block_chain/Listener.cpp.o: ../block_chain/chain/block/transaction/Transaction.h
 CMakeFiles/block_chain.dir/block_chain/Listener.cpp.o: ../block_chain/socket/Socket.h
 CMakeFiles/block_chain.dir/block_chain/Listener.cpp.o: ../block_chain/socket/SocketServer.h
 
@@ -65,6 +70,11 @@ CMakeFiles/block_chain.dir/block_chain/socket/Peer.cpp.o: ../block_chain/socket/
 CMakeFiles/block_chain.dir/block_chain/socket/Socket.cpp.o: ../block_chain/socket/Socket.cpp
 CMakeFiles/block_chain.dir/block_chain/socket/Socket.cpp.o: ../block_chain/socket/Socket.h
 
+CMakeFiles/block_chain.dir/block_chain/socket/SocketServer.cpp.o: ../block_chain/Serializer.h
+CMakeFiles/block_chain.dir/block_chain/socket/SocketServer.cpp.o: ../block_chain/chain/block/Block.h
+CMakeFiles/block_chain.dir/block_chain/socket/SocketServer.cpp.o: ../block_chain/chain/block/Hash.h
+CMakeFiles/block_chain.dir/block_chain/socket/SocketServer.cpp.o: ../block_chain/chain/block/Metadata.h
+CMakeFiles/block_chain.dir/block_chain/socket/SocketServer.cpp.o: ../block_chain/chain/block/transaction/Transaction.h
 CMakeFiles/block_chain.dir/block_chain/socket/SocketServer.cpp.o: ../block_chain/socket/Socket.h
 CMakeFiles/block_chain.dir/block_chain/socket/SocketServer.cpp.o: ../block_chain/socket/SocketServer.cpp
 CMakeFiles/block_chain.dir/block_chain/socket/SocketServer.cpp.o: ../block_chain/socket/SocketServer.h

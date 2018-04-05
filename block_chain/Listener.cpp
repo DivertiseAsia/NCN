@@ -5,7 +5,7 @@
 #include "Listener.h"
 #include <iostream>
 
-Listener::Listener(Node* c, int p): client(c), port(p) {
+Listener::Listener(Node* c, int p, Serializer* s): client(c), port(p), serializer(s) {
 
 }
 
@@ -13,6 +13,6 @@ Listener::~Listener(){
     delete thread;
 }
 
-void Listener::start(bool(* callback)(Socket*, int), void (*func)(bool(*)(Socket*, int), Node*, int)) {
+void Listener::start(bool(* callback)(Socket*, int, Serializer*), void (*func)(bool(*)(Socket*, int, Serializer*), Node*, int)) {
     thread = new std::thread(func, callback, client, port);
 }

@@ -6,7 +6,7 @@
 void run(SocketServer* server) {
     server->run();
 }
-Node::Node(Validator* v, Serializer* serializer, int p, int p_t, int p_b): validator(v), server(p), transactions_listener(this, p_t), blocks_listener(this, p_b), running(run, &server) {
+Node::Node(Validator* v, Serializer* serializer, int p, int p_t, int p_b): validator(v), server(p), transactions_listener(this, p_t, serializer), blocks_listener(this, p_b, serializer), running(run, &server) {
     connect();
     peers.push_back(Peer(serializer, std::string("127.0.0.1"), p, p_t, p_b));
 }
@@ -60,13 +60,14 @@ bool Node::operator()(Block* block) {
 }
 
 
-bool Node::transactionsCallback(Socket* socket, int port) {
+bool Node::transactionsCallback(Socket* socket, int port, Serializer* serializer) {
     std::string buffer;
     socket->read(buffer);
     if(buffer.length()){
         auto start = std::chrono::high_resolution_clock::now();
         std::cout << "Request received on port " << port << " : " << buffer <<std::endl;
         //TODO: unserialize buffer.c_str() into transaction
+
         delete socket;
         auto end = std::chrono::high_resolution_clock::now();
         long long microseconds = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
@@ -76,7 +77,7 @@ bool Node::transactionsCallback(Socket* socket, int port) {
     return true;
 }
 
-bool Node::blocksCallback(Socket* socket, int port) {
+bool Node::blocksCallback(Socket* socket, int port, Serializer* serializer) {
     std::string buffer;
     socket->read(buffer);
     if(buffer.length()){

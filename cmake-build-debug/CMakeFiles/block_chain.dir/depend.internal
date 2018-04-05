@@ -4,6 +4,11 @@
 CMakeFiles/block_chain.dir/block_chain/Listener.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/Listener.cpp
  /home/default/CLionProjects/block_chain/block_chain/Listener.h
+ /home/default/CLionProjects/block_chain/block_chain/Serializer.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/Hash.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/Metadata.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
  /home/default/CLionProjects/block_chain/block_chain/socket/Socket.h
  /home/default/CLionProjects/block_chain/block_chain/socket/SocketServer.h
 CMakeFiles/block_chain.dir/block_chain/Node.cpp.o
@@ -66,6 +71,11 @@ CMakeFiles/block_chain.dir/block_chain/socket/Socket.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/socket/Socket.cpp
  /home/default/CLionProjects/block_chain/block_chain/socket/Socket.h
 CMakeFiles/block_chain.dir/block_chain/socket/SocketServer.cpp.o
+ /home/default/CLionProjects/block_chain/block_chain/Serializer.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/Hash.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/Metadata.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
  /home/default/CLionProjects/block_chain/block_chain/socket/Socket.h
  /home/default/CLionProjects/block_chain/block_chain/socket/SocketServer.cpp
  /home/default/CLionProjects/block_chain/block_chain/socket/SocketServer.h

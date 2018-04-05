@@ -33,12 +33,12 @@ private:
     std::vector<Peer> peers;
     std::thread running;
 
-    bool static transactionsCallback(Socket* socket, int port);
-    bool static blocksCallback(Socket* socket, int port);
+    bool static transactionsCallback(Socket* socket, int port, Serializer* serializer);
+    bool static blocksCallback(Socket* socket, int port, Serializer* serializer);
 };
 
 
-template <typename T> void listen(bool(* callback)(Socket*, int), Node* client, int port){
+template <typename T> void listen(bool(* callback)(Socket*, int, Serializer*), Node* client, int port){
     SocketServer server(port);
     server.run(callback);
     T object;
