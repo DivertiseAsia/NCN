@@ -12,3 +12,6 @@ bool Validator::operator()(Transaction* transaction){
 bool Validator::operator()(Block* block){
     return true;
 }
+
+Validator::~Validator(){
+}

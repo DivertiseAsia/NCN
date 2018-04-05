@@ -3,10 +3,10 @@
 //
 
 #include "Node.h"
-void run(SocketServer* server) {
-    server->run();
+void run(SocketServer* server, Serializer* serializer) {
+    server->run(serializer);
 }
-Node::Node(Validator* v, Serializer* serializer, int p, int p_t, int p_b): validator(v), server(p), transactions_listener(this, p_t, serializer), blocks_listener(this, p_b, serializer), running(run, &server) {
+Node::Node(Validator* v, Serializer* serializer, int p, int p_t, int p_b): validator(v), server(p), transactions_listener(this, p_t, serializer), blocks_listener(this, p_b, serializer), running(run, &server, serializer) {
     connect();
     peers.push_back(Peer(serializer, std::string("127.0.0.1"), p, p_t, p_b));
 }

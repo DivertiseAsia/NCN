@@ -1,4 +1,41 @@
-/home/default/Documents/clion-2018.1/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/default/CLionProjects/block_chain
--- Configuring done
--- Generating done
--- Build files have been written to: /home/default/CLionProjects/block_chain/cmake-build-debug
+"D:\CLion 2018.1\bin\cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files (x86)/CodeBlocks/MinGW/bin/mingw32-make.exe" "-DCMAKE_C_COMPILER=C:/Program Files (x86)/CodeBlocks/MinGW/bin/mingw32-c++.exe" "-DCMAKE_CXX_COMPILER=C:/Program Files (x86)/CodeBlocks/MinGW/bin/mingw32-c++.exe" -G "CodeBlocks - MinGW Makefiles" D:\divertise\NCN
+-- The C compiler identification is unknown
+-- The CXX compiler identification is GNU 4.9.2
+-- Check for working C compiler: C:/Program Files (x86)/CodeBlocks/MinGW/bin/mingw32-c++.exe
+-- Check for working C compiler: C:/Program Files (x86)/CodeBlocks/MinGW/bin/mingw32-c++.exe -- broken
+CMake Error at D:/CLion 2018.1/bin/cmake/share/cmake-3.10/Modules/CMakeTestCCompiler.cmake:52 (message):
+  The C compiler
+
+    "C:/Program Files (x86)/CodeBlocks/MinGW/bin/mingw32-c++.exe"
+
+  is not able to compile a simple test program.
+
+  It fails with the following output:
+
+    Change Dir: D:/divertise/NCN/cmake-build-debug/CMakeFiles/CMakeTmp
+    
+    Run Build Command:"C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe" "cmTC_be434/fast"
+    C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_be434.dir\build.make CMakeFiles/cmTC_be434.dir/build
+    mingw32-make.exe[1]: Entering directory 'D:/divertise/NCN/cmake-build-debug/CMakeFiles/CMakeTmp'
+    Building C object CMakeFiles/cmTC_be434.dir/testCCompiler.c.obj
+    C:\PROGRA~2\CODEBL~1\MinGW\bin\MINGW3~1.EXE    -o CMakeFiles\cmTC_be434.dir\testCCompiler.c.obj   -c D:\divertise\NCN\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c
+    D:\divertise\NCN\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c:2:3: error: #error "The CMAKE_C_COMPILER is set to a C++ compiler"
+     # error "The CMAKE_C_COMPILER is set to a C++ compiler"
+       ^
+    CMakeFiles\cmTC_be434.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_be434.dir/testCCompiler.c.obj' failed
+    mingw32-make.exe[1]: *** [CMakeFiles/cmTC_be434.dir/testCCompiler.c.obj] Error 1
+    mingw32-make.exe[1]: Leaving directory 'D:/divertise/NCN/cmake-build-debug/CMakeFiles/CMakeTmp'
+    Makefile:125: recipe for target 'cmTC_be434/fast' failed
+    mingw32-make.exe: *** [cmTC_be434/fast] Error 2
+    
+
+  
+
+  CMake will not be able to correctly generate this project.
+Call Stack (most recent call first):
+  CMakeLists.txt:2 (project)
+
+
+-- Configuring incomplete, errors occurred!
+See also "D:/divertise/NCN/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+See also "D:/divertise/NCN/cmake-build-debug/CMakeFiles/CMakeError.log".

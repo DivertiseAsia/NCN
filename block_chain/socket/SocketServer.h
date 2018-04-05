@@ -37,14 +37,14 @@ class SocketServer
 {
 public:
     SocketServer(int port);
-    void run(std::function<bool(Socket*, int, Serializer* serializer)> func);
-    void run();
+    void run(std::function<bool(Socket*, int, Serializer* serializer)> func, Serializer* serializer);
+    void run(Serializer* serializer);
     ~SocketServer();
     Socket* master;
 
 protected:
     bool static defaultCallback(Socket* socket, int port, Serializer* serializer);
-    bool wait(std::function<bool(Socket*, int port, Serializer* serializer)> func);
+    bool wait(std::function<bool(Socket*, int port, Serializer* serializer)> func, Serializer* serializer);
     int port;
 };
 

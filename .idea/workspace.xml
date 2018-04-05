@@ -282,6 +282,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
@@ -307,13 +308,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Build All">
+  <component name="RunManager">
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="block_chain" RUN_TARGET_NAME="block_chain" EXPLICIT_BUILD_TARGET_NAME="all" />
-    <configuration name="block_chain" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="block_chain" TARGET_NAME="block_chain" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="block_chain" RUN_TARGET_NAME="block_chain" />
-    <list>
-      <item itemvalue="Application.Build All" />
-      <item itemvalue="Application.block_chain" />
-    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />

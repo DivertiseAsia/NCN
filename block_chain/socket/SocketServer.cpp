@@ -23,14 +23,14 @@ SocketServer::SocketServer(int p): master(nullptr)
     std::cout << "Server listening on port " << port << std::endl;
 }
 
-void SocketServer::run(std::function<bool(Socket*, int, Serializer*)> func)
+void SocketServer::run(std::function<bool(Socket*, int, Serializer*)> func, Serializer* serializer)
 {
-    while(this->wait(func));
+    while(this->wait(func, serializer));
 }
 
-void SocketServer::run()
+void SocketServer::run(Serializer* serializer)
 {
-    this->run(SocketServer::defaultCallback);
+    this->run(SocketServer::defaultCallback, serializer);
 }
 
 bool SocketServer::wait(std::function<bool(Socket*, int port, Serializer* serializer)> func, Serializer* serial)
@@ -39,7 +39,7 @@ bool SocketServer::wait(std::function<bool(Socket*, int port, Serializer* serial
     int sin_size = sizeof c_sin;
     Socket* socket = master->_accept(&c_sin, sin_size);
     #ifdef _WIN32
-    std::thread connection (func, socket);
+    std::thread connection (func, socket, port, serial);
     connection.detach();
     #else
     if(!fork())

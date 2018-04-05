@@ -5,6 +5,7 @@
 #include "StatusTransaction.h"
 #include <iostream>
 #include <cstring>
+#include <cstdlib>
 
 bool StatusTransaction::operator()() const {
     return true;

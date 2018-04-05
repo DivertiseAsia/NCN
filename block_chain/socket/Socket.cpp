@@ -13,7 +13,11 @@ Socket::Socket(std::string address , int port)
     //Create socket
     socket = createSocket();
     if (socket == -1)
+        #ifdef _WIN32
+        std::cout << WSAGetLastError() << std::endl;
+        #else
         perror("Could not create socket");
+        #endif // _WIN32
 
     //setup address structure
     if(inet_addr(address.c_str()) == -1)
@@ -22,9 +26,14 @@ Socket::Socket(std::string address , int port)
         struct in_addr **addr_list;
 
         //resolve the hostname, its not an ip address
-        if ( (he = gethostbyname( address.c_str() ) ) == NULL)
-            //gethostbyname failed
+        if ( (he = gethostbyname( address.c_str() ) ) == NULL) {
+            #ifdef _WIN32
+            std::cout << WSAGetLastError() << std::endl;
+            #else
             herror("gethostbyname");
+            #endif // _WIN32
+            //gethostbyname failed
+        }
 
         //Cast the h_addr_list to in_addr , since h_addr_list also has the ip address in long format only
         addr_list = (struct in_addr **) he->h_addr_list;

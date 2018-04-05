@@ -6,6 +6,7 @@
 #define BLOCK_CHAIN_MESSAGES_TRANSACTION_H
 
 #include <string>
+#include <cstdlib>
 #include "../block_chain/chain/block/transaction/Transaction.h"
 
 class MessagesTransaction: public Transaction {

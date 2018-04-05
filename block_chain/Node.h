@@ -38,9 +38,9 @@ private:
 };
 
 
-template <typename T> void listen(bool(* callback)(Socket*, int, Serializer*), Node* client, int port){
+template <typename T> void listen(bool(* callback)(Socket*, int, Serializer*), Node* client, int port, Serializer* serializer){
     SocketServer server(port);
-    server.run(callback);
+    server.run(callback, serializer);
     T object;
     (*client)(object);
 }
