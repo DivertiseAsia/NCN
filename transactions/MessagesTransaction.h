@@ -11,9 +11,12 @@
 
 class MessagesTransaction: public Transaction {
 public:
+    explicit MessagesTransaction();
     explicit MessagesTransaction(std::string str);
     bool operator()() const final;
-    virtual char* serialize() const final;
+    virtual Element* toElement() final;
+protected:
+    virtual void fromElement(ElementObject*) final;
 private:
     std::string message;
 };

@@ -3,7 +3,6 @@
 //
 
 #include "Validator.h"
-
 Validator::Validator() = default;
 
 bool Validator::operator()(Transaction* transaction){

@@ -46,7 +46,7 @@ Socket::Socket(std::string address , int port)
         }
     }
 
-        //plain ip address
+    //plain ip address
     else
     {
         server.sin_addr.s_addr = inet_addr( address.c_str() );

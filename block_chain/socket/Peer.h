@@ -17,10 +17,10 @@ public:
     void sign_out(Peer p) const;
     void send(Transaction* transaction);
 private:
-    Socket* socket;
+    Serializer* serializer;
     Socket* transaction_socket;
     Socket* block_socket;
-    Serializer* serializer;
+    Socket* socket;
 };
 
 

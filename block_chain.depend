@@ -1,19 +1,21 @@
 # depslib dependency file v1.0
-1522898522 source:d:\divertise\block_chain\block_chain\chain\block\block.cpp
+1522910831 source:d:\divertise\block_chain\block_chain\chain\block\block.cpp
 	"Block.h"
 
-1522898522 d:\divertise\block_chain\block_chain\chain\block\block.h
+1522910831 d:\divertise\block_chain\block_chain\chain\block\block.h
 	<vector>
 	"Hash.h"
 	"Metadata.h"
 	"transaction/Transaction.h"
+	"../../../include/Component.h"
 
 1522898522 d:\divertise\block_chain\block_chain\chain\block\hash.h
 	<string>
 
 1522898522 d:\divertise\block_chain\block_chain\chain\block\metadata.h
 
-1522898522 d:\divertise\block_chain\block_chain\chain\block\transaction\transaction.h
+1522909102 d:\divertise\block_chain\block_chain\chain\block\transaction\transaction.h
+	"../../../../include/Component.h"
 
 1522898522 source:d:\divertise\block_chain\block_chain\chain\block\hash.cpp
 	"Hash.h"
@@ -25,7 +27,7 @@
 1522898522 source:d:\divertise\block_chain\block_chain\chain\nodestate.cpp
 	"NodeState.h"
 
-1522898522 d:\divertise\block_chain\block_chain\chain\nodestate.h
+1522911334 d:\divertise\block_chain\block_chain\chain\nodestate.h
 	<fstream>
 	<iostream>
 	<string>
@@ -35,16 +37,16 @@
 	"block/Hash.h"
 	"block/transaction/Transaction.h"
 
-1522899460 source:d:\divertise\block_chain\block_chain\listener.cpp
+1522902480 source:d:\divertise\block_chain\block_chain\listener.cpp
 	"Listener.h"
 	<iostream>
 
-1522899469 d:\divertise\block_chain\block_chain\listener.h
+1522902462 d:\divertise\block_chain\block_chain\listener.h
 	<thread>
 	"socket/SocketServer.h"
 	"Serializer.h"
 
-1522899214 d:\divertise\block_chain\block_chain\socket\socketserver.h
+1522906177 d:\divertise\block_chain\block_chain\socket\socketserver.h
 	<thread>
 	<winsock2.h>
 	<sys/types.h>
@@ -59,9 +61,12 @@
 	"Socket.h"
 	<chrono>
 
-1522898522 d:\divertise\block_chain\block_chain\serializer.h
+1522912009 d:\divertise\block_chain\block_chain\serializer.h
 	"chain/block/Block.h"
 	"chain/block/transaction/Transaction.h"
+	"utils/Factory.hpp"
+	"utils/serialization/Parser.hpp"
+	<cstdlib>
 
 1522898522 d:\divertise\block_chain\block_chain\socket\socket.h
 	<winsock2.h>
@@ -76,10 +81,10 @@
 	<iostream>
 	<functional>
 
-1522899571 source:d:\divertise\block_chain\block_chain\node.cpp
+1522911836 source:d:\divertise\block_chain\block_chain\node.cpp
 	"Node.h"
 
-1522899231 d:\divertise\block_chain\block_chain\node.h
+1522907386 d:\divertise\block_chain\block_chain\node.h
 	<iostream>
 	"chain/NodeState.h"
 	"Validator.h"
@@ -91,50 +96,53 @@
 	"chain/block/transaction/Transaction.h"
 	"chain/block/Block.h"
 
-1522898522 d:\divertise\block_chain\block_chain\socket\peer.h
+1522911046 d:\divertise\block_chain\block_chain\socket\peer.h
 	<string>
 	"Socket.h"
 	"../Serializer.h"
 	"../chain/block/transaction/Transaction.h"
 
-1522898522 source:d:\divertise\block_chain\block_chain\serializer.cpp
+1522913234 source:d:\divertise\block_chain\block_chain\serializer.cpp
 	"Serializer.h"
 
-1522898522 source:d:\divertise\block_chain\block_chain\socket\peer.cpp
+1522908761 source:d:\divertise\block_chain\block_chain\socket\peer.cpp
 	"Peer.h"
 
-1522899169 source:d:\divertise\block_chain\block_chain\socket\socket.cpp
+1522900570 source:d:\divertise\block_chain\block_chain\socket\socket.cpp
 	"Socket.h"
 
-1522899694 source:d:\divertise\block_chain\block_chain\socket\socketserver.cpp
+1522906185 source:d:\divertise\block_chain\block_chain\socket\socketserver.cpp
 	"SocketServer.h"
 
-1522899531 source:d:\divertise\block_chain\block_chain\validator.cpp
+1522911729 source:d:\divertise\block_chain\block_chain\validator.cpp
 	"Validator.h"
 
-1522898523 source:d:\divertise\block_chain\main.cpp
+1522912567 source:d:\divertise\block_chain\main.cpp
 	<iostream>
 	"block_chain/Node.h"
 	"transactions/StatusTransaction.h"
 	"validator/CustomValidator.h"
+	"include/CustomSerializer.h"
+	"block_chain/utils/serialization/json/JsonCreator.hpp"
+	"block_chain/utils/serialization/json/JsonParser.hpp"
 
-1522898523 d:\divertise\block_chain\transactions\statustransaction.h
+1522912360 d:\divertise\block_chain\transactions\statustransaction.h
 	<string>
 	"../block_chain/chain/block/transaction/Transaction.h"
 
 1522898523 d:\divertise\block_chain\validator\customvalidator.h
 	"../block_chain/Validator.h"
 
-1522898523 source:d:\divertise\block_chain\transactions\messagestransaction.cpp
+1522913194 source:d:\divertise\block_chain\transactions\messagestransaction.cpp
 	"MessagesTransaction.h"
 	<cstring>
 
-1522899721 d:\divertise\block_chain\transactions\messagestransaction.h
+1522912419 d:\divertise\block_chain\transactions\messagestransaction.h
 	<string>
 	<cstdlib>
 	"../block_chain/chain/block/transaction/Transaction.h"
 
-1522899729 source:d:\divertise\block_chain\transactions\statustransaction.cpp
+1522912459 source:d:\divertise\block_chain\transactions\statustransaction.cpp
 	"StatusTransaction.h"
 	<iostream>
 	<cstring>
@@ -142,4 +150,77 @@
 
 1522898523 source:d:\divertise\block_chain\validator\customvalidator.cpp
 	"CustomValidator.h"
+
+1522913047 source:d:\divertise\block_chain\block_chain\utils\serialization\element.cpp
+	"Element.hpp"
+	<iostream>
+
+1522906490 d:\divertise\block_chain\block_chain\utils\serialization\element.hpp
+	<vector>
+	<map>
+	<cstring>
+	"Parser.hpp"
+
+1522907276 d:\divertise\block_chain\block_chain\utils\serialization\parser.hpp
+	<string>
+
+1522906552 source:d:\divertise\block_chain\block_chain\utils\serialization\elementcreator.cpp
+	"Parser.hpp"
+	"Element.hpp"
+	<iostream>
+	<algorithm>
+	<sstream>
+	<vector>
+	<iterator>
+	<cstring>
+
+1522909573 source:d:\divertise\block_chain\block_chain\utils\serialization\json\jsoncreator.cpp
+	"JsonCreator.hpp"
+	"../Element.hpp"
+	<iostream>
+	<algorithm>
+	<sstream>
+	<vector>
+	<iterator>
+	<cstring>
+
+1522906583 d:\divertise\block_chain\block_chain\utils\serialization\json\jsoncreator.hpp
+	"../Parser.hpp"
+	<functional>
+	<map>
+
+1522907256 source:d:\divertise\block_chain\block_chain\utils\serialization\json\jsonparser.cpp
+	"JsonParser.hpp"
+	"../Element.hpp"
+	<iostream>
+	<algorithm>
+	<sstream>
+	<vector>
+	<iterator>
+	<cstring>
+
+1522906664 d:\divertise\block_chain\block_chain\utils\serialization\json\jsonparser.hpp
+	"../Parser.hpp"
+	<functional>
+	<map>
+
+1507825856 d:\divertise\block_chain\block_chain\utils\factory.hpp
+	<iostream>
+	<map>
+	<cstring>
+
+1522913177 d:\divertise\block_chain\include\component.h
+	"../block_chain/utils/serialization/Element.hpp"
+
+1522910891 d:\divertise\block_chain\include\blockfactory.h
+	"../block_chain/chain/block/Block.h"
+
+1522913103 source:d:\divertise\block_chain\src\customserializer.cpp
+	"CustomSerializer.h"
+	<iostream>
+
+1522912237 d:\divertise\block_chain\include\customserializer.h
+	"../block_chain/Serializer.h"
+	"../transactions/MessagesTransaction.h"
+	"../transactions/StatusTransaction.h"
 

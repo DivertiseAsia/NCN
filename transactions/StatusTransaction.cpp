@@ -14,10 +14,16 @@ bool StatusTransaction::operator()() const {
 StatusTransaction::StatusTransaction(std::string str): status(str) {
 
 }
-char* StatusTransaction::serialize() const {
-    std::string json("{\"status\": \"");
-    json += std::string(status) + std::string("\"};");
-    char* v = (char*)malloc((int)json.size());
-    strcpy(v, json.c_str());
-    return v;
+
+StatusTransaction::StatusTransaction() = default;
+
+Element* StatusTransaction::toElement(){
+    ElementObject* e = ElementCreator::creator.object();
+    ElementCreator::creator.put(e, "status", ElementCreator::creator.create(status.c_str()))
+                        ->put(e, "type", ElementCreator::creator.create(0));
+    return e;
 }
+
+void StatusTransaction::fromElement(ElementObject* e) {
+    e->getItem("status", &status);
+};

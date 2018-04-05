@@ -13,5 +13,5 @@ void Peer::sign_out(Peer p) const{
 }
 void Peer::send(Transaction* transaction){
     if(socket != nullptr)
-        transaction_socket->write(serializer->serialize(transaction));
+        transaction_socket->write(serializer->serialize(transaction, "json"));
 }

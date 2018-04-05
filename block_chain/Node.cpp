@@ -3,10 +3,16 @@
 //
 
 #include "Node.h"
-void run(SocketServer* server, Serializer* serializer) {
-    server->run(serializer);
+void run(SocketServer* server, Serializer* serializer, Node* node) {
+    server->run(serializer, node);
 }
-Node::Node(Validator* v, Serializer* serializer, int p, int p_t, int p_b): validator(v), server(p), transactions_listener(this, p_t, serializer), blocks_listener(this, p_b, serializer), running(run, &server, serializer) {
+
+void listen(bool(* callback)(Socket*, int, Serializer*, Node*), Node* client, int port, Serializer* serializer){
+    SocketServer server(port);
+    server.run(callback, serializer, client);
+}
+
+Node::Node(Validator* v, Serializer* serializer, int p, int p_t, int p_b): validator(v), server(p), transactions_listener(this, p_t, serializer), blocks_listener(this, p_b, serializer), running(run, &server, serializer, this) {
     connect();
     peers.push_back(Peer(serializer, std::string("127.0.0.1"), p, p_t, p_b));
 }
@@ -19,8 +25,8 @@ Node::~Node(){
 void Node::connect(){
     store();
     load();
-    transactions_listener.start(Node::transactionsCallback, listen<Transaction*>);
-    blocks_listener.start(Node::blocksCallback, listen<Block*>);
+    transactions_listener.start(Node::transactionsCallback, listen);
+    blocks_listener.start(Node::blocksCallback, listen);
 }
 void Node::load(){
     //TODO
@@ -60,35 +66,34 @@ bool Node::operator()(Block* block) {
 }
 
 
-bool Node::transactionsCallback(Socket* socket, int port, Serializer* serializer) {
+bool Node::transactionsCallback(Socket* socket, int port, Serializer* serializer, Node* node) {
     std::string buffer;
     socket->read(buffer);
     if(buffer.length()){
         auto start = std::chrono::high_resolution_clock::now();
         std::cout << "Request received on port " << port << " : " << buffer <<std::endl;
-        //TODO: unserialize buffer.c_str() into transaction
-
+        Transaction* transaction = serializer->unserializeTransaction(buffer, "json");
+        (*node)(transaction);
         delete socket;
         auto end = std::chrono::high_resolution_clock::now();
         long long microseconds = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
         std::cout << "Request performed in "<< (microseconds/1000.0) << " milliseconds" <<std::endl;
     }
-
     return true;
 }
 
-bool Node::blocksCallback(Socket* socket, int port, Serializer* serializer) {
+bool Node::blocksCallback(Socket* socket, int port, Serializer* serializer, Node* node) {
     std::string buffer;
     socket->read(buffer);
     if(buffer.length()){
         auto start = std::chrono::high_resolution_clock::now();
         std::cout << "Request received on port " << port << " : " << buffer <<std::endl;
-        //TODO: unserialize buffer.c_str() into block
+        Block* block = serializer->unserializeBlock(buffer, "json");
+        (*node)(block);
         delete socket;
         auto end = std::chrono::high_resolution_clock::now();
         long long microseconds = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
         std::cout << "Request performed in "<< (microseconds/1000.0) << " milliseconds" <<std::endl;
     }
-
     return true;
 }

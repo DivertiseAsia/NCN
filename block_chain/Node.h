@@ -25,25 +25,18 @@ private:
     void load();
     void store();
     //Server to send data
+    Validator* validator;
     SocketServer server;
     NodeState block_chain;
-    Validator* validator;
     Listener transactions_listener;
     Listener blocks_listener;
     std::vector<Peer> peers;
     std::thread running;
 
-    bool static transactionsCallback(Socket* socket, int port, Serializer* serializer);
-    bool static blocksCallback(Socket* socket, int port, Serializer* serializer);
+    bool static transactionsCallback(Socket* socket, int port, Serializer* serializer, Node* node);
+    bool static blocksCallback(Socket* socket, int port, Serializer* serializer, Node* node);
 };
 
-
-template <typename T> void listen(bool(* callback)(Socket*, int, Serializer*), Node* client, int port, Serializer* serializer){
-    SocketServer server(port);
-    server.run(callback, serializer);
-    T object;
-    (*client)(object);
-}
 #endif //BLOCK_CHAIN_CLIENT_H
 
 /*
