@@ -13,6 +13,7 @@ public:
     Validator();
     bool operator()(Transaction* transaction);
     virtual bool operator()(Block* block);
+    virtual ~Validator();
 };
 
 

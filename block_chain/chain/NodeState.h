@@ -21,7 +21,7 @@ public:
     void add(Block* block);
     void read_blocks();
 private:
-    int size;
+    unsigned int size;
     Hash top_fingerprint;
     std::vector<Transaction*>  transactions;
 };

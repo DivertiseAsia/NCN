@@ -4,12 +4,11 @@
 
 #ifndef BLOCK_CHAIN_TRANSACTION_H
 #define BLOCK_CHAIN_TRANSACTION_H
+#include "../../../../include/Component.h"
 
-
-class Transaction {
+class Transaction: public Component {
 public:
     virtual bool operator()() const = 0;
-    virtual char* serialize() const = 0;
 private:
 };
 

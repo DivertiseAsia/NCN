@@ -15,12 +15,12 @@ class Peer {
 public:
     Peer(Serializer* s, std::string str, int c, int t, int b);
     void sign_out(Peer p) const;
-    void send(Transaction* transaction);
+    void send(char* text);
 private:
-    Socket* socket;
+    Serializer* serializer;
     Socket* transaction_socket;
     Socket* block_socket;
-    Serializer* serializer;
+    Socket* socket;
 };
 
 

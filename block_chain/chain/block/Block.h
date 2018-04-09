@@ -9,12 +9,17 @@
 #include "Hash.h"
 #include "Metadata.h"
 #include "transaction/Transaction.h"
+#include "../../../include/Component.h"
 
-class Block{
+class Block: public Component{
     friend class NodeState;
 public:
     Block();
     explicit Block(std::vector<Transaction*> transactions);
+    virtual Element* toElement();
+    virtual ~Block();
+protected:
+    virtual void fromElement(ElementObject* e) override;
 private:
     Metadata data;
     Hash fingerprint;

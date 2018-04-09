@@ -13,10 +13,15 @@ MessagesTransaction::MessagesTransaction(std::string str): message(std::move(str
 
 }
 
-char* MessagesTransaction::serialize() const {
-    std::string json("{\"message\": \"");
-    json += std::string(message) + std::string("\"};");
-    char* v = (char*)malloc((int)json.size());
-    strcpy(v, json.c_str());
-    return v;
+MessagesTransaction::MessagesTransaction() = default;
+
+Element* MessagesTransaction::toElement(){
+    ElementObject* e = ElementCreator::creator.object();
+    ElementCreator::creator.put(e, "message", ElementCreator::creator.create(message.c_str()))
+                          ->put(e, "type", ElementCreator::creator.create(1));
+    return e;
 }
+
+void MessagesTransaction::fromElement(ElementObject* e) {
+    e->getItem("message", &message);
+};

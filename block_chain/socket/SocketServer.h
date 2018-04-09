@@ -32,19 +32,19 @@ typedef struct in_addr IN_ADDR;
 #include <functional>
 #include "Socket.h"
 #include <chrono>
-
+class Node;
 class SocketServer
 {
 public:
     SocketServer(int port);
-    void run(std::function<bool(Socket*, int, Serializer* serializer)> func);
-    void run();
+    void run(std::function<bool(Socket*, int, Serializer* serializer, Node* node)> func, Serializer* serializer, Node* node);
+    void run(Serializer* serializer, Node* node);
     ~SocketServer();
     Socket* master;
 
 protected:
-    bool static defaultCallback(Socket* socket, int port, Serializer* serializer);
-    bool wait(std::function<bool(Socket*, int port, Serializer* serializer)> func);
+    bool static defaultCallback(Socket* socket, int port, Serializer* serializer, Node* node);
+    bool wait(std::function<bool(Socket*, int port, Serializer* serializer, Node* node)> func, Serializer* serializer, Node* node);
     int port;
 };
 
