@@ -11,18 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b337953f-6d17-4d79-bf7d-640c27a86937" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/block_chain/Listener.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/Listener.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/Listener.h" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/Listener.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/Node.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/Node.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/Node.h" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/Node.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/socket/SocketServer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/socket/SocketServer.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/socket/SocketServer.h" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/socket/SocketServer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/Listener.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/Node.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/socket/SocketServer.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/main.cpp.o" beforeDir="false" />
-    </list>
+    <list default="true" id="b337953f-6d17-4d79-bf7d-640c27a86937" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -327,16 +316,15 @@
       <updated>1522740438265</updated>
       <workItem from="1522740440127" duration="13761000" />
       <workItem from="1522814076401" duration="13000" />
-      <workItem from="1522814118941" duration="22879000" />
+      <workItem from="1522814118941" duration="23479000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36653000" />
+    <option name="totallyTimeSpent" value="37253000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info active="true" anchor="bottom" id="Messages" order="7" visible="true" weight="0.32889345" />
