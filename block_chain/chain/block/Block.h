@@ -9,7 +9,7 @@
 #include "Hash.h"
 #include "Metadata.h"
 #include "transaction/Transaction.h"
-#include "../../../include/Component.h"
+#include "Component.h"
 
 class Block: public Component{
     friend class NodeState;
@@ -18,11 +18,14 @@ public:
     explicit Block(std::vector<Transaction*> transactions);
     virtual Element* toElement();
     virtual ~Block();
+    bool operator==(Block* block) const{
+        return data == block->data && fingerprint == block->fingerprint && parent_fingerprint == block->parent_fingerprint;
+    }
 protected:
     virtual void fromElement(ElementObject* e) override;
 private:
     Metadata data;
-    Hash fingerprint;
-    Hash parent_fingerprint;
+    Hash* fingerprint;
+    Hash* parent_fingerprint;
 };
 #endif //BLOCK_CHAIN_BLOCK_H

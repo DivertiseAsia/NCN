@@ -1,7 +1,7 @@
 #ifndef BLOCKFACTORY_H
 #define BLOCKFACTORY_H
 
-#include "../block_chain/chain/block/Block.h"
+#include "Block.h"
 
 class BlockFactory
 {

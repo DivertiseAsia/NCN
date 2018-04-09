@@ -13,6 +13,7 @@ void listen(bool(* callback)(Socket*, int, Serializer*, Node*), Node* client, in
 }
 
 Node::Node(Validator* v, Serializer* s, int p, int p_t, int p_b): serializer(s), validator(v), server(p), transactions_listener(this, p_t, s), blocks_listener(this, p_b, s), running(run, &server, s, this) {
+
     OpenSSL_add_all_algorithms();
     ERR_load_BIO_strings();
     ERR_load_crypto_strings();
@@ -75,7 +76,7 @@ bool Node::operator()(Block* block) {
 
 bool Node::operator()(Message* message) {
     bool valid = true;
-    std::cout << "Decrypted: " <<
+    std::cout << "Decrypted: ";
     std::cout << " test"<< std::endl;
     return valid;
 }
@@ -86,14 +87,15 @@ bool Node::transactionsCallback(Socket* socket, int port, Serializer* serializer
     socket->read(buffer);
     if(buffer.length()){
         auto start = std::chrono::high_resolution_clock::now();
-        //std::cout << "Request received on port " << port << " : " << buffer <<std::endl;
+        std::cout << "Request received on port " << port  <<std::endl;
         Message* message = serializer->unserializeMessage(buffer, "json");
         RSA_Cryptography crypto(message->public_key);
-        if(message->compareResults(crypto.decrypt(message->getCipher(), message->size)))
-            std::cout << "Match" << std::endl;
-        else
-            std::cout << "Don't match" << std::endl;
-        (*node)(message);
+        Transaction* deciphered(serializer->unserializeTransaction(crypto.decrypt(message->getCipher(), message->size), "json"));
+        Transaction* plain_text(serializer->unserializeTransaction(message->plain_text, "json"));
+        if(*deciphered == plain_text)
+            (*node)(plain_text);
+
+        delete deciphered;
         delete socket;
         auto end = std::chrono::high_resolution_clock::now();
         long long microseconds = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
@@ -107,9 +109,16 @@ bool Node::blocksCallback(Socket* socket, int port, Serializer* serializer, Node
     socket->read(buffer);
     if(buffer.length()){
         auto start = std::chrono::high_resolution_clock::now();
-        std::cout << "Request received on port " << port << " : " << buffer <<std::endl;
+        std::cout << "Request received on port " << port << std::endl;
         Message* message = serializer->unserializeMessage(buffer, "json");
-        (*node)(message);
+        RSA_Cryptography crypto(message->public_key);
+        Block* deciphered(serializer->unserializeBlock(crypto.decrypt(message->getCipher(), message->size), "json"));
+        Block* plain_text(serializer->unserializeBlock(message->plain_text, "json"));
+        if(*deciphered == plain_text)
+            (*node)(plain_text);
+
+        delete deciphered;
+        delete socket;
         delete socket;
         auto end = std::chrono::high_resolution_clock::now();
         long long microseconds = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();

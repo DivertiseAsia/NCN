@@ -4,11 +4,12 @@
 
 #ifndef BLOCK_CHAIN_TRANSACTION_H
 #define BLOCK_CHAIN_TRANSACTION_H
-#include "../../../../include/Component.h"
+#include "../Component.h"
 
 class Transaction: public Component {
 public:
     virtual bool operator()() const = 0;
+    virtual bool operator==(Transaction* s) const = 0;
 private:
 };
 

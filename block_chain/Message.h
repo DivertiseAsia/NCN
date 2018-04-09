@@ -1,9 +1,10 @@
 #ifndef MESSAGE_H
 #define MESSAGE_H
 
-#include"Component.h"
+#include"chain/block/Component.h"
 #include <sstream>
 #include <fstream>
+#include "utils/Encoding.h"
 
 class Message: public Component
 {

@@ -19,11 +19,11 @@ class RSA_Cryptography {
         void generate();
         bool backup();
         virtual ~RSA_Cryptography();
+        RSA* rsa;
 
     protected:
 
     private:
-        RSA* rsa;
         char *pri_key;
         char *pub_key;
         int size;

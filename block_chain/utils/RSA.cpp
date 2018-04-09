@@ -13,15 +13,15 @@ RSA_Cryptography::RSA_Cryptography()
     size = 2048;
 }
 #include <iostream>
+#include <openssl/engine.h>
 RSA_Cryptography::RSA_Cryptography(std::string key)
 {
-    std::cout << key << std::endl;
     size = 2048;
-    rsa = RSA_generate_key(size, 3, 0, 0);
-    BIO* bo = BIO_new(BIO_s_mem());
-    BIO_write(bo, key.c_str(), key.size());
-    PEM_read_bio_RSA_PUBKEY(bo, &rsa, 0, 0 );
+    BIO* bo = BIO_new_mem_buf( (void*) key.c_str(), key.size());
+    BIO_set_flags( bo, BIO_FLAGS_BASE64_NO_NL ) ; // NO NL
+    rsa = PEM_read_bio_RSAPublicKey(bo, NULL, NULL, NULL);
     BIO_free(bo);
+
 }
 
 bool RSA_Cryptography::backup(){
@@ -63,18 +63,16 @@ RSA_Cryptography::~RSA_Cryptography()
 std::string RSA_Cryptography::encrypt(std::string message) {
     unsigned char* encrypt = (unsigned char*)malloc(RSA_size(rsa));
     int encrypt_len;
-    if((encrypt_len = RSA_private_encrypt(message.size()+1, (const unsigned char*)message.c_str(), (unsigned char*)encrypt, rsa, RSA_PKCS1_OAEP_PADDING)) == -1) {
+    if((encrypt_len = RSA_private_encrypt(message.size()+1, (const unsigned char*)message.c_str(), (unsigned char*)encrypt, rsa, RSA_PKCS1_PADDING)) == -1) {
         std::cout << "ERROR ENCRYPT" << std::endl;
     }
-    std::cout << "len: " << encrypt << std::endl;
     std::string str;
     str.assign((const char*)encrypt, encrypt_len);
     return str;
 }
 std::string RSA_Cryptography::decrypt(std::string message, int size) {
     unsigned char* decrypt = (unsigned char*)malloc(size);
-    std::cout << "len: " << size << std::endl;
-    if(RSA_public_decrypt(message.size(), (const unsigned char*) message.c_str(), (unsigned char*) decrypt, rsa, RSA_PKCS1_OAEP_PADDING) == -1) {
+    if(RSA_public_decrypt(message.size(), (const unsigned char*) message.c_str(), (unsigned char*) decrypt, rsa, RSA_PKCS1_PADDING) == -1) {
             std::cout << "ERROR DECRYPT" << std::endl;
     }
     return std::string((const char*)decrypt);

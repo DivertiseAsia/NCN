@@ -19,8 +19,8 @@ StatusTransaction::StatusTransaction() = default;
 
 Element* StatusTransaction::toElement(){
     ElementObject* e = ElementCreator::creator.object();
-    ElementCreator::creator.put(e, "status", ElementCreator::creator.create(status.c_str()))
-                          ->put(e, "type", ElementCreator::creator.create(0));
+    ElementCreator::creator.put(e, "type", ElementCreator::creator.create(0))
+                          ->put(e, "status", ElementCreator::creator.create(status.c_str()));
     return e;
 }
 

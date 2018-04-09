@@ -150,6 +150,33 @@ block_chain/Listener.cpp.s:
 	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/Listener.cpp.s
 .PHONY : block_chain/Listener.cpp.s
 
+block_chain/Message.o: block_chain/Message.cpp.o
+
+.PHONY : block_chain/Message.o
+
+# target to build an object file
+block_chain/Message.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/Message.cpp.o
+.PHONY : block_chain/Message.cpp.o
+
+block_chain/Message.i: block_chain/Message.cpp.i
+
+.PHONY : block_chain/Message.i
+
+# target to preprocess a source file
+block_chain/Message.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/Message.cpp.i
+.PHONY : block_chain/Message.cpp.i
+
+block_chain/Message.s: block_chain/Message.cpp.s
+
+.PHONY : block_chain/Message.s
+
+# target to generate assembly for a file
+block_chain/Message.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/Message.cpp.s
+.PHONY : block_chain/Message.cpp.s
+
 block_chain/Node.o: block_chain/Node.cpp.o
 
 .PHONY : block_chain/Node.o
@@ -284,6 +311,60 @@ block_chain/chain/block/Block.s: block_chain/chain/block/Block.cpp.s
 block_chain/chain/block/Block.cpp.s:
 	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.s
 .PHONY : block_chain/chain/block/Block.cpp.s
+
+block_chain/chain/block/BlockFactory.o: block_chain/chain/block/BlockFactory.cpp.o
+
+.PHONY : block_chain/chain/block/BlockFactory.o
+
+# target to build an object file
+block_chain/chain/block/BlockFactory.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/BlockFactory.cpp.o
+.PHONY : block_chain/chain/block/BlockFactory.cpp.o
+
+block_chain/chain/block/BlockFactory.i: block_chain/chain/block/BlockFactory.cpp.i
+
+.PHONY : block_chain/chain/block/BlockFactory.i
+
+# target to preprocess a source file
+block_chain/chain/block/BlockFactory.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/BlockFactory.cpp.i
+.PHONY : block_chain/chain/block/BlockFactory.cpp.i
+
+block_chain/chain/block/BlockFactory.s: block_chain/chain/block/BlockFactory.cpp.s
+
+.PHONY : block_chain/chain/block/BlockFactory.s
+
+# target to generate assembly for a file
+block_chain/chain/block/BlockFactory.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/BlockFactory.cpp.s
+.PHONY : block_chain/chain/block/BlockFactory.cpp.s
+
+block_chain/chain/block/Component.o: block_chain/chain/block/Component.cpp.o
+
+.PHONY : block_chain/chain/block/Component.o
+
+# target to build an object file
+block_chain/chain/block/Component.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/Component.cpp.o
+.PHONY : block_chain/chain/block/Component.cpp.o
+
+block_chain/chain/block/Component.i: block_chain/chain/block/Component.cpp.i
+
+.PHONY : block_chain/chain/block/Component.i
+
+# target to preprocess a source file
+block_chain/chain/block/Component.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/Component.cpp.i
+.PHONY : block_chain/chain/block/Component.cpp.i
+
+block_chain/chain/block/Component.s: block_chain/chain/block/Component.cpp.s
+
+.PHONY : block_chain/chain/block/Component.s
+
+# target to generate assembly for a file
+block_chain/chain/block/Component.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/Component.cpp.s
+.PHONY : block_chain/chain/block/Component.cpp.s
 
 block_chain/chain/block/Hash.o: block_chain/chain/block/Hash.cpp.o
 
@@ -420,6 +501,168 @@ block_chain/socket/SocketServer.cpp.s:
 	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/socket/SocketServer.cpp.s
 .PHONY : block_chain/socket/SocketServer.cpp.s
 
+block_chain/utils/Encoding.o: block_chain/utils/Encoding.cpp.o
+
+.PHONY : block_chain/utils/Encoding.o
+
+# target to build an object file
+block_chain/utils/Encoding.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/utils/Encoding.cpp.o
+.PHONY : block_chain/utils/Encoding.cpp.o
+
+block_chain/utils/Encoding.i: block_chain/utils/Encoding.cpp.i
+
+.PHONY : block_chain/utils/Encoding.i
+
+# target to preprocess a source file
+block_chain/utils/Encoding.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/utils/Encoding.cpp.i
+.PHONY : block_chain/utils/Encoding.cpp.i
+
+block_chain/utils/Encoding.s: block_chain/utils/Encoding.cpp.s
+
+.PHONY : block_chain/utils/Encoding.s
+
+# target to generate assembly for a file
+block_chain/utils/Encoding.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/utils/Encoding.cpp.s
+.PHONY : block_chain/utils/Encoding.cpp.s
+
+block_chain/utils/RSA.o: block_chain/utils/RSA.cpp.o
+
+.PHONY : block_chain/utils/RSA.o
+
+# target to build an object file
+block_chain/utils/RSA.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/utils/RSA.cpp.o
+.PHONY : block_chain/utils/RSA.cpp.o
+
+block_chain/utils/RSA.i: block_chain/utils/RSA.cpp.i
+
+.PHONY : block_chain/utils/RSA.i
+
+# target to preprocess a source file
+block_chain/utils/RSA.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/utils/RSA.cpp.i
+.PHONY : block_chain/utils/RSA.cpp.i
+
+block_chain/utils/RSA.s: block_chain/utils/RSA.cpp.s
+
+.PHONY : block_chain/utils/RSA.s
+
+# target to generate assembly for a file
+block_chain/utils/RSA.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/utils/RSA.cpp.s
+.PHONY : block_chain/utils/RSA.cpp.s
+
+block_chain/utils/serialization/Element.o: block_chain/utils/serialization/Element.cpp.o
+
+.PHONY : block_chain/utils/serialization/Element.o
+
+# target to build an object file
+block_chain/utils/serialization/Element.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/utils/serialization/Element.cpp.o
+.PHONY : block_chain/utils/serialization/Element.cpp.o
+
+block_chain/utils/serialization/Element.i: block_chain/utils/serialization/Element.cpp.i
+
+.PHONY : block_chain/utils/serialization/Element.i
+
+# target to preprocess a source file
+block_chain/utils/serialization/Element.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/utils/serialization/Element.cpp.i
+.PHONY : block_chain/utils/serialization/Element.cpp.i
+
+block_chain/utils/serialization/Element.s: block_chain/utils/serialization/Element.cpp.s
+
+.PHONY : block_chain/utils/serialization/Element.s
+
+# target to generate assembly for a file
+block_chain/utils/serialization/Element.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/utils/serialization/Element.cpp.s
+.PHONY : block_chain/utils/serialization/Element.cpp.s
+
+block_chain/utils/serialization/ElementCreator.o: block_chain/utils/serialization/ElementCreator.cpp.o
+
+.PHONY : block_chain/utils/serialization/ElementCreator.o
+
+# target to build an object file
+block_chain/utils/serialization/ElementCreator.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/utils/serialization/ElementCreator.cpp.o
+.PHONY : block_chain/utils/serialization/ElementCreator.cpp.o
+
+block_chain/utils/serialization/ElementCreator.i: block_chain/utils/serialization/ElementCreator.cpp.i
+
+.PHONY : block_chain/utils/serialization/ElementCreator.i
+
+# target to preprocess a source file
+block_chain/utils/serialization/ElementCreator.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/utils/serialization/ElementCreator.cpp.i
+.PHONY : block_chain/utils/serialization/ElementCreator.cpp.i
+
+block_chain/utils/serialization/ElementCreator.s: block_chain/utils/serialization/ElementCreator.cpp.s
+
+.PHONY : block_chain/utils/serialization/ElementCreator.s
+
+# target to generate assembly for a file
+block_chain/utils/serialization/ElementCreator.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/utils/serialization/ElementCreator.cpp.s
+.PHONY : block_chain/utils/serialization/ElementCreator.cpp.s
+
+block_chain/utils/serialization/json/JsonCreator.o: block_chain/utils/serialization/json/JsonCreator.cpp.o
+
+.PHONY : block_chain/utils/serialization/json/JsonCreator.o
+
+# target to build an object file
+block_chain/utils/serialization/json/JsonCreator.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/utils/serialization/json/JsonCreator.cpp.o
+.PHONY : block_chain/utils/serialization/json/JsonCreator.cpp.o
+
+block_chain/utils/serialization/json/JsonCreator.i: block_chain/utils/serialization/json/JsonCreator.cpp.i
+
+.PHONY : block_chain/utils/serialization/json/JsonCreator.i
+
+# target to preprocess a source file
+block_chain/utils/serialization/json/JsonCreator.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/utils/serialization/json/JsonCreator.cpp.i
+.PHONY : block_chain/utils/serialization/json/JsonCreator.cpp.i
+
+block_chain/utils/serialization/json/JsonCreator.s: block_chain/utils/serialization/json/JsonCreator.cpp.s
+
+.PHONY : block_chain/utils/serialization/json/JsonCreator.s
+
+# target to generate assembly for a file
+block_chain/utils/serialization/json/JsonCreator.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/utils/serialization/json/JsonCreator.cpp.s
+.PHONY : block_chain/utils/serialization/json/JsonCreator.cpp.s
+
+block_chain/utils/serialization/json/JsonParser.o: block_chain/utils/serialization/json/JsonParser.cpp.o
+
+.PHONY : block_chain/utils/serialization/json/JsonParser.o
+
+# target to build an object file
+block_chain/utils/serialization/json/JsonParser.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/utils/serialization/json/JsonParser.cpp.o
+.PHONY : block_chain/utils/serialization/json/JsonParser.cpp.o
+
+block_chain/utils/serialization/json/JsonParser.i: block_chain/utils/serialization/json/JsonParser.cpp.i
+
+.PHONY : block_chain/utils/serialization/json/JsonParser.i
+
+# target to preprocess a source file
+block_chain/utils/serialization/json/JsonParser.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/utils/serialization/json/JsonParser.cpp.i
+.PHONY : block_chain/utils/serialization/json/JsonParser.cpp.i
+
+block_chain/utils/serialization/json/JsonParser.s: block_chain/utils/serialization/json/JsonParser.cpp.s
+
+.PHONY : block_chain/utils/serialization/json/JsonParser.s
+
+# target to generate assembly for a file
+block_chain/utils/serialization/json/JsonParser.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/utils/serialization/json/JsonParser.cpp.s
+.PHONY : block_chain/utils/serialization/json/JsonParser.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -501,6 +744,33 @@ transactions/StatusTransaction.cpp.s:
 	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/transactions/StatusTransaction.cpp.s
 .PHONY : transactions/StatusTransaction.cpp.s
 
+validator/CustomSerializer.o: validator/CustomSerializer.cpp.o
+
+.PHONY : validator/CustomSerializer.o
+
+# target to build an object file
+validator/CustomSerializer.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/validator/CustomSerializer.cpp.o
+.PHONY : validator/CustomSerializer.cpp.o
+
+validator/CustomSerializer.i: validator/CustomSerializer.cpp.i
+
+.PHONY : validator/CustomSerializer.i
+
+# target to preprocess a source file
+validator/CustomSerializer.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/validator/CustomSerializer.cpp.i
+.PHONY : validator/CustomSerializer.cpp.i
+
+validator/CustomSerializer.s: validator/CustomSerializer.cpp.s
+
+.PHONY : validator/CustomSerializer.s
+
+# target to generate assembly for a file
+validator/CustomSerializer.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/validator/CustomSerializer.cpp.s
+.PHONY : validator/CustomSerializer.cpp.s
+
 validator/CustomValidator.o: validator/CustomValidator.cpp.o
 
 .PHONY : validator/CustomValidator.o
@@ -540,6 +810,9 @@ help:
 	@echo "... block_chain/Listener.o"
 	@echo "... block_chain/Listener.i"
 	@echo "... block_chain/Listener.s"
+	@echo "... block_chain/Message.o"
+	@echo "... block_chain/Message.i"
+	@echo "... block_chain/Message.s"
 	@echo "... block_chain/Node.o"
 	@echo "... block_chain/Node.i"
 	@echo "... block_chain/Node.s"
@@ -555,6 +828,12 @@ help:
 	@echo "... block_chain/chain/block/Block.o"
 	@echo "... block_chain/chain/block/Block.i"
 	@echo "... block_chain/chain/block/Block.s"
+	@echo "... block_chain/chain/block/BlockFactory.o"
+	@echo "... block_chain/chain/block/BlockFactory.i"
+	@echo "... block_chain/chain/block/BlockFactory.s"
+	@echo "... block_chain/chain/block/Component.o"
+	@echo "... block_chain/chain/block/Component.i"
+	@echo "... block_chain/chain/block/Component.s"
 	@echo "... block_chain/chain/block/Hash.o"
 	@echo "... block_chain/chain/block/Hash.i"
 	@echo "... block_chain/chain/block/Hash.s"
@@ -570,6 +849,24 @@ help:
 	@echo "... block_chain/socket/SocketServer.o"
 	@echo "... block_chain/socket/SocketServer.i"
 	@echo "... block_chain/socket/SocketServer.s"
+	@echo "... block_chain/utils/Encoding.o"
+	@echo "... block_chain/utils/Encoding.i"
+	@echo "... block_chain/utils/Encoding.s"
+	@echo "... block_chain/utils/RSA.o"
+	@echo "... block_chain/utils/RSA.i"
+	@echo "... block_chain/utils/RSA.s"
+	@echo "... block_chain/utils/serialization/Element.o"
+	@echo "... block_chain/utils/serialization/Element.i"
+	@echo "... block_chain/utils/serialization/Element.s"
+	@echo "... block_chain/utils/serialization/ElementCreator.o"
+	@echo "... block_chain/utils/serialization/ElementCreator.i"
+	@echo "... block_chain/utils/serialization/ElementCreator.s"
+	@echo "... block_chain/utils/serialization/json/JsonCreator.o"
+	@echo "... block_chain/utils/serialization/json/JsonCreator.i"
+	@echo "... block_chain/utils/serialization/json/JsonCreator.s"
+	@echo "... block_chain/utils/serialization/json/JsonParser.o"
+	@echo "... block_chain/utils/serialization/json/JsonParser.i"
+	@echo "... block_chain/utils/serialization/json/JsonParser.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -579,6 +876,9 @@ help:
 	@echo "... transactions/StatusTransaction.o"
 	@echo "... transactions/StatusTransaction.i"
 	@echo "... transactions/StatusTransaction.s"
+	@echo "... validator/CustomSerializer.o"
+	@echo "... validator/CustomSerializer.i"
+	@echo "... validator/CustomSerializer.s"
 	@echo "... validator/CustomValidator.o"
 	@echo "... validator/CustomValidator.i"
 	@echo "... validator/CustomValidator.s"

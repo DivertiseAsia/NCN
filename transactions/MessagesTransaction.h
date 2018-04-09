@@ -15,6 +15,10 @@ public:
     explicit MessagesTransaction(std::string str);
     bool operator()() const final;
     virtual Element* toElement() final;
+    bool operator==(Transaction* t) const {
+        MessagesTransaction* s = dynamic_cast<MessagesTransaction*>(t);
+        return message == s->message;
+    }
 protected:
     virtual void fromElement(ElementObject*) final;
 private:

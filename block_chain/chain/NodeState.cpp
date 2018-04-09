@@ -5,7 +5,6 @@
 #include "NodeState.h"
 
 NodeState::NodeState(int s): size(s) {
-
 }
 
 Block* NodeState::create_block() const {
@@ -24,7 +23,7 @@ void NodeState::add(Block* block){
     top_fingerprint = block->fingerprint;
     //TODO : apply each transaction to the memory
     std::cout << "read files" << std::endl;
-    std::string id(block->parent_fingerprint.to_string());
+    std::string id(block->parent_fingerprint->to_string());
     std::ofstream block_file ("blocks/"+id+".blk");
     std::string line;
     if(block_file.is_open()){
@@ -43,6 +42,6 @@ void NodeState::read_blocks() {
         block_file.close();
         id = "TODO";
         block_file.open("blocks/"+id+".blk");//block.fingerprint
+        //top_fingerprint = block->fingerprint;
     }
-    top_fingerprint.set_hash(id);
 }

@@ -13,8 +13,8 @@
 #include "Listener.h"
 #include "socket/SocketServer.h"
 #include "socket/Peer.h"
-#include "../include/RSA.h"
-#include "../include/Message.h"
+#include "utils/RSA.h"
+#include "Message.h"
 #include <openssl/bio.h>
 #include <openssl/err.h>
 #include <openssl/pem.h>

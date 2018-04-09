@@ -7,6 +7,7 @@
 
 #include <string>
 #include "../block_chain/chain/block/transaction/Transaction.h"
+#include <iostream>
 
 class StatusTransaction: public Transaction {
 public:
@@ -14,6 +15,11 @@ public:
     explicit StatusTransaction(std::string str);
     bool operator()() const final;
     virtual Element* toElement() final;
+    bool operator==(Transaction* t) const {
+        StatusTransaction* s = dynamic_cast<StatusTransaction*>(t);
+        std::cout << status << " -> " << s->status << std::endl;
+        return status == s->status;
+    }
 protected:
     virtual void fromElement(ElementObject*) final;
 private:

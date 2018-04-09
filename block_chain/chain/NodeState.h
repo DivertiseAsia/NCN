@@ -22,7 +22,7 @@ public:
     void read_blocks();
 private:
     unsigned int size;
-    Hash top_fingerprint;
+    Hash* top_fingerprint;
     std::vector<Transaction*>  transactions;
 };
 #endif //BLOCK_CHAIN_CHAIN_H

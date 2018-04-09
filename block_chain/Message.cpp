@@ -2,23 +2,15 @@
 
 #include <iostream>
 
-std::string toHexa(std::string str){
-    static std::string hexadecimal = "0123456789ABCDEFG";
-    std::string hexa;
-    for(int i = 0; i < str.size(); i++){
-        hexa.append(1, hexadecimal[(str[i]&0xF0) >> 4]).append(1, hexadecimal[str[i]&0x0F]);
-    }
-    return hexa;
-}
-Message::Message(std::string p, std::string c, std::string k): plain_text(p), cipher(toHexa(c)), public_key(k), size(cipher.size())
+
+Message::Message(std::string p, std::string c, std::string k): plain_text(p), cipher(Encoding::toHexa(c)), public_key(k), size(cipher.size())
 {
 }
 
-bool Message::compareResults(std::string c){
-    std::string newCipher = toHexa(c);
-    std::cout << "Before: " << cipher << std::endl;
-    std::cout << "After: " << newCipher << std::endl;
-    return cipher == newCipher;
+bool Message::compareResults(std::string deciphered){
+    std::cout << "Plain: " << plain_text << std::endl;
+    std::cout << "Decip: " << deciphered << std::endl;
+    return plain_text == deciphered;
 }
 
 std::string Message::getCipher(){

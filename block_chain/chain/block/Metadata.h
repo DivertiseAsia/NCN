@@ -6,7 +6,10 @@
 #define BLOCK_CHAIN_METADATA_H
 
 class Metadata{
-
+public:
+    bool operator==(Metadata const& m) const{
+        return true;
+    }
     
 };
 #endif //BLOCK_CHAIN_METADATA_H
