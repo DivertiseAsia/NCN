@@ -393,6 +393,33 @@ block_chain/chain/block/Hash.cpp.s:
 	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/Hash.cpp.s
 .PHONY : block_chain/chain/block/Hash.cpp.s
 
+block_chain/chain/block/Metadata.o: block_chain/chain/block/Metadata.cpp.o
+
+.PHONY : block_chain/chain/block/Metadata.o
+
+# target to build an object file
+block_chain/chain/block/Metadata.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/Metadata.cpp.o
+.PHONY : block_chain/chain/block/Metadata.cpp.o
+
+block_chain/chain/block/Metadata.i: block_chain/chain/block/Metadata.cpp.i
+
+.PHONY : block_chain/chain/block/Metadata.i
+
+# target to preprocess a source file
+block_chain/chain/block/Metadata.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/Metadata.cpp.i
+.PHONY : block_chain/chain/block/Metadata.cpp.i
+
+block_chain/chain/block/Metadata.s: block_chain/chain/block/Metadata.cpp.s
+
+.PHONY : block_chain/chain/block/Metadata.s
+
+# target to generate assembly for a file
+block_chain/chain/block/Metadata.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/Metadata.cpp.s
+.PHONY : block_chain/chain/block/Metadata.cpp.s
+
 block_chain/chain/block/transaction/Transaction.o: block_chain/chain/block/transaction/Transaction.cpp.o
 
 .PHONY : block_chain/chain/block/transaction/Transaction.o
@@ -837,6 +864,9 @@ help:
 	@echo "... block_chain/chain/block/Hash.o"
 	@echo "... block_chain/chain/block/Hash.i"
 	@echo "... block_chain/chain/block/Hash.s"
+	@echo "... block_chain/chain/block/Metadata.o"
+	@echo "... block_chain/chain/block/Metadata.i"
+	@echo "... block_chain/chain/block/Metadata.s"
 	@echo "... block_chain/chain/block/transaction/Transaction.o"
 	@echo "... block_chain/chain/block/transaction/Transaction.i"
 	@echo "... block_chain/chain/block/transaction/Transaction.s"

@@ -15,13 +15,11 @@
 NF&&f{ print s"/"$0 }'| sed ':a;N;$!ba;s/\n/ /g'
  */
 
-#include "iostream"
-#include "block_chain/utils/RSA.h"
 int main() {
     Serializer* serial = new CustomSerializer();
     serial->set_serializer("json", new JsonCreator());
     serial->set_unserializer("json", new JsonParser());
-    Node client(new CustomValidator(), serial, 7080, 7081, 7082);
+    Node client(new CustomValidator(), serial, 7170, 7171, 7172);
     Transaction* t = new StatusTransaction("The Game");
     client.request_transaction(t);
     while(1);

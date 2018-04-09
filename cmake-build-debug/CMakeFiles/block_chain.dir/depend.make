@@ -80,6 +80,8 @@ CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o: ../block_chain/uti
 CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o: ../block_chain/utils/serialization/Element.hpp
 CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o: ../block_chain/utils/serialization/Parser.hpp
 
+CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o: ../block_chain/Message.h
+CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o: ../block_chain/Serializer.h
 CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o: ../block_chain/chain/block/Block.cpp
 CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o: ../block_chain/chain/block/Block.h
 CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o: ../block_chain/chain/block/Component.h
@@ -87,6 +89,7 @@ CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o: ../block_chain/c
 CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o: ../block_chain/chain/block/Metadata.h
 CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o: ../block_chain/chain/block/transaction/Transaction.h
 CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o: ../block_chain/utils/Encoding.h
+CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o: ../block_chain/utils/Factory.hpp
 CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o: ../block_chain/utils/serialization/Element.hpp
 CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o: ../block_chain/utils/serialization/Parser.hpp
 
@@ -119,9 +122,21 @@ CMakeFiles/block_chain.dir/block_chain/chain/block/Hash.cpp.o: ../block_chain/ut
 CMakeFiles/block_chain.dir/block_chain/chain/block/Hash.cpp.o: ../block_chain/utils/serialization/Element.hpp
 CMakeFiles/block_chain.dir/block_chain/chain/block/Hash.cpp.o: ../block_chain/utils/serialization/Parser.hpp
 
+CMakeFiles/block_chain.dir/block_chain/chain/block/Metadata.cpp.o: ../block_chain/chain/block/Metadata.cpp
+CMakeFiles/block_chain.dir/block_chain/chain/block/Metadata.cpp.o: ../block_chain/chain/block/Metadata.h
+CMakeFiles/block_chain.dir/block_chain/chain/block/Metadata.cpp.o: ../block_chain/utils/serialization/Element.hpp
+CMakeFiles/block_chain.dir/block_chain/chain/block/Metadata.cpp.o: ../block_chain/utils/serialization/Parser.hpp
+
+CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o: ../block_chain/Message.h
+CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o: ../block_chain/Serializer.h
+CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o: ../block_chain/chain/block/Block.h
 CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o: ../block_chain/chain/block/Component.h
+CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o: ../block_chain/chain/block/Hash.h
+CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o: ../block_chain/chain/block/Metadata.h
 CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o: ../block_chain/chain/block/transaction/Transaction.cpp
 CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o: ../block_chain/chain/block/transaction/Transaction.h
+CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o: ../block_chain/utils/Encoding.h
+CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o: ../block_chain/utils/Factory.hpp
 CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o: ../block_chain/utils/serialization/Element.hpp
 CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o: ../block_chain/utils/serialization/Parser.hpp
 
@@ -210,14 +225,18 @@ CMakeFiles/block_chain.dir/main.cpp.o: ../validator/CustomSerializer.h
 CMakeFiles/block_chain.dir/main.cpp.o: ../validator/CustomValidator.h
 
 CMakeFiles/block_chain.dir/transactions/MessagesTransaction.cpp.o: ../block_chain/chain/block/Component.h
+CMakeFiles/block_chain.dir/transactions/MessagesTransaction.cpp.o: ../block_chain/chain/block/Hash.h
 CMakeFiles/block_chain.dir/transactions/MessagesTransaction.cpp.o: ../block_chain/chain/block/transaction/Transaction.h
+CMakeFiles/block_chain.dir/transactions/MessagesTransaction.cpp.o: ../block_chain/utils/Encoding.h
 CMakeFiles/block_chain.dir/transactions/MessagesTransaction.cpp.o: ../block_chain/utils/serialization/Element.hpp
 CMakeFiles/block_chain.dir/transactions/MessagesTransaction.cpp.o: ../block_chain/utils/serialization/Parser.hpp
 CMakeFiles/block_chain.dir/transactions/MessagesTransaction.cpp.o: ../transactions/MessagesTransaction.cpp
 CMakeFiles/block_chain.dir/transactions/MessagesTransaction.cpp.o: ../transactions/MessagesTransaction.h
 
 CMakeFiles/block_chain.dir/transactions/StatusTransaction.cpp.o: ../block_chain/chain/block/Component.h
+CMakeFiles/block_chain.dir/transactions/StatusTransaction.cpp.o: ../block_chain/chain/block/Hash.h
 CMakeFiles/block_chain.dir/transactions/StatusTransaction.cpp.o: ../block_chain/chain/block/transaction/Transaction.h
+CMakeFiles/block_chain.dir/transactions/StatusTransaction.cpp.o: ../block_chain/utils/Encoding.h
 CMakeFiles/block_chain.dir/transactions/StatusTransaction.cpp.o: ../block_chain/utils/serialization/Element.hpp
 CMakeFiles/block_chain.dir/transactions/StatusTransaction.cpp.o: ../block_chain/utils/serialization/Parser.hpp
 CMakeFiles/block_chain.dir/transactions/StatusTransaction.cpp.o: ../transactions/StatusTransaction.cpp

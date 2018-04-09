@@ -97,3 +97,12 @@ ElementObject::~ElementObject(){
         delete it->second;
     }
 }
+
+ElementArray* ElementArray::add( Element* value){
+    this->values.push_back(value);
+    return this;
+}
+ElementObject* ElementObject::put(const char* key, Element* value){
+    this->values[new std::string(key)] = value;
+    return this;
+}

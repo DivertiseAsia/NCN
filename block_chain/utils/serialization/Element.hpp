@@ -47,6 +47,7 @@ class ElementArray: public Element
     public:
         std::vector<Element*> values;
         void read(std::string& text, const ContentReader* parser);
+        ElementArray* add(Element* value);
         ~ElementArray();
 };
 
@@ -61,6 +62,7 @@ class ElementObject: public Element
         void getItem(const char* key, ElementArray* value);
         void getItem(const char* key, std::string* value);
         void read(std::string& text, const ContentReader* parser);
+        ElementObject* put(const char* key, Element* value);
         ~ElementObject();
 };
 

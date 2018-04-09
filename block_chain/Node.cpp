@@ -12,8 +12,7 @@ void listen(bool(* callback)(Socket*, int, Serializer*, Node*), Node* client, in
     server.run(callback, serializer, client);
 }
 
-Node::Node(Validator* v, Serializer* s, int p, int p_t, int p_b): serializer(s), validator(v), server(p), transactions_listener(this, p_t, s), blocks_listener(this, p_b, s), running(run, &server, s, this) {
-
+Node::Node(Validator* v, Serializer* s, int p, int p_t, int p_b): block_chain(1), serializer(s), validator(v), server(p), transactions_listener(this, p_t, s), blocks_listener(this, p_b, s), running(run, &server, s, this) {
     OpenSSL_add_all_algorithms();
     ERR_load_BIO_strings();
     ERR_load_crypto_strings();
@@ -50,9 +49,10 @@ void Node::close(){
         it->sign_out(*peers.begin());
 }
 void Node::request_transaction(Transaction* transaction){
+    transaction->__hash__(serializer, "json");
     Message message(serializer->serialize(transaction, "json"), rsa.encrypt(serializer->serialize(transaction, "json")), rsa.getPublicKey());
     for(std::vector<Peer>::iterator it = peers.begin(); it != peers.end(); it++)
-        it->send(serializer->serialize(&message, "json"));
+        it->sendTransaction(serializer->serialize(&message, "json"));
 }
 
 bool Node::operator()(Transaction* transaction) {
@@ -62,7 +62,7 @@ bool Node::operator()(Transaction* transaction) {
         if(block != nullptr){
             Message message(serializer->serialize(block, "json"), rsa.encrypt(serializer->serialize(block, "json")), rsa.getPublicKey());
             for(std::vector<Peer>::iterator it = peers.begin(); it != peers.end(); it++)
-                it->send(serializer->serialize(&message, "json"));
+                it->sendBlock(serializer->serialize(&message, "json"));
         }
     }
     return valid;
@@ -76,8 +76,6 @@ bool Node::operator()(Block* block) {
 
 bool Node::operator()(Message* message) {
     bool valid = true;
-    std::cout << "Decrypted: ";
-    std::cout << " test"<< std::endl;
     return valid;
 }
 
@@ -94,7 +92,6 @@ bool Node::transactionsCallback(Socket* socket, int port, Serializer* serializer
         Transaction* plain_text(serializer->unserializeTransaction(message->plain_text, "json"));
         if(*deciphered == plain_text)
             (*node)(plain_text);
-
         delete deciphered;
         delete socket;
         auto end = std::chrono::high_resolution_clock::now();

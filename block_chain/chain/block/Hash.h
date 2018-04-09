@@ -7,18 +7,22 @@
 
 #include <string>
 #include <openssl/md5.h>
-#include "transaction/Transaction.h"
+#include "Component.h"
 #include "../../utils/Encoding.h"
 
 class Serializer;
 class Hash{
 public:
+    Hash();
+    Hash(Hash* hash1, Hash* hash2);
     Hash(Component* component, Serializer* serializer, const char* encoding);
     std::string to_string() const;
     void set_hash(std::string str);
     bool operator==(Hash const& h) const{
         return hash == h.hash;
     }
+    Element* toElement();
+    void fromElement(ElementObject* e);
 private:
     std::string hash;
 };

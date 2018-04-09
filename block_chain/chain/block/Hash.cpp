@@ -20,3 +20,24 @@ Hash::Hash(Component* component, Serializer* serializer, const char* encoding){
     const unsigned char* c = MD5((const unsigned char*) str.c_str(), str.size(), digest);
     hash = Encoding::toHexa(std::string((const char*)c));
 }
+
+Hash::Hash(Hash* hash1, Hash* hash2){
+    unsigned char digest[MD5_DIGEST_LENGTH];
+    std::string str = hash1->hash + hash2->hash;
+    const unsigned char* c = MD5((const unsigned char*) str.c_str(), str.size(), digest);
+    hash = Encoding::toHexa(std::string((const char*)c));
+}
+
+Hash::Hash(){
+}
+
+Element* Hash::toElement() {
+    ElementObject* e = ElementCreator::creator.object();
+    ElementCreator::creator.put(e, "hash", ElementCreator::creator.create(hash));
+    return e;
+}
+
+void Hash::fromElement(ElementObject* e) {
+    e->getItem("hash", &hash);
+}
+

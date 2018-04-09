@@ -8,7 +8,8 @@ NodeState::NodeState(int s): size(s) {
 }
 
 Block* NodeState::create_block() const {
-    return new Block(transactions);
+    std::cout<<"ENTER"<<std::endl;
+    return new Block(transactions, top_fingerprint);
 }
 
 Block* NodeState::add(Transaction* transaction){

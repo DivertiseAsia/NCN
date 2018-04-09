@@ -123,6 +123,8 @@ block/transaction/Transaction.h
 /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.cpp
 Block.h
 /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
+../../Serializer.h
+/home/default/CLionProjects/block_chain/block_chain/Serializer.h
 
 /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
 vector
@@ -165,20 +167,30 @@ string
 -
 openssl/md5.h
 -
-transaction/Transaction.h
-/home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
+Component.h
+/home/default/CLionProjects/block_chain/block_chain/chain/block/Component.h
 ../../utils/Encoding.h
 /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
 
+/home/default/CLionProjects/block_chain/block_chain/chain/block/Metadata.cpp
+Metadata.h
 /home/default/CLionProjects/block_chain/block_chain/chain/block/Metadata.h
+
+/home/default/CLionProjects/block_chain/block_chain/chain/block/Metadata.h
+../../utils/serialization/Element.hpp
+/home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
 
 /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.cpp
 Transaction.h
 /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
+../../../Serializer.h
+/home/default/CLionProjects/block_chain/block_chain/Serializer.h
 
 /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
 ../Component.h
 /home/default/CLionProjects/block_chain/block_chain/chain/block/Component.h
+../Hash.h
+/home/default/CLionProjects/block_chain/block_chain/chain/block/Hash.h
 
 /home/default/CLionProjects/block_chain/block_chain/socket/Peer.cpp
 Peer.h
@@ -403,10 +415,6 @@ cstdio
 -
 cstring
 -
-iostream
-/home/default/CLionProjects/block_chain/iostream
-block_chain/utils/RSA.h
-/home/default/CLionProjects/block_chain/block_chain/utils/RSA.h
 
 /home/default/CLionProjects/block_chain/transactions/MessagesTransaction.cpp
 MessagesTransaction.h

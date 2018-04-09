@@ -5,11 +5,15 @@
 #ifndef BLOCK_CHAIN_METADATA_H
 #define BLOCK_CHAIN_METADATA_H
 
+
+#include "../../utils/serialization/Element.hpp"
 class Metadata{
 public:
     bool operator==(Metadata const& m) const{
         return true;
     }
+    Element* toElement();
+    void fromElement(ElementObject* e);
     
 };
 #endif //BLOCK_CHAIN_METADATA_H

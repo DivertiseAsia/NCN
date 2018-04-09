@@ -12,12 +12,17 @@ ElementObject* Serializer::getElement(std::string transaction, const char* key) 
 }
 char* Serializer::serialize(Component* component, const char* key) const{
     Element* element = component->toElement();
+    return serialize(element, key);
+}
+
+char* Serializer::serialize(Element* element, const char* key) const{
     std::string parsed;
     creators.get(key)->parse(parsed, &element);
     char* v = (char*)malloc((int)parsed.size());
     strcpy(v, parsed.c_str());
     return v;
 }
+
 Transaction* Serializer::unserializeTransaction(std::string transaction, const char* key) const {
     Element* element = new Element();
     creators.get(key)->parse(transaction, &element);
@@ -29,7 +34,7 @@ Message* Serializer::unserializeMessage(std::string message, const char* key) co
     return m;
 }
 Block* Serializer::unserializeBlock(std::string block, const char* key) const {
-    Block* b = new Block();
+    Block* b = new Block(this, key);
     b->__init__(getElement(block, key));
     return b;
 }

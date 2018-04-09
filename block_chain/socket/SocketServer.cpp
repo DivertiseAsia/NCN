@@ -38,16 +38,16 @@ bool SocketServer::wait(std::function<bool(Socket*, int port, Serializer* serial
     sockaddr_in c_sin = { 0 };
     int sin_size = sizeof c_sin;
     Socket* socket = master->_accept(&c_sin, sin_size);
-    #ifdef _WIN32
+    //#ifdef _WIN32
     std::thread connection (func, socket, port, serial, node);
     connection.detach();
-    #else
+    /*#else
     if(!fork())
     {
         func(socket, port, serial, node);
         _exit(0);
     }
-    #endif // _WIN32
+    #endif // _WIN32*/
     return true;
 }
 

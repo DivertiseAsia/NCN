@@ -9,7 +9,7 @@ bool Validator::operator()(Transaction* transaction){
     return (*transaction)();
 }
 bool Validator::operator()(Block* block){
-    return true;
+    return block->checkFingerPrint();
 }
 
 Validator::~Validator(){
