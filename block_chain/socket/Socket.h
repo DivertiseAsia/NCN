@@ -42,13 +42,13 @@ public:
     void _listen();
     void _close();
     int _recv(char* buff, int len, int flags, int to);
-    void read(std::string& buffer);
-    void write(char* buffer);
+    int read(std::string& buffer);
+    int write(const char* buffer);
     Socket* _accept(sockaddr_in* csin, accept_size size);
     ~Socket();
+    SOCKET socket;
 
 protected:
-    SOCKET socket;
     fd_set fdset;
     struct timeval tv_timeout;
 };

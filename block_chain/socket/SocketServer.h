@@ -41,11 +41,12 @@ public:
     void run(Serializer* serializer, Node* node);
     ~SocketServer();
     Socket* master;
-
+    void close();
 protected:
     bool static defaultCallback(Socket* socket, int port, Serializer* serializer, Node* node);
     bool wait(std::function<bool(Socket*, int port, Serializer* serializer, Node* node)> func, Serializer* serializer, Node* node);
     int port;
+    std::vector<Socket*> peers;
 };
 
 #endif //BLOCK_CHAIN_SOCKETSERVER_H

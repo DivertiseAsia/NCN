@@ -63,7 +63,7 @@ Socket::Socket(std::string address , int port)
         std::cout << "Test port "<< connect(socket, (struct sockaddr *)&server , sizeof(server)) << std::endl;
     }
      */
-    while(connect(socket, (struct sockaddr *)&server , sizeof(server)) < 0);
+    connect(socket, (struct sockaddr *)&server , sizeof(server));
 }
 
 Socket::Socket(SOCKET s): socket(s)
@@ -107,33 +107,37 @@ Socket* Socket::_accept(sockaddr_in* c_sin, accept_size size){
     return new Socket(accept(socket, (sockaddr*)c_sin, &size));
 }
 
-void Socket::read(std::string& buffer){
-    FD_ZERO(&fdset);
-    tv_timeout.tv_sec = 0;
-    tv_timeout.tv_usec = 500;
-    FD_SET(socket, &fdset);
-    char buff[2];
-    do
-    {
-        if(recv(socket, buff, 1, 0) > 0)
-        {
-            buffer += buff[0];
-            select(socket+1, &fdset, nullptr, nullptr, &tv_timeout);
-        }
-    }
-    while (FD_ISSET(socket, &fdset));
-    FD_CLR(socket, &fdset);
-}
-
-void Socket::write(char* buffer){
-    send(socket, buffer, strlen(buffer), 0);
-    free(buffer);
-}
-
 void Socket::_close(){
     closesocket(socket);
 }
 
+int Socket::read(std::string& buffer){
+    FD_ZERO(&fdset);
+    tv_timeout.tv_sec = 0;
+    tv_timeout.tv_usec = 500;
+    FD_SET(socket, &fdset);
+    buffer = "";
+    char buff[2];
+    do
+    {
+        //if(
+            if(recv(socket, buff, 1, 0) > 0)
+            {
+                buffer += buff[0];select(socket + 1, &fdset, nullptr, nullptr, &tv_timeout) ;
+            }
+            else
+                return 0;
+    }
+    while (FD_ISSET(socket, &fdset));
+    FD_CLR(socket, &fdset);
+    return buffer.size();
+}
+
+int Socket::write(const char* buffer){
+    return (int)send(socket, buffer, strlen(buffer), 0);
+}
+
 Socket::~Socket(){
+    std::cout<<"Closed socket"<< std::endl;
     closesocket(socket);
 }

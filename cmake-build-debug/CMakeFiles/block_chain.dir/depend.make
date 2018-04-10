@@ -222,7 +222,6 @@ CMakeFiles/block_chain.dir/main.cpp.o: ../main.cpp
 CMakeFiles/block_chain.dir/main.cpp.o: ../transactions/MessagesTransaction.h
 CMakeFiles/block_chain.dir/main.cpp.o: ../transactions/StatusTransaction.h
 CMakeFiles/block_chain.dir/main.cpp.o: ../validator/CustomSerializer.h
-CMakeFiles/block_chain.dir/main.cpp.o: ../validator/CustomValidator.h
 
 CMakeFiles/block_chain.dir/transactions/MessagesTransaction.cpp.o: ../block_chain/chain/block/Component.h
 CMakeFiles/block_chain.dir/transactions/MessagesTransaction.cpp.o: ../block_chain/chain/block/Hash.h
@@ -257,16 +256,4 @@ CMakeFiles/block_chain.dir/validator/CustomSerializer.cpp.o: ../transactions/Mes
 CMakeFiles/block_chain.dir/validator/CustomSerializer.cpp.o: ../transactions/StatusTransaction.h
 CMakeFiles/block_chain.dir/validator/CustomSerializer.cpp.o: ../validator/CustomSerializer.cpp
 CMakeFiles/block_chain.dir/validator/CustomSerializer.cpp.o: ../validator/CustomSerializer.h
-
-CMakeFiles/block_chain.dir/validator/CustomValidator.cpp.o: ../block_chain/Validator.h
-CMakeFiles/block_chain.dir/validator/CustomValidator.cpp.o: ../block_chain/chain/block/Block.h
-CMakeFiles/block_chain.dir/validator/CustomValidator.cpp.o: ../block_chain/chain/block/Component.h
-CMakeFiles/block_chain.dir/validator/CustomValidator.cpp.o: ../block_chain/chain/block/Hash.h
-CMakeFiles/block_chain.dir/validator/CustomValidator.cpp.o: ../block_chain/chain/block/Metadata.h
-CMakeFiles/block_chain.dir/validator/CustomValidator.cpp.o: ../block_chain/chain/block/transaction/Transaction.h
-CMakeFiles/block_chain.dir/validator/CustomValidator.cpp.o: ../block_chain/utils/Encoding.h
-CMakeFiles/block_chain.dir/validator/CustomValidator.cpp.o: ../block_chain/utils/serialization/Element.hpp
-CMakeFiles/block_chain.dir/validator/CustomValidator.cpp.o: ../block_chain/utils/serialization/Parser.hpp
-CMakeFiles/block_chain.dir/validator/CustomValidator.cpp.o: ../validator/CustomValidator.cpp
-CMakeFiles/block_chain.dir/validator/CustomValidator.cpp.o: ../validator/CustomValidator.h
 

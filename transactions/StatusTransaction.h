@@ -17,9 +17,9 @@ public:
     virtual Element* toElement() final;
     bool operator==(Transaction* t) const {
         StatusTransaction* s = dynamic_cast<StatusTransaction*>(t);
-        std::cout << status << " -> " << s->status << std::endl;
         return status == s->status;
     }
+    std::string to_string() const final;
 protected:
     virtual void fromElement(ElementObject*) final;
 private:

@@ -2,8 +2,14 @@
 
 #include <iostream>
 
+const int Message::ASK_PEERS = 0;
+const int Message::ANSWER_PEERS = 1;
+const int Message::SIGN_IN = 2;
+const int Message::SIGN_OUT = 3;
+const int Message::TRANSACTION = 4;
+const int Message::BLOCK = 5;
 
-Message::Message(std::string p, std::string c, std::string k): plain_text(p), cipher(Encoding::toHexa(c)), public_key(k), size(cipher.size())
+Message::Message(std::string p, std::string c, std::string k, int t): plain_text(p), cipher(Encoding::toHexa(c)), public_key(k), size(cipher.size()), type(t)
 {
 }
 
@@ -34,7 +40,8 @@ Element* Message::toElement() {
     ElementCreator::creator.put(e, "public_key", ElementCreator::creator.create(public_key))
                           ->put(e, "cipher", ElementCreator::creator.create(cipher))
                           ->put(e, "size", ElementCreator::creator.create(size))
-                          ->put(e, "plain_text", ElementCreator::creator.create(plain_text));
+                          ->put(e, "plain_text", ElementCreator::creator.create(plain_text))
+                          ->put(e, "type", ElementCreator::creator.create(type));
     return e;
 }
 
@@ -43,4 +50,8 @@ void Message::fromElement(ElementObject* e) {
     e->getItem("cipher", &cipher);
     e->getItem("public_key", &public_key);
     e->getItem("size", &size);
+    e->getItem("type", &type);
+}
+std::string Message::to_string() const {
+
 }

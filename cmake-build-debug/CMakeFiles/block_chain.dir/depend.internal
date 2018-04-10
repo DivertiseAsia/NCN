@@ -223,7 +223,6 @@ CMakeFiles/block_chain.dir/main.cpp.o
  /home/default/CLionProjects/block_chain/transactions/MessagesTransaction.h
  /home/default/CLionProjects/block_chain/transactions/StatusTransaction.h
  /home/default/CLionProjects/block_chain/validator/CustomSerializer.h
- /home/default/CLionProjects/block_chain/validator/CustomValidator.h
 CMakeFiles/block_chain.dir/transactions/MessagesTransaction.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Component.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Hash.h
@@ -258,15 +257,3 @@ CMakeFiles/block_chain.dir/validator/CustomSerializer.cpp.o
  /home/default/CLionProjects/block_chain/transactions/StatusTransaction.h
  /home/default/CLionProjects/block_chain/validator/CustomSerializer.cpp
  /home/default/CLionProjects/block_chain/validator/CustomSerializer.h
-CMakeFiles/block_chain.dir/validator/CustomValidator.cpp.o
- /home/default/CLionProjects/block_chain/block_chain/Validator.h
- /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
- /home/default/CLionProjects/block_chain/block_chain/chain/block/Component.h
- /home/default/CLionProjects/block_chain/block_chain/chain/block/Hash.h
- /home/default/CLionProjects/block_chain/block_chain/chain/block/Metadata.h
- /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
- /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
- /home/default/CLionProjects/block_chain/validator/CustomValidator.cpp
- /home/default/CLionProjects/block_chain/validator/CustomValidator.h

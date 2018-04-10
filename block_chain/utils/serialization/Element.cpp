@@ -57,20 +57,20 @@ void ElementObject::getItem(const char* key, double* value) {
         }
     }
 }
-void ElementObject::getItem(const char* key, ElementObject* value) {
+void ElementObject::getItem(const char* key, ElementObject** value) {
     for(std::map<std::string*, Element*>::const_iterator it = values.begin(); it != values.end(); it++)
     {
         if(!std::strcmp(it->first->c_str(), key)){
-            value = dynamic_cast<ElementObject*>(it->second);
+            *value = dynamic_cast<ElementObject*>(it->second);
             return;
         }
     }
 }
-void ElementObject::getItem(const char* key, ElementArray* value) {
+void ElementObject::getItem(const char* key, ElementArray** value) {
     for(std::map<std::string*, Element*>::const_iterator it = values.begin(); it != values.end(); it++)
     {
         if(!std::strcmp(it->first->c_str(), key)){
-            value = dynamic_cast<ElementArray*>(it->second);
+            *value = dynamic_cast<ElementArray*>(it->second);
             return;
         }
     }

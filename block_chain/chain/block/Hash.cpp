@@ -16,7 +16,7 @@ void Hash::set_hash(std::string str) {
 
 Hash::Hash(Component* component, Serializer* serializer, const char* encoding){
     unsigned char digest[MD5_DIGEST_LENGTH];
-    std::string str = serializer->serialize(component, encoding);
+    std::string str = component->to_string();
     const unsigned char* c = MD5((const unsigned char*) str.c_str(), str.size(), digest);
     hash = Encoding::toHexa(std::string((const char*)c));
 }

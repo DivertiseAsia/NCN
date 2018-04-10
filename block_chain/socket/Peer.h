@@ -13,15 +13,18 @@
 class Peer {
     friend class Node;
 public:
-    Peer(Serializer* s, std::string str, int c, int t, int b);
+    Peer(Serializer* s, std::string str, int c);
     void sign_out(Peer p) const;
-    void sendTransaction(char* text);
-    void sendBlock(char* text);
+    int send(const char* text) const;
+    std::string to_string() const;
+    bool operator==(Peer const& p) const{
+        return to_string() == p.to_string();
+    }
 private:
     Serializer* serializer;
-    Socket* transaction_socket;
-    Socket* block_socket;
     Socket* socket;
+    std::string _ip;
+    int _port;
 };
 
 

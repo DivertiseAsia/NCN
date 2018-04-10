@@ -41,6 +41,8 @@ Node.h
 /home/default/CLionProjects/block_chain/block_chain/Node.h
 
 /home/default/CLionProjects/block_chain/block_chain/Node.h
+algorithm
+-
 openssl/rsa.h
 -
 openssl/pem.h
@@ -137,6 +139,8 @@ transaction/Transaction.h
 /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
 Component.h
 /home/default/CLionProjects/block_chain/block_chain/chain/block/Component.h
+iostream
+-
 
 /home/default/CLionProjects/block_chain/block_chain/chain/block/BlockFactory.cpp
 BlockFactory.h
@@ -403,8 +407,6 @@ block_chain/Node.h
 /home/default/CLionProjects/block_chain/block_chain/Node.h
 transactions/StatusTransaction.h
 /home/default/CLionProjects/block_chain/transactions/StatusTransaction.h
-validator/CustomValidator.h
-/home/default/CLionProjects/block_chain/validator/CustomValidator.h
 validator/CustomSerializer.h
 /home/default/CLionProjects/block_chain/validator/CustomSerializer.h
 block_chain/utils/serialization/json/JsonCreator.hpp
@@ -414,6 +416,8 @@ block_chain/utils/serialization/json/JsonParser.hpp
 cstdio
 -
 cstring
+-
+unistd.h
 -
 
 /home/default/CLionProjects/block_chain/transactions/MessagesTransaction.cpp
@@ -461,12 +465,4 @@ iostream
 /home/default/CLionProjects/block_chain/transactions/MessagesTransaction.h
 ../transactions/StatusTransaction.h
 /home/default/CLionProjects/block_chain/transactions/StatusTransaction.h
-
-/home/default/CLionProjects/block_chain/validator/CustomValidator.cpp
-CustomValidator.h
-/home/default/CLionProjects/block_chain/validator/CustomValidator.h
-
-/home/default/CLionProjects/block_chain/validator/CustomValidator.h
-../block_chain/Validator.h
-/home/default/CLionProjects/block_chain/block_chain/Validator.h
 

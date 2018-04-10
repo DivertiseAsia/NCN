@@ -19,7 +19,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/block_chain.dir/block_chain/utils/serialization/ElementCreator.cpp.o"
   "CMakeFiles/block_chain.dir/block_chain/utils/serialization/json/JsonCreator.cpp.o"
   "CMakeFiles/block_chain.dir/block_chain/utils/serialization/json/JsonParser.cpp.o"
-  "CMakeFiles/block_chain.dir/validator/CustomValidator.cpp.o"
   "CMakeFiles/block_chain.dir/transactions/StatusTransaction.cpp.o"
   "CMakeFiles/block_chain.dir/transactions/MessagesTransaction.cpp.o"
   "CMakeFiles/block_chain.dir/validator/CustomSerializer.cpp.o"

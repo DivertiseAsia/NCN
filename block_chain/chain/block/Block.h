@@ -10,7 +10,7 @@
 #include "Metadata.h"
 #include "transaction/Transaction.h"
 #include "Component.h"
-
+#include <iostream>
 class Serializer;
 class Block: public Component{
     friend class NodeState;
@@ -20,10 +20,11 @@ public:
     virtual Element* toElement();
     virtual ~Block();
     bool operator==(Block* block) const{
-        return data == block->data && fingerprint == block->fingerprint && parent_fingerprint == block->parent_fingerprint;
+        return data == block->data && *fingerprint == *block->fingerprint && *parent_fingerprint == *block->parent_fingerprint;
     }
     Hash* compute_fingerprint() const;
     bool checkFingerPrint() const;
+    virtual std::string to_string() const;
 protected:
     virtual void fromElement(ElementObject* e) override;
 private:

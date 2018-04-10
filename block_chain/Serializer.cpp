@@ -18,15 +18,16 @@ char* Serializer::serialize(Component* component, const char* key) const{
 char* Serializer::serialize(Element* element, const char* key) const{
     std::string parsed;
     creators.get(key)->parse(parsed, &element);
-    char* v = (char*)malloc((int)parsed.size());
+    char* v = (char*)malloc((int)parsed.size() + 1);
     strcpy(v, parsed.c_str());
+    v[parsed.size()] = 0;
     return v;
 }
 
 Transaction* Serializer::unserializeTransaction(std::string transaction, const char* key) const {
     Element* element = new Element();
     creators.get(key)->parse(transaction, &element);
-    return nullptr;//TODO: new Transaction(element);
+    return nullptr;
 }
 Message* Serializer::unserializeMessage(std::string message, const char* key) const {
     Message* m = new Message();

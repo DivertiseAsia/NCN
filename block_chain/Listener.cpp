@@ -10,9 +10,15 @@ Listener::Listener(Node* c, int p, Serializer* s): client(c), port(p), serialize
 }
 
 Listener::~Listener(){
+    thread->detach();
     delete thread;
 }
 
 void Listener::start(bool(* callback)(Socket*, int, Serializer*, Node*), void (*func)(bool(*)(Socket*, int, Serializer*, Node*), Node*, int, Serializer*)) {
     thread = new std::thread(func, callback, client, port, serializer);
+}
+void Listener::close(){
+    std::cout << "LISTENER DESTRUCTION" << std::endl;
+    thread->detach();
+    delete thread;
 }

@@ -43,19 +43,22 @@ Element* Block::toElement() {
 }
 
 void Block::fromElement(ElementObject* e) {
-    ElementObject* o = ElementCreator::creator.object();
+    ElementObject* o = nullptr;
     fingerprint = new Hash();
+    e->getItem("fingerprint", &o);
     fingerprint->fromElement(o);
-    e->getItem("parent_fingerprint", o);
     parent_fingerprint = new Hash();
+    e->getItem("parent_fingerprint", &o);
     parent_fingerprint->fromElement(o);
-    e->getItem("data", o);
+    e->getItem("data", &o);
     data.fromElement(o);
-    ElementArray* a = ElementCreator::creator.array();
-    e->getItem("transactions", a);
-    for(std::vector<Element*>::iterator it = a->values.begin(); it != a->values.end(); it++)
-        transactions.push_back(serializer->unserializeTransaction(serializer->serialize(*it, encoding), encoding));
-    //delete o;
-    //delete a;
+    ElementArray* a = nullptr;
+    e->getItem("transactions", &a);
+    for (auto &value : a->values)
+        transactions.push_back(serializer->unserializeTransaction(serializer->serialize(value, encoding), encoding));
 }
 
+std::string Block::to_string() const {
+    std::string res = "BLOCK";
+    return res;
+}

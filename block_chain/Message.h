@@ -10,12 +10,20 @@ class Message: public Component
 {
     friend class Node;
     public:
+        static const int TRANSACTION;
+        static const int BLOCK;
+        static const int ASK_PEERS;
+        static const int ANSWER_PEERS;
+        static const int SIGN_IN;
+        static const int SIGN_OUT;
         Message();
-        Message(std::string p, std::string c, std::string k);
+        Message(std::string p, std::string c, std::string k, int);
         ~Message();
         Element* toElement();
         bool compareResults(std::string cipher);
         std::string getCipher();
+        int type;
+        std::string to_string() const;
     protected:
         void fromElement(ElementObject*);
 

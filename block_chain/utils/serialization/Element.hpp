@@ -58,8 +58,8 @@ class ElementObject: public Element
         void getItem(const char* key, int* value);
         void getItem(const char* key, bool* value);
         void getItem(const char* key, double* value);
-        void getItem(const char* key, ElementObject* value);
-        void getItem(const char* key, ElementArray* value);
+        void getItem(const char* key, ElementObject** value);
+        void getItem(const char* key, ElementArray** value);
         void getItem(const char* key, std::string* value);
         void read(std::string& text, const ContentReader* parser);
         ElementObject* put(const char* key, Element* value);

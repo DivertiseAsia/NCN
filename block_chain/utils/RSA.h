@@ -16,16 +16,14 @@ class RSA_Cryptography {
         void write(void(* fun)(BIO*, RSA*), std::string file);
         std::string getPublicKey();
         std::string getPrivateKey();
-        void generate();
-        bool backup();
+        void generate(const char*, const char*);
+        bool backup(const char*, const char*);
         virtual ~RSA_Cryptography();
-        RSA* rsa;
 
     protected:
 
     private:
-        char *pri_key;
-        char *pub_key;
+        RSA* rsa;
         int size;
 };
 

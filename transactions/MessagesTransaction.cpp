@@ -25,3 +25,8 @@ Element* MessagesTransaction::toElement(){
 void MessagesTransaction::fromElement(ElementObject* e) {
     e->getItem("message", &message);
 };
+
+std::string MessagesTransaction::to_string() const {
+    std::string res = "message:" + message;
+    return res;
+}

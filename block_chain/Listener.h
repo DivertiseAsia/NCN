@@ -14,6 +14,7 @@ class Listener {
 public:
     Listener(Node* client, int p, Serializer* serializer);
     ~Listener();
+    void close();
     void start(bool(* callback)(Socket*, int, Serializer* serializer, Node*), void (*func)(bool(* callback)(Socket*, int, Serializer* serializer, Node*), Node*, int p, Serializer*));
 private:
     Node* client;

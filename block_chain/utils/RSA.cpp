@@ -19,20 +19,48 @@ RSA_Cryptography::RSA_Cryptography(std::string key)
     size = 2048;
     BIO* bo = BIO_new_mem_buf( (void*) key.c_str(), key.size());
     BIO_set_flags( bo, BIO_FLAGS_BASE64_NO_NL ) ; // NO NL
-    rsa = PEM_read_bio_RSAPublicKey(bo, NULL, NULL, NULL);
+    rsa = PEM_read_bio_RSAPublicKey(bo, nullptr, nullptr, nullptr);
     BIO_free(bo);
 
 }
 
-bool RSA_Cryptography::backup(){
-    //TODO: read file
+std::string read(const char* filename){
+    std::ifstream peers_file;
+    std::string key;
+    peers_file.open(filename, std::ifstream::in);
+    if(peers_file.is_open()){
+        std::string line;
+        while (std::getline (peers_file, line)) {
+            key += line;
+        }
+        peers_file.close();
+    }
+    return key;
+}
+
+bool RSA_Cryptography::backup(const char* priv, const char* pub){
+    std::ifstream peers_file;
+    std::string public_key = read(pub);
+    std::string private_key = read(priv);
+    FILE* a = fopen(priv, "r");
+    FILE* b = fopen(pub, "r");
+    if(a && b)
+    {
+        rsa = PEM_read_RSAPrivateKey(a, nullptr, nullptr, nullptr);
+        rsa = PEM_read_RSAPublicKey(b, &rsa,  nullptr, nullptr);
+        fclose(a);
+        fclose(b);
+        return true;
+    }
+    fclose(a);
+    fclose(b);
     return false;
 }
-void RSA_Cryptography::generate() {
+void RSA_Cryptography::generate(const char* priv, const char* pub) {
     const int kExp = 3;
-    rsa = RSA_generate_key(size, kExp, 0, 0);
-    write(w_private, "private.pem");
-    write(w_public, "public.pem");
+    rsa = RSA_generate_key(size, kExp, nullptr, nullptr);
+    write(w_private, priv);
+    write(w_public, pub);
 }
 
 
@@ -79,7 +107,7 @@ std::string RSA_Cryptography::decrypt(std::string message, int size) {
 }
 
 std::string getKey(void (* fun)(BIO*, RSA*), RSA* rsa){
-    size_t len;
+    int len;
     char   *key;
     BIO *p = BIO_new(BIO_s_mem());
     fun(p, rsa);
@@ -93,7 +121,7 @@ std::string getKey(void (* fun)(BIO*, RSA*), RSA* rsa){
 }
 
 void private_action(BIO* bio, RSA* rsa) {
-    PEM_write_bio_RSAPrivateKey(bio, rsa, NULL, NULL, 0, NULL, NULL);
+    PEM_write_bio_RSAPrivateKey(bio, rsa, nullptr, nullptr, 0, nullptr, nullptr);
 }
 
 void public_action(BIO* bio, RSA* rsa) {

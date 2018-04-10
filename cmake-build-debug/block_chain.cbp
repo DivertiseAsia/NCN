@@ -258,12 +258,6 @@
 		<Unit filename="/home/default/CLionProjects/block_chain/validator/CustomSerializer.h">
 			<Option target="block_chain"/>
 		</Unit>
-		<Unit filename="/home/default/CLionProjects/block_chain/validator/CustomValidator.cpp">
-			<Option target="block_chain"/>
-		</Unit>
-		<Unit filename="/home/default/CLionProjects/block_chain/validator/CustomValidator.h">
-			<Option target="block_chain"/>
-		</Unit>
 		<Unit filename="/home/default/CLionProjects/block_chain/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

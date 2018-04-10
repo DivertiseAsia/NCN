@@ -798,33 +798,6 @@ validator/CustomSerializer.cpp.s:
 	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/validator/CustomSerializer.cpp.s
 .PHONY : validator/CustomSerializer.cpp.s
 
-validator/CustomValidator.o: validator/CustomValidator.cpp.o
-
-.PHONY : validator/CustomValidator.o
-
-# target to build an object file
-validator/CustomValidator.cpp.o:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/validator/CustomValidator.cpp.o
-.PHONY : validator/CustomValidator.cpp.o
-
-validator/CustomValidator.i: validator/CustomValidator.cpp.i
-
-.PHONY : validator/CustomValidator.i
-
-# target to preprocess a source file
-validator/CustomValidator.cpp.i:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/validator/CustomValidator.cpp.i
-.PHONY : validator/CustomValidator.cpp.i
-
-validator/CustomValidator.s: validator/CustomValidator.cpp.s
-
-.PHONY : validator/CustomValidator.s
-
-# target to generate assembly for a file
-validator/CustomValidator.cpp.s:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/validator/CustomValidator.cpp.s
-.PHONY : validator/CustomValidator.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -909,9 +882,6 @@ help:
 	@echo "... validator/CustomSerializer.o"
 	@echo "... validator/CustomSerializer.i"
 	@echo "... validator/CustomSerializer.s"
-	@echo "... validator/CustomValidator.o"
-	@echo "... validator/CustomValidator.i"
-	@echo "... validator/CustomValidator.s"
 .PHONY : help
 
 

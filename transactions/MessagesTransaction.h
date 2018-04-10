@@ -19,6 +19,7 @@ public:
         MessagesTransaction* s = dynamic_cast<MessagesTransaction*>(t);
         return message == s->message;
     }
+    std::string to_string() const final;
 protected:
     virtual void fromElement(ElementObject*) final;
 private:

@@ -29,7 +29,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/default/CLionProjects/block_chain/transactions/MessagesTransaction.cpp" "/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles/block_chain.dir/transactions/MessagesTransaction.cpp.o"
   "/home/default/CLionProjects/block_chain/transactions/StatusTransaction.cpp" "/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles/block_chain.dir/transactions/StatusTransaction.cpp.o"
   "/home/default/CLionProjects/block_chain/validator/CustomSerializer.cpp" "/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles/block_chain.dir/validator/CustomSerializer.cpp.o"
-  "/home/default/CLionProjects/block_chain/validator/CustomValidator.cpp" "/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles/block_chain.dir/validator/CustomValidator.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

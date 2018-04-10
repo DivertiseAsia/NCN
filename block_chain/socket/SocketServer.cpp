@@ -35,12 +35,26 @@ void SocketServer::run(Serializer* serializer, Node* node)
 
 bool SocketServer::wait(std::function<bool(Socket*, int port, Serializer* serializer, Node* node)> func, Serializer* serial, Node* node)
 {
+    //fd_set fdset;
+    //struct timeval tv_timeout;
+    //FD_ZERO(&fdset);
+    //tv_timeout;
+    //tv_timeout.tv_sec = 0;
+    //tv_timeout.tv_usec = 500;
+    //FD_SET(master->socket, &fdset);
     sockaddr_in c_sin = { 0 };
     int sin_size = sizeof c_sin;
-    Socket* socket = master->_accept(&c_sin, sin_size);
-    //#ifdef _WIN32
-    std::thread connection (func, socket, port, serial, node);
-    connection.detach();
+    //if(select(master->socket + 1, &fdset, nullptr, nullptr, &tv_timeout))
+    {
+        Socket* socket = master->_accept(&c_sin, sin_size);
+        std::cout << "---" << std::endl;
+        //#ifdef _WIN32
+        peers.push_back(socket);
+        std::thread* connection = new std::thread(func, socket, port, serial, node);
+    }
+
+    //FD_CLR(master->socket, &fdset);
+    //connection.detach();
     /*#else
     if(!fork())
     {
@@ -48,27 +62,32 @@ bool SocketServer::wait(std::function<bool(Socket*, int port, Serializer* serial
         _exit(0);
     }
     #endif // _WIN32*/
-    return true;
+    return socket != nullptr;
 }
 
 bool SocketServer::defaultCallback(Socket* socket, int port, Serializer* serializer, Node* node)
 {
     std::string buffer;
-    socket->read(buffer);
-    if(buffer.length()){
-        auto start = std::chrono::high_resolution_clock::now();
-        std::cout << "Request received on port " << port << " : " << buffer <<std::endl;
-        delete socket;
-        auto end = std::chrono::high_resolution_clock::now();
-        long long microseconds = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
-        std::cout << "Request performed in "<< (microseconds/1000.0) << " milliseconds" <<std::endl;
+    while(1) {
+        socket->read(buffer);
+        if (buffer.length()) {
+            auto start = std::chrono::high_resolution_clock::now();
+            std::cout << "Request received on port " << port << " : " << std::endl;
+            //delete socket;
+            auto end = std::chrono::high_resolution_clock::now();
+            long long microseconds = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
+            std::cout << "Request performed in " << (microseconds / 1000.0) << " milliseconds" << std::endl;
+        }
     }
-
     return true;
 }
-
+void SocketServer::close(){
+    master->_close();
+}
 SocketServer::~SocketServer()
 {
-    std::cout << " closed "<< std::endl;
-    delete master;
+    std::cout << " closed server "<< std::endl;
+    peers.clear();
+    if(master)
+        delete master;
 }

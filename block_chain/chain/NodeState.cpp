@@ -4,11 +4,10 @@
 
 #include "NodeState.h"
 
-NodeState::NodeState(int s): size(s) {
+NodeState::NodeState(int s): size(s), top_fingerprint(nullptr) {
 }
 
 Block* NodeState::create_block() const {
-    std::cout<<"ENTER"<<std::endl;
     return new Block(transactions, top_fingerprint);
 }
 

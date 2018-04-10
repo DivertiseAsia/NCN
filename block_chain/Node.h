@@ -5,6 +5,7 @@
 #ifndef BLOCK_CHAIN_CLIENT_H
 #define BLOCK_CHAIN_CLIENT_H
 
+#include <algorithm>
 #include <openssl/rsa.h>
 #include <openssl/pem.h>
 #include <iostream>
@@ -22,35 +23,31 @@
 
 class Node{
 public:
-    Node(Validator* v, Serializer* serializer, int p = 3000, int p_t = 3001, int p_b = 3002);
+    Node(Validator* v, Serializer* serializer, int p = 3000);
     ~Node();
     void close();
     void request_transaction(Transaction* transaction);
     bool operator()(Transaction* transaction);
     bool operator()(Block* block);
     bool operator()(Message* message);
+    bool static defaultCallback(Socket* socket, int port, Serializer* serializer, Node* node);
 private:
-    void connect();
-    void load();
-    void store();
+    void load(std::string list);
+    void store(std::string ip, int p);
     Serializer* serializer;
-    //Server to send data
     Validator* validator;
     SocketServer server;
     NodeState block_chain;
-    Listener transactions_listener;
-    Listener blocks_listener;
     std::vector<Peer> peers;
     std::thread running;
     RSA_Cryptography rsa;
-    bool static transactionsCallback(Socket* socket, int port, Serializer* serializer, Node* node);
-    bool static blocksCallback(Socket* socket, int port, Serializer* serializer, Node* node);
+    void parseAskPeers(Message* message);
+    void parseTransaction(Message* message);
+    void parseBlock(Message* message);
+    void parseAnswerPeers(Message* message);
+    void parseSignIn(Message* message);
+    void parseSignOut(Message* message);
+    typedef void(Node::* Message_action)(Message* message);
 };
 
 #endif //BLOCK_CHAIN_CLIENT_H
-
-/*
-Passing on valid blocks
-Passing on valid transactions
-‘Mining’ the blocks
- */
