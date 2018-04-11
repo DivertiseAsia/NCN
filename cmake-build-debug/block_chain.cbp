@@ -117,10 +117,22 @@
 		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain">
 			<Option target="block_chain"/>
 		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/Database.cpp">
+			<Option target="block_chain"/>
+		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/Database.h">
+			<Option target="block_chain"/>
+		</Unit>
 		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/NodeState.cpp">
 			<Option target="block_chain"/>
 		</Unit>
 		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/NodeState.h">
+			<Option target="block_chain"/>
+		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/Row.cpp">
+			<Option target="block_chain"/>
+		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/Row.h">
 			<Option target="block_chain"/>
 		</Unit>
 		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/block">
@@ -249,6 +261,12 @@
 		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/utils/serialization/json/package.hpp">
 			<Option target="block_chain"/>
 		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/database/Row.cpp">
+			<Option target="block_chain"/>
+		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/database/Row.h">
+			<Option target="block_chain"/>
+		</Unit>
 		<Unit filename="/home/default/CLionProjects/block_chain/main.cpp">
 			<Option target="block_chain"/>
 		</Unit>
@@ -256,6 +274,12 @@
 			<Option target="block_chain"/>
 		</Unit>
 		<Unit filename="/home/default/CLionProjects/block_chain/transactions/MessagesTransaction.h">
+			<Option target="block_chain"/>
+		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/transactions/MoneyTransaction.cpp">
+			<Option target="block_chain"/>
+		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/transactions/MoneyTransaction.h">
 			<Option target="block_chain"/>
 		</Unit>
 		<Unit filename="/home/default/CLionProjects/block_chain/transactions/StatusTransaction.cpp">

@@ -705,6 +705,102 @@ CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/MerkleTree.cpp.o.
 CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/MerkleTree.cpp.o.provides.build: CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/MerkleTree.cpp.o
 
 
+CMakeFiles/block_chain.dir/database/Row.cpp.o: CMakeFiles/block_chain.dir/flags.make
+CMakeFiles/block_chain.dir/database/Row.cpp.o: ../database/Row.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/block_chain.dir/database/Row.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/block_chain.dir/database/Row.cpp.o -c /home/default/CLionProjects/block_chain/database/Row.cpp
+
+CMakeFiles/block_chain.dir/database/Row.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/block_chain.dir/database/Row.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/default/CLionProjects/block_chain/database/Row.cpp > CMakeFiles/block_chain.dir/database/Row.cpp.i
+
+CMakeFiles/block_chain.dir/database/Row.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/block_chain.dir/database/Row.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/default/CLionProjects/block_chain/database/Row.cpp -o CMakeFiles/block_chain.dir/database/Row.cpp.s
+
+CMakeFiles/block_chain.dir/database/Row.cpp.o.requires:
+
+.PHONY : CMakeFiles/block_chain.dir/database/Row.cpp.o.requires
+
+CMakeFiles/block_chain.dir/database/Row.cpp.o.provides: CMakeFiles/block_chain.dir/database/Row.cpp.o.requires
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/database/Row.cpp.o.provides.build
+.PHONY : CMakeFiles/block_chain.dir/database/Row.cpp.o.provides
+
+CMakeFiles/block_chain.dir/database/Row.cpp.o.provides.build: CMakeFiles/block_chain.dir/database/Row.cpp.o
+
+
+CMakeFiles/block_chain.dir/block_chain/chain/Database.cpp.o: CMakeFiles/block_chain.dir/flags.make
+CMakeFiles/block_chain.dir/block_chain/chain/Database.cpp.o: ../block_chain/chain/Database.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/block_chain.dir/block_chain/chain/Database.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/block_chain.dir/block_chain/chain/Database.cpp.o -c /home/default/CLionProjects/block_chain/block_chain/chain/Database.cpp
+
+CMakeFiles/block_chain.dir/block_chain/chain/Database.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/block_chain.dir/block_chain/chain/Database.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/default/CLionProjects/block_chain/block_chain/chain/Database.cpp > CMakeFiles/block_chain.dir/block_chain/chain/Database.cpp.i
+
+CMakeFiles/block_chain.dir/block_chain/chain/Database.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/block_chain.dir/block_chain/chain/Database.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/default/CLionProjects/block_chain/block_chain/chain/Database.cpp -o CMakeFiles/block_chain.dir/block_chain/chain/Database.cpp.s
+
+CMakeFiles/block_chain.dir/block_chain/chain/Database.cpp.o.requires:
+
+.PHONY : CMakeFiles/block_chain.dir/block_chain/chain/Database.cpp.o.requires
+
+CMakeFiles/block_chain.dir/block_chain/chain/Database.cpp.o.provides: CMakeFiles/block_chain.dir/block_chain/chain/Database.cpp.o.requires
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/Database.cpp.o.provides.build
+.PHONY : CMakeFiles/block_chain.dir/block_chain/chain/Database.cpp.o.provides
+
+CMakeFiles/block_chain.dir/block_chain/chain/Database.cpp.o.provides.build: CMakeFiles/block_chain.dir/block_chain/chain/Database.cpp.o
+
+
+CMakeFiles/block_chain.dir/block_chain/chain/Row.cpp.o: CMakeFiles/block_chain.dir/flags.make
+CMakeFiles/block_chain.dir/block_chain/chain/Row.cpp.o: ../block_chain/chain/Row.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/block_chain.dir/block_chain/chain/Row.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/block_chain.dir/block_chain/chain/Row.cpp.o -c /home/default/CLionProjects/block_chain/block_chain/chain/Row.cpp
+
+CMakeFiles/block_chain.dir/block_chain/chain/Row.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/block_chain.dir/block_chain/chain/Row.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/default/CLionProjects/block_chain/block_chain/chain/Row.cpp > CMakeFiles/block_chain.dir/block_chain/chain/Row.cpp.i
+
+CMakeFiles/block_chain.dir/block_chain/chain/Row.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/block_chain.dir/block_chain/chain/Row.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/default/CLionProjects/block_chain/block_chain/chain/Row.cpp -o CMakeFiles/block_chain.dir/block_chain/chain/Row.cpp.s
+
+CMakeFiles/block_chain.dir/block_chain/chain/Row.cpp.o.requires:
+
+.PHONY : CMakeFiles/block_chain.dir/block_chain/chain/Row.cpp.o.requires
+
+CMakeFiles/block_chain.dir/block_chain/chain/Row.cpp.o.provides: CMakeFiles/block_chain.dir/block_chain/chain/Row.cpp.o.requires
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/Row.cpp.o.provides.build
+.PHONY : CMakeFiles/block_chain.dir/block_chain/chain/Row.cpp.o.provides
+
+CMakeFiles/block_chain.dir/block_chain/chain/Row.cpp.o.provides.build: CMakeFiles/block_chain.dir/block_chain/chain/Row.cpp.o
+
+
+CMakeFiles/block_chain.dir/transactions/MoneyTransaction.cpp.o: CMakeFiles/block_chain.dir/flags.make
+CMakeFiles/block_chain.dir/transactions/MoneyTransaction.cpp.o: ../transactions/MoneyTransaction.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/block_chain.dir/transactions/MoneyTransaction.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/block_chain.dir/transactions/MoneyTransaction.cpp.o -c /home/default/CLionProjects/block_chain/transactions/MoneyTransaction.cpp
+
+CMakeFiles/block_chain.dir/transactions/MoneyTransaction.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/block_chain.dir/transactions/MoneyTransaction.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/default/CLionProjects/block_chain/transactions/MoneyTransaction.cpp > CMakeFiles/block_chain.dir/transactions/MoneyTransaction.cpp.i
+
+CMakeFiles/block_chain.dir/transactions/MoneyTransaction.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/block_chain.dir/transactions/MoneyTransaction.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/default/CLionProjects/block_chain/transactions/MoneyTransaction.cpp -o CMakeFiles/block_chain.dir/transactions/MoneyTransaction.cpp.s
+
+CMakeFiles/block_chain.dir/transactions/MoneyTransaction.cpp.o.requires:
+
+.PHONY : CMakeFiles/block_chain.dir/transactions/MoneyTransaction.cpp.o.requires
+
+CMakeFiles/block_chain.dir/transactions/MoneyTransaction.cpp.o.provides: CMakeFiles/block_chain.dir/transactions/MoneyTransaction.cpp.o.requires
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/transactions/MoneyTransaction.cpp.o.provides.build
+.PHONY : CMakeFiles/block_chain.dir/transactions/MoneyTransaction.cpp.o.provides
+
+CMakeFiles/block_chain.dir/transactions/MoneyTransaction.cpp.o.provides.build: CMakeFiles/block_chain.dir/transactions/MoneyTransaction.cpp.o
+
+
 # Object files for target block_chain
 block_chain_OBJECTS = \
 "CMakeFiles/block_chain.dir/main.cpp.o" \
@@ -733,7 +829,11 @@ block_chain_OBJECTS = \
 "CMakeFiles/block_chain.dir/block_chain/utils/Encoding.cpp.o" \
 "CMakeFiles/block_chain.dir/block_chain/chain/block/Metadata.cpp.o" \
 "CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/TransactionContainer.cpp.o" \
-"CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/MerkleTree.cpp.o"
+"CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/MerkleTree.cpp.o" \
+"CMakeFiles/block_chain.dir/database/Row.cpp.o" \
+"CMakeFiles/block_chain.dir/block_chain/chain/Database.cpp.o" \
+"CMakeFiles/block_chain.dir/block_chain/chain/Row.cpp.o" \
+"CMakeFiles/block_chain.dir/transactions/MoneyTransaction.cpp.o"
 
 # External object files for target block_chain
 block_chain_EXTERNAL_OBJECTS =
@@ -765,11 +865,15 @@ block_chain: CMakeFiles/block_chain.dir/block_chain/utils/Encoding.cpp.o
 block_chain: CMakeFiles/block_chain.dir/block_chain/chain/block/Metadata.cpp.o
 block_chain: CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/TransactionContainer.cpp.o
 block_chain: CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/MerkleTree.cpp.o
+block_chain: CMakeFiles/block_chain.dir/database/Row.cpp.o
+block_chain: CMakeFiles/block_chain.dir/block_chain/chain/Database.cpp.o
+block_chain: CMakeFiles/block_chain.dir/block_chain/chain/Row.cpp.o
+block_chain: CMakeFiles/block_chain.dir/transactions/MoneyTransaction.cpp.o
 block_chain: CMakeFiles/block_chain.dir/build.make
 block_chain: /usr/lib/x86_64-linux-gnu/libssl.so
 block_chain: /usr/lib/x86_64-linux-gnu/libcrypto.so
 block_chain: CMakeFiles/block_chain.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Linking CXX executable block_chain"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Linking CXX executable block_chain"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/block_chain.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -804,6 +908,10 @@ CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/util
 CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/chain/block/Metadata.cpp.o.requires
 CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/TransactionContainer.cpp.o.requires
 CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/MerkleTree.cpp.o.requires
+CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/database/Row.cpp.o.requires
+CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/chain/Database.cpp.o.requires
+CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/chain/Row.cpp.o.requires
+CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/transactions/MoneyTransaction.cpp.o.requires
 
 .PHONY : CMakeFiles/block_chain.dir/requires
 

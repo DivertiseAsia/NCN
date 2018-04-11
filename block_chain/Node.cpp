@@ -84,7 +84,8 @@ void Node::request_transaction(Transaction* transaction){
 }
 
 bool Node::operator()(Transaction* transaction, Message* message) {
-    bool valid = *message->tree->value == *transaction->__hash__(serializer, "json");
+
+    bool valid = (*message->tree->value == *transaction->__hash__(serializer, "json") && block_chain.check_transaction(transaction, message->public_key));
     if(valid) {
         Block *block = block_chain.add(message->cipher, Encoding::toHexa(message->public_key));
         //TODO: generate proof of something

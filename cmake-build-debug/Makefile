@@ -258,6 +258,33 @@ block_chain/Validator.cpp.s:
 	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/Validator.cpp.s
 .PHONY : block_chain/Validator.cpp.s
 
+block_chain/chain/Database.o: block_chain/chain/Database.cpp.o
+
+.PHONY : block_chain/chain/Database.o
+
+# target to build an object file
+block_chain/chain/Database.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/Database.cpp.o
+.PHONY : block_chain/chain/Database.cpp.o
+
+block_chain/chain/Database.i: block_chain/chain/Database.cpp.i
+
+.PHONY : block_chain/chain/Database.i
+
+# target to preprocess a source file
+block_chain/chain/Database.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/Database.cpp.i
+.PHONY : block_chain/chain/Database.cpp.i
+
+block_chain/chain/Database.s: block_chain/chain/Database.cpp.s
+
+.PHONY : block_chain/chain/Database.s
+
+# target to generate assembly for a file
+block_chain/chain/Database.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/Database.cpp.s
+.PHONY : block_chain/chain/Database.cpp.s
+
 block_chain/chain/NodeState.o: block_chain/chain/NodeState.cpp.o
 
 .PHONY : block_chain/chain/NodeState.o
@@ -284,6 +311,33 @@ block_chain/chain/NodeState.s: block_chain/chain/NodeState.cpp.s
 block_chain/chain/NodeState.cpp.s:
 	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.s
 .PHONY : block_chain/chain/NodeState.cpp.s
+
+block_chain/chain/Row.o: block_chain/chain/Row.cpp.o
+
+.PHONY : block_chain/chain/Row.o
+
+# target to build an object file
+block_chain/chain/Row.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/Row.cpp.o
+.PHONY : block_chain/chain/Row.cpp.o
+
+block_chain/chain/Row.i: block_chain/chain/Row.cpp.i
+
+.PHONY : block_chain/chain/Row.i
+
+# target to preprocess a source file
+block_chain/chain/Row.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/Row.cpp.i
+.PHONY : block_chain/chain/Row.cpp.i
+
+block_chain/chain/Row.s: block_chain/chain/Row.cpp.s
+
+.PHONY : block_chain/chain/Row.s
+
+# target to generate assembly for a file
+block_chain/chain/Row.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/Row.cpp.s
+.PHONY : block_chain/chain/Row.cpp.s
 
 block_chain/chain/block/Block.o: block_chain/chain/block/Block.cpp.o
 
@@ -744,6 +798,33 @@ block_chain/utils/serialization/json/JsonParser.cpp.s:
 	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/utils/serialization/json/JsonParser.cpp.s
 .PHONY : block_chain/utils/serialization/json/JsonParser.cpp.s
 
+database/Row.o: database/Row.cpp.o
+
+.PHONY : database/Row.o
+
+# target to build an object file
+database/Row.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/database/Row.cpp.o
+.PHONY : database/Row.cpp.o
+
+database/Row.i: database/Row.cpp.i
+
+.PHONY : database/Row.i
+
+# target to preprocess a source file
+database/Row.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/database/Row.cpp.i
+.PHONY : database/Row.cpp.i
+
+database/Row.s: database/Row.cpp.s
+
+.PHONY : database/Row.s
+
+# target to generate assembly for a file
+database/Row.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/database/Row.cpp.s
+.PHONY : database/Row.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -797,6 +878,33 @@ transactions/MessagesTransaction.s: transactions/MessagesTransaction.cpp.s
 transactions/MessagesTransaction.cpp.s:
 	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/transactions/MessagesTransaction.cpp.s
 .PHONY : transactions/MessagesTransaction.cpp.s
+
+transactions/MoneyTransaction.o: transactions/MoneyTransaction.cpp.o
+
+.PHONY : transactions/MoneyTransaction.o
+
+# target to build an object file
+transactions/MoneyTransaction.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/transactions/MoneyTransaction.cpp.o
+.PHONY : transactions/MoneyTransaction.cpp.o
+
+transactions/MoneyTransaction.i: transactions/MoneyTransaction.cpp.i
+
+.PHONY : transactions/MoneyTransaction.i
+
+# target to preprocess a source file
+transactions/MoneyTransaction.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/transactions/MoneyTransaction.cpp.i
+.PHONY : transactions/MoneyTransaction.cpp.i
+
+transactions/MoneyTransaction.s: transactions/MoneyTransaction.cpp.s
+
+.PHONY : transactions/MoneyTransaction.s
+
+# target to generate assembly for a file
+transactions/MoneyTransaction.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/transactions/MoneyTransaction.cpp.s
+.PHONY : transactions/MoneyTransaction.cpp.s
 
 transactions/StatusTransaction.o: transactions/StatusTransaction.cpp.o
 
@@ -876,9 +984,15 @@ help:
 	@echo "... block_chain/Validator.o"
 	@echo "... block_chain/Validator.i"
 	@echo "... block_chain/Validator.s"
+	@echo "... block_chain/chain/Database.o"
+	@echo "... block_chain/chain/Database.i"
+	@echo "... block_chain/chain/Database.s"
 	@echo "... block_chain/chain/NodeState.o"
 	@echo "... block_chain/chain/NodeState.i"
 	@echo "... block_chain/chain/NodeState.s"
+	@echo "... block_chain/chain/Row.o"
+	@echo "... block_chain/chain/Row.i"
+	@echo "... block_chain/chain/Row.s"
 	@echo "... block_chain/chain/block/Block.o"
 	@echo "... block_chain/chain/block/Block.i"
 	@echo "... block_chain/chain/block/Block.s"
@@ -930,12 +1044,18 @@ help:
 	@echo "... block_chain/utils/serialization/json/JsonParser.o"
 	@echo "... block_chain/utils/serialization/json/JsonParser.i"
 	@echo "... block_chain/utils/serialization/json/JsonParser.s"
+	@echo "... database/Row.o"
+	@echo "... database/Row.i"
+	@echo "... database/Row.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
 	@echo "... transactions/MessagesTransaction.o"
 	@echo "... transactions/MessagesTransaction.i"
 	@echo "... transactions/MessagesTransaction.s"
+	@echo "... transactions/MoneyTransaction.o"
+	@echo "... transactions/MoneyTransaction.i"
+	@echo "... transactions/MoneyTransaction.s"
 	@echo "... transactions/StatusTransaction.o"
 	@echo "... transactions/StatusTransaction.i"
 	@echo "... transactions/StatusTransaction.s"

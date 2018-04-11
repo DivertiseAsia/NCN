@@ -8,6 +8,8 @@
 #include <string>
 #include "../block_chain/chain/block/transaction/Transaction.h"
 #include <iostream>
+#include "../database/Row.h"
+#include "../block_chain/chain/Row.h"
 
 class StatusTransaction: public Transaction {
 public:
@@ -20,7 +22,10 @@ public:
         return status == s->status;
     }
     std::string to_string() const;
-    void apply() override;
+    std::vector<std::string> apply(Row* row) override;
+    virtual Row* createRow() const;
+    virtual void apply_reverse(Row* row);
+    virtual bool validate(Row *row) const override;
 protected:
     virtual void fromElement(ElementObject*, const Serializer*, const char* encoding) override;
 private:

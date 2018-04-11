@@ -31,6 +31,20 @@ std::string MessagesTransaction::to_string() const {
     return res;
 }
 
-void MessagesTransaction::apply(){
+std::vector<std::string> MessagesTransaction::apply(Row* row){
+    CustomRow* cr = dynamic_cast<CustomRow*>(row);
+    cr->messages.emplace_back(message);
+    return std::vector<std::string>();
+}
 
+Row* MessagesTransaction::createRow() const {
+    return new CustomRow();
+};
+void MessagesTransaction::apply_reverse(Row* row){
+
+}
+
+bool MessagesTransaction::validate(Row *row) const {
+    CustomRow* cr = dynamic_cast<CustomRow*>(row);
+    return cr->status.size() > 0;
 }

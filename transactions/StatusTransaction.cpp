@@ -33,8 +33,20 @@ std::string StatusTransaction::to_string() const {
     return res;
 }
 
-void StatusTransaction::apply(){
-    Row* row;
-    row->action = "status";
-    row->value = status;
+std::vector<std::string> StatusTransaction::apply(Row* row){
+    CustomRow* cr = dynamic_cast<CustomRow*>(row);
+    cr->status = status;
+    return  std::vector<std::string>();
+}
+
+Row* StatusTransaction::createRow() const {
+    return new CustomRow();
+};
+
+void StatusTransaction::apply_reverse(Row* row){
+
+}
+
+bool StatusTransaction::validate(Row *row) const {
+    return true;
 }

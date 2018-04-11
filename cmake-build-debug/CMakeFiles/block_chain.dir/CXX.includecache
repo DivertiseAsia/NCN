@@ -102,9 +102,23 @@ chain/block/transaction/Transaction.h
 chain/block/Block.h
 /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
 
+/home/default/CLionProjects/block_chain/block_chain/chain/Database.cpp
+Database.h
+/home/default/CLionProjects/block_chain/block_chain/chain/Database.h
+
+/home/default/CLionProjects/block_chain/block_chain/chain/Database.h
+map
+-
+string
+-
+Row.h
+/home/default/CLionProjects/block_chain/block_chain/chain/Row.h
+
 /home/default/CLionProjects/block_chain/block_chain/chain/NodeState.cpp
 NodeState.h
 /home/default/CLionProjects/block_chain/block_chain/chain/NodeState.h
+../utils/RSA.h
+/home/default/CLionProjects/block_chain/block_chain/utils/RSA.h
 
 /home/default/CLionProjects/block_chain/block_chain/chain/NodeState.h
 fstream
@@ -125,6 +139,14 @@ block/transaction/TransactionContainer.h
 /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/TransactionContainer.h
 ../Serializer.h
 /home/default/CLionProjects/block_chain/block_chain/Serializer.h
+Database.h
+/home/default/CLionProjects/block_chain/block_chain/chain/Database.h
+
+/home/default/CLionProjects/block_chain/block_chain/chain/Row.cpp
+Row.h
+/home/default/CLionProjects/block_chain/block_chain/chain/Row.h
+
+/home/default/CLionProjects/block_chain/block_chain/chain/Row.h
 
 /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.cpp
 Block.h
@@ -215,6 +237,8 @@ Transaction.h
 /home/default/CLionProjects/block_chain/block_chain/chain/block/Component.h
 ../Hash.h
 /home/default/CLionProjects/block_chain/block_chain/chain/block/Hash.h
+../../Row.h
+/home/default/CLionProjects/block_chain/block_chain/chain/Row.h
 
 /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/TransactionContainer.cpp
 TransactionContainer.h
@@ -432,6 +456,18 @@ functional
 map
 -
 
+/home/default/CLionProjects/block_chain/database/Row.cpp
+Row.h
+/home/default/CLionProjects/block_chain/database/Row.h
+
+/home/default/CLionProjects/block_chain/database/Row.h
+../block_chain/chain/Row.h
+/home/default/CLionProjects/block_chain/block_chain/chain/Row.h
+string
+-
+vector
+-
+
 /home/default/CLionProjects/block_chain/main.cpp
 iostream
 -
@@ -439,6 +475,8 @@ block_chain/Node.h
 /home/default/CLionProjects/block_chain/block_chain/Node.h
 transactions/StatusTransaction.h
 /home/default/CLionProjects/block_chain/transactions/StatusTransaction.h
+transactions/MessagesTransaction.h
+/home/default/CLionProjects/block_chain/transactions/MessagesTransaction.h
 validator/CustomSerializer.h
 /home/default/CLionProjects/block_chain/validator/CustomSerializer.h
 block_chain/utils/serialization/json/JsonCreator.hpp
@@ -465,6 +503,18 @@ cstdlib
 -
 ../block_chain/chain/block/transaction/Transaction.h
 /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
+../database/Row.h
+/home/default/CLionProjects/block_chain/database/Row.h
+
+/home/default/CLionProjects/block_chain/transactions/MoneyTransaction.cpp
+MoneyTransaction.h
+/home/default/CLionProjects/block_chain/transactions/MoneyTransaction.h
+../database/Row.h
+/home/default/CLionProjects/block_chain/database/Row.h
+
+/home/default/CLionProjects/block_chain/transactions/MoneyTransaction.h
+../block_chain/chain/block/transaction/Transaction.h
+/home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
 
 /home/default/CLionProjects/block_chain/transactions/StatusTransaction.cpp
 StatusTransaction.h
@@ -483,6 +533,10 @@ string
 /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
 iostream
 -
+../database/Row.h
+/home/default/CLionProjects/block_chain/database/Row.h
+../block_chain/chain/Row.h
+/home/default/CLionProjects/block_chain/block_chain/chain/Row.h
 
 /home/default/CLionProjects/block_chain/validator/CustomSerializer.cpp
 CustomSerializer.h

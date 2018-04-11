@@ -2,6 +2,7 @@
 
 #include "block_chain/Node.h"
 #include "transactions/StatusTransaction.h"
+#include "transactions/MessagesTransaction.h"
 #include "validator/CustomSerializer.h"
 #include "block_chain/utils/serialization/json/JsonCreator.hpp"
 #include "block_chain/utils/serialization/json/JsonParser.hpp"
