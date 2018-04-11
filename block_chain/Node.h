@@ -23,19 +23,19 @@
 
 class Node{
 public:
-    Node(Validator* v, Serializer* serializer, int p = 3000);
+    Node(Serializer* serializer, int p = 3000);
     ~Node();
     void close();
     void request_transaction(Transaction* transaction);
-    bool operator()(Transaction* transaction);
-    bool operator()(Block* block);
+    bool operator()(Transaction* transaction, Message* message);
+    bool operator()(Block* block, Message* message);
     bool operator()(Message* message);
     bool static defaultCallback(Socket* socket, int port, Serializer* serializer, Node* node);
 private:
     void load(std::string list);
     void store(std::string ip, int p);
     Serializer* serializer;
-    Validator* validator;
+    Validator validator;
     SocketServer server;
     NodeState block_chain;
     std::vector<Peer> peers;

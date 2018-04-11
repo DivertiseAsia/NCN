@@ -9,14 +9,12 @@
 
 class Serializer;
 class Transaction: public Component {
-    friend class Block;
+    friend class TransactionContainer;
 public:
     virtual bool operator()() const = 0;
     virtual bool operator==(Transaction* s) const = 0;
-    void __hash__(Serializer* serializer, const char* encoding);
-
-protected:
-    Hash* hash;
+    Hash* __hash__(const Serializer* serializer, const char* encoding) const;
+    virtual void apply() = 0;
 };
 
 

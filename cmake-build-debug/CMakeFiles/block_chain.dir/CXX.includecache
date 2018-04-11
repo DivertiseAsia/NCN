@@ -35,6 +35,8 @@ fstream
 -
 utils/Encoding.h
 /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
+chain/block/transaction/MerkleTree.h
+/home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/MerkleTree.h
 
 /home/default/CLionProjects/block_chain/block_chain/Node.cpp
 Node.h
@@ -119,14 +121,20 @@ block/Block.h
 /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
 block/Hash.h
 /home/default/CLionProjects/block_chain/block_chain/chain/block/Hash.h
-block/transaction/Transaction.h
-/home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
+block/transaction/TransactionContainer.h
+/home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/TransactionContainer.h
+../Serializer.h
+/home/default/CLionProjects/block_chain/block_chain/Serializer.h
 
 /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.cpp
 Block.h
 /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
 ../../Serializer.h
 /home/default/CLionProjects/block_chain/block_chain/Serializer.h
+../../Message.h
+/home/default/CLionProjects/block_chain/block_chain/Message.h
+../../utils/RSA.h
+/home/default/CLionProjects/block_chain/block_chain/utils/RSA.h
 
 /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
 vector
@@ -135,8 +143,8 @@ Hash.h
 /home/default/CLionProjects/block_chain/block_chain/chain/block/Hash.h
 Metadata.h
 /home/default/CLionProjects/block_chain/block_chain/chain/block/Metadata.h
-transaction/Transaction.h
-/home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
+transaction/TransactionContainer.h
+/home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/TransactionContainer.h
 Component.h
 /home/default/CLionProjects/block_chain/block_chain/chain/block/Component.h
 iostream
@@ -175,6 +183,8 @@ Component.h
 /home/default/CLionProjects/block_chain/block_chain/chain/block/Component.h
 ../../utils/Encoding.h
 /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
+iostream
+-
 
 /home/default/CLionProjects/block_chain/block_chain/chain/block/Metadata.cpp
 Metadata.h
@@ -183,6 +193,16 @@ Metadata.h
 /home/default/CLionProjects/block_chain/block_chain/chain/block/Metadata.h
 ../../utils/serialization/Element.hpp
 /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
+
+/home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/MerkleTree.cpp
+MerkleTree.h
+/home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/MerkleTree.h
+
+/home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/MerkleTree.h
+../Hash.h
+/home/default/CLionProjects/block_chain/block_chain/chain/block/Hash.h
+Transaction.h
+/home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
 
 /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.cpp
 Transaction.h
@@ -195,6 +215,18 @@ Transaction.h
 /home/default/CLionProjects/block_chain/block_chain/chain/block/Component.h
 ../Hash.h
 /home/default/CLionProjects/block_chain/block_chain/chain/block/Hash.h
+
+/home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/TransactionContainer.cpp
+TransactionContainer.h
+/home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/TransactionContainer.h
+../../../Serializer.h
+/home/default/CLionProjects/block_chain/block_chain/Serializer.h
+
+/home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/TransactionContainer.h
+Transaction.h
+/home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
+../Component.h
+/home/default/CLionProjects/block_chain/block_chain/chain/block/Component.h
 
 /home/default/CLionProjects/block_chain/block_chain/socket/Peer.cpp
 Peer.h
@@ -277,6 +309,8 @@ Encoding.h
 /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
 string
 /home/default/CLionProjects/block_chain/block_chain/utils/string
+cstring
+-
 
 /home/default/CLionProjects/block_chain/block_chain/utils/Factory.hpp
 iostream
@@ -292,8 +326,6 @@ RSA.h
 iostream
 -
 openssl/engine.h
--
-iostream
 -
 
 /home/default/CLionProjects/block_chain/block_chain/utils/RSA.h

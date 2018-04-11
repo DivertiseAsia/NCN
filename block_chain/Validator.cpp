@@ -3,13 +3,18 @@
 //
 
 #include "Validator.h"
-Validator::Validator() = default;
+Validator::Validator(const Serializer* s, const char* e): serializer(s), encoding(e) {
+
+}
 
 bool Validator::operator()(Transaction* transaction){
     return (*transaction)();
 }
+bool Validator::operator()(TransactionContainer* transaction){
+    return (*transaction)();
+}
 bool Validator::operator()(Block* block){
-    return block->checkFingerPrint();
+    return block->checkFingerPrint(serializer, encoding);
 }
 
 Validator::~Validator(){

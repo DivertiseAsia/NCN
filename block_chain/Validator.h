@@ -10,10 +10,14 @@
 
 class Validator {
 public:
-    Validator();
+    Validator(const Serializer* s, const char* e);
     bool operator()(Transaction* transaction);
+    bool operator()(TransactionContainer* transaction);
     virtual bool operator()(Block* block);
     virtual ~Validator();
+private:
+    const Serializer* serializer;
+    const char* encoding;
 };
 
 

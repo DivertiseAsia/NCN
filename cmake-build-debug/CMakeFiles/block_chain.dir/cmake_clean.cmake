@@ -24,6 +24,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/block_chain.dir/validator/CustomSerializer.cpp.o"
   "CMakeFiles/block_chain.dir/block_chain/utils/Encoding.cpp.o"
   "CMakeFiles/block_chain.dir/block_chain/chain/block/Metadata.cpp.o"
+  "CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/TransactionContainer.cpp.o"
+  "CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/MerkleTree.cpp.o"
   "block_chain.pdb"
   "block_chain"
 )

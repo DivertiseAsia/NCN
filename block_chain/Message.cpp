@@ -9,48 +9,46 @@ const int Message::SIGN_OUT = 3;
 const int Message::TRANSACTION = 4;
 const int Message::BLOCK = 5;
 
-Message::Message(std::string p, std::string c, std::string k, int t): plain_text(p), cipher(Encoding::toHexa(c)), public_key(k), size(cipher.size()), type(t)
+Message::Message(std::string p, std::string c, std::string k, MerkleTree* tr, int t): plain_text(p), cipher(Encoding::toHexa(c)), public_key(k), type(t), tree(tr)
 {
 }
 
 bool Message::compareResults(std::string deciphered){
-    std::cout << "Plain: " << plain_text << std::endl;
-    std::cout << "Decip: " << deciphered << std::endl;
     return plain_text == deciphered;
 }
 
 std::string Message::getCipher(){
-    static std::string hexadecimal = "0123456789ABCDEFG";
-    std::string str;
-    for(int i = 0; i < cipher.size(); i += 2)
-        str.append(1, (hexadecimal.find(cipher[i]) << 4) + (hexadecimal.find(cipher[i+1])));
-    return str;
+    return Encoding::fromHexa(cipher);
 }
 
 
-Message::Message()
-{
-}
+Message::Message() = default;
 
-Message::~Message()
-{
-}
-Element* Message::toElement() {
+Message::~Message() = default;
+
+Element* Message::toElement() const {
     ElementObject* e = ElementCreator::creator.object();
     ElementCreator::creator.put(e, "public_key", ElementCreator::creator.create(public_key))
                           ->put(e, "cipher", ElementCreator::creator.create(cipher))
-                          ->put(e, "size", ElementCreator::creator.create(size))
                           ->put(e, "plain_text", ElementCreator::creator.create(plain_text))
-                          ->put(e, "type", ElementCreator::creator.create(type));
+                          ->put(e, "type", ElementCreator::creator.create(type))
+                          ->put(e, "tree", tree != nullptr ? tree->toElement() : ElementCreator::creator.create(type));
     return e;
 }
 
-void Message::fromElement(ElementObject* e) {
+void Message::fromElement(ElementObject* e, const Serializer* serializer, const char* encoding) {
     e->getItem("plain_text", &plain_text);
     e->getItem("cipher", &cipher);
     e->getItem("public_key", &public_key);
-    e->getItem("size", &size);
     e->getItem("type", &type);
+    ElementObject* o = nullptr;
+    e->getItem("tree", &o);
+    if(o->values.size() > 0) {
+        tree = new MerkleTree();
+        tree->fromElement(o, serializer, encoding);
+    }
+    else
+        tree = nullptr;
 }
 std::string Message::to_string() const {
 

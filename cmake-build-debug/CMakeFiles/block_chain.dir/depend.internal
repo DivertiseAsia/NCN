@@ -10,7 +10,9 @@ CMakeFiles/block_chain.dir/block_chain/Listener.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Component.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Hash.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Metadata.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/MerkleTree.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/TransactionContainer.h
  /home/default/CLionProjects/block_chain/block_chain/socket/Socket.h
  /home/default/CLionProjects/block_chain/block_chain/socket/SocketServer.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
@@ -21,6 +23,9 @@ CMakeFiles/block_chain.dir/block_chain/Message.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/Message.cpp
  /home/default/CLionProjects/block_chain/block_chain/Message.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Component.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/Hash.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/MerkleTree.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
  /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
  /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
@@ -36,7 +41,9 @@ CMakeFiles/block_chain.dir/block_chain/Node.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Component.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Hash.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Metadata.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/MerkleTree.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/TransactionContainer.h
  /home/default/CLionProjects/block_chain/block_chain/socket/Peer.h
  /home/default/CLionProjects/block_chain/block_chain/socket/Socket.h
  /home/default/CLionProjects/block_chain/block_chain/socket/SocketServer.h
@@ -53,7 +60,9 @@ CMakeFiles/block_chain.dir/block_chain/Serializer.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Component.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Hash.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Metadata.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/MerkleTree.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/TransactionContainer.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Factory.hpp
  /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
@@ -66,18 +75,24 @@ CMakeFiles/block_chain.dir/block_chain/Validator.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Hash.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Metadata.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/TransactionContainer.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
  /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
  /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
 CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o
+ /home/default/CLionProjects/block_chain/block_chain/Message.h
+ /home/default/CLionProjects/block_chain/block_chain/Serializer.h
  /home/default/CLionProjects/block_chain/block_chain/chain/NodeState.cpp
  /home/default/CLionProjects/block_chain/block_chain/chain/NodeState.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Component.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Hash.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Metadata.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/MerkleTree.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/TransactionContainer.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/Factory.hpp
  /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
  /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
 CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o
@@ -88,9 +103,12 @@ CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Component.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Hash.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Metadata.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/MerkleTree.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/TransactionContainer.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Factory.hpp
+ /home/default/CLionProjects/block_chain/block_chain/utils/RSA.h
  /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
  /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
 CMakeFiles/block_chain.dir/block_chain/chain/block/BlockFactory.cpp.o
@@ -101,6 +119,7 @@ CMakeFiles/block_chain.dir/block_chain/chain/block/BlockFactory.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Hash.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Metadata.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/TransactionContainer.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
  /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
  /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
@@ -117,7 +136,9 @@ CMakeFiles/block_chain.dir/block_chain/chain/block/Hash.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Hash.cpp
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Hash.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Metadata.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/MerkleTree.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/TransactionContainer.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Factory.hpp
  /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
@@ -127,6 +148,15 @@ CMakeFiles/block_chain.dir/block_chain/chain/block/Metadata.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Metadata.h
  /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
  /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
+CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/MerkleTree.cpp.o
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/Component.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/Hash.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/MerkleTree.cpp
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/MerkleTree.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
 CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/Message.h
  /home/default/CLionProjects/block_chain/block_chain/Serializer.h
@@ -134,8 +164,25 @@ CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Component.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Hash.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Metadata.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/MerkleTree.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.cpp
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/TransactionContainer.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/Factory.hpp
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
+CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/TransactionContainer.cpp.o
+ /home/default/CLionProjects/block_chain/block_chain/Message.h
+ /home/default/CLionProjects/block_chain/block_chain/Serializer.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/Component.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/Hash.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/Metadata.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/MerkleTree.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/TransactionContainer.cpp
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/TransactionContainer.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Factory.hpp
  /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
@@ -147,7 +194,9 @@ CMakeFiles/block_chain.dir/block_chain/socket/Peer.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Component.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Hash.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Metadata.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/MerkleTree.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/TransactionContainer.h
  /home/default/CLionProjects/block_chain/block_chain/socket/Peer.cpp
  /home/default/CLionProjects/block_chain/block_chain/socket/Peer.h
  /home/default/CLionProjects/block_chain/block_chain/socket/Socket.h
@@ -165,7 +214,9 @@ CMakeFiles/block_chain.dir/block_chain/socket/SocketServer.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Component.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Hash.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Metadata.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/MerkleTree.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/TransactionContainer.h
  /home/default/CLionProjects/block_chain/block_chain/socket/Socket.h
  /home/default/CLionProjects/block_chain/block_chain/socket/SocketServer.cpp
  /home/default/CLionProjects/block_chain/block_chain/socket/SocketServer.h
@@ -208,7 +259,9 @@ CMakeFiles/block_chain.dir/main.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Component.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Hash.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Metadata.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/MerkleTree.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/TransactionContainer.h
  /home/default/CLionProjects/block_chain/block_chain/socket/Peer.h
  /home/default/CLionProjects/block_chain/block_chain/socket/Socket.h
  /home/default/CLionProjects/block_chain/block_chain/socket/SocketServer.h
@@ -248,7 +301,9 @@ CMakeFiles/block_chain.dir/validator/CustomSerializer.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Component.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Hash.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Metadata.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/MerkleTree.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/TransactionContainer.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Factory.hpp
  /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp

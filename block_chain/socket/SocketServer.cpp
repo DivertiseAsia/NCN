@@ -35,25 +35,15 @@ void SocketServer::run(Serializer* serializer, Node* node)
 
 bool SocketServer::wait(std::function<bool(Socket*, int port, Serializer* serializer, Node* node)> func, Serializer* serial, Node* node)
 {
-    //fd_set fdset;
-    //struct timeval tv_timeout;
-    //FD_ZERO(&fdset);
-    //tv_timeout;
-    //tv_timeout.tv_sec = 0;
-    //tv_timeout.tv_usec = 500;
-    //FD_SET(master->socket, &fdset);
     sockaddr_in c_sin = { 0 };
     int sin_size = sizeof c_sin;
-    //if(select(master->socket + 1, &fdset, nullptr, nullptr, &tv_timeout))
     {
         Socket* socket = master->_accept(&c_sin, sin_size);
-        std::cout << "---" << std::endl;
         //#ifdef _WIN32
         peers.push_back(socket);
         std::thread* connection = new std::thread(func, socket, port, serial, node);
     }
 
-    //FD_CLR(master->socket, &fdset);
     //connection.detach();
     /*#else
     if(!fork())

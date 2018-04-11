@@ -15,8 +15,9 @@
 class Serializer
 {
 public:
-    virtual char* serialize(Component* component, const char* key) const;
+    virtual char* serialize(const Component* component, const char* key) const;
     virtual char* serialize(Element* element, const char* key) const;
+    virtual TransactionContainer* unserializeTransactionContainer(std::string message, const char* key) const;
     virtual Transaction* unserializeTransaction(std::string transaction, const char* key) const;
     virtual Block* unserializeBlock(std::string block, const char* key) const;
     virtual Message* unserializeMessage(std::string message, const char* key) const;

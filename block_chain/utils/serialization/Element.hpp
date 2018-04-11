@@ -53,8 +53,14 @@ class ElementArray: public Element
 
 class ElementObject: public Element
 {
+    struct Comparator {
+        bool operator() (const std::string* str1, const std::string* str2) const
+        {
+                return *str1 < *str2;
+        }
+    };
     public:
-        std::map<std::string*, Element*> values;
+        std::map<std::string*, Element*, Comparator> values;
         void getItem(const char* key, int* value);
         void getItem(const char* key, bool* value);
         void getItem(const char* key, double* value);

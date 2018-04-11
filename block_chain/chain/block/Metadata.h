@@ -12,7 +12,7 @@ public:
     bool operator==(Metadata const& m) const{
         return true;
     }
-    Element* toElement();
+    Element* toElement() const;
     void fromElement(ElementObject* e);
     
 };

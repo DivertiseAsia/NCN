@@ -10,18 +10,17 @@ void w_public(BIO *bio, RSA* rsa) {
 
 RSA_Cryptography::RSA_Cryptography()
 {
-    size = 2048;
+    size = 4096;
 }
 #include <iostream>
 #include <openssl/engine.h>
 RSA_Cryptography::RSA_Cryptography(std::string key)
 {
-    size = 2048;
+    size = 4096;
     BIO* bo = BIO_new_mem_buf( (void*) key.c_str(), key.size());
     BIO_set_flags( bo, BIO_FLAGS_BASE64_NO_NL ) ; // NO NL
     rsa = PEM_read_bio_RSAPublicKey(bo, nullptr, nullptr, nullptr);
     BIO_free(bo);
-
 }
 
 std::string read(const char* filename){
@@ -52,8 +51,10 @@ bool RSA_Cryptography::backup(const char* priv, const char* pub){
         fclose(b);
         return true;
     }
-    fclose(a);
-    fclose(b);
+    if(a)
+        fclose(a);
+    if(b)
+        fclose(b);
     return false;
 }
 void RSA_Cryptography::generate(const char* priv, const char* pub) {
@@ -87,11 +88,10 @@ RSA_Cryptography::~RSA_Cryptography()
     RSA_free(rsa);
 }
 
-#include <iostream>
 std::string RSA_Cryptography::encrypt(std::string message) {
     unsigned char* encrypt = (unsigned char*)malloc(RSA_size(rsa));
     int encrypt_len;
-    if((encrypt_len = RSA_private_encrypt(message.size()+1, (const unsigned char*)message.c_str(), (unsigned char*)encrypt, rsa, RSA_PKCS1_PADDING)) == -1) {
+    if((encrypt_len = RSA_private_encrypt(message.size()+1, (const unsigned char*)message.c_str(), encrypt, rsa, RSA_PKCS1_PADDING)) == -1) {
         std::cout << "ERROR ENCRYPT" << std::endl;
     }
     std::string str;
@@ -100,7 +100,7 @@ std::string RSA_Cryptography::encrypt(std::string message) {
 }
 std::string RSA_Cryptography::decrypt(std::string message, int size) {
     unsigned char* decrypt = (unsigned char*)malloc(size);
-    if(RSA_public_decrypt(message.size(), (const unsigned char*) message.c_str(), (unsigned char*) decrypt, rsa, RSA_PKCS1_PADDING) == -1) {
+    if(RSA_public_decrypt(message.size(), (const unsigned char*) message.c_str(), decrypt, rsa, RSA_PKCS1_PADDING) == -1) {
             std::cout << "ERROR DECRYPT" << std::endl;
     }
     return std::string((const char*)decrypt);

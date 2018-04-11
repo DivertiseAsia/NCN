@@ -4,15 +4,15 @@
 
 #include "NodeState.h"
 
-NodeState::NodeState(int s): size(s), top_fingerprint(nullptr) {
+NodeState::NodeState(Serializer* s, int si): serializer(s), size(si), top_fingerprint(nullptr) {
 }
 
 Block* NodeState::create_block() const {
-    return new Block(transactions, top_fingerprint);
+    return new Block(transactions, top_fingerprint, serializer, "json");
 }
 
-Block* NodeState::add(Transaction* transaction){
-    transactions.push_back(transaction);
+Block* NodeState::add(std::string transaction, std::string public_key){
+    transactions.emplace_back(std::pair<std::string, std::string>(transaction, public_key));
     if(transactions.size() == size) {
         return create_block();
     }
@@ -20,28 +20,34 @@ Block* NodeState::add(Transaction* transaction){
 }
 void NodeState::add(Block* block){
     block->parent_fingerprint = top_fingerprint;
+    std::string id(top_fingerprint != nullptr ? top_fingerprint->to_string() : "0");
     top_fingerprint = block->fingerprint;
     //TODO : apply each transaction to the memory
     std::cout << "read files" << std::endl;
-    std::string id(block->parent_fingerprint->to_string());
-    std::ofstream block_file ("blocks/"+id+".blk");
+    std::ofstream block_file ("network/blocks/"+id+".blk");
     std::string line;
     if(block_file.is_open()){
-        block_file << "TODO\n";
+        block_file << serializer->serialize(block, "json");
         block_file.close();
     }
 }
 
+void NodeState::clear_transactions() {
+    transactions.clear();
+}
+
 void NodeState::read_blocks() {
-    std::string id("0000000000000000");
-    std::ifstream block_file ("blocks/"+id+".blk");
+    std::string id("0");
+    std::ifstream block_file("network/blocks/"+id+".blk");
     std::string line;
     while(block_file.is_open()){
+        std::string serialized;
         while (std::getline (block_file, line))
-            std::cout << line << std::endl;
+            serialized += line;
+        Block* block = serializer->unserializeBlock(serialized, "json");
         block_file.close();
-        id = "TODO";
-        block_file.open("blocks/"+id+".blk");//block.fingerprint
-        //top_fingerprint = block->fingerprint;
+        id = block->fingerprint->to_string();
+        block_file.open("blocks/"+id+".blk");
+        top_fingerprint = block->fingerprint;
     }
 }

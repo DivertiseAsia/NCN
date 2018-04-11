@@ -14,14 +14,15 @@ public:
     explicit MessagesTransaction();
     explicit MessagesTransaction(std::string str);
     bool operator()() const final;
-    virtual Element* toElement() final;
+    virtual Element* toElement() const override;
     bool operator==(Transaction* t) const {
         MessagesTransaction* s = dynamic_cast<MessagesTransaction*>(t);
         return message == s->message;
     }
-    std::string to_string() const final;
+    std::string to_string() const;
+    void apply() override;
 protected:
-    virtual void fromElement(ElementObject*) final;
+    virtual void fromElement(ElementObject*, const Serializer*, const char* encoding) override;
 private:
     std::string message;
 };

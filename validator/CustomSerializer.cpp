@@ -10,6 +10,6 @@ Transaction* CustomSerializer::unserializeTransaction(std::string transaction, c
         t = new StatusTransaction();
     else
         t = new MessagesTransaction();
-    t->__init__(e);
+    t->__init__(e, this, key);
     return t;
 }

@@ -5,6 +5,7 @@
 #include <sstream>
 #include <fstream>
 #include "utils/Encoding.h"
+#include "chain/block/transaction/MerkleTree.h"
 
 class Message: public Component
 {
@@ -17,21 +18,21 @@ class Message: public Component
         static const int SIGN_IN;
         static const int SIGN_OUT;
         Message();
-        Message(std::string p, std::string c, std::string k, int);
+        Message(std::string p, std::string c, std::string k, MerkleTree*, int);
         ~Message();
-        Element* toElement();
+        Element* toElement() const;
         bool compareResults(std::string cipher);
         std::string getCipher();
         int type;
         std::string to_string() const;
     protected:
-        void fromElement(ElementObject*);
+        void fromElement(ElementObject*, const Serializer* serializer, const char* encoding);
 
     private:
-        int size;
         std::string plain_text;
         std::string cipher;
         std::string public_key;
+        MerkleTree* tree;
 };
 
 #endif // MESSAGE_H

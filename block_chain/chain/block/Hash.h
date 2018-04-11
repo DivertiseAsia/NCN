@@ -9,22 +9,24 @@
 #include <openssl/md5.h>
 #include "Component.h"
 #include "../../utils/Encoding.h"
+#include <iostream>
 
 class Serializer;
 class Hash{
 public:
     Hash();
     Hash(Hash* hash1, Hash* hash2);
-    Hash(Component* component, Serializer* serializer, const char* encoding);
+    Hash(const Component* component, const Serializer* serializer, const char* encoding);
     std::string to_string() const;
     void set_hash(std::string str);
     bool operator==(Hash const& h) const{
         return hash == h.hash;
     }
     Element* toElement();
-    void fromElement(ElementObject* e);
-private:
+    void fromElement(ElementObject* e, const Serializer* serializer, const char* encoding);
+    void __hash__(Serializer* serializer, const char* encoding);
     std::string hash;
+private:
 };
 
 #endif //BLOCK_CHAIN_HASH_H

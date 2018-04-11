@@ -420,6 +420,33 @@ block_chain/chain/block/Metadata.cpp.s:
 	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/Metadata.cpp.s
 .PHONY : block_chain/chain/block/Metadata.cpp.s
 
+block_chain/chain/block/transaction/MerkleTree.o: block_chain/chain/block/transaction/MerkleTree.cpp.o
+
+.PHONY : block_chain/chain/block/transaction/MerkleTree.o
+
+# target to build an object file
+block_chain/chain/block/transaction/MerkleTree.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/MerkleTree.cpp.o
+.PHONY : block_chain/chain/block/transaction/MerkleTree.cpp.o
+
+block_chain/chain/block/transaction/MerkleTree.i: block_chain/chain/block/transaction/MerkleTree.cpp.i
+
+.PHONY : block_chain/chain/block/transaction/MerkleTree.i
+
+# target to preprocess a source file
+block_chain/chain/block/transaction/MerkleTree.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/MerkleTree.cpp.i
+.PHONY : block_chain/chain/block/transaction/MerkleTree.cpp.i
+
+block_chain/chain/block/transaction/MerkleTree.s: block_chain/chain/block/transaction/MerkleTree.cpp.s
+
+.PHONY : block_chain/chain/block/transaction/MerkleTree.s
+
+# target to generate assembly for a file
+block_chain/chain/block/transaction/MerkleTree.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/MerkleTree.cpp.s
+.PHONY : block_chain/chain/block/transaction/MerkleTree.cpp.s
+
 block_chain/chain/block/transaction/Transaction.o: block_chain/chain/block/transaction/Transaction.cpp.o
 
 .PHONY : block_chain/chain/block/transaction/Transaction.o
@@ -446,6 +473,33 @@ block_chain/chain/block/transaction/Transaction.s: block_chain/chain/block/trans
 block_chain/chain/block/transaction/Transaction.cpp.s:
 	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.s
 .PHONY : block_chain/chain/block/transaction/Transaction.cpp.s
+
+block_chain/chain/block/transaction/TransactionContainer.o: block_chain/chain/block/transaction/TransactionContainer.cpp.o
+
+.PHONY : block_chain/chain/block/transaction/TransactionContainer.o
+
+# target to build an object file
+block_chain/chain/block/transaction/TransactionContainer.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/TransactionContainer.cpp.o
+.PHONY : block_chain/chain/block/transaction/TransactionContainer.cpp.o
+
+block_chain/chain/block/transaction/TransactionContainer.i: block_chain/chain/block/transaction/TransactionContainer.cpp.i
+
+.PHONY : block_chain/chain/block/transaction/TransactionContainer.i
+
+# target to preprocess a source file
+block_chain/chain/block/transaction/TransactionContainer.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/TransactionContainer.cpp.i
+.PHONY : block_chain/chain/block/transaction/TransactionContainer.cpp.i
+
+block_chain/chain/block/transaction/TransactionContainer.s: block_chain/chain/block/transaction/TransactionContainer.cpp.s
+
+.PHONY : block_chain/chain/block/transaction/TransactionContainer.s
+
+# target to generate assembly for a file
+block_chain/chain/block/transaction/TransactionContainer.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/TransactionContainer.cpp.s
+.PHONY : block_chain/chain/block/transaction/TransactionContainer.cpp.s
 
 block_chain/socket/Peer.o: block_chain/socket/Peer.cpp.o
 
@@ -840,9 +894,15 @@ help:
 	@echo "... block_chain/chain/block/Metadata.o"
 	@echo "... block_chain/chain/block/Metadata.i"
 	@echo "... block_chain/chain/block/Metadata.s"
+	@echo "... block_chain/chain/block/transaction/MerkleTree.o"
+	@echo "... block_chain/chain/block/transaction/MerkleTree.i"
+	@echo "... block_chain/chain/block/transaction/MerkleTree.s"
 	@echo "... block_chain/chain/block/transaction/Transaction.o"
 	@echo "... block_chain/chain/block/transaction/Transaction.i"
 	@echo "... block_chain/chain/block/transaction/Transaction.s"
+	@echo "... block_chain/chain/block/transaction/TransactionContainer.o"
+	@echo "... block_chain/chain/block/transaction/TransactionContainer.i"
+	@echo "... block_chain/chain/block/transaction/TransactionContainer.s"
 	@echo "... block_chain/socket/Peer.o"
 	@echo "... block_chain/socket/Peer.i"
 	@echo "... block_chain/socket/Peer.s"

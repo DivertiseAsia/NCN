@@ -6,10 +6,12 @@
 #define BLOCK_CHAIN_ENCODING_H
 
 #include "string"
+#include <cstring>
 
 class Encoding {
 public:
     static std::string toHexa(std::string str);
+    static std::string fromHexa(std::string str);
 };
 
 

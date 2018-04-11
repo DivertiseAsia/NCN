@@ -18,7 +18,6 @@ void Listener::start(bool(* callback)(Socket*, int, Serializer*, Node*), void (*
     thread = new std::thread(func, callback, client, port, serializer);
 }
 void Listener::close(){
-    std::cout << "LISTENER DESTRUCTION" << std::endl;
     thread->detach();
     delete thread;
 }

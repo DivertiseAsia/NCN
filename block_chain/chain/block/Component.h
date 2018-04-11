@@ -2,16 +2,16 @@
 #define COMPONENT_H
 
 #include "../../utils/serialization/Element.hpp"
+class Serializer;
 class Component
 {
     public:
         virtual ~Component();
         Component();
-        virtual Element* toElement() = 0;
-        void __init__(ElementObject* element) { if(!initialized) this->fromElement(element); initialized = true; delete element;}
-        virtual std::string to_string() const = 0;
+        virtual Element* toElement() const = 0;
+        void __init__(ElementObject* element, const Serializer* s, const char* encoding) { if(!initialized) this->fromElement(element, s, encoding); initialized = true; delete element;}
     protected:
-        virtual void fromElement(ElementObject*) = 0;
+        virtual void fromElement(ElementObject*, const Serializer*, const char* encoding) = 0;
     private:
         bool initialized = false;
 };
