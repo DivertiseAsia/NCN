@@ -48,5 +48,6 @@ void StatusTransaction::apply_reverse(Row* row){
 }
 
 bool StatusTransaction::validate(Row *row) const {
+    std::cout << "Return" << std::endl;
     return true;
 }

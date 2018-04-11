@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="include" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,6 +23,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -30,9 +32,59 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
-			<Add option="-fexceptions" />
+			<Add option="-std=c++11" />
+			<Add option="-pthread" />
 		</Compiler>
+		<Linker>
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libws2_32.a" />
+		</Linker>
+		<Unit filename="block_chain/Listener.cpp" />
+		<Unit filename="block_chain/Listener.h" />
+		<Unit filename="block_chain/Node.cpp" />
+		<Unit filename="block_chain/Node.h" />
+		<Unit filename="block_chain/Serializer.cpp" />
+		<Unit filename="block_chain/Serializer.h" />
+		<Unit filename="block_chain/Validator.cpp" />
+		<Unit filename="block_chain/Validator.h" />
+		<Unit filename="block_chain/chain/NodeState.cpp" />
+		<Unit filename="block_chain/chain/NodeState.h" />
+		<Unit filename="block_chain/chain/block/Block.cpp" />
+		<Unit filename="block_chain/chain/block/Block.h" />
+		<Unit filename="block_chain/chain/block/Hash.cpp" />
+		<Unit filename="block_chain/chain/block/Hash.h" />
+		<Unit filename="block_chain/chain/block/Metadata.h" />
+		<Unit filename="block_chain/chain/block/transaction/Transaction.cpp" />
+		<Unit filename="block_chain/chain/block/transaction/Transaction.h" />
+		<Unit filename="block_chain/socket/Peer.cpp" />
+		<Unit filename="block_chain/socket/Peer.h" />
+		<Unit filename="block_chain/socket/Socket.cpp" />
+		<Unit filename="block_chain/socket/Socket.h" />
+		<Unit filename="block_chain/socket/SocketServer.cpp" />
+		<Unit filename="block_chain/socket/SocketServer.h" />
+		<Unit filename="block_chain/utils/Factory.hpp" />
+		<Unit filename="block_chain/utils/serialization/Element.cpp" />
+		<Unit filename="block_chain/utils/serialization/Element.hpp" />
+		<Unit filename="block_chain/utils/serialization/ElementCreator.cpp" />
+		<Unit filename="block_chain/utils/serialization/Parser.hpp" />
+		<Unit filename="block_chain/utils/serialization/json/JsonCreator.cpp" />
+		<Unit filename="block_chain/utils/serialization/json/JsonCreator.hpp" />
+		<Unit filename="block_chain/utils/serialization/json/JsonParser.cpp" />
+		<Unit filename="block_chain/utils/serialization/json/JsonParser.hpp" />
+		<Unit filename="block_chain/utils/serialization/json/package.hpp" />
+		<Unit filename="include/Component.h" />
+		<Unit filename="include/CustomSerializer.h" />
+		<Unit filename="include/Message.h" />
+		<Unit filename="include/RSA.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/CustomSerializer.cpp" />
+		<Unit filename="src/Message.cpp" />
+		<Unit filename="src/RSA.cpp" />
+		<Unit filename="transactions/MessagesTransaction.cpp" />
+		<Unit filename="transactions/MessagesTransaction.h" />
+		<Unit filename="transactions/StatusTransaction.cpp" />
+		<Unit filename="transactions/StatusTransaction.h" />
+		<Unit filename="validator/CustomValidator.cpp" />
+		<Unit filename="validator/CustomValidator.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

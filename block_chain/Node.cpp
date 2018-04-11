@@ -11,8 +11,8 @@ Node::Node(Serializer* s, int p): serializer(s), validator(serializer, "json"), 
     OpenSSL_add_all_algorithms();
     ERR_load_BIO_strings();
     ERR_load_crypto_strings();
-    if(!rsa.backup("/home/default/CLionProjects/block_chain/network/private..pem", "/home/default/CLionProjects/block_chain/network/public..pem"))
-        rsa.generate("/home/default/CLionProjects/block_chain/network/private.pem", "/home/default/CLionProjects/block_chain/network/public.pem");
+    if(!rsa.backup("./network/private..pem", "./network/public..pem"))
+        rsa.generate("./network/private.pem", "./network/public.pem");
     std::string ip = "127.0.0.1";
     peers.emplace_back(Peer(serializer, ip, p));
     store(ip, p);
@@ -45,7 +45,7 @@ void Node::load(std::string l){
 
 void Node::store(std::string _ip, int _p){
     std::ifstream peers_file;
-    peers_file.open("/home/default/CLionProjects/block_chain/network/network.nfo", std::ifstream::in);
+    peers_file.open("./network/network.nfo", std::ifstream::in);
     if(peers_file.is_open()){
         std::string line;
         Message message(peers.begin()->to_string(), "", "", nullptr, Message::ASK_PEERS);
@@ -55,6 +55,7 @@ void Node::store(std::string _ip, int _p){
             std::string ip = line.substr(0, index);
             int port = atoi(line.substr(index+1).c_str());
             Peer peer(serializer, ip, port);
+            std::cout << line <<std::endl;
             if(peer.send(Encoding::toHexa(std::string(m)).c_str()))
                 break;
         }
@@ -201,7 +202,7 @@ bool Node::defaultCallback(Socket* socket, int port, Serializer* serializer, Nod
     while(socket->read(buffer)) {
         if (buffer.length()) {
             auto start = std::chrono::high_resolution_clock::now();
-            std::cout << "Request received on port " << port << " >> " << buffer << std::endl;
+            std::cout << "Request received on port " << port << " >> " << Encoding::fromHexa(buffer) << std::endl;
             buffer = Encoding::fromHexa(buffer.c_str());
             Message *message = serializer->unserializeMessage(buffer, "json");
             (node->*(action[message->type]))(message);

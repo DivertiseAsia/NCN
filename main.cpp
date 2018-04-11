@@ -25,7 +25,7 @@ int main() {
     client.request_transaction(t);
     usleep(1000000);
     //usleep(3000000);
-    //while(1);//{std::cout<<"t";client.request_transaction(t);std::cout<<"t"<<std::endl;}
+    while(1);//{std::cout<<"t";client.request_transaction(t);std::cout<<"t"<<std::endl;}
     return 0;
 }
 
