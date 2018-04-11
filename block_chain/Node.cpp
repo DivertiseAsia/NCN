@@ -13,7 +13,7 @@ Node::Node(Serializer* s, int p): serializer(s), validator(serializer, "json"), 
     ERR_load_crypto_strings();
     if(!rsa.backup("./network/private..pem", "./network/public..pem"))
         rsa.generate("./network/private.pem", "./network/public.pem");
-    std::string ip = "127.0.0.1";
+    std::string ip = "192.168.1.52";
     peers.emplace_back(Peer(serializer, ip, p));
     store(ip, p);
     //running.detach();
@@ -194,6 +194,8 @@ void Node::parseSignOut(Message* message) {
     int port = atoi(message->plain_text.substr(index+1).c_str());
     Peer peer(serializer, ip, port);
     auto it = find(peers.begin(), peers.end(), peer);
+    if(it != peers.end())
+        peers.erase(it);
 }
 
 bool Node::defaultCallback(Socket* socket, int port, Serializer* serializer, Node* node) {
