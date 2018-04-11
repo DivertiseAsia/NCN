@@ -20,9 +20,10 @@ int main() {
     Serializer* serial = new CustomSerializer();
     serial->set_serializer("json", new JsonCreator());
     serial->set_unserializer("json", new JsonParser());
-    Node client(serial, 3001);
-    Transaction* t = new StatusTransaction("The Game");
+    Node client(serial, 3000);
+    Transaction* t = new StatusTransaction("I lost");
     client.request_transaction(t);
+    std::cout << "Wait" << std::endl;
     usleep(1000000);
     //usleep(3000000);
     while(1);//{std::cout<<"t";client.request_transaction(t);std::cout<<"t"<<std::endl;}

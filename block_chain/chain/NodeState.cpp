@@ -22,10 +22,11 @@ Block* NodeState::add(std::string transaction, std::string public_key){
 void NodeState::add(Block* block){
     block->parent_fingerprint = top_fingerprint;
     std::string id(top_fingerprint != nullptr ? top_fingerprint->to_string() : "0");
+    std::cout << "ID: " << id << std::endl;
     top_fingerprint = block->fingerprint;
     update_database(block);
     std::cout << "read files" << std::endl;
-    std::ofstream block_file ("network/blocks/"+id+".blk");
+    std::ofstream block_file ("./network/blocks/"+id+".blk");
     std::string line;
     if(block_file.is_open()){
         block_file << serializer->serialize(block, "json");
@@ -69,7 +70,7 @@ void NodeState::clear_transactions() {
 
 void NodeState::read_blocks() {
     std::string id("0");
-    std::ifstream block_file("network/blocks/"+id+".blk");
+    std::ifstream block_file("./network/blocks/"+id+".blk");
     std::string line;
     while(block_file.is_open()){
         std::string serialized;
@@ -78,8 +79,8 @@ void NodeState::read_blocks() {
         Block* block = serializer->unserializeBlock(serialized, "json");
         update_database(block);
         block_file.close();
-        id = block->fingerprint->to_string();
-        block_file.open("blocks/"+id+".blk");
+        id = block->fingerprint->hash;
+        block_file.open("./network/blocks/"+id+".blk");
         top_fingerprint = block->fingerprint;
     }
 }

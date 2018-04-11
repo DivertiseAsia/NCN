@@ -13,9 +13,11 @@ Node::Node(Serializer* s, int p): serializer(s), validator(serializer, "json"), 
     ERR_load_crypto_strings();
     if(!rsa.backup("./network/private..pem", "./network/public..pem"))
         rsa.generate("./network/private.pem", "./network/public.pem");
-    std::string ip = "192.168.1.52";
+    std::string ip = "192.168.1.56";
     peers.emplace_back(Peer(serializer, ip, p));
     store(ip, p);
+    if(peers.size() == 1)
+        block_chain.read_blocks();
     //running.detach();
 }
 
@@ -54,10 +56,12 @@ void Node::store(std::string _ip, int _p){
             unsigned long index = line.find(':');
             std::string ip = line.substr(0, index);
             int port = atoi(line.substr(index+1).c_str());
-            Peer peer(serializer, ip, port);
-            std::cout << line <<std::endl;
-            if(peer.send(Encoding::toHexa(std::string(m)).c_str()))
-                break;
+            if(_ip != ip || _p != port){
+                Peer peer(serializer, ip, port);
+                std::cout << line <<std::endl;
+                if(peer.send(Encoding::toHexa(std::string(m)).c_str()))
+                    break;
+            }
         }
         peers_file.close();
         free(m);
@@ -85,7 +89,6 @@ void Node::request_transaction(Transaction* transaction){
 }
 
 bool Node::operator()(Transaction* transaction, Message* message) {
-
     bool valid = (*message->tree->value == *transaction->__hash__(serializer, "json") && block_chain.check_transaction(transaction, message->public_key));
     if(valid) {
         Block *block = block_chain.add(message->cipher, Encoding::toHexa(message->public_key));
@@ -201,10 +204,11 @@ void Node::parseSignOut(Message* message) {
 bool Node::defaultCallback(Socket* socket, int port, Serializer* serializer, Node* node) {
     static Node::Message_action action[6] = {&Node::parseAskPeers, &Node::parseAnswerPeers, &Node::parseSignIn, &Node::parseSignOut, &Node::parseTransaction, &Node::parseBlock};
     std::string buffer;
+    //socket->read(buffer);
     while(socket->read(buffer)) {
         if (buffer.length()) {
             auto start = std::chrono::high_resolution_clock::now();
-            std::cout << "Request received on port " << port << " >> " << Encoding::fromHexa(buffer) << std::endl;
+            std::cout << "Request received on port " << port << " >> "  << std::endl;
             buffer = Encoding::fromHexa(buffer.c_str());
             Message *message = serializer->unserializeMessage(buffer, "json");
             (node->*(action[message->type]))(message);
