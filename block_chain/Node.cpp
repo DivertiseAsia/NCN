@@ -3,11 +3,13 @@
 //
 
 #include "Node.h"
+
 void run(SocketServer* server, Serializer* serializer, Node* node) {
     server->run(Node::defaultCallback, serializer, node);
 }
+Node::Node(Serializer* s, int p): serializer(s), validator(serializer, "json"), block_chain(s, 1), server(p), running(run, &server, s, this), self(serializer, Socket::getIP(), p) {
 
-Node::Node(Serializer* s, int p): serializer(s), validator(serializer, "json"), block_chain(s, 1), server(p), running(run, &server, s, this), self(serializer, "192.168.1.52", p) {
+
     OpenSSL_add_all_algorithms();
     ERR_load_BIO_strings();
     ERR_load_crypto_strings();
@@ -15,7 +17,7 @@ Node::Node(Serializer* s, int p): serializer(s), validator(serializer, "json"), 
         rsa.generate("./network/private.pem", "./network/public.pem");
     std::string ip = "192.168.1.52";
     store(ip, p);
-    //running.detach();
+    running.detach();
     if(peers.size() == 0)
         block_chain.read_blocks();
 }
@@ -26,7 +28,7 @@ Node::~Node(){
     running.detach();
     close();
     delete serializer;
-    usleep(1000000);
+    std::this_thread::sleep_for(std::chrono::microseconds(1000000));
     std::cout<< "Connection closed" <<std::endl;
 }
 

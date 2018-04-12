@@ -4,6 +4,8 @@
 
 #include <fcntl.h>
 #include "Socket.h"
+
+
 SOCKET createSocket(){
     return socket(AF_INET , SOCK_STREAM , 0);
 }
@@ -38,7 +40,6 @@ Socket::Socket(std::string address , int port)
 
         //Cast the h_addr_list to in_addr , since h_addr_list also has the ip address in long format only
         addr_list = (struct in_addr **) he->h_addr_list;
-
         for(int i = 0; addr_list[i] != NULL; i++)
         {
             //strcpy(ip , inet_ntoa(*addr_list[i]) );
@@ -170,4 +171,38 @@ int Socket::write(const char* buffer){
 Socket::~Socket(){
     std::cout<<"Closed socket"<< std::endl;
     closesocket(socket);
+}
+
+std::string Socket::getIP(){
+    std::string ip;
+    struct ifreq   buffer[32];
+    struct ifconf  intfc;
+    struct ifreq  *pIntfc;
+    int            i, fd, num_intfc;
+
+    intfc.ifc_len = sizeof(buffer);
+    intfc.ifc_buf = (char*) buffer;
+
+    if ((fd = createSocket()) < 0)
+    {
+        perror("socket() failed");
+    }
+
+    if (ioctl(fd, SIOCGIFCONF, &intfc) < 0)
+    {
+        perror("ioctl SIOCGIFCONF failed");
+    }
+
+    pIntfc    = intfc.ifc_req;
+    num_intfc = intfc.ifc_len / sizeof(struct ifreq);
+
+    for (i = 0; i < num_intfc; i++)
+    {
+        struct ifreq *item = &(pIntfc[i]);
+        printf("Interface # %d -> %s: IP %s\n",
+               i, item->ifr_name,
+               inet_ntoa(((struct sockaddr_in *)&item->ifr_addr)->sin_addr));
+        ip = inet_ntoa(((struct sockaddr_in *)&item->ifr_addr)->sin_addr);
+    }
+    return ip;
 }

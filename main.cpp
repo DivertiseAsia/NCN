@@ -26,7 +26,7 @@ int main() {
     Serializer* serial = new CustomSerializer();
     serial->set_serializer("json", new JsonCreator());
     serial->set_unserializer("json", new JsonParser());
-    Node client(serial, 3001);
+    Node client(serial, 3007);
     //Transaction* t = new StatusTransaction("I lost");
     Transaction* t = nullptr;
     //usleep(1000000);

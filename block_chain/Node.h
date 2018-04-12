@@ -21,6 +21,7 @@
 #include <openssl/pem.h>
 #include <openssl/x509.h>
 
+
 class Node{
 public:
     Node(Serializer* serializer, int p = 3000);

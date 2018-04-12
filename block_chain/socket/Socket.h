@@ -28,6 +28,11 @@ typedef struct in_addr IN_ADDR;
 
 #endif
 
+#include <sys/ioctl.h>
+#include <sys/socket.h>
+#include <net/if.h>
+#include <netinet/in.h>
+
 #include <string>
 #include <cstring>
 #include <iostream>
@@ -47,7 +52,7 @@ public:
     Socket* _accept(sockaddr_in* csin, accept_size size);
     ~Socket();
     SOCKET socket;
-
+    static std::string getIP();
 protected:
     fd_set fdset;
     struct timeval tv_timeout;
