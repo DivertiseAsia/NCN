@@ -108,6 +108,12 @@
 		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/Serializer.h">
 			<Option target="block_chain"/>
 		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/TransactionManager.cpp">
+			<Option target="block_chain"/>
+		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/TransactionManager.h">
+			<Option target="block_chain"/>
+		</Unit>
 		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/Validator.cpp">
 			<Option target="block_chain"/>
 		</Unit>

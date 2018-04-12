@@ -72,6 +72,16 @@ CMakeFiles/block_chain.dir/block_chain/Serializer.cpp.o: ../block_chain/utils/Fa
 CMakeFiles/block_chain.dir/block_chain/Serializer.cpp.o: ../block_chain/utils/serialization/Element.hpp
 CMakeFiles/block_chain.dir/block_chain/Serializer.cpp.o: ../block_chain/utils/serialization/Parser.hpp
 
+CMakeFiles/block_chain.dir/block_chain/TransactionManager.cpp.o: ../block_chain/TransactionManager.cpp
+CMakeFiles/block_chain.dir/block_chain/TransactionManager.cpp.o: ../block_chain/TransactionManager.h
+CMakeFiles/block_chain.dir/block_chain/TransactionManager.cpp.o: ../block_chain/chain/Row.h
+CMakeFiles/block_chain.dir/block_chain/TransactionManager.cpp.o: ../block_chain/chain/block/Component.h
+CMakeFiles/block_chain.dir/block_chain/TransactionManager.cpp.o: ../block_chain/chain/block/Hash.h
+CMakeFiles/block_chain.dir/block_chain/TransactionManager.cpp.o: ../block_chain/chain/block/transaction/Transaction.h
+CMakeFiles/block_chain.dir/block_chain/TransactionManager.cpp.o: ../block_chain/utils/Encoding.h
+CMakeFiles/block_chain.dir/block_chain/TransactionManager.cpp.o: ../block_chain/utils/serialization/Element.hpp
+CMakeFiles/block_chain.dir/block_chain/TransactionManager.cpp.o: ../block_chain/utils/serialization/Parser.hpp
+
 CMakeFiles/block_chain.dir/block_chain/Validator.cpp.o: ../block_chain/Validator.cpp
 CMakeFiles/block_chain.dir/block_chain/Validator.cpp.o: ../block_chain/Validator.h
 CMakeFiles/block_chain.dir/block_chain/Validator.cpp.o: ../block_chain/chain/Row.h
@@ -280,6 +290,7 @@ CMakeFiles/block_chain.dir/main.cpp.o: ../block_chain/Listener.h
 CMakeFiles/block_chain.dir/main.cpp.o: ../block_chain/Message.h
 CMakeFiles/block_chain.dir/main.cpp.o: ../block_chain/Node.h
 CMakeFiles/block_chain.dir/main.cpp.o: ../block_chain/Serializer.h
+CMakeFiles/block_chain.dir/main.cpp.o: ../block_chain/TransactionManager.h
 CMakeFiles/block_chain.dir/main.cpp.o: ../block_chain/Validator.h
 CMakeFiles/block_chain.dir/main.cpp.o: ../block_chain/chain/Database.h
 CMakeFiles/block_chain.dir/main.cpp.o: ../block_chain/chain/NodeState.h
@@ -304,6 +315,7 @@ CMakeFiles/block_chain.dir/main.cpp.o: ../block_chain/utils/serialization/json/J
 CMakeFiles/block_chain.dir/main.cpp.o: ../database/Row.h
 CMakeFiles/block_chain.dir/main.cpp.o: ../main.cpp
 CMakeFiles/block_chain.dir/main.cpp.o: ../transactions/MessagesTransaction.h
+CMakeFiles/block_chain.dir/main.cpp.o: ../transactions/MoneyTransaction.h
 CMakeFiles/block_chain.dir/main.cpp.o: ../transactions/StatusTransaction.h
 CMakeFiles/block_chain.dir/main.cpp.o: ../validator/CustomSerializer.h
 

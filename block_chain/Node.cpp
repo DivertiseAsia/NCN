@@ -13,7 +13,7 @@ Node::Node(Serializer* s, int p): serializer(s), validator(serializer, "json"), 
     ERR_load_crypto_strings();
     if(!rsa.backup("./network/private..pem", "./network/public..pem"))
         rsa.generate("./network/private.pem", "./network/public.pem");
-    std::string ip = "192.168.1.56";
+    std::string ip = "192.168.1.52";
     peers.emplace_back(Peer(serializer, ip, p));
     store(ip, p);
     if(peers.size() == 1)

@@ -17,7 +17,7 @@ MoneyTransaction::MoneyTransaction() = default;
 
 Element* MoneyTransaction::toElement() const {
     ElementObject* e = ElementCreator::creator.object();
-    ElementCreator::creator.put(e, "type", ElementCreator::creator.create(2))
+    ElementCreator::creator.put(e, "type", ElementCreator::creator.create(get_type()))
                           ->put(e, "amount", ElementCreator::creator.create(amount))
                           ->put(e, "target", ElementCreator::creator.create(target));
     return e;
@@ -53,4 +53,25 @@ void MoneyTransaction::apply_reverse(Row* row){
 bool MoneyTransaction::validate(Row *row) const {
     CustomRow* cr = dynamic_cast<CustomRow*>(row);
     return amount >= cr->money;
+}
+
+int MoneyTransaction::get_type() const {
+    return 2;
+};
+std::string MoneyTransaction::description() const {
+    return "give money";
+};
+
+void MoneyTransaction::fill_data() {
+    do {
+        std::cout << "Amount of money: " << std::endl;
+        std::cin >> amount;
+    }while(amount < 0);
+    std::cout << "Target key: " << std::endl;
+    std::cin >> target;
+    std::cout << "Money transaction created" << std::endl;
+};
+
+Transaction* MoneyTransaction::clone() {
+    return new MoneyTransaction;
 }

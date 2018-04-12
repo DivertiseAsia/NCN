@@ -30,6 +30,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/block_chain.dir/block_chain/chain/Database.cpp.o"
   "CMakeFiles/block_chain.dir/block_chain/chain/Row.cpp.o"
   "CMakeFiles/block_chain.dir/transactions/MoneyTransaction.cpp.o"
+  "CMakeFiles/block_chain.dir/block_chain/TransactionManager.cpp.o"
   "block_chain.pdb"
   "block_chain"
 )

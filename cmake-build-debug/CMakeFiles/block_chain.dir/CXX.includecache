@@ -92,6 +92,14 @@ Message.h
 cstdlib
 -
 
+/home/default/CLionProjects/block_chain/block_chain/TransactionManager.cpp
+TransactionManager.h
+/home/default/CLionProjects/block_chain/block_chain/TransactionManager.h
+
+/home/default/CLionProjects/block_chain/block_chain/TransactionManager.h
+chain/block/transaction/Transaction.h
+/home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
+
 /home/default/CLionProjects/block_chain/block_chain/Validator.cpp
 Validator.h
 /home/default/CLionProjects/block_chain/block_chain/Validator.h
@@ -170,6 +178,8 @@ transaction/TransactionContainer.h
 Component.h
 /home/default/CLionProjects/block_chain/block_chain/chain/block/Component.h
 iostream
+-
+chrono
 -
 
 /home/default/CLionProjects/block_chain/block_chain/chain/block/BlockFactory.cpp
@@ -267,6 +277,8 @@ Socket.h
 /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
 
 /home/default/CLionProjects/block_chain/block_chain/socket/Socket.cpp
+fcntl.h
+-
 Socket.h
 /home/default/CLionProjects/block_chain/block_chain/socket/Socket.h
 
@@ -477,12 +489,16 @@ transactions/StatusTransaction.h
 /home/default/CLionProjects/block_chain/transactions/StatusTransaction.h
 transactions/MessagesTransaction.h
 /home/default/CLionProjects/block_chain/transactions/MessagesTransaction.h
+transactions/MoneyTransaction.h
+/home/default/CLionProjects/block_chain/transactions/MoneyTransaction.h
 validator/CustomSerializer.h
 /home/default/CLionProjects/block_chain/validator/CustomSerializer.h
 block_chain/utils/serialization/json/JsonCreator.hpp
 /home/default/CLionProjects/block_chain/block_chain/utils/serialization/json/JsonCreator.hpp
 block_chain/utils/serialization/json/JsonParser.hpp
 /home/default/CLionProjects/block_chain/block_chain/utils/serialization/json/JsonParser.hpp
+block_chain/TransactionManager.h
+/home/default/CLionProjects/block_chain/block_chain/TransactionManager.h
 cstdio
 -
 cstring

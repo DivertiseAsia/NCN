@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/default/CLionProjects/block_chain/block_chain/Message.cpp" "/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/Message.cpp.o"
   "/home/default/CLionProjects/block_chain/block_chain/Node.cpp" "/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/Node.cpp.o"
   "/home/default/CLionProjects/block_chain/block_chain/Serializer.cpp" "/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/Serializer.cpp.o"
+  "/home/default/CLionProjects/block_chain/block_chain/TransactionManager.cpp" "/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/TransactionManager.cpp.o"
   "/home/default/CLionProjects/block_chain/block_chain/Validator.cpp" "/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/Validator.cpp.o"
   "/home/default/CLionProjects/block_chain/block_chain/chain/Database.cpp" "/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/Database.cpp.o"
   "/home/default/CLionProjects/block_chain/block_chain/chain/NodeState.cpp" "/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o"

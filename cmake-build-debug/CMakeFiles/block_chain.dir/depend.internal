@@ -72,6 +72,16 @@ CMakeFiles/block_chain.dir/block_chain/Serializer.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/utils/Factory.hpp
  /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
  /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
+CMakeFiles/block_chain.dir/block_chain/TransactionManager.cpp.o
+ /home/default/CLionProjects/block_chain/block_chain/TransactionManager.cpp
+ /home/default/CLionProjects/block_chain/block_chain/TransactionManager.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/Row.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/Component.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/Hash.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
 CMakeFiles/block_chain.dir/block_chain/Validator.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/Validator.cpp
  /home/default/CLionProjects/block_chain/block_chain/Validator.h
@@ -281,6 +291,7 @@ CMakeFiles/block_chain.dir/main.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/Message.h
  /home/default/CLionProjects/block_chain/block_chain/Node.h
  /home/default/CLionProjects/block_chain/block_chain/Serializer.h
+ /home/default/CLionProjects/block_chain/block_chain/TransactionManager.h
  /home/default/CLionProjects/block_chain/block_chain/Validator.h
  /home/default/CLionProjects/block_chain/block_chain/chain/Database.h
  /home/default/CLionProjects/block_chain/block_chain/chain/NodeState.h
@@ -305,6 +316,7 @@ CMakeFiles/block_chain.dir/main.cpp.o
  /home/default/CLionProjects/block_chain/database/Row.h
  /home/default/CLionProjects/block_chain/main.cpp
  /home/default/CLionProjects/block_chain/transactions/MessagesTransaction.h
+ /home/default/CLionProjects/block_chain/transactions/MoneyTransaction.h
  /home/default/CLionProjects/block_chain/transactions/StatusTransaction.h
  /home/default/CLionProjects/block_chain/validator/CustomSerializer.h
 CMakeFiles/block_chain.dir/transactions/MessagesTransaction.cpp.o

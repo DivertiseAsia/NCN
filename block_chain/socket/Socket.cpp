@@ -2,6 +2,7 @@
 // Created by default on 3/4/2561.
 //
 
+#include <fcntl.h>
 #include "Socket.h"
 SOCKET createSocket(){
     return socket(AF_INET , SOCK_STREAM , 0);
@@ -62,8 +63,50 @@ Socket::Socket(std::string address , int port)
         perror("port connect failed. Error");
         std::cout << "Test port "<< connect(socket, (struct sockaddr *)&server , sizeof(server)) << std::endl;
     }
-     */
-    connect(socket, (struct sockaddr *)&server , sizeof(server));
+     *//*
+    std::cout << "Here 1" <<std::endl;
+    int res = connect(socket, (struct sockaddr *)&server , sizeof(server));
+    std::cout << "Here 2: " << res <<std::endl;
+
+    FD_ZERO(&fdset);
+    tv_timeout.tv_sec = 0;
+    tv_timeout.tv_usec = 500;
+    FD_SET(socket, &fdset);
+    if(select(socket + 1, &fdset, nullptr, nullptr, &tv_timeout))
+        connect(socket, (struct sockaddr *)&server , sizeof(server));
+    FD_ISSET(socket, &fdset);
+    FD_CLR(socket, &fdset);
+*/
+    // Set non-blocking
+    int res, valopt;
+    struct sockaddr_in addr;
+    long arg;
+    fd_set myset;
+    struct timeval tv;
+    socklen_t lon;
+    arg = fcntl(socket, F_GETFL, NULL);
+    arg |= O_NONBLOCK;
+    fcntl(socket, F_SETFL, arg);
+
+    // Trying to connect with timeout
+    res = connect(socket, (struct sockaddr *)&server, sizeof(server));
+
+    if (res < 0) {
+        if (errno == EINPROGRESS) {
+            tv_timeout.tv_sec = 0;
+            tv_timeout.tv_usec = 500;
+            FD_ZERO(&fdset);
+            FD_SET(socket, &fdset);
+            if (select(socket+1, NULL, &fdset, NULL, &tv_timeout) > 0) {
+                lon = sizeof(int);
+                getsockopt(socket, SOL_SOCKET, SO_ERROR, (void*)(&valopt), &lon);
+            }
+        }
+    }
+    // Set to blocking mode again...
+    arg = fcntl(socket, F_GETFL, NULL);
+    arg &= (~O_NONBLOCK);
+    fcntl(socket, F_SETFL, arg);
 }
 
 Socket::Socket(SOCKET s): socket(s)
@@ -134,7 +177,7 @@ int Socket::read(std::string& buffer){
 }
 
 int Socket::write(const char* buffer){
-    return (int)send(socket, buffer, strlen(buffer), 0);
+    return socket > 0 && (int)send(socket, buffer, strlen(buffer), 0);
 }
 
 Socket::~Socket(){

@@ -19,6 +19,10 @@ public:
     virtual void apply_reverse(Row* row) = 0;
     virtual Row* createRow() const = 0;
     virtual bool validate(Row *row) const = 0;
+    virtual int get_type() const = 0;
+    virtual std::string description() const = 0;
+    virtual void fill_data() = 0;
+    virtual Transaction* clone() = 0;
 };
 
 

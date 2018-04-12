@@ -26,6 +26,10 @@ public:
     virtual Row* createRow() const;
     virtual void apply_reverse(Row* row);
     virtual bool validate(Row *row) const override;
+    virtual int get_type() const;
+    virtual std::string description() const;
+    virtual void fill_data();
+    virtual Transaction* clone();
 protected:
     virtual void fromElement(ElementObject*, const Serializer*, const char* encoding) override;
 private:

@@ -231,6 +231,33 @@ block_chain/Serializer.cpp.s:
 	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/Serializer.cpp.s
 .PHONY : block_chain/Serializer.cpp.s
 
+block_chain/TransactionManager.o: block_chain/TransactionManager.cpp.o
+
+.PHONY : block_chain/TransactionManager.o
+
+# target to build an object file
+block_chain/TransactionManager.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/TransactionManager.cpp.o
+.PHONY : block_chain/TransactionManager.cpp.o
+
+block_chain/TransactionManager.i: block_chain/TransactionManager.cpp.i
+
+.PHONY : block_chain/TransactionManager.i
+
+# target to preprocess a source file
+block_chain/TransactionManager.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/TransactionManager.cpp.i
+.PHONY : block_chain/TransactionManager.cpp.i
+
+block_chain/TransactionManager.s: block_chain/TransactionManager.cpp.s
+
+.PHONY : block_chain/TransactionManager.s
+
+# target to generate assembly for a file
+block_chain/TransactionManager.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/TransactionManager.cpp.s
+.PHONY : block_chain/TransactionManager.cpp.s
+
 block_chain/Validator.o: block_chain/Validator.cpp.o
 
 .PHONY : block_chain/Validator.o
@@ -981,6 +1008,9 @@ help:
 	@echo "... block_chain/Serializer.o"
 	@echo "... block_chain/Serializer.i"
 	@echo "... block_chain/Serializer.s"
+	@echo "... block_chain/TransactionManager.o"
+	@echo "... block_chain/TransactionManager.i"
+	@echo "... block_chain/TransactionManager.s"
 	@echo "... block_chain/Validator.o"
 	@echo "... block_chain/Validator.i"
 	@echo "... block_chain/Validator.s"

@@ -19,7 +19,7 @@ StatusTransaction::StatusTransaction() = default;
 
 Element* StatusTransaction::toElement() const {
     ElementObject* e = ElementCreator::creator.object();
-    ElementCreator::creator.put(e, "type", ElementCreator::creator.create(0))
+    ElementCreator::creator.put(e, "type", ElementCreator::creator.create(get_type()))
             ->put(e, "status", ElementCreator::creator.create(status.c_str()));
     return e;
 }
@@ -49,4 +49,23 @@ void StatusTransaction::apply_reverse(Row* row){
 
 bool StatusTransaction::validate(Row *row) const {
     return true;
+}
+
+int StatusTransaction::get_type() const {
+    return 0;
+};
+
+std::string StatusTransaction::description() const {
+    return "status update";
+};
+
+
+void StatusTransaction::fill_data() {
+    std::cout << "New status: " << std::endl;
+    std::cin >> status;
+    std::cout << "Status transaction created" << std::endl;
+};
+
+Transaction* StatusTransaction::clone() {
+    return new StatusTransaction;
 }

@@ -3,9 +3,11 @@
 #include "block_chain/Node.h"
 #include "transactions/StatusTransaction.h"
 #include "transactions/MessagesTransaction.h"
+#include "transactions/MoneyTransaction.h"
 #include "validator/CustomSerializer.h"
 #include "block_chain/utils/serialization/json/JsonCreator.hpp"
 #include "block_chain/utils/serialization/json/JsonParser.hpp"
+#include "block_chain/TransactionManager.h"
 #include <cstdio>
 #include <cstring>
 #include <unistd.h>
@@ -17,14 +19,23 @@ NF&&f{ print s"/"$0 }'| sed ':a;N;$!ba;s/\n/ /g'
  */
 
 int main() {
+    TransactionManager manager;
+    manager.put(new StatusTransaction);
+    manager.put(new MoneyTransaction);
+    manager.put(new MessagesTransaction);
     Serializer* serial = new CustomSerializer();
     serial->set_serializer("json", new JsonCreator());
     serial->set_unserializer("json", new JsonParser());
     Node client(serial, 3000);
-    Transaction* t = new StatusTransaction("I lost");
-    client.request_transaction(t);
-    std::cout << "Wait" << std::endl;
+    //Transaction* t = new StatusTransaction("I lost");
+    Transaction* t = nullptr;
     usleep(1000000);
+    do{
+        t = manager.run();
+        client.request_transaction(t);
+    }while(t != nullptr);
+
+    std::cout << "Wait" << std::endl;
     //usleep(3000000);
     while(1);//{std::cout<<"t";client.request_transaction(t);std::cout<<"t"<<std::endl;}
     return 0;

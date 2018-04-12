@@ -18,7 +18,7 @@ MessagesTransaction::MessagesTransaction() = default;
 Element* MessagesTransaction::toElement() const {
     ElementObject* e = ElementCreator::creator.object();
     ElementCreator::creator.put(e, "message", ElementCreator::creator.create(message.c_str()))
-                          ->put(e, "type", ElementCreator::creator.create(1));
+                          ->put(e, "type", ElementCreator::creator.create(get_type()));
     return e;
 }
 
@@ -47,4 +47,21 @@ void MessagesTransaction::apply_reverse(Row* row){
 bool MessagesTransaction::validate(Row *row) const {
     CustomRow* cr = dynamic_cast<CustomRow*>(row);
     return cr->status.size() > 0;
+}
+
+int MessagesTransaction::get_type() const {
+    return 1;
+};
+std::string MessagesTransaction::description() const {
+    return "New message";
+};
+
+void MessagesTransaction::fill_data() {
+    std::cout << "New message: " << std::endl;
+    std::cin >> message;
+    std::cout << "Message transaction created" << std::endl;
+};
+
+Transaction* MessagesTransaction::clone() {
+    return new MessagesTransaction;
 }
