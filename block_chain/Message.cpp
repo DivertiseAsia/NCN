@@ -43,7 +43,6 @@ void Message::fromElement(ElementObject* e, const Serializer* serializer, const 
     e->getItem("type", &type);
     ElementObject* o = nullptr;
     e->getItem("tree", &o);
-            std::cout << o << std::endl;
     if(o && o->values.size() > 0) {
         tree = new MerkleTree();
         tree->fromElement(o, serializer, encoding);

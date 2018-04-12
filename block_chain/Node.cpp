@@ -16,20 +16,23 @@ Node::Node(Serializer* s, int p): serializer(s), validator(serializer, "json"), 
     std::string ip = "192.168.1.52";
     peers.emplace_back(Peer(serializer, ip, p));
     store(ip, p);
-    if(peers.size() == 1)
-        block_chain.read_blocks();
     //running.detach();
+    if(peers.size() == 0)
+        block_chain.read_blocks();
 }
 
 Node::~Node(){
+    std::cout<< "CLOSED 1" <<std::endl;
+    close();
+    std::cout<< "CLOSED 2" <<std::endl;
     server.close();
     running.detach();
-    close();
     delete serializer;
 }
 
 void Node::load(std::string l){
     Message message(peers.begin()->to_string(), "", "", nullptr, Message::SIGN_IN);
+    peers.erase(peers.begin());
     char* m = serializer->serialize(&message, "json");
     std::istringstream list(l);
     std::string line;
@@ -37,16 +40,18 @@ void Node::load(std::string l){
         unsigned long index = line.find(':');
         std::string ip = line.substr(0, index);
         int port = atoi(line.substr(index+1).c_str());
-        std::cout << ip << " --- " << port << std::endl;
         Peer peer(serializer, ip, port);
         peers.emplace_back(peer);
         peer.send(Encoding::toHexa(std::string(m)).c_str());
     }
     free(m);
+    if(peers.size() == 0)
+        block_chain.read_blocks();
 }
 
 void Node::store(std::string _ip, int _p){
     std::ifstream peers_file;
+    int i = 0;
     peers_file.open("./network/network.nfo", std::ifstream::in);
     if(peers_file.is_open()){
         std::string line;
@@ -58,14 +63,17 @@ void Node::store(std::string _ip, int _p){
             int port = atoi(line.substr(index+1).c_str());
             if(_ip != ip || _p != port){
                 Peer peer(serializer, ip, port);
-                std::cout << line <<std::endl;
-                if(peer.send(Encoding::toHexa(std::string(m)).c_str()))
+                if(peer.send(Encoding::toHexa(std::string(m)).c_str())) {
+                    i = 1;
                     break;
+                }
             }
         }
         peers_file.close();
         free(m);
     }
+    if(!i)
+        block_chain.read_blocks();
     /*
     */
 }
@@ -121,6 +129,7 @@ bool Node::operator()(Block* block, Message* message) {
             RSA_Cryptography crypto(Encoding::fromHexa(t.second));
             Transaction* transaction = serializer->unserializeTransaction(crypto.decrypt(cipher, cipher.size()), "json");
             bool valid = *message->tree->get_hash(i) == *transaction->__hash__(serializer, "json");
+            std::cout << "<" << valid << ">" <<std::endl;
             if(!valid)
                 return false;
             i++;
@@ -210,8 +219,8 @@ bool Node::defaultCallback(Socket* socket, int port, Serializer* serializer, Nod
             auto start = std::chrono::high_resolution_clock::now();
             std::cout << "Request received on port " << port << " >> ";
             buffer = Encoding::fromHexa(buffer.c_str());
+            std::cout << buffer << std::endl;
             Message *message = serializer->unserializeMessage(buffer, "json");
-            std::cout << message->type << std::endl;
             (node->*(action[message->type]))(message);
             auto end = std::chrono::high_resolution_clock::now();
             long long microseconds = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();

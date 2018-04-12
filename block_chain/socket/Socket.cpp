@@ -91,7 +91,6 @@ Socket::Socket(std::string address , int port)
     arg &= (~O_NONBLOCK);
     fcntl(socket, F_SETFL, arg);
     #endif
-    std::cout<<"Socket: "<< socket<<std::endl;
 }
 
 Socket::Socket(SOCKET s): socket(s)
@@ -141,7 +140,7 @@ void Socket::_close(){
 
 int Socket::read(std::string& buffer){
     FD_ZERO(&fdset);
-    tv_timeout.tv_sec = 0;
+    tv_timeout.tv_sec = 1;
     tv_timeout.tv_usec = 500;
     FD_SET(socket, &fdset);
     buffer = "";

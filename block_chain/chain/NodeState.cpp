@@ -22,10 +22,8 @@ Block* NodeState::add(std::string transaction, std::string public_key){
 void NodeState::add(Block* block){
     block->parent_fingerprint = top_fingerprint;
     std::string id(top_fingerprint != nullptr ? top_fingerprint->to_string() : "0");
-    std::cout << "ID: " << id << std::endl;
     top_fingerprint = block->fingerprint;
     update_database(block);
-    std::cout << "read files" << std::endl;
     std::ofstream block_file ("./network/blocks/"+id+".blk");
     std::string line;
     if(block_file.is_open()){
@@ -60,7 +58,6 @@ void NodeState::update_database(Block* block){
                 updated_row = iterator->second;
             transaction->apply_reverse(updated_row);
         }
-        std::cout << std::endl;
     }
 }
 
@@ -73,7 +70,6 @@ void NodeState::read_blocks() {
     std::ifstream block_file("./network/blocks/"+id+".blk");
     std::string line;
     while(block_file.is_open()){
-            std::cout << "Read" << std::endl;
         std::string serialized;
         while (std::getline (block_file, line))
             serialized += line;

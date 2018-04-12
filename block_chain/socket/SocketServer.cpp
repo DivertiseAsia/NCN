@@ -39,7 +39,6 @@ bool SocketServer::wait(std::function<bool(Socket*, int port, Serializer* serial
     int sin_size = sizeof c_sin;
     {
         Socket* socket = master->_accept(&c_sin, sin_size);
-        std::cout << "END " << socket->socket << std::endl;
         //#ifdef _WIN32
         peers.push_back(socket);
         std::thread* connection = new std::thread(func, socket, port, serial, node);
