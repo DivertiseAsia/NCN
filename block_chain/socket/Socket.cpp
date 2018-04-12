@@ -131,7 +131,10 @@ void Socket::_listen(){
 }
 
 Socket* Socket::_accept(sockaddr_in* c_sin, accept_size size){
-    return new Socket(accept(socket, (sockaddr*)c_sin, &size));
+    SOCKET s = accept(socket, (sockaddr*)c_sin, &size);
+    if(s == -1)
+        return nullptr;
+    return new Socket(s);
 }
 
 void Socket::_close(){

@@ -21,13 +21,13 @@ Node::Node(Serializer* s, int p): serializer(s), validator(serializer, "json"), 
 }
 
 Node::~Node(){
-    std::cout<< "CLOSED 1" <<std::endl;
-    close();
-    std::cout<< "CLOSED 2" <<std::endl;
-    while(1);
+    std::cout<< "Closing connection" <<std::endl;
     server.close();
     running.detach();
+    close();
     delete serializer;
+    usleep(1000000);
+    std::cout<< "Connection closed" <<std::endl;
 }
 
 void Node::load(std::string l){
@@ -64,6 +64,7 @@ void Node::store(std::string _ip, int _p){
                 Peer peer(serializer, ip, port);
                 if(peer.send(Encoding::toHexa(std::string(m)).c_str())) {
                     i = 1;
+                    peers.emplace_back(peer);
                     break;
                 }
             }
@@ -163,6 +164,7 @@ void Node::parseAskPeers(Message* message) {
     message->type = Message::ANSWER_PEERS;
     char* m = serializer->serialize(message, "json");
     peer.send(Encoding::toHexa(std::string(m)).c_str());
+    peers.emplace_back(peer);
     free(m);
 }
 
