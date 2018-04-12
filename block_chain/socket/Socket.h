@@ -7,6 +7,7 @@
 
 
 #ifdef _WIN32
+#define close_socket(s) close(s)
 #include <winsock2.h>
 #define accept_size int
 #else
@@ -19,13 +20,14 @@
 #include <arpa/inet.h>
 #include <unistd.h> /* close */
 #include <netdb.h> /* get host by name */
-#define INVALID_SOCKET -1
-#define SOCKET_ERROR -1
-#define closesocket(s) close(s)
+#define INVALID_SOCKET (-1)
+#define SOCKET_ERROR (-1)
+#define close_socket(s) close(s)
 typedef int SOCKET;
+/*
 typedef struct sockaddr_in SOCKADDR_IN;
 typedef struct sockaddr SOCKADDR;
-typedef struct in_addr IN_ADDR;
+typedef struct in_addr IN_ADDR;*/
 #define accept_size unsigned int
 #endif
 
@@ -39,11 +41,11 @@ class Socket
 {
 public:
     Socket(std::string, int port);
-    Socket(SOCKET s);
+    explicit Socket(SOCKET s);
     void _bind(sockaddr_in* sin);
     void _listen();
     void _close();
-    int _recv(char* buff, int len, int flags, int to);
+    //int _recv(char* buff, int len, int flags, int to);
     int read(std::string& buffer);
     int write(const char* buffer);
     Socket* _accept(sockaddr_in* csin, accept_size size);

@@ -3,6 +3,7 @@
 //
 
 #include "Block.h"
+#include <utility>
 #include "../../Serializer.h"
 #include "../../Message.h"
 #include "../../utils/RSA.h"
@@ -20,7 +21,9 @@ Hash* Block::compute_fingerprint(const Serializer* s, const char* e) const {
     return new Hash(compute_hash(0, transactions.size() - 1, s, e), timestamp);
 }
 
-Block::Block(std::vector<std::pair<std::string, std::string>> t, Hash* parent, const Serializer* s, const char* e): transactions(t), parent_fingerprint(parent) {
+Block::Block(std::vector<std::pair<std::string, std::string>> t, Hash* parent, const Serializer* s, const char* e): transactions(
+        std::move(
+                std::move(t))), parent_fingerprint(parent) {
     timestamp = std::chrono::duration_cast<std::chrono::milliseconds >(std::chrono::system_clock::now().time_since_epoch()).count();
     fingerprint = compute_fingerprint(s, e);
 }
@@ -29,12 +32,11 @@ bool Block::checkFingerPrint(const Serializer* s, const char* e) const {
     return *fingerprint == *compute_fingerprint(s, e);
 }
 
-Block::Block(const Serializer* s, const char* e): serializer(s), encoding(e), fingerprint(0) {
+Block::Block(const Serializer* s, const char* e): serializer(s), encoding(e), fingerprint(nullptr) {
 
 }
 
-Block::~Block(){
-}
+Block::~Block() = default;
 
 Element* Block::toElement() const{
     ElementArray* array = ElementCreator::creator.array();

@@ -19,14 +19,14 @@ class Message: public Component
         static const int SIGN_OUT;
         Message();
         Message(std::string p, std::string c, std::string k, MerkleTree*, int);
-        ~Message();
-        Element* toElement() const;
+        ~Message() override;
+        Element* toElement() const override;
         bool compareResults(std::string cipher);
         std::string getCipher();
         int type;
         std::string to_string() const;
     protected:
-        void fromElement(ElementObject*, const Serializer* serializer, const char* encoding);
+        void fromElement(ElementObject*, const Serializer* serializer, const char* encoding) override;
 
     private:
         std::string plain_text;

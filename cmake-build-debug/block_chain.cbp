@@ -84,12 +84,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/Listener.cpp">
-			<Option target="block_chain"/>
-		</Unit>
-		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/Listener.h">
-			<Option target="block_chain"/>
-		</Unit>
 		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/Message.cpp">
 			<Option target="block_chain"/>
 		</Unit>
@@ -150,12 +144,6 @@
 		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h">
 			<Option target="block_chain"/>
 		</Unit>
-		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/block/BlockFactory.cpp">
-			<Option target="block_chain"/>
-		</Unit>
-		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/block/BlockFactory.h">
-			<Option target="block_chain"/>
-		</Unit>
 		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/block/Component.cpp">
 			<Option target="block_chain"/>
 		</Unit>
@@ -193,6 +181,54 @@
 			<Option target="block_chain"/>
 		</Unit>
 		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/TransactionContainer.h">
+			<Option target="block_chain"/>
+		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/proof/Proof.cpp">
+			<Option target="block_chain"/>
+		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/proof/Proof.h">
+			<Option target="block_chain"/>
+		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/proof/ProofOfHold.cpp">
+			<Option target="block_chain"/>
+		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/proof/ProofOfHold.h">
+			<Option target="block_chain"/>
+		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/proof/ProofOfImportance.cpp">
+			<Option target="block_chain"/>
+		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/proof/ProofOfImportance.h">
+			<Option target="block_chain"/>
+		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/proof/ProofOfMinimumAgedStake.cpp">
+			<Option target="block_chain"/>
+		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/proof/ProofOfMinimumAgedStake.h">
+			<Option target="block_chain"/>
+		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/proof/ProofOfStake.cpp">
+			<Option target="block_chain"/>
+		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/proof/ProofOfStake.h">
+			<Option target="block_chain"/>
+		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/proof/ProofOfStakeTime.cpp">
+			<Option target="block_chain"/>
+		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/proof/ProofOfStakeTime.h">
+			<Option target="block_chain"/>
+		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/proof/ProofOfUse.cpp">
+			<Option target="block_chain"/>
+		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/proof/ProofOfUse.h">
+			<Option target="block_chain"/>
+		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/proof/ProofOfWork.cpp">
+			<Option target="block_chain"/>
+		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/proof/ProofOfWork.h">
 			<Option target="block_chain"/>
 		</Unit>
 		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/socket">
@@ -262,9 +298,6 @@
 			<Option target="block_chain"/>
 		</Unit>
 		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/utils/serialization/json/JsonParser.hpp">
-			<Option target="block_chain"/>
-		</Unit>
-		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/utils/serialization/json/package.hpp">
 			<Option target="block_chain"/>
 		</Unit>
 		<Unit filename="/home/default/CLionProjects/block_chain/database/Row.cpp">

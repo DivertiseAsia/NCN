@@ -1,6 +1,7 @@
 #include "Message.h"
 
 #include <iostream>
+#include <utility>
 
 const int Message::ASK_PEERS = 0;
 const int Message::ANSWER_PEERS = 1;
@@ -9,7 +10,10 @@ const int Message::SIGN_OUT = 3;
 const int Message::TRANSACTION = 4;
 const int Message::BLOCK = 5;
 
-Message::Message(std::string p, std::string c, std::string k, MerkleTree* tr, int t): plain_text(p), cipher(Encoding::toHexa(c)), public_key(k), type(t), tree(tr)
+Message::Message(std::string p, std::string c, std::string k, MerkleTree* tr, int t): plain_text(std::move(std::move(p))), cipher(Encoding::toHexa(
+        std::move(c))), public_key(
+        std::move(
+                std::move(k))), type(t), tree(tr)
 {
 }
 
@@ -43,7 +47,7 @@ void Message::fromElement(ElementObject* e, const Serializer* serializer, const 
     e->getItem("type", &type);
     ElementObject* o = nullptr;
     e->getItem("tree", &o);
-    if(o && o->values.size() > 0) {
+    if(o && !o->values.empty()) {
         tree = new MerkleTree();
         tree->fromElement(o, serializer, encoding);
     }

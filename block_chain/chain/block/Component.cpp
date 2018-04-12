@@ -1,11 +1,5 @@
 #include "Component.h"
 
-Component::Component()
-{
-    //ctor
-}
+Component::Component() = default;
 
-Component::~Component()
-{
-    //dtor
-}
+Component::~Component() = default;

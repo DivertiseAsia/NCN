@@ -8,7 +8,7 @@
 class CustomSerializer: public Serializer
 {
     public:
-        virtual Transaction* unserializeTransaction(std::string transaction, const char* key) const;
+    Transaction* unserializeTransaction(std::string transaction, const char* key) const override;
 };
 
 #endif // CUSTOMSERIALIZER_H

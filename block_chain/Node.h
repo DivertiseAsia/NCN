@@ -11,11 +11,11 @@
 #include <iostream>
 #include "chain/NodeState.h"
 #include "Validator.h"
-#include "Listener.h"
 #include "socket/SocketServer.h"
 #include "socket/Peer.h"
 #include "utils/RSA.h"
 #include "Message.h"
+#include "proof/Proof.h"
 #include <openssl/bio.h>
 #include <openssl/err.h>
 #include <openssl/pem.h>
@@ -24,7 +24,7 @@
 
 class Node{
 public:
-    Node(Serializer* serializer, int p = 3000);
+    Node(Serializer* serializer, int p, const char* e, int pr);
     ~Node();
     void close();
     void request_transaction(Transaction* transaction);
@@ -33,6 +33,8 @@ public:
     bool operator()(Message* message);
     bool static defaultCallback(Socket* socket, int port, Serializer* serializer, Node* node);
 private:
+    std::string encoding;
+    Proof* proof;
     void load(std::string list);
     void store(std::string ip, int p);
     Serializer* serializer;

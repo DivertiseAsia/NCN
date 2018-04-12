@@ -38,10 +38,10 @@ bool SocketServer::wait(std::function<bool(Socket*, int port, Serializer* serial
     sockaddr_in c_sin = { 0 };
     int sin_size = sizeof c_sin;
     {
-        Socket* socket = master->_accept(&c_sin, sin_size);
+        Socket* socket = master->_accept(&c_sin, (unsigned int) sin_size);
         if(socket){
             peers.push_back(socket);
-            std::thread* connection = new std::thread(func, socket, port, serial, node);
+            auto * connection = new std::thread(func, socket, port, serial, node);
         }
         //#ifdef _WIN32
     }
@@ -57,21 +57,8 @@ bool SocketServer::wait(std::function<bool(Socket*, int port, Serializer* serial
     return socket != nullptr;
 }
 
-bool SocketServer::defaultCallback(Socket* socket, int port, Serializer* serializer, Node* node)
+bool SocketServer::defaultCallback(Socket* socket, int port, Serializer*, Node*)
 {
-    std::string buffer;
-    while(1) {
-        socket->read(buffer);
-        if (buffer.length()) {
-            auto start = std::chrono::high_resolution_clock::now();
-            std::cout << "Request received on port " << port << " : " << std::endl;
-            //delete socket;
-            auto end = std::chrono::high_resolution_clock::now();
-            long long microseconds = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
-            std::cout << "Request performed in " << (microseconds / 1000.0) << " milliseconds" << std::endl;
-        }
-    }
-    return true;
 }
 void SocketServer::close(){
     master->_close();
@@ -80,6 +67,6 @@ SocketServer::~SocketServer()
 {
     std::cout << " closed server "<< std::endl;
     peers.clear();
-    if(master)
-        delete master;
+
+    delete master;
 }

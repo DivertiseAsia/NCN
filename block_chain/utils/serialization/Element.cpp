@@ -29,7 +29,7 @@ ElementArray::~ElementArray(){
     for(std::vector<Element*>::const_iterator it = values.begin(); it != values.end(); it++)
         delete *it;
 }
-#include <iostream>
+
 void ElementObject::getItem(const char* key, int* value) {
     for(std::map<std::string*, Element*>::const_iterator it = values.begin(); it != values.end(); it++)
     {

@@ -14,7 +14,7 @@ class CustomRow: public Row {
     friend class MessagesTransaction;
     friend class MoneyTransaction;
 public:
-    virtual ~CustomRow() {};
+    ~CustomRow() override = default;;
 private:
     double money;
     std::string status;

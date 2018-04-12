@@ -3,9 +3,14 @@
 //
 
 #include "TransactionContainer.h"
+#include <utility>
 #include "../../../Serializer.h"
 
-TransactionContainer::TransactionContainer(Transaction* tr, std::string t, std::string c, std::string p, Serializer* serializer, const char* encoding): transaction(tr), transac(t), cipher(c), public_key(p) {
+TransactionContainer::TransactionContainer(Transaction* tr, std::string t, std::string c, std::string p, Serializer* serializer, const char* encoding): transaction(tr), transac(
+        std::move(
+                std::move(t))), cipher(std::move(
+        std::move(c))), public_key(std::move(
+        std::move(p))) {
     __hash__(serializer, encoding);
 }
 

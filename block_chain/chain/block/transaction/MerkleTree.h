@@ -15,13 +15,13 @@ public:
     MerkleTree(Transaction* transaction, const Serializer* serializer, const char* encoding);
     MerkleTree(std::vector<Transaction*> transactions, const Serializer* serializer, const char* encoding);
     MerkleTree(MerkleTree* l, MerkleTree* r);
-    ~MerkleTree();
+    ~MerkleTree() override;
     Element* toElement() const override;
-    Hash* get_hash(const int i) const;
+    Hash* get_hash(int i) const;
     int size() const;
     void generate_tree(std::vector<Transaction*> transactions, int begin, int end, const Serializer* serializer, const char* encoding);
 protected:
-    virtual void fromElement(ElementObject*, const Serializer*, const char* encoding);
+    void fromElement(ElementObject*, const Serializer*, const char* encoding) override;
 private:
     MerkleTree();
     MerkleTree* left;

@@ -14,7 +14,6 @@
 #include <chrono>
 
 class Serializer;
-class Message;
 
 class Block: public Component{
     friend class NodeState;
@@ -31,7 +30,7 @@ public:
     bool checkFingerPrint(const Serializer* s, const char* e) const;
     virtual std::string to_string() const;
 protected:
-    virtual void fromElement(ElementObject* e, const Serializer* s, const char* encoding) override;
+    void fromElement(ElementObject* e, const Serializer* s, const char* encoding) override;
 private:
     double timestamp;
     const Serializer* serializer;

@@ -2,8 +2,8 @@
 // Created by default on 12/4/2561.
 //
 
-#ifndef BLOCK_CHAIN_TRANSACTIONMANAGER_H
-#define BLOCK_CHAIN_TRANSACTIONMANAGER_H
+#ifndef BLOCK_CHAIN_TRANSACTION_MANAGER_H
+#define BLOCK_CHAIN_TRANSACTION_MANAGER_H
 
 
 #include "chain/block/transaction/Transaction.h"
@@ -19,4 +19,4 @@ private:
 };
 
 
-#endif //BLOCK_CHAIN_TRANSACTIONMANAGER_H
+#endif //BLOCK_CHAIN_TRANSACTION_MANAGER_H

@@ -8,6 +8,7 @@
 #include <thread>
 
 #ifdef _WIN32
+#define close_socket(s) closesocket(s)
 
 #include <winsock2.h>
 
@@ -18,13 +19,13 @@
 #include <arpa/inet.h>
 #include <unistd.h> /* close */
 #include <netdb.h> /* get host by name */
-#define INVALID_SOCKET -1
-#define SOCKET_ERROR -1
-#define closesocket(s) close(s)
+#define INVALID_SOCKET (-1)
+#define SOCKET_ERROR (-1)
+#define close_socket(s) close(s)
 typedef int SOCKET;
-typedef struct sockaddr_in SOCKADDR_IN;
+/*typedef struct sockaddr_in SOCKADDR_IN;
 typedef struct sockaddr SOCKADDR;
-typedef struct in_addr IN_ADDR;
+typedef struct in_addr IN_ADDR;*/
 #endif
 
 #include "../Serializer.h"
@@ -36,7 +37,7 @@ class Node;
 class SocketServer
 {
 public:
-    SocketServer(int port);
+    explicit SocketServer(int port);
     void run(std::function<bool(Socket*, int, Serializer* serializer, Node* node)> func, Serializer* serializer, Node* node);
     void run(Serializer* serializer, Node* node);
     ~SocketServer();

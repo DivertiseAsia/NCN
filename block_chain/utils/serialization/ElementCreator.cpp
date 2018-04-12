@@ -10,31 +10,31 @@
 ElementCreator ElementCreator::creator;
 
 ElementInt* ElementCreator::create(int value) const{
-	ElementInt* e = new ElementInt();
+	auto e = new ElementInt();
 	e->value = value;
 	return e;
 }
 ElementString* ElementCreator::create(const char* value) const{
-	ElementString* e = new ElementString();
+	auto e = new ElementString();
 	e->value = value;
 	return e;
 }
 ElementString* ElementCreator::create(std::string value) const{
-	ElementString* e = new ElementString();
-	e->value = value;
+	auto e = new ElementString();
+	e->value = std::move(value);
 	return e;
 }
 ElementBoolean* ElementCreator::create(bool value) const{
-	ElementBoolean* e = new ElementBoolean();
+	auto e = new ElementBoolean();
 	e->value = value;
 	return e;
 }
 ElementArray* ElementCreator::array() const{
-	ElementArray* e = new ElementArray();
+	auto e = new ElementArray();
 	return e;
 }
 ElementObject* ElementCreator::object() const{
-	ElementObject* e = new ElementObject();
+	auto e = new ElementObject();
 	return e;
 }
 ElementCreator* ElementCreator::add(ElementArray* e, Element* value){
@@ -46,11 +46,9 @@ ElementCreator* ElementCreator::put(ElementObject* e, const char* key, Element* 
 	return this;
 }
 ElementDouble* ElementCreator::create(double value) const{
-	ElementDouble* e = new ElementDouble();
+	auto e = new ElementDouble();
 	e->value = value;
 	return e;
 }
-ElementCreator::ElementCreator(){
-}
-ElementCreator::~ElementCreator(){
-}
+ElementCreator::ElementCreator() = default;
+ElementCreator::~ElementCreator() = default;

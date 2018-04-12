@@ -17,7 +17,7 @@
 
 class NodeState{
 public:
-    NodeState(Serializer* s, int si = 64);
+    explicit NodeState(Serializer* s, int si = 64);
     Block* create_block() const;
     Block* add(std::string transaction, std::string public_key);
     void add(Block* block);

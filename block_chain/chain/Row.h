@@ -8,7 +8,7 @@
 
 class Row {
 public:
-    virtual ~Row() {};
+    virtual ~Row() = default;;
 };
 
 

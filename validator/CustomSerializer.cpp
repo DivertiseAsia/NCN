@@ -1,6 +1,6 @@
 #include "CustomSerializer.h"
 
-#include <iostream>
+
 Transaction* CustomSerializer::unserializeTransaction(std::string transaction, const char* key) const {
     ElementObject* e = getElement(transaction, key);
     int type;

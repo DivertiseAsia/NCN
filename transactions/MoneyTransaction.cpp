@@ -3,13 +3,14 @@
 //
 
 #include "MoneyTransaction.h"
+#include <utility>
 #include "../database/Row.h"
 
 bool MoneyTransaction::operator()() const {
     return true;
 }
 
-MoneyTransaction::MoneyTransaction(int a, std::string str): amount(a), target(str) {
+MoneyTransaction::MoneyTransaction(int a, std::string str): amount(a), target(std::move(std::move(str))) {
 
 }
 
@@ -23,7 +24,7 @@ Element* MoneyTransaction::toElement() const {
     return e;
 }
 
-void MoneyTransaction::fromElement(ElementObject* e, const Serializer*, const char* encoding) {
+void MoneyTransaction::fromElement(ElementObject* e, const Serializer*, const char*) {
     e->getItem("amount", &amount);
     e->getItem("target", &target);
 };
@@ -34,7 +35,7 @@ std::string MoneyTransaction::to_string() const {
 }
 
 std::vector<std::string> MoneyTransaction::apply(Row* row){
-    CustomRow* cr = dynamic_cast<CustomRow*>(row);
+    auto * cr = dynamic_cast<CustomRow*>(row);
     cr->money -= amount;
     std::vector<std::string> targets;
     targets.push_back(target);
@@ -46,12 +47,12 @@ Row* MoneyTransaction::createRow() const {
 };
 
 void MoneyTransaction::apply_reverse(Row* row){
-    CustomRow* cr = dynamic_cast<CustomRow*>(row);
+    auto * cr = dynamic_cast<CustomRow*>(row);
     cr->money += amount;
 }
 
 bool MoneyTransaction::validate(Row *row) const {
-    CustomRow* cr = dynamic_cast<CustomRow*>(row);
+    auto * cr = dynamic_cast<CustomRow*>(row);
     return amount >= cr->money;
 }
 

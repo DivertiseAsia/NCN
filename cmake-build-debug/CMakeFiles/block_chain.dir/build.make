@@ -81,33 +81,9 @@ CMakeFiles/block_chain.dir/main.cpp.o.provides: CMakeFiles/block_chain.dir/main.
 CMakeFiles/block_chain.dir/main.cpp.o.provides.build: CMakeFiles/block_chain.dir/main.cpp.o
 
 
-CMakeFiles/block_chain.dir/block_chain/Listener.cpp.o: CMakeFiles/block_chain.dir/flags.make
-CMakeFiles/block_chain.dir/block_chain/Listener.cpp.o: ../block_chain/Listener.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/block_chain.dir/block_chain/Listener.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/block_chain.dir/block_chain/Listener.cpp.o -c /home/default/CLionProjects/block_chain/block_chain/Listener.cpp
-
-CMakeFiles/block_chain.dir/block_chain/Listener.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/block_chain.dir/block_chain/Listener.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/default/CLionProjects/block_chain/block_chain/Listener.cpp > CMakeFiles/block_chain.dir/block_chain/Listener.cpp.i
-
-CMakeFiles/block_chain.dir/block_chain/Listener.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/block_chain.dir/block_chain/Listener.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/default/CLionProjects/block_chain/block_chain/Listener.cpp -o CMakeFiles/block_chain.dir/block_chain/Listener.cpp.s
-
-CMakeFiles/block_chain.dir/block_chain/Listener.cpp.o.requires:
-
-.PHONY : CMakeFiles/block_chain.dir/block_chain/Listener.cpp.o.requires
-
-CMakeFiles/block_chain.dir/block_chain/Listener.cpp.o.provides: CMakeFiles/block_chain.dir/block_chain/Listener.cpp.o.requires
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/Listener.cpp.o.provides.build
-.PHONY : CMakeFiles/block_chain.dir/block_chain/Listener.cpp.o.provides
-
-CMakeFiles/block_chain.dir/block_chain/Listener.cpp.o.provides.build: CMakeFiles/block_chain.dir/block_chain/Listener.cpp.o
-
-
 CMakeFiles/block_chain.dir/block_chain/Message.cpp.o: CMakeFiles/block_chain.dir/flags.make
 CMakeFiles/block_chain.dir/block_chain/Message.cpp.o: ../block_chain/Message.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/block_chain.dir/block_chain/Message.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/block_chain.dir/block_chain/Message.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/block_chain.dir/block_chain/Message.cpp.o -c /home/default/CLionProjects/block_chain/block_chain/Message.cpp
 
 CMakeFiles/block_chain.dir/block_chain/Message.cpp.i: cmake_force
@@ -131,7 +107,7 @@ CMakeFiles/block_chain.dir/block_chain/Message.cpp.o.provides.build: CMakeFiles/
 
 CMakeFiles/block_chain.dir/block_chain/Node.cpp.o: CMakeFiles/block_chain.dir/flags.make
 CMakeFiles/block_chain.dir/block_chain/Node.cpp.o: ../block_chain/Node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/block_chain.dir/block_chain/Node.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/block_chain.dir/block_chain/Node.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/block_chain.dir/block_chain/Node.cpp.o -c /home/default/CLionProjects/block_chain/block_chain/Node.cpp
 
 CMakeFiles/block_chain.dir/block_chain/Node.cpp.i: cmake_force
@@ -155,7 +131,7 @@ CMakeFiles/block_chain.dir/block_chain/Node.cpp.o.provides.build: CMakeFiles/blo
 
 CMakeFiles/block_chain.dir/block_chain/Serializer.cpp.o: CMakeFiles/block_chain.dir/flags.make
 CMakeFiles/block_chain.dir/block_chain/Serializer.cpp.o: ../block_chain/Serializer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/block_chain.dir/block_chain/Serializer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/block_chain.dir/block_chain/Serializer.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/block_chain.dir/block_chain/Serializer.cpp.o -c /home/default/CLionProjects/block_chain/block_chain/Serializer.cpp
 
 CMakeFiles/block_chain.dir/block_chain/Serializer.cpp.i: cmake_force
@@ -179,7 +155,7 @@ CMakeFiles/block_chain.dir/block_chain/Serializer.cpp.o.provides.build: CMakeFil
 
 CMakeFiles/block_chain.dir/block_chain/Validator.cpp.o: CMakeFiles/block_chain.dir/flags.make
 CMakeFiles/block_chain.dir/block_chain/Validator.cpp.o: ../block_chain/Validator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/block_chain.dir/block_chain/Validator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/block_chain.dir/block_chain/Validator.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/block_chain.dir/block_chain/Validator.cpp.o -c /home/default/CLionProjects/block_chain/block_chain/Validator.cpp
 
 CMakeFiles/block_chain.dir/block_chain/Validator.cpp.i: cmake_force
@@ -203,7 +179,7 @@ CMakeFiles/block_chain.dir/block_chain/Validator.cpp.o.provides.build: CMakeFile
 
 CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o: CMakeFiles/block_chain.dir/flags.make
 CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o: ../block_chain/chain/NodeState.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o -c /home/default/CLionProjects/block_chain/block_chain/chain/NodeState.cpp
 
 CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.i: cmake_force
@@ -227,7 +203,7 @@ CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o.provides.build: CMa
 
 CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o: CMakeFiles/block_chain.dir/flags.make
 CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o: ../block_chain/chain/block/Block.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o -c /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.cpp
 
 CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.i: cmake_force
@@ -249,33 +225,9 @@ CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o.provides: CMakeFi
 CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o.provides.build: CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o
 
 
-CMakeFiles/block_chain.dir/block_chain/chain/block/BlockFactory.cpp.o: CMakeFiles/block_chain.dir/flags.make
-CMakeFiles/block_chain.dir/block_chain/chain/block/BlockFactory.cpp.o: ../block_chain/chain/block/BlockFactory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/block_chain.dir/block_chain/chain/block/BlockFactory.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/block_chain.dir/block_chain/chain/block/BlockFactory.cpp.o -c /home/default/CLionProjects/block_chain/block_chain/chain/block/BlockFactory.cpp
-
-CMakeFiles/block_chain.dir/block_chain/chain/block/BlockFactory.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/block_chain.dir/block_chain/chain/block/BlockFactory.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/default/CLionProjects/block_chain/block_chain/chain/block/BlockFactory.cpp > CMakeFiles/block_chain.dir/block_chain/chain/block/BlockFactory.cpp.i
-
-CMakeFiles/block_chain.dir/block_chain/chain/block/BlockFactory.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/block_chain.dir/block_chain/chain/block/BlockFactory.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/default/CLionProjects/block_chain/block_chain/chain/block/BlockFactory.cpp -o CMakeFiles/block_chain.dir/block_chain/chain/block/BlockFactory.cpp.s
-
-CMakeFiles/block_chain.dir/block_chain/chain/block/BlockFactory.cpp.o.requires:
-
-.PHONY : CMakeFiles/block_chain.dir/block_chain/chain/block/BlockFactory.cpp.o.requires
-
-CMakeFiles/block_chain.dir/block_chain/chain/block/BlockFactory.cpp.o.provides: CMakeFiles/block_chain.dir/block_chain/chain/block/BlockFactory.cpp.o.requires
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/BlockFactory.cpp.o.provides.build
-.PHONY : CMakeFiles/block_chain.dir/block_chain/chain/block/BlockFactory.cpp.o.provides
-
-CMakeFiles/block_chain.dir/block_chain/chain/block/BlockFactory.cpp.o.provides.build: CMakeFiles/block_chain.dir/block_chain/chain/block/BlockFactory.cpp.o
-
-
 CMakeFiles/block_chain.dir/block_chain/chain/block/Component.cpp.o: CMakeFiles/block_chain.dir/flags.make
 CMakeFiles/block_chain.dir/block_chain/chain/block/Component.cpp.o: ../block_chain/chain/block/Component.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/block_chain.dir/block_chain/chain/block/Component.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/block_chain.dir/block_chain/chain/block/Component.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/block_chain.dir/block_chain/chain/block/Component.cpp.o -c /home/default/CLionProjects/block_chain/block_chain/chain/block/Component.cpp
 
 CMakeFiles/block_chain.dir/block_chain/chain/block/Component.cpp.i: cmake_force
@@ -299,7 +251,7 @@ CMakeFiles/block_chain.dir/block_chain/chain/block/Component.cpp.o.provides.buil
 
 CMakeFiles/block_chain.dir/block_chain/chain/block/Hash.cpp.o: CMakeFiles/block_chain.dir/flags.make
 CMakeFiles/block_chain.dir/block_chain/chain/block/Hash.cpp.o: ../block_chain/chain/block/Hash.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/block_chain.dir/block_chain/chain/block/Hash.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/block_chain.dir/block_chain/chain/block/Hash.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/block_chain.dir/block_chain/chain/block/Hash.cpp.o -c /home/default/CLionProjects/block_chain/block_chain/chain/block/Hash.cpp
 
 CMakeFiles/block_chain.dir/block_chain/chain/block/Hash.cpp.i: cmake_force
@@ -323,7 +275,7 @@ CMakeFiles/block_chain.dir/block_chain/chain/block/Hash.cpp.o.provides.build: CM
 
 CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o: CMakeFiles/block_chain.dir/flags.make
 CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o: ../block_chain/chain/block/transaction/Transaction.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o -c /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.cpp
 
 CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.i: cmake_force
@@ -347,7 +299,7 @@ CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o
 
 CMakeFiles/block_chain.dir/block_chain/socket/Peer.cpp.o: CMakeFiles/block_chain.dir/flags.make
 CMakeFiles/block_chain.dir/block_chain/socket/Peer.cpp.o: ../block_chain/socket/Peer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/block_chain.dir/block_chain/socket/Peer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/block_chain.dir/block_chain/socket/Peer.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/block_chain.dir/block_chain/socket/Peer.cpp.o -c /home/default/CLionProjects/block_chain/block_chain/socket/Peer.cpp
 
 CMakeFiles/block_chain.dir/block_chain/socket/Peer.cpp.i: cmake_force
@@ -371,7 +323,7 @@ CMakeFiles/block_chain.dir/block_chain/socket/Peer.cpp.o.provides.build: CMakeFi
 
 CMakeFiles/block_chain.dir/block_chain/socket/Socket.cpp.o: CMakeFiles/block_chain.dir/flags.make
 CMakeFiles/block_chain.dir/block_chain/socket/Socket.cpp.o: ../block_chain/socket/Socket.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/block_chain.dir/block_chain/socket/Socket.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/block_chain.dir/block_chain/socket/Socket.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/block_chain.dir/block_chain/socket/Socket.cpp.o -c /home/default/CLionProjects/block_chain/block_chain/socket/Socket.cpp
 
 CMakeFiles/block_chain.dir/block_chain/socket/Socket.cpp.i: cmake_force
@@ -395,7 +347,7 @@ CMakeFiles/block_chain.dir/block_chain/socket/Socket.cpp.o.provides.build: CMake
 
 CMakeFiles/block_chain.dir/block_chain/socket/SocketServer.cpp.o: CMakeFiles/block_chain.dir/flags.make
 CMakeFiles/block_chain.dir/block_chain/socket/SocketServer.cpp.o: ../block_chain/socket/SocketServer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/block_chain.dir/block_chain/socket/SocketServer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/block_chain.dir/block_chain/socket/SocketServer.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/block_chain.dir/block_chain/socket/SocketServer.cpp.o -c /home/default/CLionProjects/block_chain/block_chain/socket/SocketServer.cpp
 
 CMakeFiles/block_chain.dir/block_chain/socket/SocketServer.cpp.i: cmake_force
@@ -419,7 +371,7 @@ CMakeFiles/block_chain.dir/block_chain/socket/SocketServer.cpp.o.provides.build:
 
 CMakeFiles/block_chain.dir/block_chain/utils/RSA.cpp.o: CMakeFiles/block_chain.dir/flags.make
 CMakeFiles/block_chain.dir/block_chain/utils/RSA.cpp.o: ../block_chain/utils/RSA.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/block_chain.dir/block_chain/utils/RSA.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/block_chain.dir/block_chain/utils/RSA.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/block_chain.dir/block_chain/utils/RSA.cpp.o -c /home/default/CLionProjects/block_chain/block_chain/utils/RSA.cpp
 
 CMakeFiles/block_chain.dir/block_chain/utils/RSA.cpp.i: cmake_force
@@ -443,7 +395,7 @@ CMakeFiles/block_chain.dir/block_chain/utils/RSA.cpp.o.provides.build: CMakeFile
 
 CMakeFiles/block_chain.dir/block_chain/utils/serialization/Element.cpp.o: CMakeFiles/block_chain.dir/flags.make
 CMakeFiles/block_chain.dir/block_chain/utils/serialization/Element.cpp.o: ../block_chain/utils/serialization/Element.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/block_chain.dir/block_chain/utils/serialization/Element.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/block_chain.dir/block_chain/utils/serialization/Element.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/block_chain.dir/block_chain/utils/serialization/Element.cpp.o -c /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.cpp
 
 CMakeFiles/block_chain.dir/block_chain/utils/serialization/Element.cpp.i: cmake_force
@@ -467,7 +419,7 @@ CMakeFiles/block_chain.dir/block_chain/utils/serialization/Element.cpp.o.provide
 
 CMakeFiles/block_chain.dir/block_chain/utils/serialization/ElementCreator.cpp.o: CMakeFiles/block_chain.dir/flags.make
 CMakeFiles/block_chain.dir/block_chain/utils/serialization/ElementCreator.cpp.o: ../block_chain/utils/serialization/ElementCreator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/block_chain.dir/block_chain/utils/serialization/ElementCreator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/block_chain.dir/block_chain/utils/serialization/ElementCreator.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/block_chain.dir/block_chain/utils/serialization/ElementCreator.cpp.o -c /home/default/CLionProjects/block_chain/block_chain/utils/serialization/ElementCreator.cpp
 
 CMakeFiles/block_chain.dir/block_chain/utils/serialization/ElementCreator.cpp.i: cmake_force
@@ -491,7 +443,7 @@ CMakeFiles/block_chain.dir/block_chain/utils/serialization/ElementCreator.cpp.o.
 
 CMakeFiles/block_chain.dir/block_chain/utils/serialization/json/JsonCreator.cpp.o: CMakeFiles/block_chain.dir/flags.make
 CMakeFiles/block_chain.dir/block_chain/utils/serialization/json/JsonCreator.cpp.o: ../block_chain/utils/serialization/json/JsonCreator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/block_chain.dir/block_chain/utils/serialization/json/JsonCreator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/block_chain.dir/block_chain/utils/serialization/json/JsonCreator.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/block_chain.dir/block_chain/utils/serialization/json/JsonCreator.cpp.o -c /home/default/CLionProjects/block_chain/block_chain/utils/serialization/json/JsonCreator.cpp
 
 CMakeFiles/block_chain.dir/block_chain/utils/serialization/json/JsonCreator.cpp.i: cmake_force
@@ -515,7 +467,7 @@ CMakeFiles/block_chain.dir/block_chain/utils/serialization/json/JsonCreator.cpp.
 
 CMakeFiles/block_chain.dir/block_chain/utils/serialization/json/JsonParser.cpp.o: CMakeFiles/block_chain.dir/flags.make
 CMakeFiles/block_chain.dir/block_chain/utils/serialization/json/JsonParser.cpp.o: ../block_chain/utils/serialization/json/JsonParser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/block_chain.dir/block_chain/utils/serialization/json/JsonParser.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/block_chain.dir/block_chain/utils/serialization/json/JsonParser.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/block_chain.dir/block_chain/utils/serialization/json/JsonParser.cpp.o -c /home/default/CLionProjects/block_chain/block_chain/utils/serialization/json/JsonParser.cpp
 
 CMakeFiles/block_chain.dir/block_chain/utils/serialization/json/JsonParser.cpp.i: cmake_force
@@ -539,7 +491,7 @@ CMakeFiles/block_chain.dir/block_chain/utils/serialization/json/JsonParser.cpp.o
 
 CMakeFiles/block_chain.dir/transactions/StatusTransaction.cpp.o: CMakeFiles/block_chain.dir/flags.make
 CMakeFiles/block_chain.dir/transactions/StatusTransaction.cpp.o: ../transactions/StatusTransaction.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/block_chain.dir/transactions/StatusTransaction.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/block_chain.dir/transactions/StatusTransaction.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/block_chain.dir/transactions/StatusTransaction.cpp.o -c /home/default/CLionProjects/block_chain/transactions/StatusTransaction.cpp
 
 CMakeFiles/block_chain.dir/transactions/StatusTransaction.cpp.i: cmake_force
@@ -563,7 +515,7 @@ CMakeFiles/block_chain.dir/transactions/StatusTransaction.cpp.o.provides.build: 
 
 CMakeFiles/block_chain.dir/transactions/MessagesTransaction.cpp.o: CMakeFiles/block_chain.dir/flags.make
 CMakeFiles/block_chain.dir/transactions/MessagesTransaction.cpp.o: ../transactions/MessagesTransaction.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/block_chain.dir/transactions/MessagesTransaction.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/block_chain.dir/transactions/MessagesTransaction.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/block_chain.dir/transactions/MessagesTransaction.cpp.o -c /home/default/CLionProjects/block_chain/transactions/MessagesTransaction.cpp
 
 CMakeFiles/block_chain.dir/transactions/MessagesTransaction.cpp.i: cmake_force
@@ -587,7 +539,7 @@ CMakeFiles/block_chain.dir/transactions/MessagesTransaction.cpp.o.provides.build
 
 CMakeFiles/block_chain.dir/validator/CustomSerializer.cpp.o: CMakeFiles/block_chain.dir/flags.make
 CMakeFiles/block_chain.dir/validator/CustomSerializer.cpp.o: ../validator/CustomSerializer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/block_chain.dir/validator/CustomSerializer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/block_chain.dir/validator/CustomSerializer.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/block_chain.dir/validator/CustomSerializer.cpp.o -c /home/default/CLionProjects/block_chain/validator/CustomSerializer.cpp
 
 CMakeFiles/block_chain.dir/validator/CustomSerializer.cpp.i: cmake_force
@@ -611,7 +563,7 @@ CMakeFiles/block_chain.dir/validator/CustomSerializer.cpp.o.provides.build: CMak
 
 CMakeFiles/block_chain.dir/block_chain/utils/Encoding.cpp.o: CMakeFiles/block_chain.dir/flags.make
 CMakeFiles/block_chain.dir/block_chain/utils/Encoding.cpp.o: ../block_chain/utils/Encoding.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/block_chain.dir/block_chain/utils/Encoding.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/block_chain.dir/block_chain/utils/Encoding.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/block_chain.dir/block_chain/utils/Encoding.cpp.o -c /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.cpp
 
 CMakeFiles/block_chain.dir/block_chain/utils/Encoding.cpp.i: cmake_force
@@ -635,7 +587,7 @@ CMakeFiles/block_chain.dir/block_chain/utils/Encoding.cpp.o.provides.build: CMak
 
 CMakeFiles/block_chain.dir/block_chain/chain/block/Metadata.cpp.o: CMakeFiles/block_chain.dir/flags.make
 CMakeFiles/block_chain.dir/block_chain/chain/block/Metadata.cpp.o: ../block_chain/chain/block/Metadata.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/block_chain.dir/block_chain/chain/block/Metadata.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/block_chain.dir/block_chain/chain/block/Metadata.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/block_chain.dir/block_chain/chain/block/Metadata.cpp.o -c /home/default/CLionProjects/block_chain/block_chain/chain/block/Metadata.cpp
 
 CMakeFiles/block_chain.dir/block_chain/chain/block/Metadata.cpp.i: cmake_force
@@ -659,7 +611,7 @@ CMakeFiles/block_chain.dir/block_chain/chain/block/Metadata.cpp.o.provides.build
 
 CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/TransactionContainer.cpp.o: CMakeFiles/block_chain.dir/flags.make
 CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/TransactionContainer.cpp.o: ../block_chain/chain/block/transaction/TransactionContainer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/TransactionContainer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/TransactionContainer.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/TransactionContainer.cpp.o -c /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/TransactionContainer.cpp
 
 CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/TransactionContainer.cpp.i: cmake_force
@@ -683,7 +635,7 @@ CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/TransactionContai
 
 CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/MerkleTree.cpp.o: CMakeFiles/block_chain.dir/flags.make
 CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/MerkleTree.cpp.o: ../block_chain/chain/block/transaction/MerkleTree.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/MerkleTree.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/MerkleTree.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/MerkleTree.cpp.o -c /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/MerkleTree.cpp
 
 CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/MerkleTree.cpp.i: cmake_force
@@ -707,7 +659,7 @@ CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/MerkleTree.cpp.o.
 
 CMakeFiles/block_chain.dir/database/Row.cpp.o: CMakeFiles/block_chain.dir/flags.make
 CMakeFiles/block_chain.dir/database/Row.cpp.o: ../database/Row.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/block_chain.dir/database/Row.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/block_chain.dir/database/Row.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/block_chain.dir/database/Row.cpp.o -c /home/default/CLionProjects/block_chain/database/Row.cpp
 
 CMakeFiles/block_chain.dir/database/Row.cpp.i: cmake_force
@@ -731,7 +683,7 @@ CMakeFiles/block_chain.dir/database/Row.cpp.o.provides.build: CMakeFiles/block_c
 
 CMakeFiles/block_chain.dir/block_chain/chain/Database.cpp.o: CMakeFiles/block_chain.dir/flags.make
 CMakeFiles/block_chain.dir/block_chain/chain/Database.cpp.o: ../block_chain/chain/Database.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/block_chain.dir/block_chain/chain/Database.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/block_chain.dir/block_chain/chain/Database.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/block_chain.dir/block_chain/chain/Database.cpp.o -c /home/default/CLionProjects/block_chain/block_chain/chain/Database.cpp
 
 CMakeFiles/block_chain.dir/block_chain/chain/Database.cpp.i: cmake_force
@@ -755,7 +707,7 @@ CMakeFiles/block_chain.dir/block_chain/chain/Database.cpp.o.provides.build: CMak
 
 CMakeFiles/block_chain.dir/block_chain/chain/Row.cpp.o: CMakeFiles/block_chain.dir/flags.make
 CMakeFiles/block_chain.dir/block_chain/chain/Row.cpp.o: ../block_chain/chain/Row.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/block_chain.dir/block_chain/chain/Row.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/block_chain.dir/block_chain/chain/Row.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/block_chain.dir/block_chain/chain/Row.cpp.o -c /home/default/CLionProjects/block_chain/block_chain/chain/Row.cpp
 
 CMakeFiles/block_chain.dir/block_chain/chain/Row.cpp.i: cmake_force
@@ -779,7 +731,7 @@ CMakeFiles/block_chain.dir/block_chain/chain/Row.cpp.o.provides.build: CMakeFile
 
 CMakeFiles/block_chain.dir/transactions/MoneyTransaction.cpp.o: CMakeFiles/block_chain.dir/flags.make
 CMakeFiles/block_chain.dir/transactions/MoneyTransaction.cpp.o: ../transactions/MoneyTransaction.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/block_chain.dir/transactions/MoneyTransaction.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/block_chain.dir/transactions/MoneyTransaction.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/block_chain.dir/transactions/MoneyTransaction.cpp.o -c /home/default/CLionProjects/block_chain/transactions/MoneyTransaction.cpp
 
 CMakeFiles/block_chain.dir/transactions/MoneyTransaction.cpp.i: cmake_force
@@ -803,7 +755,7 @@ CMakeFiles/block_chain.dir/transactions/MoneyTransaction.cpp.o.provides.build: C
 
 CMakeFiles/block_chain.dir/block_chain/TransactionManager.cpp.o: CMakeFiles/block_chain.dir/flags.make
 CMakeFiles/block_chain.dir/block_chain/TransactionManager.cpp.o: ../block_chain/TransactionManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/block_chain.dir/block_chain/TransactionManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/block_chain.dir/block_chain/TransactionManager.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/block_chain.dir/block_chain/TransactionManager.cpp.o -c /home/default/CLionProjects/block_chain/block_chain/TransactionManager.cpp
 
 CMakeFiles/block_chain.dir/block_chain/TransactionManager.cpp.i: cmake_force
@@ -825,17 +777,207 @@ CMakeFiles/block_chain.dir/block_chain/TransactionManager.cpp.o.provides: CMakeF
 CMakeFiles/block_chain.dir/block_chain/TransactionManager.cpp.o.provides.build: CMakeFiles/block_chain.dir/block_chain/TransactionManager.cpp.o
 
 
+CMakeFiles/block_chain.dir/block_chain/proof/Proof.cpp.o: CMakeFiles/block_chain.dir/flags.make
+CMakeFiles/block_chain.dir/block_chain/proof/Proof.cpp.o: ../block_chain/proof/Proof.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/block_chain.dir/block_chain/proof/Proof.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/block_chain.dir/block_chain/proof/Proof.cpp.o -c /home/default/CLionProjects/block_chain/block_chain/proof/Proof.cpp
+
+CMakeFiles/block_chain.dir/block_chain/proof/Proof.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/block_chain.dir/block_chain/proof/Proof.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/default/CLionProjects/block_chain/block_chain/proof/Proof.cpp > CMakeFiles/block_chain.dir/block_chain/proof/Proof.cpp.i
+
+CMakeFiles/block_chain.dir/block_chain/proof/Proof.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/block_chain.dir/block_chain/proof/Proof.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/default/CLionProjects/block_chain/block_chain/proof/Proof.cpp -o CMakeFiles/block_chain.dir/block_chain/proof/Proof.cpp.s
+
+CMakeFiles/block_chain.dir/block_chain/proof/Proof.cpp.o.requires:
+
+.PHONY : CMakeFiles/block_chain.dir/block_chain/proof/Proof.cpp.o.requires
+
+CMakeFiles/block_chain.dir/block_chain/proof/Proof.cpp.o.provides: CMakeFiles/block_chain.dir/block_chain/proof/Proof.cpp.o.requires
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/proof/Proof.cpp.o.provides.build
+.PHONY : CMakeFiles/block_chain.dir/block_chain/proof/Proof.cpp.o.provides
+
+CMakeFiles/block_chain.dir/block_chain/proof/Proof.cpp.o.provides.build: CMakeFiles/block_chain.dir/block_chain/proof/Proof.cpp.o
+
+
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfWork.cpp.o: CMakeFiles/block_chain.dir/flags.make
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfWork.cpp.o: ../block_chain/proof/ProofOfWork.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/block_chain.dir/block_chain/proof/ProofOfWork.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/block_chain.dir/block_chain/proof/ProofOfWork.cpp.o -c /home/default/CLionProjects/block_chain/block_chain/proof/ProofOfWork.cpp
+
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfWork.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/block_chain.dir/block_chain/proof/ProofOfWork.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/default/CLionProjects/block_chain/block_chain/proof/ProofOfWork.cpp > CMakeFiles/block_chain.dir/block_chain/proof/ProofOfWork.cpp.i
+
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfWork.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/block_chain.dir/block_chain/proof/ProofOfWork.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/default/CLionProjects/block_chain/block_chain/proof/ProofOfWork.cpp -o CMakeFiles/block_chain.dir/block_chain/proof/ProofOfWork.cpp.s
+
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfWork.cpp.o.requires:
+
+.PHONY : CMakeFiles/block_chain.dir/block_chain/proof/ProofOfWork.cpp.o.requires
+
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfWork.cpp.o.provides: CMakeFiles/block_chain.dir/block_chain/proof/ProofOfWork.cpp.o.requires
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/proof/ProofOfWork.cpp.o.provides.build
+.PHONY : CMakeFiles/block_chain.dir/block_chain/proof/ProofOfWork.cpp.o.provides
+
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfWork.cpp.o.provides.build: CMakeFiles/block_chain.dir/block_chain/proof/ProofOfWork.cpp.o
+
+
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStake.cpp.o: CMakeFiles/block_chain.dir/flags.make
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStake.cpp.o: ../block_chain/proof/ProofOfStake.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStake.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStake.cpp.o -c /home/default/CLionProjects/block_chain/block_chain/proof/ProofOfStake.cpp
+
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStake.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStake.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/default/CLionProjects/block_chain/block_chain/proof/ProofOfStake.cpp > CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStake.cpp.i
+
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStake.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStake.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/default/CLionProjects/block_chain/block_chain/proof/ProofOfStake.cpp -o CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStake.cpp.s
+
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStake.cpp.o.requires:
+
+.PHONY : CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStake.cpp.o.requires
+
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStake.cpp.o.provides: CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStake.cpp.o.requires
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStake.cpp.o.provides.build
+.PHONY : CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStake.cpp.o.provides
+
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStake.cpp.o.provides.build: CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStake.cpp.o
+
+
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfHold.cpp.o: CMakeFiles/block_chain.dir/flags.make
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfHold.cpp.o: ../block_chain/proof/ProofOfHold.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/block_chain.dir/block_chain/proof/ProofOfHold.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/block_chain.dir/block_chain/proof/ProofOfHold.cpp.o -c /home/default/CLionProjects/block_chain/block_chain/proof/ProofOfHold.cpp
+
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfHold.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/block_chain.dir/block_chain/proof/ProofOfHold.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/default/CLionProjects/block_chain/block_chain/proof/ProofOfHold.cpp > CMakeFiles/block_chain.dir/block_chain/proof/ProofOfHold.cpp.i
+
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfHold.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/block_chain.dir/block_chain/proof/ProofOfHold.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/default/CLionProjects/block_chain/block_chain/proof/ProofOfHold.cpp -o CMakeFiles/block_chain.dir/block_chain/proof/ProofOfHold.cpp.s
+
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfHold.cpp.o.requires:
+
+.PHONY : CMakeFiles/block_chain.dir/block_chain/proof/ProofOfHold.cpp.o.requires
+
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfHold.cpp.o.provides: CMakeFiles/block_chain.dir/block_chain/proof/ProofOfHold.cpp.o.requires
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/proof/ProofOfHold.cpp.o.provides.build
+.PHONY : CMakeFiles/block_chain.dir/block_chain/proof/ProofOfHold.cpp.o.provides
+
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfHold.cpp.o.provides.build: CMakeFiles/block_chain.dir/block_chain/proof/ProofOfHold.cpp.o
+
+
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfUse.cpp.o: CMakeFiles/block_chain.dir/flags.make
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfUse.cpp.o: ../block_chain/proof/ProofOfUse.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/block_chain.dir/block_chain/proof/ProofOfUse.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/block_chain.dir/block_chain/proof/ProofOfUse.cpp.o -c /home/default/CLionProjects/block_chain/block_chain/proof/ProofOfUse.cpp
+
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfUse.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/block_chain.dir/block_chain/proof/ProofOfUse.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/default/CLionProjects/block_chain/block_chain/proof/ProofOfUse.cpp > CMakeFiles/block_chain.dir/block_chain/proof/ProofOfUse.cpp.i
+
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfUse.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/block_chain.dir/block_chain/proof/ProofOfUse.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/default/CLionProjects/block_chain/block_chain/proof/ProofOfUse.cpp -o CMakeFiles/block_chain.dir/block_chain/proof/ProofOfUse.cpp.s
+
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfUse.cpp.o.requires:
+
+.PHONY : CMakeFiles/block_chain.dir/block_chain/proof/ProofOfUse.cpp.o.requires
+
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfUse.cpp.o.provides: CMakeFiles/block_chain.dir/block_chain/proof/ProofOfUse.cpp.o.requires
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/proof/ProofOfUse.cpp.o.provides.build
+.PHONY : CMakeFiles/block_chain.dir/block_chain/proof/ProofOfUse.cpp.o.provides
+
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfUse.cpp.o.provides.build: CMakeFiles/block_chain.dir/block_chain/proof/ProofOfUse.cpp.o
+
+
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStakeTime.cpp.o: CMakeFiles/block_chain.dir/flags.make
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStakeTime.cpp.o: ../block_chain/proof/ProofOfStakeTime.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStakeTime.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStakeTime.cpp.o -c /home/default/CLionProjects/block_chain/block_chain/proof/ProofOfStakeTime.cpp
+
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStakeTime.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStakeTime.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/default/CLionProjects/block_chain/block_chain/proof/ProofOfStakeTime.cpp > CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStakeTime.cpp.i
+
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStakeTime.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStakeTime.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/default/CLionProjects/block_chain/block_chain/proof/ProofOfStakeTime.cpp -o CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStakeTime.cpp.s
+
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStakeTime.cpp.o.requires:
+
+.PHONY : CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStakeTime.cpp.o.requires
+
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStakeTime.cpp.o.provides: CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStakeTime.cpp.o.requires
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStakeTime.cpp.o.provides.build
+.PHONY : CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStakeTime.cpp.o.provides
+
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStakeTime.cpp.o.provides.build: CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStakeTime.cpp.o
+
+
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfMinimumAgedStake.cpp.o: CMakeFiles/block_chain.dir/flags.make
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfMinimumAgedStake.cpp.o: ../block_chain/proof/ProofOfMinimumAgedStake.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/block_chain.dir/block_chain/proof/ProofOfMinimumAgedStake.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/block_chain.dir/block_chain/proof/ProofOfMinimumAgedStake.cpp.o -c /home/default/CLionProjects/block_chain/block_chain/proof/ProofOfMinimumAgedStake.cpp
+
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfMinimumAgedStake.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/block_chain.dir/block_chain/proof/ProofOfMinimumAgedStake.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/default/CLionProjects/block_chain/block_chain/proof/ProofOfMinimumAgedStake.cpp > CMakeFiles/block_chain.dir/block_chain/proof/ProofOfMinimumAgedStake.cpp.i
+
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfMinimumAgedStake.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/block_chain.dir/block_chain/proof/ProofOfMinimumAgedStake.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/default/CLionProjects/block_chain/block_chain/proof/ProofOfMinimumAgedStake.cpp -o CMakeFiles/block_chain.dir/block_chain/proof/ProofOfMinimumAgedStake.cpp.s
+
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfMinimumAgedStake.cpp.o.requires:
+
+.PHONY : CMakeFiles/block_chain.dir/block_chain/proof/ProofOfMinimumAgedStake.cpp.o.requires
+
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfMinimumAgedStake.cpp.o.provides: CMakeFiles/block_chain.dir/block_chain/proof/ProofOfMinimumAgedStake.cpp.o.requires
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/proof/ProofOfMinimumAgedStake.cpp.o.provides.build
+.PHONY : CMakeFiles/block_chain.dir/block_chain/proof/ProofOfMinimumAgedStake.cpp.o.provides
+
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfMinimumAgedStake.cpp.o.provides.build: CMakeFiles/block_chain.dir/block_chain/proof/ProofOfMinimumAgedStake.cpp.o
+
+
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfImportance.cpp.o: CMakeFiles/block_chain.dir/flags.make
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfImportance.cpp.o: ../block_chain/proof/ProofOfImportance.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/block_chain.dir/block_chain/proof/ProofOfImportance.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/block_chain.dir/block_chain/proof/ProofOfImportance.cpp.o -c /home/default/CLionProjects/block_chain/block_chain/proof/ProofOfImportance.cpp
+
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfImportance.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/block_chain.dir/block_chain/proof/ProofOfImportance.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/default/CLionProjects/block_chain/block_chain/proof/ProofOfImportance.cpp > CMakeFiles/block_chain.dir/block_chain/proof/ProofOfImportance.cpp.i
+
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfImportance.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/block_chain.dir/block_chain/proof/ProofOfImportance.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/default/CLionProjects/block_chain/block_chain/proof/ProofOfImportance.cpp -o CMakeFiles/block_chain.dir/block_chain/proof/ProofOfImportance.cpp.s
+
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfImportance.cpp.o.requires:
+
+.PHONY : CMakeFiles/block_chain.dir/block_chain/proof/ProofOfImportance.cpp.o.requires
+
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfImportance.cpp.o.provides: CMakeFiles/block_chain.dir/block_chain/proof/ProofOfImportance.cpp.o.requires
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/proof/ProofOfImportance.cpp.o.provides.build
+.PHONY : CMakeFiles/block_chain.dir/block_chain/proof/ProofOfImportance.cpp.o.provides
+
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfImportance.cpp.o.provides.build: CMakeFiles/block_chain.dir/block_chain/proof/ProofOfImportance.cpp.o
+
+
 # Object files for target block_chain
 block_chain_OBJECTS = \
 "CMakeFiles/block_chain.dir/main.cpp.o" \
-"CMakeFiles/block_chain.dir/block_chain/Listener.cpp.o" \
 "CMakeFiles/block_chain.dir/block_chain/Message.cpp.o" \
 "CMakeFiles/block_chain.dir/block_chain/Node.cpp.o" \
 "CMakeFiles/block_chain.dir/block_chain/Serializer.cpp.o" \
 "CMakeFiles/block_chain.dir/block_chain/Validator.cpp.o" \
 "CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o" \
 "CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o" \
-"CMakeFiles/block_chain.dir/block_chain/chain/block/BlockFactory.cpp.o" \
 "CMakeFiles/block_chain.dir/block_chain/chain/block/Component.cpp.o" \
 "CMakeFiles/block_chain.dir/block_chain/chain/block/Hash.cpp.o" \
 "CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o" \
@@ -858,20 +1000,26 @@ block_chain_OBJECTS = \
 "CMakeFiles/block_chain.dir/block_chain/chain/Database.cpp.o" \
 "CMakeFiles/block_chain.dir/block_chain/chain/Row.cpp.o" \
 "CMakeFiles/block_chain.dir/transactions/MoneyTransaction.cpp.o" \
-"CMakeFiles/block_chain.dir/block_chain/TransactionManager.cpp.o"
+"CMakeFiles/block_chain.dir/block_chain/TransactionManager.cpp.o" \
+"CMakeFiles/block_chain.dir/block_chain/proof/Proof.cpp.o" \
+"CMakeFiles/block_chain.dir/block_chain/proof/ProofOfWork.cpp.o" \
+"CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStake.cpp.o" \
+"CMakeFiles/block_chain.dir/block_chain/proof/ProofOfHold.cpp.o" \
+"CMakeFiles/block_chain.dir/block_chain/proof/ProofOfUse.cpp.o" \
+"CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStakeTime.cpp.o" \
+"CMakeFiles/block_chain.dir/block_chain/proof/ProofOfMinimumAgedStake.cpp.o" \
+"CMakeFiles/block_chain.dir/block_chain/proof/ProofOfImportance.cpp.o"
 
 # External object files for target block_chain
 block_chain_EXTERNAL_OBJECTS =
 
 block_chain: CMakeFiles/block_chain.dir/main.cpp.o
-block_chain: CMakeFiles/block_chain.dir/block_chain/Listener.cpp.o
 block_chain: CMakeFiles/block_chain.dir/block_chain/Message.cpp.o
 block_chain: CMakeFiles/block_chain.dir/block_chain/Node.cpp.o
 block_chain: CMakeFiles/block_chain.dir/block_chain/Serializer.cpp.o
 block_chain: CMakeFiles/block_chain.dir/block_chain/Validator.cpp.o
 block_chain: CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o
 block_chain: CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o
-block_chain: CMakeFiles/block_chain.dir/block_chain/chain/block/BlockFactory.cpp.o
 block_chain: CMakeFiles/block_chain.dir/block_chain/chain/block/Component.cpp.o
 block_chain: CMakeFiles/block_chain.dir/block_chain/chain/block/Hash.cpp.o
 block_chain: CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o
@@ -895,11 +1043,19 @@ block_chain: CMakeFiles/block_chain.dir/block_chain/chain/Database.cpp.o
 block_chain: CMakeFiles/block_chain.dir/block_chain/chain/Row.cpp.o
 block_chain: CMakeFiles/block_chain.dir/transactions/MoneyTransaction.cpp.o
 block_chain: CMakeFiles/block_chain.dir/block_chain/TransactionManager.cpp.o
+block_chain: CMakeFiles/block_chain.dir/block_chain/proof/Proof.cpp.o
+block_chain: CMakeFiles/block_chain.dir/block_chain/proof/ProofOfWork.cpp.o
+block_chain: CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStake.cpp.o
+block_chain: CMakeFiles/block_chain.dir/block_chain/proof/ProofOfHold.cpp.o
+block_chain: CMakeFiles/block_chain.dir/block_chain/proof/ProofOfUse.cpp.o
+block_chain: CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStakeTime.cpp.o
+block_chain: CMakeFiles/block_chain.dir/block_chain/proof/ProofOfMinimumAgedStake.cpp.o
+block_chain: CMakeFiles/block_chain.dir/block_chain/proof/ProofOfImportance.cpp.o
 block_chain: CMakeFiles/block_chain.dir/build.make
 block_chain: /usr/lib/x86_64-linux-gnu/libssl.so
 block_chain: /usr/lib/x86_64-linux-gnu/libcrypto.so
 block_chain: CMakeFiles/block_chain.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Linking CXX executable block_chain"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Linking CXX executable block_chain"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/block_chain.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -908,14 +1064,12 @@ CMakeFiles/block_chain.dir/build: block_chain
 .PHONY : CMakeFiles/block_chain.dir/build
 
 CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/main.cpp.o.requires
-CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/Listener.cpp.o.requires
 CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/Message.cpp.o.requires
 CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/Node.cpp.o.requires
 CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/Serializer.cpp.o.requires
 CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/Validator.cpp.o.requires
 CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o.requires
 CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o.requires
-CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/chain/block/BlockFactory.cpp.o.requires
 CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/chain/block/Component.cpp.o.requires
 CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/chain/block/Hash.cpp.o.requires
 CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o.requires
@@ -939,6 +1093,14 @@ CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/chai
 CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/chain/Row.cpp.o.requires
 CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/transactions/MoneyTransaction.cpp.o.requires
 CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/TransactionManager.cpp.o.requires
+CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/proof/Proof.cpp.o.requires
+CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/proof/ProofOfWork.cpp.o.requires
+CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStake.cpp.o.requires
+CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/proof/ProofOfHold.cpp.o.requires
+CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/proof/ProofOfUse.cpp.o.requires
+CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStakeTime.cpp.o.requires
+CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/proof/ProofOfMinimumAgedStake.cpp.o.requires
+CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/proof/ProofOfImportance.cpp.o.requires
 
 .PHONY : CMakeFiles/block_chain.dir/requires
 

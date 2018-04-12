@@ -9,7 +9,7 @@ template<typename V> class Factory
 {
     typedef typename std::map<const char*, V>::const_iterator factory_iterator;
     private:
-        const int keycmp(const char* key, const char* protocol) const{
+        const int key_cmp(const char* key, const char* protocol) const{
             int i = 0;
             for(; key[i] != '\0' &&  protocol[i] != '\0' && key[i] == protocol[i];i++);
             return key[i] == protocol[i];
@@ -39,7 +39,7 @@ template<typename V> class Factory
 
 template <typename V> V Factory<V>::get(const char* key) const{
     for(typename std::map<const char*, V>::const_iterator it = items.begin(); it != items.end(); ++it) {
-        if(keycmp(it->first, key))
+        if(key_cmp(it->first, key))
             return it->second;
     }
     return nullptr;

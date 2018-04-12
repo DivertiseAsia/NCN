@@ -10,10 +10,6 @@ std::string Hash::to_string() const {
     return hash;
 }
 
-void Hash::set_hash(std::string str) {
-    hash = std::move(str);
-}
-
 Hash::Hash(const Component* component, const Serializer* serializer, const char* encoding){
     unsigned char digest[MD5_DIGEST_LENGTH + 1];
     std::string str = serializer->serialize(component, encoding);
@@ -38,8 +34,7 @@ Hash::Hash(Hash* hash1, double timestamp){
     hash = Encoding::toHexa(std::string((const char*)digest));
 }
 
-Hash::Hash(){
-}
+Hash::Hash() = default;
 
 Element* Hash::toElement() {
     ElementObject* e = ElementCreator::creator.object();
@@ -47,7 +42,7 @@ Element* Hash::toElement() {
     return e;
 }
 
-void Hash::fromElement(ElementObject* e, const Serializer* serializer, const char* encoding) {
+void Hash::fromElement(ElementObject* e, const Serializer*, const char*) {
     e->getItem("hash", &hash);
 }
 

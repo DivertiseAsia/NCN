@@ -6,12 +6,13 @@
 #include <iostream>
 #include <cstring>
 #include <cstdlib>
+#include <utility>
 
 bool StatusTransaction::operator()() const {
     return true;
 }
 
-StatusTransaction::StatusTransaction(std::string str): status(str) {
+StatusTransaction::StatusTransaction(std::string str): status(std::move(std::move(str))) {
 
 }
 
@@ -24,7 +25,7 @@ Element* StatusTransaction::toElement() const {
     return e;
 }
 
-void StatusTransaction::fromElement(ElementObject* e, const Serializer*, const char* encoding) {
+void StatusTransaction::fromElement(ElementObject* e, const Serializer*, const char*) {
     e->getItem("status", &status);
 };
 
@@ -34,7 +35,7 @@ std::string StatusTransaction::to_string() const {
 }
 
 std::vector<std::string> StatusTransaction::apply(Row* row){
-    CustomRow* cr = dynamic_cast<CustomRow*>(row);
+    auto * cr = dynamic_cast<CustomRow*>(row);
     cr->status = status;
     return  std::vector<std::string>();
 }
@@ -43,11 +44,11 @@ Row* StatusTransaction::createRow() const {
     return new CustomRow();
 };
 
-void StatusTransaction::apply_reverse(Row* row){
+void StatusTransaction::apply_reverse(Row*){
 
 }
 
-bool StatusTransaction::validate(Row *row) const {
+bool StatusTransaction::validate(Row*) const {
     return true;
 }
 

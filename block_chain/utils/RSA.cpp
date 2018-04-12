@@ -1,7 +1,7 @@
 #include "RSA.h"
 
 void w_private(BIO *bio, RSA* rsa) {
-    PEM_write_bio_RSAPrivateKey(bio, rsa, NULL, NULL, 0, NULL, NULL);
+    PEM_write_bio_RSAPrivateKey(bio, rsa, nullptr, nullptr, 0, nullptr, nullptr);
 }
 
 void w_public(BIO *bio, RSA* rsa) {
@@ -17,7 +17,7 @@ RSA_Cryptography::RSA_Cryptography()
 RSA_Cryptography::RSA_Cryptography(std::string key)
 {
     size = 4096;
-    BIO* bo = BIO_new_mem_buf( (void*) key.c_str(), key.size());
+    BIO* bo = BIO_new_mem_buf( (void*) key.c_str(), (int) key.size());
     BIO_set_flags( bo, BIO_FLAGS_BASE64_NO_NL ) ; // NO NL
     rsa = PEM_read_bio_RSAPublicKey(bo, nullptr, nullptr, nullptr);
     BIO_free(bo);
@@ -71,7 +71,7 @@ void RSA_Cryptography::write(void(* fun)(BIO*, RSA*), std::string file){
     BIO *bio = BIO_new(BIO_s_mem());
     fun(bio, rsa);
     keylen = BIO_pending(bio);
-    pem_key = (char*)calloc(keylen+1, 1);
+    pem_key = (char*)calloc((size_t) keylen+1, 1);
     BIO_read(bio, pem_key, keylen);
     std::ofstream block_file (file);
     std::string line;
@@ -89,18 +89,18 @@ RSA_Cryptography::~RSA_Cryptography()
 }
 
 std::string RSA_Cryptography::encrypt(std::string message) {
-    unsigned char* encrypt = (unsigned char*)malloc(RSA_size(rsa));
+    auto encrypt = (unsigned char*)malloc((size_t) RSA_size(rsa));
     int encrypt_len;
-    if((encrypt_len = RSA_private_encrypt(message.size()+1, (const unsigned char*)message.c_str(), encrypt, rsa, RSA_PKCS1_PADDING)) == -1) {
+    if((encrypt_len = RSA_private_encrypt((int)message.size()+1, (const unsigned char*)message.c_str(), encrypt, rsa, RSA_PKCS1_PADDING)) == -1) {
         std::cout << "ERROR ENCRYPT" << std::endl;
     }
     std::string str;
-    str.assign((const char*)encrypt, encrypt_len);
+    str.assign((const char*)encrypt, (unsigned long)encrypt_len);
     return str;
 }
 std::string RSA_Cryptography::decrypt(std::string message, int size) {
-    unsigned char* decrypt = (unsigned char*)malloc(size);
-    if(RSA_public_decrypt(message.size(), (const unsigned char*) message.c_str(), decrypt, rsa, RSA_PKCS1_PADDING) == -1) {
+    auto decrypt = (unsigned char*)malloc((size_t) size);
+    if(RSA_public_decrypt((int)message.size(), (const unsigned char*) message.c_str(), decrypt, rsa, RSA_PKCS1_PADDING) == -1) {
             std::cout << "ERROR DECRYPT" << std::endl;
     }
     return std::string((const char*)decrypt);
@@ -112,7 +112,7 @@ std::string getKey(void (* fun)(BIO*, RSA*), RSA* rsa){
     BIO *p = BIO_new(BIO_s_mem());
     fun(p, rsa);
     len = BIO_pending(p);
-    key = (char*)malloc(len + 1);
+    key = (char*)malloc((size_t) len + 1);
     BIO_read(p, key, len);
     key[len] = '\0';
     std::string final_key = key;

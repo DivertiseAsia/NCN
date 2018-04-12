@@ -7,9 +7,7 @@
 void run(SocketServer* server, Serializer* serializer, Node* node) {
     server->run(Node::defaultCallback, serializer, node);
 }
-Node::Node(Serializer* s, int p): serializer(s), validator(serializer, "json"), block_chain(s, 1), server(p), running(run, &server, s, this), self(serializer, Socket::getIP(), p) {
-
-
+Node::Node(Serializer* s, int p, const char* e, int pr): serializer(s), encoding(e), proof(Proof::generate(pr)), validator(serializer, "json"), block_chain(s, 1), server(p), running(run, &server, s, this), self(serializer, Socket::getIP(), p) {
     OpenSSL_add_all_algorithms();
     ERR_load_BIO_strings();
     ERR_load_crypto_strings();
@@ -17,13 +15,14 @@ Node::Node(Serializer* s, int p): serializer(s), validator(serializer, "json"), 
         rsa.generate("./network/private.pem", "./network/public.pem");
     store(Socket::getIP(), p);
     running.detach();
-    if(peers.size() == 0)
+    if(peers.empty())
         block_chain.read_blocks();
 }
 
 Node::~Node(){
     std::cout<< "Closing connection" <<std::endl;
     server.close();
+    delete proof;
     #ifndef _WIN32
     running.detach();
     #endif // _WIN32
@@ -102,8 +101,8 @@ bool Node::operator()(Transaction* transaction, Message* message) {
     bool valid = (*message->tree->value == *transaction->__hash__(serializer, "json") && block_chain.check_transaction(transaction, message->public_key));
     if(valid) {
         Block *block = block_chain.add(message->cipher, Encoding::toHexa(message->public_key));
-        //TODO: generate proof of something
         if(block != nullptr){
+            proof->run(block);
             std::vector<Transaction*> transactions;
             for(auto& t : block->transactions){
                 std::string cipher(Encoding::fromHexa(t.first));
@@ -112,8 +111,8 @@ bool Node::operator()(Transaction* transaction, Message* message) {
             }
             std::string serialized_block(serializer->serialize(block, "json"));
             MerkleTree tree(transactions, serializer, "json");
-            Message message(serialized_block, "",""/*rsa.encrypt(serialized_block), rsa.getPublicKey()*/, &tree, Message::BLOCK);
-            char* m = serializer->serialize(&message, "json");
+            Message answer(serialized_block, "",""/*rsa.encrypt(serialized_block), rsa.getPublicKey()*/, &tree, Message::BLOCK);
+            char* m = serializer->serialize(&answer, "json");
             for (auto &peer : peers)
                 peer.send(Encoding::toHexa(std::string(m)).c_str());
             free(m);
@@ -124,26 +123,27 @@ bool Node::operator()(Transaction* transaction, Message* message) {
 bool Node::operator()(Block* block, Message* message) {
     if(validator(block))
     {
-        int i = 0;
-        //TODO: tests necessaires
-        for(auto& t : block->transactions){
-            std::string cipher(Encoding::fromHexa(t.first));
-            RSA_Cryptography crypto(Encoding::fromHexa(t.second));
-            Transaction* transaction = serializer->unserializeTransaction(crypto.decrypt(cipher, cipher.size()), "json");
-            bool valid = *message->tree->get_hash(i) == *transaction->__hash__(serializer, "json");
-            std::cout << "<" << valid << ">" <<std::endl;
-            if(!valid)
-                return false;
-            i++;
+        if(proof->accept(block)) {
+            int i = 0;
+            for (auto &t : block->transactions) {
+                std::string cipher(Encoding::fromHexa(t.first));
+                RSA_Cryptography crypto(Encoding::fromHexa(t.second));
+                Transaction *transaction = serializer->unserializeTransaction(crypto.decrypt(cipher, cipher.size()),
+                                                                              "json");
+                bool valid = *message->tree->get_hash(i) == *transaction->__hash__(serializer, "json");
+                if (!valid)
+                    return false;
+                i++;
+            }
+            block_chain.add(block);
+            block_chain.clear_transactions();
+            return true;
         }
-        block_chain.add(block);
-        block_chain.clear_transactions();
-        return true;
     }
     return false;
 }
 
-bool Node::operator()(Message* message) {
+bool Node::operator()(Message*) {
     bool valid = true;
     return valid;
 }
@@ -160,8 +160,8 @@ void Node::parseAskPeers(Message* message) {
     int port = atoi(message->plain_text.substr(index+1).c_str());
     Peer peer(serializer, ip, port);
     std::string peers_to_send(self.to_string());
-    for (auto &peer : peers)
-        peers_to_send += peer.to_string() + std::string("\n");
+    for (auto &p : peers)
+        peers_to_send += p.to_string() + std::string("\n");
     message->plain_text = peers_to_send;
     message->type = Message::ANSWER_PEERS;
     char* m = serializer->serialize(message, "json");
@@ -223,7 +223,7 @@ bool Node::defaultCallback(Socket* socket, int port, Serializer* serializer, Nod
         if (buffer.length()) {
             auto start = std::chrono::high_resolution_clock::now();
             std::cout << "Request received on port " << port << " >> ";
-            buffer = Encoding::fromHexa(buffer.c_str());
+            buffer = Encoding::fromHexa(buffer);
             std::cout << buffer << std::endl;
             Message *message = serializer->unserializeMessage(buffer, "json");
             (node->*(action[message->type]))(message);

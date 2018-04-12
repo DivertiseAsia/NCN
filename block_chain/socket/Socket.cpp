@@ -12,7 +12,7 @@ SOCKET createSocket(){
 
 Socket::Socket(std::string address , int port)
 {
-    struct sockaddr_in server;
+    struct sockaddr_in server{};
     //Create socket
     socket = createSocket();
     if (socket == -1)
@@ -23,6 +23,7 @@ Socket::Socket(std::string address , int port)
         #endif // _WIN32
 
     //setup address structure
+    /*
     if(inet_addr(address.c_str()) == -1)
     {
         struct hostent *he;
@@ -40,7 +41,7 @@ Socket::Socket(std::string address , int port)
 
         //Cast the h_addr_list to in_addr , since h_addr_list also has the ip address in long format only
         addr_list = (struct in_addr **) he->h_addr_list;
-        for(int i = 0; addr_list[i] != NULL; i++)
+        for(int i = 0; addr_list[i] != nullptr; i++)
         {
             //strcpy(ip , inet_ntoa(*addr_list[i]) );
             server.sin_addr = *addr_list[i];
@@ -49,7 +50,7 @@ Socket::Socket(std::string address , int port)
     }
 
     //plain ip address
-    else
+    else*/
     {
         server.sin_addr.s_addr = inet_addr( address.c_str() );
     }
@@ -61,11 +62,8 @@ Socket::Socket(std::string address , int port)
     int res = connect(socket, (struct sockaddr *)&server , sizeof(server));
     #else
     // Set non-blocking
-    int res, valopt;
-    struct sockaddr_in addr;
+    int res, val_opt;
     long arg;
-    fd_set myset;
-    struct timeval tv;
     socklen_t lon;
     arg = fcntl(socket, F_GETFL, NULL);
     arg |= O_NONBLOCK;
@@ -74,16 +72,16 @@ Socket::Socket(std::string address , int port)
     // Trying to connect with timeout
     res = connect(socket, (struct sockaddr *)&server, sizeof(server));
     if(socket < 0)
-        closesocket(socket);
+        close_socket(socket);
     if (res < 0) {
         if (errno == EINPROGRESS) {
             tv_timeout.tv_sec = 1;
             tv_timeout.tv_usec = 500;
             FD_ZERO(&fdset);
             FD_SET(socket, &fdset);
-            if (select(socket+1, NULL, &fdset, NULL, &tv_timeout) > 0) {
+            if (select(socket+1, nullptr, &fdset, nullptr, &tv_timeout) > 0) {
                 lon = sizeof(int);
-                getsockopt(socket, SOL_SOCKET, SO_ERROR, (void*)(&valopt), &lon);
+                getsockopt(socket, SOL_SOCKET, SO_ERROR, (void*)(&val_opt), &lon);
             }
         }
     }
@@ -139,7 +137,7 @@ Socket* Socket::_accept(sockaddr_in* c_sin, accept_size size){
 }
 
 void Socket::_close(){
-    closesocket(socket);
+    close_socket(socket);
 }
 
 int Socket::read(std::string& buffer){
@@ -161,7 +159,7 @@ int Socket::read(std::string& buffer){
     }
     while (FD_ISSET(socket, &fdset));
     FD_CLR(socket, &fdset);
-    return buffer.size();
+    return (int) buffer.size();
 }
 
 int Socket::write(const char* buffer){
@@ -170,14 +168,9 @@ int Socket::write(const char* buffer){
 
 Socket::~Socket(){
     std::cout<<"Closed socket"<< std::endl;
-    closesocket(socket);
+    close_socket(socket);
 }
-std::string test()
-{
-   std::string ip;
 
-   return ip;
-}
 std::string Socket::getIP(){
     std::string ip;
     #ifdef _WIN32
@@ -198,10 +191,10 @@ std::string Socket::getIP(){
        // Cleanup
        WSACleanup();
     #else
-        struct ifreq   buffer[32];
-        struct ifconf  intfc;
-        struct ifreq  *pIntfc;
-        int            i, fd, num_intfc;
+        struct ifreq buffer[32];
+        struct ifconf intfc{};
+        struct ifreq* pIntfc;
+        int i, fd, num_intfc;
 
         intfc.ifc_len = sizeof(buffer);
         intfc.ifc_buf = (char*) buffer;
@@ -222,9 +215,6 @@ std::string Socket::getIP(){
         for (i = 0; i < num_intfc; i++)
         {
             struct ifreq *item = &(pIntfc[i]);
-            printf("Interface # %d -> %s: IP %s\n",
-                   i, item->ifr_name,
-                   inet_ntoa(((struct sockaddr_in *)&item->ifr_addr)->sin_addr));
             ip = inet_ntoa(((struct sockaddr_in *)&item->ifr_addr)->sin_addr);
         }
     #endif // _WIN32

@@ -10,7 +10,8 @@
 class RSA_Cryptography {
     public:
         RSA_Cryptography();
-        RSA_Cryptography(std::string filename);
+
+    explicit RSA_Cryptography(std::string filename);
         std::string encrypt(std::string message);
         std::string decrypt(std::string message, int size);
         void write(void(* fun)(BIO*, RSA*), std::string file);

@@ -5,50 +5,48 @@
 #include <cstring>
 #include "Parser.hpp"
 
-class ContentReader;
 class Element
 {
     public:
         virtual void read(std::string& text, const ContentReader* parser) {};
-        virtual ~Element(){
-        }
+        virtual ~Element() = default;
 };
 
 class ElementInt: public Element
 {
     public:
         int value;
-        void read(std::string& text, const ContentReader* parser);
+        void read(std::string& text, const ContentReader* parser) override;
 };
 
 class ElementDouble: public Element
 {
     public:
         double value;
-        void read(std::string& text, const ContentReader* parser);
+        void read(std::string& text, const ContentReader* parser) override;
 };
 
 class ElementString: public Element
 {
     public:
         std::string value;
-        void read(std::string& text, const ContentReader* parser);
+        void read(std::string& text, const ContentReader* parser) override;
 };
 
 class ElementBoolean: public Element
 {
     public:
         bool value;
-        void read(std::string& text, const ContentReader* parser);
+        void read(std::string& text, const ContentReader* parser) override;
 };
 
 class ElementArray: public Element
 {
     public:
         std::vector<Element*> values;
-        void read(std::string& text, const ContentReader* parser);
+        void read(std::string& text, const ContentReader* parser) override;
         ElementArray* add(Element* value);
-        ~ElementArray();
+        ~ElementArray() override;
 };
 
 class ElementObject: public Element
@@ -67,9 +65,9 @@ class ElementObject: public Element
         void getItem(const char* key, ElementObject** value);
         void getItem(const char* key, ElementArray** value);
         void getItem(const char* key, std::string* value);
-        void read(std::string& text, const ContentReader* parser);
+        void read(std::string& text, const ContentReader* parser) override;
         ElementObject* put(const char* key, Element* value);
-        ~ElementObject();
+        ~ElementObject() override;
 };
 
 #endif // ELEMENT_H

@@ -22,7 +22,7 @@ Element* MessagesTransaction::toElement() const {
     return e;
 }
 
-void MessagesTransaction::fromElement(ElementObject* e, const Serializer*, const char* encoding) {
+void MessagesTransaction::fromElement(ElementObject* e, const Serializer*, const char*) {
     e->getItem("message", &message);
 };
 
@@ -32,7 +32,7 @@ std::string MessagesTransaction::to_string() const {
 }
 
 std::vector<std::string> MessagesTransaction::apply(Row* row){
-    CustomRow* cr = dynamic_cast<CustomRow*>(row);
+    auto * cr = dynamic_cast<CustomRow*>(row);
     cr->messages.emplace_back(message);
     return std::vector<std::string>();
 }
@@ -40,13 +40,13 @@ std::vector<std::string> MessagesTransaction::apply(Row* row){
 Row* MessagesTransaction::createRow() const {
     return new CustomRow();
 };
-void MessagesTransaction::apply_reverse(Row* row){
+void MessagesTransaction::apply_reverse(Row*){
 
 }
 
 bool MessagesTransaction::validate(Row *row) const {
-    CustomRow* cr = dynamic_cast<CustomRow*>(row);
-    return cr->status.size() > 0;
+    auto * cr = dynamic_cast<CustomRow*>(row);
+    return !cr->status.empty();
 }
 
 int MessagesTransaction::get_type() const {

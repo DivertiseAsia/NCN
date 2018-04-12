@@ -17,5 +17,4 @@ bool Validator::operator()(Block* block){
     return block->checkFingerPrint(serializer, encoding);
 }
 
-Validator::~Validator(){
-}
+Validator::~Validator() = default;

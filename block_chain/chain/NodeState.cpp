@@ -3,6 +3,7 @@
 //
 
 #include "NodeState.h"
+#include <utility>
 #include "../utils/RSA.h"
 
 NodeState::NodeState(Serializer* s, int si): serializer(s), size(si), top_fingerprint(nullptr) {
@@ -83,7 +84,7 @@ void NodeState::read_blocks() {
 }
 
 bool NodeState::check_transaction(Transaction* transaction, std::string k) {
-    std::string key(Encoding::toHexa(k));
+    std::string key(Encoding::toHexa(std::move(k)));
     auto it = database.rows.find(key);
     Row* row;
     if(it == database.rows.end()) {

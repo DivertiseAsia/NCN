@@ -50,7 +50,7 @@ void MerkleTree::fromElement(ElementObject* e, const Serializer* serializer, con
     value->fromElement(o, serializer, encoding);
 
     e->getItem("left", &o);
-    if(o && o->values.size() > 0) {
+    if(o && !o->values.empty()) {
         left = new MerkleTree();
         left->fromElement(o, serializer, encoding);
     }
@@ -58,7 +58,7 @@ void MerkleTree::fromElement(ElementObject* e, const Serializer* serializer, con
         left = nullptr;
 
     e->getItem("right", &o);
-    if(o && o->values.size() > 0) {
+    if(o && !o->values.empty()) {
         right = new MerkleTree();
         right->fromElement(o, serializer, encoding);
     }

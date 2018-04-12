@@ -7,7 +7,7 @@
 #include <iterator>
 #include <cstring>
 
-
+/*
 namespace patch
 {
     template < typename T > std::string to_string( const T& n )
@@ -16,30 +16,29 @@ namespace patch
         stm << n ;
         return stm.str() ;
     }
-}
+}*/
 template<typename Out>
-void split(const std::string &s, char delim, Out result, const int limit) {
+void split(const std::string &s, char lim, Out result, const int limit) {
     std::stringstream ss;
     ss.str(s);
     std::string item;
     int i = 0;
-    while (i++ < limit || limit < 0 ? std::getline(ss, item, delim) : std::getline(ss, item)) {
+    while (i++ < limit || limit < 0 ? std::getline(ss, item, lim) : std::getline(ss, item)) {
         *(result++) = item;
     }
 }
 
-std::vector<std::string> split(const std::string &s, char delim, const int limit = -1) {
-    std::vector<std::string> elems;
-    split(s, delim, std::back_inserter(elems), limit);
-    return elems;
+std::vector<std::string> split(const std::string &s, char lim, const int limit = -1) {
+    std::vector<std::string> e;
+    split(s, lim, std::back_inserter(e), limit);
+    return e;
 }
 
 
 JsonCreator::JsonCreator(): ContentCreator(){
 }
 
-JsonCreator::~JsonCreator() {
-}
+JsonCreator::~JsonCreator() = default;
 
 void JsonCreator::parse(std::string& text, Element** e) const{
     if(*e)

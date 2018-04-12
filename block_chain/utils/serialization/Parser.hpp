@@ -24,13 +24,13 @@ class ContentReader
 class ContentParser: public ContentReader
 {
 	public:
-		ContentParser(){}
+		ContentParser() = default;
 };
 
 class ContentCreator: public ContentReader
 {
 	public:
-		ContentCreator(){}
+		ContentCreator() = default;
 };
 
 class ElementCreator

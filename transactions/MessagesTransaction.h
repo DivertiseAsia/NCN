@@ -15,22 +15,29 @@ public:
     explicit MessagesTransaction();
     explicit MessagesTransaction(std::string str);
     bool operator()() const final;
-    virtual Element* toElement() const override;
-    bool operator==(Transaction* t) const {
-        MessagesTransaction* s = dynamic_cast<MessagesTransaction*>(t);
+
+    Element* toElement() const override;
+    bool operator==(Transaction* t) const override {
+        auto * s = dynamic_cast<MessagesTransaction*>(t);
         return message == s->message;
     }
     std::string to_string() const;
     std::vector<std::string> apply(Row* row) override;
-    virtual Row* createRow() const;
-    virtual void apply_reverse(Row* row);
-    virtual bool validate(Row *row) const override;
+
+    Row* createRow() const override;
+
+    void apply_reverse(Row* row) override;
+
+    bool validate(Row *row) const override;
     int get_type() const override;
-    virtual std::string description() const;
-    virtual void fill_data();
-    virtual Transaction* clone();
+
+    std::string description() const override;
+
+    void fill_data() override;
+
+    Transaction* clone() override;
 protected:
-    virtual void fromElement(ElementObject*, const Serializer*, const char* encoding) override;
+    void fromElement(ElementObject*, const Serializer*, const char* encoding) override;
 private:
     std::string message;
 };

@@ -19,13 +19,11 @@ public:
     Hash(Hash* hash1, double timestamp);
     Hash(const Component* component, const Serializer* serializer, const char* encoding);
     std::string to_string() const;
-    void set_hash(std::string str);
     bool operator==(Hash const& h) const{
         return hash == h.hash;
     }
     Element* toElement();
     void fromElement(ElementObject* e, const Serializer* serializer, const char* encoding);
-    void __hash__(Serializer* serializer, const char* encoding);
     std::string hash;
 private:
 };
