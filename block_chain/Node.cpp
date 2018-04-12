@@ -208,9 +208,10 @@ bool Node::defaultCallback(Socket* socket, int port, Serializer* serializer, Nod
     while(socket->read(buffer)) {
         if (buffer.length()) {
             auto start = std::chrono::high_resolution_clock::now();
-            std::cout << "Request received on port " << port << " >> "  << std::endl;
+            std::cout << "Request received on port " << port << " >> ";
             buffer = Encoding::fromHexa(buffer.c_str());
             Message *message = serializer->unserializeMessage(buffer, "json");
+            std::cout << message->type << std::endl;
             (node->*(action[message->type]))(message);
             auto end = std::chrono::high_resolution_clock::now();
             long long microseconds = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();

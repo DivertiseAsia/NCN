@@ -56,27 +56,9 @@ Socket::Socket(std::string address , int port)
     server.sin_family = AF_INET;
     server.sin_port = htons( port );
 
-    //Connect to remote server
-    /*
-    if (
-    {
-        perror("port connect failed. Error");
-        std::cout << "Test port "<< connect(socket, (struct sockaddr *)&server , sizeof(server)) << std::endl;
-    }
-     *//*
-    std::cout << "Here 1" <<std::endl;
+    #ifdef _WIN32
     int res = connect(socket, (struct sockaddr *)&server , sizeof(server));
-    std::cout << "Here 2: " << res <<std::endl;
-
-    FD_ZERO(&fdset);
-    tv_timeout.tv_sec = 0;
-    tv_timeout.tv_usec = 500;
-    FD_SET(socket, &fdset);
-    if(select(socket + 1, &fdset, nullptr, nullptr, &tv_timeout))
-        connect(socket, (struct sockaddr *)&server , sizeof(server));
-    FD_ISSET(socket, &fdset);
-    FD_CLR(socket, &fdset);
-*/
+    #else
     // Set non-blocking
     int res, valopt;
     struct sockaddr_in addr;
@@ -107,6 +89,7 @@ Socket::Socket(std::string address , int port)
     arg = fcntl(socket, F_GETFL, NULL);
     arg &= (~O_NONBLOCK);
     fcntl(socket, F_SETFL, arg);
+    #endif
 }
 
 Socket::Socket(SOCKET s): socket(s)
