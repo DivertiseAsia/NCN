@@ -72,10 +72,11 @@ Socket::Socket(std::string address , int port)
 
     // Trying to connect with timeout
     res = connect(socket, (struct sockaddr *)&server, sizeof(server));
-
+    if(socket < 0)
+        closesocket(socket);
     if (res < 0) {
         if (errno == EINPROGRESS) {
-            tv_timeout.tv_sec = 0;
+            tv_timeout.tv_sec = 1;
             tv_timeout.tv_usec = 500;
             FD_ZERO(&fdset);
             FD_SET(socket, &fdset);
@@ -90,6 +91,7 @@ Socket::Socket(std::string address , int port)
     arg &= (~O_NONBLOCK);
     fcntl(socket, F_SETFL, arg);
     #endif
+    std::cout<<"Socket: "<< socket<<std::endl;
 }
 
 Socket::Socket(SOCKET s): socket(s)

@@ -13,9 +13,11 @@ void Peer::sign_out(Peer p) const{
 
 }
 
-int Peer::send(const char* text) const{
+int Peer::send(const char* text) {
     if(socket != nullptr)
         return socket->write(text);
+    delete socket;
+    socket = new Socket(_ip, _port);
     return 0;
 }
 

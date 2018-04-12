@@ -29,7 +29,7 @@ int main() {
     Node client(serial, 3000);
     //Transaction* t = new StatusTransaction("I lost");
     Transaction* t = nullptr;
-    usleep(1000000);
+    //usleep(1000000);
     do{
         t = manager.run();
         client.request_transaction(t);

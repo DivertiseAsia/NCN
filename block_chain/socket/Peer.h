@@ -15,7 +15,7 @@ class Peer {
 public:
     Peer(Serializer* s, std::string str, int c);
     void sign_out(Peer p) const;
-    int send(const char* text) const;
+    int send(const char* text);
     std::string to_string() const;
     bool operator==(Peer const& p) const{
         return to_string() == p.to_string();
