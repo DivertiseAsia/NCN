@@ -14,7 +14,7 @@ class Peer {
     friend class Node;
 public:
     Peer(Serializer* s, std::string str, int c);
-    void sign_out(Peer p) const;
+    void close();
     int send(const char* text);
     std::string to_string() const;
     bool operator==(Peer const& p) const{

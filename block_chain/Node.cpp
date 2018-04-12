@@ -7,14 +7,13 @@ void run(SocketServer* server, Serializer* serializer, Node* node) {
     server->run(Node::defaultCallback, serializer, node);
 }
 
-Node::Node(Serializer* s, int p): serializer(s), validator(serializer, "json"), block_chain(s, 1), server(p), running(run, &server, s, this) {
+Node::Node(Serializer* s, int p): serializer(s), validator(serializer, "json"), block_chain(s, 1), server(p), running(run, &server, s, this), self(serializer, "192.168.1.52", p) {
     OpenSSL_add_all_algorithms();
     ERR_load_BIO_strings();
     ERR_load_crypto_strings();
     if(!rsa.backup("./network/private..pem", "./network/public..pem"))
         rsa.generate("./network/private.pem", "./network/public.pem");
     std::string ip = "192.168.1.52";
-    peers.emplace_back(Peer(serializer, ip, p));
     store(ip, p);
     //running.detach();
     if(peers.size() == 0)
@@ -25,14 +24,14 @@ Node::~Node(){
     std::cout<< "CLOSED 1" <<std::endl;
     close();
     std::cout<< "CLOSED 2" <<std::endl;
+    while(1);
     server.close();
     running.detach();
     delete serializer;
 }
 
 void Node::load(std::string l){
-    Message message(peers.begin()->to_string(), "", "", nullptr, Message::SIGN_IN);
-    peers.erase(peers.begin());
+    Message message(self.to_string(), "", "", nullptr, Message::SIGN_IN);
     char* m = serializer->serialize(&message, "json");
     std::istringstream list(l);
     std::string line;
@@ -45,7 +44,7 @@ void Node::load(std::string l){
         peer.send(Encoding::toHexa(std::string(m)).c_str());
     }
     free(m);
-    if(peers.size() == 0)
+    if(peers.size() == 1)
         block_chain.read_blocks();
 }
 
@@ -55,7 +54,7 @@ void Node::store(std::string _ip, int _p){
     peers_file.open("./network/network.nfo", std::ifstream::in);
     if(peers_file.is_open()){
         std::string line;
-        Message message(peers.begin()->to_string(), "", "", nullptr, Message::ASK_PEERS);
+        Message message(self.to_string(), "", "", nullptr, Message::ASK_PEERS);
         char* m = serializer->serialize(&message, "json");
         while (std::getline (peers_file, line)) {
             unsigned long index = line.find(':');
@@ -78,10 +77,10 @@ void Node::store(std::string _ip, int _p){
     */
 }
 void Node::close(){
-    Message message(peers.begin()->to_string(), "", "", nullptr, Message::SIGN_OUT);
+    Message message(self.to_string(), "", "", nullptr, Message::SIGN_OUT);
     char* m = serializer->serialize(&message, "json");
     for (auto &peer : peers)
-        peer.send(Encoding::toHexa(std::string(m)).c_str());
+            peer.send(Encoding::toHexa(std::string(m)).c_str());
     free(m);
 }
 
@@ -206,8 +205,10 @@ void Node::parseSignOut(Message* message) {
     int port = atoi(message->plain_text.substr(index+1).c_str());
     Peer peer(serializer, ip, port);
     auto it = find(peers.begin(), peers.end(), peer);
-    if(it != peers.end())
+    if(it != peers.end()) {
+        it->close();
         peers.erase(it);
+    }
 }
 
 bool Node::defaultCallback(Socket* socket, int port, Serializer* serializer, Node* node) {

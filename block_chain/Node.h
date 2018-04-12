@@ -38,6 +38,7 @@ private:
     Validator validator;
     SocketServer server;
     NodeState block_chain;
+    Peer self;
     std::vector<Peer> peers;
     std::thread running;
     RSA_Cryptography rsa;

@@ -25,7 +25,7 @@ public:
     virtual Row* createRow() const;
     virtual void apply_reverse(Row* row);
     virtual bool validate(Row *row) const override;
-    virtual int get_type() const;
+    int get_type() const override;
     virtual std::string description() const;
     virtual void fill_data();
     virtual Transaction* clone();
