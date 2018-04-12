@@ -15,6 +15,7 @@ void Peer::close(){
 
 int Peer::send(const char* text) {
     std::cout<<"Sending to " << _ip << " on " << _port << " ("<< socket->socket <<"): " << text << std::endl;
+    std::cout << socket->socket << std::endl;
     if(socket != nullptr)
         return socket->write(text);
     delete socket;

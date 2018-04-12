@@ -15,8 +15,7 @@ Node::Node(Serializer* s, int p): serializer(s), validator(serializer, "json"), 
     ERR_load_crypto_strings();
     if(!rsa.backup("./network/private..pem", "./network/public..pem"))
         rsa.generate("./network/private.pem", "./network/public.pem");
-    std::string ip = "192.168.1.52";
-    store(ip, p);
+    store(Socket::getIP(), p);
     running.detach();
     if(peers.size() == 0)
         block_chain.read_blocks();
@@ -25,7 +24,9 @@ Node::Node(Serializer* s, int p): serializer(s), validator(serializer, "json"), 
 Node::~Node(){
     std::cout<< "Closing connection" <<std::endl;
     server.close();
+    #ifndef _WIN32
     running.detach();
+    #endif // _WIN32
     close();
     delete serializer;
     std::this_thread::sleep_for(std::chrono::microseconds(1000000));
@@ -66,7 +67,6 @@ void Node::store(std::string _ip, int _p){
                 Peer peer(serializer, ip, port);
                 if(peer.send(Encoding::toHexa(std::string(m)).c_str())) {
                     i = 1;
-                    peers.emplace_back(peer);
                     break;
                 }
             }
@@ -159,7 +159,7 @@ void Node::parseAskPeers(Message* message) {
     std::string ip = message->plain_text.substr(0, index);
     int port = atoi(message->plain_text.substr(index+1).c_str());
     Peer peer(serializer, ip, port);
-    std::string peers_to_send;
+    std::string peers_to_send(self.to_string());
     for (auto &peer : peers)
         peers_to_send += peer.to_string() + std::string("\n");
     message->plain_text = peers_to_send;

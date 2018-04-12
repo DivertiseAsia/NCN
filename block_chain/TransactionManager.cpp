@@ -9,6 +9,7 @@ TransactionManager::TransactionManager() {
 }
 
 void TransactionManager::put(Transaction* t) {
+    std::cout << "Transaction: " << t << std::endl;
     transactions[t->get_type()] = t;
 }
 

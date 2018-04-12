@@ -172,37 +172,61 @@ Socket::~Socket(){
     std::cout<<"Closed socket"<< std::endl;
     closesocket(socket);
 }
+std::string test()
+{
+   std::string ip;
 
+   return ip;
+}
 std::string Socket::getIP(){
     std::string ip;
-    struct ifreq   buffer[32];
-    struct ifconf  intfc;
-    struct ifreq  *pIntfc;
-    int            i, fd, num_intfc;
+    #ifdef _WIN32
+       WSADATA WSAData;
+       ::WSAStartup(MAKEWORD(1, 0), &WSAData);
+       char szHostName[128] = "";
+       ::gethostname(szHostName, sizeof(szHostName));
+       struct sockaddr_in SocketAddress;
+       struct hostent     *pHost        = 0;
+       pHost = ::gethostbyname(szHostName);
+       char aszIPAddresses[16];
+       for(int nCount = 0; ((pHost->h_addr_list[nCount]) && (nCount < 10)); ++nCount)
+       {
+          memcpy(&SocketAddress.sin_addr, pHost->h_addr_list[nCount], pHost->h_length);
+          strcpy(aszIPAddresses, inet_ntoa(SocketAddress.sin_addr));
+          ip = aszIPAddresses;
+       }
+       // Cleanup
+       WSACleanup();
+    #else
+        struct ifreq   buffer[32];
+        struct ifconf  intfc;
+        struct ifreq  *pIntfc;
+        int            i, fd, num_intfc;
 
-    intfc.ifc_len = sizeof(buffer);
-    intfc.ifc_buf = (char*) buffer;
+        intfc.ifc_len = sizeof(buffer);
+        intfc.ifc_buf = (char*) buffer;
 
-    if ((fd = createSocket()) < 0)
-    {
-        perror("socket() failed");
-    }
+        if ((fd = createSocket()) < 0)
+        {
+            perror("socket() failed");
+        }
 
-    if (ioctl(fd, SIOCGIFCONF, &intfc) < 0)
-    {
-        perror("ioctl SIOCGIFCONF failed");
-    }
+        if (ioctl(fd, SIOCGIFCONF, &intfc) < 0)
+        {
+            perror("ioctl SIOCGIFCONF failed");
+        }
 
-    pIntfc    = intfc.ifc_req;
-    num_intfc = intfc.ifc_len / sizeof(struct ifreq);
+        pIntfc    = intfc.ifc_req;
+        num_intfc = intfc.ifc_len / sizeof(struct ifreq);
 
-    for (i = 0; i < num_intfc; i++)
-    {
-        struct ifreq *item = &(pIntfc[i]);
-        printf("Interface # %d -> %s: IP %s\n",
-               i, item->ifr_name,
-               inet_ntoa(((struct sockaddr_in *)&item->ifr_addr)->sin_addr));
-        ip = inet_ntoa(((struct sockaddr_in *)&item->ifr_addr)->sin_addr);
-    }
+        for (i = 0; i < num_intfc; i++)
+        {
+            struct ifreq *item = &(pIntfc[i]);
+            printf("Interface # %d -> %s: IP %s\n",
+                   i, item->ifr_name,
+                   inet_ntoa(((struct sockaddr_in *)&item->ifr_addr)->sin_addr));
+            ip = inet_ntoa(((struct sockaddr_in *)&item->ifr_addr)->sin_addr);
+        }
+    #endif // _WIN32
     return ip;
 }

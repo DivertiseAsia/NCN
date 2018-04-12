@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1523504956 source:d:\divertise\block_chain\block_chain\chain\block\block.cpp
+1523505352 source:d:\divertise\block_chain\block_chain\chain\block\block.cpp
 	"Block.h"
 	"../../Serializer.h"
 	"../../Message.h"
@@ -24,7 +24,7 @@
 1523437121 d:\divertise\block_chain\block_chain\chain\block\metadata.h
 	"../../utils/serialization/Element.hpp"
 
-1523437121 d:\divertise\block_chain\block_chain\chain\block\transaction\transaction.h
+1523521569 d:\divertise\block_chain\block_chain\chain\block\transaction\transaction.h
 	"../Component.h"
 	"../Hash.h"
 	"../../Row.h"
@@ -38,7 +38,7 @@
 	"Transaction.h"
 	"../../../Serializer.h"
 
-1523503671 source:d:\divertise\block_chain\block_chain\chain\nodestate.cpp
+1523515034 source:d:\divertise\block_chain\block_chain\chain\nodestate.cpp
 	"NodeState.h"
 	"../utils/RSA.h"
 
@@ -86,11 +86,13 @@
 	"Message.h"
 	<cstdlib>
 
-1523437121 d:\divertise\block_chain\block_chain\socket\socket.h
+1523520153 d:\divertise\block_chain\block_chain\socket\socket.h
 	<winsock2.h>
+	<sys/ioctl.h>
 	<sys/types.h>
 	<sys/socket.h>
 	<netinet/in.h>
+	<net/if.h>
 	<arpa/inet.h>
 	<unistd.h>
 	<netdb.h>
@@ -99,10 +101,10 @@
 	<iostream>
 	<functional>
 
-1523505306 source:d:\divertise\block_chain\block_chain\node.cpp
+1523521978 source:d:\divertise\block_chain\block_chain\node.cpp
 	"Node.h"
 
-1523437121 d:\divertise\block_chain\block_chain\node.h
+1523520118 d:\divertise\block_chain\block_chain\node.h
 	<algorithm>
 	<openssl/rsa.h>
 	<openssl/pem.h>
@@ -123,7 +125,7 @@
 	"chain/block/transaction/Transaction.h"
 	"chain/block/Block.h"
 
-1523437121 d:\divertise\block_chain\block_chain\socket\peer.h
+1523515979 d:\divertise\block_chain\block_chain\socket\peer.h
 	<string>
 	"Socket.h"
 	"../Serializer.h"
@@ -132,31 +134,34 @@
 1523437121 source:d:\divertise\block_chain\block_chain\serializer.cpp
 	"Serializer.h"
 
-1523439144 source:d:\divertise\block_chain\block_chain\socket\peer.cpp
+1523522141 source:d:\divertise\block_chain\block_chain\socket\peer.cpp
 	"Peer.h"
 
-1523437121 source:d:\divertise\block_chain\block_chain\socket\socket.cpp
+1523521345 source:d:\divertise\block_chain\block_chain\socket\socket.cpp
+	<fcntl.h>
 	"Socket.h"
 
-1523442981 source:d:\divertise\block_chain\block_chain\socket\socketserver.cpp
+1523517804 source:d:\divertise\block_chain\block_chain\socket\socketserver.cpp
 	"SocketServer.h"
 
 1523437121 source:d:\divertise\block_chain\block_chain\validator.cpp
 	"Validator.h"
 
-1523444551 source:d:\divertise\block_chain\main.cpp
+1523522079 source:d:\divertise\block_chain\main.cpp
 	<iostream>
 	"block_chain/Node.h"
 	"transactions/StatusTransaction.h"
 	"transactions/MessagesTransaction.h"
+	"transactions/MoneyTransaction.h"
 	"validator/CustomSerializer.h"
 	"block_chain/utils/serialization/json/JsonCreator.hpp"
 	"block_chain/utils/serialization/json/JsonParser.hpp"
+	"block_chain/TransactionManager.h"
 	<cstdio>
 	<cstring>
 	<unistd.h>
 
-1523437122 d:\divertise\block_chain\transactions\statustransaction.h
+1523521543 d:\divertise\block_chain\transactions\statustransaction.h
 	<string>
 	"../block_chain/chain/block/transaction/Transaction.h"
 	<iostream>
@@ -166,17 +171,17 @@
 1522898523 d:\divertise\block_chain\validator\customvalidator.h
 	"../block_chain/Validator.h"
 
-1523437122 source:d:\divertise\block_chain\transactions\messagestransaction.cpp
+1523521551 source:d:\divertise\block_chain\transactions\messagestransaction.cpp
 	"MessagesTransaction.h"
 	<cstring>
 
-1523437122 d:\divertise\block_chain\transactions\messagestransaction.h
+1523521536 d:\divertise\block_chain\transactions\messagestransaction.h
 	<string>
 	<cstdlib>
 	"../block_chain/chain/block/transaction/Transaction.h"
 	"../database/Row.h"
 
-1523442633 source:d:\divertise\block_chain\transactions\statustransaction.cpp
+1523521555 source:d:\divertise\block_chain\transactions\statustransaction.cpp
 	"StatusTransaction.h"
 	<iostream>
 	<cstring>
@@ -346,7 +351,7 @@
 1523437121 source:d:\divertise\block_chain\block_chain\chain\row.cpp
 	"Row.h"
 
-1523438685 source:d:\divertise\block_chain\block_chain\message.cpp
+1523515034 source:d:\divertise\block_chain\block_chain\message.cpp
 	"Message.h"
 	<iostream>
 
@@ -371,14 +376,20 @@
 	"../transactions/MessagesTransaction.h"
 	"../transactions/StatusTransaction.h"
 
-1523437122 source:d:\divertise\block_chain\transactions\moneytransaction.cpp
+1523521550 source:d:\divertise\block_chain\transactions\moneytransaction.cpp
 	"MoneyTransaction.h"
 	"../database/Row.h"
 
-1523437122 d:\divertise\block_chain\transactions\moneytransaction.h
+1523521540 d:\divertise\block_chain\transactions\moneytransaction.h
 	"../block_chain/chain/block/transaction/Transaction.h"
 
 1523437122 source:d:\divertise\block_chain\validator\customserializer.cpp
 	"CustomSerializer.h"
 	<iostream>
+
+1523521608 source:d:\divertise\block_chain\block_chain\transactionmanager.cpp
+	"TransactionManager.h"
+
+1523515023 d:\divertise\block_chain\block_chain\transactionmanager.h
+	"chain/block/transaction/Transaction.h"
 
