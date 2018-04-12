@@ -31,12 +31,12 @@ Message::Message() = default;
 Message::~Message() = default;
 
 Element* Message::toElement() const {
-    ElementObject* e = ElementCreator::creator.object();
-    ElementCreator::creator.put(e, "public_key", ElementCreator::creator.create(public_key))
-                          ->put(e, "cipher", ElementCreator::creator.create(cipher))
-                          ->put(e, "plain_text", ElementCreator::creator.create(plain_text))
-                          ->put(e, "type", ElementCreator::creator.create(type))
-                          ->put(e, "tree", tree != nullptr ? tree->toElement() : ElementCreator::creator.create(type));
+    ElementObject* e = ElementCreator::object();
+    e->put("public_key", ElementCreator::create(public_key))
+                          ->put("cipher", ElementCreator::create(cipher))
+                          ->put("plain_text", ElementCreator::create(plain_text))
+                          ->put("type", ElementCreator::create(type))
+                          ->put("tree", tree != nullptr ? tree->toElement() : ElementCreator::create(type));
     return e;
 }
 

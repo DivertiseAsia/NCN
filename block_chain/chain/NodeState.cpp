@@ -6,11 +6,11 @@
 #include <utility>
 #include "../utils/RSA.h"
 
-NodeState::NodeState(Serializer* s, int si): serializer(s), size(si), top_fingerprint(nullptr) {
+NodeState::NodeState(Serializer* s, int si, const char* e): serializer(s), size(si), top_fingerprint(nullptr), encoding(e) {
 }
 
 Block* NodeState::create_block() const {
-    return new Block(transactions, top_fingerprint, serializer, "json");
+    return new Block(transactions, top_fingerprint, serializer, encoding.c_str());
 }
 
 Block* NodeState::add(std::string transaction, std::string public_key){
@@ -28,7 +28,7 @@ void NodeState::add(Block* block){
     std::ofstream block_file ("./network/blocks/"+id+".blk");
     std::string line;
     if(block_file.is_open()){
-        block_file << serializer->serialize(block, "json");
+        block_file << serializer->serialize(block, encoding.c_str());
         block_file.close();
     }
 }
@@ -38,7 +38,7 @@ void NodeState::update_database(Block* block){
         std::string key(Encoding::fromHexa(pair.second));
         RSA_Cryptography crypto(key);
         std::string t(Encoding::fromHexa(pair.first));
-        Transaction* transaction = serializer->unserializeTransaction(crypto.decrypt(t, t.size()), "json");
+        Transaction* transaction = serializer->unserializeTransaction(crypto.decrypt(t, t.size()), encoding.c_str());
         auto it = database.rows.find(pair.second);
         Row* row;
         if(it == database.rows.end()) {
@@ -74,7 +74,7 @@ void NodeState::read_blocks() {
         std::string serialized;
         while (std::getline (block_file, line))
             serialized += line;
-        Block* block = serializer->unserializeBlock(serialized, "json");
+        Block* block = serializer->unserializeBlock(serialized, encoding.c_str());
         update_database(block);
         block_file.close();
         id = block->fingerprint->hash;

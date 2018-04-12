@@ -14,7 +14,6 @@
 class StatusTransaction: public Transaction {
 public:
     explicit StatusTransaction();
-    explicit StatusTransaction(std::string str);
     bool operator()() const final;
     Element* toElement() const override;
     bool operator==(Transaction* t) const override {

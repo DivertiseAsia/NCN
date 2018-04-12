@@ -18,6 +18,7 @@ public:
     static const int MINIMUM_AGED_STAKE;
     static const int STAKE_TIME;
     static const int USE;
+    static void add_proof(int id, std::function<Proof*()>);
     static Proof* generate(int type);
     virtual void run(Block* block) = 0;
     virtual bool accept(Block* block) = 0;

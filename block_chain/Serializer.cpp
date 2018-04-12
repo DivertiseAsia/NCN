@@ -3,6 +3,8 @@
 //
 
 #include "Serializer.h"
+#include "utils/serialization/json/JsonCreator.hpp"
+#include "utils/serialization/json/JsonParser.hpp"
 #include <utility>
 
 ElementObject* Serializer::getElement(std::string transaction, const char* key) const{
@@ -54,4 +56,9 @@ void Serializer::set_serializer(const char* key, ContentCreator* creator) {
 
 void Serializer::set_unserializer(const char* key, ContentParser* parser) {
     parsers.put(key, parser);
+}
+
+Serializer::Serializer() {
+    set_serializer("json", new JsonCreator());
+    set_unserializer("json", new JsonParser());
 }

@@ -36,17 +36,16 @@ class ContentCreator: public ContentReader
 class ElementCreator
 {
 	public:
-		static ElementCreator creator;
-		ElementInt* create(int value) const;
-		ElementDouble* create(double value) const;
-		ElementString* create(const char* value) const;
-		ElementString* create(std::string value) const;
-		ElementBoolean* create(bool value) const;
+		static ElementInt* create(int value);
+		static ElementDouble* create(double value);
+		static ElementString* create(const char* value);
+		static ElementString* create(std::string value);
+		static ElementBoolean* create(bool value);
 
-		ElementArray* array() const;
-		ElementObject* object() const;
-		ElementCreator* add(ElementArray* e, Element* value);
-		ElementCreator* put(ElementObject* e, const char* key, Element* value);
+		static ElementArray* array();
+		static ElementObject* object();
+		static ElementArray* add(ElementArray* e, Element* value);
+		static ElementObject* put(ElementObject* e, const char* key, Element* value);
 	private:
 		ElementCreator();
 		~ElementCreator();

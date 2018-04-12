@@ -11,7 +11,6 @@
 class MoneyTransaction: public Transaction {
 public:
     explicit MoneyTransaction();
-    explicit MoneyTransaction(int a, std::string str);
     bool operator()() const final;
 
     Element* toElement() const override;

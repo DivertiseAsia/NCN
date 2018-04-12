@@ -10,17 +10,13 @@ bool MoneyTransaction::operator()() const {
     return true;
 }
 
-MoneyTransaction::MoneyTransaction(int a, std::string str): amount(a), target(std::move(std::move(str))) {
-
-}
-
 MoneyTransaction::MoneyTransaction() = default;
 
 Element* MoneyTransaction::toElement() const {
-    ElementObject* e = ElementCreator::creator.object();
-    ElementCreator::creator.put(e, "type", ElementCreator::creator.create(get_type()))
-                          ->put(e, "amount", ElementCreator::creator.create(amount))
-                          ->put(e, "target", ElementCreator::creator.create(target));
+    ElementObject* e = ElementCreator::object();
+    e->put("type", ElementCreator::create(get_type()))
+                          ->put("amount", ElementCreator::create(amount))
+                          ->put("target", ElementCreator::create(target));
     return e;
 }
 

@@ -16,10 +16,10 @@ TransactionContainer::TransactionContainer(Transaction* tr, std::string t, std::
 
 Element* TransactionContainer::toElement() const {
 
-    ElementObject* e = ElementCreator::creator.object();
-    ElementCreator::creator.put(e, "transaction", ElementCreator::creator.create(transac))
-                          ->put(e, "public_key", ElementCreator::creator.create(public_key))
-                          ->put(e, "cipher", ElementCreator::creator.create(cipher));
+    ElementObject* e = ElementCreator::object();
+    e->put("transaction", ElementCreator::create(transac))
+                          ->put("public_key", ElementCreator::create(public_key))
+                          ->put("cipher", ElementCreator::create(cipher));
     return e;
 }
 

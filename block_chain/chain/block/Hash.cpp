@@ -37,8 +37,8 @@ Hash::Hash(Hash* hash1, double timestamp){
 Hash::Hash() = default;
 
 Element* Hash::toElement() {
-    ElementObject* e = ElementCreator::creator.object();
-    ElementCreator::creator.put(e, "hash", ElementCreator::creator.create(hash));
+    ElementObject* e = ElementCreator::object();
+    ElementCreator::put(e, "hash", ElementCreator::create(hash));
     return e;
 }
 

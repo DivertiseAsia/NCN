@@ -36,10 +36,10 @@ MerkleTree::~MerkleTree(){
 }
 
 Element* MerkleTree::toElement() const{
-    ElementObject* e = ElementCreator::creator.object();
-    ElementCreator::creator.put(e, "value", value ? value->toElement() : ElementCreator::creator.object())
-            ->put(e, "left", left ? left->toElement() : ElementCreator::creator.object())
-            ->put(e, "right", right ? right->toElement() : ElementCreator::creator.object());
+    ElementObject* e = ElementCreator::object();
+    e->put("value", value ? value->toElement() : ElementCreator::object())
+            ->put("left", left ? left->toElement() : ElementCreator::object())
+            ->put("right", right ? right->toElement() : ElementCreator::object());
     return e;
 }
 

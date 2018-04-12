@@ -5,7 +5,7 @@
 #include "Metadata.h"
 
 Element* Metadata::toElement() const {
-    ElementObject* e = ElementCreator::creator.object();
+    ElementObject* e = ElementCreator::object();
     return e;
 }
 

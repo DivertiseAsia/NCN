@@ -17,7 +17,7 @@
 
 class NodeState{
 public:
-    explicit NodeState(Serializer* s, int si = 64);
+    explicit NodeState(Serializer* s, int si = 64, const char* e = "json");
     Block* create_block() const;
     Block* add(std::string transaction, std::string public_key);
     void add(Block* block);
@@ -25,6 +25,7 @@ public:
     void clear_transactions();
     bool check_transaction(Transaction * transaction, std::string k);
 private:
+    std::string encoding;
     unsigned int size;
     Hash* top_fingerprint;
     std::vector<std::pair<std::string, std::string>>  transactions;

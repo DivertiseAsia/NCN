@@ -16,6 +16,7 @@
 #include "utils/RSA.h"
 #include "Message.h"
 #include "proof/Proof.h"
+#include "TransactionManager.h"
 #include <openssl/bio.h>
 #include <openssl/err.h>
 #include <openssl/pem.h>
@@ -24,7 +25,7 @@
 
 class Node{
 public:
-    Node(Serializer* serializer, int p, const char* e, int pr);
+    explicit Node(Serializer* serializer, int p = 3000, const char* e = "json", int pr = Proof::WORK);
     ~Node();
     void close();
     void request_transaction(Transaction* transaction);
@@ -32,6 +33,8 @@ public:
     bool operator()(Block* block, Message* message);
     bool operator()(Message* message);
     bool static defaultCallback(Socket* socket, int port, Serializer* serializer, Node* node);
+    void start(TransactionManager manager);
+
 private:
     std::string encoding;
     Proof* proof;

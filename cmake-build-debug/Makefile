@@ -1041,6 +1041,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+serializer/CustomSerializer.o: serializer/CustomSerializer.cpp.o
+
+.PHONY : serializer/CustomSerializer.o
+
+# target to build an object file
+serializer/CustomSerializer.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o
+.PHONY : serializer/CustomSerializer.cpp.o
+
+serializer/CustomSerializer.i: serializer/CustomSerializer.cpp.i
+
+.PHONY : serializer/CustomSerializer.i
+
+# target to preprocess a source file
+serializer/CustomSerializer.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.i
+.PHONY : serializer/CustomSerializer.cpp.i
+
+serializer/CustomSerializer.s: serializer/CustomSerializer.cpp.s
+
+.PHONY : serializer/CustomSerializer.s
+
+# target to generate assembly for a file
+serializer/CustomSerializer.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.s
+.PHONY : serializer/CustomSerializer.cpp.s
+
 transactions/MessagesTransaction.o: transactions/MessagesTransaction.cpp.o
 
 .PHONY : transactions/MessagesTransaction.o
@@ -1121,33 +1148,6 @@ transactions/StatusTransaction.s: transactions/StatusTransaction.cpp.s
 transactions/StatusTransaction.cpp.s:
 	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/transactions/StatusTransaction.cpp.s
 .PHONY : transactions/StatusTransaction.cpp.s
-
-validator/CustomSerializer.o: validator/CustomSerializer.cpp.o
-
-.PHONY : validator/CustomSerializer.o
-
-# target to build an object file
-validator/CustomSerializer.cpp.o:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/validator/CustomSerializer.cpp.o
-.PHONY : validator/CustomSerializer.cpp.o
-
-validator/CustomSerializer.i: validator/CustomSerializer.cpp.i
-
-.PHONY : validator/CustomSerializer.i
-
-# target to preprocess a source file
-validator/CustomSerializer.cpp.i:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/validator/CustomSerializer.cpp.i
-.PHONY : validator/CustomSerializer.cpp.i
-
-validator/CustomSerializer.s: validator/CustomSerializer.cpp.s
-
-.PHONY : validator/CustomSerializer.s
-
-# target to generate assembly for a file
-validator/CustomSerializer.cpp.s:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/validator/CustomSerializer.cpp.s
-.PHONY : validator/CustomSerializer.cpp.s
 
 # Help Target
 help:
@@ -1260,6 +1260,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... serializer/CustomSerializer.o"
+	@echo "... serializer/CustomSerializer.i"
+	@echo "... serializer/CustomSerializer.s"
 	@echo "... transactions/MessagesTransaction.o"
 	@echo "... transactions/MessagesTransaction.i"
 	@echo "... transactions/MessagesTransaction.s"
@@ -1269,9 +1272,6 @@ help:
 	@echo "... transactions/StatusTransaction.o"
 	@echo "... transactions/StatusTransaction.i"
 	@echo "... transactions/StatusTransaction.s"
-	@echo "... validator/CustomSerializer.o"
-	@echo "... validator/CustomSerializer.i"
-	@echo "... validator/CustomSerializer.s"
 .PHONY : help
 
 

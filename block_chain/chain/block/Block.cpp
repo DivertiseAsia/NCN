@@ -39,19 +39,19 @@ Block::Block(const Serializer* s, const char* e): serializer(s), encoding(e), fi
 Block::~Block() = default;
 
 Element* Block::toElement() const{
-    ElementArray* array = ElementCreator::creator.array();
+    ElementArray* array = ElementCreator::array();
     for (auto &transaction : transactions) {
-        ElementObject* object = ElementCreator::creator.object();
-        object->put("first", ElementCreator::creator.create(transaction.first));
-        object->put("second", ElementCreator::creator.create(transaction.second));
+        ElementObject* object = ElementCreator::object();
+        object->put("first", ElementCreator::create(transaction.first));
+        object->put("second", ElementCreator::create(transaction.second));
         array->add(object);
     }
-    ElementObject* e = ElementCreator::creator.object();
-    ElementCreator::creator.put(e, "fingerprint", fingerprint ? fingerprint->toElement() : ElementCreator::creator.object())
-                          ->put(e, "parent_fingerprint", parent_fingerprint ? parent_fingerprint->toElement() : ElementCreator::creator.object())
-                          ->put(e, "timestamp", ElementCreator::creator.create(timestamp))
-                          ->put(e, "transactions", array)
-                          ->put(e, "data", data.toElement());
+    ElementObject* e = ElementCreator::object();
+    e->put("fingerprint", fingerprint ? fingerprint->toElement() : ElementCreator::object())
+                          ->put("parent_fingerprint", parent_fingerprint ? parent_fingerprint->toElement() : ElementCreator::object())
+                          ->put("timestamp", ElementCreator::create(timestamp))
+                          ->put("transactions", array)
+                          ->put("data", data.toElement());
     return e;
 }
 

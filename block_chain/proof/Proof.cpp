@@ -3,6 +3,7 @@
 //
 
 #include "Proof.h"
+#include <utility>
 #include "ProofOfStake.h"
 #include "ProofOfWork.h"
 #include "ProofOfHold.h"
@@ -23,7 +24,7 @@ std::map<int, std::function<Proof*()>> Proof::items;
 
 Proof* Proof::generate(const int type) {
     if(items.empty()) {
-        items[Proof::WORK] = []() -> Proof*{return new ProofOfWork();};
+        items[Proof::WORK] = []() -> Proof*{return new ProofOfWork;};
         items[Proof::STAKE] = []() -> Proof*{return new ProofOfStake;};
         items[Proof::HOLD] = []() -> Proof*{return new ProofOfHold;};
         items[Proof::IMPORTANCE] = []() -> Proof*{return new ProofOfImportance;};
@@ -32,4 +33,8 @@ Proof* Proof::generate(const int type) {
         items[Proof::USE] = []() -> Proof*{return new ProofOfUse;};
     }
     return (items.find(type)->second)();
+}
+
+void Proof::add_proof(int id, std::function<Proof *()> proof) {
+    items[id] = std::move(proof);
 }

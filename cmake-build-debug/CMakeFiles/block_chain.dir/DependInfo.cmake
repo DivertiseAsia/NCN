@@ -38,10 +38,10 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/default/CLionProjects/block_chain/block_chain/utils/serialization/json/JsonParser.cpp" "/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/utils/serialization/json/JsonParser.cpp.o"
   "/home/default/CLionProjects/block_chain/database/Row.cpp" "/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles/block_chain.dir/database/Row.cpp.o"
   "/home/default/CLionProjects/block_chain/main.cpp" "/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles/block_chain.dir/main.cpp.o"
+  "/home/default/CLionProjects/block_chain/serializer/CustomSerializer.cpp" "/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o"
   "/home/default/CLionProjects/block_chain/transactions/MessagesTransaction.cpp" "/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles/block_chain.dir/transactions/MessagesTransaction.cpp.o"
   "/home/default/CLionProjects/block_chain/transactions/MoneyTransaction.cpp" "/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles/block_chain.dir/transactions/MoneyTransaction.cpp.o"
   "/home/default/CLionProjects/block_chain/transactions/StatusTransaction.cpp" "/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles/block_chain.dir/transactions/StatusTransaction.cpp.o"
-  "/home/default/CLionProjects/block_chain/validator/CustomSerializer.cpp" "/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles/block_chain.dir/validator/CustomSerializer.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

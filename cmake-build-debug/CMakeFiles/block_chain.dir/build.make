@@ -537,28 +537,28 @@ CMakeFiles/block_chain.dir/transactions/MessagesTransaction.cpp.o.provides: CMak
 CMakeFiles/block_chain.dir/transactions/MessagesTransaction.cpp.o.provides.build: CMakeFiles/block_chain.dir/transactions/MessagesTransaction.cpp.o
 
 
-CMakeFiles/block_chain.dir/validator/CustomSerializer.cpp.o: CMakeFiles/block_chain.dir/flags.make
-CMakeFiles/block_chain.dir/validator/CustomSerializer.cpp.o: ../validator/CustomSerializer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/block_chain.dir/validator/CustomSerializer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/block_chain.dir/validator/CustomSerializer.cpp.o -c /home/default/CLionProjects/block_chain/validator/CustomSerializer.cpp
+CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: CMakeFiles/block_chain.dir/flags.make
+CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: ../serializer/CustomSerializer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o -c /home/default/CLionProjects/block_chain/serializer/CustomSerializer.cpp
 
-CMakeFiles/block_chain.dir/validator/CustomSerializer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/block_chain.dir/validator/CustomSerializer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/default/CLionProjects/block_chain/validator/CustomSerializer.cpp > CMakeFiles/block_chain.dir/validator/CustomSerializer.cpp.i
+CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/default/CLionProjects/block_chain/serializer/CustomSerializer.cpp > CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.i
 
-CMakeFiles/block_chain.dir/validator/CustomSerializer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/block_chain.dir/validator/CustomSerializer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/default/CLionProjects/block_chain/validator/CustomSerializer.cpp -o CMakeFiles/block_chain.dir/validator/CustomSerializer.cpp.s
+CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/default/CLionProjects/block_chain/serializer/CustomSerializer.cpp -o CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.s
 
-CMakeFiles/block_chain.dir/validator/CustomSerializer.cpp.o.requires:
+CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o.requires:
 
-.PHONY : CMakeFiles/block_chain.dir/validator/CustomSerializer.cpp.o.requires
+.PHONY : CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o.requires
 
-CMakeFiles/block_chain.dir/validator/CustomSerializer.cpp.o.provides: CMakeFiles/block_chain.dir/validator/CustomSerializer.cpp.o.requires
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/validator/CustomSerializer.cpp.o.provides.build
-.PHONY : CMakeFiles/block_chain.dir/validator/CustomSerializer.cpp.o.provides
+CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o.provides: CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o.requires
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o.provides.build
+.PHONY : CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o.provides
 
-CMakeFiles/block_chain.dir/validator/CustomSerializer.cpp.o.provides.build: CMakeFiles/block_chain.dir/validator/CustomSerializer.cpp.o
+CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o.provides.build: CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o
 
 
 CMakeFiles/block_chain.dir/block_chain/utils/Encoding.cpp.o: CMakeFiles/block_chain.dir/flags.make
@@ -991,7 +991,7 @@ block_chain_OBJECTS = \
 "CMakeFiles/block_chain.dir/block_chain/utils/serialization/json/JsonParser.cpp.o" \
 "CMakeFiles/block_chain.dir/transactions/StatusTransaction.cpp.o" \
 "CMakeFiles/block_chain.dir/transactions/MessagesTransaction.cpp.o" \
-"CMakeFiles/block_chain.dir/validator/CustomSerializer.cpp.o" \
+"CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o" \
 "CMakeFiles/block_chain.dir/block_chain/utils/Encoding.cpp.o" \
 "CMakeFiles/block_chain.dir/block_chain/chain/block/Metadata.cpp.o" \
 "CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/TransactionContainer.cpp.o" \
@@ -1033,7 +1033,7 @@ block_chain: CMakeFiles/block_chain.dir/block_chain/utils/serialization/json/Jso
 block_chain: CMakeFiles/block_chain.dir/block_chain/utils/serialization/json/JsonParser.cpp.o
 block_chain: CMakeFiles/block_chain.dir/transactions/StatusTransaction.cpp.o
 block_chain: CMakeFiles/block_chain.dir/transactions/MessagesTransaction.cpp.o
-block_chain: CMakeFiles/block_chain.dir/validator/CustomSerializer.cpp.o
+block_chain: CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o
 block_chain: CMakeFiles/block_chain.dir/block_chain/utils/Encoding.cpp.o
 block_chain: CMakeFiles/block_chain.dir/block_chain/chain/block/Metadata.cpp.o
 block_chain: CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/TransactionContainer.cpp.o
@@ -1083,7 +1083,7 @@ CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/util
 CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/utils/serialization/json/JsonParser.cpp.o.requires
 CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/transactions/StatusTransaction.cpp.o.requires
 CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/transactions/MessagesTransaction.cpp.o.requires
-CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/validator/CustomSerializer.cpp.o.requires
+CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o.requires
 CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/utils/Encoding.cpp.o.requires
 CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/chain/block/Metadata.cpp.o.requires
 CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/TransactionContainer.cpp.o.requires

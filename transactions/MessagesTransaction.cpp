@@ -9,16 +9,12 @@ bool MessagesTransaction::operator()() const {
     return true;
 }
 
-MessagesTransaction::MessagesTransaction(std::string str): message(std::move(str)) {
-
-}
-
 MessagesTransaction::MessagesTransaction() = default;
 
 Element* MessagesTransaction::toElement() const {
-    ElementObject* e = ElementCreator::creator.object();
-    ElementCreator::creator.put(e, "message", ElementCreator::creator.create(message.c_str()))
-                          ->put(e, "type", ElementCreator::creator.create(this->get_type()));
+    ElementObject* e = ElementCreator::object();
+    e->put("message", ElementCreator::create(message.c_str()))
+                          ->put("type", ElementCreator::create(this->get_type()));
     return e;
 }
 
@@ -40,6 +36,7 @@ std::vector<std::string> MessagesTransaction::apply(Row* row){
 Row* MessagesTransaction::createRow() const {
     return new CustomRow();
 };
+
 void MessagesTransaction::apply_reverse(Row*){
 
 }
@@ -52,6 +49,7 @@ bool MessagesTransaction::validate(Row *row) const {
 int MessagesTransaction::get_type() const {
     return 1;
 };
+
 std::string MessagesTransaction::description() const {
     return "New message";
 };

@@ -12,16 +12,12 @@ bool StatusTransaction::operator()() const {
     return true;
 }
 
-StatusTransaction::StatusTransaction(std::string str): status(std::move(std::move(str))) {
-
-}
-
 StatusTransaction::StatusTransaction() = default;
 
 Element* StatusTransaction::toElement() const {
-    ElementObject* e = ElementCreator::creator.object();
-    ElementCreator::creator.put(e, "type", ElementCreator::creator.create(get_type()))
-            ->put(e, "status", ElementCreator::creator.create(status.c_str()));
+    ElementObject* e = ElementCreator::object();
+    e->put("type", ElementCreator::create(get_type()))
+            ->put("status", ElementCreator::create(status.c_str()));
     return e;
 }
 

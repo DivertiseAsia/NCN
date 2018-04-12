@@ -13,7 +13,6 @@
 class MessagesTransaction: public Transaction {
 public:
     explicit MessagesTransaction();
-    explicit MessagesTransaction(std::string str);
     bool operator()() const final;
 
     Element* toElement() const override;
