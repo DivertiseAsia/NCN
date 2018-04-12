@@ -30,6 +30,14 @@ Hash::Hash(Hash* hash1, Hash* hash2){
     hash = Encoding::toHexa(std::string((const char*)digest));
 }
 
+Hash::Hash(Hash* hash1, double timestamp){
+    unsigned char digest[MD5_DIGEST_LENGTH + 1];
+    std::string str = hash1->hash + std::to_string(timestamp);
+    MD5((const unsigned char*) str.c_str(), str.size(), digest);
+    digest[MD5_DIGEST_LENGTH] = 0;
+    hash = Encoding::toHexa(std::string((const char*)digest));
+}
+
 Hash::Hash(){
 }
 

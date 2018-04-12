@@ -48,12 +48,12 @@ void JsonCreator::parse(std::string& text, Element** e) const{
 
 void JsonCreator::parseContent(std::string& text, ElementDouble* e) const
 {
-    text.append(patch::to_string(e->value));
+    text.append(std::to_string(e->value));
 }
 
 void JsonCreator::parseContent(std::string& text, ElementInt* e) const
 {
-    text.append(patch::to_string(e->value));
+    text.append(std::to_string(e->value));
 }
 
 void escape(std::string& text){
@@ -72,7 +72,7 @@ void JsonCreator::parseContent(std::string& text, ElementString* e) const
 
 void JsonCreator::parseContent(std::string& text, ElementBoolean* e) const
 {
-    text.append(patch::to_string(e->value ? "true" : "false"));
+    text.append(e->value ? "true" : "false");
 }
 
 void JsonCreator::parseContent(std::string& text, ElementArray* e) const

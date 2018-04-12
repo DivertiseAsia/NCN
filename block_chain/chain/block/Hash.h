@@ -16,6 +16,7 @@ class Hash{
 public:
     Hash();
     Hash(Hash* hash1, Hash* hash2);
+    Hash(Hash* hash1, double timestamp);
     Hash(const Component* component, const Serializer* serializer, const char* encoding);
     std::string to_string() const;
     void set_hash(std::string str);

@@ -73,6 +73,7 @@ void NodeState::read_blocks() {
     std::ifstream block_file("./network/blocks/"+id+".blk");
     std::string line;
     while(block_file.is_open()){
+            std::cout << "Read" << std::endl;
         std::string serialized;
         while (std::getline (block_file, line))
             serialized += line;

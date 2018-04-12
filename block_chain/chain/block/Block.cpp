@@ -17,10 +17,11 @@ Hash* Block::compute_hash(int begin, int end, const Serializer* s, const char* e
         return new Hash(compute_hash(begin, begin + (end - begin) / 2, s, e), compute_hash(begin + (end - begin) / 2 + 1, end, s, e));
 }
 Hash* Block::compute_fingerprint(const Serializer* s, const char* e) const {
-    return compute_hash(0, transactions.size() - 1, s, e);
+    return new Hash(compute_hash(0, transactions.size() - 1, s, e), timestamp);
 }
 
 Block::Block(std::vector<std::pair<std::string, std::string>> t, Hash* parent, const Serializer* s, const char* e): transactions(t), parent_fingerprint(parent) {
+    timestamp = std::chrono::duration_cast<std::chrono::milliseconds >(std::chrono::system_clock::now().time_since_epoch()).count();
     fingerprint = compute_fingerprint(s, e);
 }
 
@@ -28,7 +29,7 @@ bool Block::checkFingerPrint(const Serializer* s, const char* e) const {
     return *fingerprint == *compute_fingerprint(s, e);
 }
 
-Block::Block(const Serializer* s, const char* e): serializer(s), encoding(e) {
+Block::Block(const Serializer* s, const char* e): serializer(s), encoding(e), fingerprint(0) {
 
 }
 
@@ -46,6 +47,7 @@ Element* Block::toElement() const{
     ElementObject* e = ElementCreator::creator.object();
     ElementCreator::creator.put(e, "fingerprint", fingerprint ? fingerprint->toElement() : ElementCreator::creator.object())
                           ->put(e, "parent_fingerprint", parent_fingerprint ? parent_fingerprint->toElement() : ElementCreator::creator.object())
+                          ->put(e, "timestamp", ElementCreator::creator.create(timestamp))
                           ->put(e, "transactions", array)
                           ->put(e, "data", data.toElement());
     return e;
@@ -55,6 +57,7 @@ void Block::fromElement(ElementObject* e, const Serializer* serializer, const ch
     ElementObject* o = nullptr;
     fingerprint = new Hash();
     e->getItem("fingerprint", &o);
+    e->getItem("timestamp", &timestamp);
     fingerprint->fromElement(o, serializer, encoding);
     parent_fingerprint = new Hash();
     e->getItem("parent_fingerprint", &o);

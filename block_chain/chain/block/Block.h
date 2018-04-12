@@ -11,6 +11,8 @@
 #include "transaction/TransactionContainer.h"
 #include "Component.h"
 #include <iostream>
+#include <chrono>
+
 class Serializer;
 class Message;
 
@@ -31,6 +33,7 @@ public:
 protected:
     virtual void fromElement(ElementObject* e, const Serializer* s, const char* encoding) override;
 private:
+    double timestamp;
     const Serializer* serializer;
     const char* encoding;
     Metadata data;
