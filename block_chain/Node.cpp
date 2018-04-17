@@ -7,16 +7,16 @@
 void run(SocketServer* server, Serializer* serializer, Node* node) {
     server->run(Node::defaultCallback, serializer, node);
 }
-Node::Node(Serializer* s, int p, const char* e, int pr): serializer(s), encoding(e), proof(Proof::generate(pr)), validator(serializer, encoding.c_str()), block_chain(s, 1), server(p), running(run, &server, s, this), self(serializer, Socket::getIP(), p) {
+Node::Node(Serializer* s, int p, const char* e, int pr, bool d): serializer(s), encoding(e), proof(Proof::generate(pr)), validator(serializer, encoding.c_str()), block_chain(s, 1), server(p), running(run, &server, s, this), self(serializer, Socket::getIP(), p), debug(d) {
     OpenSSL_add_all_algorithms();
     ERR_load_BIO_strings();
     ERR_load_crypto_strings();
     if(!rsa.backup("./network/private..pem", "./network/public..pem"))
         rsa.generate("./network/private.pem", "./network/public.pem");
     store(Socket::getIP(), p);
-    running.detach();
+    /*//running.detach();
     if(peers.empty())
-        block_chain.read_blocks();
+        block_chain.read_blocks();*/
 }
 
 Node::~Node(){
@@ -62,13 +62,14 @@ void Node::store(std::string _ip, int _p){
             unsigned long index = line.find(':');
             std::string ip = line.substr(0, index);
             int port = atoi(line.substr(index+1).c_str());
-            if(_ip != ip || _p != port){
+            //TODO: decommenter
+            //if(_ip != ip || _p != port){
                 Peer peer(serializer, ip, port);
                 if(peer.send(Encoding::toHexa(std::string(m)).c_str())) {
                     i = 1;
                     break;
                 }
-            }
+            //}
         }
         peers_file.close();
         free(m);
@@ -87,6 +88,8 @@ void Node::close(){
 }
 
 void Node::request_transaction(Transaction* transaction){
+    if(debug)
+        std::cout << "\033[1;34m[INFO] Transaction requested by " << self._ip << ":" << self._port<<"\033[0m\n";
     MerkleTree tree(transaction, serializer, encoding.c_str());
     const char* serialized = serializer->serialize(transaction, encoding.c_str());
     Message message(serialized, rsa.encrypt(serialized), rsa.getPublicKey(), &tree, Message::TRANSACTION);
@@ -98,6 +101,8 @@ void Node::request_transaction(Transaction* transaction){
 }
 
 bool Node::operator()(Transaction* transaction, Message* message) {
+    if(debug)
+        std::cout << "\033[1;32m[INFO] Transaction computed by " << self._ip << ":" << self._port<<"\033[0m\n";
     bool valid = (*message->tree->value == *transaction->__hash__(serializer, encoding.c_str()) && block_chain.check_transaction(transaction, message->public_key));
     if(valid) {
         Block *block = block_chain.add(message->cipher, Encoding::toHexa(message->public_key));
@@ -121,6 +126,8 @@ bool Node::operator()(Transaction* transaction, Message* message) {
     return valid;
 }
 bool Node::operator()(Block* block, Message* message) {
+    if(debug)
+        std::cout << "\033[1;32m[INFO] Block computer by " << self._ip << ":" << self._port<<"\033[0m\n";
     if(validator(block))
     {
         if(proof->accept(block)) {
@@ -149,11 +156,15 @@ bool Node::operator()(Message*) {
 
 
 void Node::parseAnswerPeers(Message* message) {
+    if(debug)
+        std::cout << "\033[1;34m[INFO] Peers parsed by " << self._ip << ":" << self._port<<"\033[0m\n";
     load(message->plain_text);
     block_chain.read_blocks();
 }
 
 void Node::parseAskPeers(Message* message) {
+    if(debug)
+        std::cout << "\033[1;34m[INFO] Peers asked by " << self._ip << ":" << self._port<<"\033[0m\n";
     unsigned long index = message->plain_text.find(':');
     std::string ip = message->plain_text.substr(0, index);
     int port = atoi(message->plain_text.substr(index+1).c_str());
@@ -170,6 +181,8 @@ void Node::parseAskPeers(Message* message) {
 }
 
 void Node::parseTransaction(Message* message){
+    if(debug)
+        std::cout << "\033[1;32m[INFO] Transaction parsed by " << self._ip << ":" << self._port<<"\033[0m\n";
     RSA_Cryptography crypto(message->public_key);
     std::string str(message->getCipher());
     Transaction* deciphered(serializer->unserializeTransaction(crypto.decrypt(str, (int)str.size()), encoding.c_str()));
@@ -182,6 +195,8 @@ void Node::parseTransaction(Message* message){
 }
 
 void Node::parseBlock(Message* message) {
+    if(debug)
+        std::cout << "\033[1;32m[INFO] Block parsed by " << self._ip << ":" << self._port<<"\033[0m\n";
     RSA_Cryptography crypto(message->public_key);
     //std::string str(message->getCipher());
     //Block* deciphered(serializer->unserializeBlock(crypto.decrypt(str, (int)str.size()), encoding.c_str()));
@@ -194,6 +209,8 @@ void Node::parseBlock(Message* message) {
 }
 
 void Node::parseSignIn(Message* message) {
+    if(debug)
+        std::cout << "\033[1;34m[INFO] Sign in by " << self._ip << ":" << self._port<<"\033[0m\n";
     unsigned long index = message->plain_text.find(':');
     std::string ip = message->plain_text.substr(0, index);
     int port = atoi(message->plain_text.substr(index+1).c_str());
@@ -203,6 +220,8 @@ void Node::parseSignIn(Message* message) {
 
 
 void Node::parseSignOut(Message* message) {
+    if(debug)
+        std::cout << "\033[1;34m[INFO] Sign out by " << self._ip << ":" << self._port<<"\033[0m\n";
     unsigned long index = message->plain_text.find(':');
     std::string ip = message->plain_text.substr(0, index);
     int port = atoi(message->plain_text.substr(index+1).c_str());
@@ -221,14 +240,15 @@ bool Node::defaultCallback(Socket* socket, int port, Serializer* serializer, Nod
     while(socket->read(buffer)) {
         if (buffer.length()) {
             auto start = std::chrono::high_resolution_clock::now();
-            std::cout << "Request received on port " << port << " >> ";
             buffer = Encoding::fromHexa(buffer);
-            std::cout << buffer << std::endl;
+            if(node->debug)
+                std::cout << "\033[1;36m[INFO] Request received on port " << port << " >> " << buffer << "\033[0m\n";
             Message *message = serializer->unserializeMessage(buffer, node->encoding.c_str());
             (node->*(action[message->type]))(message);
             auto end = std::chrono::high_resolution_clock::now();
             long long microseconds = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
-            std::cout << "Request performed in " << (microseconds / 1000.0) << " milliseconds" << std::endl;
+            if(node->debug)
+                std::cout << "\033[1;36m[INFO] Request performed in " << (microseconds / 1000.0) << " milliseconds\033[0m\n";
         }
     }
     return true;

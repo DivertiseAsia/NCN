@@ -22,6 +22,7 @@ public:
     virtual Transaction* unserializeTransaction(std::string transaction, const char* key) const;
     virtual Block* unserializeBlock(std::string block, const char* key) const;
     virtual Message* unserializeMessage(std::string message, const char* key) const;
+    virtual Metadata* unserializeMetadata(std::string message, const char* key) const;
     ElementObject* getElement(std::string transaction, const char* key) const;
     void set_serializer(const char* key, ContentCreator* creator);
     void set_unserializer(const char* key, ContentParser* parser);

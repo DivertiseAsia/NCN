@@ -3,3 +3,11 @@
 //
 
 #include "Row.h"
+
+Row* CustomRow::clone() const{
+    CustomRow* r = new CustomRow;
+    r->money = money;
+    r->status = status;
+    r->messages = messages;
+    return r;
+}

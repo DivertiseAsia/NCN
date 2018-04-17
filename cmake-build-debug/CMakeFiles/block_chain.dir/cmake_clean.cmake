@@ -21,7 +21,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/block_chain.dir/transactions/MessagesTransaction.cpp.o"
   "CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o"
   "CMakeFiles/block_chain.dir/block_chain/utils/Encoding.cpp.o"
-  "CMakeFiles/block_chain.dir/block_chain/chain/block/Metadata.cpp.o"
+  "CMakeFiles/block_chain.dir/block_chain/proof/metadatas/Metadata.cpp.o"
   "CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/TransactionContainer.cpp.o"
   "CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/MerkleTree.cpp.o"
   "CMakeFiles/block_chain.dir/database/Row.cpp.o"
@@ -37,6 +37,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStakeTime.cpp.o"
   "CMakeFiles/block_chain.dir/block_chain/proof/ProofOfMinimumAgedStake.cpp.o"
   "CMakeFiles/block_chain.dir/block_chain/proof/ProofOfImportance.cpp.o"
+  "CMakeFiles/block_chain.dir/block_chain/proof/metadatas/ProofOfWorkMetadata.cpp.o"
+  "CMakeFiles/block_chain.dir/block_chain/chain/Chain.cpp.o"
   "block_chain.pdb"
   "block_chain"
 )

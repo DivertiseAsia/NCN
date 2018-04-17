@@ -13,9 +13,8 @@ MessagesTransaction::MessagesTransaction() = default;
 
 Element* MessagesTransaction::toElement() const {
     ElementObject* e = ElementCreator::object();
-    e->put("message", ElementCreator::create(message.c_str()))
-                          ->put("type", ElementCreator::create(this->get_type()));
-    return e;
+    return e->put("message", ElementCreator::create(message.c_str()))
+            ->put("type", ElementCreator::create(this->get_type()));
 }
 
 void MessagesTransaction::fromElement(ElementObject* e, const Serializer*, const char*) {

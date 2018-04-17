@@ -71,6 +71,8 @@ utils/serialization/json/JsonCreator.hpp
 /home/default/CLionProjects/block_chain/block_chain/utils/serialization/json/JsonCreator.hpp
 utils/serialization/json/JsonParser.hpp
 /home/default/CLionProjects/block_chain/block_chain/utils/serialization/json/JsonParser.hpp
+proof/metadatas/ProofOfWorkMetadata.h
+/home/default/CLionProjects/block_chain/block_chain/proof/metadatas/ProofOfWorkMetadata.h
 utility
 -
 
@@ -105,6 +107,24 @@ chain/block/transaction/Transaction.h
 /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
 chain/block/Block.h
 /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
+
+/home/default/CLionProjects/block_chain/block_chain/chain/Chain.cpp
+Chain.h
+/home/default/CLionProjects/block_chain/block_chain/chain/Chain.h
+../utils/RSA.h
+/home/default/CLionProjects/block_chain/block_chain/utils/RSA.h
+
+/home/default/CLionProjects/block_chain/block_chain/chain/Chain.h
+vector
+-
+block/Hash.h
+/home/default/CLionProjects/block_chain/block_chain/chain/block/Hash.h
+block/Block.h
+/home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
+Database.h
+/home/default/CLionProjects/block_chain/block_chain/chain/Database.h
+../Serializer.h
+/home/default/CLionProjects/block_chain/block_chain/Serializer.h
 
 /home/default/CLionProjects/block_chain/block_chain/chain/Database.cpp
 Database.h
@@ -147,6 +167,8 @@ block/transaction/TransactionContainer.h
 /home/default/CLionProjects/block_chain/block_chain/Serializer.h
 Database.h
 /home/default/CLionProjects/block_chain/block_chain/chain/Database.h
+Chain.h
+/home/default/CLionProjects/block_chain/block_chain/chain/Chain.h
 
 /home/default/CLionProjects/block_chain/block_chain/chain/Row.cpp
 Row.h
@@ -165,14 +187,16 @@ utility
 /home/default/CLionProjects/block_chain/block_chain/Message.h
 ../../utils/RSA.h
 /home/default/CLionProjects/block_chain/block_chain/utils/RSA.h
+../../proof/metadatas/ProofOfWorkMetadata.h
+/home/default/CLionProjects/block_chain/block_chain/proof/metadatas/ProofOfWorkMetadata.h
 
 /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
 vector
 -
 Hash.h
 /home/default/CLionProjects/block_chain/block_chain/chain/block/Hash.h
-Metadata.h
-/home/default/CLionProjects/block_chain/block_chain/chain/block/Metadata.h
+../../proof/metadatas/Metadata.h
+/home/default/CLionProjects/block_chain/block_chain/proof/metadatas/Metadata.h
 transaction/TransactionContainer.h
 /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/TransactionContainer.h
 Component.h
@@ -209,14 +233,6 @@ Component.h
 /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
 iostream
 -
-
-/home/default/CLionProjects/block_chain/block_chain/chain/block/Metadata.cpp
-Metadata.h
-/home/default/CLionProjects/block_chain/block_chain/chain/block/Metadata.h
-
-/home/default/CLionProjects/block_chain/block_chain/chain/block/Metadata.h
-../../utils/serialization/Element.hpp
-/home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
 
 /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/MerkleTree.cpp
 MerkleTree.h
@@ -335,10 +351,32 @@ Proof.h
 /home/default/CLionProjects/block_chain/block_chain/proof/ProofOfWork.cpp
 ProofOfWork.h
 /home/default/CLionProjects/block_chain/block_chain/proof/ProofOfWork.h
+metadatas/ProofOfWorkMetadata.h
+/home/default/CLionProjects/block_chain/block_chain/proof/metadatas/ProofOfWorkMetadata.h
 
 /home/default/CLionProjects/block_chain/block_chain/proof/ProofOfWork.h
 Proof.h
 /home/default/CLionProjects/block_chain/block_chain/proof/Proof.h
+
+/home/default/CLionProjects/block_chain/block_chain/proof/metadatas/Metadata.cpp
+Metadata.h
+/home/default/CLionProjects/block_chain/block_chain/proof/metadatas/Metadata.h
+
+/home/default/CLionProjects/block_chain/block_chain/proof/metadatas/Metadata.h
+../../utils/serialization/Element.hpp
+/home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
+../../chain/block/Component.h
+/home/default/CLionProjects/block_chain/block_chain/chain/block/Component.h
+
+/home/default/CLionProjects/block_chain/block_chain/proof/metadatas/ProofOfWorkMetadata.cpp
+ProofOfWorkMetadata.h
+/home/default/CLionProjects/block_chain/block_chain/proof/metadatas/ProofOfWorkMetadata.h
+iostream
+-
+
+/home/default/CLionProjects/block_chain/block_chain/proof/metadatas/ProofOfWorkMetadata.h
+Metadata.h
+/home/default/CLionProjects/block_chain/block_chain/proof/metadatas/Metadata.h
 
 /home/default/CLionProjects/block_chain/block_chain/socket/Peer.cpp
 Peer.h

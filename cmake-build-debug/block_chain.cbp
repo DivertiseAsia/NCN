@@ -117,6 +117,12 @@
 		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain">
 			<Option target="block_chain"/>
 		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/Chain.cpp">
+			<Option target="block_chain"/>
+		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/Chain.h">
+			<Option target="block_chain"/>
+		</Unit>
 		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/Database.cpp">
 			<Option target="block_chain"/>
 		</Unit>
@@ -154,12 +160,6 @@
 			<Option target="block_chain"/>
 		</Unit>
 		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/block/Hash.h">
-			<Option target="block_chain"/>
-		</Unit>
-		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/block/Metadata.cpp">
-			<Option target="block_chain"/>
-		</Unit>
-		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/block/Metadata.h">
 			<Option target="block_chain"/>
 		</Unit>
 		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/block/transaction">
@@ -229,6 +229,18 @@
 			<Option target="block_chain"/>
 		</Unit>
 		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/proof/ProofOfWork.h">
+			<Option target="block_chain"/>
+		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/proof/metadatas/Metadata.cpp">
+			<Option target="block_chain"/>
+		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/proof/metadatas/Metadata.h">
+			<Option target="block_chain"/>
+		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/proof/metadatas/ProofOfWorkMetadata.cpp">
+			<Option target="block_chain"/>
+		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/proof/metadatas/ProofOfWorkMetadata.h">
 			<Option target="block_chain"/>
 		</Unit>
 		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/socket">

@@ -3,11 +3,15 @@
 //
 
 #include "Metadata.h"
-
+/*
 Element* Metadata::toElement() const {
     ElementObject* e = ElementCreator::object();
     return e;
 }
 
-void Metadata::fromElement(ElementObject* e) {
+void Metadata::fromElement(ElementObject* e, const Serializer* serializer, const char* encoding) {
+}
+*/
+Metadata::~Metadata() {
+
 }

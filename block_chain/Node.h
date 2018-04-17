@@ -25,7 +25,7 @@
 
 class Node{
 public:
-    explicit Node(Serializer* serializer, int p = 3000, const char* e = "json", int pr = Proof::WORK);
+    explicit Node(Serializer* serializer, int p = 3000, const char* e = "json", int pr = Proof::WORK, bool d = false);
     ~Node();
     void close();
     void request_transaction(Transaction* transaction);
@@ -36,6 +36,7 @@ public:
     void start(TransactionManager manager);
 
 private:
+    bool debug;
     std::string encoding;
     Proof* proof;
     void load(std::string list);

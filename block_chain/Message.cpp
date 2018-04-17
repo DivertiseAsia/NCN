@@ -32,12 +32,11 @@ Message::~Message() = default;
 
 Element* Message::toElement() const {
     ElementObject* e = ElementCreator::object();
-    e->put("public_key", ElementCreator::create(public_key))
-                          ->put("cipher", ElementCreator::create(cipher))
-                          ->put("plain_text", ElementCreator::create(plain_text))
-                          ->put("type", ElementCreator::create(type))
-                          ->put("tree", tree != nullptr ? tree->toElement() : ElementCreator::create(type));
-    return e;
+    return e->put("public_key", ElementCreator::create(public_key))
+            ->put("cipher", ElementCreator::create(cipher))
+            ->put("plain_text", ElementCreator::create(plain_text))
+            ->put("type", ElementCreator::create(type))
+            ->put("tree", tree != nullptr ? tree->toElement() : ElementCreator::create(type));;
 }
 
 void Message::fromElement(ElementObject* e, const Serializer* serializer, const char* encoding) {

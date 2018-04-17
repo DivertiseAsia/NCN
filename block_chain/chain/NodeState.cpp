@@ -6,11 +6,11 @@
 #include <utility>
 #include "../utils/RSA.h"
 
-NodeState::NodeState(Serializer* s, int si, const char* e): serializer(s), size(si), top_fingerprint(nullptr), encoding(e) {
+NodeState::NodeState(Serializer* s, int si, const char* e): serializer(s), size(si), chain(new Chain()), encoding(e) {
 }
 
 Block* NodeState::create_block() const {
-    return new Block(transactions, top_fingerprint, serializer, encoding.c_str());
+    return new Block(transactions, chain->top_fingerprint().second->fingerprint, serializer, encoding.c_str());
 }
 
 Block* NodeState::add(std::string transaction, std::string public_key){
@@ -21,9 +21,9 @@ Block* NodeState::add(std::string transaction, std::string public_key){
     return nullptr;
 }
 void NodeState::add(Block* block){
-    block->parent_fingerprint = top_fingerprint;
-    std::string id(top_fingerprint != nullptr ? top_fingerprint->to_string() : "0");
-    top_fingerprint = block->fingerprint;
+    block->parent_fingerprint = chain->top_fingerprint().second->fingerprint;
+    std::string id(block->parent_fingerprint != nullptr ? block->parent_fingerprint->to_string() : "0");
+    chain->add(block);
     update_database(block);
     std::ofstream block_file ("./network/blocks/"+id+".blk");
     std::string line;
@@ -34,32 +34,7 @@ void NodeState::add(Block* block){
 }
 
 void NodeState::update_database(Block* block){
-    for(auto& pair : block->transactions){
-        std::string key(Encoding::fromHexa(pair.second));
-        RSA_Cryptography crypto(key);
-        std::string t(Encoding::fromHexa(pair.first));
-        Transaction* transaction = serializer->unserializeTransaction(crypto.decrypt(t, t.size()), encoding.c_str());
-        auto it = database.rows.find(pair.second);
-        Row* row;
-        if(it == database.rows.end()) {
-            row = transaction->createRow();
-            database.rows[pair.second] = row;
-        }
-        else
-            row = it->second;
-        std::vector<std::string> targets = transaction->apply(row);
-        for(auto& target : targets){
-            auto iterator = database.rows.find(target);
-            Row* updated_row;
-            if(it == database.rows.end()){
-                updated_row = transaction->createRow();
-                database.rows[target] = updated_row;
-            }
-            else
-                updated_row = iterator->second;
-            transaction->apply_reverse(updated_row);
-        }
-    }
+    chain->top_fingerprint().second->update_database(block, serializer, encoding.c_str());
 }
 
 void NodeState::clear_transactions() {
@@ -79,19 +54,10 @@ void NodeState::read_blocks() {
         block_file.close();
         id = block->fingerprint->hash;
         block_file.open("./network/blocks/"+id+".blk");
-        top_fingerprint = block->fingerprint;
+        chain->add(block);
     }
 }
 
 bool NodeState::check_transaction(Transaction* transaction, std::string k) {
-    std::string key(Encoding::toHexa(std::move(k)));
-    auto it = database.rows.find(key);
-    Row* row;
-    if(it == database.rows.end()) {
-        row = transaction->createRow();
-        database.rows[key] = row;
-    }
-    else
-        row = it->second;
-    return transaction->validate(row);
+    return chain->top_fingerprint().second->check_transaction(transaction, k);
 }

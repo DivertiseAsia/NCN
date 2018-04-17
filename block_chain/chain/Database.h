@@ -10,7 +10,13 @@
 #include "Row.h"
 
 class Database {
-    friend class NodeState;
+    friend class Chain;
+public:
+    void operator=(Database const& d){
+        for(auto& r : d.rows){
+            this->rows[r.first] = r.second->clone();
+        }
+    }
 private:
     std::map<std::string, Row*> rows;
 };

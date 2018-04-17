@@ -8,7 +8,8 @@
 
 class Row {
 public:
-    virtual ~Row() = default;;
+    virtual ~Row() = default;
+    virtual Row* clone() const = 0;
 };
 
 

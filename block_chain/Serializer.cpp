@@ -5,6 +5,7 @@
 #include "Serializer.h"
 #include "utils/serialization/json/JsonCreator.hpp"
 #include "utils/serialization/json/JsonParser.hpp"
+#include "proof/metadatas/ProofOfWorkMetadata.h"
 #include <utility>
 
 ElementObject* Serializer::getElement(std::string transaction, const char* key) const{
@@ -48,6 +49,18 @@ Block* Serializer::unserializeBlock(std::string block, const char* key) const {
     auto * b = new Block(this, key);
     b->__init__(getElement(std::move(block), key), this, key);
     return b;
+}
+Metadata* Serializer::unserializeMetadata(std::string data, const char* key) const{
+    static std::map<int, std::function<Metadata*()>> datas;
+    if(datas.empty()) {
+        datas[0] = []() -> Metadata*{return new ProofOfWorkMetadata;};
+    }
+    ElementObject* o = getElement(std::move(data), key);
+    int type;
+    o->getItem("type", &type);
+    Metadata* m = datas.find(type)->second();
+    m->__init__(o, this, key);
+    return m;
 }
 
 void Serializer::set_serializer(const char* key, ContentCreator* creator) {

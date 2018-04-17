@@ -7,7 +7,7 @@
 
 #include <vector>
 #include "Hash.h"
-#include "Metadata.h"
+#include "../../proof/metadatas/Metadata.h"
 #include "transaction/TransactionContainer.h"
 #include "Component.h"
 #include <iostream>
@@ -18,6 +18,8 @@ class Serializer;
 class Block: public Component{
     friend class NodeState;
     friend class Node;
+    friend class ProofOfWork;
+    friend class Chain;
 public:
     Block(const Serializer*, const char*);
     explicit Block(std::vector<std::pair<std::string, std::string>> transactions, Hash*, const Serializer* s, const char* e);
@@ -35,7 +37,7 @@ private:
     double timestamp;
     const Serializer* serializer;
     const char* encoding;
-    Metadata data;
+    Metadata* data;
     std::vector<std::pair<std::string, std::string>> transactions;
     Hash* fingerprint;
     Hash* parent_fingerprint;

@@ -34,12 +34,27 @@ Hash::Hash(Hash* hash1, double timestamp){
     hash = Encoding::toHexa(std::string((const char*)digest));
 }
 
+Hash::Hash(Hash* hash1, int timestamp){
+    unsigned char digest[MD5_DIGEST_LENGTH + 1];
+    std::string str = hash1->hash + std::to_string(timestamp);
+    MD5((const unsigned char*) str.c_str(), str.size(), digest);
+    digest[MD5_DIGEST_LENGTH] = 0;
+    hash = Encoding::toHexa(std::string((const char*)digest));
+}
+
+Hash::Hash(Hash* hash1, unsigned long long int value){
+    unsigned char digest[MD5_DIGEST_LENGTH + 1];
+    std::string str = hash1->hash + std::to_string(value);
+    MD5((const unsigned char*) str.c_str(), str.size(), digest);
+    digest[MD5_DIGEST_LENGTH] = 0;
+    hash = Encoding::toHexa(std::string((const char*)digest));
+}
+
 Hash::Hash() = default;
 
 Element* Hash::toElement() {
     ElementObject* e = ElementCreator::object();
-    ElementCreator::put(e, "hash", ElementCreator::create(hash));
-    return e;
+    return e->put("hash", ElementCreator::create(hash));
 }
 
 void Hash::fromElement(ElementObject* e, const Serializer*, const char*) {

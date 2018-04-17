@@ -16,9 +16,8 @@ StatusTransaction::StatusTransaction() = default;
 
 Element* StatusTransaction::toElement() const {
     ElementObject* e = ElementCreator::object();
-    e->put("type", ElementCreator::create(get_type()))
+    return e->put("type", ElementCreator::create(get_type()))
             ->put("status", ElementCreator::create(status.c_str()));
-    return e;
 }
 
 void StatusTransaction::fromElement(ElementObject* e, const Serializer*, const char*) {

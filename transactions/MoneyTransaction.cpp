@@ -14,10 +14,9 @@ MoneyTransaction::MoneyTransaction() = default;
 
 Element* MoneyTransaction::toElement() const {
     ElementObject* e = ElementCreator::object();
-    e->put("type", ElementCreator::create(get_type()))
-                          ->put("amount", ElementCreator::create(amount))
-                          ->put("target", ElementCreator::create(target));
-    return e;
+    return e->put("type", ElementCreator::create(get_type()))
+            ->put("amount", ElementCreator::create(amount))
+            ->put("target", ElementCreator::create(target));
 }
 
 void MoneyTransaction::fromElement(ElementObject* e, const Serializer*, const char*) {

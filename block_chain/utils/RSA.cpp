@@ -92,7 +92,7 @@ std::string RSA_Cryptography::encrypt(std::string message) {
     auto encrypt = (unsigned char*)malloc((size_t) RSA_size(rsa));
     int encrypt_len;
     if((encrypt_len = RSA_private_encrypt((int)message.size()+1, (const unsigned char*)message.c_str(), encrypt, rsa, RSA_PKCS1_PADDING)) == -1) {
-        std::cout << "ERROR ENCRYPT" << std::endl;
+        std::cout << "\033[1;31m[ERR] ERROR ENCRYPT\033[0m" << std::endl;
     }
     std::string str;
     str.assign((const char*)encrypt, (unsigned long)encrypt_len);
@@ -101,7 +101,7 @@ std::string RSA_Cryptography::encrypt(std::string message) {
 std::string RSA_Cryptography::decrypt(std::string message, int size) {
     auto decrypt = (unsigned char*)malloc((size_t) size);
     if(RSA_public_decrypt((int)message.size(), (const unsigned char*) message.c_str(), decrypt, rsa, RSA_PKCS1_PADDING) == -1) {
-            std::cout << "ERROR DECRYPT" << std::endl;
+        std::cout << "\033[1;31m[ERR] ERROR DECRYPT\033[0m" << std::endl;
     }
     return std::string((const char*)decrypt);
 }

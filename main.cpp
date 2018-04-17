@@ -15,6 +15,7 @@ NF&&f{ print s"/"$0 }'| sed ':a;N;$!ba;s/\n/ /g'
  */
 
 int main() {
+    srand (time(NULL));
     //Custom block chain
     Serializer* serial = new CustomSerializer();
     TransactionManager manager;
@@ -23,7 +24,7 @@ int main() {
     manager.put(new MessagesTransaction);
 
     //initialization of the block chain
-    Node client(serial, 3007, "json", Proof::WORK);
+    Node client(serial, /*rand() % 1000+3000*/3400, "json", Proof::WORK, true);
     //launching the software
     client.start(manager);
     return 0;

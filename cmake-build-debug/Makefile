@@ -258,6 +258,33 @@ block_chain/Validator.cpp.s:
 	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/Validator.cpp.s
 .PHONY : block_chain/Validator.cpp.s
 
+block_chain/chain/Chain.o: block_chain/chain/Chain.cpp.o
+
+.PHONY : block_chain/chain/Chain.o
+
+# target to build an object file
+block_chain/chain/Chain.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/Chain.cpp.o
+.PHONY : block_chain/chain/Chain.cpp.o
+
+block_chain/chain/Chain.i: block_chain/chain/Chain.cpp.i
+
+.PHONY : block_chain/chain/Chain.i
+
+# target to preprocess a source file
+block_chain/chain/Chain.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/Chain.cpp.i
+.PHONY : block_chain/chain/Chain.cpp.i
+
+block_chain/chain/Chain.s: block_chain/chain/Chain.cpp.s
+
+.PHONY : block_chain/chain/Chain.s
+
+# target to generate assembly for a file
+block_chain/chain/Chain.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/Chain.cpp.s
+.PHONY : block_chain/chain/Chain.cpp.s
+
 block_chain/chain/Database.o: block_chain/chain/Database.cpp.o
 
 .PHONY : block_chain/chain/Database.o
@@ -419,33 +446,6 @@ block_chain/chain/block/Hash.s: block_chain/chain/block/Hash.cpp.s
 block_chain/chain/block/Hash.cpp.s:
 	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/Hash.cpp.s
 .PHONY : block_chain/chain/block/Hash.cpp.s
-
-block_chain/chain/block/Metadata.o: block_chain/chain/block/Metadata.cpp.o
-
-.PHONY : block_chain/chain/block/Metadata.o
-
-# target to build an object file
-block_chain/chain/block/Metadata.cpp.o:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/Metadata.cpp.o
-.PHONY : block_chain/chain/block/Metadata.cpp.o
-
-block_chain/chain/block/Metadata.i: block_chain/chain/block/Metadata.cpp.i
-
-.PHONY : block_chain/chain/block/Metadata.i
-
-# target to preprocess a source file
-block_chain/chain/block/Metadata.cpp.i:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/Metadata.cpp.i
-.PHONY : block_chain/chain/block/Metadata.cpp.i
-
-block_chain/chain/block/Metadata.s: block_chain/chain/block/Metadata.cpp.s
-
-.PHONY : block_chain/chain/block/Metadata.s
-
-# target to generate assembly for a file
-block_chain/chain/block/Metadata.cpp.s:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/Metadata.cpp.s
-.PHONY : block_chain/chain/block/Metadata.cpp.s
 
 block_chain/chain/block/transaction/MerkleTree.o: block_chain/chain/block/transaction/MerkleTree.cpp.o
 
@@ -743,6 +743,60 @@ block_chain/proof/ProofOfWork.s: block_chain/proof/ProofOfWork.cpp.s
 block_chain/proof/ProofOfWork.cpp.s:
 	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/proof/ProofOfWork.cpp.s
 .PHONY : block_chain/proof/ProofOfWork.cpp.s
+
+block_chain/proof/metadatas/Metadata.o: block_chain/proof/metadatas/Metadata.cpp.o
+
+.PHONY : block_chain/proof/metadatas/Metadata.o
+
+# target to build an object file
+block_chain/proof/metadatas/Metadata.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/proof/metadatas/Metadata.cpp.o
+.PHONY : block_chain/proof/metadatas/Metadata.cpp.o
+
+block_chain/proof/metadatas/Metadata.i: block_chain/proof/metadatas/Metadata.cpp.i
+
+.PHONY : block_chain/proof/metadatas/Metadata.i
+
+# target to preprocess a source file
+block_chain/proof/metadatas/Metadata.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/proof/metadatas/Metadata.cpp.i
+.PHONY : block_chain/proof/metadatas/Metadata.cpp.i
+
+block_chain/proof/metadatas/Metadata.s: block_chain/proof/metadatas/Metadata.cpp.s
+
+.PHONY : block_chain/proof/metadatas/Metadata.s
+
+# target to generate assembly for a file
+block_chain/proof/metadatas/Metadata.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/proof/metadatas/Metadata.cpp.s
+.PHONY : block_chain/proof/metadatas/Metadata.cpp.s
+
+block_chain/proof/metadatas/ProofOfWorkMetadata.o: block_chain/proof/metadatas/ProofOfWorkMetadata.cpp.o
+
+.PHONY : block_chain/proof/metadatas/ProofOfWorkMetadata.o
+
+# target to build an object file
+block_chain/proof/metadatas/ProofOfWorkMetadata.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/proof/metadatas/ProofOfWorkMetadata.cpp.o
+.PHONY : block_chain/proof/metadatas/ProofOfWorkMetadata.cpp.o
+
+block_chain/proof/metadatas/ProofOfWorkMetadata.i: block_chain/proof/metadatas/ProofOfWorkMetadata.cpp.i
+
+.PHONY : block_chain/proof/metadatas/ProofOfWorkMetadata.i
+
+# target to preprocess a source file
+block_chain/proof/metadatas/ProofOfWorkMetadata.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/proof/metadatas/ProofOfWorkMetadata.cpp.i
+.PHONY : block_chain/proof/metadatas/ProofOfWorkMetadata.cpp.i
+
+block_chain/proof/metadatas/ProofOfWorkMetadata.s: block_chain/proof/metadatas/ProofOfWorkMetadata.cpp.s
+
+.PHONY : block_chain/proof/metadatas/ProofOfWorkMetadata.s
+
+# target to generate assembly for a file
+block_chain/proof/metadatas/ProofOfWorkMetadata.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/proof/metadatas/ProofOfWorkMetadata.cpp.s
+.PHONY : block_chain/proof/metadatas/ProofOfWorkMetadata.cpp.s
 
 block_chain/socket/Peer.o: block_chain/socket/Peer.cpp.o
 
@@ -1173,6 +1227,9 @@ help:
 	@echo "... block_chain/Validator.o"
 	@echo "... block_chain/Validator.i"
 	@echo "... block_chain/Validator.s"
+	@echo "... block_chain/chain/Chain.o"
+	@echo "... block_chain/chain/Chain.i"
+	@echo "... block_chain/chain/Chain.s"
 	@echo "... block_chain/chain/Database.o"
 	@echo "... block_chain/chain/Database.i"
 	@echo "... block_chain/chain/Database.s"
@@ -1191,9 +1248,6 @@ help:
 	@echo "... block_chain/chain/block/Hash.o"
 	@echo "... block_chain/chain/block/Hash.i"
 	@echo "... block_chain/chain/block/Hash.s"
-	@echo "... block_chain/chain/block/Metadata.o"
-	@echo "... block_chain/chain/block/Metadata.i"
-	@echo "... block_chain/chain/block/Metadata.s"
 	@echo "... block_chain/chain/block/transaction/MerkleTree.o"
 	@echo "... block_chain/chain/block/transaction/MerkleTree.i"
 	@echo "... block_chain/chain/block/transaction/MerkleTree.s"
@@ -1227,6 +1281,12 @@ help:
 	@echo "... block_chain/proof/ProofOfWork.o"
 	@echo "... block_chain/proof/ProofOfWork.i"
 	@echo "... block_chain/proof/ProofOfWork.s"
+	@echo "... block_chain/proof/metadatas/Metadata.o"
+	@echo "... block_chain/proof/metadatas/Metadata.i"
+	@echo "... block_chain/proof/metadatas/Metadata.s"
+	@echo "... block_chain/proof/metadatas/ProofOfWorkMetadata.o"
+	@echo "... block_chain/proof/metadatas/ProofOfWorkMetadata.i"
+	@echo "... block_chain/proof/metadatas/ProofOfWorkMetadata.s"
 	@echo "... block_chain/socket/Peer.o"
 	@echo "... block_chain/socket/Peer.i"
 	@echo "... block_chain/socket/Peer.s"
