@@ -16,6 +16,8 @@ class CustomRow: public Row {
 public:
     ~CustomRow() override = default;
     Row* clone() const override;
+    std::string to_string() const override;
+    void reward() override;
 private:
     double money;
     std::string status;

@@ -55,7 +55,7 @@ std::string MessagesTransaction::description() const {
 
 void MessagesTransaction::fill_data() {
     std::cout << "New message: " << std::endl;
-    std::cin >> message;
+    std::getline(std::cin, message);
     std::cout << "Message transaction created" << std::endl;
 };
 

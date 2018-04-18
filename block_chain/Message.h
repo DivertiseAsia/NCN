@@ -17,6 +17,8 @@ class Message: public Component
         static const int ANSWER_PEERS;
         static const int SIGN_IN;
         static const int SIGN_OUT;
+        static const int ASK_BLOCK;
+        static const int ANSWER_BLOCK;
         Message();
         Message(std::string p, std::string c, std::string k, MerkleTree*, int);
         ~Message() override;
@@ -25,14 +27,16 @@ class Message: public Component
         std::string getCipher();
         int type;
         std::string to_string() const;
+        std::string public_key;
     protected:
         void fromElement(ElementObject*, const Serializer* serializer, const char* encoding) override;
 
     private:
         std::string plain_text;
         std::string cipher;
-        std::string public_key;
         MerkleTree* tree;
+
+
 };
 
 #endif // MESSAGE_H

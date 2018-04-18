@@ -15,6 +15,9 @@
 #include "../Serializer.h"
 #include "Database.h"
 #include "Chain.h"
+#include <sys/stat.h>
+#include <dirent.h>
+#include <algorithm>
 
 class NodeState{
 public:
@@ -23,8 +26,11 @@ public:
     Block* add(std::string transaction, std::string public_key);
     void add(Block* block);
     void read_blocks();
-    void clear_transactions();
     bool check_transaction(Transaction * transaction, std::string k);
+    void show_current_state();
+    bool get(Hash *pHash);
+    Block *get(std::string hash);
+
 private:
     std::string encoding;
     unsigned int size;
@@ -32,5 +38,6 @@ private:
     std::vector<std::pair<std::string, std::string>>  transactions;
     Serializer* serializer;
     void update_database(Block* block);
+
 };
 #endif //BLOCK_NODE_STATE_CHAIN_H

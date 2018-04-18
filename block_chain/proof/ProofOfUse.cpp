@@ -4,10 +4,9 @@
 
 #include "ProofOfUse.h"
 
-//TODO: deal with the different proofs
-void ProofOfUse::run(Block* block){
+void ProofOfUse::run(Block* block, Message* message){
 
 }
-bool ProofOfUse::accept(Block* block){
+bool ProofOfUse::accept(Block* block, Message* message){
     return true;
 }

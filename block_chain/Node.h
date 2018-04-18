@@ -49,6 +49,7 @@ private:
     std::vector<Peer> peers;
     std::thread running;
     RSA_Cryptography rsa;
+    int queue;
     void parseAskPeers(Message* message);
     void parseTransaction(Message* message);
     void parseBlock(Message* message);
@@ -56,6 +57,14 @@ private:
     void parseSignIn(Message* message);
     void parseSignOut(Message* message);
     typedef void(Node::* Message_action)(Message* message);
+    void static async(Message* message, Node* node);
+    std::vector<Block*> waiting;
+
+    int load(Block *pBlock);
+
+    void parseAskBlock(Message *message);
+
+    void parseAnswerBlock(Message *message);
 };
 
 #endif //BLOCK_CHAIN_CLIENT_H

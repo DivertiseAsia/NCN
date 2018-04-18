@@ -18,7 +18,9 @@ public:
     Hash(Hash* hash1, Hash* hash2);
     Hash(Hash* hash1, double timestamp);
     Hash(Hash* hash1, int timestamp);
-    Hash(Hash* hash1, unsigned long long int timestamp);
+    Hash(Hash* hash1, long long int timestamp);
+    Hash(Hash* hash1, std::string timestamp);
+    Hash(std::string timestamp);
     Hash(const Component* component, const Serializer* serializer, const char* encoding);
     std::string to_string() const;
     bool operator==(Hash const& h) const{

@@ -8,6 +8,11 @@
 #include <cstring>
 
 
+ElementInt* ElementCreator::create(long long int value){
+	auto e = new ElementInt();
+	e->value = value;
+	return e;
+}
 ElementInt* ElementCreator::create(int value){
 	auto e = new ElementInt();
 	e->value = value;

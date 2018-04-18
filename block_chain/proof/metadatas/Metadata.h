@@ -8,6 +8,8 @@
 
 #include "../../utils/serialization/Element.hpp"
 #include "../../chain/block/Component.h"
+#include "../../chain/block/Hash.h"
+#include "../../chain/Database.h"
 
 class Metadata:public Component{
 public:
@@ -17,6 +19,9 @@ public:
     }
     //virtual Element* toElement() const;
     //virtual void fromElement(ElementObject* e, const Serializer* serializer, const char* encoding);
-    
+
+    virtual Hash* hash() = 0;
+
+    virtual void update_database(Database *pDatabase) = 0;
 };
 #endif //BLOCK_CHAIN_METADATA_H

@@ -34,6 +34,15 @@ void ElementObject::getItem(const char* key, int* value) {
     for(std::map<std::string*, Element*>::const_iterator it = values.begin(); it != values.end(); it++)
     {
         if(!std::strcmp(it->first->c_str(), key)){
+            *value = (int) dynamic_cast<ElementInt*>(it->second)->value;
+            return;
+        }
+    }
+}
+void ElementObject::getItem(const char* key, long long int* value) {
+    for(std::map<std::string*, Element*>::const_iterator it = values.begin(); it != values.end(); it++)
+    {
+        if(!std::strcmp(it->first->c_str(), key)){
             *value = dynamic_cast<ElementInt*>(it->second)->value;
             return;
         }

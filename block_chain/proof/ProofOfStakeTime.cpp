@@ -4,10 +4,9 @@
 
 #include "ProofOfStakeTime.h"
 
-//TODO: deal with the different proofs
-void ProofOfStakeTime::run(Block* block){
+void ProofOfStakeTime::run(Block* block, Message* message){
 
 }
-bool ProofOfStakeTime::accept(Block* block){
+bool ProofOfStakeTime::accept(Block* block, Message* message){
     return true;
 }

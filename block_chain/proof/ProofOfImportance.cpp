@@ -4,10 +4,9 @@
 
 #include "ProofOfImportance.h"
 
-//TODO: deal with the different proofs
-void ProofOfImportance::run(Block* block){
+void ProofOfImportance::run(Block* block, Message* message){
 
 }
-bool ProofOfImportance::accept(Block* block){
+bool ProofOfImportance::accept(Block* block, Message* message){
     return true;
 }

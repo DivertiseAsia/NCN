@@ -4,10 +4,9 @@
 
 #include "ProofOfStake.h"
 
-//TODO: deal with the different proofs
-void ProofOfStake::run(Block* block){
+void ProofOfStake::run(Block* block, Message* message){
 
 }
-bool ProofOfStake::accept(Block* block){
+bool ProofOfStake::accept(Block* block, Message* message){
     return true;
 }

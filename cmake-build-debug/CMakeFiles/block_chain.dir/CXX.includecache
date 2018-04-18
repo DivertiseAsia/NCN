@@ -145,6 +145,8 @@ utility
 -
 ../utils/RSA.h
 /home/default/CLionProjects/block_chain/block_chain/utils/RSA.h
+../socket/Peer.h
+/home/default/CLionProjects/block_chain/block_chain/socket/Peer.h
 
 /home/default/CLionProjects/block_chain/block_chain/chain/NodeState.h
 fstream
@@ -169,12 +171,20 @@ Database.h
 /home/default/CLionProjects/block_chain/block_chain/chain/Database.h
 Chain.h
 /home/default/CLionProjects/block_chain/block_chain/chain/Chain.h
+sys/stat.h
+-
+dirent.h
+-
+algorithm
+-
 
 /home/default/CLionProjects/block_chain/block_chain/chain/Row.cpp
 Row.h
 /home/default/CLionProjects/block_chain/block_chain/chain/Row.h
 
 /home/default/CLionProjects/block_chain/block_chain/chain/Row.h
+string
+-
 
 /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.cpp
 Block.h
@@ -299,6 +309,8 @@ functional
 -
 ../chain/block/Block.h
 /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
+../Message.h
+/home/default/CLionProjects/block_chain/block_chain/Message.h
 
 /home/default/CLionProjects/block_chain/block_chain/proof/ProofOfHold.cpp
 ProofOfHold.h
@@ -367,10 +379,16 @@ Metadata.h
 /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
 ../../chain/block/Component.h
 /home/default/CLionProjects/block_chain/block_chain/chain/block/Component.h
+../../chain/block/Hash.h
+/home/default/CLionProjects/block_chain/block_chain/chain/block/Hash.h
+../../chain/Database.h
+/home/default/CLionProjects/block_chain/block_chain/chain/Database.h
 
 /home/default/CLionProjects/block_chain/block_chain/proof/metadatas/ProofOfWorkMetadata.cpp
 ProofOfWorkMetadata.h
 /home/default/CLionProjects/block_chain/block_chain/proof/metadatas/ProofOfWorkMetadata.h
+../../chain/block/Hash.h
+/home/default/CLionProjects/block_chain/block_chain/chain/block/Hash.h
 iostream
 -
 

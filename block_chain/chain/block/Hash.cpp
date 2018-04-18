@@ -26,6 +26,23 @@ Hash::Hash(Hash* hash1, Hash* hash2){
     hash = Encoding::toHexa(std::string((const char*)digest));
 }
 
+Hash::Hash(Hash* hash1, std::string timestamp){
+    unsigned char digest[MD5_DIGEST_LENGTH + 1];
+    std::string str = hash1->hash + timestamp;
+    MD5((const unsigned char*) str.c_str(), str.size(), digest);
+    digest[MD5_DIGEST_LENGTH] = 0;
+    hash = Encoding::toHexa(std::string((const char*)digest));
+}
+
+Hash::Hash(std::string timestamp){
+    unsigned char digest[MD5_DIGEST_LENGTH + 1];
+    std::string str = timestamp;
+    MD5((const unsigned char*) str.c_str(), str.size(), digest);
+    digest[MD5_DIGEST_LENGTH] = 0;
+    hash = Encoding::toHexa(std::string((const char*)digest));
+}
+
+
 Hash::Hash(Hash* hash1, double timestamp){
     unsigned char digest[MD5_DIGEST_LENGTH + 1];
     std::string str = hash1->hash + std::to_string(timestamp);
@@ -42,7 +59,7 @@ Hash::Hash(Hash* hash1, int timestamp){
     hash = Encoding::toHexa(std::string((const char*)digest));
 }
 
-Hash::Hash(Hash* hash1, unsigned long long int value){
+Hash::Hash(Hash* hash1, long long int value){
     unsigned char digest[MD5_DIGEST_LENGTH + 1];
     std::string str = hash1->hash + std::to_string(value);
     MD5((const unsigned char*) str.c_str(), str.size(), digest);
@@ -58,6 +75,7 @@ Element* Hash::toElement() {
 }
 
 void Hash::fromElement(ElementObject* e, const Serializer*, const char*) {
+    hash = "0";
     e->getItem("hash", &hash);
 }
 

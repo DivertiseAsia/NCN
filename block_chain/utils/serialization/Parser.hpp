@@ -37,6 +37,7 @@ class ElementCreator
 {
 	public:
 		static ElementInt* create(int value);
+		static ElementInt* create(long long int value);
 		static ElementDouble* create(double value);
 		static ElementString* create(const char* value);
 		static ElementString* create(std::string value);

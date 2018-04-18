@@ -6,10 +6,14 @@
 #define BLOCK_CHAIN_ROW_H
 
 
+#include <string>
+
 class Row {
 public:
     virtual ~Row() = default;
     virtual Row* clone() const = 0;
+    virtual std::string to_string() const = 0;
+    virtual void reward() = 0;
 };
 
 

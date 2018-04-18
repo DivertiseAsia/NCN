@@ -71,7 +71,7 @@ void JsonParser::parseContent(std::string& text, ElementDouble* e) const
 
 void JsonParser::parseContent(std::string& text, ElementInt* e) const
 {
-    int total = 0;
+    long long int total = 0;
     int i;
     for(i = 0; text[i] < 0x3A && text[i] > 0x2F ; i++)
         total = total*10 + (text[i] - 0x30);

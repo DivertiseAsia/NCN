@@ -4,10 +4,9 @@
 
 #include "ProofOfHold.h"
 
-//TODO: deal with the different proofs
-void ProofOfHold::run(Block* block){
+void ProofOfHold::run(Block* block, Message* message){
 
 }
-bool ProofOfHold::accept(Block* block){
+bool ProofOfHold::accept(Block* block, Message* message){
     return true;
 }

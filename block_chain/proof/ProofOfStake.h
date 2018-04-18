@@ -10,8 +10,8 @@
 
 class ProofOfStake: public Proof {
 public:
-    void run(Block* block) override;
-    bool accept(Block* block) override;
+    void run(Block* block, Message* message) override;
+    bool accept(Block* block, Message* message) override;
 };
 
 #endif //BLOCK_CHAIN_PROOFOFSTAKE_H

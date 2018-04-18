@@ -10,8 +10,8 @@
 
 class ProofOfWork: public Proof {
 public:
-    void run(Block* block) override;
-    bool accept(Block* block) override;
+    void run(Block* block, Message*) override;
+    bool accept(Block* block, Message*) override;
 };
 
 

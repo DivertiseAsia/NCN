@@ -9,6 +9,8 @@ const int Message::SIGN_IN = 2;
 const int Message::SIGN_OUT = 3;
 const int Message::TRANSACTION = 4;
 const int Message::BLOCK = 5;
+const int Message::ASK_BLOCK = 6;
+const int Message::ANSWER_BLOCK = 7;
 
 Message::Message(std::string p, std::string c, std::string k, MerkleTree* tr, int t): plain_text(std::move(std::move(p))), cipher(Encoding::toHexa(
         std::move(c))), public_key(

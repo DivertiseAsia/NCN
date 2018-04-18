@@ -17,6 +17,9 @@ public:
             this->rows[r.first] = r.second->clone();
         }
     }
+
+    Row *get(std::string basic_string);
+
 private:
     std::map<std::string, Row*> rows;
 };

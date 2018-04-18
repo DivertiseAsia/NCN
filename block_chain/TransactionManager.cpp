@@ -16,12 +16,16 @@ Transaction* TransactionManager::run(){
     for(auto a : transactions)
         std::cout << a.first << " - " << a.second->description() << std::endl;
     std::cin >> chosen;
+    std::string str;
+    getline(std::cin, str);
     auto a = transactions.find(chosen);
     if(a != transactions.end()){
         Transaction* t = a->second->clone();
         t->fill_data();
         return t;
     }
+    if(chosen == -1)
+        return (Transaction*)-1;
     return nullptr;
 }
 

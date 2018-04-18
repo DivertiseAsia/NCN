@@ -4,10 +4,9 @@
 
 #include "ProofOfMinimumAgedStake.h"
 
-//TODO: deal with the different proofs
-void ProofOfMinimumAgedStake::run(Block* block){
+void ProofOfMinimumAgedStake::run(Block* block, Message* message){
 
 }
-bool ProofOfMinimumAgedStake::accept(Block* block){
+bool ProofOfMinimumAgedStake::accept(Block* block, Message* message){
     return true;
 }

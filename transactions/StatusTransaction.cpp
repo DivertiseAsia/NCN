@@ -58,7 +58,7 @@ std::string StatusTransaction::description() const {
 
 void StatusTransaction::fill_data() {
     std::cout << "New status: " << std::endl;
-    std::cin >> status;
+    std::getline(std::cin, status);
     std::cout << "Status transaction created" << std::endl;
 };
 

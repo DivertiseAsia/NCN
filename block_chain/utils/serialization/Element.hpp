@@ -15,7 +15,7 @@ class Element
 class ElementInt: public Element
 {
     public:
-        int value;
+        long long int value;
         void read(std::string& text, const ContentReader* parser) override;
 };
 
@@ -60,6 +60,7 @@ class ElementObject: public Element
     public:
         std::map<std::string*, Element*, Comparator> values;
         void getItem(const char* key, int* value);
+        void getItem(const char* key, long long int* value);
         void getItem(const char* key, bool* value);
         void getItem(const char* key, double* value);
         void getItem(const char* key, ElementObject** value);

@@ -31,10 +31,11 @@ public:
     Hash* compute_fingerprint(const Serializer* s, const char* e) const;
     bool checkFingerPrint(const Serializer* s, const char* e) const;
     virtual std::string to_string() const;
+    void update_fingerprint();
 protected:
     void fromElement(ElementObject* e, const Serializer* s, const char* encoding) override;
 private:
-    double timestamp;
+    long long int timestamp;
     const Serializer* serializer;
     const char* encoding;
     Metadata* data;

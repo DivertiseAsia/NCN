@@ -42,6 +42,7 @@ CMakeFiles/block_chain.dir/block_chain/Node.cpp.o: ../block_chain/utils/serializ
 CMakeFiles/block_chain.dir/block_chain/Serializer.cpp.o: ../block_chain/Message.h
 CMakeFiles/block_chain.dir/block_chain/Serializer.cpp.o: ../block_chain/Serializer.cpp
 CMakeFiles/block_chain.dir/block_chain/Serializer.cpp.o: ../block_chain/Serializer.h
+CMakeFiles/block_chain.dir/block_chain/Serializer.cpp.o: ../block_chain/chain/Database.h
 CMakeFiles/block_chain.dir/block_chain/Serializer.cpp.o: ../block_chain/chain/Row.h
 CMakeFiles/block_chain.dir/block_chain/Serializer.cpp.o: ../block_chain/chain/block/Block.h
 CMakeFiles/block_chain.dir/block_chain/Serializer.cpp.o: ../block_chain/chain/block/Component.h
@@ -70,6 +71,7 @@ CMakeFiles/block_chain.dir/block_chain/TransactionManager.cpp.o: ../block_chain/
 
 CMakeFiles/block_chain.dir/block_chain/Validator.cpp.o: ../block_chain/Validator.cpp
 CMakeFiles/block_chain.dir/block_chain/Validator.cpp.o: ../block_chain/Validator.h
+CMakeFiles/block_chain.dir/block_chain/Validator.cpp.o: ../block_chain/chain/Database.h
 CMakeFiles/block_chain.dir/block_chain/Validator.cpp.o: ../block_chain/chain/Row.h
 CMakeFiles/block_chain.dir/block_chain/Validator.cpp.o: ../block_chain/chain/block/Block.h
 CMakeFiles/block_chain.dir/block_chain/Validator.cpp.o: ../block_chain/chain/block/Component.h
@@ -118,6 +120,8 @@ CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o: ../block_chain/cha
 CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o: ../block_chain/chain/block/transaction/Transaction.h
 CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o: ../block_chain/chain/block/transaction/TransactionContainer.h
 CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o: ../block_chain/proof/metadatas/Metadata.h
+CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o: ../block_chain/socket/Peer.h
+CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o: ../block_chain/socket/Socket.h
 CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o: ../block_chain/utils/Encoding.h
 CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o: ../block_chain/utils/Factory.hpp
 CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o: ../block_chain/utils/RSA.h
@@ -129,6 +133,7 @@ CMakeFiles/block_chain.dir/block_chain/chain/Row.cpp.o: ../block_chain/chain/Row
 
 CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o: ../block_chain/Message.h
 CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o: ../block_chain/Serializer.h
+CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o: ../block_chain/chain/Database.h
 CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o: ../block_chain/chain/Row.h
 CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o: ../block_chain/chain/block/Block.cpp
 CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o: ../block_chain/chain/block/Block.h
@@ -152,6 +157,7 @@ CMakeFiles/block_chain.dir/block_chain/chain/block/Component.cpp.o: ../block_cha
 
 CMakeFiles/block_chain.dir/block_chain/chain/block/Hash.cpp.o: ../block_chain/Message.h
 CMakeFiles/block_chain.dir/block_chain/chain/block/Hash.cpp.o: ../block_chain/Serializer.h
+CMakeFiles/block_chain.dir/block_chain/chain/block/Hash.cpp.o: ../block_chain/chain/Database.h
 CMakeFiles/block_chain.dir/block_chain/chain/block/Hash.cpp.o: ../block_chain/chain/Row.h
 CMakeFiles/block_chain.dir/block_chain/chain/block/Hash.cpp.o: ../block_chain/chain/block/Block.h
 CMakeFiles/block_chain.dir/block_chain/chain/block/Hash.cpp.o: ../block_chain/chain/block/Component.h
@@ -178,6 +184,7 @@ CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/MerkleTree.cpp.o:
 
 CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o: ../block_chain/Message.h
 CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o: ../block_chain/Serializer.h
+CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o: ../block_chain/chain/Database.h
 CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o: ../block_chain/chain/Row.h
 CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o: ../block_chain/chain/block/Block.h
 CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o: ../block_chain/chain/block/Component.h
@@ -194,6 +201,7 @@ CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o
 
 CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/TransactionContainer.cpp.o: ../block_chain/Message.h
 CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/TransactionContainer.cpp.o: ../block_chain/Serializer.h
+CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/TransactionContainer.cpp.o: ../block_chain/chain/Database.h
 CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/TransactionContainer.cpp.o: ../block_chain/chain/Row.h
 CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/TransactionContainer.cpp.o: ../block_chain/chain/block/Block.h
 CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/TransactionContainer.cpp.o: ../block_chain/chain/block/Component.h
@@ -208,10 +216,13 @@ CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/TransactionContai
 CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/TransactionContainer.cpp.o: ../block_chain/utils/serialization/Element.hpp
 CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/TransactionContainer.cpp.o: ../block_chain/utils/serialization/Parser.hpp
 
+CMakeFiles/block_chain.dir/block_chain/proof/Proof.cpp.o: ../block_chain/Message.h
+CMakeFiles/block_chain.dir/block_chain/proof/Proof.cpp.o: ../block_chain/chain/Database.h
 CMakeFiles/block_chain.dir/block_chain/proof/Proof.cpp.o: ../block_chain/chain/Row.h
 CMakeFiles/block_chain.dir/block_chain/proof/Proof.cpp.o: ../block_chain/chain/block/Block.h
 CMakeFiles/block_chain.dir/block_chain/proof/Proof.cpp.o: ../block_chain/chain/block/Component.h
 CMakeFiles/block_chain.dir/block_chain/proof/Proof.cpp.o: ../block_chain/chain/block/Hash.h
+CMakeFiles/block_chain.dir/block_chain/proof/Proof.cpp.o: ../block_chain/chain/block/transaction/MerkleTree.h
 CMakeFiles/block_chain.dir/block_chain/proof/Proof.cpp.o: ../block_chain/chain/block/transaction/Transaction.h
 CMakeFiles/block_chain.dir/block_chain/proof/Proof.cpp.o: ../block_chain/chain/block/transaction/TransactionContainer.h
 CMakeFiles/block_chain.dir/block_chain/proof/Proof.cpp.o: ../block_chain/proof/Proof.cpp
@@ -228,10 +239,13 @@ CMakeFiles/block_chain.dir/block_chain/proof/Proof.cpp.o: ../block_chain/utils/E
 CMakeFiles/block_chain.dir/block_chain/proof/Proof.cpp.o: ../block_chain/utils/serialization/Element.hpp
 CMakeFiles/block_chain.dir/block_chain/proof/Proof.cpp.o: ../block_chain/utils/serialization/Parser.hpp
 
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfHold.cpp.o: ../block_chain/Message.h
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfHold.cpp.o: ../block_chain/chain/Database.h
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfHold.cpp.o: ../block_chain/chain/Row.h
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfHold.cpp.o: ../block_chain/chain/block/Block.h
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfHold.cpp.o: ../block_chain/chain/block/Component.h
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfHold.cpp.o: ../block_chain/chain/block/Hash.h
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfHold.cpp.o: ../block_chain/chain/block/transaction/MerkleTree.h
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfHold.cpp.o: ../block_chain/chain/block/transaction/Transaction.h
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfHold.cpp.o: ../block_chain/chain/block/transaction/TransactionContainer.h
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfHold.cpp.o: ../block_chain/proof/Proof.h
@@ -242,10 +256,13 @@ CMakeFiles/block_chain.dir/block_chain/proof/ProofOfHold.cpp.o: ../block_chain/u
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfHold.cpp.o: ../block_chain/utils/serialization/Element.hpp
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfHold.cpp.o: ../block_chain/utils/serialization/Parser.hpp
 
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfImportance.cpp.o: ../block_chain/Message.h
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfImportance.cpp.o: ../block_chain/chain/Database.h
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfImportance.cpp.o: ../block_chain/chain/Row.h
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfImportance.cpp.o: ../block_chain/chain/block/Block.h
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfImportance.cpp.o: ../block_chain/chain/block/Component.h
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfImportance.cpp.o: ../block_chain/chain/block/Hash.h
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfImportance.cpp.o: ../block_chain/chain/block/transaction/MerkleTree.h
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfImportance.cpp.o: ../block_chain/chain/block/transaction/Transaction.h
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfImportance.cpp.o: ../block_chain/chain/block/transaction/TransactionContainer.h
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfImportance.cpp.o: ../block_chain/proof/Proof.h
@@ -256,10 +273,13 @@ CMakeFiles/block_chain.dir/block_chain/proof/ProofOfImportance.cpp.o: ../block_c
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfImportance.cpp.o: ../block_chain/utils/serialization/Element.hpp
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfImportance.cpp.o: ../block_chain/utils/serialization/Parser.hpp
 
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfMinimumAgedStake.cpp.o: ../block_chain/Message.h
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfMinimumAgedStake.cpp.o: ../block_chain/chain/Database.h
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfMinimumAgedStake.cpp.o: ../block_chain/chain/Row.h
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfMinimumAgedStake.cpp.o: ../block_chain/chain/block/Block.h
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfMinimumAgedStake.cpp.o: ../block_chain/chain/block/Component.h
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfMinimumAgedStake.cpp.o: ../block_chain/chain/block/Hash.h
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfMinimumAgedStake.cpp.o: ../block_chain/chain/block/transaction/MerkleTree.h
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfMinimumAgedStake.cpp.o: ../block_chain/chain/block/transaction/Transaction.h
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfMinimumAgedStake.cpp.o: ../block_chain/chain/block/transaction/TransactionContainer.h
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfMinimumAgedStake.cpp.o: ../block_chain/proof/Proof.h
@@ -270,10 +290,13 @@ CMakeFiles/block_chain.dir/block_chain/proof/ProofOfMinimumAgedStake.cpp.o: ../b
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfMinimumAgedStake.cpp.o: ../block_chain/utils/serialization/Element.hpp
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfMinimumAgedStake.cpp.o: ../block_chain/utils/serialization/Parser.hpp
 
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStake.cpp.o: ../block_chain/Message.h
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStake.cpp.o: ../block_chain/chain/Database.h
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStake.cpp.o: ../block_chain/chain/Row.h
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStake.cpp.o: ../block_chain/chain/block/Block.h
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStake.cpp.o: ../block_chain/chain/block/Component.h
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStake.cpp.o: ../block_chain/chain/block/Hash.h
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStake.cpp.o: ../block_chain/chain/block/transaction/MerkleTree.h
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStake.cpp.o: ../block_chain/chain/block/transaction/Transaction.h
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStake.cpp.o: ../block_chain/chain/block/transaction/TransactionContainer.h
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStake.cpp.o: ../block_chain/proof/Proof.h
@@ -284,10 +307,13 @@ CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStake.cpp.o: ../block_chain/
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStake.cpp.o: ../block_chain/utils/serialization/Element.hpp
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStake.cpp.o: ../block_chain/utils/serialization/Parser.hpp
 
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStakeTime.cpp.o: ../block_chain/Message.h
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStakeTime.cpp.o: ../block_chain/chain/Database.h
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStakeTime.cpp.o: ../block_chain/chain/Row.h
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStakeTime.cpp.o: ../block_chain/chain/block/Block.h
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStakeTime.cpp.o: ../block_chain/chain/block/Component.h
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStakeTime.cpp.o: ../block_chain/chain/block/Hash.h
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStakeTime.cpp.o: ../block_chain/chain/block/transaction/MerkleTree.h
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStakeTime.cpp.o: ../block_chain/chain/block/transaction/Transaction.h
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStakeTime.cpp.o: ../block_chain/chain/block/transaction/TransactionContainer.h
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStakeTime.cpp.o: ../block_chain/proof/Proof.h
@@ -298,10 +324,13 @@ CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStakeTime.cpp.o: ../block_ch
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStakeTime.cpp.o: ../block_chain/utils/serialization/Element.hpp
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStakeTime.cpp.o: ../block_chain/utils/serialization/Parser.hpp
 
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfUse.cpp.o: ../block_chain/Message.h
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfUse.cpp.o: ../block_chain/chain/Database.h
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfUse.cpp.o: ../block_chain/chain/Row.h
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfUse.cpp.o: ../block_chain/chain/block/Block.h
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfUse.cpp.o: ../block_chain/chain/block/Component.h
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfUse.cpp.o: ../block_chain/chain/block/Hash.h
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfUse.cpp.o: ../block_chain/chain/block/transaction/MerkleTree.h
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfUse.cpp.o: ../block_chain/chain/block/transaction/Transaction.h
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfUse.cpp.o: ../block_chain/chain/block/transaction/TransactionContainer.h
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfUse.cpp.o: ../block_chain/proof/Proof.h
@@ -312,10 +341,13 @@ CMakeFiles/block_chain.dir/block_chain/proof/ProofOfUse.cpp.o: ../block_chain/ut
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfUse.cpp.o: ../block_chain/utils/serialization/Element.hpp
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfUse.cpp.o: ../block_chain/utils/serialization/Parser.hpp
 
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfWork.cpp.o: ../block_chain/Message.h
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfWork.cpp.o: ../block_chain/chain/Database.h
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfWork.cpp.o: ../block_chain/chain/Row.h
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfWork.cpp.o: ../block_chain/chain/block/Block.h
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfWork.cpp.o: ../block_chain/chain/block/Component.h
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfWork.cpp.o: ../block_chain/chain/block/Hash.h
+CMakeFiles/block_chain.dir/block_chain/proof/ProofOfWork.cpp.o: ../block_chain/chain/block/transaction/MerkleTree.h
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfWork.cpp.o: ../block_chain/chain/block/transaction/Transaction.h
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfWork.cpp.o: ../block_chain/chain/block/transaction/TransactionContainer.h
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfWork.cpp.o: ../block_chain/proof/Proof.h
@@ -327,21 +359,30 @@ CMakeFiles/block_chain.dir/block_chain/proof/ProofOfWork.cpp.o: ../block_chain/u
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfWork.cpp.o: ../block_chain/utils/serialization/Element.hpp
 CMakeFiles/block_chain.dir/block_chain/proof/ProofOfWork.cpp.o: ../block_chain/utils/serialization/Parser.hpp
 
+CMakeFiles/block_chain.dir/block_chain/proof/metadatas/Metadata.cpp.o: ../block_chain/chain/Database.h
+CMakeFiles/block_chain.dir/block_chain/proof/metadatas/Metadata.cpp.o: ../block_chain/chain/Row.h
 CMakeFiles/block_chain.dir/block_chain/proof/metadatas/Metadata.cpp.o: ../block_chain/chain/block/Component.h
+CMakeFiles/block_chain.dir/block_chain/proof/metadatas/Metadata.cpp.o: ../block_chain/chain/block/Hash.h
 CMakeFiles/block_chain.dir/block_chain/proof/metadatas/Metadata.cpp.o: ../block_chain/proof/metadatas/Metadata.cpp
 CMakeFiles/block_chain.dir/block_chain/proof/metadatas/Metadata.cpp.o: ../block_chain/proof/metadatas/Metadata.h
+CMakeFiles/block_chain.dir/block_chain/proof/metadatas/Metadata.cpp.o: ../block_chain/utils/Encoding.h
 CMakeFiles/block_chain.dir/block_chain/proof/metadatas/Metadata.cpp.o: ../block_chain/utils/serialization/Element.hpp
 CMakeFiles/block_chain.dir/block_chain/proof/metadatas/Metadata.cpp.o: ../block_chain/utils/serialization/Parser.hpp
 
+CMakeFiles/block_chain.dir/block_chain/proof/metadatas/ProofOfWorkMetadata.cpp.o: ../block_chain/chain/Database.h
+CMakeFiles/block_chain.dir/block_chain/proof/metadatas/ProofOfWorkMetadata.cpp.o: ../block_chain/chain/Row.h
 CMakeFiles/block_chain.dir/block_chain/proof/metadatas/ProofOfWorkMetadata.cpp.o: ../block_chain/chain/block/Component.h
+CMakeFiles/block_chain.dir/block_chain/proof/metadatas/ProofOfWorkMetadata.cpp.o: ../block_chain/chain/block/Hash.h
 CMakeFiles/block_chain.dir/block_chain/proof/metadatas/ProofOfWorkMetadata.cpp.o: ../block_chain/proof/metadatas/Metadata.h
 CMakeFiles/block_chain.dir/block_chain/proof/metadatas/ProofOfWorkMetadata.cpp.o: ../block_chain/proof/metadatas/ProofOfWorkMetadata.cpp
 CMakeFiles/block_chain.dir/block_chain/proof/metadatas/ProofOfWorkMetadata.cpp.o: ../block_chain/proof/metadatas/ProofOfWorkMetadata.h
+CMakeFiles/block_chain.dir/block_chain/proof/metadatas/ProofOfWorkMetadata.cpp.o: ../block_chain/utils/Encoding.h
 CMakeFiles/block_chain.dir/block_chain/proof/metadatas/ProofOfWorkMetadata.cpp.o: ../block_chain/utils/serialization/Element.hpp
 CMakeFiles/block_chain.dir/block_chain/proof/metadatas/ProofOfWorkMetadata.cpp.o: ../block_chain/utils/serialization/Parser.hpp
 
 CMakeFiles/block_chain.dir/block_chain/socket/Peer.cpp.o: ../block_chain/Message.h
 CMakeFiles/block_chain.dir/block_chain/socket/Peer.cpp.o: ../block_chain/Serializer.h
+CMakeFiles/block_chain.dir/block_chain/socket/Peer.cpp.o: ../block_chain/chain/Database.h
 CMakeFiles/block_chain.dir/block_chain/socket/Peer.cpp.o: ../block_chain/chain/Row.h
 CMakeFiles/block_chain.dir/block_chain/socket/Peer.cpp.o: ../block_chain/chain/block/Block.h
 CMakeFiles/block_chain.dir/block_chain/socket/Peer.cpp.o: ../block_chain/chain/block/Component.h
@@ -363,6 +404,7 @@ CMakeFiles/block_chain.dir/block_chain/socket/Socket.cpp.o: ../block_chain/socke
 
 CMakeFiles/block_chain.dir/block_chain/socket/SocketServer.cpp.o: ../block_chain/Message.h
 CMakeFiles/block_chain.dir/block_chain/socket/SocketServer.cpp.o: ../block_chain/Serializer.h
+CMakeFiles/block_chain.dir/block_chain/socket/SocketServer.cpp.o: ../block_chain/chain/Database.h
 CMakeFiles/block_chain.dir/block_chain/socket/SocketServer.cpp.o: ../block_chain/chain/Row.h
 CMakeFiles/block_chain.dir/block_chain/socket/SocketServer.cpp.o: ../block_chain/chain/block/Block.h
 CMakeFiles/block_chain.dir/block_chain/socket/SocketServer.cpp.o: ../block_chain/chain/block/Component.h
@@ -441,6 +483,7 @@ CMakeFiles/block_chain.dir/main.cpp.o: ../transactions/StatusTransaction.h
 
 CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: ../block_chain/Message.h
 CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: ../block_chain/Serializer.h
+CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: ../block_chain/chain/Database.h
 CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: ../block_chain/chain/Row.h
 CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: ../block_chain/chain/block/Block.h
 CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: ../block_chain/chain/block/Component.h
