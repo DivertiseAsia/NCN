@@ -1,0 +1,207 @@
+\hypertarget{classContentReader}{}\section{Content\+Reader Class Reference}
+\label{classContentReader}\index{Content\+Reader@{Content\+Reader}}
+
+
+{\ttfamily \#include $<$Parser.\+h$>$}
+
+Inheritance diagram for Content\+Reader\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classContentReader}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classContentReader_a7fff2e63a2e8fa216665604f69974e1d}{parse}} (std\+::string \&text, \mbox{\hyperlink{classElement}{Element}} $\ast$$\ast$e) const =0
+\item 
+virtual void \mbox{\hyperlink{classContentReader_a7eef37b8b9761e21c0a3907ff94c72f7}{parse\+Content}} (std\+::string \&text, \mbox{\hyperlink{classElementInt}{Element\+Int}} $\ast$e) const =0
+\item 
+virtual void \mbox{\hyperlink{classContentReader_a310678ddc37a05aca2f13db73b22abe5}{parse\+Content}} (std\+::string \&text, \mbox{\hyperlink{classElementString}{Element\+String}} $\ast$e) const =0
+\item 
+virtual void \mbox{\hyperlink{classContentReader_a3ee0aec579c723f17742e10fe7c75e39}{parse\+Content}} (std\+::string \&text, \mbox{\hyperlink{classElementBoolean}{Element\+Boolean}} $\ast$e) const =0
+\item 
+virtual void \mbox{\hyperlink{classContentReader_a91fdd738983dcc7a246c3c163007dfa9}{parse\+Content}} (std\+::string \&text, \mbox{\hyperlink{classElementArray}{Element\+Array}} $\ast$e) const =0
+\item 
+virtual void \mbox{\hyperlink{classContentReader_a59a8de2bf3436e46b4d029a9b3c3c9da}{parse\+Content}} (std\+::string \&text, \mbox{\hyperlink{classElementObject}{Element\+Object}} $\ast$e) const =0
+\item 
+virtual void \mbox{\hyperlink{classContentReader_ab4ba739ee5241848ae8af86e64e43a40}{parse\+Content}} (std\+::string \&text, \mbox{\hyperlink{classElementDouble}{Element\+Double}} $\ast$e) const =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An abstract reader. A reader is a class that generates Elements with a given string. It work in the opposite way as well \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classElement}{Element}}
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Mathieu Lochet 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classContentReader_a7fff2e63a2e8fa216665604f69974e1d}\label{classContentReader_a7fff2e63a2e8fa216665604f69974e1d}} 
+\index{Content\+Reader@{Content\+Reader}!parse@{parse}}
+\index{parse@{parse}!Content\+Reader@{Content\+Reader}}
+\subsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily virtual void Content\+Reader\+::parse (\begin{DoxyParamCaption}\item[{std\+::string \&}]{text,  }\item[{\mbox{\hyperlink{classElement}{Element}} $\ast$$\ast$}]{e }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+The entry point of the parser\+: it reads the text and generate the first element according to rules. Calls the corresponding methods for recursive parsing. (opposite works as well) \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classContentReader_a7eef37b8b9761e21c0a3907ff94c72f7}{parse\+Content}} 
+
+\mbox{\hyperlink{classElement}{Element}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em text} & a given text \\
+\hline
+{\em e} & the root \mbox{\hyperlink{classElement}{Element}} that will be generated (or used) \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classJsonCreator_a505ff309c6b144d29478804b0e187c6f}{Json\+Creator}}, and \mbox{\hyperlink{classJsonParser_a3ec3a9fcc8a63f987b4749d60b0568df}{Json\+Parser}}.
+
+\mbox{\Hypertarget{classContentReader_a7eef37b8b9761e21c0a3907ff94c72f7}\label{classContentReader_a7eef37b8b9761e21c0a3907ff94c72f7}} 
+\index{Content\+Reader@{Content\+Reader}!parse\+Content@{parse\+Content}}
+\index{parse\+Content@{parse\+Content}!Content\+Reader@{Content\+Reader}}
+\subsubsection{\texorpdfstring{parse\+Content()}{parseContent()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily virtual void Content\+Reader\+::parse\+Content (\begin{DoxyParamCaption}\item[{std\+::string \&}]{text,  }\item[{\mbox{\hyperlink{classElementInt}{Element\+Int}} $\ast$}]{e }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Generates an integer from a given string. Calls the method parse with the rest of the string. (opposite works as well) \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classContentReader_a7fff2e63a2e8fa216665604f69974e1d}{parse}} 
+
+\mbox{\hyperlink{classElementInt}{Element\+Int}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em text} & a given text \\
+\hline
+{\em e} & the int \mbox{\hyperlink{classElement}{Element}} that will be generated (or used) \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classJsonCreator_a0fe34794ee3563c3e0bc35006129fcdc}{Json\+Creator}}, and \mbox{\hyperlink{classJsonParser_ac80cf84ff2565f4c1f3a0f5ddb559c96}{Json\+Parser}}.
+
+\mbox{\Hypertarget{classContentReader_a310678ddc37a05aca2f13db73b22abe5}\label{classContentReader_a310678ddc37a05aca2f13db73b22abe5}} 
+\index{Content\+Reader@{Content\+Reader}!parse\+Content@{parse\+Content}}
+\index{parse\+Content@{parse\+Content}!Content\+Reader@{Content\+Reader}}
+\subsubsection{\texorpdfstring{parse\+Content()}{parseContent()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily virtual void Content\+Reader\+::parse\+Content (\begin{DoxyParamCaption}\item[{std\+::string \&}]{text,  }\item[{\mbox{\hyperlink{classElementString}{Element\+String}} $\ast$}]{e }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Generates an string from a given string. it stops with the defined rules of the parser. Calls the method parse with the rest of the string. (opposite works as well) \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classContentReader_a7fff2e63a2e8fa216665604f69974e1d}{parse}} 
+
+\mbox{\hyperlink{classElementString}{Element\+String}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em text} & a given text \\
+\hline
+{\em e} & the string \mbox{\hyperlink{classElement}{Element}} that will be generated (or used) \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classJsonCreator_acf8d7cd3dcbb669fd9eb5dec95e069f3}{Json\+Creator}}, and \mbox{\hyperlink{classJsonParser_a94737a7518f05e4ed43a753f4148b354}{Json\+Parser}}.
+
+\mbox{\Hypertarget{classContentReader_a3ee0aec579c723f17742e10fe7c75e39}\label{classContentReader_a3ee0aec579c723f17742e10fe7c75e39}} 
+\index{Content\+Reader@{Content\+Reader}!parse\+Content@{parse\+Content}}
+\index{parse\+Content@{parse\+Content}!Content\+Reader@{Content\+Reader}}
+\subsubsection{\texorpdfstring{parse\+Content()}{parseContent()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily virtual void Content\+Reader\+::parse\+Content (\begin{DoxyParamCaption}\item[{std\+::string \&}]{text,  }\item[{\mbox{\hyperlink{classElementBoolean}{Element\+Boolean}} $\ast$}]{e }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Generates an boolean from a given string. Calls the method parse with the rest of the string. (opposite works as well) \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classContentReader_a7fff2e63a2e8fa216665604f69974e1d}{parse}} 
+
+\mbox{\hyperlink{classElementBoolean}{Element\+Boolean}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em text} & a given text \\
+\hline
+{\em e} & the boolean \mbox{\hyperlink{classElement}{Element}} that will be generated (or used) \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classJsonCreator_a95fb65046a7467b8e48feaf92a62b40c}{Json\+Creator}}, and \mbox{\hyperlink{classJsonParser_a0857f5d286e5f0b973e2791e5e7a4e83}{Json\+Parser}}.
+
+\mbox{\Hypertarget{classContentReader_a91fdd738983dcc7a246c3c163007dfa9}\label{classContentReader_a91fdd738983dcc7a246c3c163007dfa9}} 
+\index{Content\+Reader@{Content\+Reader}!parse\+Content@{parse\+Content}}
+\index{parse\+Content@{parse\+Content}!Content\+Reader@{Content\+Reader}}
+\subsubsection{\texorpdfstring{parse\+Content()}{parseContent()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily virtual void Content\+Reader\+::parse\+Content (\begin{DoxyParamCaption}\item[{std\+::string \&}]{text,  }\item[{\mbox{\hyperlink{classElementArray}{Element\+Array}} $\ast$}]{e }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Generates an array of Elements from a given string. Calls the method parse with the rest of the string and parse each of the found elements of the array. (opposite works as well) \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classContentReader_a7fff2e63a2e8fa216665604f69974e1d}{parse}} 
+
+\mbox{\hyperlink{classElement}{Element}} 
+
+\mbox{\hyperlink{classElementArray}{Element\+Array}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em text} & a given text \\
+\hline
+{\em e} & the array \mbox{\hyperlink{classElement}{Element}} that will be generated (or used) \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classJsonCreator_a694669d359eb73890a9e9f247c4ebab4}{Json\+Creator}}, and \mbox{\hyperlink{classJsonParser_aa728c443b247b83cdf6cedb406d8940d}{Json\+Parser}}.
+
+\mbox{\Hypertarget{classContentReader_a59a8de2bf3436e46b4d029a9b3c3c9da}\label{classContentReader_a59a8de2bf3436e46b4d029a9b3c3c9da}} 
+\index{Content\+Reader@{Content\+Reader}!parse\+Content@{parse\+Content}}
+\index{parse\+Content@{parse\+Content}!Content\+Reader@{Content\+Reader}}
+\subsubsection{\texorpdfstring{parse\+Content()}{parseContent()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily virtual void Content\+Reader\+::parse\+Content (\begin{DoxyParamCaption}\item[{std\+::string \&}]{text,  }\item[{\mbox{\hyperlink{classElementObject}{Element\+Object}} $\ast$}]{e }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Generates an object of $<$key (string), Elements$>$ from a given string. Calls the method parse with the rest of the string and parse each of the found elements of the object. (opposite works as well) \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classContentReader_a7fff2e63a2e8fa216665604f69974e1d}{parse}} 
+
+\mbox{\hyperlink{classElement}{Element}} 
+
+\mbox{\hyperlink{classElementObject}{Element\+Object}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em text} & a given text \\
+\hline
+{\em e} & the object \mbox{\hyperlink{classElement}{Element}} that will be generated (or used) \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classJsonCreator_a9f57af1a7925074b8e3e4175f74c886a}{Json\+Creator}}, and \mbox{\hyperlink{classJsonParser_a7d4fad0f0947a74ca158dc1922c97355}{Json\+Parser}}.
+
+\mbox{\Hypertarget{classContentReader_ab4ba739ee5241848ae8af86e64e43a40}\label{classContentReader_ab4ba739ee5241848ae8af86e64e43a40}} 
+\index{Content\+Reader@{Content\+Reader}!parse\+Content@{parse\+Content}}
+\index{parse\+Content@{parse\+Content}!Content\+Reader@{Content\+Reader}}
+\subsubsection{\texorpdfstring{parse\+Content()}{parseContent()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily virtual void Content\+Reader\+::parse\+Content (\begin{DoxyParamCaption}\item[{std\+::string \&}]{text,  }\item[{\mbox{\hyperlink{classElementDouble}{Element\+Double}} $\ast$}]{e }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Generates an double from a given string. Calls the method parse with the rest of the string. (opposite works as well) \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classContentReader_a7fff2e63a2e8fa216665604f69974e1d}{parse}} 
+
+\mbox{\hyperlink{classElementDouble}{Element\+Double}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em text} & a given text \\
+\hline
+{\em e} & the double \mbox{\hyperlink{classElement}{Element}} that will be generated (or used) \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classJsonCreator_a5e841806165fd5cb595d9f7d7c924080}{Json\+Creator}}, and \mbox{\hyperlink{classJsonParser_a07a4f2b10547d5f2251bc1f7b09d02c1}{Json\+Parser}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+block\+\_\+chain/utils/serialization/Parser.\+h\end{DoxyCompactItemize}

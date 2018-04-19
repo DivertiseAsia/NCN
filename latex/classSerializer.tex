@@ -1,0 +1,305 @@
+\hypertarget{classSerializer}{}\section{Serializer Class Reference}
+\label{classSerializer}\index{Serializer@{Serializer}}
+
+
+{\ttfamily \#include $<$Serializer.\+h$>$}
+
+Inheritance diagram for Serializer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classSerializer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSerializer_a9fe7f31924098f75278d059f8443fd5b}{Serializer}} ()
+\item 
+virtual char $\ast$ \mbox{\hyperlink{classSerializer_a5cfe31eb70f4d0c92f2d68c22f39e885}{serialize}} (const \mbox{\hyperlink{classComponent}{Component}} $\ast$component, const char $\ast$encoding) const
+\item 
+virtual char $\ast$ \mbox{\hyperlink{classSerializer_a38bec517fb3b3cc0778c75b807cb930c}{serialize}} (\mbox{\hyperlink{classElement}{Element}} $\ast$element, const char $\ast$encoding) const
+\item 
+virtual \mbox{\hyperlink{classTransaction}{Transaction}} $\ast$ \mbox{\hyperlink{classSerializer_ab5fa979a8486be6f49ad10f4810509d7}{unserialize\+Transaction}} (std\+::string transaction, const char $\ast$encoding) const
+\item 
+virtual \mbox{\hyperlink{classBlock}{Block}} $\ast$ \mbox{\hyperlink{classSerializer_a423fb7c43ca9c23e07000dba0c5a432a}{unserialize\+Block}} (std\+::string block, const char $\ast$encoding) const
+\item 
+virtual \mbox{\hyperlink{classMessage}{Message}} $\ast$ \mbox{\hyperlink{classSerializer_a1d16df9f35a7580da06a497dfbddffe8}{unserialize\+Message}} (std\+::string message, const char $\ast$encoding) const
+\item 
+virtual \mbox{\hyperlink{classMetadata}{Metadata}} $\ast$ \mbox{\hyperlink{classSerializer_a64b858f0c2968e888cf796b6f09eed7b}{unserialize\+Metadata}} (std\+::string message, const char $\ast$encoding) const
+\item 
+\mbox{\hyperlink{classElementObject}{Element\+Object}} $\ast$ \mbox{\hyperlink{classSerializer_ab3bcdbd49167109de13e03878337018a}{get\+Element}} (std\+::string str, const char $\ast$encoding) const
+\item 
+void \mbox{\hyperlink{classSerializer_a0258559787f09d3a7bfe6bb1c41cc118}{set\+\_\+serializer}} (const char $\ast$encoding, \mbox{\hyperlink{classContentCreator}{Content\+Creator}} $\ast$creator)
+\item 
+void \mbox{\hyperlink{classSerializer_adf32dca6325e4a613c4c7ba48a3de244}{set\+\_\+unserializer}} (const char $\ast$encoding, \mbox{\hyperlink{classContentParser}{Content\+Parser}} $\ast$parser)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFactory}{Factory}}$<$ \mbox{\hyperlink{classContentCreator}{Content\+Creator}} $\ast$ $>$ \mbox{\hyperlink{classSerializer_a7d26e865966b304350653b1246ec3340}{creators}}
+\item 
+\mbox{\hyperlink{classFactory}{Factory}}$<$ \mbox{\hyperlink{classContentParser}{Content\+Parser}} $\ast$ $>$ \mbox{\hyperlink{classSerializer_a96f96c01e6a471513669621751591fd9}{parsers}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An abstract serializer. The class \mbox{\hyperlink{classSerializer}{Serializer}} implements almost all of the serialization and unserialization methods. However, it doesn\textquotesingle{}t implements the transaction unserialization, thereforem this class has to be override. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classContentCreator}{Content\+Creator}} 
+
+\mbox{\hyperlink{classContentParser}{Content\+Parser}} 
+
+\mbox{\hyperlink{classElement}{Element}} 
+
+\mbox{\hyperlink{classElementObject}{Element\+Object}} 
+
+\mbox{\hyperlink{classComponent}{Component}} 
+
+\mbox{\hyperlink{classTransaction}{Transaction}} 
+
+\mbox{\hyperlink{classBlock}{Block}} 
+
+\mbox{\hyperlink{classMessage}{Message}} 
+
+\mbox{\hyperlink{classMetadata}{Metadata}}
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Mathieu Lochet 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+3 
+\end{DoxyVersion}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSerializer_a9fe7f31924098f75278d059f8443fd5b}\label{classSerializer_a9fe7f31924098f75278d059f8443fd5b}} 
+\index{Serializer@{Serializer}!Serializer@{Serializer}}
+\index{Serializer@{Serializer}!Serializer@{Serializer}}
+\subsubsection{\texorpdfstring{Serializer()}{Serializer()}}
+{\footnotesize\ttfamily Serializer\+::\+Serializer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Initialize the \mbox{\hyperlink{classSerializer}{Serializer}} with default readers\+:
+\begin{DoxyItemize}
+\item json creator
+\item json parser They can be used as encoding \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classJsonCreator}{Json\+Creator}} 
+
+\mbox{\hyperlink{classJsonParser}{Json\+Parser}} 
+\end{DoxySeeAlso}
+
+\end{DoxyItemize}
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classSerializer_ab3bcdbd49167109de13e03878337018a}\label{classSerializer_ab3bcdbd49167109de13e03878337018a}} 
+\index{Serializer@{Serializer}!get\+Element@{get\+Element}}
+\index{get\+Element@{get\+Element}!Serializer@{Serializer}}
+\subsubsection{\texorpdfstring{get\+Element()}{getElement()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classElementObject}{Element\+Object}} $\ast$ Serializer\+::get\+Element (\begin{DoxyParamCaption}\item[{std\+::string}]{str,  }\item[{const char $\ast$}]{encoding }\end{DoxyParamCaption}) const}
+
+Unserialize an given string to obtain a \mbox{\hyperlink{classMetadata}{Metadata}} \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classContentParser}{Content\+Parser}} 
+
+\mbox{\hyperlink{classElementObject}{Element\+Object}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em str} & the string to be unserialized \\
+\hline
+{\em encoding} & the key to choose the parser \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \mbox{\hyperlink{classElement}{Element}} representation of the string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSerializer_a5cfe31eb70f4d0c92f2d68c22f39e885}\label{classSerializer_a5cfe31eb70f4d0c92f2d68c22f39e885}} 
+\index{Serializer@{Serializer}!serialize@{serialize}}
+\index{serialize@{serialize}!Serializer@{Serializer}}
+\subsubsection{\texorpdfstring{serialize()}{serialize()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily char $\ast$ Serializer\+::serialize (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classComponent}{Component}} $\ast$}]{component,  }\item[{const char $\ast$}]{encoding }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Serialize a \mbox{\hyperlink{classComponent}{Component}} object \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classComponent}{Component}} 
+
+\mbox{\hyperlink{classContentCreator}{Content\+Creator}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em component} & the component to be serialized \\
+\hline
+{\em encoding} & the key to choose the creator \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the serialized string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSerializer_a38bec517fb3b3cc0778c75b807cb930c}\label{classSerializer_a38bec517fb3b3cc0778c75b807cb930c}} 
+\index{Serializer@{Serializer}!serialize@{serialize}}
+\index{serialize@{serialize}!Serializer@{Serializer}}
+\subsubsection{\texorpdfstring{serialize()}{serialize()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily char $\ast$ Serializer\+::serialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classElement}{Element}} $\ast$}]{element,  }\item[{const char $\ast$}]{encoding }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Serialize an \mbox{\hyperlink{classElement}{Element}} object \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classElement}{Element}} 
+
+\mbox{\hyperlink{classContentCreator}{Content\+Creator}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em element} & the element to be serialized \\
+\hline
+{\em encoding} & the key to choose the creator \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the serialized string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSerializer_a0258559787f09d3a7bfe6bb1c41cc118}\label{classSerializer_a0258559787f09d3a7bfe6bb1c41cc118}} 
+\index{Serializer@{Serializer}!set\+\_\+serializer@{set\+\_\+serializer}}
+\index{set\+\_\+serializer@{set\+\_\+serializer}!Serializer@{Serializer}}
+\subsubsection{\texorpdfstring{set\+\_\+serializer()}{set\_serializer()}}
+{\footnotesize\ttfamily void Serializer\+::set\+\_\+serializer (\begin{DoxyParamCaption}\item[{const char $\ast$}]{encoding,  }\item[{\mbox{\hyperlink{classContentCreator}{Content\+Creator}} $\ast$}]{creator }\end{DoxyParamCaption})}
+
+Add a custom creator to the list \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classContentCreator}{Content\+Creator}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em encoding} & the corresponding encoding for the creator \\
+\hline
+{\em creator} & the creator object to use with the key \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSerializer_adf32dca6325e4a613c4c7ba48a3de244}\label{classSerializer_adf32dca6325e4a613c4c7ba48a3de244}} 
+\index{Serializer@{Serializer}!set\+\_\+unserializer@{set\+\_\+unserializer}}
+\index{set\+\_\+unserializer@{set\+\_\+unserializer}!Serializer@{Serializer}}
+\subsubsection{\texorpdfstring{set\+\_\+unserializer()}{set\_unserializer()}}
+{\footnotesize\ttfamily void Serializer\+::set\+\_\+unserializer (\begin{DoxyParamCaption}\item[{const char $\ast$}]{encoding,  }\item[{\mbox{\hyperlink{classContentParser}{Content\+Parser}} $\ast$}]{parser }\end{DoxyParamCaption})}
+
+Add a custom parser to the list \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classContentParser}{Content\+Parser}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em encoding} & the corresponding encoding for the parser \\
+\hline
+{\em creator} & the creator object to use with the key \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSerializer_a423fb7c43ca9c23e07000dba0c5a432a}\label{classSerializer_a423fb7c43ca9c23e07000dba0c5a432a}} 
+\index{Serializer@{Serializer}!unserialize\+Block@{unserialize\+Block}}
+\index{unserialize\+Block@{unserialize\+Block}!Serializer@{Serializer}}
+\subsubsection{\texorpdfstring{unserialize\+Block()}{unserializeBlock()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBlock}{Block}} $\ast$ Serializer\+::unserialize\+Block (\begin{DoxyParamCaption}\item[{std\+::string}]{block,  }\item[{const char $\ast$}]{encoding }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Unserialize an given string to obtain a \mbox{\hyperlink{classBlock}{Block}} \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classContentParser}{Content\+Parser}} 
+
+\mbox{\hyperlink{classBlock}{Block}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em block} & the string to be unserialized \\
+\hline
+{\em encoding} & the key to choose the parser \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \mbox{\hyperlink{classBlock}{Block}} object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSerializer_a1d16df9f35a7580da06a497dfbddffe8}\label{classSerializer_a1d16df9f35a7580da06a497dfbddffe8}} 
+\index{Serializer@{Serializer}!unserialize\+Message@{unserialize\+Message}}
+\index{unserialize\+Message@{unserialize\+Message}!Serializer@{Serializer}}
+\subsubsection{\texorpdfstring{unserialize\+Message()}{unserializeMessage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMessage}{Message}} $\ast$ Serializer\+::unserialize\+Message (\begin{DoxyParamCaption}\item[{std\+::string}]{message,  }\item[{const char $\ast$}]{encoding }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Unserialize an given string to obtain a \mbox{\hyperlink{classMessage}{Message}} \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classContentParser}{Content\+Parser}} 
+
+\mbox{\hyperlink{classMessage}{Message}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em message} & the string to be unserialized \\
+\hline
+{\em encoding} & the key to choose the parser \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \mbox{\hyperlink{classMessage}{Message}} object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSerializer_a64b858f0c2968e888cf796b6f09eed7b}\label{classSerializer_a64b858f0c2968e888cf796b6f09eed7b}} 
+\index{Serializer@{Serializer}!unserialize\+Metadata@{unserialize\+Metadata}}
+\index{unserialize\+Metadata@{unserialize\+Metadata}!Serializer@{Serializer}}
+\subsubsection{\texorpdfstring{unserialize\+Metadata()}{unserializeMetadata()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMetadata}{Metadata}} $\ast$ Serializer\+::unserialize\+Metadata (\begin{DoxyParamCaption}\item[{std\+::string}]{message,  }\item[{const char $\ast$}]{encoding }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Unserialize an given string to obtain a \mbox{\hyperlink{classMetadata}{Metadata}} \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classContentParser}{Content\+Parser}} 
+
+\mbox{\hyperlink{classMetadata}{Metadata}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em message} & the string to be unserialized \\
+\hline
+{\em encoding} & the key to choose the parser \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \mbox{\hyperlink{classMetadata}{Metadata}} object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSerializer_ab5fa979a8486be6f49ad10f4810509d7}\label{classSerializer_ab5fa979a8486be6f49ad10f4810509d7}} 
+\index{Serializer@{Serializer}!unserialize\+Transaction@{unserialize\+Transaction}}
+\index{unserialize\+Transaction@{unserialize\+Transaction}!Serializer@{Serializer}}
+\subsubsection{\texorpdfstring{unserialize\+Transaction()}{unserializeTransaction()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTransaction}{Transaction}} $\ast$ Serializer\+::unserialize\+Transaction (\begin{DoxyParamCaption}\item[{std\+::string}]{transaction,  }\item[{const char $\ast$}]{encoding }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Unserialize an given string to obtain a \mbox{\hyperlink{classTransaction}{Transaction}} (needs override) \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classContentParser}{Content\+Parser}} 
+
+\mbox{\hyperlink{classTransaction}{Transaction}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em transaction} & the string to be unserialized \\
+\hline
+{\em encoding} & the key to choose the parser \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \mbox{\hyperlink{classTransaction}{Transaction}} object 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classCustomSerializer_abff58f1a955c2f399127b7e3cae23223}{Custom\+Serializer}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classSerializer_a7d26e865966b304350653b1246ec3340}\label{classSerializer_a7d26e865966b304350653b1246ec3340}} 
+\index{Serializer@{Serializer}!creators@{creators}}
+\index{creators@{creators}!Serializer@{Serializer}}
+\subsubsection{\texorpdfstring{creators}{creators}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFactory}{Factory}}$<$\mbox{\hyperlink{classContentCreator}{Content\+Creator}}$\ast$$>$ Serializer\+::creators\hspace{0.3cm}{\ttfamily [protected]}}
+
+The factory of different creators \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classFactory}{Factory}} 
+
+\mbox{\hyperlink{classContentCreator}{Content\+Creator}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classSerializer_a96f96c01e6a471513669621751591fd9}\label{classSerializer_a96f96c01e6a471513669621751591fd9}} 
+\index{Serializer@{Serializer}!parsers@{parsers}}
+\index{parsers@{parsers}!Serializer@{Serializer}}
+\subsubsection{\texorpdfstring{parsers}{parsers}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFactory}{Factory}}$<$\mbox{\hyperlink{classContentParser}{Content\+Parser}}$\ast$$>$ Serializer\+::parsers\hspace{0.3cm}{\ttfamily [protected]}}
+
+The factory of different parsers \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classFactory}{Factory}} 
+
+\mbox{\hyperlink{classContentParser}{Content\+Parser}} 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+block\+\_\+chain/utils/serialization/Serializer.\+h\item 
+block\+\_\+chain/utils/serialization/Serializer.\+cpp\end{DoxyCompactItemize}

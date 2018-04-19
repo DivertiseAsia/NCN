@@ -11,88 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b337953f-6d17-4d79-bf7d-640c27a86937" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/block_chain/utils/Factory.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/Node.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/Node.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/kernel/parsers/BlockAskParser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/kernel/parsers/BlockAskParser.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/kernel/parsers/PeersAnswerParser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/kernel/parsers/PeersAnswerParser.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/kernel/parsers/PeersAskParser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/kernel/parsers/PeersAskParser.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/kernel/parsers/SignInParser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/kernel/parsers/SignInParser.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/kernel/parsers/SignOutParser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/kernel/parsers/SignOutParser.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/utils/Encoding.h" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/utils/Encoding.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/utils/Factory.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/utils/serialization/Serializer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/utils/serialization/Serializer.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/utils/serialization/Serializer.h" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/utils/serialization/Serializer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/utils/socket/Peer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/utils/socket/Peer.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/utils/socket/Peer.h" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/utils/socket/Peer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/utils/socket/Socket.h" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/utils/socket/Socket.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/utils/socket/SocketServer.h" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/utils/socket/SocketServer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/Node.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/TransactionManager.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/algorithm/Hash.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/algorithm/MerkleTree.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/algorithm/RSA.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/Chain.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/proof/Proof.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfHold.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfImportance.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfMinimumAgedStake.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfStake.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfStakeTime.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfUse.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfWork.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/proof/metadatas/Metadata.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Reward.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/state/Database.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/state/Row.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/components/Component.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/messages/AnswerPeersMessage.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/messages/AskPeersMessage.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/messages/BlockAnswerMessage.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/messages/BlockAskMessage.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/messages/BlockMessage.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/messages/Message.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/messages/SignInMessage.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/messages/SignMessage.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/messages/SignOutMessage.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/messages/TransactionMessage.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAnswerParser.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAskParser.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockParser.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAnswerParser.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAskParser.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignInParser.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignOutParser.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/TransactionParser.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/utils/Encoding.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/utils/serialization/Element.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/utils/serialization/ElementCreator.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/utils/serialization/Serializer.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/utils/serialization/json/JsonCreator.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/utils/serialization/json/JsonParser.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/utils/socket/Peer.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/utils/socket/Socket.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/utils/socket/SocketServer.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/database/Row.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/main.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/reward/RewardTransaction.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/transactions/MessagesTransaction.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/transactions/MoneyTransaction.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/transactions/StatusTransaction.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/block_chain" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/block_chain.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/block_chain.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="b337953f-6d17-4d79-bf7d-640c27a86937" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -135,11 +54,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Socket.h" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Socket.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/block_chain/utils/socket/Socket.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="573">
               <caret line="135" column="18" selection-start-line="135" selection-start-column="18" selection-end-line="135" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="doxygen.conf" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/doxygen.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="390" column="35" selection-start-line="390" selection-start-column="35" selection-end-line="390" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -198,24 +126,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Serializer.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/block_chain/utils/serialization/Serializer.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="41" selection-start-line="41" selection-end-line="49" selection-end-column="7" />
-              <folding>
-                <element signature="e#109#145#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>peers par</find>
-      <find>TODO</find>
       <find>compu</find>
       <find>sign</find>
       <find>new</find>
@@ -244,6 +158,8 @@
       <find>stor</find>
       <find>proof</find>
       <find>n/proof</find>
+      <find>files</find>
+      <find>INHeri</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/cmake-build-debug</dir>
@@ -257,7 +173,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/block_chain/kernel/parsers/BlockAnswerParser.cpp" />
         <option value="$PROJECT_DIR$/block_chain/kernel/messages/SignInMessage.h" />
         <option value="$PROJECT_DIR$/block_chain/kernel/messages/SignMessage.h" />
         <option value="$PROJECT_DIR$/block_chain/kernel/messages/SignMessage.cpp" />
@@ -308,6 +223,7 @@
         <option value="$PROJECT_DIR$/block_chain/kernel/parsers/SignOutParser.cpp" />
         <option value="$PROJECT_DIR$/block_chain/utils/socket/SocketServer.h" />
         <option value="$PROJECT_DIR$/block_chain/utils/socket/Socket.h" />
+        <option value="$PROJECT_DIR$/doxygen.conf" />
       </list>
     </option>
   </component>
@@ -337,42 +253,6 @@
             <path>
               <item name="block_chain" type="b2602c69:ProjectViewProjectNode" />
               <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="block_chain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="block_chain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="kernel" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="block_chain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="block_chain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="serialization" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="block_chain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="socket" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="block_chain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="cmake-build-debug" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -433,19 +313,20 @@
       <workItem from="1523934016579" duration="11782000" />
       <workItem from="1523955909272" duration="13214000" />
       <workItem from="1524027116417" duration="4000" />
-      <workItem from="1524027135407" duration="48681000" />
+      <workItem from="1524027135407" duration="49294000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="218390000" />
+    <option name="totallyTimeSpent" value="219003000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49847096" visible="true" weight="0.2161725" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49847096" visible="true" weight="0.2161725" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.32889345" />
+      <window_info anchor="bottom" id="Messages" order="12" visible="true" weight="0.32889345" />
       <window_info anchor="bottom" id="CMake" order="11" weight="0.32889345" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32991803" />
@@ -476,13 +357,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/block_chain/kernel/messages/BlockAnswerMessage.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/block_chain/kernel/messages/BlockAskMessage.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -850,6 +724,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="573">
           <caret line="135" column="18" selection-start-line="135" selection-start-column="18" selection-end-line="135" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doxygen.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="390" column="35" selection-start-line="390" selection-start-column="35" selection-end-line="390" selection-end-column="35" />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,71 @@
+\hypertarget{classElementDouble}{}\section{Element\+Double Class Reference}
+\label{classElementDouble}\index{Element\+Double@{Element\+Double}}
+
+
+{\ttfamily \#include $<$Element.\+h$>$}
+
+Inheritance diagram for Element\+Double\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classElementDouble}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classElementDouble_a11bf3651edd2cbcdf04610b113accf90}{read}} (std\+::string \&text, const \mbox{\hyperlink{classContentReader}{Content\+Reader}} $\ast$parser) override
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classElementDouble_aa04fa64c846076944151db147bcaaa1f}{value}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The double \mbox{\hyperlink{classElement}{Element}} for serialization
+
+\begin{DoxyAuthor}{Author}
+Mathieu Lochet 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classElementDouble_a11bf3651edd2cbcdf04610b113accf90}\label{classElementDouble_a11bf3651edd2cbcdf04610b113accf90}} 
+\index{Element\+Double@{Element\+Double}!read@{read}}
+\index{read@{read}!Element\+Double@{Element\+Double}}
+\subsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily void Element\+Double\+::read (\begin{DoxyParamCaption}\item[{std\+::string \&}]{text,  }\item[{const \mbox{\hyperlink{classContentReader}{Content\+Reader}} $\ast$}]{reader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Used with polymorphism, lead the readers in the right direction for both text and \mbox{\hyperlink{classElement}{Element}} creation. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classContentReader}{Content\+Reader}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em text} & the current used text by the reader \\
+\hline
+{\em reader} & the current reader used \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classElement_ab468bd37a9558f5227837a9236bc9e4b}{Element}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classElementDouble_aa04fa64c846076944151db147bcaaa1f}\label{classElementDouble_aa04fa64c846076944151db147bcaaa1f}} 
+\index{Element\+Double@{Element\+Double}!value@{value}}
+\index{value@{value}!Element\+Double@{Element\+Double}}
+\subsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily double Element\+Double\+::value}
+
+The double value to be used in serialization 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+block\+\_\+chain/utils/serialization/Element.\+h\item 
+block\+\_\+chain/utils/serialization/Element.\+cpp\end{DoxyCompactItemize}

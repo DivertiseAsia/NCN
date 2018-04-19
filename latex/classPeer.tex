@@ -1,0 +1,133 @@
+\hypertarget{classPeer}{}\section{Peer Class Reference}
+\label{classPeer}\index{Peer@{Peer}}
+
+
+{\ttfamily \#include $<$Peer.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPeer_a818beac4dac9c4a1d9ebffcfaed2e98f}{Peer}} (std\+::string str, int c)
+\item 
+void \mbox{\hyperlink{classPeer_a314984f7fd35ec189f125bea9483881b}{close}} ()
+\item 
+int \mbox{\hyperlink{classPeer_a0f591fdb4807871049e9471f7464fc6a}{send}} (const char $\ast$text)
+\item 
+std\+::string \mbox{\hyperlink{classPeer_a44641ad4373c7e8f8237e0d976dc8321}{to\+\_\+string}} () const
+\item 
+bool \mbox{\hyperlink{classPeer_a9a06bb1ad4da0564617bba731099a6eb}{operator==}} (\mbox{\hyperlink{classPeer}{Peer}} const \&p) const
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPeer_a6db9d28bd448a131448276ee03de1e6d}\label{classPeer_a6db9d28bd448a131448276ee03de1e6d}} 
+class {\bfseries Node}
+\item 
+\mbox{\Hypertarget{classPeer_a9e3cdec4aeecdf3e8af4ce55247056b5}\label{classPeer_a9e3cdec4aeecdf3e8af4ce55247056b5}} 
+class {\bfseries Peers\+Answer\+Parser}
+\item 
+\mbox{\Hypertarget{classPeer_aedbc6d52e9be9e8e9b9e185d53352518}\label{classPeer_aedbc6d52e9be9e8e9b9e185d53352518}} 
+class {\bfseries Sign\+In\+Parser}
+\item 
+\mbox{\Hypertarget{classPeer_ad8b6311fd20b52f64b7ab8838b5c74d1}\label{classPeer_ad8b6311fd20b52f64b7ab8838b5c74d1}} 
+class {\bfseries Sign\+Out\+Parser}
+\item 
+\mbox{\Hypertarget{classPeer_a760b1478b5214c122458f0f19d45c127}\label{classPeer_a760b1478b5214c122458f0f19d45c127}} 
+class {\bfseries Transaction\+Parser}
+\item 
+\mbox{\Hypertarget{classPeer_a8428b3aeea6607d1ba12e603ff9d015c}\label{classPeer_a8428b3aeea6607d1ba12e603ff9d015c}} 
+class {\bfseries Block\+Parser}
+\item 
+\mbox{\Hypertarget{classPeer_a8400d228b4c8e958886ed78dbbce07cf}\label{classPeer_a8400d228b4c8e958886ed78dbbce07cf}} 
+class {\bfseries Block\+Ask\+Parser}
+\item 
+\mbox{\Hypertarget{classPeer_aec03b63df2dcea2b43f28ba4ede77b27}\label{classPeer_aec03b63df2dcea2b43f28ba4ede77b27}} 
+class {\bfseries Block\+Answer\+Parser}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A peer is a member of a network.
+
+\begin{DoxyAuthor}{Author}
+Mathieu Lochet 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPeer_a818beac4dac9c4a1d9ebffcfaed2e98f}\label{classPeer_a818beac4dac9c4a1d9ebffcfaed2e98f}} 
+\index{Peer@{Peer}!Peer@{Peer}}
+\index{Peer@{Peer}!Peer@{Peer}}
+\subsubsection{\texorpdfstring{Peer()}{Peer()}}
+{\footnotesize\ttfamily Peer\+::\+Peer (\begin{DoxyParamCaption}\item[{std\+::string}]{str,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+Initialize the peer by creating a socket.
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & the peer\textquotesingle{}s IP address \\
+\hline
+{\em c} & the peers\textquotesingle{}s port \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classPeer_a314984f7fd35ec189f125bea9483881b}\label{classPeer_a314984f7fd35ec189f125bea9483881b}} 
+\index{Peer@{Peer}!close@{close}}
+\index{close@{close}!Peer@{Peer}}
+\subsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily void Peer\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Close the peer\textquotesingle{}s socket \mbox{\Hypertarget{classPeer_a9a06bb1ad4da0564617bba731099a6eb}\label{classPeer_a9a06bb1ad4da0564617bba731099a6eb}} 
+\index{Peer@{Peer}!operator==@{operator==}}
+\index{operator==@{operator==}!Peer@{Peer}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Peer\+::operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPeer}{Peer}} const \&}]{p }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Check if two peers have the save IP and port
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & a peer to see if they are the same \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 is they are the same, 0 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPeer_a0f591fdb4807871049e9471f7464fc6a}\label{classPeer_a0f591fdb4807871049e9471f7464fc6a}} 
+\index{Peer@{Peer}!send@{send}}
+\index{send@{send}!Peer@{Peer}}
+\subsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily int Peer\+::send (\begin{DoxyParamCaption}\item[{const char $\ast$}]{text }\end{DoxyParamCaption})}
+
+Send a request to the peer
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & the text to be sent \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if success, 0 if failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPeer_a44641ad4373c7e8f8237e0d976dc8321}\label{classPeer_a44641ad4373c7e8f8237e0d976dc8321}} 
+\index{Peer@{Peer}!to\+\_\+string@{to\+\_\+string}}
+\index{to\+\_\+string@{to\+\_\+string}!Peer@{Peer}}
+\subsubsection{\texorpdfstring{to\+\_\+string()}{to\_string()}}
+{\footnotesize\ttfamily std\+::string Peer\+::to\+\_\+string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+visual representation of the peer
+
+\begin{DoxyReturn}{Returns}
+the string representation of the peer 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+block\+\_\+chain/utils/socket/Peer.\+h\item 
+block\+\_\+chain/utils/socket/Peer.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,104 @@
+\hypertarget{classElementArray}{}\section{Element\+Array Class Reference}
+\label{classElementArray}\index{Element\+Array@{Element\+Array}}
+
+
+{\ttfamily \#include $<$Element.\+h$>$}
+
+Inheritance diagram for Element\+Array\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classElementArray}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classElementArray_a5353c82d5c132acdad69858884e3e334}{read}} (std\+::string \&text, const \mbox{\hyperlink{classContentReader}{Content\+Reader}} $\ast$parser) override
+\item 
+\mbox{\hyperlink{classElementArray}{Element\+Array}} $\ast$ \mbox{\hyperlink{classElementArray_aff62f7af32e8440015b8dd297749b6c6}{add}} (\mbox{\hyperlink{classElement}{Element}} $\ast$value)
+\item 
+\mbox{\hyperlink{classElementArray_a30d544b599922612d29e48a0cc0e3305}{$\sim$\+Element\+Array}} () override
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classElement}{Element}} $\ast$ $>$ \mbox{\hyperlink{classElementArray_a3d0a8546daca882d59f55413a338be87}{values}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The array \mbox{\hyperlink{classElement}{Element}} for serialization
+
+\begin{DoxyAuthor}{Author}
+Mathieu Lochet 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classElementArray_a30d544b599922612d29e48a0cc0e3305}\label{classElementArray_a30d544b599922612d29e48a0cc0e3305}} 
+\index{Element\+Array@{Element\+Array}!````~Element\+Array@{$\sim$\+Element\+Array}}
+\index{````~Element\+Array@{$\sim$\+Element\+Array}!Element\+Array@{Element\+Array}}
+\subsubsection{\texorpdfstring{$\sim$\+Element\+Array()}{~ElementArray()}}
+{\footnotesize\ttfamily Element\+Array\+::$\sim$\+Element\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+Destructor that free all of the values in the array 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classElementArray_aff62f7af32e8440015b8dd297749b6c6}\label{classElementArray_aff62f7af32e8440015b8dd297749b6c6}} 
+\index{Element\+Array@{Element\+Array}!add@{add}}
+\index{add@{add}!Element\+Array@{Element\+Array}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classElementArray}{Element\+Array}} $\ast$ Element\+Array\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classElement}{Element}} $\ast$}]{value }\end{DoxyParamCaption})}
+
+Add an \mbox{\hyperlink{classElement}{Element}} to the array. Works as a builder \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classElement}{Element}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em value} & the new value to append to the array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the \mbox{\hyperlink{classElementArray}{Element\+Array}} to be used as a builder 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classElementArray_a5353c82d5c132acdad69858884e3e334}\label{classElementArray_a5353c82d5c132acdad69858884e3e334}} 
+\index{Element\+Array@{Element\+Array}!read@{read}}
+\index{read@{read}!Element\+Array@{Element\+Array}}
+\subsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily void Element\+Array\+::read (\begin{DoxyParamCaption}\item[{std\+::string \&}]{text,  }\item[{const \mbox{\hyperlink{classContentReader}{Content\+Reader}} $\ast$}]{reader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Used with polymorphism, lead the readers in the right direction for both text and \mbox{\hyperlink{classElement}{Element}} creation. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classContentReader}{Content\+Reader}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em text} & the current used text by the reader \\
+\hline
+{\em reader} & the current reader used \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classElement_ab468bd37a9558f5227837a9236bc9e4b}{Element}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classElementArray_a3d0a8546daca882d59f55413a338be87}\label{classElementArray_a3d0a8546daca882d59f55413a338be87}} 
+\index{Element\+Array@{Element\+Array}!values@{values}}
+\index{values@{values}!Element\+Array@{Element\+Array}}
+\subsubsection{\texorpdfstring{values}{values}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classElement}{Element}}$\ast$$>$ Element\+Array\+::values}
+
+The list of Elements to be used in serialization \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classElement}{Element}} 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+block\+\_\+chain/utils/serialization/Element.\+h\item 
+block\+\_\+chain/utils/serialization/Element.\+cpp\end{DoxyCompactItemize}

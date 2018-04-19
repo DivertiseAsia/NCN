@@ -1,0 +1,65 @@
+\hypertarget{classRewardTransaction}{}\section{Reward\+Transaction Class Reference}
+\label{classRewardTransaction}\index{Reward\+Transaction@{Reward\+Transaction}}
+Inheritance diagram for Reward\+Transaction\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classRewardTransaction}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classRewardTransaction_a414728d857fcf05295a7f3f4fa024dc1}\label{classRewardTransaction_a414728d857fcf05295a7f3f4fa024dc1}} 
+\mbox{\hyperlink{classTransaction}{Transaction}} $\ast$ {\bfseries clone} () override
+\item 
+\mbox{\Hypertarget{classRewardTransaction_ad43c1d706406f40d43f433b0d0b0b510}\label{classRewardTransaction_ad43c1d706406f40d43f433b0d0b0b510}} 
+\mbox{\hyperlink{classRow}{Row}} $\ast$ {\bfseries create\+Row} () const override
+\item 
+\mbox{\Hypertarget{classReward_a1d04370c094170b0d166c341daa1644e}\label{classReward_a1d04370c094170b0d166c341daa1644e}} 
+bool {\bfseries operator()} () const final
+\item 
+\mbox{\Hypertarget{classReward_a0ecd536148463880f9980fe415b6eb1d}\label{classReward_a0ecd536148463880f9980fe415b6eb1d}} 
+\mbox{\hyperlink{classElement}{Element}} $\ast$ {\bfseries to\+Element} () const final
+\item 
+\mbox{\Hypertarget{classReward_ab2cd65f16c670e3e9d8cfe84a6dc56cb}\label{classReward_ab2cd65f16c670e3e9d8cfe84a6dc56cb}} 
+bool {\bfseries operator==} (\mbox{\hyperlink{classTransaction}{Transaction}} $\ast$t) const final
+\item 
+\mbox{\Hypertarget{classReward_a0d65cd39eb260091d1f2cf19e2e71de7}\label{classReward_a0d65cd39eb260091d1f2cf19e2e71de7}} 
+std\+::string {\bfseries to\+\_\+string} () const
+\item 
+\mbox{\Hypertarget{classReward_a494c9d6e0a220729f675fd6131cfb9af}\label{classReward_a494c9d6e0a220729f675fd6131cfb9af}} 
+void {\bfseries apply\+\_\+reverse} (\mbox{\hyperlink{classRow}{Row}} $\ast$row) final
+\item 
+\mbox{\Hypertarget{classReward_a9c9a3219ba6b8b068f7f1cccc779b1b5}\label{classReward_a9c9a3219ba6b8b068f7f1cccc779b1b5}} 
+bool {\bfseries validate} (\mbox{\hyperlink{classRow}{Row}} $\ast$row) const final
+\item 
+\mbox{\Hypertarget{classReward_a1d3d05263d54771a314927d09585968c}\label{classReward_a1d3d05263d54771a314927d09585968c}} 
+int {\bfseries get\+\_\+type} () const final
+\item 
+\mbox{\Hypertarget{classReward_a95e98fc9dbbc9da47cee243adc1932d2}\label{classReward_a95e98fc9dbbc9da47cee243adc1932d2}} 
+std\+::string {\bfseries description} () const final
+\item 
+\mbox{\Hypertarget{classReward_a30a40e2eefd0aea969fab46d1e22d145}\label{classReward_a30a40e2eefd0aea969fab46d1e22d145}} 
+void {\bfseries fill\+\_\+data} () final
+\item 
+\mbox{\Hypertarget{classReward_aae55ec2aa2aa31cc365c80cb42be9ab5}\label{classReward_aae55ec2aa2aa31cc365c80cb42be9ab5}} 
+std\+::vector$<$ std\+::string $>$ {\bfseries apply} (\mbox{\hyperlink{classRow}{Row}} $\ast$row) override
+\item 
+\mbox{\Hypertarget{classTransaction_a1f0df166c34d6a38a991544cf98c0356}\label{classTransaction_a1f0df166c34d6a38a991544cf98c0356}} 
+\mbox{\hyperlink{classHash}{Hash}} $\ast$ {\bfseries \+\_\+\+\_\+hash\+\_\+\+\_\+} (const \mbox{\hyperlink{classSerializer}{Serializer}} $\ast$serializer, const char $\ast$encoding) const
+\item 
+\mbox{\Hypertarget{classComponent_a28212595f8ee85fe009bd233bc99b2fc}\label{classComponent_a28212595f8ee85fe009bd233bc99b2fc}} 
+void {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (\mbox{\hyperlink{classElementObject}{Element\+Object}} $\ast$element, const \mbox{\hyperlink{classSerializer}{Serializer}} $\ast$s, const char $\ast$encoding)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classReward_a6d16e21b60b7f11c7aaf0098a53118a2}\label{classReward_a6d16e21b60b7f11c7aaf0098a53118a2}} 
+void {\bfseries from\+Element} (\mbox{\hyperlink{classElementObject}{Element\+Object}} $\ast$, const \mbox{\hyperlink{classSerializer}{Serializer}} $\ast$, const char $\ast$encoding) final
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+reward/Reward\+Transaction.\+h\item 
+reward/Reward\+Transaction.\+cpp\end{DoxyCompactItemize}

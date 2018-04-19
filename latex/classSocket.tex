@@ -1,0 +1,175 @@
+\hypertarget{classSocket}{}\section{Socket Class Reference}
+\label{classSocket}\index{Socket@{Socket}}
+
+
+{\ttfamily \#include $<$Socket.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSocket_a4c7a40e6c1513edf63e53b74b4f32b80}{Socket}} (std\+::string i, int port)
+\item 
+\mbox{\hyperlink{classSocket_a7e2193bd6a9b6846f90eaf4786cfc41b}{Socket}} (S\+O\+C\+K\+ET s)
+\item 
+void \mbox{\hyperlink{classSocket_ab7c6b44800e7a621df9edae86d5fdfa8}{\+\_\+bind}} (sockaddr\+\_\+in $\ast$sin)
+\item 
+void \mbox{\hyperlink{classSocket_ac54a69178584b414d8137170156ad742}{\+\_\+listen}} ()
+\item 
+void \mbox{\hyperlink{classSocket_a284f2130a4115a77ebce742427fd0bdb}{\+\_\+close}} ()
+\item 
+int \mbox{\hyperlink{classSocket_a74fc13f1e87009d84871d73949a664b2}{read}} (std\+::string \&buffer)
+\item 
+int \mbox{\hyperlink{classSocket_ae2f8cf0b7d27c59600dc5ddf65f8a884}{write}} (const char $\ast$buffer)
+\item 
+\mbox{\hyperlink{classSocket}{Socket}} $\ast$ \mbox{\hyperlink{classSocket_a153f0c90d33f1d60133b3ab565679013}{\+\_\+accept}} (sockaddr\+\_\+in $\ast$csin, accept\+\_\+size size)
+\item 
+\mbox{\hyperlink{classSocket_aeac4eb6379a543d38ed88977d3b6630a}{$\sim$\+Socket}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \mbox{\hyperlink{classSocket_a5f78c7dbb42b062df843a66431acd0de}{get\+IP}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The class that listen to the port
+
+\begin{DoxyAuthor}{Author}
+Mathieu Lochet 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+3 
+\end{DoxyVersion}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSocket_a4c7a40e6c1513edf63e53b74b4f32b80}\label{classSocket_a4c7a40e6c1513edf63e53b74b4f32b80}} 
+\index{Socket@{Socket}!Socket@{Socket}}
+\index{Socket@{Socket}!Socket@{Socket}}
+\subsubsection{\texorpdfstring{Socket()}{Socket()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Socket\+::\+Socket (\begin{DoxyParamCaption}\item[{std\+::string}]{i,  }\item[{int}]{port }\end{DoxyParamCaption})}
+
+The constructor that generates a socket with a given IP and port
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & the IP to connect to \\
+\hline
+{\em port} & the port the connect to \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSocket_a7e2193bd6a9b6846f90eaf4786cfc41b}\label{classSocket_a7e2193bd6a9b6846f90eaf4786cfc41b}} 
+\index{Socket@{Socket}!Socket@{Socket}}
+\index{Socket@{Socket}!Socket@{Socket}}
+\subsubsection{\texorpdfstring{Socket()}{Socket()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Socket\+::\+Socket (\begin{DoxyParamCaption}\item[{S\+O\+C\+K\+ET}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+The constructor that generates a socket with a S\+O\+C\+K\+ET value
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & the S\+O\+C\+K\+ET value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSocket_aeac4eb6379a543d38ed88977d3b6630a}\label{classSocket_aeac4eb6379a543d38ed88977d3b6630a}} 
+\index{Socket@{Socket}!````~Socket@{$\sim$\+Socket}}
+\index{````~Socket@{$\sim$\+Socket}!Socket@{Socket}}
+\subsubsection{\texorpdfstring{$\sim$\+Socket()}{~Socket()}}
+{\footnotesize\ttfamily Socket\+::$\sim$\+Socket (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Close the socket connection 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classSocket_a153f0c90d33f1d60133b3ab565679013}\label{classSocket_a153f0c90d33f1d60133b3ab565679013}} 
+\index{Socket@{Socket}!\+\_\+accept@{\+\_\+accept}}
+\index{\+\_\+accept@{\+\_\+accept}!Socket@{Socket}}
+\subsubsection{\texorpdfstring{\+\_\+accept()}{\_accept()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSocket}{Socket}} $\ast$ Socket\+::\+\_\+accept (\begin{DoxyParamCaption}\item[{sockaddr\+\_\+in $\ast$}]{csin,  }\item[{accept\+\_\+size}]{size }\end{DoxyParamCaption})}
+
+Wait and accepts a connection on the server
+
+
+\begin{DoxyParams}{Parameters}
+{\em csin} & a socket address \\
+\hline
+{\em size} & the size of the socket address \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if success, 0 if failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSocket_ab7c6b44800e7a621df9edae86d5fdfa8}\label{classSocket_ab7c6b44800e7a621df9edae86d5fdfa8}} 
+\index{Socket@{Socket}!\+\_\+bind@{\+\_\+bind}}
+\index{\+\_\+bind@{\+\_\+bind}!Socket@{Socket}}
+\subsubsection{\texorpdfstring{\+\_\+bind()}{\_bind()}}
+{\footnotesize\ttfamily void Socket\+::\+\_\+bind (\begin{DoxyParamCaption}\item[{sockaddr\+\_\+in $\ast$}]{sin }\end{DoxyParamCaption})}
+
+Bind the socket to a given address so it can listen to connections
+
+
+\begin{DoxyParams}{Parameters}
+{\em sin} & the given address \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSocket_a284f2130a4115a77ebce742427fd0bdb}\label{classSocket_a284f2130a4115a77ebce742427fd0bdb}} 
+\index{Socket@{Socket}!\+\_\+close@{\+\_\+close}}
+\index{\+\_\+close@{\+\_\+close}!Socket@{Socket}}
+\subsubsection{\texorpdfstring{\+\_\+close()}{\_close()}}
+{\footnotesize\ttfamily void Socket\+::\+\_\+close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Close the socket connection \mbox{\Hypertarget{classSocket_ac54a69178584b414d8137170156ad742}\label{classSocket_ac54a69178584b414d8137170156ad742}} 
+\index{Socket@{Socket}!\+\_\+listen@{\+\_\+listen}}
+\index{\+\_\+listen@{\+\_\+listen}!Socket@{Socket}}
+\subsubsection{\texorpdfstring{\+\_\+listen()}{\_listen()}}
+{\footnotesize\ttfamily void Socket\+::\+\_\+listen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Listen to connections \mbox{\Hypertarget{classSocket_a5f78c7dbb42b062df843a66431acd0de}\label{classSocket_a5f78c7dbb42b062df843a66431acd0de}} 
+\index{Socket@{Socket}!get\+IP@{get\+IP}}
+\index{get\+IP@{get\+IP}!Socket@{Socket}}
+\subsubsection{\texorpdfstring{get\+I\+P()}{getIP()}}
+{\footnotesize\ttfamily std\+::string Socket\+::get\+IP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Generate the IP of the computer
+
+\begin{DoxyReturn}{Returns}
+The IP of the computer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSocket_a74fc13f1e87009d84871d73949a664b2}\label{classSocket_a74fc13f1e87009d84871d73949a664b2}} 
+\index{Socket@{Socket}!read@{read}}
+\index{read@{read}!Socket@{Socket}}
+\subsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily int Socket\+::read (\begin{DoxyParamCaption}\item[{std\+::string \&}]{buffer }\end{DoxyParamCaption})}
+
+Read values from the socket when a packet in received
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & the buffer in which to write the packet \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if success, 0 if failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSocket_ae2f8cf0b7d27c59600dc5ddf65f8a884}\label{classSocket_ae2f8cf0b7d27c59600dc5ddf65f8a884}} 
+\index{Socket@{Socket}!write@{write}}
+\index{write@{write}!Socket@{Socket}}
+\subsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily int Socket\+::write (\begin{DoxyParamCaption}\item[{const char $\ast$}]{buffer }\end{DoxyParamCaption})}
+
+Write a packet to a given packet
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & the buffer to send to the peer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if success, 0 if failure 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+block\+\_\+chain/utils/socket/Socket.\+h\item 
+block\+\_\+chain/utils/socket/Socket.\+cpp\end{DoxyCompactItemize}

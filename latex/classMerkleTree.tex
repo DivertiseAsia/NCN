@@ -1,0 +1,65 @@
+\hypertarget{classMerkleTree}{}\section{Merkle\+Tree Class Reference}
+\label{classMerkleTree}\index{Merkle\+Tree@{Merkle\+Tree}}
+Inheritance diagram for Merkle\+Tree\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classMerkleTree}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMerkleTree_a257abaf20fa542b29dfdab95294ae578}\label{classMerkleTree_a257abaf20fa542b29dfdab95294ae578}} 
+{\bfseries Merkle\+Tree} (\mbox{\hyperlink{classTransaction}{Transaction}} $\ast$transaction, const \mbox{\hyperlink{classSerializer}{Serializer}} $\ast$serializer, const char $\ast$encoding)
+\item 
+\mbox{\Hypertarget{classMerkleTree_abc65d820b1b59f00350b2f4a4bc580bd}\label{classMerkleTree_abc65d820b1b59f00350b2f4a4bc580bd}} 
+{\bfseries Merkle\+Tree} (std\+::vector$<$ \mbox{\hyperlink{classTransaction}{Transaction}} $\ast$$>$ transactions, const \mbox{\hyperlink{classSerializer}{Serializer}} $\ast$serializer, const char $\ast$encoding)
+\item 
+\mbox{\Hypertarget{classMerkleTree_a361a5f238249d4893b000560dcabacde}\label{classMerkleTree_a361a5f238249d4893b000560dcabacde}} 
+{\bfseries Merkle\+Tree} (\mbox{\hyperlink{classMerkleTree}{Merkle\+Tree}} $\ast$l, \mbox{\hyperlink{classMerkleTree}{Merkle\+Tree}} $\ast$r)
+\item 
+\mbox{\Hypertarget{classMerkleTree_a4e72819c6cbc49ed8ce092f464711a5f}\label{classMerkleTree_a4e72819c6cbc49ed8ce092f464711a5f}} 
+\mbox{\hyperlink{classElement}{Element}} $\ast$ {\bfseries to\+Element} () const override
+\item 
+\mbox{\Hypertarget{classMerkleTree_a74d741770514ec323521ec6d79d250f2}\label{classMerkleTree_a74d741770514ec323521ec6d79d250f2}} 
+\mbox{\hyperlink{classHash}{Hash}} $\ast$ {\bfseries get\+\_\+hash} (int i) const
+\item 
+\mbox{\Hypertarget{classMerkleTree_aac309360fa4653451af713a8ce9684bd}\label{classMerkleTree_aac309360fa4653451af713a8ce9684bd}} 
+int {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{classMerkleTree_a543fdfd1f1c4ded332cdeae2cd788aac}\label{classMerkleTree_a543fdfd1f1c4ded332cdeae2cd788aac}} 
+void {\bfseries generate\+\_\+tree} (std\+::vector$<$ \mbox{\hyperlink{classTransaction}{Transaction}} $\ast$$>$ transactions, int begin, int end, const \mbox{\hyperlink{classSerializer}{Serializer}} $\ast$serializer, const char $\ast$encoding)
+\item 
+\mbox{\Hypertarget{classComponent_a28212595f8ee85fe009bd233bc99b2fc}\label{classComponent_a28212595f8ee85fe009bd233bc99b2fc}} 
+void {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (\mbox{\hyperlink{classElementObject}{Element\+Object}} $\ast$element, const \mbox{\hyperlink{classSerializer}{Serializer}} $\ast$s, const char $\ast$encoding)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMerkleTree_a083ad348bfd770f2400f190112ff39a3}\label{classMerkleTree_a083ad348bfd770f2400f190112ff39a3}} 
+void {\bfseries from\+Element} (\mbox{\hyperlink{classElementObject}{Element\+Object}} $\ast$, const \mbox{\hyperlink{classSerializer}{Serializer}} $\ast$, const char $\ast$encoding) override
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMerkleTree_a6db9d28bd448a131448276ee03de1e6d}\label{classMerkleTree_a6db9d28bd448a131448276ee03de1e6d}} 
+class {\bfseries Node}
+\item 
+\mbox{\Hypertarget{classMerkleTree_a658ef47bd757fd5e0f13adab5a417ced}\label{classMerkleTree_a658ef47bd757fd5e0f13adab5a417ced}} 
+class {\bfseries Message}
+\item 
+\mbox{\Hypertarget{classMerkleTree_a6a4f3eb8755476d75f7f57cef4cd3853}\label{classMerkleTree_a6a4f3eb8755476d75f7f57cef4cd3853}} 
+class {\bfseries Transaction\+Message}
+\item 
+\mbox{\Hypertarget{classMerkleTree_a760b1478b5214c122458f0f19d45c127}\label{classMerkleTree_a760b1478b5214c122458f0f19d45c127}} 
+class {\bfseries Transaction\+Parser}
+\item 
+\mbox{\Hypertarget{classMerkleTree_a9acb1bbbd9c9589da9453187cfb6a794}\label{classMerkleTree_a9acb1bbbd9c9589da9453187cfb6a794}} 
+class {\bfseries Block\+Message}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+block\+\_\+chain/algorithm/Merkle\+Tree.\+h\item 
+block\+\_\+chain/algorithm/Merkle\+Tree.\+cpp\end{DoxyCompactItemize}

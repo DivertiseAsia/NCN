@@ -1,0 +1,74 @@
+\hypertarget{classAskPeersMessage}{}\section{Ask\+Peers\+Message Class Reference}
+\label{classAskPeersMessage}\index{Ask\+Peers\+Message@{Ask\+Peers\+Message}}
+Inheritance diagram for Ask\+Peers\+Message\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classAskPeersMessage}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classAskPeersMessage_a55a68df97385093ce959c101b2331bf5}\label{classAskPeersMessage_a55a68df97385093ce959c101b2331bf5}} 
+{\bfseries Ask\+Peers\+Message} (std\+::string p)
+\item 
+\mbox{\Hypertarget{classSignMessage_aee897c4bf78df966b8cca95e589566e4}\label{classSignMessage_aee897c4bf78df966b8cca95e589566e4}} 
+\mbox{\hyperlink{classElement}{Element}} $\ast$ {\bfseries to\+Element} () const override
+\item 
+\mbox{\Hypertarget{classMessage_a2a576dcffd45c4574fcdf2897ec26086}\label{classMessage_a2a576dcffd45c4574fcdf2897ec26086}} 
+const int {\bfseries get\+\_\+type} () const
+\item 
+\mbox{\Hypertarget{classComponent_a28212595f8ee85fe009bd233bc99b2fc}\label{classComponent_a28212595f8ee85fe009bd233bc99b2fc}} 
+void {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (\mbox{\hyperlink{classElementObject}{Element\+Object}} $\ast$element, const \mbox{\hyperlink{classSerializer}{Serializer}} $\ast$s, const char $\ast$encoding)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMessage_ad92a0e1cfa5b5a503ec9c61833e3e5ea}\label{classMessage_ad92a0e1cfa5b5a503ec9c61833e3e5ea}} 
+static \mbox{\hyperlink{classMessage}{Message}} $\ast$ {\bfseries generate} (int id)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMessage_a18a7a0d3879210c798f3d84c820f03c1}\label{classMessage_a18a7a0d3879210c798f3d84c820f03c1}} 
+static const int {\bfseries T\+R\+A\+N\+S\+A\+C\+T\+I\+ON} = 4
+\item 
+\mbox{\Hypertarget{classMessage_a3d3ef3111518cd65c0b7f5ec6660888a}\label{classMessage_a3d3ef3111518cd65c0b7f5ec6660888a}} 
+static const int {\bfseries B\+L\+O\+CK} = 5
+\item 
+\mbox{\Hypertarget{classMessage_a9810d3cefb1b33e709cb393583a7a877}\label{classMessage_a9810d3cefb1b33e709cb393583a7a877}} 
+static const int {\bfseries A\+S\+K\+\_\+\+P\+E\+E\+RS} = 0
+\item 
+\mbox{\Hypertarget{classMessage_aa33f42e5795c4df01c7437961d512eaa}\label{classMessage_aa33f42e5795c4df01c7437961d512eaa}} 
+static const int {\bfseries A\+N\+S\+W\+E\+R\+\_\+\+P\+E\+E\+RS} = 1
+\item 
+\mbox{\Hypertarget{classMessage_a64b7688dfdd50a6254bf45b51d2118d4}\label{classMessage_a64b7688dfdd50a6254bf45b51d2118d4}} 
+static const int {\bfseries S\+I\+G\+N\+\_\+\+IN} = 2
+\item 
+\mbox{\Hypertarget{classMessage_aba70c352293fee66004d729ccef3ee48}\label{classMessage_aba70c352293fee66004d729ccef3ee48}} 
+static const int {\bfseries S\+I\+G\+N\+\_\+\+O\+UT} = 3
+\item 
+\mbox{\Hypertarget{classMessage_a62ac5b91838e79a11079869015261e14}\label{classMessage_a62ac5b91838e79a11079869015261e14}} 
+static const int {\bfseries A\+S\+K\+\_\+\+B\+L\+O\+CK} = 6
+\item 
+\mbox{\Hypertarget{classMessage_a1580f4a26d125f71e2af1ef6001ac656}\label{classMessage_a1580f4a26d125f71e2af1ef6001ac656}} 
+static const int {\bfseries A\+N\+S\+W\+E\+R\+\_\+\+B\+L\+O\+CK} = 7
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSignMessage_a35855647925ec76036ed4602743ed118}\label{classSignMessage_a35855647925ec76036ed4602743ed118}} 
+void {\bfseries from\+Element} (\mbox{\hyperlink{classElementObject}{Element\+Object}} $\ast$, const \mbox{\hyperlink{classSerializer}{Serializer}} $\ast$serializer, const char $\ast$encoding) override
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMessage_afbfb481c98b13d0deba0bac443bebe29}\label{classMessage_afbfb481c98b13d0deba0bac443bebe29}} 
+int {\bfseries type}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+block\+\_\+chain/kernel/messages/Ask\+Peers\+Message.\+h\item 
+block\+\_\+chain/kernel/messages/Ask\+Peers\+Message.\+cpp\end{DoxyCompactItemize}
