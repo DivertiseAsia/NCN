@@ -6,10 +6,9 @@
 #define BLOCK_CHAIN_BLOCK_H
 
 #include <vector>
-#include "Hash.h"
+#include "../../algorithm/Hash.h"
 #include "../../proof/metadatas/Metadata.h"
-#include "transaction/TransactionContainer.h"
-#include "Component.h"
+#include "../../kernel/components/Component.h"
 #include <iostream>
 #include <chrono>
 

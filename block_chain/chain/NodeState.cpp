@@ -3,9 +3,6 @@
 //
 
 #include "NodeState.h"
-#include <utility>
-#include "../utils/RSA.h"
-#include "../socket/Peer.h"
 
 NodeState::NodeState(Serializer* s, int si, const char* e, Reward* r): serializer(s), size(si), chain(new Chain(r)), encoding(e) {
 }

@@ -3,7 +3,7 @@
 //
 
 #include "ProofOfWorkMetadata.h"
-#include "../../chain/block/Hash.h"
+#include "../../algorithm/Hash.h"
 #include <iostream>
 
 ProofOfWorkMetadata::ProofOfWorkMetadata(long long int i, long long int j, std::string s): first(i), second(j), winner(s){

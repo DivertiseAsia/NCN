@@ -3,15 +3,11 @@
 //
 
 #include "Node.h"
-#include "kernel/messages/TransactionMessage.h"
-#include "kernel/messages/BlockAskMessage.h"
-#include "kernel/messages/SignOutMessage.h"
-#include "kernel/messages/AskPeersMessage.h"
 
 void run(SocketServer* server, Serializer* serializer, Node* node) {
     server->run(Node::defaultCallback, serializer, node);
 }
-Node::Node(Serializer* s, int p, const char* e, int pr, bool d, Reward* r): queue(0), serializer(s), encoding(e), proof(Proof::generate(pr)), validator(serializer, encoding.c_str()), block_chain(s, 1, encoding.c_str(), r), server(p), running(run, &server, s, this), self(serializer, Socket::getIP(), p), debug(d) {
+Node::Node(Serializer* s, int p, const char* e, int pr, bool d, Reward* r): queue(0), serializer(s), encoding(e), proof(Proof::generate(pr)),/* validator(serializer, encoding.c_str()),*/ block_chain(s, 1, encoding.c_str(), r), server(p), running(run, &server, s, this), self(serializer, Socket::getIP(), p), debug(d) {
     init_parsers();
     OpenSSL_add_all_algorithms();
     ERR_load_BIO_strings();

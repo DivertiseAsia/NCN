@@ -4,9 +4,9 @@
 
 #include "Block.h"
 #include <utility>
-#include "../../Serializer.h"
+#include "../../utils/serialization/Serializer.h"
 #include "../../kernel/messages/Message.h"
-#include "../../utils/RSA.h"
+#include "../../algorithm/RSA.h"
 #include "../../proof/metadatas/ProofOfWorkMetadata.h"
 
 Hash* Block::compute_hash(int begin, int end, const Serializer* s, const char* e) const{

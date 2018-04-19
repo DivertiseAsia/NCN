@@ -5,7 +5,7 @@
 #ifndef BLOCK_CHAIN_CUSTOM_ROW_H
 #define BLOCK_CHAIN_CUSTOM_ROW_H
 
-#include "../block_chain/chain/Row.h"
+#include "../block_chain/chain/state/Row.h"
 #include <string>
 #include <vector>
 

@@ -9,7 +9,7 @@
 #include "../block_chain/chain/block/transaction/Transaction.h"
 #include <iostream>
 #include "../database/Row.h"
-#include "../block_chain/chain/Row.h"
+#include "../block_chain/chain/state/Row.h"
 
 class StatusTransaction: public Transaction {
 public:

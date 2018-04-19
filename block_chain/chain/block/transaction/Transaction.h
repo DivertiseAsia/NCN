@@ -4,9 +4,9 @@
 
 #ifndef BLOCK_CHAIN_TRANSACTION_H
 #define BLOCK_CHAIN_TRANSACTION_H
-#include "../Component.h"
-#include "../Hash.h"
-#include "../../Row.h"
+#include "../../../kernel/components/Component.h"
+#include "../../../algorithm/Hash.h"
+#include "../../state/Row.h"
 
 class Serializer;
 class Transaction: public Component {

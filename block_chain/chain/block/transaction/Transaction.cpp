@@ -3,7 +3,7 @@
 //
 
 #include "Transaction.h"
-#include "../../../Serializer.h"
+#include "../../../utils/serialization/Serializer.h"
 
 
 Hash* Transaction::__hash__(const Serializer* serializer, const char* encoding) const{

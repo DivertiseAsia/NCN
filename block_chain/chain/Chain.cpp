@@ -3,7 +3,7 @@
 //
 
 #include "Chain.h"
-#include "../utils/RSA.h"
+#include "../algorithm/RSA.h"
 
 Chain::Chain(Block* b, Chain* c): database(c->database){
     block = b;

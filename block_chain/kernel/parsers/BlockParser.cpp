@@ -15,7 +15,7 @@ void BlockParser::operator()(Message* m, Node* node) const {
 
     if(node->debug)
         std::cout << "\033[1;32m[INFO] Block computed by " << node->self._ip << ":" << node->self._port<<"\033[0m\n";
-    if(node->load(block) && node->validator(block))
+    if(node->load(block) && block->checkFingerPrint(node->serializer, node->encoding.c_str()))
     {
         if(node->debug)
             std::cout << "\033[1;32m[INFO] Block accepted\033[0m\n";

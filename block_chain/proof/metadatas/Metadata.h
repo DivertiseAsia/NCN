@@ -7,9 +7,9 @@
 
 
 #include "../../utils/serialization/Element.hpp"
-#include "../../chain/block/Component.h"
-#include "../../chain/block/Hash.h"
-#include "../../chain/Database.h"
+#include "../../kernel/components/Component.h"
+#include "../../algorithm/Hash.h"
+#include "../../chain/state/Database.h"
 
 class Metadata:public Component{
 public:

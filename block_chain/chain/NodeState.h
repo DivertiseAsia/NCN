@@ -9,15 +9,17 @@
 #include <string>
 #include <map>
 #include <vector>
-#include "block/Block.h"
-#include "block/Hash.h"
-#include "block/transaction/TransactionContainer.h"
-#include "../Serializer.h"
-#include "Database.h"
-#include "Chain.h"
 #include <sys/stat.h>
 #include <dirent.h>
 #include <algorithm>
+#include <utility>
+#include "block/Block.h"
+#include "state/Database.h"
+#include "Chain.h"
+#include "../algorithm/Hash.h"
+#include "../algorithm/RSA.h"
+#include "../utils/serialization/Serializer.h"
+#include "../utils/socket/Peer.h"
 
 class NodeState{
 public:

@@ -90,22 +90,28 @@
 		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/Node.h">
 			<Option target="block_chain"/>
 		</Unit>
-		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/Serializer.cpp">
-			<Option target="block_chain"/>
-		</Unit>
-		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/Serializer.h">
-			<Option target="block_chain"/>
-		</Unit>
 		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/TransactionManager.cpp">
 			<Option target="block_chain"/>
 		</Unit>
 		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/TransactionManager.h">
 			<Option target="block_chain"/>
 		</Unit>
-		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/Validator.cpp">
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.cpp">
 			<Option target="block_chain"/>
 		</Unit>
-		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/Validator.h">
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h">
+			<Option target="block_chain"/>
+		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.cpp">
+			<Option target="block_chain"/>
+		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h">
+			<Option target="block_chain"/>
+		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/algorithm/RSA.cpp">
+			<Option target="block_chain"/>
+		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/algorithm/RSA.h">
 			<Option target="block_chain"/>
 		</Unit>
 		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain">
@@ -117,22 +123,10 @@
 		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/Chain.h">
 			<Option target="block_chain"/>
 		</Unit>
-		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/Database.cpp">
-			<Option target="block_chain"/>
-		</Unit>
-		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/Database.h">
-			<Option target="block_chain"/>
-		</Unit>
 		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/NodeState.cpp">
 			<Option target="block_chain"/>
 		</Unit>
 		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/NodeState.h">
-			<Option target="block_chain"/>
-		</Unit>
-		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/Row.cpp">
-			<Option target="block_chain"/>
-		</Unit>
-		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/Row.h">
 			<Option target="block_chain"/>
 		</Unit>
 		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/block">
@@ -144,25 +138,7 @@
 		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h">
 			<Option target="block_chain"/>
 		</Unit>
-		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/block/Component.cpp">
-			<Option target="block_chain"/>
-		</Unit>
-		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/block/Component.h">
-			<Option target="block_chain"/>
-		</Unit>
-		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/block/Hash.cpp">
-			<Option target="block_chain"/>
-		</Unit>
-		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/block/Hash.h">
-			<Option target="block_chain"/>
-		</Unit>
 		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/block/transaction">
-			<Option target="block_chain"/>
-		</Unit>
-		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/MerkleTree.cpp">
-			<Option target="block_chain"/>
-		</Unit>
-		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/MerkleTree.h">
 			<Option target="block_chain"/>
 		</Unit>
 		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Reward.cpp">
@@ -177,10 +153,22 @@
 		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h">
 			<Option target="block_chain"/>
 		</Unit>
-		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/TransactionContainer.cpp">
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/state/Database.cpp">
 			<Option target="block_chain"/>
 		</Unit>
-		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/TransactionContainer.h">
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/state/Database.h">
+			<Option target="block_chain"/>
+		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/state/Row.cpp">
+			<Option target="block_chain"/>
+		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/state/Row.h">
+			<Option target="block_chain"/>
+		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/kernel/components/Component.cpp">
+			<Option target="block_chain"/>
+		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/kernel/components/Component.h">
 			<Option target="block_chain"/>
 		</Unit>
 		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/kernel/messages/AnswerPeersMessage.cpp">
@@ -354,27 +342,6 @@
 		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/proof/metadatas/ProofOfWorkMetadata.h">
 			<Option target="block_chain"/>
 		</Unit>
-		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/socket">
-			<Option target="block_chain"/>
-		</Unit>
-		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/socket/Peer.cpp">
-			<Option target="block_chain"/>
-		</Unit>
-		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/socket/Peer.h">
-			<Option target="block_chain"/>
-		</Unit>
-		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/socket/Socket.cpp">
-			<Option target="block_chain"/>
-		</Unit>
-		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/socket/Socket.h">
-			<Option target="block_chain"/>
-		</Unit>
-		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/socket/SocketServer.cpp">
-			<Option target="block_chain"/>
-		</Unit>
-		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/socket/SocketServer.h">
-			<Option target="block_chain"/>
-		</Unit>
 		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/utils">
 			<Option target="block_chain"/>
 		</Unit>
@@ -385,12 +352,6 @@
 			<Option target="block_chain"/>
 		</Unit>
 		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/utils/Factory.hpp">
-			<Option target="block_chain"/>
-		</Unit>
-		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/utils/RSA.cpp">
-			<Option target="block_chain"/>
-		</Unit>
-		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/utils/RSA.h">
 			<Option target="block_chain"/>
 		</Unit>
 		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/utils/serialization">
@@ -408,6 +369,12 @@
 		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp">
 			<Option target="block_chain"/>
 		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/utils/serialization/Serializer.cpp">
+			<Option target="block_chain"/>
+		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/utils/serialization/Serializer.h">
+			<Option target="block_chain"/>
+		</Unit>
 		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/utils/serialization/json">
 			<Option target="block_chain"/>
 		</Unit>
@@ -421,6 +388,27 @@
 			<Option target="block_chain"/>
 		</Unit>
 		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/utils/serialization/json/JsonParser.hpp">
+			<Option target="block_chain"/>
+		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/utils/socket">
+			<Option target="block_chain"/>
+		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/utils/socket/Peer.cpp">
+			<Option target="block_chain"/>
+		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/utils/socket/Peer.h">
+			<Option target="block_chain"/>
+		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/utils/socket/Socket.cpp">
+			<Option target="block_chain"/>
+		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/utils/socket/Socket.h">
+			<Option target="block_chain"/>
+		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/utils/socket/SocketServer.cpp">
+			<Option target="block_chain"/>
+		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/utils/socket/SocketServer.h">
 			<Option target="block_chain"/>
 		</Unit>
 		<Unit filename="/home/default/CLionProjects/block_chain/database/Row.cpp">

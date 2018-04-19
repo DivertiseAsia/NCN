@@ -1,11 +1,11 @@
 #ifndef MESSAGE_H
 #define MESSAGE_H
 
-#include"../../chain/block/Component.h"
+#include"../components/Component.h"
 #include <sstream>
 #include <fstream>
 #include "../../utils/Encoding.h"
-#include "../../chain/block/transaction/MerkleTree.h"
+#include "../../algorithm/MerkleTree.h"
 #include <functional>
 
 class Message: public Component

@@ -8,19 +8,18 @@
 #include <algorithm>
 #include <openssl/rsa.h>
 #include <openssl/pem.h>
-#include <iostream>
-#include "chain/NodeState.h"
-#include "Validator.h"
-#include "socket/SocketServer.h"
-#include "socket/Peer.h"
-#include "utils/RSA.h"
-#include "kernel/messages/Message.h"
-#include "proof/Proof.h"
-#include "TransactionManager.h"
 #include <openssl/bio.h>
 #include <openssl/err.h>
 #include <openssl/pem.h>
 #include <openssl/x509.h>
+#include <iostream>
+#include "chain/NodeState.h"
+#include "utils/socket/SocketServer.h"
+#include "utils/socket/Peer.h"
+#include "algorithm/RSA.h"
+#include "kernel/messages/Message.h"
+#include "proof/Proof.h"
+#include "TransactionManager.h"
 #include "kernel/parsers/Parser.h"
 #include "kernel/parsers/BlockAskParser.h"
 #include "kernel/parsers/BlockAnswerParser.h"
@@ -30,6 +29,10 @@
 #include "kernel/parsers/TransactionParser.h"
 #include "kernel/parsers/PeersAnswerParser.h"
 #include "kernel/parsers/PeersAskParser.h"
+#include "kernel/messages/TransactionMessage.h"
+#include "kernel/messages/BlockAskMessage.h"
+#include "kernel/messages/SignOutMessage.h"
+#include "kernel/messages/AskPeersMessage.h"
 
 class Node{
     friend class Parser;
@@ -58,7 +61,7 @@ private:
     Proof* proof;
     void store(std::string ip, int p);
     Serializer* serializer;
-    Validator validator;
+    //Validator validator;
     SocketServer server;
     NodeState block_chain;
     Peer self;

@@ -7,10 +7,10 @@
 
 
 #include <vector>
-#include "block/Hash.h"
+#include "../algorithm/Hash.h"
 #include "block/Block.h"
-#include "Database.h"
-#include "../Serializer.h"
+#include "state/Database.h"
+#include "../utils/serialization/Serializer.h"
 
 class Chain {
     friend class NodeState;
