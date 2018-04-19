@@ -7,7 +7,7 @@
 #include "../utils/RSA.h"
 #include "../socket/Peer.h"
 
-NodeState::NodeState(Serializer* s, int si, const char* e): serializer(s), size(si), chain(new Chain()), encoding(e) {
+NodeState::NodeState(Serializer* s, int si, const char* e, Reward* r): serializer(s), size(si), chain(new Chain(r)), encoding(e) {
 }
 
 Block* NodeState::create_block() const {
@@ -55,7 +55,7 @@ void NodeState::read_blocks() {
         list.pop_back();
         while (dir && (ent = readdir(dir)) != nullptr) {
             if(ent->d_name[0] != '.') {
-                std::ifstream block_file(std::string("./network/blocks/") + ent->d_name);
+                std::ifstream block_file(std::string("./network/blocks/" + d + "/") + ent->d_name);
                 std::string folder(ent->d_name);
                 folder = folder.substr(0, folder.find('.'));
                 list.emplace_back(folder);

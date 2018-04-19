@@ -41,8 +41,11 @@ Transaction* Serializer::unserializeTransaction(std::string transaction, const c
     return nullptr;
 }
 Message* Serializer::unserializeMessage(std::string message, const char* key) const {
-    auto * m = new Message();
-    m->__init__(getElement(std::move(message), key), this, key);
+    ElementObject* o = getElement(std::move(message), key);
+    int type;
+    o->getItem("type", &type);
+    Message* m = Message::generate(type);
+    m->__init__(o, this, key);
     return m;
 }
 Block* Serializer::unserializeBlock(std::string block, const char* key) const {

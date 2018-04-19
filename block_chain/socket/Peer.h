@@ -12,6 +12,13 @@
 
 class Peer {
     friend class Node;
+    friend class PeersAnswerParser;
+    friend class SignInParser;
+    friend class SignOutParser;
+    friend class TransactionParser;
+    friend class BlockParser;
+    friend class BlockAskParser;
+    friend class BlockAnswerParser;
 public:
     Peer(Serializer* s, std::string str, int c);
     void close();

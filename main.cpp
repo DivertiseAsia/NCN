@@ -7,6 +7,7 @@
 #include "transactions/StatusTransaction.h"
 #include "transactions/MessagesTransaction.h"
 #include "transactions/MoneyTransaction.h"
+#include "reward/RewardTransaction.h"
 /*
  * ls -R ./block_chain | awk '
 /:$/&&f{s=$0;f=0}
@@ -29,17 +30,19 @@ ElementObject* read_config(const char* filename, Serializer* serial, const char*
 int main() {
     //Custom block chain
     std::string encoding("json");
+
     Serializer* serial = new CustomSerializer();
     TransactionManager manager;
     manager.put(new StatusTransaction);
     manager.put(new MoneyTransaction);
     manager.put(new MessagesTransaction);
+    Reward* r = new RewardTransaction();
 
     //initialization of the block chain
     ElementObject* o = read_config("./config.json", serial, encoding.c_str());
     int port;
     o->getItem("port", &port);
-    Node client(serial, port, encoding.c_str(), Proof::WORK, true);
+    Node client(serial, port, encoding.c_str(), Proof::WORK, true, r);
     //launching the software
     client.start(manager);
     delete o;

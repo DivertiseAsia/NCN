@@ -20,6 +20,8 @@ class Block: public Component{
     friend class Node;
     friend class ProofOfWork;
     friend class Chain;
+    friend class TransactionParser;
+    friend class BlockParser;
 public:
     Block(const Serializer*, const char*);
     explicit Block(std::vector<std::pair<std::string, std::string>> transactions, Hash*, const Serializer* s, const char* e);

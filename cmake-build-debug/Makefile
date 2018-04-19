@@ -123,33 +123,6 @@ block_chain/fast:
 	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/build
 .PHONY : block_chain/fast
 
-block_chain/Message.o: block_chain/Message.cpp.o
-
-.PHONY : block_chain/Message.o
-
-# target to build an object file
-block_chain/Message.cpp.o:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/Message.cpp.o
-.PHONY : block_chain/Message.cpp.o
-
-block_chain/Message.i: block_chain/Message.cpp.i
-
-.PHONY : block_chain/Message.i
-
-# target to preprocess a source file
-block_chain/Message.cpp.i:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/Message.cpp.i
-.PHONY : block_chain/Message.cpp.i
-
-block_chain/Message.s: block_chain/Message.cpp.s
-
-.PHONY : block_chain/Message.s
-
-# target to generate assembly for a file
-block_chain/Message.cpp.s:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/Message.cpp.s
-.PHONY : block_chain/Message.cpp.s
-
 block_chain/Node.o: block_chain/Node.cpp.o
 
 .PHONY : block_chain/Node.o
@@ -474,6 +447,33 @@ block_chain/chain/block/transaction/MerkleTree.cpp.s:
 	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/MerkleTree.cpp.s
 .PHONY : block_chain/chain/block/transaction/MerkleTree.cpp.s
 
+block_chain/chain/block/transaction/Reward.o: block_chain/chain/block/transaction/Reward.cpp.o
+
+.PHONY : block_chain/chain/block/transaction/Reward.o
+
+# target to build an object file
+block_chain/chain/block/transaction/Reward.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Reward.cpp.o
+.PHONY : block_chain/chain/block/transaction/Reward.cpp.o
+
+block_chain/chain/block/transaction/Reward.i: block_chain/chain/block/transaction/Reward.cpp.i
+
+.PHONY : block_chain/chain/block/transaction/Reward.i
+
+# target to preprocess a source file
+block_chain/chain/block/transaction/Reward.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Reward.cpp.i
+.PHONY : block_chain/chain/block/transaction/Reward.cpp.i
+
+block_chain/chain/block/transaction/Reward.s: block_chain/chain/block/transaction/Reward.cpp.s
+
+.PHONY : block_chain/chain/block/transaction/Reward.s
+
+# target to generate assembly for a file
+block_chain/chain/block/transaction/Reward.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Reward.cpp.s
+.PHONY : block_chain/chain/block/transaction/Reward.cpp.s
+
 block_chain/chain/block/transaction/Transaction.o: block_chain/chain/block/transaction/Transaction.cpp.o
 
 .PHONY : block_chain/chain/block/transaction/Transaction.o
@@ -527,6 +527,492 @@ block_chain/chain/block/transaction/TransactionContainer.s: block_chain/chain/bl
 block_chain/chain/block/transaction/TransactionContainer.cpp.s:
 	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/TransactionContainer.cpp.s
 .PHONY : block_chain/chain/block/transaction/TransactionContainer.cpp.s
+
+block_chain/kernel/messages/AnswerPeersMessage.o: block_chain/kernel/messages/AnswerPeersMessage.cpp.o
+
+.PHONY : block_chain/kernel/messages/AnswerPeersMessage.o
+
+# target to build an object file
+block_chain/kernel/messages/AnswerPeersMessage.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/messages/AnswerPeersMessage.cpp.o
+.PHONY : block_chain/kernel/messages/AnswerPeersMessage.cpp.o
+
+block_chain/kernel/messages/AnswerPeersMessage.i: block_chain/kernel/messages/AnswerPeersMessage.cpp.i
+
+.PHONY : block_chain/kernel/messages/AnswerPeersMessage.i
+
+# target to preprocess a source file
+block_chain/kernel/messages/AnswerPeersMessage.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/messages/AnswerPeersMessage.cpp.i
+.PHONY : block_chain/kernel/messages/AnswerPeersMessage.cpp.i
+
+block_chain/kernel/messages/AnswerPeersMessage.s: block_chain/kernel/messages/AnswerPeersMessage.cpp.s
+
+.PHONY : block_chain/kernel/messages/AnswerPeersMessage.s
+
+# target to generate assembly for a file
+block_chain/kernel/messages/AnswerPeersMessage.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/messages/AnswerPeersMessage.cpp.s
+.PHONY : block_chain/kernel/messages/AnswerPeersMessage.cpp.s
+
+block_chain/kernel/messages/AskPeersMessage.o: block_chain/kernel/messages/AskPeersMessage.cpp.o
+
+.PHONY : block_chain/kernel/messages/AskPeersMessage.o
+
+# target to build an object file
+block_chain/kernel/messages/AskPeersMessage.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/messages/AskPeersMessage.cpp.o
+.PHONY : block_chain/kernel/messages/AskPeersMessage.cpp.o
+
+block_chain/kernel/messages/AskPeersMessage.i: block_chain/kernel/messages/AskPeersMessage.cpp.i
+
+.PHONY : block_chain/kernel/messages/AskPeersMessage.i
+
+# target to preprocess a source file
+block_chain/kernel/messages/AskPeersMessage.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/messages/AskPeersMessage.cpp.i
+.PHONY : block_chain/kernel/messages/AskPeersMessage.cpp.i
+
+block_chain/kernel/messages/AskPeersMessage.s: block_chain/kernel/messages/AskPeersMessage.cpp.s
+
+.PHONY : block_chain/kernel/messages/AskPeersMessage.s
+
+# target to generate assembly for a file
+block_chain/kernel/messages/AskPeersMessage.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/messages/AskPeersMessage.cpp.s
+.PHONY : block_chain/kernel/messages/AskPeersMessage.cpp.s
+
+block_chain/kernel/messages/BlockAnswerMessage.o: block_chain/kernel/messages/BlockAnswerMessage.cpp.o
+
+.PHONY : block_chain/kernel/messages/BlockAnswerMessage.o
+
+# target to build an object file
+block_chain/kernel/messages/BlockAnswerMessage.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/messages/BlockAnswerMessage.cpp.o
+.PHONY : block_chain/kernel/messages/BlockAnswerMessage.cpp.o
+
+block_chain/kernel/messages/BlockAnswerMessage.i: block_chain/kernel/messages/BlockAnswerMessage.cpp.i
+
+.PHONY : block_chain/kernel/messages/BlockAnswerMessage.i
+
+# target to preprocess a source file
+block_chain/kernel/messages/BlockAnswerMessage.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/messages/BlockAnswerMessage.cpp.i
+.PHONY : block_chain/kernel/messages/BlockAnswerMessage.cpp.i
+
+block_chain/kernel/messages/BlockAnswerMessage.s: block_chain/kernel/messages/BlockAnswerMessage.cpp.s
+
+.PHONY : block_chain/kernel/messages/BlockAnswerMessage.s
+
+# target to generate assembly for a file
+block_chain/kernel/messages/BlockAnswerMessage.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/messages/BlockAnswerMessage.cpp.s
+.PHONY : block_chain/kernel/messages/BlockAnswerMessage.cpp.s
+
+block_chain/kernel/messages/BlockAskMessage.o: block_chain/kernel/messages/BlockAskMessage.cpp.o
+
+.PHONY : block_chain/kernel/messages/BlockAskMessage.o
+
+# target to build an object file
+block_chain/kernel/messages/BlockAskMessage.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/messages/BlockAskMessage.cpp.o
+.PHONY : block_chain/kernel/messages/BlockAskMessage.cpp.o
+
+block_chain/kernel/messages/BlockAskMessage.i: block_chain/kernel/messages/BlockAskMessage.cpp.i
+
+.PHONY : block_chain/kernel/messages/BlockAskMessage.i
+
+# target to preprocess a source file
+block_chain/kernel/messages/BlockAskMessage.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/messages/BlockAskMessage.cpp.i
+.PHONY : block_chain/kernel/messages/BlockAskMessage.cpp.i
+
+block_chain/kernel/messages/BlockAskMessage.s: block_chain/kernel/messages/BlockAskMessage.cpp.s
+
+.PHONY : block_chain/kernel/messages/BlockAskMessage.s
+
+# target to generate assembly for a file
+block_chain/kernel/messages/BlockAskMessage.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/messages/BlockAskMessage.cpp.s
+.PHONY : block_chain/kernel/messages/BlockAskMessage.cpp.s
+
+block_chain/kernel/messages/BlockMessage.o: block_chain/kernel/messages/BlockMessage.cpp.o
+
+.PHONY : block_chain/kernel/messages/BlockMessage.o
+
+# target to build an object file
+block_chain/kernel/messages/BlockMessage.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/messages/BlockMessage.cpp.o
+.PHONY : block_chain/kernel/messages/BlockMessage.cpp.o
+
+block_chain/kernel/messages/BlockMessage.i: block_chain/kernel/messages/BlockMessage.cpp.i
+
+.PHONY : block_chain/kernel/messages/BlockMessage.i
+
+# target to preprocess a source file
+block_chain/kernel/messages/BlockMessage.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/messages/BlockMessage.cpp.i
+.PHONY : block_chain/kernel/messages/BlockMessage.cpp.i
+
+block_chain/kernel/messages/BlockMessage.s: block_chain/kernel/messages/BlockMessage.cpp.s
+
+.PHONY : block_chain/kernel/messages/BlockMessage.s
+
+# target to generate assembly for a file
+block_chain/kernel/messages/BlockMessage.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/messages/BlockMessage.cpp.s
+.PHONY : block_chain/kernel/messages/BlockMessage.cpp.s
+
+block_chain/kernel/messages/Message.o: block_chain/kernel/messages/Message.cpp.o
+
+.PHONY : block_chain/kernel/messages/Message.o
+
+# target to build an object file
+block_chain/kernel/messages/Message.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/messages/Message.cpp.o
+.PHONY : block_chain/kernel/messages/Message.cpp.o
+
+block_chain/kernel/messages/Message.i: block_chain/kernel/messages/Message.cpp.i
+
+.PHONY : block_chain/kernel/messages/Message.i
+
+# target to preprocess a source file
+block_chain/kernel/messages/Message.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/messages/Message.cpp.i
+.PHONY : block_chain/kernel/messages/Message.cpp.i
+
+block_chain/kernel/messages/Message.s: block_chain/kernel/messages/Message.cpp.s
+
+.PHONY : block_chain/kernel/messages/Message.s
+
+# target to generate assembly for a file
+block_chain/kernel/messages/Message.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/messages/Message.cpp.s
+.PHONY : block_chain/kernel/messages/Message.cpp.s
+
+block_chain/kernel/messages/SignInMessage.o: block_chain/kernel/messages/SignInMessage.cpp.o
+
+.PHONY : block_chain/kernel/messages/SignInMessage.o
+
+# target to build an object file
+block_chain/kernel/messages/SignInMessage.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/messages/SignInMessage.cpp.o
+.PHONY : block_chain/kernel/messages/SignInMessage.cpp.o
+
+block_chain/kernel/messages/SignInMessage.i: block_chain/kernel/messages/SignInMessage.cpp.i
+
+.PHONY : block_chain/kernel/messages/SignInMessage.i
+
+# target to preprocess a source file
+block_chain/kernel/messages/SignInMessage.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/messages/SignInMessage.cpp.i
+.PHONY : block_chain/kernel/messages/SignInMessage.cpp.i
+
+block_chain/kernel/messages/SignInMessage.s: block_chain/kernel/messages/SignInMessage.cpp.s
+
+.PHONY : block_chain/kernel/messages/SignInMessage.s
+
+# target to generate assembly for a file
+block_chain/kernel/messages/SignInMessage.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/messages/SignInMessage.cpp.s
+.PHONY : block_chain/kernel/messages/SignInMessage.cpp.s
+
+block_chain/kernel/messages/SignMessage.o: block_chain/kernel/messages/SignMessage.cpp.o
+
+.PHONY : block_chain/kernel/messages/SignMessage.o
+
+# target to build an object file
+block_chain/kernel/messages/SignMessage.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/messages/SignMessage.cpp.o
+.PHONY : block_chain/kernel/messages/SignMessage.cpp.o
+
+block_chain/kernel/messages/SignMessage.i: block_chain/kernel/messages/SignMessage.cpp.i
+
+.PHONY : block_chain/kernel/messages/SignMessage.i
+
+# target to preprocess a source file
+block_chain/kernel/messages/SignMessage.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/messages/SignMessage.cpp.i
+.PHONY : block_chain/kernel/messages/SignMessage.cpp.i
+
+block_chain/kernel/messages/SignMessage.s: block_chain/kernel/messages/SignMessage.cpp.s
+
+.PHONY : block_chain/kernel/messages/SignMessage.s
+
+# target to generate assembly for a file
+block_chain/kernel/messages/SignMessage.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/messages/SignMessage.cpp.s
+.PHONY : block_chain/kernel/messages/SignMessage.cpp.s
+
+block_chain/kernel/messages/SignOutMessage.o: block_chain/kernel/messages/SignOutMessage.cpp.o
+
+.PHONY : block_chain/kernel/messages/SignOutMessage.o
+
+# target to build an object file
+block_chain/kernel/messages/SignOutMessage.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/messages/SignOutMessage.cpp.o
+.PHONY : block_chain/kernel/messages/SignOutMessage.cpp.o
+
+block_chain/kernel/messages/SignOutMessage.i: block_chain/kernel/messages/SignOutMessage.cpp.i
+
+.PHONY : block_chain/kernel/messages/SignOutMessage.i
+
+# target to preprocess a source file
+block_chain/kernel/messages/SignOutMessage.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/messages/SignOutMessage.cpp.i
+.PHONY : block_chain/kernel/messages/SignOutMessage.cpp.i
+
+block_chain/kernel/messages/SignOutMessage.s: block_chain/kernel/messages/SignOutMessage.cpp.s
+
+.PHONY : block_chain/kernel/messages/SignOutMessage.s
+
+# target to generate assembly for a file
+block_chain/kernel/messages/SignOutMessage.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/messages/SignOutMessage.cpp.s
+.PHONY : block_chain/kernel/messages/SignOutMessage.cpp.s
+
+block_chain/kernel/messages/TransactionMessage.o: block_chain/kernel/messages/TransactionMessage.cpp.o
+
+.PHONY : block_chain/kernel/messages/TransactionMessage.o
+
+# target to build an object file
+block_chain/kernel/messages/TransactionMessage.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/messages/TransactionMessage.cpp.o
+.PHONY : block_chain/kernel/messages/TransactionMessage.cpp.o
+
+block_chain/kernel/messages/TransactionMessage.i: block_chain/kernel/messages/TransactionMessage.cpp.i
+
+.PHONY : block_chain/kernel/messages/TransactionMessage.i
+
+# target to preprocess a source file
+block_chain/kernel/messages/TransactionMessage.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/messages/TransactionMessage.cpp.i
+.PHONY : block_chain/kernel/messages/TransactionMessage.cpp.i
+
+block_chain/kernel/messages/TransactionMessage.s: block_chain/kernel/messages/TransactionMessage.cpp.s
+
+.PHONY : block_chain/kernel/messages/TransactionMessage.s
+
+# target to generate assembly for a file
+block_chain/kernel/messages/TransactionMessage.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/messages/TransactionMessage.cpp.s
+.PHONY : block_chain/kernel/messages/TransactionMessage.cpp.s
+
+block_chain/kernel/parsers/BlockAnswerParser.o: block_chain/kernel/parsers/BlockAnswerParser.cpp.o
+
+.PHONY : block_chain/kernel/parsers/BlockAnswerParser.o
+
+# target to build an object file
+block_chain/kernel/parsers/BlockAnswerParser.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAnswerParser.cpp.o
+.PHONY : block_chain/kernel/parsers/BlockAnswerParser.cpp.o
+
+block_chain/kernel/parsers/BlockAnswerParser.i: block_chain/kernel/parsers/BlockAnswerParser.cpp.i
+
+.PHONY : block_chain/kernel/parsers/BlockAnswerParser.i
+
+# target to preprocess a source file
+block_chain/kernel/parsers/BlockAnswerParser.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAnswerParser.cpp.i
+.PHONY : block_chain/kernel/parsers/BlockAnswerParser.cpp.i
+
+block_chain/kernel/parsers/BlockAnswerParser.s: block_chain/kernel/parsers/BlockAnswerParser.cpp.s
+
+.PHONY : block_chain/kernel/parsers/BlockAnswerParser.s
+
+# target to generate assembly for a file
+block_chain/kernel/parsers/BlockAnswerParser.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAnswerParser.cpp.s
+.PHONY : block_chain/kernel/parsers/BlockAnswerParser.cpp.s
+
+block_chain/kernel/parsers/BlockAskParser.o: block_chain/kernel/parsers/BlockAskParser.cpp.o
+
+.PHONY : block_chain/kernel/parsers/BlockAskParser.o
+
+# target to build an object file
+block_chain/kernel/parsers/BlockAskParser.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAskParser.cpp.o
+.PHONY : block_chain/kernel/parsers/BlockAskParser.cpp.o
+
+block_chain/kernel/parsers/BlockAskParser.i: block_chain/kernel/parsers/BlockAskParser.cpp.i
+
+.PHONY : block_chain/kernel/parsers/BlockAskParser.i
+
+# target to preprocess a source file
+block_chain/kernel/parsers/BlockAskParser.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAskParser.cpp.i
+.PHONY : block_chain/kernel/parsers/BlockAskParser.cpp.i
+
+block_chain/kernel/parsers/BlockAskParser.s: block_chain/kernel/parsers/BlockAskParser.cpp.s
+
+.PHONY : block_chain/kernel/parsers/BlockAskParser.s
+
+# target to generate assembly for a file
+block_chain/kernel/parsers/BlockAskParser.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAskParser.cpp.s
+.PHONY : block_chain/kernel/parsers/BlockAskParser.cpp.s
+
+block_chain/kernel/parsers/BlockParser.o: block_chain/kernel/parsers/BlockParser.cpp.o
+
+.PHONY : block_chain/kernel/parsers/BlockParser.o
+
+# target to build an object file
+block_chain/kernel/parsers/BlockParser.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockParser.cpp.o
+.PHONY : block_chain/kernel/parsers/BlockParser.cpp.o
+
+block_chain/kernel/parsers/BlockParser.i: block_chain/kernel/parsers/BlockParser.cpp.i
+
+.PHONY : block_chain/kernel/parsers/BlockParser.i
+
+# target to preprocess a source file
+block_chain/kernel/parsers/BlockParser.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockParser.cpp.i
+.PHONY : block_chain/kernel/parsers/BlockParser.cpp.i
+
+block_chain/kernel/parsers/BlockParser.s: block_chain/kernel/parsers/BlockParser.cpp.s
+
+.PHONY : block_chain/kernel/parsers/BlockParser.s
+
+# target to generate assembly for a file
+block_chain/kernel/parsers/BlockParser.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockParser.cpp.s
+.PHONY : block_chain/kernel/parsers/BlockParser.cpp.s
+
+block_chain/kernel/parsers/PeersAnswerParser.o: block_chain/kernel/parsers/PeersAnswerParser.cpp.o
+
+.PHONY : block_chain/kernel/parsers/PeersAnswerParser.o
+
+# target to build an object file
+block_chain/kernel/parsers/PeersAnswerParser.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAnswerParser.cpp.o
+.PHONY : block_chain/kernel/parsers/PeersAnswerParser.cpp.o
+
+block_chain/kernel/parsers/PeersAnswerParser.i: block_chain/kernel/parsers/PeersAnswerParser.cpp.i
+
+.PHONY : block_chain/kernel/parsers/PeersAnswerParser.i
+
+# target to preprocess a source file
+block_chain/kernel/parsers/PeersAnswerParser.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAnswerParser.cpp.i
+.PHONY : block_chain/kernel/parsers/PeersAnswerParser.cpp.i
+
+block_chain/kernel/parsers/PeersAnswerParser.s: block_chain/kernel/parsers/PeersAnswerParser.cpp.s
+
+.PHONY : block_chain/kernel/parsers/PeersAnswerParser.s
+
+# target to generate assembly for a file
+block_chain/kernel/parsers/PeersAnswerParser.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAnswerParser.cpp.s
+.PHONY : block_chain/kernel/parsers/PeersAnswerParser.cpp.s
+
+block_chain/kernel/parsers/PeersAskParser.o: block_chain/kernel/parsers/PeersAskParser.cpp.o
+
+.PHONY : block_chain/kernel/parsers/PeersAskParser.o
+
+# target to build an object file
+block_chain/kernel/parsers/PeersAskParser.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAskParser.cpp.o
+.PHONY : block_chain/kernel/parsers/PeersAskParser.cpp.o
+
+block_chain/kernel/parsers/PeersAskParser.i: block_chain/kernel/parsers/PeersAskParser.cpp.i
+
+.PHONY : block_chain/kernel/parsers/PeersAskParser.i
+
+# target to preprocess a source file
+block_chain/kernel/parsers/PeersAskParser.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAskParser.cpp.i
+.PHONY : block_chain/kernel/parsers/PeersAskParser.cpp.i
+
+block_chain/kernel/parsers/PeersAskParser.s: block_chain/kernel/parsers/PeersAskParser.cpp.s
+
+.PHONY : block_chain/kernel/parsers/PeersAskParser.s
+
+# target to generate assembly for a file
+block_chain/kernel/parsers/PeersAskParser.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAskParser.cpp.s
+.PHONY : block_chain/kernel/parsers/PeersAskParser.cpp.s
+
+block_chain/kernel/parsers/SignInParser.o: block_chain/kernel/parsers/SignInParser.cpp.o
+
+.PHONY : block_chain/kernel/parsers/SignInParser.o
+
+# target to build an object file
+block_chain/kernel/parsers/SignInParser.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignInParser.cpp.o
+.PHONY : block_chain/kernel/parsers/SignInParser.cpp.o
+
+block_chain/kernel/parsers/SignInParser.i: block_chain/kernel/parsers/SignInParser.cpp.i
+
+.PHONY : block_chain/kernel/parsers/SignInParser.i
+
+# target to preprocess a source file
+block_chain/kernel/parsers/SignInParser.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignInParser.cpp.i
+.PHONY : block_chain/kernel/parsers/SignInParser.cpp.i
+
+block_chain/kernel/parsers/SignInParser.s: block_chain/kernel/parsers/SignInParser.cpp.s
+
+.PHONY : block_chain/kernel/parsers/SignInParser.s
+
+# target to generate assembly for a file
+block_chain/kernel/parsers/SignInParser.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignInParser.cpp.s
+.PHONY : block_chain/kernel/parsers/SignInParser.cpp.s
+
+block_chain/kernel/parsers/SignOutParser.o: block_chain/kernel/parsers/SignOutParser.cpp.o
+
+.PHONY : block_chain/kernel/parsers/SignOutParser.o
+
+# target to build an object file
+block_chain/kernel/parsers/SignOutParser.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignOutParser.cpp.o
+.PHONY : block_chain/kernel/parsers/SignOutParser.cpp.o
+
+block_chain/kernel/parsers/SignOutParser.i: block_chain/kernel/parsers/SignOutParser.cpp.i
+
+.PHONY : block_chain/kernel/parsers/SignOutParser.i
+
+# target to preprocess a source file
+block_chain/kernel/parsers/SignOutParser.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignOutParser.cpp.i
+.PHONY : block_chain/kernel/parsers/SignOutParser.cpp.i
+
+block_chain/kernel/parsers/SignOutParser.s: block_chain/kernel/parsers/SignOutParser.cpp.s
+
+.PHONY : block_chain/kernel/parsers/SignOutParser.s
+
+# target to generate assembly for a file
+block_chain/kernel/parsers/SignOutParser.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignOutParser.cpp.s
+.PHONY : block_chain/kernel/parsers/SignOutParser.cpp.s
+
+block_chain/kernel/parsers/TransactionParser.o: block_chain/kernel/parsers/TransactionParser.cpp.o
+
+.PHONY : block_chain/kernel/parsers/TransactionParser.o
+
+# target to build an object file
+block_chain/kernel/parsers/TransactionParser.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/parsers/TransactionParser.cpp.o
+.PHONY : block_chain/kernel/parsers/TransactionParser.cpp.o
+
+block_chain/kernel/parsers/TransactionParser.i: block_chain/kernel/parsers/TransactionParser.cpp.i
+
+.PHONY : block_chain/kernel/parsers/TransactionParser.i
+
+# target to preprocess a source file
+block_chain/kernel/parsers/TransactionParser.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/parsers/TransactionParser.cpp.i
+.PHONY : block_chain/kernel/parsers/TransactionParser.cpp.i
+
+block_chain/kernel/parsers/TransactionParser.s: block_chain/kernel/parsers/TransactionParser.cpp.s
+
+.PHONY : block_chain/kernel/parsers/TransactionParser.s
+
+# target to generate assembly for a file
+block_chain/kernel/parsers/TransactionParser.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/parsers/TransactionParser.cpp.s
+.PHONY : block_chain/kernel/parsers/TransactionParser.cpp.s
 
 block_chain/proof/Proof.o: block_chain/proof/Proof.cpp.o
 
@@ -1095,6 +1581,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+reward/RewardTransaction.o: reward/RewardTransaction.cpp.o
+
+.PHONY : reward/RewardTransaction.o
+
+# target to build an object file
+reward/RewardTransaction.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/reward/RewardTransaction.cpp.o
+.PHONY : reward/RewardTransaction.cpp.o
+
+reward/RewardTransaction.i: reward/RewardTransaction.cpp.i
+
+.PHONY : reward/RewardTransaction.i
+
+# target to preprocess a source file
+reward/RewardTransaction.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/reward/RewardTransaction.cpp.i
+.PHONY : reward/RewardTransaction.cpp.i
+
+reward/RewardTransaction.s: reward/RewardTransaction.cpp.s
+
+.PHONY : reward/RewardTransaction.s
+
+# target to generate assembly for a file
+reward/RewardTransaction.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/reward/RewardTransaction.cpp.s
+.PHONY : reward/RewardTransaction.cpp.s
+
 serializer/CustomSerializer.o: serializer/CustomSerializer.cpp.o
 
 .PHONY : serializer/CustomSerializer.o
@@ -1212,9 +1725,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... block_chain"
-	@echo "... block_chain/Message.o"
-	@echo "... block_chain/Message.i"
-	@echo "... block_chain/Message.s"
 	@echo "... block_chain/Node.o"
 	@echo "... block_chain/Node.i"
 	@echo "... block_chain/Node.s"
@@ -1251,12 +1761,69 @@ help:
 	@echo "... block_chain/chain/block/transaction/MerkleTree.o"
 	@echo "... block_chain/chain/block/transaction/MerkleTree.i"
 	@echo "... block_chain/chain/block/transaction/MerkleTree.s"
+	@echo "... block_chain/chain/block/transaction/Reward.o"
+	@echo "... block_chain/chain/block/transaction/Reward.i"
+	@echo "... block_chain/chain/block/transaction/Reward.s"
 	@echo "... block_chain/chain/block/transaction/Transaction.o"
 	@echo "... block_chain/chain/block/transaction/Transaction.i"
 	@echo "... block_chain/chain/block/transaction/Transaction.s"
 	@echo "... block_chain/chain/block/transaction/TransactionContainer.o"
 	@echo "... block_chain/chain/block/transaction/TransactionContainer.i"
 	@echo "... block_chain/chain/block/transaction/TransactionContainer.s"
+	@echo "... block_chain/kernel/messages/AnswerPeersMessage.o"
+	@echo "... block_chain/kernel/messages/AnswerPeersMessage.i"
+	@echo "... block_chain/kernel/messages/AnswerPeersMessage.s"
+	@echo "... block_chain/kernel/messages/AskPeersMessage.o"
+	@echo "... block_chain/kernel/messages/AskPeersMessage.i"
+	@echo "... block_chain/kernel/messages/AskPeersMessage.s"
+	@echo "... block_chain/kernel/messages/BlockAnswerMessage.o"
+	@echo "... block_chain/kernel/messages/BlockAnswerMessage.i"
+	@echo "... block_chain/kernel/messages/BlockAnswerMessage.s"
+	@echo "... block_chain/kernel/messages/BlockAskMessage.o"
+	@echo "... block_chain/kernel/messages/BlockAskMessage.i"
+	@echo "... block_chain/kernel/messages/BlockAskMessage.s"
+	@echo "... block_chain/kernel/messages/BlockMessage.o"
+	@echo "... block_chain/kernel/messages/BlockMessage.i"
+	@echo "... block_chain/kernel/messages/BlockMessage.s"
+	@echo "... block_chain/kernel/messages/Message.o"
+	@echo "... block_chain/kernel/messages/Message.i"
+	@echo "... block_chain/kernel/messages/Message.s"
+	@echo "... block_chain/kernel/messages/SignInMessage.o"
+	@echo "... block_chain/kernel/messages/SignInMessage.i"
+	@echo "... block_chain/kernel/messages/SignInMessage.s"
+	@echo "... block_chain/kernel/messages/SignMessage.o"
+	@echo "... block_chain/kernel/messages/SignMessage.i"
+	@echo "... block_chain/kernel/messages/SignMessage.s"
+	@echo "... block_chain/kernel/messages/SignOutMessage.o"
+	@echo "... block_chain/kernel/messages/SignOutMessage.i"
+	@echo "... block_chain/kernel/messages/SignOutMessage.s"
+	@echo "... block_chain/kernel/messages/TransactionMessage.o"
+	@echo "... block_chain/kernel/messages/TransactionMessage.i"
+	@echo "... block_chain/kernel/messages/TransactionMessage.s"
+	@echo "... block_chain/kernel/parsers/BlockAnswerParser.o"
+	@echo "... block_chain/kernel/parsers/BlockAnswerParser.i"
+	@echo "... block_chain/kernel/parsers/BlockAnswerParser.s"
+	@echo "... block_chain/kernel/parsers/BlockAskParser.o"
+	@echo "... block_chain/kernel/parsers/BlockAskParser.i"
+	@echo "... block_chain/kernel/parsers/BlockAskParser.s"
+	@echo "... block_chain/kernel/parsers/BlockParser.o"
+	@echo "... block_chain/kernel/parsers/BlockParser.i"
+	@echo "... block_chain/kernel/parsers/BlockParser.s"
+	@echo "... block_chain/kernel/parsers/PeersAnswerParser.o"
+	@echo "... block_chain/kernel/parsers/PeersAnswerParser.i"
+	@echo "... block_chain/kernel/parsers/PeersAnswerParser.s"
+	@echo "... block_chain/kernel/parsers/PeersAskParser.o"
+	@echo "... block_chain/kernel/parsers/PeersAskParser.i"
+	@echo "... block_chain/kernel/parsers/PeersAskParser.s"
+	@echo "... block_chain/kernel/parsers/SignInParser.o"
+	@echo "... block_chain/kernel/parsers/SignInParser.i"
+	@echo "... block_chain/kernel/parsers/SignInParser.s"
+	@echo "... block_chain/kernel/parsers/SignOutParser.o"
+	@echo "... block_chain/kernel/parsers/SignOutParser.i"
+	@echo "... block_chain/kernel/parsers/SignOutParser.s"
+	@echo "... block_chain/kernel/parsers/TransactionParser.o"
+	@echo "... block_chain/kernel/parsers/TransactionParser.i"
+	@echo "... block_chain/kernel/parsers/TransactionParser.s"
 	@echo "... block_chain/proof/Proof.o"
 	@echo "... block_chain/proof/Proof.i"
 	@echo "... block_chain/proof/Proof.s"
@@ -1320,6 +1887,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... reward/RewardTransaction.o"
+	@echo "... reward/RewardTransaction.i"
+	@echo "... reward/RewardTransaction.s"
 	@echo "... serializer/CustomSerializer.o"
 	@echo "... serializer/CustomSerializer.i"
 	@echo "... serializer/CustomSerializer.s"

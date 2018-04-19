@@ -3,11 +3,16 @@
 //
 
 #include "Node.h"
+#include "kernel/messages/TransactionMessage.h"
+#include "kernel/messages/BlockAskMessage.h"
+#include "kernel/messages/SignOutMessage.h"
+#include "kernel/messages/AskPeersMessage.h"
 
 void run(SocketServer* server, Serializer* serializer, Node* node) {
     server->run(Node::defaultCallback, serializer, node);
 }
-Node::Node(Serializer* s, int p, const char* e, int pr, bool d): queue(0), serializer(s), encoding(e), proof(Proof::generate(pr)), validator(serializer, encoding.c_str()), block_chain(s, 1), server(p), running(run, &server, s, this), self(serializer, Socket::getIP(), p), debug(d) {
+Node::Node(Serializer* s, int p, const char* e, int pr, bool d, Reward* r): queue(0), serializer(s), encoding(e), proof(Proof::generate(pr)), validator(serializer, encoding.c_str()), block_chain(s, 1, encoding.c_str(), r), server(p), running(run, &server, s, this), self(serializer, Socket::getIP(), p), debug(d) {
+    init_parsers();
     OpenSSL_add_all_algorithms();
     ERR_load_BIO_strings();
     ERR_load_crypto_strings();
@@ -15,6 +20,17 @@ Node::Node(Serializer* s, int p, const char* e, int pr, bool d): queue(0), seria
         rsa.generate("./network/private.pem", "./network/public.pem");
     store(Socket::getIP(), p);
     block_chain.read_blocks();
+}
+
+void Node::init_parsers(){
+    add_parser(new BlockAnswerParser);
+    add_parser(new BlockAskParser);
+    add_parser(new PeersAnswerParser);
+    add_parser(new PeersAskParser);
+    add_parser(new SignInParser);
+    add_parser(new SignOutParser);
+    add_parser(new TransactionParser);
+    add_parser(new BlockParser);
 }
 
 Node::~Node(){
@@ -31,22 +47,8 @@ Node::~Node(){
     std::cout<< "Connection closed" <<std::endl;
 }
 
-void Node::load(std::string l){
-    Message message(self.to_string(), "", "", nullptr, Message::SIGN_IN);
-    char* m = serializer->serialize(&message, encoding.c_str());
-    std::istringstream list(l);
-    std::string line;
-    while (std::getline (list, line)) {
-        unsigned long index = line.find(':');
-        std::string ip = line.substr(0, index);
-        int port = atoi(line.substr(index+1).c_str());
-        if(ip != self._ip || port != self._port) {
-            Peer peer(serializer, ip, port);
-            peers.emplace_back(peer);
-            peer.send(Encoding::toHexa(std::string(m)).c_str());
-        }
-    }
-    free(m);
+void Node::add_parser(Parser* p){
+    parsers[p->get_type()] = p;
 }
 
 void Node::store(std::string _ip, int _p){
@@ -55,7 +57,7 @@ void Node::store(std::string _ip, int _p){
     peers_file.open("./network/network.nfo", std::ifstream::in);
     if(peers_file.is_open()){
         std::string line;
-        Message message(self.to_string(), "", "", nullptr, Message::ASK_PEERS);
+        AskPeersMessage message(self.to_string());
         char* m = serializer->serialize(&message, encoding.c_str());
         while (std::getline (peers_file, line)) {
             unsigned long index = line.find(':');
@@ -76,7 +78,7 @@ void Node::store(std::string _ip, int _p){
         block_chain.read_blocks();
 }
 void Node::close(){
-    Message message(self.to_string(), "", "", nullptr, Message::SIGN_OUT);
+    SignOutMessage message(self.to_string());
     char* m = serializer->serialize(&message, encoding.c_str());
     for (auto &peer : peers)
         peer.send(Encoding::toHexa(std::string(m)).c_str());
@@ -88,7 +90,7 @@ void Node::request_transaction(Transaction* transaction){
         std::cout << "\033[1;34m[INFO] Transaction requested by " << self._ip << ":" << self._port<<"\033[0m\n";
     MerkleTree tree(transaction, serializer, encoding.c_str());
     const char* serialized = serializer->serialize(transaction, encoding.c_str());
-    Message message(serialized, rsa.encrypt(serialized), rsa.getPublicKey(), &tree, Message::TRANSACTION);
+    TransactionMessage message(serialized, rsa.encrypt(serialized), rsa.getPublicKey(), &tree);
     char* m = serializer->serialize(&message, encoding.c_str());
     Encoding::toHexa(std::string(m));
     for (auto &peer : peers)
@@ -97,45 +99,14 @@ void Node::request_transaction(Transaction* transaction){
     free(m);
 }
 
-bool Node::operator()(Transaction* transaction, Message* message) {
-    if(debug)
-        std::cout << "\033[1;32m[INFO] Transaction computed by " << self._ip << ":" << self._port<<"\033[0m\n";
-    bool valid = (*message->tree->value == *transaction->__hash__(serializer, encoding.c_str()) && block_chain.check_transaction(transaction, message->public_key));
-    if(valid) {
-        Block *block = block_chain.add(message->cipher, Encoding::toHexa(message->public_key));
-        if(block != nullptr){
-            queue++;
-            proof->run(block, message);
-            block->update_fingerprint();
-            std::vector<Transaction*> transactions;
-            for(auto& t : block->transactions){
-                std::string cipher(Encoding::fromHexa(t.first));
-                RSA_Cryptography crypto(Encoding::fromHexa(t.second));
-                transactions.emplace_back(serializer->unserializeTransaction(crypto.decrypt(cipher, cipher.size()), encoding.c_str()));
-            }
-            std::string serialized_block(serializer->serialize(block, encoding.c_str()));
-            MerkleTree tree(transactions, serializer, encoding.c_str());
-            Message answer(serialized_block, "",rsa.getPublicKey()/*rsa.encrypt(serialized_block), */, &tree, Message::BLOCK);
-            char* m = serializer->serialize(&answer, encoding.c_str());
-            if(queue > 0) {
-                for (auto &peer : peers)
-                    peer.send(Encoding::toHexa(std::string(m)).c_str());
-                std::cout << "Generated: " << block->fingerprint->hash << std::endl;
-                self.send(Encoding::toHexa(std::string(m)).c_str());
-            }
-            free(m);
-        }
-    }
-    return valid;
-}
-
 int Node::load(Block *pBlock) {
     if(!block_chain.get(pBlock->parent_fingerprint)){
         if(!peers.empty()) {
             srand(time(NULL));
-            Message answer(self.to_string(), pBlock->parent_fingerprint->hash, ""/*rsa.encrypt(serialized_block), */, nullptr, Message::ASK_BLOCK);
+            BlockAskMessage answer(self.to_string(), pBlock->parent_fingerprint->hash);
             char* m = serializer->serialize(&answer, encoding.c_str());
-            peers[rand() % peers.size()].send(m);
+            int index = (int) (rand() % peers.size());
+            peers[index].send(Encoding::toHexa(m).c_str());
             waiting.emplace(waiting.begin(), pBlock);
             free(m);
         }
@@ -144,152 +115,14 @@ int Node::load(Block *pBlock) {
     return 1;
 }
 
-bool Node::operator()(Block* block, Message* message) {
-    if(debug)
-        std::cout << "\033[1;32m[INFO] Block computed by " << self._ip << ":" << self._port<<"\033[0m\n";
-    if(load(block) && validator(block))
-    {
-        if(debug)
-            std::cout << "\033[1;32m[INFO] Block accepted\033[0m\n";
-        if(proof->accept(block, message)) {
-            int i = 0;
-            for (auto &t : block->transactions) {
-                std::string cipher(Encoding::fromHexa(t.first));
-                RSA_Cryptography crypto(Encoding::fromHexa(t.second));
-                Transaction *transaction = serializer->unserializeTransaction(crypto.decrypt(cipher, cipher.size()), encoding.c_str());
-                bool valid = *message->tree->get_hash(i) == *transaction->__hash__(serializer, encoding.c_str());
-                if (!valid)
-                    return false;
-                i++;
-            }
-            if(debug)
-                std::cout << "\033[1;32m[INFO] New Block\033[0m\n";
-            queue--;
-            std::cout << "Received: " << block->fingerprint->hash << std::endl;
-            if(queue < 0)
-                queue = 0;
-            block_chain.add(block);
-            return true;
-        }
-        else if(debug)
-            std::cout << "\033[1;32m[INFO] Invalid proof\033[0m\n";
-    }
-    else if(debug)
-        std::cout << "\033[1;32m[INFO] Invalid validator\033[0m\n";
-    return false;
-}
-
-bool Node::operator()(Message*) {
-    bool valid = true;
-    return valid;
-}
-
-void Node::parseAnswerBlock(Message* message) {
-    if(debug)
-        std::cout << "\033[1;34m[INFO] Block Received by " << self._ip << ":" << self._port<<"\033[0m\n";
-    Block *b(serializer->unserializeBlock(message->plain_text, encoding.c_str()));
-    if (load(b)) {
-        for (auto &a : waiting)
-            block_chain.add(a);
-        waiting.clear();
-    }
-}
-
-void Node::parseAskBlock(Message* message){
-    unsigned long index = message->plain_text.find(':');
-    std::string ip = message->plain_text.substr(0, index);
-    int port = atoi(message->plain_text.substr(index+1).c_str());
-    if(debug)
-        std::cout << "\033[1;34m[INFO] Block "<< Encoding::fromHexa(message->cipher) << " asked by " << self._ip << ":" << self._port<<"\033[0m\n";
-    std::string hash = Encoding::fromHexa(message->cipher);
-    Block* b = block_chain.get(hash);
-    std::string serialized_block(serializer->serialize(b, encoding.c_str()));
-    Message answer(serialized_block, "", "", nullptr, Message::ANSWER_BLOCK);
-    char* m = serializer->serialize(&answer, encoding.c_str());
-    Peer peer(serializer, ip, port);
-    peer.send(Encoding::toHexa(std::string(m)).c_str());
-    free(m);
-}
-
-void Node::parseAnswerPeers(Message* message) {
-    if(debug)
-        std::cout << "\033[1;34m[INFO] Peers received by " << self._ip << ":" << self._port<<"\033[0m\n";
-    load(message->plain_text);
-    block_chain.read_blocks();
-}
-
-void Node::parseAskPeers(Message* message) {
-    unsigned long index = message->plain_text.find(':');
-    std::string ip = message->plain_text.substr(0, index);
-    int port = atoi(message->plain_text.substr(index+1).c_str());
-    if(debug)
-        std::cout << "\033[1;34m[INFO] Peers asked by " << ip << ":" << port<<"\033[0m\n";
-    Peer peer(serializer, ip, port);
-    std::string peers_to_send(self.to_string());
-    for (auto &p : peers)
-        peers_to_send += "\n" + p.to_string();
-    message->plain_text = peers_to_send;
-    message->type = Message::ANSWER_PEERS;
-    char* m = serializer->serialize(message, encoding.c_str());
-    peer.send(Encoding::toHexa(std::string(m)).c_str());
-    free(m);
-}
-
-void Node::parseTransaction(Message* message){
-    if(debug)
-        std::cout << "\033[1;32m[INFO] Transaction parsed by " << self._ip << ":" << self._port<<"\033[0m\n";
-    RSA_Cryptography crypto(message->public_key);
-    std::string str(message->getCipher());
-    Transaction* deciphered(serializer->unserializeTransaction(crypto.decrypt(str, (int)str.size()), encoding.c_str()));
-    Transaction* plain_text(serializer->unserializeTransaction(message->plain_text, encoding.c_str()));
-    if(*deciphered == plain_text)
-        (*this)(plain_text, message);
-    else
-        delete plain_text;
-    delete deciphered;
-}
-
-void Node::parseBlock(Message* message) {
-    if(debug)
-        std::cout << "\033[1;32m[INFO] Block parsed by " << self._ip << ":" << self._port<<"\033[0m\n";
-    RSA_Cryptography crypto(message->public_key);
-    Block* plain_text(serializer->unserializeBlock(message->plain_text, encoding.c_str()));
-    (*this)(plain_text, message);
-}
-
-void Node::parseSignIn(Message* message) {
-    unsigned long index = message->plain_text.find(':');
-    std::string ip = message->plain_text.substr(0, index);
-    int port = atoi(message->plain_text.substr(index+1).c_str());
-    if(debug)
-        std::cout << "\033[1;34m[IN] " << ip << ":" << port << " is signing in in " << self._ip << ":" << self._port<<"\033[0m\n";
-    Peer peer(serializer, ip, port);
-    peers.emplace_back(peer);
-}
-
-
-void Node::parseSignOut(Message* message) {
-    unsigned long index = message->plain_text.find(':');
-    std::string ip = message->plain_text.substr(0, index);
-    int port = atoi(message->plain_text.substr(index+1).c_str());
-    if(debug)
-        std::cout << "\033[1;34m[OUT] " << ip << ":" << port << " is signing out from " << self._ip << ":" << self._port<<"\033[0m\n";
-    Peer peer(serializer, ip, port);
-    auto it = find(peers.begin(), peers.end(), peer);
-    if(it != peers.end()) {
-        it->close();
-        peers.erase(it);
-    }
-}
-
 void Node::async(Message* message, Node* node){
-    static Node::Message_action action[8] = {&Node::parseAskPeers, &Node::parseAnswerPeers, &Node::parseSignIn, &Node::parseSignOut, &Node::parseTransaction, &Node::parseBlock, &Node::parseAskBlock, &Node::parseAnswerBlock};
     auto start = std::chrono::high_resolution_clock::now();
-    (node->*(action[message->type]))(message);
+    (*node->parsers.find(message->get_type())->second)(message, node);
     auto end = std::chrono::high_resolution_clock::now();
     long long microseconds = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
     if(node->debug)
         std::cout << "\033[1;36m[RECV] Request performed in " << (microseconds / 1000.0) << " milliseconds\033[0m\n";
+    delete message;
 }
 
 bool Node::defaultCallback(Socket* socket, int port, Serializer* serializer, Node* node) {
@@ -304,8 +137,10 @@ bool Node::defaultCallback(Socket* socket, int port, Serializer* serializer, Nod
             threads.emplace_back(new std::thread(async, message, node));
         }
     }
-    for(auto& a : threads)
+    for(auto& a : threads) {
         a->join();
+        delete a;
+    }
     return true;
 }
 

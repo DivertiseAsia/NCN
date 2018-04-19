@@ -16,7 +16,7 @@ class Chain {
     friend class NodeState;
 public:
     Chain(Block*, Chain* c);
-    Chain();
+    Chain(Reward* r);
     ~Chain();
     void add(Block*);
     std::pair<int, Chain*> top_fingerprint();
@@ -35,6 +35,7 @@ private:
     Block * find(std::string str);
     Block *block;
 };
+
 
 
 

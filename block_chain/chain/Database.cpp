@@ -4,9 +4,3 @@
 
 #include "Database.h"
 
-Row *Database::get(std::string key) {
-    auto a = rows.find(key);
-    if(a == rows.end())
-        return nullptr;
-    return a->second;
-}

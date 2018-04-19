@@ -29,6 +29,7 @@ Hash* ProofOfWorkMetadata::hash() {
 }
 
 void ProofOfWorkMetadata::update_database(Database *pDatabase){
-    Row* r = pDatabase->get(winner);
-    r->reward();
+    Row* r = pDatabase->reward(winner);
+    if(r)
+        r->reward();
 }

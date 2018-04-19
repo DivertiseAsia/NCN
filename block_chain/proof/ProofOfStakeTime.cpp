@@ -4,7 +4,7 @@
 
 #include "ProofOfStakeTime.h"
 
-void ProofOfStakeTime::run(Block* block, Message* message){
+void ProofOfStakeTime::run(Block* block, std::string key){
 
 }
 bool ProofOfStakeTime::accept(Block* block, Message* message){

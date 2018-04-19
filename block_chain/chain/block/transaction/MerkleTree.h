@@ -12,6 +12,9 @@ class MerkleTree: public Component {
 public:
     friend class Node;
     friend class Message;
+    friend class TransactionMessage;
+    friend class TransactionParser;
+    friend class BlockMessage;
     MerkleTree(Transaction* transaction, const Serializer* serializer, const char* encoding);
     MerkleTree(std::vector<Transaction*> transactions, const Serializer* serializer, const char* encoding);
     MerkleTree(MerkleTree* l, MerkleTree* r);
@@ -20,10 +23,12 @@ public:
     Hash* get_hash(int i) const;
     int size() const;
     void generate_tree(std::vector<Transaction*> transactions, int begin, int end, const Serializer* serializer, const char* encoding);
+
+    MerkleTree();
+
 protected:
     void fromElement(ElementObject*, const Serializer*, const char* encoding) override;
 private:
-    MerkleTree();
     MerkleTree* left;
     MerkleTree* right;
     Hash* value;

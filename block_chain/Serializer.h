@@ -9,7 +9,7 @@
 #include "chain/block/transaction/Transaction.h"
 #include "utils/Factory.hpp"
 #include "utils/serialization/Parser.hpp"
-#include "Message.h"
+#include "kernel/messages/Message.h"
 #include <cstdlib>
 
 class Serializer

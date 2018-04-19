@@ -19,9 +19,7 @@ public:
     }
     //virtual Element* toElement() const;
     //virtual void fromElement(ElementObject* e, const Serializer* serializer, const char* encoding);
-
-    virtual Hash* hash() = 0;
-
     virtual void update_database(Database *pDatabase) = 0;
+    virtual Hash* hash() = 0;
 };
 #endif //BLOCK_CHAIN_METADATA_H

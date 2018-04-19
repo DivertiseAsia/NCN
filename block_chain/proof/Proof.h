@@ -8,7 +8,8 @@
 #include <map>
 #include <functional>
 #include "../chain/block/Block.h"
-#include "../Message.h"
+#include "../kernel/messages/Message.h"
+#include "../kernel/messages/BlockMessage.h"
 
 class Proof {
 public:
@@ -21,7 +22,7 @@ public:
     static const int USE;
     static void add_proof(int id, std::function<Proof*()>);
     static Proof* generate(int type);
-    virtual void run(Block* block, Message*) = 0;
+    virtual void run(Block* block, std::string key) = 0;
     virtual bool accept(Block* block, Message*) = 0;
 private:
     static std::map<int, std::function<Proof*()>> items;

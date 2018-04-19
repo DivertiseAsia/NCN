@@ -10,7 +10,7 @@
 
 class ProofOfImportance: public Proof {
 public:
-    void run(Block* block, Message* message) override;
+    void run(Block* block, std::string key) override;
     bool accept(Block* block, Message* message) override;
 };
 

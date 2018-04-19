@@ -5,14 +5,13 @@
 #include "Chain.h"
 #include "../utils/RSA.h"
 
-Chain::Chain(Block* b, Chain* c){
+Chain::Chain(Block* b, Chain* c): database(c->database){
     block = b;
     fingerprint = b->fingerprint;
-    database = c->database;
     b->data->update_database(&database);
 }
 
-Chain::Chain(): fingerprint(nullptr){
+Chain::Chain(Reward* r): fingerprint(nullptr), database(r){
 }
 
 Chain::~Chain(){
@@ -26,9 +25,10 @@ void Chain::add(Block* b){
                 return;
         chain.emplace_back(new Chain(b, this));
     }
-    else
+    else{
         for(auto& a : chain)
             a->add(b);
+    }
 }
 
 std::pair<int, Chain*> Chain::top_fingerprint(){

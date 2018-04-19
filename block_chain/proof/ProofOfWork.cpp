@@ -4,9 +4,9 @@
 
 #include "ProofOfWork.h"
 #include "metadatas/ProofOfWorkMetadata.h"
+#include "../kernel/messages/BlockMessage.h"
 
-void ProofOfWork::run(Block* block, Message* m){
-    std::string key = Encoding::toHexa(m->public_key);
+void ProofOfWork::run(Block* block, std::string key){
     Hash tmp((block->parent_fingerprint != nullptr ? block->parent_fingerprint->hash : "0") + key);
     for(long long int i = 1; i > 0 ; i++){
         Hash t(&tmp, i);

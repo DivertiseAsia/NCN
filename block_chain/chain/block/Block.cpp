@@ -5,7 +5,7 @@
 #include "Block.h"
 #include <utility>
 #include "../../Serializer.h"
-#include "../../Message.h"
+#include "../../kernel/messages/Message.h"
 #include "../../utils/RSA.h"
 #include "../../proof/metadatas/ProofOfWorkMetadata.h"
 

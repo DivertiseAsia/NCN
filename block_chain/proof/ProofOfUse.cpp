@@ -4,7 +4,7 @@
 
 #include "ProofOfUse.h"
 
-void ProofOfUse::run(Block* block, Message* message){
+void ProofOfUse::run(Block* block, std::string key){
 
 }
 bool ProofOfUse::accept(Block* block, Message* message){
