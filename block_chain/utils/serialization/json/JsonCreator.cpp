@@ -1,5 +1,5 @@
-#include "JsonCreator.hpp"
-#include "../Element.hpp"
+#include "JsonCreator.h"
+#include "../Element.h"
 #include <iostream>
 #include <algorithm>
 #include <sstream>
@@ -35,8 +35,7 @@ std::vector<std::string> split(const std::string &s, char lim, const int limit =
 }
 
 
-JsonCreator::JsonCreator(): ContentCreator(){
-}
+JsonCreator::JsonCreator() = default;
 
 JsonCreator::~JsonCreator() = default;
 

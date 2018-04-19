@@ -6,9 +6,9 @@
 #define BLOCK_CHAIN_PEERSANSWERPARSER_H
 
 
-#include "Parser.h"
+#include "MessageParser.h"
 
-class PeersAnswerParser: public Parser {
+class PeersAnswerParser: public MessageParser {
 public:
     void operator()(Message* m, Node* node) const final;
     int get_type() const final;

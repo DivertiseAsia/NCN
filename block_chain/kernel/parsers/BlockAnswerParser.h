@@ -6,9 +6,9 @@
 #define BLOCK_CHAIN_BLOCKANSWERPARSER_H
 
 
-#include "Parser.h"
+#include "MessageParser.h"
 
-class BlockAnswerParser: public Parser {
+class BlockAnswerParser: public MessageParser {
 public:
     void operator()(Message* m, Node* node) const final;
     int get_type() const final;

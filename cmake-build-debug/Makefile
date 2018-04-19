@@ -339,6 +339,276 @@ block_chain/chain/block/Block.cpp.s:
 	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.s
 .PHONY : block_chain/chain/block/Block.cpp.s
 
+block_chain/chain/block/proof/Proof.o: block_chain/chain/block/proof/Proof.cpp.o
+
+.PHONY : block_chain/chain/block/proof/Proof.o
+
+# target to build an object file
+block_chain/chain/block/proof/Proof.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/proof/Proof.cpp.o
+.PHONY : block_chain/chain/block/proof/Proof.cpp.o
+
+block_chain/chain/block/proof/Proof.i: block_chain/chain/block/proof/Proof.cpp.i
+
+.PHONY : block_chain/chain/block/proof/Proof.i
+
+# target to preprocess a source file
+block_chain/chain/block/proof/Proof.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/proof/Proof.cpp.i
+.PHONY : block_chain/chain/block/proof/Proof.cpp.i
+
+block_chain/chain/block/proof/Proof.s: block_chain/chain/block/proof/Proof.cpp.s
+
+.PHONY : block_chain/chain/block/proof/Proof.s
+
+# target to generate assembly for a file
+block_chain/chain/block/proof/Proof.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/proof/Proof.cpp.s
+.PHONY : block_chain/chain/block/proof/Proof.cpp.s
+
+block_chain/chain/block/proof/ProofOfHold.o: block_chain/chain/block/proof/ProofOfHold.cpp.o
+
+.PHONY : block_chain/chain/block/proof/ProofOfHold.o
+
+# target to build an object file
+block_chain/chain/block/proof/ProofOfHold.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfHold.cpp.o
+.PHONY : block_chain/chain/block/proof/ProofOfHold.cpp.o
+
+block_chain/chain/block/proof/ProofOfHold.i: block_chain/chain/block/proof/ProofOfHold.cpp.i
+
+.PHONY : block_chain/chain/block/proof/ProofOfHold.i
+
+# target to preprocess a source file
+block_chain/chain/block/proof/ProofOfHold.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfHold.cpp.i
+.PHONY : block_chain/chain/block/proof/ProofOfHold.cpp.i
+
+block_chain/chain/block/proof/ProofOfHold.s: block_chain/chain/block/proof/ProofOfHold.cpp.s
+
+.PHONY : block_chain/chain/block/proof/ProofOfHold.s
+
+# target to generate assembly for a file
+block_chain/chain/block/proof/ProofOfHold.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfHold.cpp.s
+.PHONY : block_chain/chain/block/proof/ProofOfHold.cpp.s
+
+block_chain/chain/block/proof/ProofOfImportance.o: block_chain/chain/block/proof/ProofOfImportance.cpp.o
+
+.PHONY : block_chain/chain/block/proof/ProofOfImportance.o
+
+# target to build an object file
+block_chain/chain/block/proof/ProofOfImportance.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfImportance.cpp.o
+.PHONY : block_chain/chain/block/proof/ProofOfImportance.cpp.o
+
+block_chain/chain/block/proof/ProofOfImportance.i: block_chain/chain/block/proof/ProofOfImportance.cpp.i
+
+.PHONY : block_chain/chain/block/proof/ProofOfImportance.i
+
+# target to preprocess a source file
+block_chain/chain/block/proof/ProofOfImportance.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfImportance.cpp.i
+.PHONY : block_chain/chain/block/proof/ProofOfImportance.cpp.i
+
+block_chain/chain/block/proof/ProofOfImportance.s: block_chain/chain/block/proof/ProofOfImportance.cpp.s
+
+.PHONY : block_chain/chain/block/proof/ProofOfImportance.s
+
+# target to generate assembly for a file
+block_chain/chain/block/proof/ProofOfImportance.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfImportance.cpp.s
+.PHONY : block_chain/chain/block/proof/ProofOfImportance.cpp.s
+
+block_chain/chain/block/proof/ProofOfMinimumAgedStake.o: block_chain/chain/block/proof/ProofOfMinimumAgedStake.cpp.o
+
+.PHONY : block_chain/chain/block/proof/ProofOfMinimumAgedStake.o
+
+# target to build an object file
+block_chain/chain/block/proof/ProofOfMinimumAgedStake.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfMinimumAgedStake.cpp.o
+.PHONY : block_chain/chain/block/proof/ProofOfMinimumAgedStake.cpp.o
+
+block_chain/chain/block/proof/ProofOfMinimumAgedStake.i: block_chain/chain/block/proof/ProofOfMinimumAgedStake.cpp.i
+
+.PHONY : block_chain/chain/block/proof/ProofOfMinimumAgedStake.i
+
+# target to preprocess a source file
+block_chain/chain/block/proof/ProofOfMinimumAgedStake.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfMinimumAgedStake.cpp.i
+.PHONY : block_chain/chain/block/proof/ProofOfMinimumAgedStake.cpp.i
+
+block_chain/chain/block/proof/ProofOfMinimumAgedStake.s: block_chain/chain/block/proof/ProofOfMinimumAgedStake.cpp.s
+
+.PHONY : block_chain/chain/block/proof/ProofOfMinimumAgedStake.s
+
+# target to generate assembly for a file
+block_chain/chain/block/proof/ProofOfMinimumAgedStake.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfMinimumAgedStake.cpp.s
+.PHONY : block_chain/chain/block/proof/ProofOfMinimumAgedStake.cpp.s
+
+block_chain/chain/block/proof/ProofOfStake.o: block_chain/chain/block/proof/ProofOfStake.cpp.o
+
+.PHONY : block_chain/chain/block/proof/ProofOfStake.o
+
+# target to build an object file
+block_chain/chain/block/proof/ProofOfStake.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfStake.cpp.o
+.PHONY : block_chain/chain/block/proof/ProofOfStake.cpp.o
+
+block_chain/chain/block/proof/ProofOfStake.i: block_chain/chain/block/proof/ProofOfStake.cpp.i
+
+.PHONY : block_chain/chain/block/proof/ProofOfStake.i
+
+# target to preprocess a source file
+block_chain/chain/block/proof/ProofOfStake.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfStake.cpp.i
+.PHONY : block_chain/chain/block/proof/ProofOfStake.cpp.i
+
+block_chain/chain/block/proof/ProofOfStake.s: block_chain/chain/block/proof/ProofOfStake.cpp.s
+
+.PHONY : block_chain/chain/block/proof/ProofOfStake.s
+
+# target to generate assembly for a file
+block_chain/chain/block/proof/ProofOfStake.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfStake.cpp.s
+.PHONY : block_chain/chain/block/proof/ProofOfStake.cpp.s
+
+block_chain/chain/block/proof/ProofOfStakeTime.o: block_chain/chain/block/proof/ProofOfStakeTime.cpp.o
+
+.PHONY : block_chain/chain/block/proof/ProofOfStakeTime.o
+
+# target to build an object file
+block_chain/chain/block/proof/ProofOfStakeTime.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfStakeTime.cpp.o
+.PHONY : block_chain/chain/block/proof/ProofOfStakeTime.cpp.o
+
+block_chain/chain/block/proof/ProofOfStakeTime.i: block_chain/chain/block/proof/ProofOfStakeTime.cpp.i
+
+.PHONY : block_chain/chain/block/proof/ProofOfStakeTime.i
+
+# target to preprocess a source file
+block_chain/chain/block/proof/ProofOfStakeTime.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfStakeTime.cpp.i
+.PHONY : block_chain/chain/block/proof/ProofOfStakeTime.cpp.i
+
+block_chain/chain/block/proof/ProofOfStakeTime.s: block_chain/chain/block/proof/ProofOfStakeTime.cpp.s
+
+.PHONY : block_chain/chain/block/proof/ProofOfStakeTime.s
+
+# target to generate assembly for a file
+block_chain/chain/block/proof/ProofOfStakeTime.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfStakeTime.cpp.s
+.PHONY : block_chain/chain/block/proof/ProofOfStakeTime.cpp.s
+
+block_chain/chain/block/proof/ProofOfUse.o: block_chain/chain/block/proof/ProofOfUse.cpp.o
+
+.PHONY : block_chain/chain/block/proof/ProofOfUse.o
+
+# target to build an object file
+block_chain/chain/block/proof/ProofOfUse.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfUse.cpp.o
+.PHONY : block_chain/chain/block/proof/ProofOfUse.cpp.o
+
+block_chain/chain/block/proof/ProofOfUse.i: block_chain/chain/block/proof/ProofOfUse.cpp.i
+
+.PHONY : block_chain/chain/block/proof/ProofOfUse.i
+
+# target to preprocess a source file
+block_chain/chain/block/proof/ProofOfUse.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfUse.cpp.i
+.PHONY : block_chain/chain/block/proof/ProofOfUse.cpp.i
+
+block_chain/chain/block/proof/ProofOfUse.s: block_chain/chain/block/proof/ProofOfUse.cpp.s
+
+.PHONY : block_chain/chain/block/proof/ProofOfUse.s
+
+# target to generate assembly for a file
+block_chain/chain/block/proof/ProofOfUse.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfUse.cpp.s
+.PHONY : block_chain/chain/block/proof/ProofOfUse.cpp.s
+
+block_chain/chain/block/proof/ProofOfWork.o: block_chain/chain/block/proof/ProofOfWork.cpp.o
+
+.PHONY : block_chain/chain/block/proof/ProofOfWork.o
+
+# target to build an object file
+block_chain/chain/block/proof/ProofOfWork.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfWork.cpp.o
+.PHONY : block_chain/chain/block/proof/ProofOfWork.cpp.o
+
+block_chain/chain/block/proof/ProofOfWork.i: block_chain/chain/block/proof/ProofOfWork.cpp.i
+
+.PHONY : block_chain/chain/block/proof/ProofOfWork.i
+
+# target to preprocess a source file
+block_chain/chain/block/proof/ProofOfWork.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfWork.cpp.i
+.PHONY : block_chain/chain/block/proof/ProofOfWork.cpp.i
+
+block_chain/chain/block/proof/ProofOfWork.s: block_chain/chain/block/proof/ProofOfWork.cpp.s
+
+.PHONY : block_chain/chain/block/proof/ProofOfWork.s
+
+# target to generate assembly for a file
+block_chain/chain/block/proof/ProofOfWork.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfWork.cpp.s
+.PHONY : block_chain/chain/block/proof/ProofOfWork.cpp.s
+
+block_chain/chain/block/proof/metadatas/Metadata.o: block_chain/chain/block/proof/metadatas/Metadata.cpp.o
+
+.PHONY : block_chain/chain/block/proof/metadatas/Metadata.o
+
+# target to build an object file
+block_chain/chain/block/proof/metadatas/Metadata.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/proof/metadatas/Metadata.cpp.o
+.PHONY : block_chain/chain/block/proof/metadatas/Metadata.cpp.o
+
+block_chain/chain/block/proof/metadatas/Metadata.i: block_chain/chain/block/proof/metadatas/Metadata.cpp.i
+
+.PHONY : block_chain/chain/block/proof/metadatas/Metadata.i
+
+# target to preprocess a source file
+block_chain/chain/block/proof/metadatas/Metadata.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/proof/metadatas/Metadata.cpp.i
+.PHONY : block_chain/chain/block/proof/metadatas/Metadata.cpp.i
+
+block_chain/chain/block/proof/metadatas/Metadata.s: block_chain/chain/block/proof/metadatas/Metadata.cpp.s
+
+.PHONY : block_chain/chain/block/proof/metadatas/Metadata.s
+
+# target to generate assembly for a file
+block_chain/chain/block/proof/metadatas/Metadata.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/proof/metadatas/Metadata.cpp.s
+.PHONY : block_chain/chain/block/proof/metadatas/Metadata.cpp.s
+
+block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.o: block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.cpp.o
+
+.PHONY : block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.o
+
+# target to build an object file
+block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.cpp.o
+.PHONY : block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.cpp.o
+
+block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.i: block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.cpp.i
+
+.PHONY : block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.i
+
+# target to preprocess a source file
+block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.cpp.i
+.PHONY : block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.cpp.i
+
+block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.s: block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.cpp.s
+
+.PHONY : block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.s
+
+# target to generate assembly for a file
+block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.cpp.s
+.PHONY : block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.cpp.s
+
 block_chain/chain/block/transaction/Reward.o: block_chain/chain/block/transaction/Reward.cpp.o
 
 .PHONY : block_chain/chain/block/transaction/Reward.o
@@ -960,276 +1230,6 @@ block_chain/kernel/parsers/TransactionParser.cpp.s:
 	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/parsers/TransactionParser.cpp.s
 .PHONY : block_chain/kernel/parsers/TransactionParser.cpp.s
 
-block_chain/proof/Proof.o: block_chain/proof/Proof.cpp.o
-
-.PHONY : block_chain/proof/Proof.o
-
-# target to build an object file
-block_chain/proof/Proof.cpp.o:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/proof/Proof.cpp.o
-.PHONY : block_chain/proof/Proof.cpp.o
-
-block_chain/proof/Proof.i: block_chain/proof/Proof.cpp.i
-
-.PHONY : block_chain/proof/Proof.i
-
-# target to preprocess a source file
-block_chain/proof/Proof.cpp.i:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/proof/Proof.cpp.i
-.PHONY : block_chain/proof/Proof.cpp.i
-
-block_chain/proof/Proof.s: block_chain/proof/Proof.cpp.s
-
-.PHONY : block_chain/proof/Proof.s
-
-# target to generate assembly for a file
-block_chain/proof/Proof.cpp.s:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/proof/Proof.cpp.s
-.PHONY : block_chain/proof/Proof.cpp.s
-
-block_chain/proof/ProofOfHold.o: block_chain/proof/ProofOfHold.cpp.o
-
-.PHONY : block_chain/proof/ProofOfHold.o
-
-# target to build an object file
-block_chain/proof/ProofOfHold.cpp.o:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/proof/ProofOfHold.cpp.o
-.PHONY : block_chain/proof/ProofOfHold.cpp.o
-
-block_chain/proof/ProofOfHold.i: block_chain/proof/ProofOfHold.cpp.i
-
-.PHONY : block_chain/proof/ProofOfHold.i
-
-# target to preprocess a source file
-block_chain/proof/ProofOfHold.cpp.i:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/proof/ProofOfHold.cpp.i
-.PHONY : block_chain/proof/ProofOfHold.cpp.i
-
-block_chain/proof/ProofOfHold.s: block_chain/proof/ProofOfHold.cpp.s
-
-.PHONY : block_chain/proof/ProofOfHold.s
-
-# target to generate assembly for a file
-block_chain/proof/ProofOfHold.cpp.s:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/proof/ProofOfHold.cpp.s
-.PHONY : block_chain/proof/ProofOfHold.cpp.s
-
-block_chain/proof/ProofOfImportance.o: block_chain/proof/ProofOfImportance.cpp.o
-
-.PHONY : block_chain/proof/ProofOfImportance.o
-
-# target to build an object file
-block_chain/proof/ProofOfImportance.cpp.o:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/proof/ProofOfImportance.cpp.o
-.PHONY : block_chain/proof/ProofOfImportance.cpp.o
-
-block_chain/proof/ProofOfImportance.i: block_chain/proof/ProofOfImportance.cpp.i
-
-.PHONY : block_chain/proof/ProofOfImportance.i
-
-# target to preprocess a source file
-block_chain/proof/ProofOfImportance.cpp.i:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/proof/ProofOfImportance.cpp.i
-.PHONY : block_chain/proof/ProofOfImportance.cpp.i
-
-block_chain/proof/ProofOfImportance.s: block_chain/proof/ProofOfImportance.cpp.s
-
-.PHONY : block_chain/proof/ProofOfImportance.s
-
-# target to generate assembly for a file
-block_chain/proof/ProofOfImportance.cpp.s:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/proof/ProofOfImportance.cpp.s
-.PHONY : block_chain/proof/ProofOfImportance.cpp.s
-
-block_chain/proof/ProofOfMinimumAgedStake.o: block_chain/proof/ProofOfMinimumAgedStake.cpp.o
-
-.PHONY : block_chain/proof/ProofOfMinimumAgedStake.o
-
-# target to build an object file
-block_chain/proof/ProofOfMinimumAgedStake.cpp.o:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/proof/ProofOfMinimumAgedStake.cpp.o
-.PHONY : block_chain/proof/ProofOfMinimumAgedStake.cpp.o
-
-block_chain/proof/ProofOfMinimumAgedStake.i: block_chain/proof/ProofOfMinimumAgedStake.cpp.i
-
-.PHONY : block_chain/proof/ProofOfMinimumAgedStake.i
-
-# target to preprocess a source file
-block_chain/proof/ProofOfMinimumAgedStake.cpp.i:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/proof/ProofOfMinimumAgedStake.cpp.i
-.PHONY : block_chain/proof/ProofOfMinimumAgedStake.cpp.i
-
-block_chain/proof/ProofOfMinimumAgedStake.s: block_chain/proof/ProofOfMinimumAgedStake.cpp.s
-
-.PHONY : block_chain/proof/ProofOfMinimumAgedStake.s
-
-# target to generate assembly for a file
-block_chain/proof/ProofOfMinimumAgedStake.cpp.s:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/proof/ProofOfMinimumAgedStake.cpp.s
-.PHONY : block_chain/proof/ProofOfMinimumAgedStake.cpp.s
-
-block_chain/proof/ProofOfStake.o: block_chain/proof/ProofOfStake.cpp.o
-
-.PHONY : block_chain/proof/ProofOfStake.o
-
-# target to build an object file
-block_chain/proof/ProofOfStake.cpp.o:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStake.cpp.o
-.PHONY : block_chain/proof/ProofOfStake.cpp.o
-
-block_chain/proof/ProofOfStake.i: block_chain/proof/ProofOfStake.cpp.i
-
-.PHONY : block_chain/proof/ProofOfStake.i
-
-# target to preprocess a source file
-block_chain/proof/ProofOfStake.cpp.i:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStake.cpp.i
-.PHONY : block_chain/proof/ProofOfStake.cpp.i
-
-block_chain/proof/ProofOfStake.s: block_chain/proof/ProofOfStake.cpp.s
-
-.PHONY : block_chain/proof/ProofOfStake.s
-
-# target to generate assembly for a file
-block_chain/proof/ProofOfStake.cpp.s:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStake.cpp.s
-.PHONY : block_chain/proof/ProofOfStake.cpp.s
-
-block_chain/proof/ProofOfStakeTime.o: block_chain/proof/ProofOfStakeTime.cpp.o
-
-.PHONY : block_chain/proof/ProofOfStakeTime.o
-
-# target to build an object file
-block_chain/proof/ProofOfStakeTime.cpp.o:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStakeTime.cpp.o
-.PHONY : block_chain/proof/ProofOfStakeTime.cpp.o
-
-block_chain/proof/ProofOfStakeTime.i: block_chain/proof/ProofOfStakeTime.cpp.i
-
-.PHONY : block_chain/proof/ProofOfStakeTime.i
-
-# target to preprocess a source file
-block_chain/proof/ProofOfStakeTime.cpp.i:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStakeTime.cpp.i
-.PHONY : block_chain/proof/ProofOfStakeTime.cpp.i
-
-block_chain/proof/ProofOfStakeTime.s: block_chain/proof/ProofOfStakeTime.cpp.s
-
-.PHONY : block_chain/proof/ProofOfStakeTime.s
-
-# target to generate assembly for a file
-block_chain/proof/ProofOfStakeTime.cpp.s:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStakeTime.cpp.s
-.PHONY : block_chain/proof/ProofOfStakeTime.cpp.s
-
-block_chain/proof/ProofOfUse.o: block_chain/proof/ProofOfUse.cpp.o
-
-.PHONY : block_chain/proof/ProofOfUse.o
-
-# target to build an object file
-block_chain/proof/ProofOfUse.cpp.o:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/proof/ProofOfUse.cpp.o
-.PHONY : block_chain/proof/ProofOfUse.cpp.o
-
-block_chain/proof/ProofOfUse.i: block_chain/proof/ProofOfUse.cpp.i
-
-.PHONY : block_chain/proof/ProofOfUse.i
-
-# target to preprocess a source file
-block_chain/proof/ProofOfUse.cpp.i:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/proof/ProofOfUse.cpp.i
-.PHONY : block_chain/proof/ProofOfUse.cpp.i
-
-block_chain/proof/ProofOfUse.s: block_chain/proof/ProofOfUse.cpp.s
-
-.PHONY : block_chain/proof/ProofOfUse.s
-
-# target to generate assembly for a file
-block_chain/proof/ProofOfUse.cpp.s:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/proof/ProofOfUse.cpp.s
-.PHONY : block_chain/proof/ProofOfUse.cpp.s
-
-block_chain/proof/ProofOfWork.o: block_chain/proof/ProofOfWork.cpp.o
-
-.PHONY : block_chain/proof/ProofOfWork.o
-
-# target to build an object file
-block_chain/proof/ProofOfWork.cpp.o:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/proof/ProofOfWork.cpp.o
-.PHONY : block_chain/proof/ProofOfWork.cpp.o
-
-block_chain/proof/ProofOfWork.i: block_chain/proof/ProofOfWork.cpp.i
-
-.PHONY : block_chain/proof/ProofOfWork.i
-
-# target to preprocess a source file
-block_chain/proof/ProofOfWork.cpp.i:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/proof/ProofOfWork.cpp.i
-.PHONY : block_chain/proof/ProofOfWork.cpp.i
-
-block_chain/proof/ProofOfWork.s: block_chain/proof/ProofOfWork.cpp.s
-
-.PHONY : block_chain/proof/ProofOfWork.s
-
-# target to generate assembly for a file
-block_chain/proof/ProofOfWork.cpp.s:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/proof/ProofOfWork.cpp.s
-.PHONY : block_chain/proof/ProofOfWork.cpp.s
-
-block_chain/proof/metadatas/Metadata.o: block_chain/proof/metadatas/Metadata.cpp.o
-
-.PHONY : block_chain/proof/metadatas/Metadata.o
-
-# target to build an object file
-block_chain/proof/metadatas/Metadata.cpp.o:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/proof/metadatas/Metadata.cpp.o
-.PHONY : block_chain/proof/metadatas/Metadata.cpp.o
-
-block_chain/proof/metadatas/Metadata.i: block_chain/proof/metadatas/Metadata.cpp.i
-
-.PHONY : block_chain/proof/metadatas/Metadata.i
-
-# target to preprocess a source file
-block_chain/proof/metadatas/Metadata.cpp.i:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/proof/metadatas/Metadata.cpp.i
-.PHONY : block_chain/proof/metadatas/Metadata.cpp.i
-
-block_chain/proof/metadatas/Metadata.s: block_chain/proof/metadatas/Metadata.cpp.s
-
-.PHONY : block_chain/proof/metadatas/Metadata.s
-
-# target to generate assembly for a file
-block_chain/proof/metadatas/Metadata.cpp.s:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/proof/metadatas/Metadata.cpp.s
-.PHONY : block_chain/proof/metadatas/Metadata.cpp.s
-
-block_chain/proof/metadatas/ProofOfWorkMetadata.o: block_chain/proof/metadatas/ProofOfWorkMetadata.cpp.o
-
-.PHONY : block_chain/proof/metadatas/ProofOfWorkMetadata.o
-
-# target to build an object file
-block_chain/proof/metadatas/ProofOfWorkMetadata.cpp.o:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/proof/metadatas/ProofOfWorkMetadata.cpp.o
-.PHONY : block_chain/proof/metadatas/ProofOfWorkMetadata.cpp.o
-
-block_chain/proof/metadatas/ProofOfWorkMetadata.i: block_chain/proof/metadatas/ProofOfWorkMetadata.cpp.i
-
-.PHONY : block_chain/proof/metadatas/ProofOfWorkMetadata.i
-
-# target to preprocess a source file
-block_chain/proof/metadatas/ProofOfWorkMetadata.cpp.i:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/proof/metadatas/ProofOfWorkMetadata.cpp.i
-.PHONY : block_chain/proof/metadatas/ProofOfWorkMetadata.cpp.i
-
-block_chain/proof/metadatas/ProofOfWorkMetadata.s: block_chain/proof/metadatas/ProofOfWorkMetadata.cpp.s
-
-.PHONY : block_chain/proof/metadatas/ProofOfWorkMetadata.s
-
-# target to generate assembly for a file
-block_chain/proof/metadatas/ProofOfWorkMetadata.cpp.s:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/proof/metadatas/ProofOfWorkMetadata.cpp.s
-.PHONY : block_chain/proof/metadatas/ProofOfWorkMetadata.cpp.s
-
 block_chain/utils/Encoding.o: block_chain/utils/Encoding.cpp.o
 
 .PHONY : block_chain/utils/Encoding.o
@@ -1695,6 +1695,36 @@ help:
 	@echo "... block_chain/chain/block/Block.o"
 	@echo "... block_chain/chain/block/Block.i"
 	@echo "... block_chain/chain/block/Block.s"
+	@echo "... block_chain/chain/block/proof/Proof.o"
+	@echo "... block_chain/chain/block/proof/Proof.i"
+	@echo "... block_chain/chain/block/proof/Proof.s"
+	@echo "... block_chain/chain/block/proof/ProofOfHold.o"
+	@echo "... block_chain/chain/block/proof/ProofOfHold.i"
+	@echo "... block_chain/chain/block/proof/ProofOfHold.s"
+	@echo "... block_chain/chain/block/proof/ProofOfImportance.o"
+	@echo "... block_chain/chain/block/proof/ProofOfImportance.i"
+	@echo "... block_chain/chain/block/proof/ProofOfImportance.s"
+	@echo "... block_chain/chain/block/proof/ProofOfMinimumAgedStake.o"
+	@echo "... block_chain/chain/block/proof/ProofOfMinimumAgedStake.i"
+	@echo "... block_chain/chain/block/proof/ProofOfMinimumAgedStake.s"
+	@echo "... block_chain/chain/block/proof/ProofOfStake.o"
+	@echo "... block_chain/chain/block/proof/ProofOfStake.i"
+	@echo "... block_chain/chain/block/proof/ProofOfStake.s"
+	@echo "... block_chain/chain/block/proof/ProofOfStakeTime.o"
+	@echo "... block_chain/chain/block/proof/ProofOfStakeTime.i"
+	@echo "... block_chain/chain/block/proof/ProofOfStakeTime.s"
+	@echo "... block_chain/chain/block/proof/ProofOfUse.o"
+	@echo "... block_chain/chain/block/proof/ProofOfUse.i"
+	@echo "... block_chain/chain/block/proof/ProofOfUse.s"
+	@echo "... block_chain/chain/block/proof/ProofOfWork.o"
+	@echo "... block_chain/chain/block/proof/ProofOfWork.i"
+	@echo "... block_chain/chain/block/proof/ProofOfWork.s"
+	@echo "... block_chain/chain/block/proof/metadatas/Metadata.o"
+	@echo "... block_chain/chain/block/proof/metadatas/Metadata.i"
+	@echo "... block_chain/chain/block/proof/metadatas/Metadata.s"
+	@echo "... block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.o"
+	@echo "... block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.i"
+	@echo "... block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.s"
 	@echo "... block_chain/chain/block/transaction/Reward.o"
 	@echo "... block_chain/chain/block/transaction/Reward.i"
 	@echo "... block_chain/chain/block/transaction/Reward.s"
@@ -1764,36 +1794,6 @@ help:
 	@echo "... block_chain/kernel/parsers/TransactionParser.o"
 	@echo "... block_chain/kernel/parsers/TransactionParser.i"
 	@echo "... block_chain/kernel/parsers/TransactionParser.s"
-	@echo "... block_chain/proof/Proof.o"
-	@echo "... block_chain/proof/Proof.i"
-	@echo "... block_chain/proof/Proof.s"
-	@echo "... block_chain/proof/ProofOfHold.o"
-	@echo "... block_chain/proof/ProofOfHold.i"
-	@echo "... block_chain/proof/ProofOfHold.s"
-	@echo "... block_chain/proof/ProofOfImportance.o"
-	@echo "... block_chain/proof/ProofOfImportance.i"
-	@echo "... block_chain/proof/ProofOfImportance.s"
-	@echo "... block_chain/proof/ProofOfMinimumAgedStake.o"
-	@echo "... block_chain/proof/ProofOfMinimumAgedStake.i"
-	@echo "... block_chain/proof/ProofOfMinimumAgedStake.s"
-	@echo "... block_chain/proof/ProofOfStake.o"
-	@echo "... block_chain/proof/ProofOfStake.i"
-	@echo "... block_chain/proof/ProofOfStake.s"
-	@echo "... block_chain/proof/ProofOfStakeTime.o"
-	@echo "... block_chain/proof/ProofOfStakeTime.i"
-	@echo "... block_chain/proof/ProofOfStakeTime.s"
-	@echo "... block_chain/proof/ProofOfUse.o"
-	@echo "... block_chain/proof/ProofOfUse.i"
-	@echo "... block_chain/proof/ProofOfUse.s"
-	@echo "... block_chain/proof/ProofOfWork.o"
-	@echo "... block_chain/proof/ProofOfWork.i"
-	@echo "... block_chain/proof/ProofOfWork.s"
-	@echo "... block_chain/proof/metadatas/Metadata.o"
-	@echo "... block_chain/proof/metadatas/Metadata.i"
-	@echo "... block_chain/proof/metadatas/Metadata.s"
-	@echo "... block_chain/proof/metadatas/ProofOfWorkMetadata.o"
-	@echo "... block_chain/proof/metadatas/ProofOfWorkMetadata.i"
-	@echo "... block_chain/proof/metadatas/ProofOfWorkMetadata.s"
 	@echo "... block_chain/utils/Encoding.o"
 	@echo "... block_chain/utils/Encoding.i"
 	@echo "... block_chain/utils/Encoding.s"

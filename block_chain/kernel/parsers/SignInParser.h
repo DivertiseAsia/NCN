@@ -6,9 +6,9 @@
 #define BLOCK_CHAIN_SIGNINPARSER_H
 
 
-#include "Parser.h"
+#include "MessageParser.h"
 
-class SignInParser: public Parser {
+class SignInParser: public MessageParser {
 public:
     void operator()(Message* m, Node* node) const final;
     int get_type() const final;

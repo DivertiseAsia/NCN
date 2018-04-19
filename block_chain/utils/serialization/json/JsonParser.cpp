@@ -1,5 +1,5 @@
-#include "JsonParser.hpp"
-#include "../Element.hpp"
+#include "JsonParser.h"
+#include "../Element.h"
 #include <iostream>
 #include <algorithm>
 #include <sstream>

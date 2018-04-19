@@ -3,9 +3,9 @@
 //
 
 #include "Serializer.h"
-#include "json/JsonCreator.hpp"
-#include "json/JsonParser.hpp"
-#include "../../proof/metadatas/ProofOfWorkMetadata.h"
+#include "json/JsonCreator.h"
+#include "json/JsonParser.h"
+#include "../../chain/block/proof/metadatas/ProofOfWorkMetadata.h"
 #include <utility>
 
 ElementObject* Serializer::getElement(std::string transaction, const char* key) const{

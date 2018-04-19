@@ -1,5 +1,5 @@
-#include "Parser.hpp"
-#include "Element.hpp"
+#include "Parser.h"
+#include "Element.h"
 #include <iostream>
 #include <algorithm>
 #include <sstream>
@@ -54,5 +54,3 @@ ElementDouble* ElementCreator::create(double value){
 	e->value = value;
 	return e;
 }
-ElementCreator::ElementCreator() = default;
-ElementCreator::~ElementCreator() = default;

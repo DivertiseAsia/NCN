@@ -7,7 +7,7 @@
 #include "../../utils/serialization/Serializer.h"
 #include "../../kernel/messages/Message.h"
 #include "../../algorithm/RSA.h"
-#include "../../proof/metadatas/ProofOfWorkMetadata.h"
+#include "proof/metadatas/ProofOfWorkMetadata.h"
 
 Hash* Block::compute_hash(int begin, int end, const Serializer* s, const char* e) const{
     if(begin == end) {

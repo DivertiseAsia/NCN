@@ -7,7 +7,7 @@
 
 #include <vector>
 #include "../../algorithm/Hash.h"
-#include "../../proof/metadatas/Metadata.h"
+#include "proof/metadatas/Metadata.h"
 #include "../../kernel/components/Component.h"
 #include <iostream>
 #include <chrono>

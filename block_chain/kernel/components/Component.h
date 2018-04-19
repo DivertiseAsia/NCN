@@ -1,7 +1,7 @@
 #ifndef COMPONENT_H
 #define COMPONENT_H
 
-#include "../../utils/serialization/Element.hpp"
+#include "../../utils/serialization/Element.h"
 class Serializer;
 class Component
 {

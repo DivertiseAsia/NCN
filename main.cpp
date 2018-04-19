@@ -3,7 +3,7 @@
 #include "serializer/CustomSerializer.h"
 #include "block_chain/Node.h"
 #include "block_chain/TransactionManager.h"
-#include "block_chain/proof/Proof.h"
+#include "block_chain/chain/block/proof/Proof.h"
 #include "transactions/StatusTransaction.h"
 #include "transactions/MessagesTransaction.h"
 #include "transactions/MoneyTransaction.h"

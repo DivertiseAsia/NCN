@@ -6,10 +6,10 @@
 #define BLOCK_CHAIN_SIGNOUTPARSER_H
 
 
-#include "Parser.h"
+#include "MessageParser.h"
 #include <algorithm>
 
-class SignOutParser: public Parser {
+class SignOutParser: public MessageParser {
 public:
     void operator()(Message* m, Node* node) const final;
     int get_type() const final;

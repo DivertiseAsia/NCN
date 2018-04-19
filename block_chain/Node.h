@@ -18,9 +18,9 @@
 #include "utils/socket/Peer.h"
 #include "algorithm/RSA.h"
 #include "kernel/messages/Message.h"
-#include "proof/Proof.h"
+#include "chain/block/proof/Proof.h"
 #include "TransactionManager.h"
-#include "kernel/parsers/Parser.h"
+#include "kernel/parsers/MessageParser.h"
 #include "kernel/parsers/BlockAskParser.h"
 #include "kernel/parsers/BlockAnswerParser.h"
 #include "kernel/parsers/BlockParser.h"
@@ -54,14 +54,13 @@ public:
 
 private:
     void init_parsers();
-    void add_parser(Parser* p);
-    std::map<int, Parser*> parsers;
+    void add_parser(MessageParser* p);
+    std::map<int, MessageParser*> parsers;
     bool debug;
     std::string encoding;
     Proof* proof;
     void store(std::string ip, int p);
     Serializer* serializer;
-    //Validator validator;
     SocketServer server;
     NodeState block_chain;
     Peer self;

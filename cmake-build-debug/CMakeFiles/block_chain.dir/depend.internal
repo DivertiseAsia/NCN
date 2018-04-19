@@ -11,6 +11,8 @@ CMakeFiles/block_chain.dir/block_chain/Node.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/chain/Chain.h
  /home/default/CLionProjects/block_chain/block_chain/chain/NodeState.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/Proof.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/Metadata.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Reward.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
  /home/default/CLionProjects/block_chain/block_chain/chain/state/Database.h
@@ -26,18 +28,16 @@ CMakeFiles/block_chain.dir/block_chain/Node.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/BlockAnswerParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/BlockAskParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/BlockParser.h
- /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/Parser.h
+ /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/MessageParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/PeersAnswerParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/PeersAskParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/SignInParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/SignOutParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/TransactionParser.h
- /home/default/CLionProjects/block_chain/block_chain/proof/Proof.h
- /home/default/CLionProjects/block_chain/block_chain/proof/metadatas/Metadata.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Factory.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
  /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Serializer.h
  /home/default/CLionProjects/block_chain/block_chain/utils/socket/Peer.h
  /home/default/CLionProjects/block_chain/block_chain/utils/socket/Socket.h
@@ -50,24 +50,24 @@ CMakeFiles/block_chain.dir/block_chain/TransactionManager.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/chain/state/Row.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/components/Component.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
 CMakeFiles/block_chain.dir/block_chain/algorithm/Hash.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.cpp
  /home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/Metadata.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Reward.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
  /home/default/CLionProjects/block_chain/block_chain/chain/state/Database.h
  /home/default/CLionProjects/block_chain/block_chain/chain/state/Row.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/components/Component.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/messages/Message.h
- /home/default/CLionProjects/block_chain/block_chain/proof/metadatas/Metadata.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Factory.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
  /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Serializer.h
 CMakeFiles/block_chain.dir/block_chain/algorithm/MerkleTree.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h
@@ -77,8 +77,8 @@ CMakeFiles/block_chain.dir/block_chain/algorithm/MerkleTree.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/chain/state/Row.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/components/Component.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
 CMakeFiles/block_chain.dir/block_chain/algorithm/RSA.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/algorithm/RSA.cpp
  /home/default/CLionProjects/block_chain/block_chain/algorithm/RSA.h
@@ -89,17 +89,17 @@ CMakeFiles/block_chain.dir/block_chain/chain/Chain.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/chain/Chain.cpp
  /home/default/CLionProjects/block_chain/block_chain/chain/Chain.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/Metadata.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Reward.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
  /home/default/CLionProjects/block_chain/block_chain/chain/state/Database.h
  /home/default/CLionProjects/block_chain/block_chain/chain/state/Row.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/components/Component.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/messages/Message.h
- /home/default/CLionProjects/block_chain/block_chain/proof/metadatas/Metadata.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Factory.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
  /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Serializer.h
 CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h
@@ -109,17 +109,17 @@ CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/chain/NodeState.cpp
  /home/default/CLionProjects/block_chain/block_chain/chain/NodeState.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/Metadata.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Reward.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
  /home/default/CLionProjects/block_chain/block_chain/chain/state/Database.h
  /home/default/CLionProjects/block_chain/block_chain/chain/state/Row.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/components/Component.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/messages/Message.h
- /home/default/CLionProjects/block_chain/block_chain/proof/metadatas/Metadata.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Factory.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
  /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Serializer.h
  /home/default/CLionProjects/block_chain/block_chain/utils/socket/Peer.h
  /home/default/CLionProjects/block_chain/block_chain/utils/socket/Socket.h
@@ -129,19 +129,195 @@ CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/algorithm/RSA.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.cpp
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/Metadata.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Reward.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
  /home/default/CLionProjects/block_chain/block_chain/chain/state/Database.h
  /home/default/CLionProjects/block_chain/block_chain/chain/state/Row.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/components/Component.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/messages/Message.h
- /home/default/CLionProjects/block_chain/block_chain/proof/metadatas/Metadata.h
- /home/default/CLionProjects/block_chain/block_chain/proof/metadatas/ProofOfWorkMetadata.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Factory.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
  /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Serializer.h
+CMakeFiles/block_chain.dir/block_chain/chain/block/proof/Proof.cpp.o
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/Proof.cpp
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/Proof.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/ProofOfHold.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/ProofOfImportance.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/ProofOfMinimumAgedStake.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/ProofOfStake.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/ProofOfStakeTime.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/ProofOfUse.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/ProofOfWork.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/Metadata.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Reward.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/state/Database.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/state/Row.h
+ /home/default/CLionProjects/block_chain/block_chain/kernel/components/Component.h
+ /home/default/CLionProjects/block_chain/block_chain/kernel/messages/BlockMessage.h
+ /home/default/CLionProjects/block_chain/block_chain/kernel/messages/Message.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
+CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfHold.cpp.o
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/Proof.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/ProofOfHold.cpp
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/ProofOfHold.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/Metadata.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Reward.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/state/Database.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/state/Row.h
+ /home/default/CLionProjects/block_chain/block_chain/kernel/components/Component.h
+ /home/default/CLionProjects/block_chain/block_chain/kernel/messages/BlockMessage.h
+ /home/default/CLionProjects/block_chain/block_chain/kernel/messages/Message.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
+CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfImportance.cpp.o
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/Proof.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/ProofOfImportance.cpp
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/ProofOfImportance.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/Metadata.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Reward.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/state/Database.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/state/Row.h
+ /home/default/CLionProjects/block_chain/block_chain/kernel/components/Component.h
+ /home/default/CLionProjects/block_chain/block_chain/kernel/messages/BlockMessage.h
+ /home/default/CLionProjects/block_chain/block_chain/kernel/messages/Message.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
+CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfMinimumAgedStake.cpp.o
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/Proof.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/ProofOfMinimumAgedStake.cpp
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/ProofOfMinimumAgedStake.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/Metadata.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Reward.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/state/Database.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/state/Row.h
+ /home/default/CLionProjects/block_chain/block_chain/kernel/components/Component.h
+ /home/default/CLionProjects/block_chain/block_chain/kernel/messages/BlockMessage.h
+ /home/default/CLionProjects/block_chain/block_chain/kernel/messages/Message.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
+CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfStake.cpp.o
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/Proof.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/ProofOfStake.cpp
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/ProofOfStake.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/Metadata.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Reward.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/state/Database.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/state/Row.h
+ /home/default/CLionProjects/block_chain/block_chain/kernel/components/Component.h
+ /home/default/CLionProjects/block_chain/block_chain/kernel/messages/BlockMessage.h
+ /home/default/CLionProjects/block_chain/block_chain/kernel/messages/Message.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
+CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfStakeTime.cpp.o
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/Proof.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/ProofOfStakeTime.cpp
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/ProofOfStakeTime.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/Metadata.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Reward.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/state/Database.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/state/Row.h
+ /home/default/CLionProjects/block_chain/block_chain/kernel/components/Component.h
+ /home/default/CLionProjects/block_chain/block_chain/kernel/messages/BlockMessage.h
+ /home/default/CLionProjects/block_chain/block_chain/kernel/messages/Message.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
+CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfUse.cpp.o
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/Proof.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/ProofOfUse.cpp
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/ProofOfUse.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/Metadata.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Reward.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/state/Database.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/state/Row.h
+ /home/default/CLionProjects/block_chain/block_chain/kernel/components/Component.h
+ /home/default/CLionProjects/block_chain/block_chain/kernel/messages/BlockMessage.h
+ /home/default/CLionProjects/block_chain/block_chain/kernel/messages/Message.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
+CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfWork.cpp.o
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/Proof.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/ProofOfWork.cpp
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/ProofOfWork.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/Metadata.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Reward.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/state/Database.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/state/Row.h
+ /home/default/CLionProjects/block_chain/block_chain/kernel/components/Component.h
+ /home/default/CLionProjects/block_chain/block_chain/kernel/messages/BlockMessage.h
+ /home/default/CLionProjects/block_chain/block_chain/kernel/messages/Message.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
+CMakeFiles/block_chain.dir/block_chain/chain/block/proof/metadatas/Metadata.cpp.o
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/Metadata.cpp
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/Metadata.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Reward.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/state/Database.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/state/Row.h
+ /home/default/CLionProjects/block_chain/block_chain/kernel/components/Component.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
+CMakeFiles/block_chain.dir/block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.cpp.o
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/Metadata.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.cpp
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Reward.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/state/Database.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/state/Row.h
+ /home/default/CLionProjects/block_chain/block_chain/kernel/components/Component.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
 CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Reward.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Reward.cpp
@@ -150,12 +326,13 @@ CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Reward.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/chain/state/Row.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/components/Component.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
 CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/Metadata.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Reward.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.cpp
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
@@ -163,11 +340,10 @@ CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/chain/state/Row.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/components/Component.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/messages/Message.h
- /home/default/CLionProjects/block_chain/block_chain/proof/metadatas/Metadata.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Factory.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
  /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Serializer.h
 CMakeFiles/block_chain.dir/block_chain/chain/state/Database.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h
@@ -178,16 +354,16 @@ CMakeFiles/block_chain.dir/block_chain/chain/state/Database.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/chain/state/Row.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/components/Component.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
 CMakeFiles/block_chain.dir/block_chain/chain/state/Row.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/chain/state/Row.cpp
  /home/default/CLionProjects/block_chain/block_chain/chain/state/Row.h
 CMakeFiles/block_chain.dir/block_chain/kernel/components/Component.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/kernel/components/Component.cpp
  /home/default/CLionProjects/block_chain/block_chain/kernel/components/Component.h
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
 CMakeFiles/block_chain.dir/block_chain/kernel/messages/AnswerPeersMessage.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
@@ -199,8 +375,8 @@ CMakeFiles/block_chain.dir/block_chain/kernel/messages/AnswerPeersMessage.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/kernel/messages/Message.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/messages/SignMessage.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
 CMakeFiles/block_chain.dir/block_chain/kernel/messages/AskPeersMessage.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
@@ -212,8 +388,8 @@ CMakeFiles/block_chain.dir/block_chain/kernel/messages/AskPeersMessage.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/kernel/messages/Message.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/messages/SignMessage.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
 CMakeFiles/block_chain.dir/block_chain/kernel/messages/BlockAnswerMessage.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
@@ -224,8 +400,8 @@ CMakeFiles/block_chain.dir/block_chain/kernel/messages/BlockAnswerMessage.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/kernel/messages/BlockAnswerMessage.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/messages/Message.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
 CMakeFiles/block_chain.dir/block_chain/kernel/messages/BlockAskMessage.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
@@ -236,8 +412,8 @@ CMakeFiles/block_chain.dir/block_chain/kernel/messages/BlockAskMessage.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/kernel/messages/BlockAskMessage.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/messages/Message.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
 CMakeFiles/block_chain.dir/block_chain/kernel/messages/BlockMessage.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
@@ -248,8 +424,8 @@ CMakeFiles/block_chain.dir/block_chain/kernel/messages/BlockMessage.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/kernel/messages/BlockMessage.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/messages/Message.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
 CMakeFiles/block_chain.dir/block_chain/kernel/messages/Message.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
@@ -268,8 +444,8 @@ CMakeFiles/block_chain.dir/block_chain/kernel/messages/Message.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/kernel/messages/SignOutMessage.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/messages/TransactionMessage.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
 CMakeFiles/block_chain.dir/block_chain/kernel/messages/SignInMessage.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
@@ -281,8 +457,8 @@ CMakeFiles/block_chain.dir/block_chain/kernel/messages/SignInMessage.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/kernel/messages/SignInMessage.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/messages/SignMessage.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
 CMakeFiles/block_chain.dir/block_chain/kernel/messages/SignMessage.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
@@ -293,8 +469,8 @@ CMakeFiles/block_chain.dir/block_chain/kernel/messages/SignMessage.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/kernel/messages/SignMessage.cpp
  /home/default/CLionProjects/block_chain/block_chain/kernel/messages/SignMessage.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
 CMakeFiles/block_chain.dir/block_chain/kernel/messages/SignOutMessage.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
@@ -306,8 +482,8 @@ CMakeFiles/block_chain.dir/block_chain/kernel/messages/SignOutMessage.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/kernel/messages/SignOutMessage.cpp
  /home/default/CLionProjects/block_chain/block_chain/kernel/messages/SignOutMessage.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
 CMakeFiles/block_chain.dir/block_chain/kernel/messages/TransactionMessage.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
@@ -318,8 +494,8 @@ CMakeFiles/block_chain.dir/block_chain/kernel/messages/TransactionMessage.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/kernel/messages/TransactionMessage.cpp
  /home/default/CLionProjects/block_chain/block_chain/kernel/messages/TransactionMessage.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAnswerParser.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/Node.h
  /home/default/CLionProjects/block_chain/block_chain/TransactionManager.h
@@ -329,6 +505,8 @@ CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAnswerParser.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/chain/Chain.h
  /home/default/CLionProjects/block_chain/block_chain/chain/NodeState.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/Proof.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/Metadata.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Reward.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
  /home/default/CLionProjects/block_chain/block_chain/chain/state/Database.h
@@ -346,18 +524,16 @@ CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAnswerParser.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/BlockAnswerParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/BlockAskParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/BlockParser.h
- /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/Parser.h
+ /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/MessageParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/PeersAnswerParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/PeersAskParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/SignInParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/SignOutParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/TransactionParser.h
- /home/default/CLionProjects/block_chain/block_chain/proof/Proof.h
- /home/default/CLionProjects/block_chain/block_chain/proof/metadatas/Metadata.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Factory.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
  /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Serializer.h
  /home/default/CLionProjects/block_chain/block_chain/utils/socket/Peer.h
  /home/default/CLionProjects/block_chain/block_chain/utils/socket/Socket.h
@@ -371,6 +547,8 @@ CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAskParser.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/chain/Chain.h
  /home/default/CLionProjects/block_chain/block_chain/chain/NodeState.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/Proof.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/Metadata.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Reward.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
  /home/default/CLionProjects/block_chain/block_chain/chain/state/Database.h
@@ -388,18 +566,16 @@ CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAskParser.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/BlockAskParser.cpp
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/BlockAskParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/BlockParser.h
- /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/Parser.h
+ /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/MessageParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/PeersAnswerParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/PeersAskParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/SignInParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/SignOutParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/TransactionParser.h
- /home/default/CLionProjects/block_chain/block_chain/proof/Proof.h
- /home/default/CLionProjects/block_chain/block_chain/proof/metadatas/Metadata.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Factory.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
  /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Serializer.h
  /home/default/CLionProjects/block_chain/block_chain/utils/socket/Peer.h
  /home/default/CLionProjects/block_chain/block_chain/utils/socket/Socket.h
@@ -413,6 +589,8 @@ CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockParser.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/chain/Chain.h
  /home/default/CLionProjects/block_chain/block_chain/chain/NodeState.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/Proof.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/Metadata.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Reward.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
  /home/default/CLionProjects/block_chain/block_chain/chain/state/Database.h
@@ -429,18 +607,16 @@ CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockParser.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/BlockAskParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/BlockParser.cpp
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/BlockParser.h
- /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/Parser.h
+ /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/MessageParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/PeersAnswerParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/PeersAskParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/SignInParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/SignOutParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/TransactionParser.h
- /home/default/CLionProjects/block_chain/block_chain/proof/Proof.h
- /home/default/CLionProjects/block_chain/block_chain/proof/metadatas/Metadata.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Factory.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
  /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Serializer.h
  /home/default/CLionProjects/block_chain/block_chain/utils/socket/Peer.h
  /home/default/CLionProjects/block_chain/block_chain/utils/socket/Socket.h
@@ -454,6 +630,8 @@ CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAnswerParser.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/chain/Chain.h
  /home/default/CLionProjects/block_chain/block_chain/chain/NodeState.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/Proof.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/Metadata.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Reward.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
  /home/default/CLionProjects/block_chain/block_chain/chain/state/Database.h
@@ -470,19 +648,17 @@ CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAnswerParser.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/BlockAnswerParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/BlockAskParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/BlockParser.h
- /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/Parser.h
+ /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/MessageParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/PeersAnswerParser.cpp
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/PeersAnswerParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/PeersAskParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/SignInParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/SignOutParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/TransactionParser.h
- /home/default/CLionProjects/block_chain/block_chain/proof/Proof.h
- /home/default/CLionProjects/block_chain/block_chain/proof/metadatas/Metadata.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Factory.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
  /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Serializer.h
  /home/default/CLionProjects/block_chain/block_chain/utils/socket/Peer.h
  /home/default/CLionProjects/block_chain/block_chain/utils/socket/Socket.h
@@ -496,6 +672,8 @@ CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAskParser.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/chain/Chain.h
  /home/default/CLionProjects/block_chain/block_chain/chain/NodeState.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/Proof.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/Metadata.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Reward.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
  /home/default/CLionProjects/block_chain/block_chain/chain/state/Database.h
@@ -512,19 +690,17 @@ CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAskParser.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/BlockAnswerParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/BlockAskParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/BlockParser.h
- /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/Parser.h
+ /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/MessageParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/PeersAnswerParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/PeersAskParser.cpp
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/PeersAskParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/SignInParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/SignOutParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/TransactionParser.h
- /home/default/CLionProjects/block_chain/block_chain/proof/Proof.h
- /home/default/CLionProjects/block_chain/block_chain/proof/metadatas/Metadata.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Factory.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
  /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Serializer.h
  /home/default/CLionProjects/block_chain/block_chain/utils/socket/Peer.h
  /home/default/CLionProjects/block_chain/block_chain/utils/socket/Socket.h
@@ -538,6 +714,8 @@ CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignInParser.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/chain/Chain.h
  /home/default/CLionProjects/block_chain/block_chain/chain/NodeState.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/Proof.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/Metadata.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Reward.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
  /home/default/CLionProjects/block_chain/block_chain/chain/state/Database.h
@@ -553,19 +731,17 @@ CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignInParser.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/BlockAnswerParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/BlockAskParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/BlockParser.h
- /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/Parser.h
+ /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/MessageParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/PeersAnswerParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/PeersAskParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/SignInParser.cpp
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/SignInParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/SignOutParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/TransactionParser.h
- /home/default/CLionProjects/block_chain/block_chain/proof/Proof.h
- /home/default/CLionProjects/block_chain/block_chain/proof/metadatas/Metadata.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Factory.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
  /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Serializer.h
  /home/default/CLionProjects/block_chain/block_chain/utils/socket/Peer.h
  /home/default/CLionProjects/block_chain/block_chain/utils/socket/Socket.h
@@ -579,6 +755,8 @@ CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignOutParser.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/chain/Chain.h
  /home/default/CLionProjects/block_chain/block_chain/chain/NodeState.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/Proof.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/Metadata.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Reward.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
  /home/default/CLionProjects/block_chain/block_chain/chain/state/Database.h
@@ -594,19 +772,17 @@ CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignOutParser.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/BlockAnswerParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/BlockAskParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/BlockParser.h
- /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/Parser.h
+ /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/MessageParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/PeersAnswerParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/PeersAskParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/SignInParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/SignOutParser.cpp
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/SignOutParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/TransactionParser.h
- /home/default/CLionProjects/block_chain/block_chain/proof/Proof.h
- /home/default/CLionProjects/block_chain/block_chain/proof/metadatas/Metadata.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Factory.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
  /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Serializer.h
  /home/default/CLionProjects/block_chain/block_chain/utils/socket/Peer.h
  /home/default/CLionProjects/block_chain/block_chain/utils/socket/Socket.h
@@ -620,6 +796,8 @@ CMakeFiles/block_chain.dir/block_chain/kernel/parsers/TransactionParser.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/chain/Chain.h
  /home/default/CLionProjects/block_chain/block_chain/chain/NodeState.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/Proof.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/Metadata.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Reward.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
  /home/default/CLionProjects/block_chain/block_chain/chain/state/Database.h
@@ -635,255 +813,77 @@ CMakeFiles/block_chain.dir/block_chain/kernel/parsers/TransactionParser.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/BlockAnswerParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/BlockAskParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/BlockParser.h
- /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/Parser.h
+ /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/MessageParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/PeersAnswerParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/PeersAskParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/SignInParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/SignOutParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/TransactionParser.cpp
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/TransactionParser.h
- /home/default/CLionProjects/block_chain/block_chain/proof/Proof.h
- /home/default/CLionProjects/block_chain/block_chain/proof/metadatas/Metadata.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Factory.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
  /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Serializer.h
  /home/default/CLionProjects/block_chain/block_chain/utils/socket/Peer.h
  /home/default/CLionProjects/block_chain/block_chain/utils/socket/Socket.h
  /home/default/CLionProjects/block_chain/block_chain/utils/socket/SocketServer.h
-CMakeFiles/block_chain.dir/block_chain/proof/Proof.cpp.o
- /home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h
- /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
- /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
- /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Reward.h
- /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
- /home/default/CLionProjects/block_chain/block_chain/chain/state/Database.h
- /home/default/CLionProjects/block_chain/block_chain/chain/state/Row.h
- /home/default/CLionProjects/block_chain/block_chain/kernel/components/Component.h
- /home/default/CLionProjects/block_chain/block_chain/kernel/messages/BlockMessage.h
- /home/default/CLionProjects/block_chain/block_chain/kernel/messages/Message.h
- /home/default/CLionProjects/block_chain/block_chain/proof/Proof.cpp
- /home/default/CLionProjects/block_chain/block_chain/proof/Proof.h
- /home/default/CLionProjects/block_chain/block_chain/proof/ProofOfHold.h
- /home/default/CLionProjects/block_chain/block_chain/proof/ProofOfImportance.h
- /home/default/CLionProjects/block_chain/block_chain/proof/ProofOfMinimumAgedStake.h
- /home/default/CLionProjects/block_chain/block_chain/proof/ProofOfStake.h
- /home/default/CLionProjects/block_chain/block_chain/proof/ProofOfStakeTime.h
- /home/default/CLionProjects/block_chain/block_chain/proof/ProofOfUse.h
- /home/default/CLionProjects/block_chain/block_chain/proof/ProofOfWork.h
- /home/default/CLionProjects/block_chain/block_chain/proof/metadatas/Metadata.h
- /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
-CMakeFiles/block_chain.dir/block_chain/proof/ProofOfHold.cpp.o
- /home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h
- /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
- /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
- /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Reward.h
- /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
- /home/default/CLionProjects/block_chain/block_chain/chain/state/Database.h
- /home/default/CLionProjects/block_chain/block_chain/chain/state/Row.h
- /home/default/CLionProjects/block_chain/block_chain/kernel/components/Component.h
- /home/default/CLionProjects/block_chain/block_chain/kernel/messages/BlockMessage.h
- /home/default/CLionProjects/block_chain/block_chain/kernel/messages/Message.h
- /home/default/CLionProjects/block_chain/block_chain/proof/Proof.h
- /home/default/CLionProjects/block_chain/block_chain/proof/ProofOfHold.cpp
- /home/default/CLionProjects/block_chain/block_chain/proof/ProofOfHold.h
- /home/default/CLionProjects/block_chain/block_chain/proof/metadatas/Metadata.h
- /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
-CMakeFiles/block_chain.dir/block_chain/proof/ProofOfImportance.cpp.o
- /home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h
- /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
- /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
- /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Reward.h
- /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
- /home/default/CLionProjects/block_chain/block_chain/chain/state/Database.h
- /home/default/CLionProjects/block_chain/block_chain/chain/state/Row.h
- /home/default/CLionProjects/block_chain/block_chain/kernel/components/Component.h
- /home/default/CLionProjects/block_chain/block_chain/kernel/messages/BlockMessage.h
- /home/default/CLionProjects/block_chain/block_chain/kernel/messages/Message.h
- /home/default/CLionProjects/block_chain/block_chain/proof/Proof.h
- /home/default/CLionProjects/block_chain/block_chain/proof/ProofOfImportance.cpp
- /home/default/CLionProjects/block_chain/block_chain/proof/ProofOfImportance.h
- /home/default/CLionProjects/block_chain/block_chain/proof/metadatas/Metadata.h
- /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
-CMakeFiles/block_chain.dir/block_chain/proof/ProofOfMinimumAgedStake.cpp.o
- /home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h
- /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
- /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
- /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Reward.h
- /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
- /home/default/CLionProjects/block_chain/block_chain/chain/state/Database.h
- /home/default/CLionProjects/block_chain/block_chain/chain/state/Row.h
- /home/default/CLionProjects/block_chain/block_chain/kernel/components/Component.h
- /home/default/CLionProjects/block_chain/block_chain/kernel/messages/BlockMessage.h
- /home/default/CLionProjects/block_chain/block_chain/kernel/messages/Message.h
- /home/default/CLionProjects/block_chain/block_chain/proof/Proof.h
- /home/default/CLionProjects/block_chain/block_chain/proof/ProofOfMinimumAgedStake.cpp
- /home/default/CLionProjects/block_chain/block_chain/proof/ProofOfMinimumAgedStake.h
- /home/default/CLionProjects/block_chain/block_chain/proof/metadatas/Metadata.h
- /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
-CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStake.cpp.o
- /home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h
- /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
- /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
- /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Reward.h
- /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
- /home/default/CLionProjects/block_chain/block_chain/chain/state/Database.h
- /home/default/CLionProjects/block_chain/block_chain/chain/state/Row.h
- /home/default/CLionProjects/block_chain/block_chain/kernel/components/Component.h
- /home/default/CLionProjects/block_chain/block_chain/kernel/messages/BlockMessage.h
- /home/default/CLionProjects/block_chain/block_chain/kernel/messages/Message.h
- /home/default/CLionProjects/block_chain/block_chain/proof/Proof.h
- /home/default/CLionProjects/block_chain/block_chain/proof/ProofOfStake.cpp
- /home/default/CLionProjects/block_chain/block_chain/proof/ProofOfStake.h
- /home/default/CLionProjects/block_chain/block_chain/proof/metadatas/Metadata.h
- /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
-CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStakeTime.cpp.o
- /home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h
- /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
- /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
- /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Reward.h
- /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
- /home/default/CLionProjects/block_chain/block_chain/chain/state/Database.h
- /home/default/CLionProjects/block_chain/block_chain/chain/state/Row.h
- /home/default/CLionProjects/block_chain/block_chain/kernel/components/Component.h
- /home/default/CLionProjects/block_chain/block_chain/kernel/messages/BlockMessage.h
- /home/default/CLionProjects/block_chain/block_chain/kernel/messages/Message.h
- /home/default/CLionProjects/block_chain/block_chain/proof/Proof.h
- /home/default/CLionProjects/block_chain/block_chain/proof/ProofOfStakeTime.cpp
- /home/default/CLionProjects/block_chain/block_chain/proof/ProofOfStakeTime.h
- /home/default/CLionProjects/block_chain/block_chain/proof/metadatas/Metadata.h
- /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
-CMakeFiles/block_chain.dir/block_chain/proof/ProofOfUse.cpp.o
- /home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h
- /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
- /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
- /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Reward.h
- /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
- /home/default/CLionProjects/block_chain/block_chain/chain/state/Database.h
- /home/default/CLionProjects/block_chain/block_chain/chain/state/Row.h
- /home/default/CLionProjects/block_chain/block_chain/kernel/components/Component.h
- /home/default/CLionProjects/block_chain/block_chain/kernel/messages/BlockMessage.h
- /home/default/CLionProjects/block_chain/block_chain/kernel/messages/Message.h
- /home/default/CLionProjects/block_chain/block_chain/proof/Proof.h
- /home/default/CLionProjects/block_chain/block_chain/proof/ProofOfUse.cpp
- /home/default/CLionProjects/block_chain/block_chain/proof/ProofOfUse.h
- /home/default/CLionProjects/block_chain/block_chain/proof/metadatas/Metadata.h
- /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
-CMakeFiles/block_chain.dir/block_chain/proof/ProofOfWork.cpp.o
- /home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h
- /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
- /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
- /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Reward.h
- /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
- /home/default/CLionProjects/block_chain/block_chain/chain/state/Database.h
- /home/default/CLionProjects/block_chain/block_chain/chain/state/Row.h
- /home/default/CLionProjects/block_chain/block_chain/kernel/components/Component.h
- /home/default/CLionProjects/block_chain/block_chain/kernel/messages/BlockMessage.h
- /home/default/CLionProjects/block_chain/block_chain/kernel/messages/Message.h
- /home/default/CLionProjects/block_chain/block_chain/proof/Proof.h
- /home/default/CLionProjects/block_chain/block_chain/proof/ProofOfWork.cpp
- /home/default/CLionProjects/block_chain/block_chain/proof/ProofOfWork.h
- /home/default/CLionProjects/block_chain/block_chain/proof/metadatas/Metadata.h
- /home/default/CLionProjects/block_chain/block_chain/proof/metadatas/ProofOfWorkMetadata.h
- /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
-CMakeFiles/block_chain.dir/block_chain/proof/metadatas/Metadata.cpp.o
- /home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h
- /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Reward.h
- /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
- /home/default/CLionProjects/block_chain/block_chain/chain/state/Database.h
- /home/default/CLionProjects/block_chain/block_chain/chain/state/Row.h
- /home/default/CLionProjects/block_chain/block_chain/kernel/components/Component.h
- /home/default/CLionProjects/block_chain/block_chain/proof/metadatas/Metadata.cpp
- /home/default/CLionProjects/block_chain/block_chain/proof/metadatas/Metadata.h
- /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
-CMakeFiles/block_chain.dir/block_chain/proof/metadatas/ProofOfWorkMetadata.cpp.o
- /home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h
- /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Reward.h
- /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
- /home/default/CLionProjects/block_chain/block_chain/chain/state/Database.h
- /home/default/CLionProjects/block_chain/block_chain/chain/state/Row.h
- /home/default/CLionProjects/block_chain/block_chain/kernel/components/Component.h
- /home/default/CLionProjects/block_chain/block_chain/proof/metadatas/Metadata.h
- /home/default/CLionProjects/block_chain/block_chain/proof/metadatas/ProofOfWorkMetadata.cpp
- /home/default/CLionProjects/block_chain/block_chain/proof/metadatas/ProofOfWorkMetadata.h
- /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
 CMakeFiles/block_chain.dir/block_chain/utils/Encoding.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.cpp
  /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
 CMakeFiles/block_chain.dir/block_chain/utils/serialization/Element.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.cpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
 CMakeFiles/block_chain.dir/block_chain/utils/serialization/ElementCreator.cpp.o
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
  /home/default/CLionProjects/block_chain/block_chain/utils/serialization/ElementCreator.cpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
 CMakeFiles/block_chain.dir/block_chain/utils/serialization/Serializer.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/Metadata.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Reward.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
  /home/default/CLionProjects/block_chain/block_chain/chain/state/Database.h
  /home/default/CLionProjects/block_chain/block_chain/chain/state/Row.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/components/Component.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/messages/Message.h
- /home/default/CLionProjects/block_chain/block_chain/proof/metadatas/Metadata.h
- /home/default/CLionProjects/block_chain/block_chain/proof/metadatas/ProofOfWorkMetadata.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Factory.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
  /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Serializer.cpp
  /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Serializer.h
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/json/JsonCreator.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/json/JsonParser.hpp
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/json/JsonCreator.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/json/JsonParser.h
 CMakeFiles/block_chain.dir/block_chain/utils/serialization/json/JsonCreator.cpp.o
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
  /home/default/CLionProjects/block_chain/block_chain/utils/serialization/json/JsonCreator.cpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/json/JsonCreator.hpp
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/json/JsonCreator.h
 CMakeFiles/block_chain.dir/block_chain/utils/serialization/json/JsonParser.cpp.o
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
  /home/default/CLionProjects/block_chain/block_chain/utils/serialization/json/JsonParser.cpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/json/JsonParser.hpp
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/json/JsonParser.h
 CMakeFiles/block_chain.dir/block_chain/utils/socket/Peer.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/Metadata.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Reward.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
  /home/default/CLionProjects/block_chain/block_chain/chain/state/Database.h
  /home/default/CLionProjects/block_chain/block_chain/chain/state/Row.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/components/Component.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/messages/Message.h
- /home/default/CLionProjects/block_chain/block_chain/proof/metadatas/Metadata.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Factory.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
  /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Serializer.h
  /home/default/CLionProjects/block_chain/block_chain/utils/socket/Peer.cpp
  /home/default/CLionProjects/block_chain/block_chain/utils/socket/Peer.h
@@ -895,17 +895,17 @@ CMakeFiles/block_chain.dir/block_chain/utils/socket/SocketServer.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/Metadata.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Reward.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
  /home/default/CLionProjects/block_chain/block_chain/chain/state/Database.h
  /home/default/CLionProjects/block_chain/block_chain/chain/state/Row.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/components/Component.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/messages/Message.h
- /home/default/CLionProjects/block_chain/block_chain/proof/metadatas/Metadata.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Factory.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
  /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Serializer.h
  /home/default/CLionProjects/block_chain/block_chain/utils/socket/Socket.h
  /home/default/CLionProjects/block_chain/block_chain/utils/socket/SocketServer.cpp
@@ -923,6 +923,8 @@ CMakeFiles/block_chain.dir/main.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/chain/Chain.h
  /home/default/CLionProjects/block_chain/block_chain/chain/NodeState.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/Proof.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/Metadata.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Reward.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
  /home/default/CLionProjects/block_chain/block_chain/chain/state/Database.h
@@ -938,18 +940,16 @@ CMakeFiles/block_chain.dir/main.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/BlockAnswerParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/BlockAskParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/BlockParser.h
- /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/Parser.h
+ /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/MessageParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/PeersAnswerParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/PeersAskParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/SignInParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/SignOutParser.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/TransactionParser.h
- /home/default/CLionProjects/block_chain/block_chain/proof/Proof.h
- /home/default/CLionProjects/block_chain/block_chain/proof/metadatas/Metadata.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Factory.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
  /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Serializer.h
  /home/default/CLionProjects/block_chain/block_chain/utils/socket/Peer.h
  /home/default/CLionProjects/block_chain/block_chain/utils/socket/Socket.h
@@ -968,8 +968,8 @@ CMakeFiles/block_chain.dir/reward/RewardTransaction.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/chain/state/Row.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/components/Component.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
  /home/default/CLionProjects/block_chain/database/Row.h
  /home/default/CLionProjects/block_chain/reward/RewardTransaction.cpp
  /home/default/CLionProjects/block_chain/reward/RewardTransaction.h
@@ -977,17 +977,17 @@ CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
+ /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/Metadata.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Reward.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
  /home/default/CLionProjects/block_chain/block_chain/chain/state/Database.h
  /home/default/CLionProjects/block_chain/block_chain/chain/state/Row.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/components/Component.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/messages/Message.h
- /home/default/CLionProjects/block_chain/block_chain/proof/metadatas/Metadata.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Factory.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
  /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Serializer.h
  /home/default/CLionProjects/block_chain/database/Row.h
  /home/default/CLionProjects/block_chain/serializer/CustomSerializer.cpp
@@ -1000,8 +1000,8 @@ CMakeFiles/block_chain.dir/transactions/MessagesTransaction.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/chain/state/Row.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/components/Component.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
  /home/default/CLionProjects/block_chain/database/Row.h
  /home/default/CLionProjects/block_chain/transactions/MessagesTransaction.cpp
  /home/default/CLionProjects/block_chain/transactions/MessagesTransaction.h
@@ -1011,8 +1011,8 @@ CMakeFiles/block_chain.dir/transactions/MoneyTransaction.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/chain/state/Row.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/components/Component.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
  /home/default/CLionProjects/block_chain/database/Row.h
  /home/default/CLionProjects/block_chain/transactions/MoneyTransaction.cpp
  /home/default/CLionProjects/block_chain/transactions/MoneyTransaction.h
@@ -1022,8 +1022,8 @@ CMakeFiles/block_chain.dir/transactions/StatusTransaction.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/chain/state/Row.h
  /home/default/CLionProjects/block_chain/block_chain/kernel/components/Component.h
  /home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.hpp
- /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.hpp
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
+ /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
  /home/default/CLionProjects/block_chain/database/Row.h
  /home/default/CLionProjects/block_chain/transactions/StatusTransaction.cpp
  /home/default/CLionProjects/block_chain/transactions/StatusTransaction.h

@@ -6,9 +6,9 @@
 #define BLOCK_CHAIN_TRANSACTIONPARSER_H
 
 
-#include "Parser.h"
+#include "MessageParser.h"
 
-class TransactionParser: public Parser {
+class TransactionParser: public MessageParser {
 public:
     void operator()(Message* m, Node* node) const final;
     int get_type() const final;

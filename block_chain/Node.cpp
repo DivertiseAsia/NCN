@@ -7,7 +7,7 @@
 void run(SocketServer* server, Serializer* serializer, Node* node) {
     server->run(Node::defaultCallback, serializer, node);
 }
-Node::Node(Serializer* s, int p, const char* e, int pr, bool d, Reward* r): queue(0), serializer(s), encoding(e), proof(Proof::generate(pr)),/* validator(serializer, encoding.c_str()),*/ block_chain(s, 1, encoding.c_str(), r), server(p), running(run, &server, s, this), self(serializer, Socket::getIP(), p), debug(d) {
+Node::Node(Serializer* s, int p, const char* e, int pr, bool d, Reward* r): queue(0), serializer(s), encoding(e), proof(Proof::generate(pr)), block_chain(s, 1, encoding.c_str(), r), server(p), running(run, &server, s, this), self(serializer, Socket::getIP(), p), debug(d) {
     init_parsers();
     OpenSSL_add_all_algorithms();
     ERR_load_BIO_strings();
@@ -43,7 +43,7 @@ Node::~Node(){
     std::cout<< "Connection closed" <<std::endl;
 }
 
-void Node::add_parser(Parser* p){
+void Node::add_parser(MessageParser* p){
     parsers[p->get_type()] = p;
 }
 
@@ -73,6 +73,7 @@ void Node::store(std::string _ip, int _p){
     if(!i)
         block_chain.read_blocks();
 }
+
 void Node::close(){
     SignOutMessage message(self.to_string());
     char* m = serializer->serialize(&message, encoding.c_str());
@@ -142,12 +143,12 @@ bool Node::defaultCallback(Socket* socket, int port, Serializer* serializer, Nod
 
 void Node::start(TransactionManager manager) {
     Transaction* t = nullptr;
-    do{
+    do {
         t = manager.run();
-        if((long long int)t == -1){
+        if((long long int)t == -1)
             block_chain.show_current_state();
-        }
         else if(t)
             request_transaction(t);
-    }while(t != nullptr);
+    }
+    while(t != nullptr);
 }
