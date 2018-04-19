@@ -14,7 +14,7 @@ void SignOutParser::operator()(Message* m, Node* node) const {
     int port = atoi(message->peer.substr(index+1).c_str());
     if(node->debug)
         std::cout << "\033[1;34m[OUT] " << ip << ":" << port << " is signing out from " << node->self._ip << ":" << node->self._port<<"\033[0m\n";
-    Peer peer(node->serializer, ip, port);
+    Peer peer(ip, port);
     auto it = find(node->peers.begin(), node->peers.end(), peer);
     if(it != node->peers.end()) {
         it->close();

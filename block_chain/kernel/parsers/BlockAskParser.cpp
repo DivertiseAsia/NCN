@@ -20,7 +20,7 @@ void BlockAskParser::operator()(Message* m, Node* node) const {
     std::string serialized_block(node->serializer->serialize(b, node->encoding.c_str()));
     BlockAnswerMessage answer(serialized_block);
     char* text = node->serializer->serialize(&answer, node->encoding.c_str());
-    Peer peer(node->serializer, ip, port);
+    Peer peer(ip, port);
     peer.send(Encoding::toHexa(std::string(text)).c_str());
     free(text);
 }

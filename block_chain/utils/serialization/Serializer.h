@@ -7,10 +7,14 @@
 
 #include "../../chain/block/Block.h"
 #include "../../chain/block/transaction/Transaction.h"
-#include "../Factory.hpp"
+#include "../Factory.h"
 #include "Parser.h"
 #include "../../kernel/messages/Message.h"
 #include <cstdlib>
+#include "json/JsonCreator.h"
+#include "json/JsonParser.h"
+#include <utility>
+#include "../../chain/block/proof/metadatas/ProofOfWorkMetadata.h"
 
 /**
  *  An abstract serializer.

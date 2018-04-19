@@ -15,7 +15,7 @@ void PeersAskParser::operator()(Message* m, Node* node) const {
     int port = atoi(message->peer.substr(index+1).c_str());
     if(node->debug)
         std::cout << "\033[1;34m[INFO] Peers asked by " << ip << ":" << port<<"\033[0m\n";
-    Peer peer(node->serializer, ip, port);
+    Peer peer(ip, port);
     std::string peers_to_send(node->self.to_string());
     for (auto &p : node->peers)
         peers_to_send += "\n" + p.to_string();

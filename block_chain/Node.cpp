@@ -7,7 +7,7 @@
 void run(SocketServer* server, Serializer* serializer, Node* node) {
     server->run(Node::defaultCallback, serializer, node);
 }
-Node::Node(Serializer* s, int p, const char* e, int pr, bool d, Reward* r): queue(0), serializer(s), encoding(e), proof(Proof::generate(pr)), block_chain(s, 1, encoding.c_str(), r), server(p), running(run, &server, s, this), self(serializer, Socket::getIP(), p), debug(d) {
+Node::Node(Serializer* s, int p, const char* e, int pr, bool d, Reward* r): queue(0), serializer(s), encoding(e), proof(Proof::generate(pr)), block_chain(s, 1, encoding.c_str(), r), server(p), running(run, &server, s, this), self(Socket::getIP(), p), debug(d) {
     init_parsers();
     OpenSSL_add_all_algorithms();
     ERR_load_BIO_strings();
@@ -60,7 +60,7 @@ void Node::store(std::string _ip, int _p){
             std::string ip = line.substr(0, index);
             int port = atoi(line.substr(index+1).c_str());
             if(_ip != ip || _p != port){
-                Peer peer(serializer, ip, port);
+                Peer peer(ip, port);
                 if(peer.send(Encoding::toHexa(std::string(m)).c_str())) {
                     i = 1;
                     break;

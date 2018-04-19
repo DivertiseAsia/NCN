@@ -12,6 +12,7 @@ CMakeFiles/block_chain.dir/block_chain/Node.cpp.o: ../block_chain/chain/NodeStat
 CMakeFiles/block_chain.dir/block_chain/Node.cpp.o: ../block_chain/chain/block/Block.h
 CMakeFiles/block_chain.dir/block_chain/Node.cpp.o: ../block_chain/chain/block/proof/Proof.h
 CMakeFiles/block_chain.dir/block_chain/Node.cpp.o: ../block_chain/chain/block/proof/metadatas/Metadata.h
+CMakeFiles/block_chain.dir/block_chain/Node.cpp.o: ../block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.h
 CMakeFiles/block_chain.dir/block_chain/Node.cpp.o: ../block_chain/chain/block/transaction/Reward.h
 CMakeFiles/block_chain.dir/block_chain/Node.cpp.o: ../block_chain/chain/block/transaction/Transaction.h
 CMakeFiles/block_chain.dir/block_chain/Node.cpp.o: ../block_chain/chain/state/Database.h
@@ -34,10 +35,12 @@ CMakeFiles/block_chain.dir/block_chain/Node.cpp.o: ../block_chain/kernel/parsers
 CMakeFiles/block_chain.dir/block_chain/Node.cpp.o: ../block_chain/kernel/parsers/SignOutParser.h
 CMakeFiles/block_chain.dir/block_chain/Node.cpp.o: ../block_chain/kernel/parsers/TransactionParser.h
 CMakeFiles/block_chain.dir/block_chain/Node.cpp.o: ../block_chain/utils/Encoding.h
-CMakeFiles/block_chain.dir/block_chain/Node.cpp.o: ../block_chain/utils/Factory.hpp
+CMakeFiles/block_chain.dir/block_chain/Node.cpp.o: ../block_chain/utils/Factory.h
 CMakeFiles/block_chain.dir/block_chain/Node.cpp.o: ../block_chain/utils/serialization/Element.h
 CMakeFiles/block_chain.dir/block_chain/Node.cpp.o: ../block_chain/utils/serialization/Parser.h
 CMakeFiles/block_chain.dir/block_chain/Node.cpp.o: ../block_chain/utils/serialization/Serializer.h
+CMakeFiles/block_chain.dir/block_chain/Node.cpp.o: ../block_chain/utils/serialization/json/JsonCreator.h
+CMakeFiles/block_chain.dir/block_chain/Node.cpp.o: ../block_chain/utils/serialization/json/JsonParser.h
 CMakeFiles/block_chain.dir/block_chain/Node.cpp.o: ../block_chain/utils/socket/Peer.h
 CMakeFiles/block_chain.dir/block_chain/Node.cpp.o: ../block_chain/utils/socket/Socket.h
 CMakeFiles/block_chain.dir/block_chain/Node.cpp.o: ../block_chain/utils/socket/SocketServer.h
@@ -57,6 +60,7 @@ CMakeFiles/block_chain.dir/block_chain/algorithm/Hash.cpp.o: ../block_chain/algo
 CMakeFiles/block_chain.dir/block_chain/algorithm/Hash.cpp.o: ../block_chain/algorithm/MerkleTree.h
 CMakeFiles/block_chain.dir/block_chain/algorithm/Hash.cpp.o: ../block_chain/chain/block/Block.h
 CMakeFiles/block_chain.dir/block_chain/algorithm/Hash.cpp.o: ../block_chain/chain/block/proof/metadatas/Metadata.h
+CMakeFiles/block_chain.dir/block_chain/algorithm/Hash.cpp.o: ../block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.h
 CMakeFiles/block_chain.dir/block_chain/algorithm/Hash.cpp.o: ../block_chain/chain/block/transaction/Reward.h
 CMakeFiles/block_chain.dir/block_chain/algorithm/Hash.cpp.o: ../block_chain/chain/block/transaction/Transaction.h
 CMakeFiles/block_chain.dir/block_chain/algorithm/Hash.cpp.o: ../block_chain/chain/state/Database.h
@@ -64,10 +68,12 @@ CMakeFiles/block_chain.dir/block_chain/algorithm/Hash.cpp.o: ../block_chain/chai
 CMakeFiles/block_chain.dir/block_chain/algorithm/Hash.cpp.o: ../block_chain/kernel/components/Component.h
 CMakeFiles/block_chain.dir/block_chain/algorithm/Hash.cpp.o: ../block_chain/kernel/messages/Message.h
 CMakeFiles/block_chain.dir/block_chain/algorithm/Hash.cpp.o: ../block_chain/utils/Encoding.h
-CMakeFiles/block_chain.dir/block_chain/algorithm/Hash.cpp.o: ../block_chain/utils/Factory.hpp
+CMakeFiles/block_chain.dir/block_chain/algorithm/Hash.cpp.o: ../block_chain/utils/Factory.h
 CMakeFiles/block_chain.dir/block_chain/algorithm/Hash.cpp.o: ../block_chain/utils/serialization/Element.h
 CMakeFiles/block_chain.dir/block_chain/algorithm/Hash.cpp.o: ../block_chain/utils/serialization/Parser.h
 CMakeFiles/block_chain.dir/block_chain/algorithm/Hash.cpp.o: ../block_chain/utils/serialization/Serializer.h
+CMakeFiles/block_chain.dir/block_chain/algorithm/Hash.cpp.o: ../block_chain/utils/serialization/json/JsonCreator.h
+CMakeFiles/block_chain.dir/block_chain/algorithm/Hash.cpp.o: ../block_chain/utils/serialization/json/JsonParser.h
 
 CMakeFiles/block_chain.dir/block_chain/algorithm/MerkleTree.cpp.o: ../block_chain/algorithm/Hash.h
 CMakeFiles/block_chain.dir/block_chain/algorithm/MerkleTree.cpp.o: ../block_chain/algorithm/MerkleTree.cpp
@@ -89,6 +95,7 @@ CMakeFiles/block_chain.dir/block_chain/chain/Chain.cpp.o: ../block_chain/chain/C
 CMakeFiles/block_chain.dir/block_chain/chain/Chain.cpp.o: ../block_chain/chain/Chain.h
 CMakeFiles/block_chain.dir/block_chain/chain/Chain.cpp.o: ../block_chain/chain/block/Block.h
 CMakeFiles/block_chain.dir/block_chain/chain/Chain.cpp.o: ../block_chain/chain/block/proof/metadatas/Metadata.h
+CMakeFiles/block_chain.dir/block_chain/chain/Chain.cpp.o: ../block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.h
 CMakeFiles/block_chain.dir/block_chain/chain/Chain.cpp.o: ../block_chain/chain/block/transaction/Reward.h
 CMakeFiles/block_chain.dir/block_chain/chain/Chain.cpp.o: ../block_chain/chain/block/transaction/Transaction.h
 CMakeFiles/block_chain.dir/block_chain/chain/Chain.cpp.o: ../block_chain/chain/state/Database.h
@@ -96,10 +103,12 @@ CMakeFiles/block_chain.dir/block_chain/chain/Chain.cpp.o: ../block_chain/chain/s
 CMakeFiles/block_chain.dir/block_chain/chain/Chain.cpp.o: ../block_chain/kernel/components/Component.h
 CMakeFiles/block_chain.dir/block_chain/chain/Chain.cpp.o: ../block_chain/kernel/messages/Message.h
 CMakeFiles/block_chain.dir/block_chain/chain/Chain.cpp.o: ../block_chain/utils/Encoding.h
-CMakeFiles/block_chain.dir/block_chain/chain/Chain.cpp.o: ../block_chain/utils/Factory.hpp
+CMakeFiles/block_chain.dir/block_chain/chain/Chain.cpp.o: ../block_chain/utils/Factory.h
 CMakeFiles/block_chain.dir/block_chain/chain/Chain.cpp.o: ../block_chain/utils/serialization/Element.h
 CMakeFiles/block_chain.dir/block_chain/chain/Chain.cpp.o: ../block_chain/utils/serialization/Parser.h
 CMakeFiles/block_chain.dir/block_chain/chain/Chain.cpp.o: ../block_chain/utils/serialization/Serializer.h
+CMakeFiles/block_chain.dir/block_chain/chain/Chain.cpp.o: ../block_chain/utils/serialization/json/JsonCreator.h
+CMakeFiles/block_chain.dir/block_chain/chain/Chain.cpp.o: ../block_chain/utils/serialization/json/JsonParser.h
 
 CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o: ../block_chain/algorithm/Hash.h
 CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o: ../block_chain/algorithm/MerkleTree.h
@@ -109,6 +118,7 @@ CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o: ../block_chain/cha
 CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o: ../block_chain/chain/NodeState.h
 CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o: ../block_chain/chain/block/Block.h
 CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o: ../block_chain/chain/block/proof/metadatas/Metadata.h
+CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o: ../block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.h
 CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o: ../block_chain/chain/block/transaction/Reward.h
 CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o: ../block_chain/chain/block/transaction/Transaction.h
 CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o: ../block_chain/chain/state/Database.h
@@ -116,10 +126,12 @@ CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o: ../block_chain/cha
 CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o: ../block_chain/kernel/components/Component.h
 CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o: ../block_chain/kernel/messages/Message.h
 CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o: ../block_chain/utils/Encoding.h
-CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o: ../block_chain/utils/Factory.hpp
+CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o: ../block_chain/utils/Factory.h
 CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o: ../block_chain/utils/serialization/Element.h
 CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o: ../block_chain/utils/serialization/Parser.h
 CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o: ../block_chain/utils/serialization/Serializer.h
+CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o: ../block_chain/utils/serialization/json/JsonCreator.h
+CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o: ../block_chain/utils/serialization/json/JsonParser.h
 CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o: ../block_chain/utils/socket/Peer.h
 CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o: ../block_chain/utils/socket/Socket.h
 
@@ -137,10 +149,12 @@ CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o: ../block_chain/c
 CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o: ../block_chain/kernel/components/Component.h
 CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o: ../block_chain/kernel/messages/Message.h
 CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o: ../block_chain/utils/Encoding.h
-CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o: ../block_chain/utils/Factory.hpp
+CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o: ../block_chain/utils/Factory.h
 CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o: ../block_chain/utils/serialization/Element.h
 CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o: ../block_chain/utils/serialization/Parser.h
 CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o: ../block_chain/utils/serialization/Serializer.h
+CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o: ../block_chain/utils/serialization/json/JsonCreator.h
+CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o: ../block_chain/utils/serialization/json/JsonParser.h
 
 CMakeFiles/block_chain.dir/block_chain/chain/block/proof/Proof.cpp.o: ../block_chain/algorithm/Hash.h
 CMakeFiles/block_chain.dir/block_chain/chain/block/proof/Proof.cpp.o: ../block_chain/algorithm/MerkleTree.h
@@ -332,6 +346,7 @@ CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o
 CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o: ../block_chain/algorithm/MerkleTree.h
 CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o: ../block_chain/chain/block/Block.h
 CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o: ../block_chain/chain/block/proof/metadatas/Metadata.h
+CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o: ../block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.h
 CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o: ../block_chain/chain/block/transaction/Reward.h
 CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o: ../block_chain/chain/block/transaction/Transaction.cpp
 CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o: ../block_chain/chain/block/transaction/Transaction.h
@@ -340,10 +355,12 @@ CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o
 CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o: ../block_chain/kernel/components/Component.h
 CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o: ../block_chain/kernel/messages/Message.h
 CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o: ../block_chain/utils/Encoding.h
-CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o: ../block_chain/utils/Factory.hpp
+CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o: ../block_chain/utils/Factory.h
 CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o: ../block_chain/utils/serialization/Element.h
 CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o: ../block_chain/utils/serialization/Parser.h
 CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o: ../block_chain/utils/serialization/Serializer.h
+CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o: ../block_chain/utils/serialization/json/JsonCreator.h
+CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o: ../block_chain/utils/serialization/json/JsonParser.h
 
 CMakeFiles/block_chain.dir/block_chain/chain/state/Database.cpp.o: ../block_chain/algorithm/Hash.h
 CMakeFiles/block_chain.dir/block_chain/chain/state/Database.cpp.o: ../block_chain/chain/block/transaction/Reward.h
@@ -506,6 +523,7 @@ CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAnswerParser.cpp.o: .
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAnswerParser.cpp.o: ../block_chain/chain/block/Block.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAnswerParser.cpp.o: ../block_chain/chain/block/proof/Proof.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAnswerParser.cpp.o: ../block_chain/chain/block/proof/metadatas/Metadata.h
+CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAnswerParser.cpp.o: ../block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAnswerParser.cpp.o: ../block_chain/chain/block/transaction/Reward.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAnswerParser.cpp.o: ../block_chain/chain/block/transaction/Transaction.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAnswerParser.cpp.o: ../block_chain/chain/state/Database.h
@@ -530,10 +548,12 @@ CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAnswerParser.cpp.o: .
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAnswerParser.cpp.o: ../block_chain/kernel/parsers/SignOutParser.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAnswerParser.cpp.o: ../block_chain/kernel/parsers/TransactionParser.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAnswerParser.cpp.o: ../block_chain/utils/Encoding.h
-CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAnswerParser.cpp.o: ../block_chain/utils/Factory.hpp
+CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAnswerParser.cpp.o: ../block_chain/utils/Factory.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAnswerParser.cpp.o: ../block_chain/utils/serialization/Element.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAnswerParser.cpp.o: ../block_chain/utils/serialization/Parser.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAnswerParser.cpp.o: ../block_chain/utils/serialization/Serializer.h
+CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAnswerParser.cpp.o: ../block_chain/utils/serialization/json/JsonCreator.h
+CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAnswerParser.cpp.o: ../block_chain/utils/serialization/json/JsonParser.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAnswerParser.cpp.o: ../block_chain/utils/socket/Peer.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAnswerParser.cpp.o: ../block_chain/utils/socket/Socket.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAnswerParser.cpp.o: ../block_chain/utils/socket/SocketServer.h
@@ -548,6 +568,7 @@ CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAskParser.cpp.o: ../b
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAskParser.cpp.o: ../block_chain/chain/block/Block.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAskParser.cpp.o: ../block_chain/chain/block/proof/Proof.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAskParser.cpp.o: ../block_chain/chain/block/proof/metadatas/Metadata.h
+CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAskParser.cpp.o: ../block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAskParser.cpp.o: ../block_chain/chain/block/transaction/Reward.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAskParser.cpp.o: ../block_chain/chain/block/transaction/Transaction.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAskParser.cpp.o: ../block_chain/chain/state/Database.h
@@ -572,10 +593,12 @@ CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAskParser.cpp.o: ../b
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAskParser.cpp.o: ../block_chain/kernel/parsers/SignOutParser.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAskParser.cpp.o: ../block_chain/kernel/parsers/TransactionParser.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAskParser.cpp.o: ../block_chain/utils/Encoding.h
-CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAskParser.cpp.o: ../block_chain/utils/Factory.hpp
+CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAskParser.cpp.o: ../block_chain/utils/Factory.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAskParser.cpp.o: ../block_chain/utils/serialization/Element.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAskParser.cpp.o: ../block_chain/utils/serialization/Parser.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAskParser.cpp.o: ../block_chain/utils/serialization/Serializer.h
+CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAskParser.cpp.o: ../block_chain/utils/serialization/json/JsonCreator.h
+CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAskParser.cpp.o: ../block_chain/utils/serialization/json/JsonParser.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAskParser.cpp.o: ../block_chain/utils/socket/Peer.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAskParser.cpp.o: ../block_chain/utils/socket/Socket.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAskParser.cpp.o: ../block_chain/utils/socket/SocketServer.h
@@ -590,6 +613,7 @@ CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockParser.cpp.o: ../bloc
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockParser.cpp.o: ../block_chain/chain/block/Block.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockParser.cpp.o: ../block_chain/chain/block/proof/Proof.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockParser.cpp.o: ../block_chain/chain/block/proof/metadatas/Metadata.h
+CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockParser.cpp.o: ../block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockParser.cpp.o: ../block_chain/chain/block/transaction/Reward.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockParser.cpp.o: ../block_chain/chain/block/transaction/Transaction.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockParser.cpp.o: ../block_chain/chain/state/Database.h
@@ -613,10 +637,12 @@ CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockParser.cpp.o: ../bloc
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockParser.cpp.o: ../block_chain/kernel/parsers/SignOutParser.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockParser.cpp.o: ../block_chain/kernel/parsers/TransactionParser.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockParser.cpp.o: ../block_chain/utils/Encoding.h
-CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockParser.cpp.o: ../block_chain/utils/Factory.hpp
+CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockParser.cpp.o: ../block_chain/utils/Factory.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockParser.cpp.o: ../block_chain/utils/serialization/Element.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockParser.cpp.o: ../block_chain/utils/serialization/Parser.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockParser.cpp.o: ../block_chain/utils/serialization/Serializer.h
+CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockParser.cpp.o: ../block_chain/utils/serialization/json/JsonCreator.h
+CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockParser.cpp.o: ../block_chain/utils/serialization/json/JsonParser.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockParser.cpp.o: ../block_chain/utils/socket/Peer.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockParser.cpp.o: ../block_chain/utils/socket/Socket.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockParser.cpp.o: ../block_chain/utils/socket/SocketServer.h
@@ -631,6 +657,7 @@ CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAnswerParser.cpp.o: .
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAnswerParser.cpp.o: ../block_chain/chain/block/Block.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAnswerParser.cpp.o: ../block_chain/chain/block/proof/Proof.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAnswerParser.cpp.o: ../block_chain/chain/block/proof/metadatas/Metadata.h
+CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAnswerParser.cpp.o: ../block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAnswerParser.cpp.o: ../block_chain/chain/block/transaction/Reward.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAnswerParser.cpp.o: ../block_chain/chain/block/transaction/Transaction.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAnswerParser.cpp.o: ../block_chain/chain/state/Database.h
@@ -655,10 +682,12 @@ CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAnswerParser.cpp.o: .
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAnswerParser.cpp.o: ../block_chain/kernel/parsers/SignOutParser.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAnswerParser.cpp.o: ../block_chain/kernel/parsers/TransactionParser.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAnswerParser.cpp.o: ../block_chain/utils/Encoding.h
-CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAnswerParser.cpp.o: ../block_chain/utils/Factory.hpp
+CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAnswerParser.cpp.o: ../block_chain/utils/Factory.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAnswerParser.cpp.o: ../block_chain/utils/serialization/Element.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAnswerParser.cpp.o: ../block_chain/utils/serialization/Parser.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAnswerParser.cpp.o: ../block_chain/utils/serialization/Serializer.h
+CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAnswerParser.cpp.o: ../block_chain/utils/serialization/json/JsonCreator.h
+CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAnswerParser.cpp.o: ../block_chain/utils/serialization/json/JsonParser.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAnswerParser.cpp.o: ../block_chain/utils/socket/Peer.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAnswerParser.cpp.o: ../block_chain/utils/socket/Socket.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAnswerParser.cpp.o: ../block_chain/utils/socket/SocketServer.h
@@ -673,6 +702,7 @@ CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAskParser.cpp.o: ../b
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAskParser.cpp.o: ../block_chain/chain/block/Block.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAskParser.cpp.o: ../block_chain/chain/block/proof/Proof.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAskParser.cpp.o: ../block_chain/chain/block/proof/metadatas/Metadata.h
+CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAskParser.cpp.o: ../block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAskParser.cpp.o: ../block_chain/chain/block/transaction/Reward.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAskParser.cpp.o: ../block_chain/chain/block/transaction/Transaction.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAskParser.cpp.o: ../block_chain/chain/state/Database.h
@@ -697,10 +727,12 @@ CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAskParser.cpp.o: ../b
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAskParser.cpp.o: ../block_chain/kernel/parsers/SignOutParser.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAskParser.cpp.o: ../block_chain/kernel/parsers/TransactionParser.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAskParser.cpp.o: ../block_chain/utils/Encoding.h
-CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAskParser.cpp.o: ../block_chain/utils/Factory.hpp
+CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAskParser.cpp.o: ../block_chain/utils/Factory.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAskParser.cpp.o: ../block_chain/utils/serialization/Element.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAskParser.cpp.o: ../block_chain/utils/serialization/Parser.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAskParser.cpp.o: ../block_chain/utils/serialization/Serializer.h
+CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAskParser.cpp.o: ../block_chain/utils/serialization/json/JsonCreator.h
+CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAskParser.cpp.o: ../block_chain/utils/serialization/json/JsonParser.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAskParser.cpp.o: ../block_chain/utils/socket/Peer.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAskParser.cpp.o: ../block_chain/utils/socket/Socket.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAskParser.cpp.o: ../block_chain/utils/socket/SocketServer.h
@@ -715,6 +747,7 @@ CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignInParser.cpp.o: ../blo
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignInParser.cpp.o: ../block_chain/chain/block/Block.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignInParser.cpp.o: ../block_chain/chain/block/proof/Proof.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignInParser.cpp.o: ../block_chain/chain/block/proof/metadatas/Metadata.h
+CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignInParser.cpp.o: ../block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignInParser.cpp.o: ../block_chain/chain/block/transaction/Reward.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignInParser.cpp.o: ../block_chain/chain/block/transaction/Transaction.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignInParser.cpp.o: ../block_chain/chain/state/Database.h
@@ -738,10 +771,12 @@ CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignInParser.cpp.o: ../blo
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignInParser.cpp.o: ../block_chain/kernel/parsers/SignOutParser.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignInParser.cpp.o: ../block_chain/kernel/parsers/TransactionParser.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignInParser.cpp.o: ../block_chain/utils/Encoding.h
-CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignInParser.cpp.o: ../block_chain/utils/Factory.hpp
+CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignInParser.cpp.o: ../block_chain/utils/Factory.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignInParser.cpp.o: ../block_chain/utils/serialization/Element.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignInParser.cpp.o: ../block_chain/utils/serialization/Parser.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignInParser.cpp.o: ../block_chain/utils/serialization/Serializer.h
+CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignInParser.cpp.o: ../block_chain/utils/serialization/json/JsonCreator.h
+CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignInParser.cpp.o: ../block_chain/utils/serialization/json/JsonParser.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignInParser.cpp.o: ../block_chain/utils/socket/Peer.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignInParser.cpp.o: ../block_chain/utils/socket/Socket.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignInParser.cpp.o: ../block_chain/utils/socket/SocketServer.h
@@ -756,6 +791,7 @@ CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignOutParser.cpp.o: ../bl
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignOutParser.cpp.o: ../block_chain/chain/block/Block.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignOutParser.cpp.o: ../block_chain/chain/block/proof/Proof.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignOutParser.cpp.o: ../block_chain/chain/block/proof/metadatas/Metadata.h
+CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignOutParser.cpp.o: ../block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignOutParser.cpp.o: ../block_chain/chain/block/transaction/Reward.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignOutParser.cpp.o: ../block_chain/chain/block/transaction/Transaction.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignOutParser.cpp.o: ../block_chain/chain/state/Database.h
@@ -779,10 +815,12 @@ CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignOutParser.cpp.o: ../bl
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignOutParser.cpp.o: ../block_chain/kernel/parsers/SignOutParser.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignOutParser.cpp.o: ../block_chain/kernel/parsers/TransactionParser.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignOutParser.cpp.o: ../block_chain/utils/Encoding.h
-CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignOutParser.cpp.o: ../block_chain/utils/Factory.hpp
+CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignOutParser.cpp.o: ../block_chain/utils/Factory.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignOutParser.cpp.o: ../block_chain/utils/serialization/Element.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignOutParser.cpp.o: ../block_chain/utils/serialization/Parser.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignOutParser.cpp.o: ../block_chain/utils/serialization/Serializer.h
+CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignOutParser.cpp.o: ../block_chain/utils/serialization/json/JsonCreator.h
+CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignOutParser.cpp.o: ../block_chain/utils/serialization/json/JsonParser.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignOutParser.cpp.o: ../block_chain/utils/socket/Peer.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignOutParser.cpp.o: ../block_chain/utils/socket/Socket.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignOutParser.cpp.o: ../block_chain/utils/socket/SocketServer.h
@@ -797,6 +835,7 @@ CMakeFiles/block_chain.dir/block_chain/kernel/parsers/TransactionParser.cpp.o: .
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/TransactionParser.cpp.o: ../block_chain/chain/block/Block.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/TransactionParser.cpp.o: ../block_chain/chain/block/proof/Proof.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/TransactionParser.cpp.o: ../block_chain/chain/block/proof/metadatas/Metadata.h
+CMakeFiles/block_chain.dir/block_chain/kernel/parsers/TransactionParser.cpp.o: ../block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/TransactionParser.cpp.o: ../block_chain/chain/block/transaction/Reward.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/TransactionParser.cpp.o: ../block_chain/chain/block/transaction/Transaction.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/TransactionParser.cpp.o: ../block_chain/chain/state/Database.h
@@ -820,10 +859,12 @@ CMakeFiles/block_chain.dir/block_chain/kernel/parsers/TransactionParser.cpp.o: .
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/TransactionParser.cpp.o: ../block_chain/kernel/parsers/TransactionParser.cpp
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/TransactionParser.cpp.o: ../block_chain/kernel/parsers/TransactionParser.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/TransactionParser.cpp.o: ../block_chain/utils/Encoding.h
-CMakeFiles/block_chain.dir/block_chain/kernel/parsers/TransactionParser.cpp.o: ../block_chain/utils/Factory.hpp
+CMakeFiles/block_chain.dir/block_chain/kernel/parsers/TransactionParser.cpp.o: ../block_chain/utils/Factory.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/TransactionParser.cpp.o: ../block_chain/utils/serialization/Element.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/TransactionParser.cpp.o: ../block_chain/utils/serialization/Parser.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/TransactionParser.cpp.o: ../block_chain/utils/serialization/Serializer.h
+CMakeFiles/block_chain.dir/block_chain/kernel/parsers/TransactionParser.cpp.o: ../block_chain/utils/serialization/json/JsonCreator.h
+CMakeFiles/block_chain.dir/block_chain/kernel/parsers/TransactionParser.cpp.o: ../block_chain/utils/serialization/json/JsonParser.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/TransactionParser.cpp.o: ../block_chain/utils/socket/Peer.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/TransactionParser.cpp.o: ../block_chain/utils/socket/Socket.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/TransactionParser.cpp.o: ../block_chain/utils/socket/SocketServer.h
@@ -851,7 +892,7 @@ CMakeFiles/block_chain.dir/block_chain/utils/serialization/Serializer.cpp.o: ../
 CMakeFiles/block_chain.dir/block_chain/utils/serialization/Serializer.cpp.o: ../block_chain/kernel/components/Component.h
 CMakeFiles/block_chain.dir/block_chain/utils/serialization/Serializer.cpp.o: ../block_chain/kernel/messages/Message.h
 CMakeFiles/block_chain.dir/block_chain/utils/serialization/Serializer.cpp.o: ../block_chain/utils/Encoding.h
-CMakeFiles/block_chain.dir/block_chain/utils/serialization/Serializer.cpp.o: ../block_chain/utils/Factory.hpp
+CMakeFiles/block_chain.dir/block_chain/utils/serialization/Serializer.cpp.o: ../block_chain/utils/Factory.h
 CMakeFiles/block_chain.dir/block_chain/utils/serialization/Serializer.cpp.o: ../block_chain/utils/serialization/Element.h
 CMakeFiles/block_chain.dir/block_chain/utils/serialization/Serializer.cpp.o: ../block_chain/utils/serialization/Parser.h
 CMakeFiles/block_chain.dir/block_chain/utils/serialization/Serializer.cpp.o: ../block_chain/utils/serialization/Serializer.cpp
@@ -873,6 +914,7 @@ CMakeFiles/block_chain.dir/block_chain/utils/socket/Peer.cpp.o: ../block_chain/a
 CMakeFiles/block_chain.dir/block_chain/utils/socket/Peer.cpp.o: ../block_chain/algorithm/MerkleTree.h
 CMakeFiles/block_chain.dir/block_chain/utils/socket/Peer.cpp.o: ../block_chain/chain/block/Block.h
 CMakeFiles/block_chain.dir/block_chain/utils/socket/Peer.cpp.o: ../block_chain/chain/block/proof/metadatas/Metadata.h
+CMakeFiles/block_chain.dir/block_chain/utils/socket/Peer.cpp.o: ../block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.h
 CMakeFiles/block_chain.dir/block_chain/utils/socket/Peer.cpp.o: ../block_chain/chain/block/transaction/Reward.h
 CMakeFiles/block_chain.dir/block_chain/utils/socket/Peer.cpp.o: ../block_chain/chain/block/transaction/Transaction.h
 CMakeFiles/block_chain.dir/block_chain/utils/socket/Peer.cpp.o: ../block_chain/chain/state/Database.h
@@ -880,10 +922,12 @@ CMakeFiles/block_chain.dir/block_chain/utils/socket/Peer.cpp.o: ../block_chain/c
 CMakeFiles/block_chain.dir/block_chain/utils/socket/Peer.cpp.o: ../block_chain/kernel/components/Component.h
 CMakeFiles/block_chain.dir/block_chain/utils/socket/Peer.cpp.o: ../block_chain/kernel/messages/Message.h
 CMakeFiles/block_chain.dir/block_chain/utils/socket/Peer.cpp.o: ../block_chain/utils/Encoding.h
-CMakeFiles/block_chain.dir/block_chain/utils/socket/Peer.cpp.o: ../block_chain/utils/Factory.hpp
+CMakeFiles/block_chain.dir/block_chain/utils/socket/Peer.cpp.o: ../block_chain/utils/Factory.h
 CMakeFiles/block_chain.dir/block_chain/utils/socket/Peer.cpp.o: ../block_chain/utils/serialization/Element.h
 CMakeFiles/block_chain.dir/block_chain/utils/socket/Peer.cpp.o: ../block_chain/utils/serialization/Parser.h
 CMakeFiles/block_chain.dir/block_chain/utils/socket/Peer.cpp.o: ../block_chain/utils/serialization/Serializer.h
+CMakeFiles/block_chain.dir/block_chain/utils/socket/Peer.cpp.o: ../block_chain/utils/serialization/json/JsonCreator.h
+CMakeFiles/block_chain.dir/block_chain/utils/socket/Peer.cpp.o: ../block_chain/utils/serialization/json/JsonParser.h
 CMakeFiles/block_chain.dir/block_chain/utils/socket/Peer.cpp.o: ../block_chain/utils/socket/Peer.cpp
 CMakeFiles/block_chain.dir/block_chain/utils/socket/Peer.cpp.o: ../block_chain/utils/socket/Peer.h
 CMakeFiles/block_chain.dir/block_chain/utils/socket/Peer.cpp.o: ../block_chain/utils/socket/Socket.h
@@ -895,6 +939,7 @@ CMakeFiles/block_chain.dir/block_chain/utils/socket/SocketServer.cpp.o: ../block
 CMakeFiles/block_chain.dir/block_chain/utils/socket/SocketServer.cpp.o: ../block_chain/algorithm/MerkleTree.h
 CMakeFiles/block_chain.dir/block_chain/utils/socket/SocketServer.cpp.o: ../block_chain/chain/block/Block.h
 CMakeFiles/block_chain.dir/block_chain/utils/socket/SocketServer.cpp.o: ../block_chain/chain/block/proof/metadatas/Metadata.h
+CMakeFiles/block_chain.dir/block_chain/utils/socket/SocketServer.cpp.o: ../block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.h
 CMakeFiles/block_chain.dir/block_chain/utils/socket/SocketServer.cpp.o: ../block_chain/chain/block/transaction/Reward.h
 CMakeFiles/block_chain.dir/block_chain/utils/socket/SocketServer.cpp.o: ../block_chain/chain/block/transaction/Transaction.h
 CMakeFiles/block_chain.dir/block_chain/utils/socket/SocketServer.cpp.o: ../block_chain/chain/state/Database.h
@@ -902,10 +947,12 @@ CMakeFiles/block_chain.dir/block_chain/utils/socket/SocketServer.cpp.o: ../block
 CMakeFiles/block_chain.dir/block_chain/utils/socket/SocketServer.cpp.o: ../block_chain/kernel/components/Component.h
 CMakeFiles/block_chain.dir/block_chain/utils/socket/SocketServer.cpp.o: ../block_chain/kernel/messages/Message.h
 CMakeFiles/block_chain.dir/block_chain/utils/socket/SocketServer.cpp.o: ../block_chain/utils/Encoding.h
-CMakeFiles/block_chain.dir/block_chain/utils/socket/SocketServer.cpp.o: ../block_chain/utils/Factory.hpp
+CMakeFiles/block_chain.dir/block_chain/utils/socket/SocketServer.cpp.o: ../block_chain/utils/Factory.h
 CMakeFiles/block_chain.dir/block_chain/utils/socket/SocketServer.cpp.o: ../block_chain/utils/serialization/Element.h
 CMakeFiles/block_chain.dir/block_chain/utils/socket/SocketServer.cpp.o: ../block_chain/utils/serialization/Parser.h
 CMakeFiles/block_chain.dir/block_chain/utils/socket/SocketServer.cpp.o: ../block_chain/utils/serialization/Serializer.h
+CMakeFiles/block_chain.dir/block_chain/utils/socket/SocketServer.cpp.o: ../block_chain/utils/serialization/json/JsonCreator.h
+CMakeFiles/block_chain.dir/block_chain/utils/socket/SocketServer.cpp.o: ../block_chain/utils/serialization/json/JsonParser.h
 CMakeFiles/block_chain.dir/block_chain/utils/socket/SocketServer.cpp.o: ../block_chain/utils/socket/Socket.h
 CMakeFiles/block_chain.dir/block_chain/utils/socket/SocketServer.cpp.o: ../block_chain/utils/socket/SocketServer.cpp
 CMakeFiles/block_chain.dir/block_chain/utils/socket/SocketServer.cpp.o: ../block_chain/utils/socket/SocketServer.h
@@ -924,6 +971,7 @@ CMakeFiles/block_chain.dir/main.cpp.o: ../block_chain/chain/NodeState.h
 CMakeFiles/block_chain.dir/main.cpp.o: ../block_chain/chain/block/Block.h
 CMakeFiles/block_chain.dir/main.cpp.o: ../block_chain/chain/block/proof/Proof.h
 CMakeFiles/block_chain.dir/main.cpp.o: ../block_chain/chain/block/proof/metadatas/Metadata.h
+CMakeFiles/block_chain.dir/main.cpp.o: ../block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.h
 CMakeFiles/block_chain.dir/main.cpp.o: ../block_chain/chain/block/transaction/Reward.h
 CMakeFiles/block_chain.dir/main.cpp.o: ../block_chain/chain/block/transaction/Transaction.h
 CMakeFiles/block_chain.dir/main.cpp.o: ../block_chain/chain/state/Database.h
@@ -946,10 +994,12 @@ CMakeFiles/block_chain.dir/main.cpp.o: ../block_chain/kernel/parsers/SignInParse
 CMakeFiles/block_chain.dir/main.cpp.o: ../block_chain/kernel/parsers/SignOutParser.h
 CMakeFiles/block_chain.dir/main.cpp.o: ../block_chain/kernel/parsers/TransactionParser.h
 CMakeFiles/block_chain.dir/main.cpp.o: ../block_chain/utils/Encoding.h
-CMakeFiles/block_chain.dir/main.cpp.o: ../block_chain/utils/Factory.hpp
+CMakeFiles/block_chain.dir/main.cpp.o: ../block_chain/utils/Factory.h
 CMakeFiles/block_chain.dir/main.cpp.o: ../block_chain/utils/serialization/Element.h
 CMakeFiles/block_chain.dir/main.cpp.o: ../block_chain/utils/serialization/Parser.h
 CMakeFiles/block_chain.dir/main.cpp.o: ../block_chain/utils/serialization/Serializer.h
+CMakeFiles/block_chain.dir/main.cpp.o: ../block_chain/utils/serialization/json/JsonCreator.h
+CMakeFiles/block_chain.dir/main.cpp.o: ../block_chain/utils/serialization/json/JsonParser.h
 CMakeFiles/block_chain.dir/main.cpp.o: ../block_chain/utils/socket/Peer.h
 CMakeFiles/block_chain.dir/main.cpp.o: ../block_chain/utils/socket/Socket.h
 CMakeFiles/block_chain.dir/main.cpp.o: ../block_chain/utils/socket/SocketServer.h
@@ -977,6 +1027,7 @@ CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: ../block_chain/alg
 CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: ../block_chain/algorithm/MerkleTree.h
 CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: ../block_chain/chain/block/Block.h
 CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: ../block_chain/chain/block/proof/metadatas/Metadata.h
+CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: ../block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.h
 CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: ../block_chain/chain/block/transaction/Reward.h
 CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: ../block_chain/chain/block/transaction/Transaction.h
 CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: ../block_chain/chain/state/Database.h
@@ -984,10 +1035,12 @@ CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: ../block_chain/cha
 CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: ../block_chain/kernel/components/Component.h
 CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: ../block_chain/kernel/messages/Message.h
 CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: ../block_chain/utils/Encoding.h
-CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: ../block_chain/utils/Factory.hpp
+CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: ../block_chain/utils/Factory.h
 CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: ../block_chain/utils/serialization/Element.h
 CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: ../block_chain/utils/serialization/Parser.h
 CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: ../block_chain/utils/serialization/Serializer.h
+CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: ../block_chain/utils/serialization/json/JsonCreator.h
+CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: ../block_chain/utils/serialization/json/JsonParser.h
 CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: ../database/Row.h
 CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: ../serializer/CustomSerializer.cpp
 CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: ../serializer/CustomSerializer.h

@@ -4,7 +4,7 @@
 
 #include "Peer.h"
 
-Peer::Peer(Serializer* s, std::string ip, int c): serializer(s), socket(new Socket(ip, c)) {
+Peer::Peer(std::string ip, int c): socket(new Socket(ip, c)) {
     _ip = ip;
     _port = c;
 }

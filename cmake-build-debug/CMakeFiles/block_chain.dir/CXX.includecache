@@ -622,7 +622,7 @@ string
 cstring
 -
 
-/home/default/CLionProjects/block_chain/block_chain/utils/Factory.hpp
+/home/default/CLionProjects/block_chain/block_chain/utils/Factory.h
 iostream
 -
 map
@@ -669,28 +669,28 @@ string
 /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Serializer.cpp
 Serializer.h
 /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Serializer.h
-json/JsonCreator.h
-/home/default/CLionProjects/block_chain/block_chain/utils/serialization/json/JsonCreator.h
-json/JsonParser.h
-/home/default/CLionProjects/block_chain/block_chain/utils/serialization/json/JsonParser.h
-../../chain/block/proof/metadatas/ProofOfWorkMetadata.h
-/home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.h
-utility
--
 
 /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Serializer.h
 ../../chain/block/Block.h
 /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
 ../../chain/block/transaction/Transaction.h
 /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
-../Factory.hpp
-/home/default/CLionProjects/block_chain/block_chain/utils/Factory.hpp
+../Factory.h
+/home/default/CLionProjects/block_chain/block_chain/utils/Factory.h
 Parser.h
 /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
 ../../kernel/messages/Message.h
 /home/default/CLionProjects/block_chain/block_chain/kernel/messages/Message.h
 cstdlib
 -
+json/JsonCreator.h
+/home/default/CLionProjects/block_chain/block_chain/utils/serialization/json/JsonCreator.h
+json/JsonParser.h
+/home/default/CLionProjects/block_chain/block_chain/utils/serialization/json/JsonParser.h
+utility
+-
+../../chain/block/proof/metadatas/ProofOfWorkMetadata.h
+/home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.h
 
 /home/default/CLionProjects/block_chain/block_chain/utils/serialization/json/JsonCreator.cpp
 JsonCreator.h

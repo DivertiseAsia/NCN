@@ -14,7 +14,7 @@ void SignInParser::operator()(Message* m, Node* node) const {
     int port = atoi(message->peer.substr(index+1).c_str());
     if(node->debug)
         std::cout << "\033[1;34m[IN] " << ip << ":" << port << " is signing in in " << node->self._ip << ":" << node->self._port<<"\033[0m\n";
-    Peer peer(node->serializer, ip, port);
+    Peer peer(ip, port);
     node->peers.emplace_back(peer);
 }
 

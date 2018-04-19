@@ -351,7 +351,7 @@
 		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h">
 			<Option target="block_chain"/>
 		</Unit>
-		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/utils/Factory.hpp">
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/utils/Factory.h">
 			<Option target="block_chain"/>
 		</Unit>
 		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/utils/serialization">

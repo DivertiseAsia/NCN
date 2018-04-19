@@ -12,69 +12,53 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b337953f-6d17-4d79-bf7d-640c27a86937" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/block_chain/utils/serialization/Element.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/block_chain/utils/serialization/Parser.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block_chain/utils/Factory.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/block_chain/Node.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/Node.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/Node.h" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/Node.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/chain/block/Block.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/chain/block/Block.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/chain/block/Block.h" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/chain/block/Block.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/kernel/components/Component.h" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/kernel/components/Component.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/kernel/parsers/BlockAnswerParser.h" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/kernel/parsers/BlockAnswerParser.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/kernel/parsers/BlockAskParser.h" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/kernel/parsers/BlockAskParser.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/kernel/parsers/BlockParser.h" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/kernel/parsers/BlockParser.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/kernel/parsers/Parser.h" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/kernel/parsers/MessageParser.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/kernel/parsers/PeersAnswerParser.h" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/kernel/parsers/PeersAnswerParser.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/kernel/parsers/PeersAskParser.h" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/kernel/parsers/PeersAskParser.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/kernel/parsers/SignInParser.h" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/kernel/parsers/SignInParser.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/kernel/parsers/SignOutParser.h" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/kernel/parsers/SignOutParser.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/kernel/parsers/TransactionParser.h" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/kernel/parsers/TransactionParser.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/proof/Proof.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/chain/block/proof/Proof.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/proof/Proof.h" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/chain/block/proof/Proof.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/proof/ProofOfHold.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/chain/block/proof/ProofOfHold.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/proof/ProofOfHold.h" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/chain/block/proof/ProofOfHold.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/proof/ProofOfImportance.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/chain/block/proof/ProofOfImportance.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/proof/ProofOfImportance.h" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/chain/block/proof/ProofOfImportance.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/proof/ProofOfMinimumAgedStake.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/chain/block/proof/ProofOfMinimumAgedStake.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/proof/ProofOfMinimumAgedStake.h" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/chain/block/proof/ProofOfMinimumAgedStake.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/proof/ProofOfStake.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/chain/block/proof/ProofOfStake.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/proof/ProofOfStake.h" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/chain/block/proof/ProofOfStake.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/proof/ProofOfStakeTime.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/chain/block/proof/ProofOfStakeTime.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/proof/ProofOfStakeTime.h" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/chain/block/proof/ProofOfStakeTime.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/proof/ProofOfUse.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/chain/block/proof/ProofOfUse.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/proof/ProofOfUse.h" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/chain/block/proof/ProofOfUse.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/proof/ProofOfWork.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/chain/block/proof/ProofOfWork.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/proof/ProofOfWork.h" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/chain/block/proof/ProofOfWork.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/proof/metadatas/Metadata.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/chain/block/proof/metadatas/Metadata.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/proof/metadatas/Metadata.h" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/chain/block/proof/metadatas/Metadata.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/proof/metadatas/ProofOfWorkMetadata.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/proof/metadatas/ProofOfWorkMetadata.h" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/utils/serialization/Element.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/utils/serialization/Element.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/utils/serialization/Element.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/utils/serialization/ElementCreator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/utils/serialization/ElementCreator.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/utils/serialization/Parser.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/block_chain/kernel/parsers/BlockAskParser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/kernel/parsers/BlockAskParser.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/block_chain/kernel/parsers/PeersAnswerParser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/kernel/parsers/PeersAnswerParser.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/block_chain/kernel/parsers/PeersAskParser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/kernel/parsers/PeersAskParser.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/block_chain/kernel/parsers/SignInParser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/kernel/parsers/SignInParser.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/block_chain/kernel/parsers/SignOutParser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/kernel/parsers/SignOutParser.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/block_chain/utils/Encoding.h" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/utils/Encoding.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/block_chain/utils/Factory.hpp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/block_chain/utils/serialization/Serializer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/utils/serialization/Serializer.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/block_chain/utils/serialization/Serializer.h" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/utils/serialization/Serializer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/utils/serialization/json/JsonCreator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/utils/serialization/json/JsonCreator.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/utils/serialization/json/JsonCreator.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/utils/serialization/json/JsonCreator.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/utils/serialization/json/JsonParser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/utils/serialization/json/JsonParser.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/utils/serialization/json/JsonParser.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/utils/serialization/json/JsonParser.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/block_chain/utils/socket/Peer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/utils/socket/Peer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/block_chain/utils/socket/Peer.h" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/utils/socket/Peer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/block_chain/utils/socket/Socket.h" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/utils/socket/Socket.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/block_chain/utils/socket/SocketServer.h" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/utils/socket/SocketServer.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/Node.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/Node.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/Node.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/TransactionManager.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/algorithm/Hash.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/algorithm/MerkleTree.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/algorithm/RSA.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/Chain.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/proof/Proof.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfHold.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfImportance.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfMinimumAgedStake.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfStake.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfStakeTime.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfUse.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfWork.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/proof/metadatas/Metadata.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Reward.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/state/Database.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/state/Row.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/components/Component.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/messages/AnswerPeersMessage.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/messages/AskPeersMessage.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/messages/BlockAnswerMessage.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/messages/BlockAskMessage.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/messages/BlockMessage.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/messages/Message.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/messages/SignInMessage.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/messages/SignMessage.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/messages/SignOutMessage.cpp.o" beforeDir="false" />
@@ -87,33 +71,25 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignInParser.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignOutParser.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/TransactionParser.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/proof/Proof.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/proof/ProofOfHold.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/proof/ProofOfImportance.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/proof/ProofOfMinimumAgedStake.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStake.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/proof/ProofOfStakeTime.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/proof/ProofOfUse.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/proof/ProofOfWork.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/proof/metadatas/Metadata.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/proof/metadatas/ProofOfWorkMetadata.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/utils/serialization/Element.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/utils/serialization/Element.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/utils/Encoding.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/utils/serialization/Element.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/utils/serialization/ElementCreator.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/utils/serialization/Serializer.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/utils/serialization/Serializer.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/utils/serialization/json/JsonCreator.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/utils/serialization/json/JsonCreator.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/utils/serialization/json/JsonParser.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/utils/serialization/json/JsonParser.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/utils/serialization/Serializer.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/utils/serialization/json/JsonCreator.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/utils/serialization/json/JsonParser.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/utils/socket/Peer.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/utils/socket/Socket.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/utils/socket/SocketServer.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/database/Row.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/main.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/reward/RewardTransaction.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/transactions/MessagesTransaction.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/transactions/MoneyTransaction.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/block_chain" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/block_chain" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/transactions/StatusTransaction.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/block_chain" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/block_chain.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/block_chain.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
@@ -128,100 +104,107 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="JsonCreator.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/block_chain/utils/serialization/json/JsonCreator.h">
+      <file leaf-file-name="SocketServer.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/block_chain/utils/socket/SocketServer.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="-495">
+              <caret line="46" column="53" selection-start-line="46" selection-start-column="53" selection-end-line="46" selection-end-column="53" />
               <folding>
-                <element signature="e#44#68#0" expanded="true" />
+                <element signature="e#146#207#0" expanded="true" />
+                <element signature="e#215#237#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JsonCreator.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/block_chain/utils/serialization/json/JsonCreator.cpp">
+      <file leaf-file-name="SocketServer.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/block_chain/utils/socket/SocketServer.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="40" column="35" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Socket.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/block_chain/utils/socket/Socket.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="209">
-              <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
+              <caret line="131" column="16" selection-start-line="131" selection-start-column="16" selection-end-line="131" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JsonParser.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/block_chain/utils/serialization/json/JsonParser.cpp">
+      <file leaf-file-name="Socket.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/block_chain/utils/socket/Socket.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="573">
+              <caret line="135" column="18" selection-start-line="135" selection-start-column="18" selection-end-line="135" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Parser.h" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/block_chain/utils/serialization/Parser.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="253" lean-forward="true" selection-start-line="253" selection-end-line="253" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Element.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/block_chain/utils/serialization/Element.h">
+      <file leaf-file-name="PeersAnswerParser.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/block_chain/kernel/parsers/PeersAnswerParser.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
-              <caret line="25" selection-start-line="25" selection-end-line="28" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Serializer.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/block_chain/utils/serialization/Serializer.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="51" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
+              <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
               <folding>
-                <element signature="e#42#65#0" expanded="true" />
+                <element signature="e#43#73#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JsonParser.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/block_chain/utils/serialization/json/JsonParser.h">
+      <file leaf-file-name="SignInParser.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/block_chain/kernel/parsers/SignInParser.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="6" selection-start-line="6" selection-end-line="14" selection-end-column="3" />
+            <state relative-caret-position="195">
+              <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Element.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/block_chain/utils/serialization/Element.cpp">
+      <file leaf-file-name="PeersAskParser.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/block_chain/kernel/parsers/PeersAskParser.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-270" />
+            <state relative-caret-position="255">
+              <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+              <folding>
+                <element signature="e#43#70#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BlockAskParser.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/block_chain/kernel/parsers/BlockAskParser.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+              <folding>
+                <element signature="e#43#70#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SignOutParser.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/block_chain/kernel/parsers/SignOutParser.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+            </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Serializer.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/block_chain/utils/serialization/Serializer.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="154" column="25" lean-forward="true" selection-start-line="154" selection-start-column="25" selection-end-line="154" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ElementCreator.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/block_chain/utils/serialization/ElementCreator.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="51" column="22" lean-forward="true" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
+            <state relative-caret-position="291">
+              <caret line="41" selection-start-line="41" selection-end-line="49" selection-end-column="7" />
               <folding>
-                <element signature="e#0#21#0" expanded="true" />
+                <element signature="e#109#145#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -231,7 +214,7 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find />
+      <find>peers par</find>
       <find>TODO</find>
       <find>compu</find>
       <find>sign</find>
@@ -246,14 +229,14 @@
       <find>invali</find>
       <find>test</find>
       <find>:BLOCK</find>
-      <find />
-      <find />
+      <find>block co</find>
+      <find>ask fo</find>
       <find>recei</find>
       <find>get</find>
       <find>Tran</find>
       <find>Message</find>
       <find>block</find>
-      <find />
+      <find>Message</find>
       <find>rece</find>
       <find>BlockAnswerMessage</find>
       <find>received:</find>
@@ -274,18 +257,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/block_chain/proof/ProofOfImportance.h" />
-        <option value="$PROJECT_DIR$/block_chain/proof/ProofOfImportance.cpp" />
-        <option value="$PROJECT_DIR$/block_chain/proof/ProofOfHold.h" />
-        <option value="$PROJECT_DIR$/block_chain/proof/ProofOfHold.cpp" />
-        <option value="$PROJECT_DIR$/block_chain/proof/Proof.h" />
-        <option value="$PROJECT_DIR$/block_chain/proof/ProofOfWork.cpp" />
         <option value="$PROJECT_DIR$/block_chain/kernel/parsers/BlockAnswerParser.cpp" />
-        <option value="$PROJECT_DIR$/block_chain/kernel/parsers/SignInParser.cpp" />
         <option value="$PROJECT_DIR$/block_chain/kernel/messages/SignInMessage.h" />
-        <option value="$PROJECT_DIR$/block_chain/kernel/parsers/SignOutParser.cpp" />
-        <option value="$PROJECT_DIR$/block_chain/kernel/parsers/PeersAskParser.cpp" />
-        <option value="$PROJECT_DIR$/block_chain/kernel/parsers/PeersAnswerParser.cpp" />
         <option value="$PROJECT_DIR$/block_chain/kernel/messages/SignMessage.h" />
         <option value="$PROJECT_DIR$/block_chain/kernel/messages/SignMessage.cpp" />
         <option value="$PROJECT_DIR$/block_chain/kernel/messages/Message.h" />
@@ -297,23 +270,18 @@
         <option value="$PROJECT_DIR$/block_chain/kernel/messages/BlockAskMessage.cpp" />
         <option value="$PROJECT_DIR$/block_chain/kernel/messages/BlockMessage.cpp" />
         <option value="$PROJECT_DIR$/block_chain/kernel/parsers/TransactionParser.cpp" />
-        <option value="$PROJECT_DIR$/block_chain/kernel/parsers/BlockAskParser.cpp" />
         <option value="$PROJECT_DIR$/block_chain/socket/Peer.cpp" />
         <option value="$PROJECT_DIR$/block_chain/chain/block/transaction/MerkleTree.cpp" />
-        <option value="$PROJECT_DIR$/block_chain/utils/socket/Peer.h" />
         <option value="$PROJECT_DIR$/block_chain/chain/NodeState.cpp" />
         <option value="$PROJECT_DIR$/block_chain/chain/NodeState.h" />
         <option value="$PROJECT_DIR$/block_chain/Validator.h" />
         <option value="$PROJECT_DIR$/block_chain/Validator.cpp" />
         <option value="$PROJECT_DIR$/block_chain/kernel/parsers/BlockParser.cpp" />
-        <option value="$PROJECT_DIR$/block_chain/Node.cpp" />
         <option value="$PROJECT_DIR$/block_chain/chain/block/Block.h" />
         <option value="$PROJECT_DIR$/block_chain/chain/block/proof/metadatas/Metadata.h" />
-        <option value="$PROJECT_DIR$/block_chain/utils/serialization/Serializer.cpp" />
         <option value="$PROJECT_DIR$/block_chain/chain/block/Block.cpp" />
         <option value="$PROJECT_DIR$/block_chain/Node.h" />
         <option value="$PROJECT_DIR$/block_chain/chain/block/proof/Proof.h" />
-        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/block_chain/chain/block/proof/ProofOfWork.cpp" />
         <option value="$PROJECT_DIR$/block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.cpp" />
@@ -323,8 +291,23 @@
         <option value="$PROJECT_DIR$/block_chain/utils/serialization/json/JsonCreator.cpp" />
         <option value="$PROJECT_DIR$/block_chain/utils/serialization/json/JsonCreator.hpp" />
         <option value="$PROJECT_DIR$/block_chain/utils/serialization/json/JsonParser.cpp" />
-        <option value="$PROJECT_DIR$/block_chain/utils/serialization/Serializer.h" />
         <option value="$PROJECT_DIR$/block_chain/utils/serialization/ElementCreator.cpp" />
+        <option value="$PROJECT_DIR$/block_chain/utils/serialization/Serializer.cpp" />
+        <option value="$PROJECT_DIR$/block_chain/utils/serialization/Serializer.h" />
+        <option value="$PROJECT_DIR$/block_chain/utils/Encoding.h" />
+        <option value="$PROJECT_DIR$/block_chain/utils/Factory.hpp" />
+        <option value="$PROJECT_DIR$/block_chain/utils/Factory.h" />
+        <option value="$PROJECT_DIR$/block_chain/utils/socket/Peer.cpp" />
+        <option value="$PROJECT_DIR$/block_chain/utils/socket/Peer.h" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/block_chain/Node.cpp" />
+        <option value="$PROJECT_DIR$/block_chain/kernel/parsers/PeersAnswerParser.cpp" />
+        <option value="$PROJECT_DIR$/block_chain/kernel/parsers/SignInParser.cpp" />
+        <option value="$PROJECT_DIR$/block_chain/kernel/parsers/PeersAskParser.cpp" />
+        <option value="$PROJECT_DIR$/block_chain/kernel/parsers/BlockAskParser.cpp" />
+        <option value="$PROJECT_DIR$/block_chain/kernel/parsers/SignOutParser.cpp" />
+        <option value="$PROJECT_DIR$/block_chain/utils/socket/SocketServer.h" />
+        <option value="$PROJECT_DIR$/block_chain/utils/socket/Socket.h" />
       </list>
     </option>
   </component>
@@ -336,8 +319,8 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1855" />
-    <option name="y" value="-1084" />
+    <option name="x" value="65" />
+    <option name="y" value="-4" />
     <option name="width" value="1855" />
     <option name="height" value="1084" />
   </component>
@@ -378,6 +361,13 @@
               <item name="block_chain" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
               <item name="serialization" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="block_chain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
+              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="socket" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="block_chain" type="b2602c69:ProjectViewProjectNode" />
@@ -443,16 +433,15 @@
       <workItem from="1523934016579" duration="11782000" />
       <workItem from="1523955909272" duration="13214000" />
       <workItem from="1524027116417" duration="4000" />
-      <workItem from="1524027135407" duration="44419000" />
+      <workItem from="1524027135407" duration="48681000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="214128000" />
+    <option name="totallyTimeSpent" value="218390000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49847096" visible="true" weight="0.2161725" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -487,69 +476,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/block_chain/kernel/messages/Message.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="24" column="25" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/block_chain/kernel/messages/Message.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="63" column="16" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/block_chain/kernel/messages/SignOutMessage.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/block_chain/kernel/messages/SignMessage.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/block_chain/kernel/messages/SignInMessage.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/block_chain/kernel/messages/AnswerPeersMessage.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/block_chain/kernel/messages/BlockAnswerMessage.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="8" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/block_chain/kernel/messages/BlockAskMessage.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/block_chain/kernel/messages/AskPeersMessage.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/block_chain/kernel/messages/BlockAnswerMessage.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -591,32 +517,12 @@
     <entry file="file://$PROJECT_DIR$/block_chain/kernel/parsers/BlockParser.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/block_chain/kernel/parsers/BlockAskParser.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
-          <folding>
-            <element signature="e#43#70#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/block_chain/algorithm/MerkleTree.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="47" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="47" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/block_chain/utils/socket/Peer.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/block_chain/utils/socket/Peer.h">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/block_chain/chain/NodeState.cpp">
       <provider selected="true" editor-type-id="text-editor">
@@ -679,33 +585,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/block_chain/kernel/parsers/PeersAskParser.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="61" selection-start-line="10" selection-start-column="61" selection-end-line="10" selection-end-column="61" />
-          <folding>
-            <element signature="e#43#70#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/block_chain/kernel/parsers/PeersAnswerParser.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
-          <folding>
-            <element signature="e#43#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/block_chain/Node.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="154" selection-start-line="154" selection-end-line="154" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/block_chain/chain/block/Block.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -730,13 +609,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/block_chain/Node.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/block_chain/chain/block/proof/Proof.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -744,13 +616,6 @@
           <folding>
             <element signature="e#100#114#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -778,16 +643,6 @@
     <entry file="file://$PROJECT_DIR$/block_chain/utils/serialization/Element.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-270" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/block_chain/utils/serialization/Serializer.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="51" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
-          <folding>
-            <element signature="e#42#65#0" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/block_chain/utils/serialization/json/JsonCreator.cpp">
@@ -830,13 +685,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/block_chain/utils/serialization/Serializer.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="154" column="25" lean-forward="true" selection-start-line="154" selection-start-column="25" selection-end-line="154" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/block_chain/utils/serialization/ElementCreator.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="438">
@@ -851,6 +699,157 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="513">
           <caret line="253" lean-forward="true" selection-start-line="253" selection-end-line="253" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/block_chain/utils/serialization/Serializer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/block_chain/utils/Factory.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-432">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#1195#1207#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/block_chain/utils/Encoding.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="23" column="6" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/block_chain/Node.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/block_chain/utils/socket/Peer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="44" column="30" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/block_chain/utils/socket/Peer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" selection-start-line="11" selection-end-line="18" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/block_chain/Node.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="57" column="49" selection-start-line="57" selection-start-column="49" selection-end-line="57" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/block_chain/utils/serialization/Serializer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="41" selection-start-line="41" selection-end-line="49" selection-end-column="7" />
+          <folding>
+            <element signature="e#109#145#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/block_chain/kernel/parsers/PeersAnswerParser.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+          <folding>
+            <element signature="e#43#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/block_chain/kernel/parsers/SignInParser.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/block_chain/kernel/parsers/PeersAskParser.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+          <folding>
+            <element signature="e#43#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/block_chain/kernel/parsers/BlockAskParser.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+          <folding>
+            <element signature="e#43#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/block_chain/kernel/parsers/SignOutParser.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/block_chain/utils/socket/SocketServer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="40" column="35" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/block_chain/utils/socket/Socket.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="131" column="16" selection-start-line="131" selection-start-column="16" selection-end-line="131" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/block_chain/utils/socket/SocketServer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-495">
+          <caret line="46" column="53" selection-start-line="46" selection-start-column="53" selection-end-line="46" selection-end-column="53" />
+          <folding>
+            <element signature="e#146#207#0" expanded="true" />
+            <element signature="e#215#237#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/block_chain/utils/socket/Socket.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="573">
+          <caret line="135" column="18" selection-start-line="135" selection-start-column="18" selection-end-line="135" selection-end-column="18" />
         </state>
       </provider>
     </entry>

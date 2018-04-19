@@ -26,6 +26,7 @@ ElementObject* read_config(const char* filename, Serializer* serial, const char*
     }
     return serial->getElement(serialized, encoding);
 }
+
 //TODO: looks like the database is not duplicated -> multiples and same values, need to inspect that
 int main() {
     //Custom block chain

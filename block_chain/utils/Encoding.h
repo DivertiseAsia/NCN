@@ -8,9 +8,31 @@
 #include "string"
 #include <cstring>
 
+/**
+ *  An encoding util.
+ *  The static class encoding allows to encode any string in
+ *  hexadecimal and get any text from its hexadecimal form.
+ *
+ *  @author Mathieu Lochet
+ *  @version 1
+ */
 class Encoding {
 public:
+
+    /**
+     *  Encode a given text in hexadecimal
+     *
+     *  @param str string to be converted
+     *  @return the encoded string
+     */
     static std::string toHexa(std::string str);
+
+    /**
+     *  Decode a given text from hexadecimal
+     *
+     *  @param str string to be converted
+     *  @return the decoded string
+     */
     static std::string fromHexa(std::string str);
 };
 

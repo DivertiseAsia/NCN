@@ -20,7 +20,7 @@ void PeersAnswerParser::operator()(Message* m, Node* node) const {
         std::string ip = line.substr(0, index);
         int port = atoi(line.substr(index+1).c_str());
         if(ip != node->self._ip || port != node->self._port) {
-            Peer peer(node->serializer, ip, port);
+            Peer peer(ip, port);
             node->peers.emplace_back(peer);
             peer.send(Encoding::toHexa(std::string(text)).c_str());
         }

@@ -3,10 +3,6 @@
 //
 
 #include "Serializer.h"
-#include "json/JsonCreator.h"
-#include "json/JsonParser.h"
-#include "../../chain/block/proof/metadatas/ProofOfWorkMetadata.h"
-#include <utility>
 
 ElementObject* Serializer::getElement(std::string transaction, const char* key) const{
     Element* element = new ElementObject();
