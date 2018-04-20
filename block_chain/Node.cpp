@@ -14,7 +14,7 @@ Node::Node(Serializer* s, int p, const char* e, int pr, bool d, Reward* r): queu
     ERR_load_crypto_strings();
     if(!rsa.backup("./network/private.pem", "./network/public.pem"))
         rsa.generate("./network/private.pem", "./network/public.pem");
-    store(Socket::getIP(), p);
+    store();
     block_chain.read_blocks();
 }
 
@@ -47,7 +47,7 @@ void Node::add_parser(MessageParser* p){
     parsers[p->get_type()] = p;
 }
 
-void Node::store(std::string _ip, int _p){
+void Node::store(){
     std::ifstream peers_file;
     int i = 0;
     peers_file.open("./network/network.nfo", std::ifstream::in);
@@ -59,7 +59,7 @@ void Node::store(std::string _ip, int _p){
             unsigned long index = line.find(':');
             std::string ip = line.substr(0, index);
             int port = atoi(line.substr(index+1).c_str());
-            if(_ip != ip || _p != port){
+            if(self._ip != ip || self._p != port){
                 Peer peer(ip, port);
                 if(peer.send(Encoding::toHexa(std::string(m)).c_str())) {
                     i = 1;
