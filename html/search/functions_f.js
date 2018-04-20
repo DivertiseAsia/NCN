@@ -1,8 +1,15 @@
 var searchData=
 [
-  ['to_5fstring',['to_string',['../classRow.html#ae7b1aba7a4c868914700432850c2848d',1,'Row::to_string()'],['../classPeer.html#a44641ad4373c7e8f8237e0d976dc8321',1,'Peer::to_string()'],['../classCustomRow.html#ae1e5a3b861829f8b295d3c743d6b3c7a',1,'CustomRow::to_string()']]],
-  ['toelement',['toElement',['../classMerkleTree.html#a4e72819c6cbc49ed8ce092f464711a5f',1,'MerkleTree::toElement()'],['../classBlock.html#aa289363a40f0d3ba88720ad0bc71f34f',1,'Block::toElement()'],['../classProofOfWorkMetadata.html#a2aab4c26afb3a85a712cc065028274d9',1,'ProofOfWorkMetadata::toElement()'],['../classReward.html#a0ecd536148463880f9980fe415b6eb1d',1,'Reward::toElement()'],['../classComponent.html#a3e63d8c993e417a4af3f56d65ebfc7ea',1,'Component::toElement()'],['../classBlockAnswerMessage.html#ac7f35ec9f7f2fbcd726628c2a984518b',1,'BlockAnswerMessage::toElement()'],['../classBlockAskMessage.html#a0bc20076f19423855ab5772003fb65f6',1,'BlockAskMessage::toElement()'],['../classBlockMessage.html#ab47afd5cfb7d6d5c544d8def5d0f9737',1,'BlockMessage::toElement()'],['../classSignMessage.html#aee897c4bf78df966b8cca95e589566e4',1,'SignMessage::toElement()'],['../classTransactionMessage.html#ae20e7d6a7b5811bb56a32ec6af59b8e2',1,'TransactionMessage::toElement()'],['../classMessagesTransaction.html#a0ef8ec080a2698a02ad8b1b95d243720',1,'MessagesTransaction::toElement()'],['../classMoneyTransaction.html#a84adc847266467965014cb04acd48bea',1,'MoneyTransaction::toElement()'],['../classStatusTransaction.html#aed42f2d61f2d50ec07bb6b35473f61f2',1,'StatusTransaction::toElement()']]],
-  ['tohexa',['toHexa',['../classEncoding.html#afa3343b66a1a0598b2dc01d74cb81861',1,'Encoding']]],
-  ['tostring',['toString',['../classFactory.html#a3bb49eea6ec1a75fbe7a8c601f27917d',1,'Factory']]],
-  ['transactionmessage',['TransactionMessage',['../classTransactionMessage.html#a1be404df5185ea0912d23da9f2918649',1,'TransactionMessage']]]
+  ['send',['send',['../classPeer.html#a0f591fdb4807871049e9471f7464fc6a',1,'Peer']]],
+  ['serialize',['serialize',['../classSerializer.html#a5cfe31eb70f4d0c92f2d68c22f39e885',1,'Serializer::serialize(const Component *component, const char *encoding) const'],['../classSerializer.html#a38bec517fb3b3cc0778c75b807cb930c',1,'Serializer::serialize(Element *element, const char *encoding) const']]],
+  ['serializer',['Serializer',['../classSerializer.html#a9fe7f31924098f75278d059f8443fd5b',1,'Serializer']]],
+  ['set_5fserializer',['set_serializer',['../classSerializer.html#aee483f1845ca1b7f7ac4243de9902750',1,'Serializer']]],
+  ['set_5funserializer',['set_unserializer',['../classSerializer.html#a74ea868b820b4a8472da98c0045418fa',1,'Serializer']]],
+  ['show_5fcurrent_5fstate',['show_current_state',['../classNodeState.html#aedd8b10b2ca3f51e5c95b7ebed70464c',1,'NodeState']]],
+  ['signinmessage',['SignInMessage',['../classSignInMessage.html#accb3dfaad2cca80d6709873a783f895b',1,'SignInMessage']]],
+  ['signmessage',['SignMessage',['../classSignMessage.html#ac1df326e20a41acee483fc8893e791ae',1,'SignMessage']]],
+  ['signoutmessage',['SignOutMessage',['../classSignOutMessage.html#afbc16960cf71f0259ed990e88cf19f38',1,'SignOutMessage']]],
+  ['size',['size',['../classMerkleTree.html#aac309360fa4653451af713a8ce9684bd',1,'MerkleTree']]],
+  ['socket',['Socket',['../classSocket.html#a4c7a40e6c1513edf63e53b74b4f32b80',1,'Socket::Socket(std::string i, int port)'],['../classSocket.html#a7e2193bd6a9b6846f90eaf4786cfc41b',1,'Socket::Socket(SOCKET s)']]],
+  ['socketserver',['SocketServer',['../classSocketServer.html#a73939197c857f63eede6fc2f0c6ab433',1,'SocketServer']]]
 ];

@@ -1,5 +1,9 @@
 \hypertarget{classMerkleTree}{}\section{Merkle\+Tree Class Reference}
 \label{classMerkleTree}\index{Merkle\+Tree@{Merkle\+Tree}}
+
+
+{\ttfamily \#include $<$Merkle\+Tree.\+h$>$}
+
 Inheritance diagram for Merkle\+Tree\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,25 +13,23 @@ Inheritance diagram for Merkle\+Tree\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classMerkleTree_a257abaf20fa542b29dfdab95294ae578}\label{classMerkleTree_a257abaf20fa542b29dfdab95294ae578}} 
-{\bfseries Merkle\+Tree} (\mbox{\hyperlink{classTransaction}{Transaction}} $\ast$transaction, const \mbox{\hyperlink{classSerializer}{Serializer}} $\ast$serializer, const char $\ast$encoding)
+\mbox{\hyperlink{classMerkleTree_a257abaf20fa542b29dfdab95294ae578}{Merkle\+Tree}} (\mbox{\hyperlink{classTransaction}{Transaction}} $\ast$transaction, const \mbox{\hyperlink{classSerializer}{Serializer}} $\ast$serializer, const char $\ast$encoding)
 \item 
-\mbox{\Hypertarget{classMerkleTree_abc65d820b1b59f00350b2f4a4bc580bd}\label{classMerkleTree_abc65d820b1b59f00350b2f4a4bc580bd}} 
-{\bfseries Merkle\+Tree} (std\+::vector$<$ \mbox{\hyperlink{classTransaction}{Transaction}} $\ast$$>$ transactions, const \mbox{\hyperlink{classSerializer}{Serializer}} $\ast$serializer, const char $\ast$encoding)
+\mbox{\hyperlink{classMerkleTree_abc65d820b1b59f00350b2f4a4bc580bd}{Merkle\+Tree}} (std\+::vector$<$ \mbox{\hyperlink{classTransaction}{Transaction}} $\ast$$>$ transactions, const \mbox{\hyperlink{classSerializer}{Serializer}} $\ast$serializer, const char $\ast$encoding)
 \item 
-\mbox{\Hypertarget{classMerkleTree_a361a5f238249d4893b000560dcabacde}\label{classMerkleTree_a361a5f238249d4893b000560dcabacde}} 
-{\bfseries Merkle\+Tree} (\mbox{\hyperlink{classMerkleTree}{Merkle\+Tree}} $\ast$l, \mbox{\hyperlink{classMerkleTree}{Merkle\+Tree}} $\ast$r)
+\mbox{\hyperlink{classMerkleTree_a361a5f238249d4893b000560dcabacde}{Merkle\+Tree}} (\mbox{\hyperlink{classMerkleTree}{Merkle\+Tree}} $\ast$l, \mbox{\hyperlink{classMerkleTree}{Merkle\+Tree}} $\ast$r)
+\item 
+\mbox{\hyperlink{classMerkleTree_a3f27e1251262e736106a9a2fba75f72f}{$\sim$\+Merkle\+Tree}} () override
 \item 
 \mbox{\hyperlink{classElement}{Element}} $\ast$ \mbox{\hyperlink{classMerkleTree_a4e72819c6cbc49ed8ce092f464711a5f}{to\+Element}} () const override
 \item 
-\mbox{\Hypertarget{classMerkleTree_a74d741770514ec323521ec6d79d250f2}\label{classMerkleTree_a74d741770514ec323521ec6d79d250f2}} 
-\mbox{\hyperlink{classHash}{Hash}} $\ast$ {\bfseries get\+\_\+hash} (int i) const
+\mbox{\hyperlink{classHash}{Hash}} $\ast$ \mbox{\hyperlink{classMerkleTree_a74d741770514ec323521ec6d79d250f2}{get\+\_\+hash}} (int i) const
 \item 
-\mbox{\Hypertarget{classMerkleTree_aac309360fa4653451af713a8ce9684bd}\label{classMerkleTree_aac309360fa4653451af713a8ce9684bd}} 
-int {\bfseries size} () const
+int \mbox{\hyperlink{classMerkleTree_aac309360fa4653451af713a8ce9684bd}{size}} () const
 \item 
-\mbox{\Hypertarget{classMerkleTree_a543fdfd1f1c4ded332cdeae2cd788aac}\label{classMerkleTree_a543fdfd1f1c4ded332cdeae2cd788aac}} 
-void {\bfseries generate\+\_\+tree} (std\+::vector$<$ \mbox{\hyperlink{classTransaction}{Transaction}} $\ast$$>$ transactions, int begin, int end, const \mbox{\hyperlink{classSerializer}{Serializer}} $\ast$serializer, const char $\ast$encoding)
+void \mbox{\hyperlink{classMerkleTree_a543fdfd1f1c4ded332cdeae2cd788aac}{generate\+\_\+tree}} (std\+::vector$<$ \mbox{\hyperlink{classTransaction}{Transaction}} $\ast$$>$ transactions, int begin, int end, const \mbox{\hyperlink{classSerializer}{Serializer}} $\ast$serializer, const char $\ast$encoding)
+\item 
+\mbox{\hyperlink{classMerkleTree_a6e639010fea282326c335403493d38b6}{Merkle\+Tree}} ()
 \item 
 void \mbox{\hyperlink{classComponent_a28212595f8ee85fe009bd233bc99b2fc}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (\mbox{\hyperlink{classElementObject}{Element\+Object}} $\ast$element, const \mbox{\hyperlink{classSerializer}{Serializer}} $\ast$s, const char $\ast$encoding)
 \end{DoxyCompactItemize}
@@ -55,6 +57,86 @@ class {\bfseries Transaction\+Parser}
 class {\bfseries Block\+Message}
 \end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+The Merkle tree representation for Hashes in a \mbox{\hyperlink{classBlock}{Block}} \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classBlock}{Block}} 
+
+\mbox{\hyperlink{classHash}{Hash}} 
+
+\mbox{\hyperlink{classTransaction}{Transaction}}
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Mathieu Lochet 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2 
+\end{DoxyVersion}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMerkleTree_a257abaf20fa542b29dfdab95294ae578}\label{classMerkleTree_a257abaf20fa542b29dfdab95294ae578}} 
+\index{Merkle\+Tree@{Merkle\+Tree}!Merkle\+Tree@{Merkle\+Tree}}
+\index{Merkle\+Tree@{Merkle\+Tree}!Merkle\+Tree@{Merkle\+Tree}}
+\subsubsection{\texorpdfstring{Merkle\+Tree()}{MerkleTree()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Merkle\+Tree\+::\+Merkle\+Tree (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTransaction}{Transaction}} $\ast$}]{transaction,  }\item[{const \mbox{\hyperlink{classSerializer}{Serializer}} $\ast$}]{serializer,  }\item[{const char $\ast$}]{encoding }\end{DoxyParamCaption})}
+
+Generates the tree of a single transaction
+
+
+\begin{DoxyParams}{Parameters}
+{\em transaction} & The transaction to put in the tree \\
+\hline
+{\em serializer} & The serializer to serialize the component \\
+\hline
+{\em encoding} & The encoding to serialize the component \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMerkleTree_abc65d820b1b59f00350b2f4a4bc580bd}\label{classMerkleTree_abc65d820b1b59f00350b2f4a4bc580bd}} 
+\index{Merkle\+Tree@{Merkle\+Tree}!Merkle\+Tree@{Merkle\+Tree}}
+\index{Merkle\+Tree@{Merkle\+Tree}!Merkle\+Tree@{Merkle\+Tree}}
+\subsubsection{\texorpdfstring{Merkle\+Tree()}{MerkleTree()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Merkle\+Tree\+::\+Merkle\+Tree (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classTransaction}{Transaction}} $\ast$$>$}]{transactions,  }\item[{const \mbox{\hyperlink{classSerializer}{Serializer}} $\ast$}]{serializer,  }\item[{const char $\ast$}]{encoding }\end{DoxyParamCaption})}
+
+Generates the tree of a list of transactions
+
+
+\begin{DoxyParams}{Parameters}
+{\em transactions} & The list of transactions to put in the tree \\
+\hline
+{\em serializer} & The serializer to serialize the component \\
+\hline
+{\em encoding} & The encoding to serialize the component \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMerkleTree_a361a5f238249d4893b000560dcabacde}\label{classMerkleTree_a361a5f238249d4893b000560dcabacde}} 
+\index{Merkle\+Tree@{Merkle\+Tree}!Merkle\+Tree@{Merkle\+Tree}}
+\index{Merkle\+Tree@{Merkle\+Tree}!Merkle\+Tree@{Merkle\+Tree}}
+\subsubsection{\texorpdfstring{Merkle\+Tree()}{MerkleTree()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Merkle\+Tree\+::\+Merkle\+Tree (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMerkleTree}{Merkle\+Tree}} $\ast$}]{l,  }\item[{\mbox{\hyperlink{classMerkleTree}{Merkle\+Tree}} $\ast$}]{r }\end{DoxyParamCaption})}
+
+Generates the tree based of nodes
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & The left tree \\
+\hline
+{\em r} & The right tree \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMerkleTree_a3f27e1251262e736106a9a2fba75f72f}\label{classMerkleTree_a3f27e1251262e736106a9a2fba75f72f}} 
+\index{Merkle\+Tree@{Merkle\+Tree}!````~Merkle\+Tree@{$\sim$\+Merkle\+Tree}}
+\index{````~Merkle\+Tree@{$\sim$\+Merkle\+Tree}!Merkle\+Tree@{Merkle\+Tree}}
+\subsubsection{\texorpdfstring{$\sim$\+Merkle\+Tree()}{~MerkleTree()}}
+{\footnotesize\ttfamily Merkle\+Tree\+::$\sim$\+Merkle\+Tree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+A destructor that destroy its own hash value and then both left and right trees \mbox{\Hypertarget{classMerkleTree_a6e639010fea282326c335403493d38b6}\label{classMerkleTree_a6e639010fea282326c335403493d38b6}} 
+\index{Merkle\+Tree@{Merkle\+Tree}!Merkle\+Tree@{Merkle\+Tree}}
+\index{Merkle\+Tree@{Merkle\+Tree}!Merkle\+Tree@{Merkle\+Tree}}
+\subsubsection{\texorpdfstring{Merkle\+Tree()}{MerkleTree()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Merkle\+Tree\+::\+Merkle\+Tree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+A default Merkle tree constructor 
 
 \subsection{Member Function Documentation}
 \mbox{\Hypertarget{classComponent_a28212595f8ee85fe009bd233bc99b2fc}\label{classComponent_a28212595f8ee85fe009bd233bc99b2fc}} 
@@ -101,6 +183,57 @@ The function used to build the object from its element representation. the objec
 
 Implements \mbox{\hyperlink{classComponent_a2ded18881226d0077dc393e0e9304bb1}{Component}}.
 
+\mbox{\Hypertarget{classMerkleTree_a543fdfd1f1c4ded332cdeae2cd788aac}\label{classMerkleTree_a543fdfd1f1c4ded332cdeae2cd788aac}} 
+\index{Merkle\+Tree@{Merkle\+Tree}!generate\+\_\+tree@{generate\+\_\+tree}}
+\index{generate\+\_\+tree@{generate\+\_\+tree}!Merkle\+Tree@{Merkle\+Tree}}
+\subsubsection{\texorpdfstring{generate\+\_\+tree()}{generate\_tree()}}
+{\footnotesize\ttfamily void Merkle\+Tree\+::generate\+\_\+tree (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classTransaction}{Transaction}} $\ast$$>$}]{transactions,  }\item[{int}]{begin,  }\item[{int}]{end,  }\item[{const \mbox{\hyperlink{classSerializer}{Serializer}} $\ast$}]{serializer,  }\item[{const char $\ast$}]{encoding }\end{DoxyParamCaption})}
+
+Generates the tree for a given list of transactions \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classHash}{Hash}} 
+
+\mbox{\hyperlink{classSerializer}{Serializer}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em transactions} & The list of transactions to hash \\
+\hline
+{\em begin} & The first index of the array \\
+\hline
+{\em end} & The last index of the array \\
+\hline
+{\em serializer} & The serializer \\
+\hline
+{\em encoding} & The encoding that has been used to create the \mbox{\hyperlink{classElement}{Element}} representation of the object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMerkleTree_a74d741770514ec323521ec6d79d250f2}\label{classMerkleTree_a74d741770514ec323521ec6d79d250f2}} 
+\index{Merkle\+Tree@{Merkle\+Tree}!get\+\_\+hash@{get\+\_\+hash}}
+\index{get\+\_\+hash@{get\+\_\+hash}!Merkle\+Tree@{Merkle\+Tree}}
+\subsubsection{\texorpdfstring{get\+\_\+hash()}{get\_hash()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHash}{Hash}} $\ast$ Merkle\+Tree\+::get\+\_\+hash (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) const}
+
+Get the \mbox{\hyperlink{classHash}{Hash}} of a given element
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & The index of the given element \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The hash of the asked index 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMerkleTree_aac309360fa4653451af713a8ce9684bd}\label{classMerkleTree_aac309360fa4653451af713a8ce9684bd}} 
+\index{Merkle\+Tree@{Merkle\+Tree}!size@{size}}
+\index{size@{size}!Merkle\+Tree@{Merkle\+Tree}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily int Merkle\+Tree\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get the number of Hashes in the tree
+
+\begin{DoxyReturn}{Returns}
+The number of Hashes in the tree 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classMerkleTree_a4e72819c6cbc49ed8ce092f464711a5f}\label{classMerkleTree_a4e72819c6cbc49ed8ce092f464711a5f}} 
 \index{Merkle\+Tree@{Merkle\+Tree}!to\+Element@{to\+Element}}
 \index{to\+Element@{to\+Element}!Merkle\+Tree@{Merkle\+Tree}}

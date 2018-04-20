@@ -9,7 +9,6 @@ Chain::Chain(Block* b, Chain* c): database(c->database){
     block = b;
     fingerprint = b->fingerprint;
     b->data->update_database(&database);
-    std::cout << " New chain element: " << this << std::endl;
 }
 
 Chain::Chain(Reward* r): fingerprint(nullptr), database(r){
@@ -20,9 +19,9 @@ Chain::~Chain(){
 }
 
 Chain* Chain::add(Block* b){
-    if(b->parent_fingerprint == nullptr || b->parent_fingerprint->hash == "0" || (fingerprint != nullptr && b->parent_fingerprint->hash == fingerprint->hash)){
+    if(b->parent_fingerprint == nullptr || b->parent_fingerprint->to_string() == "0" || (fingerprint != nullptr && b->parent_fingerprint->to_string() == fingerprint->to_string())){
         for(auto& a : chain)
-            if(a->fingerprint->hash == b->fingerprint->hash)
+            if(a->fingerprint->to_string() == b->fingerprint->to_string())
                 return nullptr;
         Chain* c = new Chain(b, this);
         chain.emplace_back(c);
@@ -58,7 +57,6 @@ std::pair<int, Chain*> Chain::top_fingerprint(){
 
 void Chain::update_database(Block* block, const Serializer* serializer, const char* encoding) {
 
-    std::cout << " Updating chain element: " << this << std::endl;
     for(auto& pair : block->transactions){
         std::string key(Encoding::fromHexa(pair.second));
         RSA_Cryptography crypto(key);
@@ -114,9 +112,9 @@ void Chain::show() {
 }
 
 int Chain::find(Hash *pHash) {
-    if(pHash == nullptr || pHash->hash == "0")
+    if(pHash == nullptr || pHash->to_string() == "0")
         return 1;
-    else if(fingerprint != nullptr && fingerprint->hash == pHash->hash)
+    else if(fingerprint != nullptr && fingerprint->to_string() == pHash->to_string())
         return 1;
     else
         for(auto& a : chain)
@@ -126,7 +124,7 @@ int Chain::find(Hash *pHash) {
 }
 
 Block* Chain::find(std::string str) {
-    if(fingerprint != nullptr && fingerprint->hash == str)
+    if(fingerprint != nullptr && fingerprint->to_string() == str)
         return block;
     else
         for(auto& a : chain) {

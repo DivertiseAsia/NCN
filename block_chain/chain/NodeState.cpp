@@ -24,8 +24,8 @@ void NodeState::add(Block* block){
         if(i != transactions.end())
             transactions.erase(i);
     }
-    std::string dir(block->parent_fingerprint->hash);
-    std::string id(block->fingerprint->hash);
+    std::string dir(block->parent_fingerprint->to_string());
+    std::string id(block->fingerprint->to_string());
     Chain* c = nullptr;
     if((c = chain->add(block)) != nullptr)
         c->update_database(block, serializer, encoding.c_str());

@@ -1,47 +1,223 @@
 \hypertarget{classHash}{}\section{Hash Class Reference}
 \label{classHash}\index{Hash@{Hash}}
+
+
+{\ttfamily \#include $<$Hash.\+h$>$}
+
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classHash_ac4eb7d20e99c6bd18e03ec77cf7a3607}\label{classHash_ac4eb7d20e99c6bd18e03ec77cf7a3607}} 
-{\bfseries Hash} (\mbox{\hyperlink{classHash}{Hash}} $\ast$hash1, \mbox{\hyperlink{classHash}{Hash}} $\ast$hash2)
+\mbox{\hyperlink{classHash_af482880ad75b67a09d2dcb5e86244d80}{Hash}} ()
 \item 
-\mbox{\Hypertarget{classHash_a2b45e505dc1cd9a72dee423f413feb4c}\label{classHash_a2b45e505dc1cd9a72dee423f413feb4c}} 
-{\bfseries Hash} (\mbox{\hyperlink{classHash}{Hash}} $\ast$hash1, double timestamp)
+\mbox{\hyperlink{classHash_a0e10d81c96b90a36443999a820e29136}{Hash}} (\mbox{\hyperlink{classHash}{Hash}} $\ast$hash1, \mbox{\hyperlink{classHash}{Hash}} $\ast$value)
 \item 
-\mbox{\Hypertarget{classHash_a1344901b761ddb969b29d074c8fc735e}\label{classHash_a1344901b761ddb969b29d074c8fc735e}} 
-{\bfseries Hash} (\mbox{\hyperlink{classHash}{Hash}} $\ast$hash1, int timestamp)
+\mbox{\hyperlink{classHash_ae324d51c4ee733ef8f7656e6f1afbbd0}{Hash}} (\mbox{\hyperlink{classHash}{Hash}} $\ast$hash1, double value)
 \item 
-\mbox{\Hypertarget{classHash_adf6e09b4e5846f14803ee2733c473d24}\label{classHash_adf6e09b4e5846f14803ee2733c473d24}} 
-{\bfseries Hash} (\mbox{\hyperlink{classHash}{Hash}} $\ast$hash1, long long int timestamp)
+\mbox{\hyperlink{classHash_aa86acb0f09e74c9e6c75adc063539454}{Hash}} (\mbox{\hyperlink{classHash}{Hash}} $\ast$hash1, int value)
 \item 
-\mbox{\Hypertarget{classHash_a1c75a351f34806ab7a662e8b64f49070}\label{classHash_a1c75a351f34806ab7a662e8b64f49070}} 
-{\bfseries Hash} (\mbox{\hyperlink{classHash}{Hash}} $\ast$hash1, std\+::string timestamp)
+\mbox{\hyperlink{classHash_a523bc61e293e280273dbcd51d6b13905}{Hash}} (\mbox{\hyperlink{classHash}{Hash}} $\ast$hash1, long long int value)
 \item 
-\mbox{\Hypertarget{classHash_af82bf941eec6e91bda4b3c0fa1a5c2bd}\label{classHash_af82bf941eec6e91bda4b3c0fa1a5c2bd}} 
-{\bfseries Hash} (std\+::string timestamp)
+\mbox{\hyperlink{classHash_af3c5c785c59f0df2549e25a671370452}{Hash}} (\mbox{\hyperlink{classHash}{Hash}} $\ast$hash1, std\+::string value)
 \item 
+\mbox{\hyperlink{classHash_a529370f2a9baaf470323284364707a88}{Hash}} (std\+::string value)
+\item 
+\mbox{\hyperlink{classHash_a1d2f0230c2cfe4d6aaab6d9a055faaf5}{Hash}} (const \mbox{\hyperlink{classComponent}{Component}} $\ast$component, const \mbox{\hyperlink{classSerializer}{Serializer}} $\ast$serializer, const char $\ast$encoding)
+\item 
+std\+::string \mbox{\hyperlink{classHash_ab1c275871d3d81cd38d58dac5c634042}{to\+\_\+string}} () const
+\item 
+bool \mbox{\hyperlink{classHash_a8aafc6563e964ff47dcbba955b0c28f2}{operator==}} (\mbox{\hyperlink{classHash}{Hash}} const \&h) const
+\item 
+\mbox{\hyperlink{classElement}{Element}} $\ast$ \mbox{\hyperlink{classHash_a35e01449aedb17a0172837c87986181e}{to\+Element}} ()
+\item 
+void \mbox{\hyperlink{classHash_a53825b0981f8027244e7bffd84ab2694}{from\+Element}} (\mbox{\hyperlink{classElementObject}{Element\+Object}} $\ast$e, const \mbox{\hyperlink{classSerializer}{Serializer}} $\ast$serializer, const char $\ast$encoding)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class for md5 based hash, based on Open\+S\+LL
+
+\begin{DoxyAuthor}{Author}
+Mathieu Lochet 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2 
+\end{DoxyVersion}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classHash_af482880ad75b67a09d2dcb5e86244d80}\label{classHash_af482880ad75b67a09d2dcb5e86244d80}} 
+\index{Hash@{Hash}!Hash@{Hash}}
+\index{Hash@{Hash}!Hash@{Hash}}
+\subsubsection{\texorpdfstring{Hash()}{Hash()}\hspace{0.1cm}{\footnotesize\ttfamily [1/8]}}
+{\footnotesize\ttfamily Hash\+::\+Hash (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+A default constructor \mbox{\Hypertarget{classHash_a0e10d81c96b90a36443999a820e29136}\label{classHash_a0e10d81c96b90a36443999a820e29136}} 
+\index{Hash@{Hash}!Hash@{Hash}}
+\index{Hash@{Hash}!Hash@{Hash}}
+\subsubsection{\texorpdfstring{Hash()}{Hash()}\hspace{0.1cm}{\footnotesize\ttfamily [2/8]}}
+{\footnotesize\ttfamily Hash\+::\+Hash (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classHash}{Hash}} $\ast$}]{hash1,  }\item[{\mbox{\hyperlink{classHash}{Hash}} $\ast$}]{value }\end{DoxyParamCaption})}
+
+A Constructor that hash the two parameters together
+
+
+\begin{DoxyParams}{Parameters}
+{\em hash1} & First element to hash \\
+\hline
+{\em value} & Second element to hash \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classHash_ae324d51c4ee733ef8f7656e6f1afbbd0}\label{classHash_ae324d51c4ee733ef8f7656e6f1afbbd0}} 
+\index{Hash@{Hash}!Hash@{Hash}}
+\index{Hash@{Hash}!Hash@{Hash}}
+\subsubsection{\texorpdfstring{Hash()}{Hash()}\hspace{0.1cm}{\footnotesize\ttfamily [3/8]}}
+{\footnotesize\ttfamily Hash\+::\+Hash (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classHash}{Hash}} $\ast$}]{hash1,  }\item[{double}]{value }\end{DoxyParamCaption})}
+
+A Constructor that hash the two parameters together
+
+
+\begin{DoxyParams}{Parameters}
+{\em hash1} & First element to hash \\
+\hline
+{\em value} & Second element to hash \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classHash_aa86acb0f09e74c9e6c75adc063539454}\label{classHash_aa86acb0f09e74c9e6c75adc063539454}} 
+\index{Hash@{Hash}!Hash@{Hash}}
+\index{Hash@{Hash}!Hash@{Hash}}
+\subsubsection{\texorpdfstring{Hash()}{Hash()}\hspace{0.1cm}{\footnotesize\ttfamily [4/8]}}
+{\footnotesize\ttfamily Hash\+::\+Hash (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classHash}{Hash}} $\ast$}]{hash1,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+A Constructor that hash the two parameters together
+
+
+\begin{DoxyParams}{Parameters}
+{\em hash1} & First element to hash \\
+\hline
+{\em value} & Second element to hash \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classHash_a523bc61e293e280273dbcd51d6b13905}\label{classHash_a523bc61e293e280273dbcd51d6b13905}} 
+\index{Hash@{Hash}!Hash@{Hash}}
+\index{Hash@{Hash}!Hash@{Hash}}
+\subsubsection{\texorpdfstring{Hash()}{Hash()}\hspace{0.1cm}{\footnotesize\ttfamily [5/8]}}
+{\footnotesize\ttfamily Hash\+::\+Hash (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classHash}{Hash}} $\ast$}]{hash1,  }\item[{long long int}]{value }\end{DoxyParamCaption})}
+
+A Constructor that hash the two parameters together
+
+
+\begin{DoxyParams}{Parameters}
+{\em hash1} & First element to hash \\
+\hline
+{\em value} & Second element to hash \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classHash_af3c5c785c59f0df2549e25a671370452}\label{classHash_af3c5c785c59f0df2549e25a671370452}} 
+\index{Hash@{Hash}!Hash@{Hash}}
+\index{Hash@{Hash}!Hash@{Hash}}
+\subsubsection{\texorpdfstring{Hash()}{Hash()}\hspace{0.1cm}{\footnotesize\ttfamily [6/8]}}
+{\footnotesize\ttfamily Hash\+::\+Hash (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classHash}{Hash}} $\ast$}]{hash1,  }\item[{std\+::string}]{value }\end{DoxyParamCaption})}
+
+A Constructor that hash the two parameters together
+
+
+\begin{DoxyParams}{Parameters}
+{\em hash1} & First element to hash \\
+\hline
+{\em value} & Second element to hash \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classHash_a529370f2a9baaf470323284364707a88}\label{classHash_a529370f2a9baaf470323284364707a88}} 
+\index{Hash@{Hash}!Hash@{Hash}}
+\index{Hash@{Hash}!Hash@{Hash}}
+\subsubsection{\texorpdfstring{Hash()}{Hash()}\hspace{0.1cm}{\footnotesize\ttfamily [7/8]}}
+{\footnotesize\ttfamily Hash\+::\+Hash (\begin{DoxyParamCaption}\item[{std\+::string}]{value }\end{DoxyParamCaption})}
+
+A Constructor that hash a string value
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & \mbox{\hyperlink{classElement}{Element}} to \mbox{\hyperlink{classHash}{Hash}} \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classHash_a1d2f0230c2cfe4d6aaab6d9a055faaf5}\label{classHash_a1d2f0230c2cfe4d6aaab6d9a055faaf5}} 
-{\bfseries Hash} (const \mbox{\hyperlink{classComponent}{Component}} $\ast$component, const \mbox{\hyperlink{classSerializer}{Serializer}} $\ast$serializer, const char $\ast$encoding)
-\item 
-\mbox{\Hypertarget{classHash_ab1c275871d3d81cd38d58dac5c634042}\label{classHash_ab1c275871d3d81cd38d58dac5c634042}} 
-std\+::string {\bfseries to\+\_\+string} () const
-\item 
-\mbox{\Hypertarget{classHash_a8aafc6563e964ff47dcbba955b0c28f2}\label{classHash_a8aafc6563e964ff47dcbba955b0c28f2}} 
-bool {\bfseries operator==} (\mbox{\hyperlink{classHash}{Hash}} const \&h) const
-\item 
-\mbox{\Hypertarget{classHash_a35e01449aedb17a0172837c87986181e}\label{classHash_a35e01449aedb17a0172837c87986181e}} 
-\mbox{\hyperlink{classElement}{Element}} $\ast$ {\bfseries to\+Element} ()
-\item 
+\index{Hash@{Hash}!Hash@{Hash}}
+\index{Hash@{Hash}!Hash@{Hash}}
+\subsubsection{\texorpdfstring{Hash()}{Hash()}\hspace{0.1cm}{\footnotesize\ttfamily [8/8]}}
+{\footnotesize\ttfamily Hash\+::\+Hash (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classComponent}{Component}} $\ast$}]{component,  }\item[{const \mbox{\hyperlink{classSerializer}{Serializer}} $\ast$}]{serializer,  }\item[{const char $\ast$}]{encoding }\end{DoxyParamCaption})}
+
+Constructor that \mbox{\hyperlink{classHash}{Hash}} a component object
+
+
+\begin{DoxyParams}{Parameters}
+{\em component} & The component to hash \\
+\hline
+{\em serializer} & The serializer to serialize the component \\
+\hline
+{\em encoding} & The encoding to serialize the component \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
 \mbox{\Hypertarget{classHash_a53825b0981f8027244e7bffd84ab2694}\label{classHash_a53825b0981f8027244e7bffd84ab2694}} 
-void {\bfseries from\+Element} (\mbox{\hyperlink{classElementObject}{Element\+Object}} $\ast$e, const \mbox{\hyperlink{classSerializer}{Serializer}} $\ast$serializer, const char $\ast$encoding)
-\end{DoxyCompactItemize}
-\subsection*{Public Attributes}
-\begin{DoxyCompactItemize}
-\item 
-\mbox{\Hypertarget{classHash_a0337821e703a9fc5373635ffcd1a00c9}\label{classHash_a0337821e703a9fc5373635ffcd1a00c9}} 
-std\+::string {\bfseries hash}
-\end{DoxyCompactItemize}
+\index{Hash@{Hash}!from\+Element@{from\+Element}}
+\index{from\+Element@{from\+Element}!Hash@{Hash}}
+\subsubsection{\texorpdfstring{from\+Element()}{fromElement()}}
+{\footnotesize\ttfamily void Hash\+::from\+Element (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classElementObject}{Element\+Object}} $\ast$}]{e,  }\item[{const \mbox{\hyperlink{classSerializer}{Serializer}} $\ast$}]{serializer,  }\item[{const char $\ast$}]{encoding }\end{DoxyParamCaption})}
+
+The function used to build the object from its element representation. the object if it is empty \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classElementObject}{Element\+Object}} 
+
+\mbox{\hyperlink{classSerializer}{Serializer}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em element} & The \mbox{\hyperlink{classElement}{Element}} representation of the object \\
+\hline
+{\em s} & The serializer (Can be used if serialization of some elements is needed) \\
+\hline
+{\em encoding} & The encoding that has been used to create the \mbox{\hyperlink{classElement}{Element}} representation of the object (Can be used if serialization of some elements is needed) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classHash_a8aafc6563e964ff47dcbba955b0c28f2}\label{classHash_a8aafc6563e964ff47dcbba955b0c28f2}} 
+\index{Hash@{Hash}!operator==@{operator==}}
+\index{operator==@{operator==}!Hash@{Hash}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Hash\+::operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classHash}{Hash}} const \&}]{h }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Compare two different Hashes
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & The \mbox{\hyperlink{classHash}{Hash}} to compare to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if both Hashes are the same, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classHash_ab1c275871d3d81cd38d58dac5c634042}\label{classHash_ab1c275871d3d81cd38d58dac5c634042}} 
+\index{Hash@{Hash}!to\+\_\+string@{to\+\_\+string}}
+\index{to\+\_\+string@{to\+\_\+string}!Hash@{Hash}}
+\subsubsection{\texorpdfstring{to\+\_\+string()}{to\_string()}}
+{\footnotesize\ttfamily std\+::string Hash\+::to\+\_\+string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get a string representation of the hash
+
+\begin{DoxyReturn}{Returns}
+The string representation of the hash 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classHash_a35e01449aedb17a0172837c87986181e}\label{classHash_a35e01449aedb17a0172837c87986181e}} 
+\index{Hash@{Hash}!to\+Element@{to\+Element}}
+\index{to\+Element@{to\+Element}!Hash@{Hash}}
+\subsubsection{\texorpdfstring{to\+Element()}{toElement()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classElement}{Element}} $\ast$ Hash\+::to\+Element (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The method used by the serializer to transform an object into an \mbox{\hyperlink{classElement}{Element}} representation. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classElement}{Element}}
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+The \mbox{\hyperlink{classElement}{Element}} representation of the object 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

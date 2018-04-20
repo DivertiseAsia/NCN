@@ -68,37 +68,296 @@ $(function() {
 <div class="title">NodeState Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="NodeState_8h_source.html">NodeState.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab8efdcd562f3122b88f0959f5e3b5fed"><td class="memItemLeft" align="right" valign="top"><a id="ab8efdcd562f3122b88f0959f5e3b5fed"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>NodeState</b> (<a class="el" href="classSerializer.html">Serializer</a> *s, int si=64, const char *e=&quot;json&quot;, Reward *r=nullptr)</td></tr>
+<tr class="memitem:ab8efdcd562f3122b88f0959f5e3b5fed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNodeState.html#ab8efdcd562f3122b88f0959f5e3b5fed">NodeState</a> (<a class="el" href="classSerializer.html">Serializer</a> *s, int si=64, const char *e=&quot;json&quot;, Reward *r=nullptr)</td></tr>
 <tr class="separator:ab8efdcd562f3122b88f0959f5e3b5fed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a132d657fd8413e9f7eb92237cc66b38c"><td class="memItemLeft" align="right" valign="top"><a id="a132d657fd8413e9f7eb92237cc66b38c"></a>
-<a class="el" href="classBlock.html">Block</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>create_block</b> () const</td></tr>
+<tr class="memitem:a132d657fd8413e9f7eb92237cc66b38c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBlock.html">Block</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNodeState.html#a132d657fd8413e9f7eb92237cc66b38c">create_block</a> () const</td></tr>
 <tr class="separator:a132d657fd8413e9f7eb92237cc66b38c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a010b7e7cb6d050a2d78962e6532aea9d"><td class="memItemLeft" align="right" valign="top"><a id="a010b7e7cb6d050a2d78962e6532aea9d"></a>
-<a class="el" href="classBlock.html">Block</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>add</b> (std::string transaction, std::string public_key)</td></tr>
+<tr class="memitem:a010b7e7cb6d050a2d78962e6532aea9d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBlock.html">Block</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNodeState.html#a010b7e7cb6d050a2d78962e6532aea9d">add</a> (std::string transaction, std::string public_key)</td></tr>
 <tr class="separator:a010b7e7cb6d050a2d78962e6532aea9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75e2e94448c4b5579b93b5c2fc0671b9"><td class="memItemLeft" align="right" valign="top"><a id="a75e2e94448c4b5579b93b5c2fc0671b9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>add</b> (<a class="el" href="classBlock.html">Block</a> *block)</td></tr>
+<tr class="memitem:a75e2e94448c4b5579b93b5c2fc0671b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNodeState.html#a75e2e94448c4b5579b93b5c2fc0671b9">add</a> (<a class="el" href="classBlock.html">Block</a> *block)</td></tr>
 <tr class="separator:a75e2e94448c4b5579b93b5c2fc0671b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2e3a8a54ab5276bf469af2cf2107f2b"><td class="memItemLeft" align="right" valign="top"><a id="ae2e3a8a54ab5276bf469af2cf2107f2b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>read_blocks</b> ()</td></tr>
+<tr class="memitem:ae2e3a8a54ab5276bf469af2cf2107f2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNodeState.html#ae2e3a8a54ab5276bf469af2cf2107f2b">read_blocks</a> ()</td></tr>
 <tr class="separator:ae2e3a8a54ab5276bf469af2cf2107f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8fac1372753ec35c9fcee92f71d75d6"><td class="memItemLeft" align="right" valign="top"><a id="ad8fac1372753ec35c9fcee92f71d75d6"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>check_transaction</b> (<a class="el" href="classTransaction.html">Transaction</a> *transaction, std::string k)</td></tr>
+<tr class="memitem:ad8fac1372753ec35c9fcee92f71d75d6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNodeState.html#ad8fac1372753ec35c9fcee92f71d75d6">check_transaction</a> (<a class="el" href="classTransaction.html">Transaction</a> *transaction, std::string k)</td></tr>
 <tr class="separator:ad8fac1372753ec35c9fcee92f71d75d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedd8b10b2ca3f51e5c95b7ebed70464c"><td class="memItemLeft" align="right" valign="top"><a id="aedd8b10b2ca3f51e5c95b7ebed70464c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>show_current_state</b> ()</td></tr>
+<tr class="memitem:aedd8b10b2ca3f51e5c95b7ebed70464c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNodeState.html#aedd8b10b2ca3f51e5c95b7ebed70464c">show_current_state</a> ()</td></tr>
 <tr class="separator:aedd8b10b2ca3f51e5c95b7ebed70464c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a771321e4b2c56515ffb79e57da71db30"><td class="memItemLeft" align="right" valign="top"><a id="a771321e4b2c56515ffb79e57da71db30"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>get</b> (<a class="el" href="classHash.html">Hash</a> *pHash)</td></tr>
+<tr class="memitem:a771321e4b2c56515ffb79e57da71db30"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNodeState.html#a771321e4b2c56515ffb79e57da71db30">get</a> (<a class="el" href="classHash.html">Hash</a> *pHash)</td></tr>
 <tr class="separator:a771321e4b2c56515ffb79e57da71db30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a130cf13803990afc44bee6bed8dd4e05"><td class="memItemLeft" align="right" valign="top"><a id="a130cf13803990afc44bee6bed8dd4e05"></a>
-<a class="el" href="classBlock.html">Block</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>get</b> (std::string &amp;hash)</td></tr>
+<tr class="memitem:a130cf13803990afc44bee6bed8dd4e05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBlock.html">Block</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNodeState.html#a130cf13803990afc44bee6bed8dd4e05">get</a> (std::string &amp;hash)</td></tr>
 <tr class="separator:a130cf13803990afc44bee6bed8dd4e05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p class="">The <a class="el" href="classNodeState.html">NodeState</a> class contains all the data at a time T. It is in charge of block generation and validation builds the block chain. It also updates the current state of a system with temporal databases. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classSerializer.html">Serializer</a> </dd>
+<dd>
+<a class="el" href="classChain.html">Chain</a> </dd>
+<dd>
+<a class="el" href="classHash.html">Hash</a> </dd>
+<dd>
+<a class="el" href="classTransaction.html">Transaction</a> </dd>
+<dd>
+<a class="el" href="classBlock.html">Block</a></dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Mathieu Lochet </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>5 </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ab8efdcd562f3122b88f0959f5e3b5fed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8efdcd562f3122b88f0959f5e3b5fed">&#9670;&nbsp;</a></span>NodeState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">NodeState::NodeState </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classSerializer.html">Serializer</a> *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>si</em> = <code>64</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>e</em> = <code>&quot;json&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classReward.html">Reward</a> *&#160;</td>
+          <td class="paramname"><em>r</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p class="">Creates a new <a class="el" href="classNodeState.html">NodeState</a> object with a root chain a base reward transaction and a size for block generation </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classSerializer.html">Serializer</a></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>The used serializer </td></tr>
+    <tr><td class="paramname">si</td><td>The size of a block </td></tr>
+    <tr><td class="paramname">e</td><td>The used encoding </td></tr>
+    <tr><td class="paramname">r</td><td>The reward object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a010b7e7cb6d050a2d78962e6532aea9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a010b7e7cb6d050a2d78962e6532aea9d">&#9670;&nbsp;</a></span>add() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classBlock.html">Block</a> * NodeState::add </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>transaction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>public_key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p class="">Add a transaction. If the number of transaction is equal to the size field, then a new <a class="el" href="classBlock.html">Block</a> is created </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classBlock.html">Block</a></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">transaction</td><td>The serialized and ciphered serialization </td></tr>
+    <tr><td class="paramname">public_key</td><td>The key to decipher the transaction </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A new <a class="el" href="classBlock.html">Block</a> is the number of transactions equals the size field, nullptr otherwise </dd></dl>
+
+</div>
+</div>
+<a id="a75e2e94448c4b5579b93b5c2fc0671b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75e2e94448c4b5579b93b5c2fc0671b9">&#9670;&nbsp;</a></span>add() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NodeState::add </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classBlock.html">Block</a> *&#160;</td>
+          <td class="paramname"><em>block</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p class="">Add a new <a class="el" href="classBlock.html">Block</a> to the chain and generate the file. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classBlock.html">Block</a></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">block</td><td>the block to add to the block chain </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad8fac1372753ec35c9fcee92f71d75d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8fac1372753ec35c9fcee92f71d75d6">&#9670;&nbsp;</a></span>check_transaction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NodeState::check_transaction </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTransaction.html">Transaction</a> *&#160;</td>
+          <td class="paramname"><em>transaction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>k</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p class="">Check if a transaction is valid or not</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">transaction</td><td>The transaction to check </td></tr>
+    <tr><td class="paramname">k</td><td>The key of the transaction's creator </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if it is valid, false otherwise </dd></dl>
+
+</div>
+</div>
+<a id="a132d657fd8413e9f7eb92237cc66b38c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a132d657fd8413e9f7eb92237cc66b38c">&#9670;&nbsp;</a></span>create_block()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classBlock.html">Block</a> * NodeState::create_block </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p class="">Creates a block using the stored transactions </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classBlock.html">Block</a></dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the newly created <a class="el" href="classBlock.html">Block</a> </dd></dl>
+
+</div>
+</div>
+<a id="a771321e4b2c56515ffb79e57da71db30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a771321e4b2c56515ffb79e57da71db30">&#9670;&nbsp;</a></span>get() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NodeState::get </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHash.html">Hash</a> *&#160;</td>
+          <td class="paramname"><em>pHash</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p class="">Try to find a given hash in the database </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classHash.html">Hash</a></dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>1 if the fingerprint has been found, 0 otherwise </dd></dl>
+
+</div>
+</div>
+<a id="a130cf13803990afc44bee6bed8dd4e05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a130cf13803990afc44bee6bed8dd4e05">&#9670;&nbsp;</a></span>get() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classBlock.html">Block</a> * NodeState::get </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>hash</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p class="">Try to find a given hash in the database</p>
+<dl class="section return"><dt>Returns</dt><dd>The corresponding block if it is found, nullptr otherwise </dd></dl>
+
+</div>
+</div>
+<a id="ae2e3a8a54ab5276bf469af2cf2107f2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2e3a8a54ab5276bf469af2cf2107f2b">&#9670;&nbsp;</a></span>read_blocks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NodeState::read_blocks </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p class="">Read all of the block files and memorize all of it </p>
+
+</div>
+</div>
+<a id="aedd8b10b2ca3f51e5c95b7ebed70464c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedd8b10b2ca3f51e5c95b7ebed70464c">&#9670;&nbsp;</a></span>show_current_state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NodeState::show_current_state </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p class="">Print the state of the top chain </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>block_chain/chain/<a class="el" href="NodeState_8h_source.html">NodeState.h</a></li>
 <li>block_chain/chain/NodeState.cpp</li>

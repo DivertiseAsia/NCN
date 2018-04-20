@@ -1,32 +1,175 @@
 \hypertarget{classRSA__Cryptography}{}\section{R\+S\+A\+\_\+\+Cryptography Class Reference}
 \label{classRSA__Cryptography}\index{R\+S\+A\+\_\+\+Cryptography@{R\+S\+A\+\_\+\+Cryptography}}
+
+
+{\ttfamily \#include $<$R\+S\+A.\+h$>$}
+
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classRSA__Cryptography_af3a17a2480f1a6d17f74bda756540d0f}\label{classRSA__Cryptography_af3a17a2480f1a6d17f74bda756540d0f}} 
-{\bfseries R\+S\+A\+\_\+\+Cryptography} (std\+::string filename)
+\mbox{\hyperlink{classRSA__Cryptography_aeca5b9b416a49fea20e7fc69ca18d641}{R\+S\+A\+\_\+\+Cryptography}} ()
 \item 
-\mbox{\Hypertarget{classRSA__Cryptography_a8ea8d421dcb5012ffc8fd23660bae1bc}\label{classRSA__Cryptography_a8ea8d421dcb5012ffc8fd23660bae1bc}} 
-std\+::string {\bfseries encrypt} (std\+::string message)
+\mbox{\hyperlink{classRSA__Cryptography_ae2cd6fb565102dc8007de9d305026e45}{R\+S\+A\+\_\+\+Cryptography}} (std\+::string key)
 \item 
-\mbox{\Hypertarget{classRSA__Cryptography_a03760e4f7eae8e7b961f8b948c0dafb1}\label{classRSA__Cryptography_a03760e4f7eae8e7b961f8b948c0dafb1}} 
-std\+::string {\bfseries decrypt} (std\+::string message, int size)
+std\+::string \mbox{\hyperlink{classRSA__Cryptography_a8ea8d421dcb5012ffc8fd23660bae1bc}{encrypt}} (std\+::string message)
 \item 
-\mbox{\Hypertarget{classRSA__Cryptography_a7772b886bb2f27b95df33019d04eee69}\label{classRSA__Cryptography_a7772b886bb2f27b95df33019d04eee69}} 
-void {\bfseries write} (void($\ast$fun)(B\+IO $\ast$, R\+SA $\ast$), std\+::string file)
+std\+::string \mbox{\hyperlink{classRSA__Cryptography_a03760e4f7eae8e7b961f8b948c0dafb1}{decrypt}} (std\+::string message, int size)
 \item 
-\mbox{\Hypertarget{classRSA__Cryptography_a9692bde79db1e43da95511fe0d0c1a0b}\label{classRSA__Cryptography_a9692bde79db1e43da95511fe0d0c1a0b}} 
-std\+::string {\bfseries get\+Public\+Key} ()
+void \mbox{\hyperlink{classRSA__Cryptography_a7772b886bb2f27b95df33019d04eee69}{write}} (void($\ast$fun)(B\+IO $\ast$, R\+SA $\ast$), std\+::string file)
 \item 
-\mbox{\Hypertarget{classRSA__Cryptography_aecdd6715cb222a98b5810f49103c34d7}\label{classRSA__Cryptography_aecdd6715cb222a98b5810f49103c34d7}} 
-std\+::string {\bfseries get\+Private\+Key} ()
+std\+::string \mbox{\hyperlink{classRSA__Cryptography_a9692bde79db1e43da95511fe0d0c1a0b}{get\+Public\+Key}} ()
 \item 
-\mbox{\Hypertarget{classRSA__Cryptography_ad2034c85765f03ab147e2ce01bb0e116}\label{classRSA__Cryptography_ad2034c85765f03ab147e2ce01bb0e116}} 
-void {\bfseries generate} (const char $\ast$, const char $\ast$)
+std\+::string \mbox{\hyperlink{classRSA__Cryptography_aecdd6715cb222a98b5810f49103c34d7}{get\+Private\+Key}} ()
 \item 
-\mbox{\Hypertarget{classRSA__Cryptography_ac3747475168157d87c6661f0ac3f4f95}\label{classRSA__Cryptography_ac3747475168157d87c6661f0ac3f4f95}} 
-bool {\bfseries backup} (const char $\ast$, const char $\ast$)
+void \mbox{\hyperlink{classRSA__Cryptography_aaf500fcdcc050fa8d18a0dbe43176d17}{generate}} (const char $\ast$private\+\_\+file, const char $\ast$public\+\_\+file)
+\item 
+bool \mbox{\hyperlink{classRSA__Cryptography_ae3ccf77d8754acdfb444dbab6fb6a4dd}{backup}} (const char $\ast$private\+\_\+file, const char $\ast$public\+\_\+file)
+\item 
+virtual \mbox{\hyperlink{classRSA__Cryptography_ae8a837cfb0a55afd707af939261acc52}{$\sim$\+R\+S\+A\+\_\+\+Cryptography}} ()
 \end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class for R\+SA cryptography, based on Open\+S\+LL
+
+\begin{DoxyAuthor}{Author}
+Mathieu Lochet 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2 
+\end{DoxyVersion}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRSA__Cryptography_aeca5b9b416a49fea20e7fc69ca18d641}\label{classRSA__Cryptography_aeca5b9b416a49fea20e7fc69ca18d641}} 
+\index{R\+S\+A\+\_\+\+Cryptography@{R\+S\+A\+\_\+\+Cryptography}!R\+S\+A\+\_\+\+Cryptography@{R\+S\+A\+\_\+\+Cryptography}}
+\index{R\+S\+A\+\_\+\+Cryptography@{R\+S\+A\+\_\+\+Cryptography}!R\+S\+A\+\_\+\+Cryptography@{R\+S\+A\+\_\+\+Cryptography}}
+\subsubsection{\texorpdfstring{R\+S\+A\+\_\+\+Cryptography()}{RSA\_Cryptography()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily R\+S\+A\+\_\+\+Cryptography\+::\+R\+S\+A\+\_\+\+Cryptography (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+A default constructor initializing the size of the key \mbox{\Hypertarget{classRSA__Cryptography_ae2cd6fb565102dc8007de9d305026e45}\label{classRSA__Cryptography_ae2cd6fb565102dc8007de9d305026e45}} 
+\index{R\+S\+A\+\_\+\+Cryptography@{R\+S\+A\+\_\+\+Cryptography}!R\+S\+A\+\_\+\+Cryptography@{R\+S\+A\+\_\+\+Cryptography}}
+\index{R\+S\+A\+\_\+\+Cryptography@{R\+S\+A\+\_\+\+Cryptography}!R\+S\+A\+\_\+\+Cryptography@{R\+S\+A\+\_\+\+Cryptography}}
+\subsubsection{\texorpdfstring{R\+S\+A\+\_\+\+Cryptography()}{RSA\_Cryptography()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily R\+S\+A\+\_\+\+Cryptography\+::\+R\+S\+A\+\_\+\+Cryptography (\begin{DoxyParamCaption}\item[{std\+::string}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+A constructor with a given public key. It creates an object that can decrypt or encrypt using public key
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The known public key \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRSA__Cryptography_ae8a837cfb0a55afd707af939261acc52}\label{classRSA__Cryptography_ae8a837cfb0a55afd707af939261acc52}} 
+\index{R\+S\+A\+\_\+\+Cryptography@{R\+S\+A\+\_\+\+Cryptography}!````~R\+S\+A\+\_\+\+Cryptography@{$\sim$\+R\+S\+A\+\_\+\+Cryptography}}
+\index{````~R\+S\+A\+\_\+\+Cryptography@{$\sim$\+R\+S\+A\+\_\+\+Cryptography}!R\+S\+A\+\_\+\+Cryptography@{R\+S\+A\+\_\+\+Cryptography}}
+\subsubsection{\texorpdfstring{$\sim$\+R\+S\+A\+\_\+\+Cryptography()}{~RSA\_Cryptography()}}
+{\footnotesize\ttfamily R\+S\+A\+\_\+\+Cryptography\+::$\sim$\+R\+S\+A\+\_\+\+Cryptography (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Frees R\+SA key ressources 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classRSA__Cryptography_ae3ccf77d8754acdfb444dbab6fb6a4dd}\label{classRSA__Cryptography_ae3ccf77d8754acdfb444dbab6fb6a4dd}} 
+\index{R\+S\+A\+\_\+\+Cryptography@{R\+S\+A\+\_\+\+Cryptography}!backup@{backup}}
+\index{backup@{backup}!R\+S\+A\+\_\+\+Cryptography@{R\+S\+A\+\_\+\+Cryptography}}
+\subsubsection{\texorpdfstring{backup()}{backup()}}
+{\footnotesize\ttfamily bool R\+S\+A\+\_\+\+Cryptography\+::backup (\begin{DoxyParamCaption}\item[{const char $\ast$}]{private\+\_\+file,  }\item[{const char $\ast$}]{public\+\_\+file }\end{DoxyParamCaption})}
+
+Read the key from files
+
+
+\begin{DoxyParams}{Parameters}
+{\em private\+\_\+file} & The file in which to read the private key \\
+\hline
+{\em public\+\_\+file} & The file in which to read the public key \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRSA__Cryptography_a03760e4f7eae8e7b961f8b948c0dafb1}\label{classRSA__Cryptography_a03760e4f7eae8e7b961f8b948c0dafb1}} 
+\index{R\+S\+A\+\_\+\+Cryptography@{R\+S\+A\+\_\+\+Cryptography}!decrypt@{decrypt}}
+\index{decrypt@{decrypt}!R\+S\+A\+\_\+\+Cryptography@{R\+S\+A\+\_\+\+Cryptography}}
+\subsubsection{\texorpdfstring{decrypt()}{decrypt()}}
+{\footnotesize\ttfamily std\+::string R\+S\+A\+\_\+\+Cryptography\+::decrypt (\begin{DoxyParamCaption}\item[{std\+::string}]{message,  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+Decrypt a message using private key
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The message to decrypt \\
+\hline
+{\em size} & The size of the message to decrypt \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The decrypted message 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRSA__Cryptography_a8ea8d421dcb5012ffc8fd23660bae1bc}\label{classRSA__Cryptography_a8ea8d421dcb5012ffc8fd23660bae1bc}} 
+\index{R\+S\+A\+\_\+\+Cryptography@{R\+S\+A\+\_\+\+Cryptography}!encrypt@{encrypt}}
+\index{encrypt@{encrypt}!R\+S\+A\+\_\+\+Cryptography@{R\+S\+A\+\_\+\+Cryptography}}
+\subsubsection{\texorpdfstring{encrypt()}{encrypt()}}
+{\footnotesize\ttfamily std\+::string R\+S\+A\+\_\+\+Cryptography\+::encrypt (\begin{DoxyParamCaption}\item[{std\+::string}]{message }\end{DoxyParamCaption})}
+
+Encrypt a message using private key
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The message to encrypt \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The encrypted message 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRSA__Cryptography_aaf500fcdcc050fa8d18a0dbe43176d17}\label{classRSA__Cryptography_aaf500fcdcc050fa8d18a0dbe43176d17}} 
+\index{R\+S\+A\+\_\+\+Cryptography@{R\+S\+A\+\_\+\+Cryptography}!generate@{generate}}
+\index{generate@{generate}!R\+S\+A\+\_\+\+Cryptography@{R\+S\+A\+\_\+\+Cryptography}}
+\subsubsection{\texorpdfstring{generate()}{generate()}}
+{\footnotesize\ttfamily void R\+S\+A\+\_\+\+Cryptography\+::generate (\begin{DoxyParamCaption}\item[{const char $\ast$}]{private\+\_\+file,  }\item[{const char $\ast$}]{public\+\_\+file }\end{DoxyParamCaption})}
+
+Generates new R\+SA key and writes it into a file
+
+
+\begin{DoxyParams}{Parameters}
+{\em private\+\_\+file} & The file in which to write the private key \\
+\hline
+{\em public\+\_\+file} & The file in which to write the public key \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRSA__Cryptography_aecdd6715cb222a98b5810f49103c34d7}\label{classRSA__Cryptography_aecdd6715cb222a98b5810f49103c34d7}} 
+\index{R\+S\+A\+\_\+\+Cryptography@{R\+S\+A\+\_\+\+Cryptography}!get\+Private\+Key@{get\+Private\+Key}}
+\index{get\+Private\+Key@{get\+Private\+Key}!R\+S\+A\+\_\+\+Cryptography@{R\+S\+A\+\_\+\+Cryptography}}
+\subsubsection{\texorpdfstring{get\+Private\+Key()}{getPrivateKey()}}
+{\footnotesize\ttfamily std\+::string R\+S\+A\+\_\+\+Cryptography\+::get\+Private\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the private key
+
+\begin{DoxyReturn}{Returns}
+The private key 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRSA__Cryptography_a9692bde79db1e43da95511fe0d0c1a0b}\label{classRSA__Cryptography_a9692bde79db1e43da95511fe0d0c1a0b}} 
+\index{R\+S\+A\+\_\+\+Cryptography@{R\+S\+A\+\_\+\+Cryptography}!get\+Public\+Key@{get\+Public\+Key}}
+\index{get\+Public\+Key@{get\+Public\+Key}!R\+S\+A\+\_\+\+Cryptography@{R\+S\+A\+\_\+\+Cryptography}}
+\subsubsection{\texorpdfstring{get\+Public\+Key()}{getPublicKey()}}
+{\footnotesize\ttfamily std\+::string R\+S\+A\+\_\+\+Cryptography\+::get\+Public\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the public key
+
+\begin{DoxyReturn}{Returns}
+The public key 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRSA__Cryptography_a7772b886bb2f27b95df33019d04eee69}\label{classRSA__Cryptography_a7772b886bb2f27b95df33019d04eee69}} 
+\index{R\+S\+A\+\_\+\+Cryptography@{R\+S\+A\+\_\+\+Cryptography}!write@{write}}
+\index{write@{write}!R\+S\+A\+\_\+\+Cryptography@{R\+S\+A\+\_\+\+Cryptography}}
+\subsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void R\+S\+A\+\_\+\+Cryptography\+::write (\begin{DoxyParamCaption}\item[{void($\ast$)(B\+IO $\ast$, R\+SA $\ast$)}]{fun,  }\item[{std\+::string}]{file }\end{DoxyParamCaption})}
+
+Write a key inside a file
+
+
+\begin{DoxyParams}{Parameters}
+{\em fun} & The function that will choose which key to write \\
+\hline
+{\em file} & The file name \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
