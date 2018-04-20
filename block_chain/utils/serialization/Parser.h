@@ -1,5 +1,5 @@
-#ifndef PARSING_FRAMEWORK_H
-#define PARSING_FRAMEWORK_H
+#ifndef BLOCK_CHAIN_PARSING_FRAMEWORK_H
+#define BLOCK_CHAIN_PARSING_FRAMEWORK_H
 #include <string>
 
 class Element;
@@ -257,4 +257,4 @@ class ElementCreator
 		 */
 		static ElementObject* put(ElementObject* e, const char* key, Element* value);
 };
-#endif //PARSING_FRAMEWORK_H
+#endif //BLOCK_CHAIN_PARSING_FRAMEWORK_H

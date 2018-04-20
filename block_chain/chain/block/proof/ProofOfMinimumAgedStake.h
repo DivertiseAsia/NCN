@@ -8,6 +8,14 @@
 
 #include "Proof.h"
 
+/**
+ *  A basic proof of minimum aged stake
+ *  @see Proof
+ *  @see Proof::MINIMUM_AGED_STAKE
+ *
+ *  @author Mathieu Lochet
+ *  @version 1
+ */
 class ProofOfMinimumAgedStake: public Proof {
 public:
     void run(Block* block, std::string key) override;

@@ -8,6 +8,14 @@
 
 #include "Proof.h"
 
+/**
+ *  A basic proof of work
+ *  @see Proof
+ *  @see Proof::WORK
+ *
+ *  @author Mathieu Lochet
+ *  @version 1
+ */
 class ProofOfWork: public Proof {
 public:
     void run(Block* block, std::string key) override;

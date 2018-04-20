@@ -1,5 +1,5 @@
-#ifndef JSON_PARSER_H
-#define JSON_PARSER_H
+#ifndef BLOCK_CHAIN_JSON_PARSER_H
+#define BLOCK_CHAIN_JSON_PARSER_H
 
 #include "../Parser.h"
 #include <functional>
@@ -44,4 +44,4 @@ class JsonParser: public ContentParser
          */
         std::map<const char, std::function<Element*()>> elements;
 };
-#endif //JSON_PARSER_H
+#endif //BLOCK_CHAIN_JSON_PARSER_H

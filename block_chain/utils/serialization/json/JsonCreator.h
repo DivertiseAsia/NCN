@@ -1,5 +1,5 @@
-#ifndef JSONCREATOR_H
-#define JSONCREATOR_H
+#ifndef BLOCK_CHAIN_JSON_CREATOR_H
+#define BLOCK_CHAIN_JSON_CREATOR_H
 #include "../Parser.h"
 #include <functional>
 #include <map>
@@ -42,4 +42,4 @@ class JsonCreator: public ContentCreator
         ~JsonCreator();
     private:
 };
-#endif //JSONCREATOR_H
+#endif //BLOCK_CHAIN_JSON_CREATOR_H

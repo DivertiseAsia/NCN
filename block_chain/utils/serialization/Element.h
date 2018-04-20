@@ -1,5 +1,5 @@
-#ifndef ELEMENT_H
-#define ELEMENT_H
+#ifndef BLOCK_CHAIN_ELEMENT_H
+#define BLOCK_CHAIN_ELEMENT_H
 #include <vector>
 #include <map>
 #include <cstring>
@@ -238,4 +238,4 @@ class ElementObject: public Element
         ~ElementObject() override;
 };
 
-#endif // ELEMENT_H
+#endif // BLOCK_CHAIN_ELEMENT_H

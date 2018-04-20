@@ -8,6 +8,14 @@
 
 #include "Proof.h"
 
+/**
+ *  A basic proof of hold
+ *  @see Proof
+ *  @see Proof::HOLD
+ *
+ *  @author Mathieu Lochet
+ *  @version 1
+ */
 class ProofOfHold: public Proof {
 public:
     void run(Block* block, std::string key) override;

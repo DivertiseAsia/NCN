@@ -8,6 +8,14 @@
 
 #include "Proof.h"
 
+/**
+ *  A basic proof of stake
+ *  @see Proof
+ *  @see Proof::STAKE
+ *
+ *  @author Mathieu Lochet
+ *  @version 1
+ */
 class ProofOfStake: public Proof {
 public:
     void run(Block* block, std::string key) override;

@@ -8,6 +8,14 @@
 
 #include "Proof.h"
 
+/**
+ *  A basic proof of stake over time
+ *  @see Proof
+ *  @see Proof::STAKE_TIME
+ *
+ *  @author Mathieu Lochet
+ *  @version 1
+ */
 class ProofOfStakeTime: public Proof {
 public:
     void run(Block* block, std::string key) override;
