@@ -31,7 +31,7 @@ public:
     bool check_transaction(Transaction * transaction, std::string k);
     void show_current_state();
     bool get(Hash *pHash);
-    Block *get(std::string hash);
+    Block *get(std::string& hash);
 
 private:
     std::string encoding;

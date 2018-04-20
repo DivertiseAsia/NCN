@@ -22,7 +22,7 @@ class ContentReader
 {
 	public:
 		/**
-		 *  The entry point of the parser: it reads the text and generate the first element
+		 *  The entry point of the parser: it reads the text and generates the first element
 		 *  according to rules. Calls the corresponding methods for recursive parsing.
 		 *  (opposite works as well)
 		 *  @see parseContent
@@ -106,6 +106,13 @@ class ContentReader
 		 * 	@param e the double Element that will be generated (or used)
 		 */
 		virtual void parseContent(std::string& text, ElementDouble* e) const = 0;
+
+        /**
+         *  Get the encoding corresponding to the reader
+         *
+         * 	@return The corresponding encoding for serialization
+         */
+		virtual const char* get_encoding() const = 0;
 };
 
 /**

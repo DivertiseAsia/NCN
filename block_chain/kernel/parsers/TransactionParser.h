@@ -8,6 +8,15 @@
 
 #include "MessageParser.h"
 
+/**
+ *  A message parser linked to a TransactionMessage.
+ *  @see Message
+ *  @see TransactionMessage
+ *  @see MessageParser
+ *
+ *  @author Mathieu Lochet
+ *  @version 1
+ */
 class TransactionParser: public MessageParser {
 public:
     void operator()(Message* m, Node* node) const final;

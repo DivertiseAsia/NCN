@@ -8,6 +8,15 @@
 
 #include "MessageParser.h"
 
+/**
+ *  A message parser linked to a BlockAskMessage.
+ *  @see Message
+ *  @see BlockAskMessage
+ *  @see MessageParser
+ *
+ *  @author Mathieu Lochet
+ *  @version 1
+ */
 class BlockAskParser: public MessageParser {
 public:
     void operator()(Message* m, Node* node) const final;

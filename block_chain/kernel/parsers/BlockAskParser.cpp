@@ -10,9 +10,9 @@
 
 void BlockAskParser::operator()(Message* m, Node* node) const {
     auto message = dynamic_cast<BlockAskMessage*>(m);
-    unsigned long index = message->block.find(':');
-    std::string ip = message->block.substr(0, index);
-    int port = atoi(message->block.substr(index+1).c_str());
+    unsigned long index = message->peer.find(':');
+    std::string ip = message->peer.substr(0, index);
+    int port = atoi(message->peer.substr(index+1).c_str());
     if(node->debug)
         std::cout << "\033[1;34m[INFO] Block "<< Encoding::fromHexa(message->fingerprint) << " asked by " << node->self._ip << ":" << node->self._port<<"\033[0m\n";
     std::string hash = Encoding::fromHexa(message->fingerprint);

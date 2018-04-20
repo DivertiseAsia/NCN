@@ -157,6 +157,7 @@ class ElementObject: public Element
         }
     };
     public:
+
         /**
          * The map of <string, Elements> to be used in serialization
          * @see Element

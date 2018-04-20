@@ -8,10 +8,10 @@ TransactionMessage::TransactionMessage(std::string p, std::string c, std::string
         std::move(c))), public_key(std::move(k)), tree(tr)
 {
 }
-
+/*
 bool TransactionMessage::compareResults(std::string deciphered){
     return plain_text == deciphered;
-}
+}*/
 
 std::string TransactionMessage::getCipher(){
     return Encoding::fromHexa(cipher);
@@ -45,6 +45,7 @@ void TransactionMessage::fromElement(ElementObject* e, const Serializer* seriali
     else
         tree = nullptr;
 }
+/*
 std::string TransactionMessage::to_string() const {
 
-}
+}*/

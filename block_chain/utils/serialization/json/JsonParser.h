@@ -23,6 +23,7 @@ class JsonParser: public ContentParser
         void parseContent(std::string& text, ElementArray* e) const override;
         void parseContent(std::string& text, ElementObject* e) const override;
         void parseContent(std::string& text, ElementDouble* e) const override;
+        const char* get_encoding() const override;
 
         /**
          * The parser constructor: initialize the map of different

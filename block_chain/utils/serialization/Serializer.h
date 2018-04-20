@@ -131,19 +131,17 @@ public:
      *  Add a custom creator to the list
      *  @see ContentCreator
      *
-     * 	@param encoding the corresponding encoding for the creator
-     * 	@param creator the creator object to use with the key
+     * 	@param creator the creator object to use
     */
-    void set_serializer(const char* encoding, ContentCreator* creator);
+    void set_serializer(ContentCreator* creator);
 
     /**
      *  Add a custom parser to the list
      *  @see ContentParser
      *
-     * 	@param encoding the corresponding encoding for the parser
-     * 	@param creator the creator object to use with the key
+     * 	@param creator the parser object
     */
-    void set_unserializer(const char* encoding, ContentParser* parser);
+    void set_unserializer(ContentParser* parser);
 protected:
 
     /**

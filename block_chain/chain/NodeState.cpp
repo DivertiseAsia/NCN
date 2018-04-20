@@ -26,8 +26,9 @@ void NodeState::add(Block* block){
     }
     std::string dir(block->parent_fingerprint->hash);
     std::string id(block->fingerprint->hash);
-    chain->add(block);
-    update_database(block);
+    Chain* c = nullptr;
+    if((c = chain->add(block)) != nullptr)
+        c->update_database(block, serializer, encoding.c_str());
     std::string line;
     mkdir(std::string("./network/blocks/"+dir).c_str(), S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
     std::ofstream block_file ("./network/blocks/"+dir+"/"+id+".blk");
@@ -62,9 +63,10 @@ void NodeState::read_blocks() {
                     while (std::getline(block_file, line))
                         serialized += line;
                     Block *block = serializer->unserializeBlock(serialized, encoding.c_str());
-                    update_database(block);
                     block_file.close();
-                    chain->add(block);
+                    Chain* c = nullptr;
+                    if((c = chain->add(block)) != nullptr)
+                        c->update_database(block, serializer, encoding.c_str());
                 }
             }
         }
@@ -86,7 +88,7 @@ bool NodeState::get(Hash *pHash) {
     return chain->find(pHash) != 0;
 }
 
-Block* NodeState::get(std::string hash) {
+Block* NodeState::get(std::string& hash) {
     return chain->find(hash);
 }
 

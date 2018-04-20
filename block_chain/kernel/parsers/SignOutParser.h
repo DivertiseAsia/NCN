@@ -9,6 +9,15 @@
 #include "MessageParser.h"
 #include <algorithm>
 
+/**
+ *  A message parser linked to a SignOutMessage.
+ *  @see Message
+ *  @see SignOutMessage
+ *  @see MessageParser
+ *
+ *  @author Mathieu Lochet
+ *  @version 1
+ */
 class SignOutParser: public MessageParser {
 public:
     void operator()(Message* m, Node* node) const final;

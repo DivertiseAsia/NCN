@@ -11,38 +11,60 @@
 #include "../block/transaction/Transaction.h"
 #include "../block/transaction/Reward.h"
 
+/**
+ *  A database object is filled by a list of rows
+ *  It needs to be easily updated and duplicated
+ *  @see Row
+ *
+ *  @author Mathieu Lochet
+ *  @version 2
+ */
 class Database {
     friend class Chain;
 public:
-    explicit Database(Reward* r): reward_transaction(r) {
-    }
-    Database& operator=(Database const& d){
-        for(auto& r : d.rows){
-            this->rows[r.first] = r.second->clone();
-        }
-        reward_transaction = d.reward_transaction;
-        return *this;
-    }
-    Row *get(std::string key) {
-        auto a = rows.find(key);
-        if(a == rows.end())
-            return nullptr;
-        return a->second;
-    }
 
+    /**
+     *  A constructor that accepts a reward transaction
+     *  @see Reward
+     *
+     *  @param r The reward transaction that will be used in the reward method
+     */
+    explicit Database(Reward* r);
 
-    Row* reward(std::string winner)
-    {
-        Row* r = this->get(winner);
-        if(r == nullptr && reward_transaction){
-            r = reward_transaction->createRow();
-            rows[winner] = r;
-        }
-        return r;
-    }
+    /**
+     *  A constructor to clone a database with different pointers
+     *
+     *  @param d The database to be duplicated
+     */
+    Database(Database const& d);
+
+    /**
+     *  Get the row corresponding to the user's key
+     *
+     *  @param key The users key
+     *  @return The user's row representing its datas
+     */
+    Row *get(std::string key);
+
+    /**
+     *  Get the row corresponding to the user's key.
+     *  If the row is not found, it will create a new one
+     *
+     *  @param winner The users key
+     *  @return The user's row representing its datas
+     */
+    Row* reward(std::string winner);
 
 private:
+
+    /**
+     *  The list of the rows in the database
+     */
     std::map<std::string, Row*> rows;
+
+    /**
+     *  The reward transaction to be used
+     */
     Reward* reward_transaction;
 };
 

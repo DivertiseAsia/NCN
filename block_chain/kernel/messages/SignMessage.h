@@ -8,6 +8,13 @@
 
 #include "Message.h"
 
+/**
+ *  An basic message for simple communication.
+ *  @see Message
+ *
+ *  @author Mathieu Lochet
+ *  @version 1
+ */
 class SignMessage: public Message
 {
     friend class SignInParser;
@@ -16,6 +23,15 @@ class SignMessage: public Message
     friend class PeersAnswerParser;
 public:
     SignMessage();
+
+    /**
+     *  Creates a simple message with a text and
+     *  a message type
+     *  Calls the super constructor with the type value
+     *
+     *  @param p The given text. Used as a peer text
+     *  @param t The type of the message
+     */
     SignMessage(std::string p, int t);
     ~SignMessage() override;
     Element* toElement() const override;
@@ -23,6 +39,10 @@ protected:
     void fromElement(ElementObject*, const Serializer* serializer, const char* encoding) override;
 
 private:
+
+    /**
+     *  The text contained in the basic message
+     */
     std::string peer;
 };
 

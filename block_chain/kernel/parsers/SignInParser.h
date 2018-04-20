@@ -8,6 +8,15 @@
 
 #include "MessageParser.h"
 
+/**
+ *  A message parser linked to a SignInMessage.
+ *  @see Message
+ *  @see SignInMessage
+ *  @see MessageParser
+ *
+ *  @author Mathieu Lochet
+ *  @version 1
+ */
 class SignInParser: public MessageParser {
 public:
     void operator()(Message* m, Node* node) const final;

@@ -3,6 +3,12 @@
 #include "../Parser.h"
 #include <functional>
 #include <map>
+#include <iostream>
+#include <algorithm>
+#include <sstream>
+#include <vector>
+#include <iterator>
+#include <cstring>
 
 
 /**
@@ -23,6 +29,7 @@ class JsonCreator: public ContentCreator
         void parseContent(std::string& text, ElementArray* e) const override;
         void parseContent(std::string& text, ElementObject* e) const override;
         void parseContent(std::string& text, ElementDouble* e) const override;
+        const char* get_encoding() const override;
 
         /**
          * Default constructor

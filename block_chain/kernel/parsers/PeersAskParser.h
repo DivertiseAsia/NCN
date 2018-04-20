@@ -8,6 +8,15 @@
 
 #include "MessageParser.h"
 
+/**
+ *  A message parser linked to a AskPeersMessage.
+ *  @see Message
+ *  @see AskPeersMessage
+ *  @see MessageParser
+ *
+ *  @author Mathieu Lochet
+ *  @version 1
+ */
 class PeersAskParser: public MessageParser {
 public:
     void operator()(Message* m, Node* node) const final;

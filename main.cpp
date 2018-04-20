@@ -27,7 +27,7 @@ ElementObject* read_config(const char* filename, Serializer* serial, const char*
     return serial->getElement(serialized, encoding);
 }
 
-//TODO: looks like the database is not duplicated -> multiples and same values, need to inspect that
+//TODO: a new peers asking for blocks may not be updated by the reward transaction
 int main() {
     //Custom block chain
     std::string encoding("json");

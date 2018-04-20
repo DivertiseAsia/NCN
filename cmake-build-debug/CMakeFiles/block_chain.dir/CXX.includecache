@@ -697,6 +697,14 @@ JsonCreator.h
 /home/default/CLionProjects/block_chain/block_chain/utils/serialization/json/JsonCreator.h
 ../Element.h
 /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
+
+/home/default/CLionProjects/block_chain/block_chain/utils/serialization/json/JsonCreator.h
+../Parser.h
+/home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
+functional
+-
+map
+-
 iostream
 -
 algorithm
@@ -708,14 +716,6 @@ vector
 iterator
 -
 cstring
--
-
-/home/default/CLionProjects/block_chain/block_chain/utils/serialization/json/JsonCreator.h
-../Parser.h
-/home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
-functional
--
-map
 -
 
 /home/default/CLionProjects/block_chain/block_chain/utils/serialization/json/JsonParser.cpp

@@ -8,9 +8,24 @@
 
 #include "SignMessage.h"
 
+/**
+ *  An ask peers message for asking the peers list
+ *  @see SignMessage
+ *
+ *  @author Mathieu Lochet
+ *  @version 1
+ */
 class AskPeersMessage: public SignMessage {
 public:
     AskPeersMessage();
+
+    /**
+     *  Creates a ask peers message with a text
+     *  Calls the super constructor with the type value
+     *  @see Message::ASK_PEERS
+     *
+     *  @param p The users's peer representation
+     */
     AskPeersMessage(std::string p);
 };
 

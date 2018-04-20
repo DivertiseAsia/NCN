@@ -8,9 +8,24 @@
 
 #include "SignMessage.h"
 
+/**
+ *  An sign in message for signing out of a peer list
+ *  @see SignMessage
+ *
+ *  @author Mathieu Lochet
+ *  @version 1
+ */
 class SignInMessage: public SignMessage {
 public:
     SignInMessage();
+
+    /**
+     *  Creates a sign in message with a text
+     *  Calls the super constructor with the type value
+     *  @see Message::SIGN_IN
+     *
+     *  @param p The users's peer representation
+     */
     SignInMessage(std::string p);
 };
 

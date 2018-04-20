@@ -18,7 +18,7 @@ public:
     Chain(Block*, Chain* c);
     Chain(Reward* r);
     ~Chain();
-    void add(Block*);
+    Chain * add(Block*);
     std::pair<int, Chain*> top_fingerprint();
     void update_database(Block*, const Serializer* s, const char* encoding);
     bool check_transaction(Transaction* transaction, std::string k);

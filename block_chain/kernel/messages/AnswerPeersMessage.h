@@ -8,9 +8,24 @@
 
 #include "SignMessage.h"
 
+/**
+ *  An answer peers message for sending the peers list
+ *  @see SignMessage
+ *
+ *  @author Mathieu Lochet
+ *  @version 1
+ */
 class AnswerPeersMessage: public SignMessage {
 public:
     AnswerPeersMessage();
+
+    /**
+     *  Creates a answer peers message with a text
+     *  Calls the super constructor with the type value
+     *  @see Message::ANSWER_PEERS
+     *
+     *  @param p The list of peers as a string value
+     */
     AnswerPeersMessage(std::string p);
 };
 

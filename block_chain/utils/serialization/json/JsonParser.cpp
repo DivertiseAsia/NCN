@@ -7,20 +7,6 @@
 #include <iterator>
 #include <cstring>
 
-/*
-template<typename Out>
-void split(const std::string &s, char delim, Out result, const int limit) {
-    std::stringstream ss;
-    ss.str(s);
-    std::string item;
-    int i = 0;
-    while (i++ < limit || limit < 0 ? std::getline(ss, item, delim) : std::getline(ss, item)) {
-        *(result++) = item;
-    }
-}
-*/
-std::vector<std::string> split(const std::string &s, char delim, int limit = -1);
-
 JsonParser::JsonParser(): ContentParser() {
     elements['{'] = []() -> Element*{return new ElementObject();};
     elements['['] = []() -> Element*{return new ElementArray();};
@@ -30,8 +16,12 @@ JsonParser::JsonParser(): ContentParser() {
 }
 JsonParser::~JsonParser() = default;
 
-void JsonParser::parse(std::string& text, Element** e) const{
+const char* JsonParser::get_encoding() const{
+    return "json";
+}
 
+void JsonParser::parse(std::string& text, Element** e) const
+{
     int i = 0;
     for(i = 0;text[i] == '\t' || text[i] == ' ' || text[i] == ','; i++);
     text = text.substr(i);
@@ -173,16 +163,3 @@ void JsonParser::parseContent(std::string& text, ElementObject* e) const
     }
     text = text.substr(1);
 }
-
-
-/*
-namespace patch
-{
-    template < typename T > std::string to_string( const T& n )
-    {
-        std::ostringstream stm ;
-        stm << n ;
-        return stm.str() ;
-    }
-}
-*/

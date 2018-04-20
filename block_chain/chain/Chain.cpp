@@ -9,6 +9,7 @@ Chain::Chain(Block* b, Chain* c): database(c->database){
     block = b;
     fingerprint = b->fingerprint;
     b->data->update_database(&database);
+    std::cout << " New chain element: " << this << std::endl;
 }
 
 Chain::Chain(Reward* r): fingerprint(nullptr), database(r){
@@ -18,17 +19,24 @@ Chain::~Chain(){
     chain.clear();
 }
 
-void Chain::add(Block* b){
+Chain* Chain::add(Block* b){
     if(b->parent_fingerprint == nullptr || b->parent_fingerprint->hash == "0" || (fingerprint != nullptr && b->parent_fingerprint->hash == fingerprint->hash)){
         for(auto& a : chain)
             if(a->fingerprint->hash == b->fingerprint->hash)
-                return;
-        chain.emplace_back(new Chain(b, this));
+                return nullptr;
+        Chain* c = new Chain(b, this);
+        chain.emplace_back(c);
+        return c;
     }
     else{
-        for(auto& a : chain)
-            a->add(b);
+        Chain* c = nullptr;
+        for(auto& a : chain){
+            c = a->add(b);
+            if(c)
+                return c;
+        }
     }
+    return nullptr;
 }
 
 std::pair<int, Chain*> Chain::top_fingerprint(){
@@ -50,6 +58,7 @@ std::pair<int, Chain*> Chain::top_fingerprint(){
 
 void Chain::update_database(Block* block, const Serializer* serializer, const char* encoding) {
 
+    std::cout << " Updating chain element: " << this << std::endl;
     for(auto& pair : block->transactions){
         std::string key(Encoding::fromHexa(pair.second));
         RSA_Cryptography crypto(key);
