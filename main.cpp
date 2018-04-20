@@ -40,7 +40,11 @@ int main() {
     Reward* r = new RewardTransaction();
 
     //initialization of the block chain
+    #ifndef _WIN32
     ElementObject* o = read_config("./config.json", serial, encoding.c_str());
+    #else
+    ElementObject* o = read_config("./cmake-build-debug/config.json", serial, encoding.c_str());
+    #endif
     int port;
     o->getItem("port", &port);
     Node client(serial, port, encoding.c_str(), Proof::WORK, true, r);

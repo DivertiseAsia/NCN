@@ -8,7 +8,9 @@
 #include <thread>
 
 #ifdef _WIN32
+#ifndef close_socket
 #define close_socket(s) closesocket(s)
+#endif // close_socket
 #include <winsock2.h>
 #else
 #include <sys/types.h>
@@ -19,7 +21,9 @@
 #include <netdb.h> /* get host by name */
 #define INVALID_SOCKET (-1)
 #define SOCKET_ERROR (-1)
+#ifndef close_socket
 #define close_socket(s) close(s)
+#endif // close_socket
 typedef int SOCKET;
 /*typedef struct sockaddr_in SOCKADDR_IN;
 typedef struct sockaddr SOCKADDR;
@@ -79,7 +83,7 @@ public:
      *  The destructor closes the connection with the other peers
      */
 
-    ~SocketServer();
+    virtual ~SocketServer();
 
     /**
      *  Closes the connection with the other peers

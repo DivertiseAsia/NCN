@@ -78,18 +78,18 @@ public:
 	 *  @param r The reward transaction object
 	 */
     Node(Serializer* serializer, int p = 3000, const char* e = "json", int pr = Proof::WORK, bool d = false, Reward* r = nullptr);
-	
+
 	/**
 	 *  A destructor to delete all of the objects and signing out
 	 *  from all of the peers
 	 */
     ~Node();
-	
+
 	/**
 	 *  Close the connection and sign out from all of the peers
 	 */
     void close();
-	
+
 	/**
 	 *  Process a transaction and send it to all of the peers
 	 *  @see Transaction
@@ -97,7 +97,7 @@ public:
 	 *  @param transaction The newly created transaction to process and to send to the peers
 	 */
     void request_transaction(Transaction* transaction);
-	
+
 	/**
 	 *  The callback each socket connection will run.
 	 *  Its goal is to generate messages and to root them to the
@@ -112,7 +112,7 @@ public:
 	 *  @return true once it's done
 	 */
     bool static defaultCallback(Socket* socket, int port, Serializer* serializer, Node* node);
-	
+
 	/**
 	 *  Starts to run the manager and loop on its request, until
 	 *  the manager replies nullptr.
@@ -123,11 +123,17 @@ public:
     void start(TransactionManager manager);
 
 private:
+
+	/**
+	 *  The serializer
+	 */
+    Serializer* serializer;
+
 	/**
 	 *  Add all of the different parsers into the index of parsers
 	 */
     void init_parsers();
-    
+
 	/**
 	 *  Add a new parser in the list of parsers
 	 *  @see MessageParser
@@ -135,74 +141,65 @@ private:
 	 *  @param p The new MessageParser to add to the list
 	 */
 	void add_parser(MessageParser* p);
-	
+
 	/**
 	 *  The index of MessageParser to parse the packets
 	 */
     std::map<int, MessageParser*> parsers;
-	
-	/**
-	 *  If the Node runs in a debug mode
-	 */
-    bool debug;
-	
+
+
 	/**
 	 *  Encoding for serialization
 	 */
     std::string encoding;
-	
+
 	/**
 	 *  The used proof for block validation
 	 */
     Proof* proof;
-	
+
 	/**
 	 *  Read the network file and ask for the list of peers
 	 */
     void store();
-	
-	/**
-	 *  The serializer
-	 */
-    Serializer* serializer;
-    
+
 	/**
 	 *  The socket server listening on the port.
 	 *  It accepts connections from other peers.
 	 */
 	SocketServer server;
-	
+
 	/**
 	 *  The actual state of the block chain
 	 */
     NodeState block_chain;
-	
+
 	/**
-	 *  The peer describing itself 
+	 *  The peer describing itself
 	 */
     Peer self;
-	
+
 	/**
 	 *  The list of the other peers
 	 */
     std::vector<Peer> peers;
-	
+
 	/**
 	 *  The thread that will run the socket server and listen to the port
 	 */
     std::thread running;
-	
+
 	/**
 	 *  The cryptography object to use to encrypt the messages and objects
 	 */
     RSA_Cryptography rsa;
-	
+
 	/**
 	 * Counter to see if it received a block before it sends its own
 	 */
     int queue;
     //typedef void(Node::* Message_action)(Message* message);
-	
+
 	/**
 	 *  The main action of the callback
 	 *  @see Message
@@ -213,14 +210,14 @@ private:
 	 *  @return true once it's done
 	 */
     void static async(Message* message, Node* node);
-	
+
 	/**
 	 *  All of the blocks waiting for a missing parent.
 	 *  They will be added to the block_chain once a
 	 *  block's parent fingerprint is known in the blockchain
 	 */
     std::vector<Block*> waiting;
-	
+
 	/**
 	 *  Check if the block's parent is known.
 	 *  If it is not, it is asked to another peer,
@@ -232,6 +229,11 @@ private:
 	 *  @return 1 if the block's parent fingerprint is known, 0 otherwise
 	 */
     int load(Block *pBlock);
+
+	/**
+	 *  If the Node runs in a debug mode
+	 */
+    bool debug;
 };
 
 #endif //BLOCK_CHAIN_CLIENT_H

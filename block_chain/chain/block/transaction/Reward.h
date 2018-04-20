@@ -24,7 +24,7 @@ public:
     Element* toElement() const final;
     bool operator==(Transaction* t) const final {
         auto * s = dynamic_cast<Reward*>(t);
-        return true;
+        return s != nullptr;
     }
     std::string to_string() const;
     void apply_reverse(Row* row) final;

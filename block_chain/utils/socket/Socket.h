@@ -7,7 +7,9 @@
 
 
 #ifdef _WIN32
-#define close_socket(s) close(s)
+#ifndef close_socket
+#define close_socket(s) closesocket(s)
+#endif // close_socket
 #include <winsock2.h>
 #define accept_size int
 #else
@@ -22,7 +24,9 @@
 #include <netdb.h> /* get host by name */
 #define INVALID_SOCKET (-1)
 #define SOCKET_ERROR (-1)
+#ifndef close_socket
 #define close_socket(s) close(s)
+#endif // close_socket
 typedef int SOCKET;
 /*
 typedef struct sockaddr_in SOCKADDR_IN;
@@ -45,6 +49,7 @@ typedef struct in_addr IN_ADDR;*/
  */
 class Socket
 {
+    friend class SocketServer;
 public:
 
     /**

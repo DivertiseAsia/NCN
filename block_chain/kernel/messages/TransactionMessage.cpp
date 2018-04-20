@@ -4,8 +4,8 @@
 
 #include "TransactionMessage.h"
 
-TransactionMessage::TransactionMessage(std::string p, std::string c, std::string k, MerkleTree* tr): Message(Message::TRANSACTION), plain_text(std::move(p)), cipher(Encoding::toHexa(
-        std::move(c))), public_key(std::move(k)), tree(tr)
+TransactionMessage::TransactionMessage(std::string p, std::string c, std::string k, MerkleTree* tr): Message(Message::TRANSACTION), public_key(std::move(k)), plain_text(std::move(p)), cipher(Encoding::toHexa(
+        std::move(c))), tree(tr)
 {
 }
 /*

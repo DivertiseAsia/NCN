@@ -76,9 +76,9 @@ template<typename V> class Factory
         }
 
         /**
-         * Get the visual representation of the factory.
+         *  Get the visual representation of the factory.
          *
-         * @return the visual representation of the factory.
+         *  @return the visual representation of the factory.
          */
         std::string toString(const char* equal, const char* separator) const {
             std::string str;
@@ -90,6 +90,13 @@ template<typename V> class Factory
                 str.append(it->second);
             }
             return str;
+        }
+
+        /**
+         *  Release the memory from the factory
+         */
+        void clear(){
+            items.clear();
         }
 };
 

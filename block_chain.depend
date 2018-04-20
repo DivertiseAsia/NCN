@@ -1,16 +1,17 @@
 # depslib dependency file v1.0
-1523505352 source:d:\divertise\block_chain\block_chain\chain\block\block.cpp
+1524220952 source:d:\divertise\block_chain\block_chain\chain\block\block.cpp
 	"Block.h"
-	"../../Serializer.h"
-	"../../Message.h"
-	"../../utils/RSA.h"
+	<utility>
+	"../../utils/serialization/Serializer.h"
+	"../../kernel/messages/Message.h"
+	"../../algorithm/RSA.h"
+	"proof/metadatas/ProofOfWorkMetadata.h"
 
-1523504275 d:\divertise\block_chain\block_chain\chain\block\block.h
+1524210735 d:\divertise\block_chain\block_chain\chain\block\block.h
 	<vector>
-	"Hash.h"
-	"Metadata.h"
-	"transaction/TransactionContainer.h"
-	"Component.h"
+	"../../algorithm/Hash.h"
+	"proof/metadatas/Metadata.h"
+	"../../kernel/components/Component.h"
 	<iostream>
 	<chrono>
 
@@ -24,35 +25,44 @@
 1523437121 d:\divertise\block_chain\block_chain\chain\block\metadata.h
 	"../../utils/serialization/Element.hpp"
 
-1523521569 d:\divertise\block_chain\block_chain\chain\block\transaction\transaction.h
-	"../Component.h"
-	"../Hash.h"
-	"../../Row.h"
+1524210735 d:\divertise\block_chain\block_chain\chain\block\transaction\transaction.h
+	"../../../kernel/components/Component.h"
+	"../../../algorithm/Hash.h"
+	"../../state/Row.h"
 
 1523504596 source:d:\divertise\block_chain\block_chain\chain\block\hash.cpp
 	"Hash.h"
 	<utility>
 	"../../Serializer.h"
 
-1523437121 source:d:\divertise\block_chain\block_chain\chain\block\transaction\transaction.cpp
+1524140920 source:d:\divertise\block_chain\block_chain\chain\block\transaction\transaction.cpp
 	"Transaction.h"
-	"../../../Serializer.h"
+	"../../../utils/serialization/Serializer.h"
 
-1523515034 source:d:\divertise\block_chain\block_chain\chain\nodestate.cpp
+1524223707 source:d:\divertise\block_chain\block_chain\chain\nodestate.cpp
 	"NodeState.h"
-	"../utils/RSA.h"
 
-1523437121 d:\divertise\block_chain\block_chain\chain\nodestate.h
+1524220894 d:\divertise\block_chain\block_chain\chain\nodestate.h
 	<fstream>
 	<iostream>
 	<string>
 	<map>
 	<vector>
+	<sys/stat.h>
+	<windows.h>
+	<tchar.h>
+	<stdio.h>
+	<strsafe.h>
+	<dirent.h>
+	<algorithm>
+	<utility>
 	"block/Block.h"
-	"block/Hash.h"
-	"block/transaction/TransactionContainer.h"
-	"../Serializer.h"
-	"Database.h"
+	"state/Database.h"
+	"Chain.h"
+	"../algorithm/Hash.h"
+	"../algorithm/RSA.h"
+	"../utils/serialization/Serializer.h"
+	"../utils/socket/Peer.h"
 
 1523437121 source:d:\divertise\block_chain\block_chain\listener.cpp
 	"Listener.h"
@@ -101,25 +111,38 @@
 	<iostream>
 	<functional>
 
-1523521978 source:d:\divertise\block_chain\block_chain\node.cpp
+1524222898 source:d:\divertise\block_chain\block_chain\node.cpp
 	"Node.h"
 
-1523520118 d:\divertise\block_chain\block_chain\node.h
+1524221563 d:\divertise\block_chain\block_chain\node.h
 	<algorithm>
 	<openssl/rsa.h>
 	<openssl/pem.h>
-	<iostream>
-	"chain/NodeState.h"
-	"Validator.h"
-	"Listener.h"
-	"socket/SocketServer.h"
-	"socket/Peer.h"
-	"utils/RSA.h"
-	"Message.h"
 	<openssl/bio.h>
 	<openssl/err.h>
 	<openssl/pem.h>
 	<openssl/x509.h>
+	<iostream>
+	"chain/NodeState.h"
+	"utils/socket/SocketServer.h"
+	"utils/socket/Peer.h"
+	"algorithm/RSA.h"
+	"kernel/messages/Message.h"
+	"chain/block/proof/Proof.h"
+	"TransactionManager.h"
+	"kernel/parsers/MessageParser.h"
+	"kernel/parsers/BlockAskParser.h"
+	"kernel/parsers/BlockAnswerParser.h"
+	"kernel/parsers/BlockParser.h"
+	"kernel/parsers/SignInParser.h"
+	"kernel/parsers/SignOutParser.h"
+	"kernel/parsers/TransactionParser.h"
+	"kernel/parsers/PeersAnswerParser.h"
+	"kernel/parsers/PeersAskParser.h"
+	"kernel/messages/TransactionMessage.h"
+	"kernel/messages/BlockAskMessage.h"
+	"kernel/messages/SignOutMessage.h"
+	"kernel/messages/AskPeersMessage.h"
 
 1523437121 d:\divertise\block_chain\block_chain\validator.h
 	"chain/block/transaction/Transaction.h"
@@ -147,52 +170,49 @@
 1523437121 source:d:\divertise\block_chain\block_chain\validator.cpp
 	"Validator.h"
 
-1523522079 source:d:\divertise\block_chain\main.cpp
+1524222546 source:d:\divertise\block_chain\main.cpp
 	<iostream>
+	"serializer/CustomSerializer.h"
 	"block_chain/Node.h"
+	"block_chain/TransactionManager.h"
+	"block_chain/chain/block/proof/Proof.h"
 	"transactions/StatusTransaction.h"
 	"transactions/MessagesTransaction.h"
 	"transactions/MoneyTransaction.h"
-	"validator/CustomSerializer.h"
-	"block_chain/utils/serialization/json/JsonCreator.hpp"
-	"block_chain/utils/serialization/json/JsonParser.hpp"
-	"block_chain/TransactionManager.h"
-	<cstdio>
-	<cstring>
-	<unistd.h>
+	"reward/RewardTransaction.h"
 
-1523521543 d:\divertise\block_chain\transactions\statustransaction.h
+1524210739 d:\divertise\block_chain\transactions\statustransaction.h
 	<string>
 	"../block_chain/chain/block/transaction/Transaction.h"
 	<iostream>
 	"../database/Row.h"
-	"../block_chain/chain/Row.h"
+	"../block_chain/chain/state/Row.h"
 
 1522898523 d:\divertise\block_chain\validator\customvalidator.h
 	"../block_chain/Validator.h"
 
-1523521551 source:d:\divertise\block_chain\transactions\messagestransaction.cpp
+1524210739 source:d:\divertise\block_chain\transactions\messagestransaction.cpp
 	"MessagesTransaction.h"
 	<cstring>
 
-1523521536 d:\divertise\block_chain\transactions\messagestransaction.h
+1524210739 d:\divertise\block_chain\transactions\messagestransaction.h
 	<string>
 	<cstdlib>
 	"../block_chain/chain/block/transaction/Transaction.h"
 	"../database/Row.h"
 
-1523521555 source:d:\divertise\block_chain\transactions\statustransaction.cpp
+1524210739 source:d:\divertise\block_chain\transactions\statustransaction.cpp
 	"StatusTransaction.h"
 	<iostream>
 	<cstring>
 	<cstdlib>
+	<utility>
 
 1522898523 source:d:\divertise\block_chain\validator\customvalidator.cpp
 	"CustomValidator.h"
 
-1523437121 source:d:\divertise\block_chain\block_chain\utils\serialization\element.cpp
-	"Element.hpp"
-	<iostream>
+1524140921 source:d:\divertise\block_chain\block_chain\utils\serialization\element.cpp
+	"Element.h"
 
 1523437121 d:\divertise\block_chain\block_chain\utils\serialization\element.hpp
 	<vector>
@@ -203,9 +223,9 @@
 1522928528 d:\divertise\block_chain\block_chain\utils\serialization\parser.hpp
 	<string>
 
-1522928557 source:d:\divertise\block_chain\block_chain\utils\serialization\elementcreator.cpp
-	"Parser.hpp"
-	"Element.hpp"
+1524140921 source:d:\divertise\block_chain\block_chain\utils\serialization\elementcreator.cpp
+	"Parser.h"
+	"Element.h"
 	<iostream>
 	<algorithm>
 	<sstream>
@@ -213,24 +233,18 @@
 	<iterator>
 	<cstring>
 
-1523505262 source:d:\divertise\block_chain\block_chain\utils\serialization\json\jsoncreator.cpp
-	"JsonCreator.hpp"
-	"../Element.hpp"
-	<iostream>
-	<algorithm>
-	<sstream>
-	<vector>
-	<iterator>
-	<cstring>
+1524221242 source:d:\divertise\block_chain\block_chain\utils\serialization\json\jsoncreator.cpp
+	"JsonCreator.h"
+	"../Element.h"
 
 1522906583 d:\divertise\block_chain\block_chain\utils\serialization\json\jsoncreator.hpp
 	"../Parser.hpp"
 	<functional>
 	<map>
 
-1522941460 source:d:\divertise\block_chain\block_chain\utils\serialization\json\jsonparser.cpp
-	"JsonParser.hpp"
-	"../Element.hpp"
+1524210735 source:d:\divertise\block_chain\block_chain\utils\serialization\json\jsonparser.cpp
+	"JsonParser.h"
+	"../Element.h"
 	<iostream>
 	<algorithm>
 	<sstream>
@@ -292,7 +306,7 @@
 1523437121 d:\divertise\block_chain\block_chain\chain\block\component.h
 	"../../utils/serialization/Element.hpp"
 
-1523437121 d:\divertise\block_chain\block_chain\utils\encoding.h
+1524140921 d:\divertise\block_chain\block_chain\utils\encoding.h
 	"string"
 	<cstring>
 
@@ -355,7 +369,7 @@
 	"Message.h"
 	<iostream>
 
-1523437121 source:d:\divertise\block_chain\block_chain\utils\encoding.cpp
+1524221203 source:d:\divertise\block_chain\block_chain\utils\encoding.cpp
 	"Encoding.h"
 
 1523437121 source:d:\divertise\block_chain\block_chain\utils\rsa.cpp
@@ -363,11 +377,11 @@
 	<iostream>
 	<openssl/engine.h>
 
-1523437122 source:d:\divertise\block_chain\database\row.cpp
+1524058226 source:d:\divertise\block_chain\database\row.cpp
 	"Row.h"
 
-1523437122 d:\divertise\block_chain\database\row.h
-	"../block_chain/chain/Row.h"
+1524140921 d:\divertise\block_chain\database\row.h
+	"../block_chain/chain/state/Row.h"
 	<string>
 	<vector>
 
@@ -376,20 +390,428 @@
 	"../transactions/MessagesTransaction.h"
 	"../transactions/StatusTransaction.h"
 
-1523521550 source:d:\divertise\block_chain\transactions\moneytransaction.cpp
+1524210739 source:d:\divertise\block_chain\transactions\moneytransaction.cpp
 	"MoneyTransaction.h"
+	<utility>
 	"../database/Row.h"
 
-1523521540 d:\divertise\block_chain\transactions\moneytransaction.h
+1524210739 d:\divertise\block_chain\transactions\moneytransaction.h
 	"../block_chain/chain/block/transaction/Transaction.h"
 
 1523437122 source:d:\divertise\block_chain\validator\customserializer.cpp
 	"CustomSerializer.h"
 	<iostream>
 
-1523521608 source:d:\divertise\block_chain\block_chain\transactionmanager.cpp
+1524058225 source:d:\divertise\block_chain\block_chain\transactionmanager.cpp
 	"TransactionManager.h"
 
-1523515023 d:\divertise\block_chain\block_chain\transactionmanager.h
+1524211169 d:\divertise\block_chain\block_chain\transactionmanager.h
 	"chain/block/transaction/Transaction.h"
+
+1524140920 source:d:\divertise\block_chain\block_chain\algorithm\hash.cpp
+	"Hash.h"
+	<utility>
+	"../utils/serialization/Serializer.h"
+
+1524210735 d:\divertise\block_chain\block_chain\algorithm\hash.h
+	<string>
+	<openssl/md5.h>
+	"../kernel/components/Component.h"
+	"../utils/Encoding.h"
+	<iostream>
+
+1524210735 d:\divertise\block_chain\block_chain\kernel\components\component.h
+	"../../utils/serialization/Element.h"
+
+1524210735 d:\divertise\block_chain\block_chain\utils\serialization\element.h
+	<vector>
+	<map>
+	<cstring>
+	"Parser.h"
+
+1524210735 d:\divertise\block_chain\block_chain\utils\serialization\parser.h
+	<string>
+
+1524221878 d:\divertise\block_chain\block_chain\utils\serialization\serializer.h
+	"../../chain/block/Block.h"
+	"../../chain/block/transaction/Transaction.h"
+	"../Factory.h"
+	"Parser.h"
+	"../../kernel/messages/Message.h"
+	<cstdlib>
+	"json/JsonCreator.h"
+	"json/JsonParser.h"
+	<utility>
+	"../../chain/block/proof/metadatas/ProofOfWorkMetadata.h"
+
+1524210735 d:\divertise\block_chain\block_chain\chain\block\proof\metadatas\metadata.h
+	"../../../../utils/serialization/Element.h"
+	"../../../../kernel/components/Component.h"
+	"../../../../algorithm/Hash.h"
+	"../../../state/Database.h"
+
+1524210735 d:\divertise\block_chain\block_chain\chain\state\database.h
+	<map>
+	<string>
+	"Row.h"
+	"../block/transaction/Transaction.h"
+	"../block/transaction/Reward.h"
+
+1524210735 d:\divertise\block_chain\block_chain\chain\state\row.h
+	<string>
+
+1524220693 d:\divertise\block_chain\block_chain\chain\block\transaction\reward.h
+	"Transaction.h"
+
+1524221984 d:\divertise\block_chain\block_chain\utils\factory.h
+	<iostream>
+	<map>
+	<cstring>
+
+1524210735 d:\divertise\block_chain\block_chain\kernel\messages\message.h
+	"../components/Component.h"
+	<sstream>
+	<fstream>
+	"../../utils/Encoding.h"
+	"../../algorithm/MerkleTree.h"
+	<functional>
+
+1524210735 d:\divertise\block_chain\block_chain\algorithm\merkletree.h
+	"Hash.h"
+	"../chain/block/transaction/Transaction.h"
+
+1524210735 d:\divertise\block_chain\block_chain\utils\serialization\json\jsoncreator.h
+	"../Parser.h"
+	<functional>
+	<map>
+	<iostream>
+	<algorithm>
+	<sstream>
+	<vector>
+	<iterator>
+	<cstring>
+
+1524210735 d:\divertise\block_chain\block_chain\utils\serialization\json\jsonparser.h
+	"../Parser.h"
+	<functional>
+	<map>
+
+1524210735 d:\divertise\block_chain\block_chain\chain\block\proof\metadatas\proofofworkmetadata.h
+	"Metadata.h"
+
+1524220839 source:d:\divertise\block_chain\block_chain\algorithm\merkletree.cpp
+	"MerkleTree.h"
+
+1524140920 source:d:\divertise\block_chain\block_chain\algorithm\rsa.cpp
+	"RSA.h"
+	<iostream>
+	<openssl/engine.h>
+
+1524210735 d:\divertise\block_chain\block_chain\algorithm\rsa.h
+	<string>
+	<openssl/rsa.h>
+	<openssl/pem.h>
+	<openssl/bio.h>
+	<fstream>
+	<cstring>
+
+1524140920 source:d:\divertise\block_chain\block_chain\chain\block\proof\metadatas\metadata.cpp
+	"Metadata.h"
+
+1524140920 source:d:\divertise\block_chain\block_chain\chain\block\proof\metadatas\proofofworkmetadata.cpp
+	"ProofOfWorkMetadata.h"
+	"../../../../algorithm/Hash.h"
+	<iostream>
+
+1524140920 source:d:\divertise\block_chain\block_chain\chain\block\proof\proof.cpp
+	"Proof.h"
+	<utility>
+	"ProofOfStake.h"
+	"ProofOfWork.h"
+	"ProofOfHold.h"
+	"ProofOfImportance.h"
+	"ProofOfMinimumAgedStake.h"
+	"ProofOfStakeTime.h"
+	"ProofOfUse.h"
+
+1524221644 d:\divertise\block_chain\block_chain\chain\block\proof\proof.h
+	<map>
+	<functional>
+	"../Block.h"
+	"../../../kernel/messages/Message.h"
+	"../../../kernel/messages/BlockMessage.h"
+
+1524210735 d:\divertise\block_chain\block_chain\kernel\messages\blockmessage.h
+	"Message.h"
+
+1524210735 d:\divertise\block_chain\block_chain\chain\block\proof\proofofstake.h
+	"Proof.h"
+
+1524210735 d:\divertise\block_chain\block_chain\chain\block\proof\proofofwork.h
+	"Proof.h"
+
+1524210735 d:\divertise\block_chain\block_chain\chain\block\proof\proofofhold.h
+	"Proof.h"
+
+1524210735 d:\divertise\block_chain\block_chain\chain\block\proof\proofofimportance.h
+	"Proof.h"
+
+1524210735 d:\divertise\block_chain\block_chain\chain\block\proof\proofofminimumagedstake.h
+	"Proof.h"
+
+1524210735 d:\divertise\block_chain\block_chain\chain\block\proof\proofofstaketime.h
+	"Proof.h"
+
+1524210735 d:\divertise\block_chain\block_chain\chain\block\proof\proofofuse.h
+	"Proof.h"
+
+1524140920 source:d:\divertise\block_chain\block_chain\chain\block\proof\proofofhold.cpp
+	"ProofOfHold.h"
+
+1524140920 source:d:\divertise\block_chain\block_chain\chain\block\proof\proofofimportance.cpp
+	"ProofOfImportance.h"
+
+1524140920 source:d:\divertise\block_chain\block_chain\chain\block\proof\proofofminimumagedstake.cpp
+	"ProofOfMinimumAgedStake.h"
+
+1524140920 source:d:\divertise\block_chain\block_chain\chain\block\proof\proofofstake.cpp
+	"ProofOfStake.h"
+
+1524140920 source:d:\divertise\block_chain\block_chain\chain\block\proof\proofofstaketime.cpp
+	"ProofOfStakeTime.h"
+
+1524140920 source:d:\divertise\block_chain\block_chain\chain\block\proof\proofofuse.cpp
+	"ProofOfUse.h"
+
+1524210735 source:d:\divertise\block_chain\block_chain\chain\block\proof\proofofwork.cpp
+	"ProofOfWork.h"
+	"metadatas/ProofOfWorkMetadata.h"
+	"../../../kernel/messages/BlockMessage.h"
+
+1524210735 source:d:\divertise\block_chain\block_chain\chain\block\transaction\reward.cpp
+	"Reward.h"
+
+1524221008 source:d:\divertise\block_chain\block_chain\chain\chain.cpp
+	"Chain.h"
+	"../algorithm/RSA.h"
+
+1524210735 d:\divertise\block_chain\block_chain\chain\chain.h
+	<vector>
+	"../algorithm/Hash.h"
+	"block/Block.h"
+	"state/Database.h"
+	"../utils/serialization/Serializer.h"
+
+1524140921 d:\divertise\block_chain\block_chain\utils\socket\peer.h
+	<string>
+	"Socket.h"
+	"../serialization/Serializer.h"
+	"../../chain/block/transaction/Transaction.h"
+
+1524222256 d:\divertise\block_chain\block_chain\utils\socket\socket.h
+	<winsock2.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<net/if.h>
+	<arpa/inet.h>
+	<unistd.h>
+	<netdb.h>
+	<string>
+	<cstring>
+	<iostream>
+	<functional>
+
+1524210735 source:d:\divertise\block_chain\block_chain\chain\state\database.cpp
+	"Database.h"
+
+1524140920 source:d:\divertise\block_chain\block_chain\chain\state\row.cpp
+	"Row.h"
+
+1524140920 source:d:\divertise\block_chain\block_chain\kernel\components\component.cpp
+	"Component.h"
+
+1524140920 source:d:\divertise\block_chain\block_chain\kernel\messages\answerpeersmessage.cpp
+	"AnswerPeersMessage.h"
+
+1524210735 d:\divertise\block_chain\block_chain\kernel\messages\answerpeersmessage.h
+	"SignMessage.h"
+
+1524210735 d:\divertise\block_chain\block_chain\kernel\messages\signmessage.h
+	"Message.h"
+
+1524140920 source:d:\divertise\block_chain\block_chain\kernel\messages\askpeersmessage.cpp
+	"AskPeersMessage.h"
+
+1524210735 d:\divertise\block_chain\block_chain\kernel\messages\askpeersmessage.h
+	"SignMessage.h"
+
+1524140920 source:d:\divertise\block_chain\block_chain\kernel\messages\blockanswermessage.cpp
+	"BlockAnswerMessage.h"
+
+1524210735 d:\divertise\block_chain\block_chain\kernel\messages\blockanswermessage.h
+	"Message.h"
+
+1524210735 source:d:\divertise\block_chain\block_chain\kernel\messages\blockaskmessage.cpp
+	"BlockAskMessage.h"
+
+1524210735 d:\divertise\block_chain\block_chain\kernel\messages\blockaskmessage.h
+	"Message.h"
+
+1524140920 source:d:\divertise\block_chain\block_chain\kernel\messages\blockmessage.cpp
+	"BlockMessage.h"
+
+1524140920 source:d:\divertise\block_chain\block_chain\kernel\messages\message.cpp
+	"Message.h"
+	"TransactionMessage.h"
+	"BlockAskMessage.h"
+	"SignInMessage.h"
+	"SignOutMessage.h"
+	"BlockAnswerMessage.h"
+	"AskPeersMessage.h"
+	"AnswerPeersMessage.h"
+	"BlockMessage.h"
+	<iostream>
+	<utility>
+
+1524210735 d:\divertise\block_chain\block_chain\kernel\messages\transactionmessage.h
+	"Message.h"
+
+1524210735 d:\divertise\block_chain\block_chain\kernel\messages\signinmessage.h
+	"SignMessage.h"
+
+1524210735 d:\divertise\block_chain\block_chain\kernel\messages\signoutmessage.h
+	"SignMessage.h"
+
+1524140920 source:d:\divertise\block_chain\block_chain\kernel\messages\signinmessage.cpp
+	"SignInMessage.h"
+
+1524140920 source:d:\divertise\block_chain\block_chain\kernel\messages\signmessage.cpp
+	"SignMessage.h"
+
+1524140920 source:d:\divertise\block_chain\block_chain\kernel\messages\signoutmessage.cpp
+	"SignOutMessage.h"
+
+1524221112 source:d:\divertise\block_chain\block_chain\kernel\messages\transactionmessage.cpp
+	"TransactionMessage.h"
+
+1524140920 source:d:\divertise\block_chain\block_chain\kernel\parsers\blockanswerparser.cpp
+	"BlockAnswerParser.h"
+	"../../Node.h"
+	"../messages/Message.h"
+	"../messages/BlockAnswerMessage.h"
+
+1524210735 d:\divertise\block_chain\block_chain\kernel\parsers\blockanswerparser.h
+	"MessageParser.h"
+
+1524210735 d:\divertise\block_chain\block_chain\kernel\parsers\messageparser.h
+
+1524221659 d:\divertise\block_chain\block_chain\utils\socket\socketserver.h
+	<thread>
+	<winsock2.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	<unistd.h>
+	<netdb.h>
+	"../serialization/Serializer.h"
+	<iostream>
+	<functional>
+	"Socket.h"
+	<chrono>
+
+1524210735 d:\divertise\block_chain\block_chain\kernel\parsers\blockaskparser.h
+	"MessageParser.h"
+
+1524210735 d:\divertise\block_chain\block_chain\kernel\parsers\blockparser.h
+	"MessageParser.h"
+
+1524210735 d:\divertise\block_chain\block_chain\kernel\parsers\signinparser.h
+	"MessageParser.h"
+
+1524210735 d:\divertise\block_chain\block_chain\kernel\parsers\signoutparser.h
+	"MessageParser.h"
+	<algorithm>
+
+1524210735 d:\divertise\block_chain\block_chain\kernel\parsers\transactionparser.h
+	"MessageParser.h"
+
+1524210735 d:\divertise\block_chain\block_chain\kernel\parsers\peersanswerparser.h
+	"MessageParser.h"
+
+1524210735 d:\divertise\block_chain\block_chain\kernel\parsers\peersaskparser.h
+	"MessageParser.h"
+
+1524210735 source:d:\divertise\block_chain\block_chain\kernel\parsers\blockaskparser.cpp
+	"BlockAskParser.h"
+	"../../Node.h"
+	"../messages/Message.h"
+	"../messages/BlockAskMessage.h"
+	"../messages/BlockAnswerMessage.h"
+
+1524140920 source:d:\divertise\block_chain\block_chain\kernel\parsers\blockparser.cpp
+	"BlockParser.h"
+	"../../Node.h"
+	"../messages/Message.h"
+
+1524140920 source:d:\divertise\block_chain\block_chain\kernel\parsers\peersanswerparser.cpp
+	"PeersAnswerParser.h"
+	"../../Node.h"
+	"../messages/Message.h"
+	"../messages/SignInMessage.h"
+
+1524140920 source:d:\divertise\block_chain\block_chain\kernel\parsers\peersaskparser.cpp
+	"PeersAskParser.h"
+	"../../Node.h"
+	"../messages/Message.h"
+	"../messages/AnswerPeersMessage.h"
+	"../messages/AskPeersMessage.h"
+
+1524140920 source:d:\divertise\block_chain\block_chain\kernel\parsers\signinparser.cpp
+	"SignInParser.h"
+	"../../Node.h"
+	"../messages/Message.h"
+	"../messages/SignMessage.h"
+
+1524140920 source:d:\divertise\block_chain\block_chain\kernel\parsers\signoutparser.cpp
+	"SignOutParser.h"
+	"../../Node.h"
+	"../messages/Message.h"
+	"../messages/SignMessage.h"
+
+1524210735 source:d:\divertise\block_chain\block_chain\kernel\parsers\transactionparser.cpp
+	"TransactionParser.h"
+	"../../Node.h"
+	"../messages/Message.h"
+	"../messages/TransactionMessage.h"
+
+1524221922 source:d:\divertise\block_chain\block_chain\utils\serialization\serializer.cpp
+	"Serializer.h"
+
+1524140921 source:d:\divertise\block_chain\block_chain\utils\socket\peer.cpp
+	"Peer.h"
+
+1524221683 source:d:\divertise\block_chain\block_chain\utils\socket\socket.cpp
+	<fcntl.h>
+	"Socket.h"
+
+1524222234 source:d:\divertise\block_chain\block_chain\utils\socket\socketserver.cpp
+	"SocketServer.h"
+
+1524140926 d:\divertise\block_chain\serializer\customserializer.h
+	"../block_chain/utils/serialization/Serializer.h"
+	"../transactions/MessagesTransaction.h"
+	"../transactions/StatusTransaction.h"
+
+1524140926 d:\divertise\block_chain\reward\rewardtransaction.h
+	"../block_chain/chain/block/transaction/Reward.h"
+
+1524140926 source:d:\divertise\block_chain\reward\rewardtransaction.cpp
+	"RewardTransaction.h"
+	"../database/Row.h"
+
+1524058226 source:d:\divertise\block_chain\serializer\customserializer.cpp
+	"CustomSerializer.h"
 

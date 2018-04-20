@@ -51,6 +51,11 @@ public:
     Serializer();
 
     /**
+     * Default destructor that clears the factories
+     */
+     virtual ~Serializer();
+
+    /**
      *  Serialize a Component object
      *  @see Component
      *  @see ContentCreator

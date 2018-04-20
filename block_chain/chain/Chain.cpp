@@ -5,13 +5,11 @@
 #include "Chain.h"
 #include "../algorithm/RSA.h"
 
-Chain::Chain(Block* b, Chain* c): database(c->database){
-    block = b;
-    fingerprint = b->fingerprint;
+Chain::Chain(Block* b, Chain* c): database(c->database), fingerprint(b->fingerprint), block(b) {
     b->data->update_database(&database);
 }
 
-Chain::Chain(Reward* r): fingerprint(nullptr), database(r){
+Chain::Chain(Reward* r): database(r), fingerprint(nullptr){
 }
 
 Chain::~Chain(){
@@ -63,7 +61,7 @@ void Chain::update_database(Block* block, const Serializer* serializer, const ch
         std::string t(Encoding::fromHexa(pair.first));
         Transaction* transaction = serializer->unserializeTransaction(crypto.decrypt(t, t.size()), encoding);
         auto it = database.rows.find(pair.second);
-        Row* row;  
+        Row* row;
         if(it == database.rows.end()) {
             row = transaction->createRow();
             database.rows[pair.second] = row;

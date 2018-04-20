@@ -26,7 +26,8 @@ void JsonCreator::parseContent(std::string& text, ElementInt* e) const
 
 void escape(std::string& text){
     char c = '\\';
-    for(int i = 0; i < text.size(); i++){
+    unsigned long len = text.size();
+    for(unsigned long i = 0; i < len; i++){
         if(text[i] == '"' && (!i || text[i-1] != '\\'))
             text.insert(i, 1, c);
     }

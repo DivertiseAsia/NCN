@@ -4,13 +4,13 @@
 
 #include "MerkleTree.h"
 
-MerkleTree::MerkleTree(Transaction* transaction, const Serializer* serializer, const char* encoding): value(transaction->__hash__(serializer, encoding)), left(nullptr), right(nullptr){
+MerkleTree::MerkleTree(Transaction* transaction, const Serializer* serializer, const char* encoding): left(nullptr), right(nullptr), value(transaction->__hash__(serializer, encoding)){
 
 }
 MerkleTree::MerkleTree(MerkleTree* l, MerkleTree* r): left(l), right(r), value(new Hash(left->value, right->value)) {
 
 }
-MerkleTree::MerkleTree(std::vector<Transaction*> transactions, const Serializer* serializer, const char* encoding): value(nullptr), left(nullptr), right(nullptr)
+MerkleTree::MerkleTree(std::vector<Transaction*> transactions, const Serializer* serializer, const char* encoding): left(nullptr), right(nullptr), value(nullptr)
 {
     generate_tree(transactions, 0, (int)transactions.size() - 1, serializer, encoding);
 }
@@ -26,7 +26,7 @@ void MerkleTree::generate_tree(std::vector<Transaction*> transactions, int begin
         right = new MerkleTree(split_hi, s, e);
     }
 }
-MerkleTree::MerkleTree(): value(nullptr), left(nullptr), right(nullptr){
+MerkleTree::MerkleTree(): left(nullptr), right(nullptr), value(nullptr){
 
 }
 MerkleTree::~MerkleTree(){

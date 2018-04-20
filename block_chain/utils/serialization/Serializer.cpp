@@ -67,3 +67,8 @@ Serializer::Serializer() {
     set_serializer(new JsonCreator());
     set_unserializer(new JsonParser());
 }
+
+Serializer::~Serializer(){
+    creators.clear();
+    parsers.clear();
+}

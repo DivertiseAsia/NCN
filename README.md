@@ -5,11 +5,11 @@ The idea is to limit the development to transactions and data representation onl
 Of course, as a framework, it needs a big flexibility, therefore, it is possible to write much more advanced block-chain by configuring as many things as you want. \
 > Node that everything can change to allow more flexibility.
 ## Node
-The node is the peer itself. You only have to create it and it will run.get_type
+The node is the peer itself. You only have to create it and it will run.
 ```cpp
 Node node(serializer, port, "json", Proof::WORK, false, reward);
 ```
-the parameter serializer, proof and reward are explained later.
+the parameters serializer, proof and reward are explained later.
 ## Transactions
 Transactions are the most important thing to implement. \
 ```cpp

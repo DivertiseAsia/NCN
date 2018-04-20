@@ -9,7 +9,14 @@
 #include <string>
 #include <map>
 #include <vector>
+#ifndef _WIN32
 #include <sys/stat.h>
+#else
+#include <windows.h>
+#include <tchar.h>
+#include <stdio.h>
+#include <strsafe.h>
+#endif // _WIN32
 #include <dirent.h>
 #include <algorithm>
 #include <utility>
@@ -116,6 +123,11 @@ public:
 private:
 
     /**
+     *  The serializer
+     */
+    Serializer* serializer;
+
+    /**
      *  The chosen encoding for serialization
      */
     std::string encoding;
@@ -137,11 +149,6 @@ private:
      *  - The serialized and ciphered transaction
      */
     std::vector<std::pair<std::string, std::string>>  transactions;
-
-    /**
-     *  The serializer
-     */
-    Serializer* serializer;
 
 };
 #endif //BLOCK_NODE_STATE_CHAIN_H

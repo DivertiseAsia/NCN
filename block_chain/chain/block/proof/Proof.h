@@ -64,6 +64,11 @@ public:
      *  @param The received message
      */
     virtual bool accept(Block* block, Message*) = 0;
+
+    /**
+     * Default destructor
+     */
+     virtual ~Proof() = default;
 private:
 
     /**

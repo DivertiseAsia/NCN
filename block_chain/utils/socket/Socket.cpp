@@ -15,7 +15,7 @@ Socket::Socket(std::string address , int port)
     struct sockaddr_in server{};
     //Create socket
     socket = createSocket();
-    if (socket == -1)
+    if ((int)socket == -1)
         #ifdef _WIN32
         std::cout << WSAGetLastError() << std::endl;
         #else
@@ -59,7 +59,7 @@ Socket::Socket(std::string address , int port)
     server.sin_port = htons( port );
 
     #ifdef _WIN32
-    int res = connect(socket, (struct sockaddr *)&server , sizeof(server));
+    connect(socket, (struct sockaddr *)&server , sizeof(server));
     #else
     // Set non-blocking
     int res, val_opt;
@@ -131,7 +131,7 @@ void Socket::_listen(){
 
 Socket* Socket::_accept(sockaddr_in* c_sin, accept_size size){
     SOCKET s = accept(socket, (sockaddr*)c_sin, &size);
-    if(s == -1)
+    if((int)s == -1)
         return nullptr;
     return new Socket(s);
 }

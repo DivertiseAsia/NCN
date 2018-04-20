@@ -22,9 +22,9 @@ Hash* Block::compute_fingerprint(const Serializer* s, const char* e) const {
     return new Hash(compute_hash(0, transactions.size() - 1, s, e), timestamp);
 }
 
-Block::Block(std::vector<std::pair<std::string, std::string>> t, Hash* parent): transactions(
+Block::Block(std::vector<std::pair<std::string, std::string>> t, Hash* parent): data(nullptr), transactions(
         std::move(
-                std::move(t))), parent_fingerprint(parent), data(nullptr), fingerprint(nullptr) {
+                std::move(t))), fingerprint(nullptr), parent_fingerprint(parent) {
     timestamp = std::chrono::duration_cast<std::chrono::milliseconds >(std::chrono::system_clock::now().time_since_epoch()).count();
 }
 
@@ -38,7 +38,7 @@ bool Block::checkFingerPrint(const Serializer* s, const char* e) const {
     return b;
 }
 
-Block::Block(): fingerprint(nullptr), data(nullptr) {
+Block::Block(): data(nullptr), fingerprint(nullptr) {
 
 }
 
