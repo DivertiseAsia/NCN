@@ -99,12 +99,43 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a59a8de2bf3436e46b4d029a9b3c3c9da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4ba739ee5241848ae8af86e64e43a40"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classContentReader.html#ab4ba739ee5241848ae8af86e64e43a40">parseContent</a> (std::string &amp;text, <a class="el" href="classElementDouble.html">ElementDouble</a> *e) const =0</td></tr>
 <tr class="separator:ab4ba739ee5241848ae8af86e64e43a40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1495a4402c4fac02d8cd2542b61c6eed"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classContentReader.html#a1495a4402c4fac02d8cd2542b61c6eed">get_encoding</a> () const =0</td></tr>
+<tr class="separator:a1495a4402c4fac02d8cd2542b61c6eed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p class="">An abstract reader. A reader is a class that generates Elements with a given string. It work in the opposite way as well </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classElement.html">Element</a></dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Mathieu Lochet </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>1 </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a1495a4402c4fac02d8cd2542b61c6eed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1495a4402c4fac02d8cd2542b61c6eed">&#9670;&nbsp;</a></span>get_encoding()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const char* ContentReader::get_encoding </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p class="">Get the encoding corresponding to the reader</p>
+<dl class="section return"><dt>Returns</dt><dd>The corresponding encoding for serialization </dd></dl>
+
+<p>Implemented in <a class="el" href="classJsonCreator.html#ab7313de0040d40a26a9386eb3714120c">JsonCreator</a>, and <a class="el" href="classJsonParser.html#a449d410175c5055eb171f00105305ec5">JsonParser</a>.</p>
+
+</div>
+</div>
 <a id="a7fff2e63a2e8fa216665604f69974e1d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7fff2e63a2e8fa216665604f69974e1d">&#9670;&nbsp;</a></span>parse()</h2>
 
@@ -138,7 +169,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p class="">The entry point of the parser: it reads the text and generate the first element according to rules. Calls the corresponding methods for recursive parsing. (opposite works as well) </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classContentReader.html#a7eef37b8b9761e21c0a3907ff94c72f7">parseContent</a> </dd>
+<p class="">The entry point of the parser: it reads the text and generates the first element according to rules. Calls the corresponding methods for recursive parsing. (opposite works as well) </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classContentReader.html#a7eef37b8b9761e21c0a3907ff94c72f7">parseContent</a> </dd>
 <dd>
 <a class="el" href="classElement.html">Element</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>

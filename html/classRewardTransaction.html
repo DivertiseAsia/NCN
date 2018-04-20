@@ -83,55 +83,503 @@ Inheritance diagram for RewardTransaction:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a414728d857fcf05295a7f3f4fa024dc1"><td class="memItemLeft" align="right" valign="top"><a id="a414728d857fcf05295a7f3f4fa024dc1"></a>
-<a class="el" href="classTransaction.html">Transaction</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>clone</b> () override</td></tr>
+<tr class="memitem:a414728d857fcf05295a7f3f4fa024dc1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTransaction.html">Transaction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRewardTransaction.html#a414728d857fcf05295a7f3f4fa024dc1">clone</a> () override</td></tr>
 <tr class="separator:a414728d857fcf05295a7f3f4fa024dc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad43c1d706406f40d43f433b0d0b0b510"><td class="memItemLeft" align="right" valign="top"><a id="ad43c1d706406f40d43f433b0d0b0b510"></a>
-<a class="el" href="classRow.html">Row</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>createRow</b> () const override</td></tr>
+<tr class="memitem:ad43c1d706406f40d43f433b0d0b0b510"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRow.html">Row</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRewardTransaction.html#ad43c1d706406f40d43f433b0d0b0b510">createRow</a> () const override</td></tr>
 <tr class="separator:ad43c1d706406f40d43f433b0d0b0b510"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d04370c094170b0d166c341daa1644e"><td class="memItemLeft" align="right" valign="top"><a id="a1d04370c094170b0d166c341daa1644e"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> () const final</td></tr>
-<tr class="separator:a1d04370c094170b0d166c341daa1644e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ecd536148463880f9980fe415b6eb1d"><td class="memItemLeft" align="right" valign="top"><a id="a0ecd536148463880f9980fe415b6eb1d"></a>
-<a class="el" href="classElement.html">Element</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>toElement</b> () const final</td></tr>
+<tr class="memitem:a0ecd536148463880f9980fe415b6eb1d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classElement.html">Element</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReward.html#a0ecd536148463880f9980fe415b6eb1d">toElement</a> () const final</td></tr>
 <tr class="separator:a0ecd536148463880f9980fe415b6eb1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2cd65f16c670e3e9d8cfe84a6dc56cb"><td class="memItemLeft" align="right" valign="top"><a id="ab2cd65f16c670e3e9d8cfe84a6dc56cb"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (<a class="el" href="classTransaction.html">Transaction</a> *t) const final</td></tr>
+<tr class="memitem:ab2cd65f16c670e3e9d8cfe84a6dc56cb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReward.html#ab2cd65f16c670e3e9d8cfe84a6dc56cb">operator==</a> (<a class="el" href="classTransaction.html">Transaction</a> *t) const final</td></tr>
 <tr class="separator:ab2cd65f16c670e3e9d8cfe84a6dc56cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d65cd39eb260091d1f2cf19e2e71de7"><td class="memItemLeft" align="right" valign="top"><a id="a0d65cd39eb260091d1f2cf19e2e71de7"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>to_string</b> () const</td></tr>
 <tr class="separator:a0d65cd39eb260091d1f2cf19e2e71de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a494c9d6e0a220729f675fd6131cfb9af"><td class="memItemLeft" align="right" valign="top"><a id="a494c9d6e0a220729f675fd6131cfb9af"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>apply_reverse</b> (<a class="el" href="classRow.html">Row</a> *row) final</td></tr>
+<tr class="memitem:a494c9d6e0a220729f675fd6131cfb9af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReward.html#a494c9d6e0a220729f675fd6131cfb9af">apply_reverse</a> (<a class="el" href="classRow.html">Row</a> *row) final</td></tr>
 <tr class="separator:a494c9d6e0a220729f675fd6131cfb9af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c9a3219ba6b8b068f7f1cccc779b1b5"><td class="memItemLeft" align="right" valign="top"><a id="a9c9a3219ba6b8b068f7f1cccc779b1b5"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>validate</b> (<a class="el" href="classRow.html">Row</a> *row) const final</td></tr>
+<tr class="memitem:a9c9a3219ba6b8b068f7f1cccc779b1b5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReward.html#a9c9a3219ba6b8b068f7f1cccc779b1b5">validate</a> (<a class="el" href="classRow.html">Row</a> *row) const final</td></tr>
 <tr class="separator:a9c9a3219ba6b8b068f7f1cccc779b1b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d3d05263d54771a314927d09585968c"><td class="memItemLeft" align="right" valign="top"><a id="a1d3d05263d54771a314927d09585968c"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>get_type</b> () const final</td></tr>
+<tr class="memitem:a1d3d05263d54771a314927d09585968c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReward.html#a1d3d05263d54771a314927d09585968c">get_type</a> () const final</td></tr>
 <tr class="separator:a1d3d05263d54771a314927d09585968c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95e98fc9dbbc9da47cee243adc1932d2"><td class="memItemLeft" align="right" valign="top"><a id="a95e98fc9dbbc9da47cee243adc1932d2"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>description</b> () const final</td></tr>
+<tr class="memitem:a95e98fc9dbbc9da47cee243adc1932d2"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReward.html#a95e98fc9dbbc9da47cee243adc1932d2">description</a> () const final</td></tr>
 <tr class="separator:a95e98fc9dbbc9da47cee243adc1932d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30a40e2eefd0aea969fab46d1e22d145"><td class="memItemLeft" align="right" valign="top"><a id="a30a40e2eefd0aea969fab46d1e22d145"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>fill_data</b> () final</td></tr>
+<tr class="memitem:a30a40e2eefd0aea969fab46d1e22d145"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReward.html#a30a40e2eefd0aea969fab46d1e22d145">fill_data</a> () final</td></tr>
 <tr class="separator:a30a40e2eefd0aea969fab46d1e22d145"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae55ec2aa2aa31cc365c80cb42be9ab5"><td class="memItemLeft" align="right" valign="top"><a id="aae55ec2aa2aa31cc365c80cb42be9ab5"></a>
-std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>apply</b> (<a class="el" href="classRow.html">Row</a> *row) override</td></tr>
+<tr class="memitem:aae55ec2aa2aa31cc365c80cb42be9ab5"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReward.html#aae55ec2aa2aa31cc365c80cb42be9ab5">apply</a> (<a class="el" href="classRow.html">Row</a> *row) override</td></tr>
 <tr class="separator:aae55ec2aa2aa31cc365c80cb42be9ab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f0df166c34d6a38a991544cf98c0356"><td class="memItemLeft" align="right" valign="top"><a id="a1f0df166c34d6a38a991544cf98c0356"></a>
-<a class="el" href="classHash.html">Hash</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>__hash__</b> (const <a class="el" href="classSerializer.html">Serializer</a> *serializer, const char *encoding) const</td></tr>
+<tr class="memitem:a1f0df166c34d6a38a991544cf98c0356"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classHash.html">Hash</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransaction.html#a1f0df166c34d6a38a991544cf98c0356">__hash__</a> (const <a class="el" href="classSerializer.html">Serializer</a> *serializer, const char *encoding) const</td></tr>
 <tr class="separator:a1f0df166c34d6a38a991544cf98c0356"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28212595f8ee85fe009bd233bc99b2fc"><td class="memItemLeft" align="right" valign="top"><a id="a28212595f8ee85fe009bd233bc99b2fc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>__init__</b> (<a class="el" href="classElementObject.html">ElementObject</a> *element, const <a class="el" href="classSerializer.html">Serializer</a> *s, const char *encoding)</td></tr>
+<tr class="memitem:a28212595f8ee85fe009bd233bc99b2fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponent.html#a28212595f8ee85fe009bd233bc99b2fc">__init__</a> (<a class="el" href="classElementObject.html">ElementObject</a> *element, const <a class="el" href="classSerializer.html">Serializer</a> *s, const char *encoding)</td></tr>
 <tr class="separator:a28212595f8ee85fe009bd233bc99b2fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a6d16e21b60b7f11c7aaf0098a53118a2"><td class="memItemLeft" align="right" valign="top"><a id="a6d16e21b60b7f11c7aaf0098a53118a2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>fromElement</b> (<a class="el" href="classElementObject.html">ElementObject</a> *, const <a class="el" href="classSerializer.html">Serializer</a> *, const char *encoding) final</td></tr>
+<tr class="memitem:a6d16e21b60b7f11c7aaf0098a53118a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReward.html#a6d16e21b60b7f11c7aaf0098a53118a2">fromElement</a> (<a class="el" href="classElementObject.html">ElementObject</a> *, const <a class="el" href="classSerializer.html">Serializer</a> *, const char *encoding) final</td></tr>
 <tr class="separator:a6d16e21b60b7f11c7aaf0098a53118a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a1f0df166c34d6a38a991544cf98c0356"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f0df166c34d6a38a991544cf98c0356">&#9670;&nbsp;</a></span>__hash__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classHash.html">Hash</a> * Transaction::__hash__ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classSerializer.html">Serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>encoding</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p class="">Generates the hash for the transaction </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classHash.html">Hash</a></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">serializer</td><td>The serializer </td></tr>
+    <tr><td class="paramname">encoding</td><td>The encoding that has been used to create the <a class="el" href="classElement.html">Element</a> representation of the object </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the <a class="el" href="classHash.html">Hash</a> of the <a class="el" href="classTransaction.html">Transaction</a> </dd></dl>
+
+</div>
+</div>
+<a id="a28212595f8ee85fe009bd233bc99b2fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28212595f8ee85fe009bd233bc99b2fc">&#9670;&nbsp;</a></span>__init__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Component::__init__ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classElementObject.html">ElementObject</a> *&#160;</td>
+          <td class="paramname"><em>element</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classSerializer.html">Serializer</a> *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>encoding</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p class="">The function called by the serializer to initialize the object if it is empty </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classElementObject.html">ElementObject</a> </dd>
+<dd>
+<a class="el" href="classSerializer.html">Serializer</a></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">element</td><td>The <a class="el" href="classElement.html">Element</a> representation of the object </td></tr>
+    <tr><td class="paramname">s</td><td>The serializer (Can be used if serialization of some elements is needed) </td></tr>
+    <tr><td class="paramname">encoding</td><td>The encoding that has been used to create the <a class="el" href="classElement.html">Element</a> representation of the object (Can be used if serialization of some elements is needed) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aae55ec2aa2aa31cc365c80cb42be9ab5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae55ec2aa2aa31cc365c80cb42be9ab5">&#9670;&nbsp;</a></span>apply()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::string &gt; Reward::apply </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classRow.html">Row</a> *&#160;</td>
+          <td class="paramname"><em>row</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p class="">Apply the transaction to a row </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classRow.html">Row</a></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">row</td><td>The row to update </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The list of the peers that have to be updated by the reverse transaction </dd></dl>
+
+<p>Implements <a class="el" href="classTransaction.html#a6ea269280c8cc641878f6e5775f270ca">Transaction</a>.</p>
+
+</div>
+</div>
+<a id="a494c9d6e0a220729f675fd6131cfb9af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a494c9d6e0a220729f675fd6131cfb9af">&#9670;&nbsp;</a></span>apply_reverse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Reward::apply_reverse </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classRow.html">Row</a> *&#160;</td>
+          <td class="paramname"><em>row</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">final</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p class="">Apply the reverse transaction than apply </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classRow.html">Row</a></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">row</td><td>The row to update </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classTransaction.html#a1ef3b245f37c217f50f8f76fceebca4a">Transaction</a>.</p>
+
+</div>
+</div>
+<a id="a414728d857fcf05295a7f3f4fa024dc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a414728d857fcf05295a7f3f4fa024dc1">&#9670;&nbsp;</a></span>clone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTransaction.html">Transaction</a> * RewardTransaction::clone </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p class="">Creates an empty transaction from the same class</p>
+<dl class="section return"><dt>Returns</dt><dd>the newly created <a class="el" href="classTransaction.html">Transaction</a> </dd></dl>
+
+<p>Implements <a class="el" href="classTransaction.html#ad6ee9c5e4067b2f5c950c6aad131b3e4">Transaction</a>.</p>
+
+</div>
+</div>
+<a id="ad43c1d706406f40d43f433b0d0b0b510"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad43c1d706406f40d43f433b0d0b0b510">&#9670;&nbsp;</a></span>createRow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classRow.html">Row</a> * RewardTransaction::createRow </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p class="">Creates a new row </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classRow.html">Row</a></dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A newly created <a class="el" href="classRow.html">Row</a> </dd></dl>
+
+<p>Implements <a class="el" href="classTransaction.html#aa80b621537fe480dcb4444bba703abe5">Transaction</a>.</p>
+
+</div>
+</div>
+<a id="a95e98fc9dbbc9da47cee243adc1932d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95e98fc9dbbc9da47cee243adc1932d2">&#9670;&nbsp;</a></span>description()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Reward::description </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">final</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p class="">Get the description of the transaction</p>
+<dl class="section return"><dt>Returns</dt><dd>The description of the transaction </dd></dl>
+
+<p>Implements <a class="el" href="classTransaction.html#ad27fb61fcd91863c57ba96a7159b4e8a">Transaction</a>.</p>
+
+</div>
+</div>
+<a id="a30a40e2eefd0aea969fab46d1e22d145"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30a40e2eefd0aea969fab46d1e22d145">&#9670;&nbsp;</a></span>fill_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Reward::fill_data </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">final</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p class="">Ask the user's input to fill the transaction </p>
+
+<p>Implements <a class="el" href="classTransaction.html#a73b16e3d7e4c24e5b4da203740691e65">Transaction</a>.</p>
+
+</div>
+</div>
+<a id="a6d16e21b60b7f11c7aaf0098a53118a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d16e21b60b7f11c7aaf0098a53118a2">&#9670;&nbsp;</a></span>fromElement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Reward::fromElement </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classElementObject.html">ElementObject</a> *&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classSerializer.html">Serializer</a> *&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>encoding</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">final</span><span class="mlabel">protected</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p class="">The function used to build the object from its element representation. the object if it is empty </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classElementObject.html">ElementObject</a> </dd>
+<dd>
+<a class="el" href="classSerializer.html">Serializer</a></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">element</td><td>The <a class="el" href="classElement.html">Element</a> representation of the object </td></tr>
+    <tr><td class="paramname">s</td><td>The serializer (Can be used if serialization of some elements is needed) </td></tr>
+    <tr><td class="paramname">encoding</td><td>The encoding that has been used to create the <a class="el" href="classElement.html">Element</a> representation of the object (Can be used if serialization of some elements is needed) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classComponent.html#a2ded18881226d0077dc393e0e9304bb1">Component</a>.</p>
+
+</div>
+</div>
+<a id="a1d3d05263d54771a314927d09585968c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d3d05263d54771a314927d09585968c">&#9670;&nbsp;</a></span>get_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Reward::get_type </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">final</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p class="">Get the type of the transaction</p>
+<dl class="section return"><dt>Returns</dt><dd>The type of the transaction </dd></dl>
+
+<p>Implements <a class="el" href="classTransaction.html#a4cf9b81505b83a889bab80229f455589">Transaction</a>.</p>
+
+</div>
+</div>
+<a id="ab2cd65f16c670e3e9d8cfe84a6dc56cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2cd65f16c670e3e9d8cfe84a6dc56cb">&#9670;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Reward::operator== </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTransaction.html">Transaction</a> *&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">final</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p class="">Check if two transactions are the same</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td><a class="el" href="classTransaction.html">Transaction</a> to compare to </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the transactions are the same, false otherwise </dd></dl>
+
+<p>Implements <a class="el" href="classTransaction.html#a9a17c97fdcda6791484ad6d07b34470e">Transaction</a>.</p>
+
+</div>
+</div>
+<a id="a0ecd536148463880f9980fe415b6eb1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ecd536148463880f9980fe415b6eb1d">&#9670;&nbsp;</a></span>toElement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classElement.html">Element</a> * Reward::toElement </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">final</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p class="">The method used by the serializer to transform an object into an <a class="el" href="classElement.html">Element</a> representation. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classElement.html">Element</a></dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="classElement.html">Element</a> representation of the object </dd></dl>
+
+<p>Implements <a class="el" href="classComponent.html#a3e63d8c993e417a4af3f56d65ebfc7ea">Component</a>.</p>
+
+</div>
+</div>
+<a id="a9c9a3219ba6b8b068f7f1cccc779b1b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c9a3219ba6b8b068f7f1cccc779b1b5">&#9670;&nbsp;</a></span>validate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Reward::validate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classRow.html">Row</a> *&#160;</td>
+          <td class="paramname"><em>row</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">final</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p class="">Check if the transaction is valid compared to the current state of the row </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classRow.html">Row</a></dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the transaction is validm false otherwise </dd></dl>
+
+<p>Implements <a class="el" href="classTransaction.html#a638518143f0defde1c3c73e33db1b7f1">Transaction</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>reward/<a class="el" href="RewardTransaction_8h_source.html">RewardTransaction.h</a></li>
 <li>reward/RewardTransaction.cpp</li>

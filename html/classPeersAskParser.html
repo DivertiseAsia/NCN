@@ -68,6 +68,8 @@ $(function() {
 <div class="title">PeersAskParser Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="PeersAskParser_8h_source.html">PeersAskParser.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for PeersAskParser:</div>
 <div class="dyncontent">
@@ -80,13 +82,96 @@ Inheritance diagram for PeersAskParser:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac52c9f42fa449029d49faaf9255b2d0d"><td class="memItemLeft" align="right" valign="top"><a id="ac52c9f42fa449029d49faaf9255b2d0d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (<a class="el" href="classMessage.html">Message</a> *m, <a class="el" href="classNode.html">Node</a> *node) const final</td></tr>
+<tr class="memitem:ac52c9f42fa449029d49faaf9255b2d0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPeersAskParser.html#ac52c9f42fa449029d49faaf9255b2d0d">operator()</a> (<a class="el" href="classMessage.html">Message</a> *m, <a class="el" href="classNode.html">Node</a> *node) const final</td></tr>
 <tr class="separator:ac52c9f42fa449029d49faaf9255b2d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abda1a00fdca208592d3f7e7b039f9ba7"><td class="memItemLeft" align="right" valign="top"><a id="abda1a00fdca208592d3f7e7b039f9ba7"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>get_type</b> () const final</td></tr>
+<tr class="memitem:abda1a00fdca208592d3f7e7b039f9ba7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPeersAskParser.html#abda1a00fdca208592d3f7e7b039f9ba7">get_type</a> () const final</td></tr>
 <tr class="separator:abda1a00fdca208592d3f7e7b039f9ba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p class="">A message parser linked to a <a class="el" href="classAskPeersMessage.html">AskPeersMessage</a>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classMessage.html">Message</a> </dd>
+<dd>
+<a class="el" href="classAskPeersMessage.html">AskPeersMessage</a> </dd>
+<dd>
+<a class="el" href="classMessageParser.html">MessageParser</a></dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Mathieu Lochet </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1 </dd></dl>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="abda1a00fdca208592d3f7e7b039f9ba7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abda1a00fdca208592d3f7e7b039f9ba7">&#9670;&nbsp;</a></span>get_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int PeersAskParser::get_type </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">final</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p class="">Get the type of message the parser is linked to </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classMessage.html">Message</a> </dd></dl>
+
+<p>Implements <a class="el" href="classMessageParser.html#aa7c495d7b28a394e5752ca25ffff69d8">MessageParser</a>.</p>
+
+</div>
+</div>
+<a id="ac52c9f42fa449029d49faaf9255b2d0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac52c9f42fa449029d49faaf9255b2d0d">&#9670;&nbsp;</a></span>operator()()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PeersAskParser::operator() </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMessage.html">Message</a> *&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classNode.html">Node</a> *&#160;</td>
+          <td class="paramname"><em>node</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">final</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p class="">Process the message </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classMessage.html">Message</a> </dd>
+<dd>
+<a class="el" href="classNode.html">Node</a></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td>The received message </td></tr>
+    <tr><td class="paramname">node</td><td>The peer receiving the message </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classMessageParser.html#a946f3b936dc01a75d6165329b159ecfe">MessageParser</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>block_chain/kernel/parsers/<a class="el" href="PeersAskParser_8h_source.html">PeersAskParser.h</a></li>
 <li>block_chain/kernel/parsers/PeersAskParser.cpp</li>

@@ -1,5 +1,9 @@
 \hypertarget{classSignMessage}{}\section{Sign\+Message Class Reference}
 \label{classSignMessage}\index{Sign\+Message@{Sign\+Message}}
+
+
+{\ttfamily \#include $<$Sign\+Message.\+h$>$}
+
 Inheritance diagram for Sign\+Message\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,23 +13,18 @@ Inheritance diagram for Sign\+Message\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classSignMessage_ac1df326e20a41acee483fc8893e791ae}\label{classSignMessage_ac1df326e20a41acee483fc8893e791ae}} 
-{\bfseries Sign\+Message} (std\+::string p, int t)
+\mbox{\hyperlink{classSignMessage_ac1df326e20a41acee483fc8893e791ae}{Sign\+Message}} (std\+::string p, int t)
 \item 
-\mbox{\Hypertarget{classSignMessage_aee897c4bf78df966b8cca95e589566e4}\label{classSignMessage_aee897c4bf78df966b8cca95e589566e4}} 
-\mbox{\hyperlink{classElement}{Element}} $\ast$ {\bfseries to\+Element} () const override
+\mbox{\hyperlink{classElement}{Element}} $\ast$ \mbox{\hyperlink{classSignMessage_aee897c4bf78df966b8cca95e589566e4}{to\+Element}} () const override
 \item 
-\mbox{\Hypertarget{classMessage_a2a576dcffd45c4574fcdf2897ec26086}\label{classMessage_a2a576dcffd45c4574fcdf2897ec26086}} 
-const int {\bfseries get\+\_\+type} () const
+const int \mbox{\hyperlink{classMessage_a2a576dcffd45c4574fcdf2897ec26086}{get\+\_\+type}} () const
 \item 
-\mbox{\Hypertarget{classComponent_a28212595f8ee85fe009bd233bc99b2fc}\label{classComponent_a28212595f8ee85fe009bd233bc99b2fc}} 
-void {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (\mbox{\hyperlink{classElementObject}{Element\+Object}} $\ast$element, const \mbox{\hyperlink{classSerializer}{Serializer}} $\ast$s, const char $\ast$encoding)
+void \mbox{\hyperlink{classComponent_a28212595f8ee85fe009bd233bc99b2fc}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (\mbox{\hyperlink{classElementObject}{Element\+Object}} $\ast$element, const \mbox{\hyperlink{classSerializer}{Serializer}} $\ast$s, const char $\ast$encoding)
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classMessage_ad92a0e1cfa5b5a503ec9c61833e3e5ea}\label{classMessage_ad92a0e1cfa5b5a503ec9c61833e3e5ea}} 
-static \mbox{\hyperlink{classMessage}{Message}} $\ast$ {\bfseries generate} (int id)
+static \mbox{\hyperlink{classMessage}{Message}} $\ast$ \mbox{\hyperlink{classMessage_ad92a0e1cfa5b5a503ec9c61833e3e5ea}{generate}} (int id)
 \end{DoxyCompactItemize}
 \subsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
@@ -57,14 +56,12 @@ static const int {\bfseries A\+N\+S\+W\+E\+R\+\_\+\+B\+L\+O\+CK} = 7
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classSignMessage_a35855647925ec76036ed4602743ed118}\label{classSignMessage_a35855647925ec76036ed4602743ed118}} 
-void {\bfseries from\+Element} (\mbox{\hyperlink{classElementObject}{Element\+Object}} $\ast$, const \mbox{\hyperlink{classSerializer}{Serializer}} $\ast$serializer, const char $\ast$encoding) override
+void \mbox{\hyperlink{classSignMessage_a35855647925ec76036ed4602743ed118}{from\+Element}} (\mbox{\hyperlink{classElementObject}{Element\+Object}} $\ast$, const \mbox{\hyperlink{classSerializer}{Serializer}} $\ast$serializer, const char $\ast$encoding) override
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classMessage_afbfb481c98b13d0deba0bac443bebe29}\label{classMessage_afbfb481c98b13d0deba0bac443bebe29}} 
-int {\bfseries type}
+int \mbox{\hyperlink{classMessage_afbfb481c98b13d0deba0bac443bebe29}{type}}
 \end{DoxyCompactItemize}
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
@@ -82,6 +79,136 @@ class {\bfseries Peers\+Ask\+Parser}
 class {\bfseries Peers\+Answer\+Parser}
 \end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+An basic message for simple communication. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classMessage}{Message}}
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Mathieu Lochet 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSignMessage_ac1df326e20a41acee483fc8893e791ae}\label{classSignMessage_ac1df326e20a41acee483fc8893e791ae}} 
+\index{Sign\+Message@{Sign\+Message}!Sign\+Message@{Sign\+Message}}
+\index{Sign\+Message@{Sign\+Message}!Sign\+Message@{Sign\+Message}}
+\subsubsection{\texorpdfstring{Sign\+Message()}{SignMessage()}}
+{\footnotesize\ttfamily Sign\+Message\+::\+Sign\+Message (\begin{DoxyParamCaption}\item[{std\+::string}]{p,  }\item[{int}]{t }\end{DoxyParamCaption})}
+
+Creates a simple message with a text and a message type Calls the super constructor with the type value
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & The given text. Used as a peer text \\
+\hline
+{\em t} & The type of the message \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classComponent_a28212595f8ee85fe009bd233bc99b2fc}\label{classComponent_a28212595f8ee85fe009bd233bc99b2fc}} 
+\index{Sign\+Message@{Sign\+Message}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!Sign\+Message@{Sign\+Message}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily void Component\+::\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classElementObject}{Element\+Object}} $\ast$}]{element,  }\item[{const \mbox{\hyperlink{classSerializer}{Serializer}} $\ast$}]{s,  }\item[{const char $\ast$}]{encoding }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+The function called by the serializer to initialize the object if it is empty \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classElementObject}{Element\+Object}} 
+
+\mbox{\hyperlink{classSerializer}{Serializer}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em element} & The \mbox{\hyperlink{classElement}{Element}} representation of the object \\
+\hline
+{\em s} & The serializer (Can be used if serialization of some elements is needed) \\
+\hline
+{\em encoding} & The encoding that has been used to create the \mbox{\hyperlink{classElement}{Element}} representation of the object (Can be used if serialization of some elements is needed) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSignMessage_a35855647925ec76036ed4602743ed118}\label{classSignMessage_a35855647925ec76036ed4602743ed118}} 
+\index{Sign\+Message@{Sign\+Message}!from\+Element@{from\+Element}}
+\index{from\+Element@{from\+Element}!Sign\+Message@{Sign\+Message}}
+\subsubsection{\texorpdfstring{from\+Element()}{fromElement()}}
+{\footnotesize\ttfamily void Sign\+Message\+::from\+Element (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classElementObject}{Element\+Object}} $\ast$}]{,  }\item[{const \mbox{\hyperlink{classSerializer}{Serializer}} $\ast$}]{,  }\item[{const char $\ast$}]{encoding }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+The function used to build the object from its element representation. the object if it is empty \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classElementObject}{Element\+Object}} 
+
+\mbox{\hyperlink{classSerializer}{Serializer}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em element} & The \mbox{\hyperlink{classElement}{Element}} representation of the object \\
+\hline
+{\em s} & The serializer (Can be used if serialization of some elements is needed) \\
+\hline
+{\em encoding} & The encoding that has been used to create the \mbox{\hyperlink{classElement}{Element}} representation of the object (Can be used if serialization of some elements is needed) \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classComponent_a2ded18881226d0077dc393e0e9304bb1}{Component}}.
+
+\mbox{\Hypertarget{classMessage_ad92a0e1cfa5b5a503ec9c61833e3e5ea}\label{classMessage_ad92a0e1cfa5b5a503ec9c61833e3e5ea}} 
+\index{Sign\+Message@{Sign\+Message}!generate@{generate}}
+\index{generate@{generate}!Sign\+Message@{Sign\+Message}}
+\subsubsection{\texorpdfstring{generate()}{generate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMessage}{Message}} $\ast$ Message\+::generate (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [inherited]}}
+
+The message factory\+: creates the corresponding type of message with a given type. The generated message is empty and needs to be fill. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classComponent}{Component}}\+:\+:{\bfseries init}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em id} & the given type of the wanted message \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The type of the message 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMessage_a2a576dcffd45c4574fcdf2897ec26086}\label{classMessage_a2a576dcffd45c4574fcdf2897ec26086}} 
+\index{Sign\+Message@{Sign\+Message}!get\+\_\+type@{get\+\_\+type}}
+\index{get\+\_\+type@{get\+\_\+type}!Sign\+Message@{Sign\+Message}}
+\subsubsection{\texorpdfstring{get\+\_\+type()}{get\_type()}}
+{\footnotesize\ttfamily const int Message\+::get\+\_\+type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
+
+Get the type of the message
+
+\begin{DoxyReturn}{Returns}
+The type of the message 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSignMessage_aee897c4bf78df966b8cca95e589566e4}\label{classSignMessage_aee897c4bf78df966b8cca95e589566e4}} 
+\index{Sign\+Message@{Sign\+Message}!to\+Element@{to\+Element}}
+\index{to\+Element@{to\+Element}!Sign\+Message@{Sign\+Message}}
+\subsubsection{\texorpdfstring{to\+Element()}{toElement()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classElement}{Element}} $\ast$ Sign\+Message\+::to\+Element (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+The method used by the serializer to transform an object into an \mbox{\hyperlink{classElement}{Element}} representation. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classElement}{Element}}
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+The \mbox{\hyperlink{classElement}{Element}} representation of the object 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classComponent_a3e63d8c993e417a4af3f56d65ebfc7ea}{Component}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classMessage_afbfb481c98b13d0deba0bac443bebe29}\label{classMessage_afbfb481c98b13d0deba0bac443bebe29}} 
+\index{Sign\+Message@{Sign\+Message}!type@{type}}
+\index{type@{type}!Sign\+Message@{Sign\+Message}}
+\subsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily int Message\+::type\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+The type of the message 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

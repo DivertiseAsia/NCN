@@ -1,5 +1,9 @@
 \hypertarget{classMetadata}{}\section{Metadata Class Reference}
 \label{classMetadata}\index{Metadata@{Metadata}}
+
+
+{\ttfamily \#include $<$Metadata.\+h$>$}
+
 Inheritance diagram for Metadata\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,27 +13,159 @@ Inheritance diagram for Metadata\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classMetadata_a2721356452a5d366d58275dd1fc1209c}\label{classMetadata_a2721356452a5d366d58275dd1fc1209c}} 
-virtual bool {\bfseries operator==} (\mbox{\hyperlink{classMetadata}{Metadata}} \&m) const
+virtual \mbox{\hyperlink{classMetadata_a29845232ba882e6dba16311f2ae4c374}{$\sim$\+Metadata}} ()
 \item 
-\mbox{\Hypertarget{classMetadata_aa0ee5e6a7020e02b67b2b95b6bc2a70b}\label{classMetadata_aa0ee5e6a7020e02b67b2b95b6bc2a70b}} 
-virtual void {\bfseries update\+\_\+database} (\mbox{\hyperlink{classDatabase}{Database}} $\ast$p\+Database)=0
+virtual bool \mbox{\hyperlink{classMetadata_a2721356452a5d366d58275dd1fc1209c}{operator==}} (\mbox{\hyperlink{classMetadata}{Metadata}} \&m) const
 \item 
-\mbox{\Hypertarget{classMetadata_a893b85a8fe38060c72bdda20818a7334}\label{classMetadata_a893b85a8fe38060c72bdda20818a7334}} 
-virtual \mbox{\hyperlink{classHash}{Hash}} $\ast$ {\bfseries hash} ()=0
+virtual void \mbox{\hyperlink{classMetadata_a501ab1977aac6a75f92309284e17de30}{update\+\_\+database}} (\mbox{\hyperlink{classDatabase}{Database}} $\ast$d)=0
 \item 
-\mbox{\Hypertarget{classComponent_a3e63d8c993e417a4af3f56d65ebfc7ea}\label{classComponent_a3e63d8c993e417a4af3f56d65ebfc7ea}} 
-virtual \mbox{\hyperlink{classElement}{Element}} $\ast$ {\bfseries to\+Element} () const =0
+virtual \mbox{\hyperlink{classHash}{Hash}} $\ast$ \mbox{\hyperlink{classMetadata_a893b85a8fe38060c72bdda20818a7334}{hash}} ()=0
 \item 
-\mbox{\Hypertarget{classComponent_a28212595f8ee85fe009bd233bc99b2fc}\label{classComponent_a28212595f8ee85fe009bd233bc99b2fc}} 
-void {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (\mbox{\hyperlink{classElementObject}{Element\+Object}} $\ast$element, const \mbox{\hyperlink{classSerializer}{Serializer}} $\ast$s, const char $\ast$encoding)
+virtual \mbox{\hyperlink{classElement}{Element}} $\ast$ \mbox{\hyperlink{classComponent_a3e63d8c993e417a4af3f56d65ebfc7ea}{to\+Element}} () const =0
+\item 
+void \mbox{\hyperlink{classComponent_a28212595f8ee85fe009bd233bc99b2fc}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (\mbox{\hyperlink{classElementObject}{Element\+Object}} $\ast$element, const \mbox{\hyperlink{classSerializer}{Serializer}} $\ast$s, const char $\ast$encoding)
 \end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classComponent_a2ded18881226d0077dc393e0e9304bb1}\label{classComponent_a2ded18881226d0077dc393e0e9304bb1}} 
-virtual void {\bfseries from\+Element} (\mbox{\hyperlink{classElementObject}{Element\+Object}} $\ast$, const \mbox{\hyperlink{classSerializer}{Serializer}} $\ast$, const char $\ast$encoding)=0
+virtual void \mbox{\hyperlink{classComponent_a2ded18881226d0077dc393e0e9304bb1}{from\+Element}} (\mbox{\hyperlink{classElementObject}{Element\+Object}} $\ast$, const \mbox{\hyperlink{classSerializer}{Serializer}} $\ast$, const char $\ast$encoding)=0
 \end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An abstract metadata class representing a block\textquotesingle{}s header. Needs to be reimplemented with the proper header representation \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classBlock}{Block}}
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Mathieu Lochet 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2 
+\end{DoxyVersion}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMetadata_a29845232ba882e6dba16311f2ae4c374}\label{classMetadata_a29845232ba882e6dba16311f2ae4c374}} 
+\index{Metadata@{Metadata}!````~Metadata@{$\sim$\+Metadata}}
+\index{````~Metadata@{$\sim$\+Metadata}!Metadata@{Metadata}}
+\subsubsection{\texorpdfstring{$\sim$\+Metadata()}{~Metadata()}}
+{\footnotesize\ttfamily Metadata\+::$\sim$\+Metadata (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+A virtual default destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classComponent_a28212595f8ee85fe009bd233bc99b2fc}\label{classComponent_a28212595f8ee85fe009bd233bc99b2fc}} 
+\index{Metadata@{Metadata}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!Metadata@{Metadata}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily void Component\+::\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classElementObject}{Element\+Object}} $\ast$}]{element,  }\item[{const \mbox{\hyperlink{classSerializer}{Serializer}} $\ast$}]{s,  }\item[{const char $\ast$}]{encoding }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+The function called by the serializer to initialize the object if it is empty \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classElementObject}{Element\+Object}} 
+
+\mbox{\hyperlink{classSerializer}{Serializer}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em element} & The \mbox{\hyperlink{classElement}{Element}} representation of the object \\
+\hline
+{\em s} & The serializer (Can be used if serialization of some elements is needed) \\
+\hline
+{\em encoding} & The encoding that has been used to create the \mbox{\hyperlink{classElement}{Element}} representation of the object (Can be used if serialization of some elements is needed) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classComponent_a2ded18881226d0077dc393e0e9304bb1}\label{classComponent_a2ded18881226d0077dc393e0e9304bb1}} 
+\index{Metadata@{Metadata}!from\+Element@{from\+Element}}
+\index{from\+Element@{from\+Element}!Metadata@{Metadata}}
+\subsubsection{\texorpdfstring{from\+Element()}{fromElement()}}
+{\footnotesize\ttfamily virtual void Component\+::from\+Element (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classElementObject}{Element\+Object}} $\ast$}]{,  }\item[{const \mbox{\hyperlink{classSerializer}{Serializer}} $\ast$}]{,  }\item[{const char $\ast$}]{encoding }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}, {\ttfamily [inherited]}}
+
+The function used to build the object from its element representation. the object if it is empty \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classElementObject}{Element\+Object}} 
+
+\mbox{\hyperlink{classSerializer}{Serializer}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em element} & The \mbox{\hyperlink{classElement}{Element}} representation of the object \\
+\hline
+{\em s} & The serializer (Can be used if serialization of some elements is needed) \\
+\hline
+{\em encoding} & The encoding that has been used to create the \mbox{\hyperlink{classElement}{Element}} representation of the object (Can be used if serialization of some elements is needed) \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classBlock_ab21c6536cf7a26fdf2a2e889a84fcb9d}{Block}}, \mbox{\hyperlink{classTransactionMessage_a2fbe322d67154d3bcbcc44943eeeb1ef}{Transaction\+Message}}, \mbox{\hyperlink{classBlockMessage_adda957e60057d72e1bc55d7b9c617188}{Block\+Message}}, \mbox{\hyperlink{classProofOfWorkMetadata_afac533eee3123bce72615ab90f7c9669}{Proof\+Of\+Work\+Metadata}}, \mbox{\hyperlink{classSignMessage_a35855647925ec76036ed4602743ed118}{Sign\+Message}}, \mbox{\hyperlink{classMessagesTransaction_aa70ed75ff16f6afa61d82458488069d4}{Messages\+Transaction}}, \mbox{\hyperlink{classReward_a6d16e21b60b7f11c7aaf0098a53118a2}{Reward}}, \mbox{\hyperlink{classMoneyTransaction_a6f4672dba3a75e2782d15366d9ed7a1e}{Money\+Transaction}}, \mbox{\hyperlink{classBlockAskMessage_a25875b2446d7ecc5f644c568c8f12df3}{Block\+Ask\+Message}}, \mbox{\hyperlink{classBlockAnswerMessage_affa76e8a95365baf5c9eb409a0a19b9d}{Block\+Answer\+Message}}, \mbox{\hyperlink{classStatusTransaction_aa05e4be5f990e8a9533383b3b7dc1382}{Status\+Transaction}}, and \mbox{\hyperlink{classMerkleTree_a083ad348bfd770f2400f190112ff39a3}{Merkle\+Tree}}.
+
+\mbox{\Hypertarget{classMetadata_a893b85a8fe38060c72bdda20818a7334}\label{classMetadata_a893b85a8fe38060c72bdda20818a7334}} 
+\index{Metadata@{Metadata}!hash@{hash}}
+\index{hash@{hash}!Metadata@{Metadata}}
+\subsubsection{\texorpdfstring{hash()}{hash()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classHash}{Hash}}$\ast$ Metadata\+::hash (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Get the hash ofthe user who validated the block
+
+\begin{DoxyReturn}{Returns}
+The hash ofthe user who validated the block 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classProofOfWorkMetadata_af29f8f40d4b438eaa9434b51c1aff7c6}{Proof\+Of\+Work\+Metadata}}.
+
+\mbox{\Hypertarget{classMetadata_a2721356452a5d366d58275dd1fc1209c}\label{classMetadata_a2721356452a5d366d58275dd1fc1209c}} 
+\index{Metadata@{Metadata}!operator==@{operator==}}
+\index{operator==@{operator==}!Metadata@{Metadata}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily virtual bool Metadata\+::operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMetadata}{Metadata}} \&}]{m }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Overriding the == operator
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & A metadata to be compared \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the conditions are satisfied, false otherwise 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classProofOfWorkMetadata_ae490506a28967c7180163fc156dd5d51}{Proof\+Of\+Work\+Metadata}}.
+
+\mbox{\Hypertarget{classComponent_a3e63d8c993e417a4af3f56d65ebfc7ea}\label{classComponent_a3e63d8c993e417a4af3f56d65ebfc7ea}} 
+\index{Metadata@{Metadata}!to\+Element@{to\+Element}}
+\index{to\+Element@{to\+Element}!Metadata@{Metadata}}
+\subsubsection{\texorpdfstring{to\+Element()}{toElement()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classElement}{Element}}$\ast$ Component\+::to\+Element (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [inherited]}}
+
+The method used by the serializer to transform an object into an \mbox{\hyperlink{classElement}{Element}} representation. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classElement}{Element}}
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+The \mbox{\hyperlink{classElement}{Element}} representation of the object 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classBlock_aa289363a40f0d3ba88720ad0bc71f34f}{Block}}, \mbox{\hyperlink{classTransactionMessage_ae20e7d6a7b5811bb56a32ec6af59b8e2}{Transaction\+Message}}, \mbox{\hyperlink{classBlockMessage_ab47afd5cfb7d6d5c544d8def5d0f9737}{Block\+Message}}, \mbox{\hyperlink{classSignMessage_aee897c4bf78df966b8cca95e589566e4}{Sign\+Message}}, \mbox{\hyperlink{classProofOfWorkMetadata_a2aab4c26afb3a85a712cc065028274d9}{Proof\+Of\+Work\+Metadata}}, \mbox{\hyperlink{classBlockAskMessage_a0bc20076f19423855ab5772003fb65f6}{Block\+Ask\+Message}}, \mbox{\hyperlink{classBlockAnswerMessage_ac7f35ec9f7f2fbcd726628c2a984518b}{Block\+Answer\+Message}}, \mbox{\hyperlink{classReward_a0ecd536148463880f9980fe415b6eb1d}{Reward}}, \mbox{\hyperlink{classMerkleTree_a4e72819c6cbc49ed8ce092f464711a5f}{Merkle\+Tree}}, \mbox{\hyperlink{classMessagesTransaction_a0ef8ec080a2698a02ad8b1b95d243720}{Messages\+Transaction}}, \mbox{\hyperlink{classStatusTransaction_aed42f2d61f2d50ec07bb6b35473f61f2}{Status\+Transaction}}, and \mbox{\hyperlink{classMoneyTransaction_a84adc847266467965014cb04acd48bea}{Money\+Transaction}}.
+
+\mbox{\Hypertarget{classMetadata_a501ab1977aac6a75f92309284e17de30}\label{classMetadata_a501ab1977aac6a75f92309284e17de30}} 
+\index{Metadata@{Metadata}!update\+\_\+database@{update\+\_\+database}}
+\index{update\+\_\+database@{update\+\_\+database}!Metadata@{Metadata}}
+\subsubsection{\texorpdfstring{update\+\_\+database()}{update\_database()}}
+{\footnotesize\ttfamily virtual void Metadata\+::update\+\_\+database (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classDatabase}{Database}} $\ast$}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Update the database with the reward transaction when the block is validated
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & The database to update \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classProofOfWorkMetadata_add9667954ffeaee75f3329c6c832e8b7}{Proof\+Of\+Work\+Metadata}}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

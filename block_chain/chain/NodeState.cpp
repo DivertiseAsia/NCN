@@ -38,10 +38,6 @@ void NodeState::add(Block* block){
     }
 }
 
-void NodeState::update_database(Block* block){
-    chain->top_fingerprint().second->update_database(block, serializer, encoding.c_str());
-}
-
 void NodeState::read_blocks() {
     std::vector<std::string> list;
     list.emplace_back("0");

@@ -29,9 +29,9 @@ virtual \mbox{\hyperlink{classMetadata}{Metadata}} $\ast$ \mbox{\hyperlink{class
 \item 
 \mbox{\hyperlink{classElementObject}{Element\+Object}} $\ast$ \mbox{\hyperlink{classSerializer_ab3bcdbd49167109de13e03878337018a}{get\+Element}} (std\+::string str, const char $\ast$encoding) const
 \item 
-void \mbox{\hyperlink{classSerializer_a0258559787f09d3a7bfe6bb1c41cc118}{set\+\_\+serializer}} (const char $\ast$encoding, \mbox{\hyperlink{classContentCreator}{Content\+Creator}} $\ast$creator)
+void \mbox{\hyperlink{classSerializer_aee483f1845ca1b7f7ac4243de9902750}{set\+\_\+serializer}} (\mbox{\hyperlink{classContentCreator}{Content\+Creator}} $\ast$creator)
 \item 
-void \mbox{\hyperlink{classSerializer_adf32dca6325e4a613c4c7ba48a3de244}{set\+\_\+unserializer}} (const char $\ast$encoding, \mbox{\hyperlink{classContentParser}{Content\+Parser}} $\ast$parser)
+void \mbox{\hyperlink{classSerializer_a74ea868b820b4a8472da98c0045418fa}{set\+\_\+unserializer}} (\mbox{\hyperlink{classContentParser}{Content\+Parser}} $\ast$parser)
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
@@ -152,36 +152,32 @@ Serialize an \mbox{\hyperlink{classElement}{Element}} object \begin{DoxySeeAlso}
 \begin{DoxyReturn}{Returns}
 the serialized string 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classSerializer_a0258559787f09d3a7bfe6bb1c41cc118}\label{classSerializer_a0258559787f09d3a7bfe6bb1c41cc118}} 
+\mbox{\Hypertarget{classSerializer_aee483f1845ca1b7f7ac4243de9902750}\label{classSerializer_aee483f1845ca1b7f7ac4243de9902750}} 
 \index{Serializer@{Serializer}!set\+\_\+serializer@{set\+\_\+serializer}}
 \index{set\+\_\+serializer@{set\+\_\+serializer}!Serializer@{Serializer}}
 \subsubsection{\texorpdfstring{set\+\_\+serializer()}{set\_serializer()}}
-{\footnotesize\ttfamily void Serializer\+::set\+\_\+serializer (\begin{DoxyParamCaption}\item[{const char $\ast$}]{encoding,  }\item[{\mbox{\hyperlink{classContentCreator}{Content\+Creator}} $\ast$}]{creator }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Serializer\+::set\+\_\+serializer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classContentCreator}{Content\+Creator}} $\ast$}]{creator }\end{DoxyParamCaption})}
 
 Add a custom creator to the list \begin{DoxySeeAlso}{See also}
 \mbox{\hyperlink{classContentCreator}{Content\+Creator}}
 \end{DoxySeeAlso}
 
 \begin{DoxyParams}{Parameters}
-{\em encoding} & the corresponding encoding for the creator \\
-\hline
-{\em creator} & the creator object to use with the key \\
+{\em creator} & the creator object to use \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classSerializer_adf32dca6325e4a613c4c7ba48a3de244}\label{classSerializer_adf32dca6325e4a613c4c7ba48a3de244}} 
+\mbox{\Hypertarget{classSerializer_a74ea868b820b4a8472da98c0045418fa}\label{classSerializer_a74ea868b820b4a8472da98c0045418fa}} 
 \index{Serializer@{Serializer}!set\+\_\+unserializer@{set\+\_\+unserializer}}
 \index{set\+\_\+unserializer@{set\+\_\+unserializer}!Serializer@{Serializer}}
 \subsubsection{\texorpdfstring{set\+\_\+unserializer()}{set\_unserializer()}}
-{\footnotesize\ttfamily void Serializer\+::set\+\_\+unserializer (\begin{DoxyParamCaption}\item[{const char $\ast$}]{encoding,  }\item[{\mbox{\hyperlink{classContentParser}{Content\+Parser}} $\ast$}]{parser }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Serializer\+::set\+\_\+unserializer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classContentParser}{Content\+Parser}} $\ast$}]{parser }\end{DoxyParamCaption})}
 
 Add a custom parser to the list \begin{DoxySeeAlso}{See also}
 \mbox{\hyperlink{classContentParser}{Content\+Parser}}
 \end{DoxySeeAlso}
 
 \begin{DoxyParams}{Parameters}
-{\em encoding} & the corresponding encoding for the parser \\
-\hline
-{\em creator} & the creator object to use with the key \\
+{\em creator} & the parser object \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classSerializer_a423fb7c43ca9c23e07000dba0c5a432a}\label{classSerializer_a423fb7c43ca9c23e07000dba0c5a432a}} 

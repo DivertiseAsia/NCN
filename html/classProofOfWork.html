@@ -70,6 +70,8 @@ $(function() {
 <div class="title">ProofOfWork Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="ProofOfWork_8h_source.html">ProofOfWork.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ProofOfWork:</div>
 <div class="dyncontent">
@@ -82,20 +84,16 @@ Inheritance diagram for ProofOfWork:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a80cbd012ee3f9e92a8497efac84bf689"><td class="memItemLeft" align="right" valign="top"><a id="a80cbd012ee3f9e92a8497efac84bf689"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> (<a class="el" href="classBlock.html">Block</a> *block, std::string key) override</td></tr>
+<tr class="memitem:a80cbd012ee3f9e92a8497efac84bf689"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProofOfWork.html#a80cbd012ee3f9e92a8497efac84bf689">run</a> (<a class="el" href="classBlock.html">Block</a> *block, std::string key) override</td></tr>
 <tr class="separator:a80cbd012ee3f9e92a8497efac84bf689"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe3dba92dad383eec07f70acccaa802d"><td class="memItemLeft" align="right" valign="top"><a id="abe3dba92dad383eec07f70acccaa802d"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>accept</b> (<a class="el" href="classBlock.html">Block</a> *block, <a class="el" href="classMessage.html">Message</a> *) override</td></tr>
+<tr class="memitem:abe3dba92dad383eec07f70acccaa802d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProofOfWork.html#abe3dba92dad383eec07f70acccaa802d">accept</a> (<a class="el" href="classBlock.html">Block</a> *block, <a class="el" href="classMessage.html">Message</a> *) override</td></tr>
 <tr class="separator:abe3dba92dad383eec07f70acccaa802d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a93208e5161d25f8533849ac2dac8d6b8"><td class="memItemLeft" align="right" valign="top"><a id="a93208e5161d25f8533849ac2dac8d6b8"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>add_proof</b> (int id, std::function&lt; <a class="el" href="classProof.html">Proof</a> *()&gt;)</td></tr>
-<tr class="separator:a93208e5161d25f8533849ac2dac8d6b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a267f0f4587babb59884b5f280e2d54c8"><td class="memItemLeft" align="right" valign="top"><a id="a267f0f4587babb59884b5f280e2d54c8"></a>
-static <a class="el" href="classProof.html">Proof</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>generate</b> (int type)</td></tr>
+<tr class="memitem:a71874539fdbcc93c15594b889c95225b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProof.html#a71874539fdbcc93c15594b889c95225b">add_proof</a> (int id, std::function&lt; <a class="el" href="classProof.html">Proof</a> *()&gt; proof)</td></tr>
+<tr class="separator:a71874539fdbcc93c15594b889c95225b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a267f0f4587babb59884b5f280e2d54c8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classProof.html">Proof</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProof.html#a267f0f4587babb59884b5f280e2d54c8">generate</a> (int type)</td></tr>
 <tr class="separator:a267f0f4587babb59884b5f280e2d54c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
@@ -122,6 +120,183 @@ static const int&#160;</td><td class="memItemRight" valign="bottom"><b>STAKE_TIM
 static const int&#160;</td><td class="memItemRight" valign="bottom"><b>USE</b> = 6</td></tr>
 <tr class="separator:a3f6898fa1d652d32182c3c387c8e979c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p class="">A basic proof of work </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classProof.html">Proof</a> </dd>
+<dd>
+Proof::WORK</dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Mathieu Lochet </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1 </dd></dl>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="abe3dba92dad383eec07f70acccaa802d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe3dba92dad383eec07f70acccaa802d">&#9670;&nbsp;</a></span>accept()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ProofOfWork::accept </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classBlock.html">Block</a> *&#160;</td>
+          <td class="paramname"><em>block</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classMessage.html">Message</a> *&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p class="">Get a proof result and check if the result is correct Needs to be implemented</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">block</td><td>The block to check the proof </td></tr>
+    <tr><td class="paramname">The</td><td>received message </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classProof.html#ad52fee058ea617a186133cb6a008fe6e">Proof</a>.</p>
+
+</div>
+</div>
+<a id="a71874539fdbcc93c15594b889c95225b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71874539fdbcc93c15594b889c95225b">&#9670;&nbsp;</a></span>add_proof()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Proof::add_proof </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; <a class="el" href="classProof.html">Proof</a> *()&gt;&#160;</td>
+          <td class="paramname"><em>proof</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p class="">Allows the user to add its own proof into the system He the proof id is required</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>The proof id </td></tr>
+    <tr><td class="paramname">proof</td><td>The lambda expression that creates a proof </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a267f0f4587babb59884b5f280e2d54c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a267f0f4587babb59884b5f280e2d54c8">&#9670;&nbsp;</a></span>generate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classProof.html">Proof</a> * Proof::generate </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p class="">Generates a proof for a given id</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>The proof id </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The created proof object </dd></dl>
+
+</div>
+</div>
+<a id="a80cbd012ee3f9e92a8497efac84bf689"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80cbd012ee3f9e92a8497efac84bf689">&#9670;&nbsp;</a></span>run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ProofOfWork::run </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classBlock.html">Block</a> *&#160;</td>
+          <td class="paramname"><em>block</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p class="">Run a proof on a block to validate it Needs to be implemented</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">block</td><td>The block to run the proof on </td></tr>
+    <tr><td class="paramname">The</td><td>user's key to use in the process </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classProof.html#a8a43fcb7c997da54d627e0f257adb86f">Proof</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>block_chain/chain/block/proof/<a class="el" href="ProofOfWork_8h_source.html">ProofOfWork.h</a></li>
 <li>block_chain/chain/block/proof/ProofOfWork.cpp</li>

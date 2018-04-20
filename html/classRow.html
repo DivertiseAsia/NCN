@@ -68,6 +68,8 @@ $(function() {
 <div class="title">Row Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="block__chain_2chain_2state_2Row_8h_source.html">Row.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Row:</div>
 <div class="dyncontent">
@@ -80,16 +82,133 @@ Inheritance diagram for Row:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae3e9c3aaa17ebc4f0e280cdec722440a"><td class="memItemLeft" align="right" valign="top"><a id="ae3e9c3aaa17ebc4f0e280cdec722440a"></a>
-virtual <a class="el" href="classRow.html">Row</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>clone</b> () const =0</td></tr>
+<tr class="memitem:acce74b5e3df47d61a3a22388f6c1f552"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRow.html#acce74b5e3df47d61a3a22388f6c1f552">~Row</a> ()=default</td></tr>
+<tr class="separator:acce74b5e3df47d61a3a22388f6c1f552"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3e9c3aaa17ebc4f0e280cdec722440a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classRow.html">Row</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRow.html#ae3e9c3aaa17ebc4f0e280cdec722440a">clone</a> () const =0</td></tr>
 <tr class="separator:ae3e9c3aaa17ebc4f0e280cdec722440a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7b1aba7a4c868914700432850c2848d"><td class="memItemLeft" align="right" valign="top"><a id="ae7b1aba7a4c868914700432850c2848d"></a>
-virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><b>to_string</b> () const =0</td></tr>
+<tr class="memitem:ae7b1aba7a4c868914700432850c2848d"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRow.html#ae7b1aba7a4c868914700432850c2848d">to_string</a> () const =0</td></tr>
 <tr class="separator:ae7b1aba7a4c868914700432850c2848d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a851b728fa55ecb26f8ebbc87e614581b"><td class="memItemLeft" align="right" valign="top"><a id="a851b728fa55ecb26f8ebbc87e614581b"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>reward</b> ()=0</td></tr>
+<tr class="memitem:a851b728fa55ecb26f8ebbc87e614581b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRow.html#a851b728fa55ecb26f8ebbc87e614581b">reward</a> ()=0</td></tr>
 <tr class="separator:a851b728fa55ecb26f8ebbc87e614581b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p class="">An abstract row in the database. Needs to be reimplemented so the user can create any representation of data he wants. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classDatabase.html">Database</a></dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Mathieu Lochet </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>2 </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="acce74b5e3df47d61a3a22388f6c1f552"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acce74b5e3df47d61a3a22388f6c1f552">&#9670;&nbsp;</a></span>~Row()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual Row::~Row </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p class="">A default virtual destructor </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae3e9c3aaa17ebc4f0e280cdec722440a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3e9c3aaa17ebc4f0e280cdec722440a">&#9670;&nbsp;</a></span>clone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classRow.html">Row</a>* Row::clone </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p class="">A method to duplicate the row. It needs to be reimplemented and to do an exact copy of itself</p>
+<dl class="section return"><dt>Returns</dt><dd>Return the cloned <a class="el" href="classRow.html">Row</a> </dd></dl>
+
+<p>Implemented in <a class="el" href="classCustomRow.html#a9d3c1b6bda5e63de382cc4a2aa29210d">CustomRow</a>.</p>
+
+</div>
+</div>
+<a id="a851b728fa55ecb26f8ebbc87e614581b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a851b728fa55ecb26f8ebbc87e614581b">&#9670;&nbsp;</a></span>reward()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Row::reward </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p class="">Change the row to add the reward for validating the block </p>
+
+<p>Implemented in <a class="el" href="classCustomRow.html#a007002dc965ca2727ec8db0183404bf1">CustomRow</a>.</p>
+
+</div>
+</div>
+<a id="ae7b1aba7a4c868914700432850c2848d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7b1aba7a4c868914700432850c2848d">&#9670;&nbsp;</a></span>to_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string Row::to_string </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p class="">Generate the string representation of a database's row It needs to be implemented</p>
+<dl class="section return"><dt>Returns</dt><dd>The string representation of the row </dd></dl>
+
+<p>Implemented in <a class="el" href="classCustomRow.html#ae1e5a3b861829f8b295d3c743d6b3c7a">CustomRow</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>block_chain/chain/state/<a class="el" href="block__chain_2chain_2state_2Row_8h_source.html">Row.h</a></li>
 </ul>

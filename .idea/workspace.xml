@@ -13,52 +13,274 @@
   <component name="ChangeListManager">
     <list default="true" id="b337953f-6d17-4d79-bf7d-640c27a86937" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/block_chain/chain/Chain.h" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/chain/Chain.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/block_chain/chain/NodeState.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/chain/NodeState.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/chain/block/Block.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/chain/block/Block.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/chain/block/Block.h" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/chain/block/Block.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/chain/block/transaction/Reward.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/chain/block/transaction/Reward.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/chain/block/transaction/Reward.h" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/chain/block/transaction/Reward.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/chain/block/transaction/Transaction.h" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/chain/block/transaction/Transaction.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/kernel/parsers/TransactionParser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/kernel/parsers/TransactionParser.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/utils/serialization/Serializer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/utils/serialization/Serializer.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/Node.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/Node.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/TransactionManager.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/TransactionManager.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/Chain.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/Chain.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/proof/Proof.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/proof/Proof.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfHold.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfHold.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfImportance.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfImportance.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfMinimumAgedStake.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfMinimumAgedStake.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfStake.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfStake.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfStakeTime.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfStakeTime.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfUse.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfUse.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfWork.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfWork.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/proof/metadatas/Metadata.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/proof/metadatas/Metadata.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Reward.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Reward.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/state/Database.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/state/Database.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAnswerParser.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAnswerParser.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAskParser.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAskParser.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockParser.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockParser.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAnswerParser.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAnswerParser.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAskParser.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAskParser.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignInParser.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignInParser.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignOutParser.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignOutParser.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/TransactionParser.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/TransactionParser.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/utils/serialization/Serializer.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/utils/serialization/Serializer.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/reward/RewardTransaction.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/reward/RewardTransaction.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/transactions/MessagesTransaction.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/transactions/MessagesTransaction.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/transactions/MoneyTransaction.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/transactions/MoneyTransaction.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/transactions/StatusTransaction.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/transactions/StatusTransaction.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/block_chain" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/block_chain" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transactions/MessagesTransaction.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/transactions/MessagesTransaction.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transactions/MessagesTransaction.h" beforeDir="false" afterPath="$PROJECT_DIR$/transactions/MessagesTransaction.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transactions/MoneyTransaction.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/transactions/MoneyTransaction.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transactions/MoneyTransaction.h" beforeDir="false" afterPath="$PROJECT_DIR$/transactions/MoneyTransaction.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transactions/StatusTransaction.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/transactions/StatusTransaction.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transactions/StatusTransaction.h" beforeDir="false" afterPath="$PROJECT_DIR$/transactions/StatusTransaction.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/block_chain/chain/NodeState.h" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/chain/NodeState.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/algorithm/Hash.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/Chain.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/proof/Proof.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfHold.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfImportance.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfMinimumAgedStake.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfStake.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfStakeTime.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfUse.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfWork.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAnswerParser.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAskParser.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockParser.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAnswerParser.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAskParser.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignInParser.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignOutParser.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/TransactionParser.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/utils/socket/Peer.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/utils/socket/SocketServer.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/AnswerPeersMessage_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/AnswerPeersMessage_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/AskPeersMessage_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/AskPeersMessage_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/BlockAnswerMessage_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/BlockAnswerMessage_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/BlockAnswerParser_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/BlockAnswerParser_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/BlockAskMessage_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/BlockAskMessage_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/BlockAskParser_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/BlockAskParser_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/BlockMessage_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/BlockMessage_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/BlockParser_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/BlockParser_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/Block_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/Block_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/Chain_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/Chain_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/Component_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/Component_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/CustomSerializer_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/CustomSerializer_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/Database_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/Database_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/Element_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/Element_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/Hash_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/Hash_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/JsonCreator_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/JsonCreator_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/JsonParser_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/JsonParser_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/MerkleTree_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/MerkleTree_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/MessageParser_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/MessageParser_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/Message_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/Message_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/MessagesTransaction_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/MessagesTransaction_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/Metadata_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/Metadata_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/MoneyTransaction_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/MoneyTransaction_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/NodeState_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/NodeState_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/Node_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/Node_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/Parser_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/Parser_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/Peer_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/Peer_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/PeersAnswerParser_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/PeersAnswerParser_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/PeersAskParser_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/PeersAskParser_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/ProofOfHold_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/ProofOfHold_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/ProofOfImportance_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/ProofOfImportance_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/ProofOfMinimumAgedStake_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/ProofOfMinimumAgedStake_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/ProofOfStakeTime_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/ProofOfStakeTime_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/ProofOfStake_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/ProofOfStake_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/ProofOfUse_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/ProofOfUse_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/ProofOfWorkMetadata_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/ProofOfWorkMetadata_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/ProofOfWork_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/ProofOfWork_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/Proof_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/Proof_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/RewardTransaction_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/RewardTransaction_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/Reward_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/Reward_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/Serializer_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/Serializer_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/SignInMessage_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/SignInMessage_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/SignInParser_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/SignInParser_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/SignMessage_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/SignMessage_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/SignOutMessage_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/SignOutMessage_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/SignOutParser_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/SignOutParser_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/StatusTransaction_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/StatusTransaction_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/TransactionManager_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/TransactionManager_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/TransactionMessage_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/TransactionMessage_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/TransactionParser_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/TransactionParser_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/Transaction_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/Transaction_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/block__chain_2chain_2state_2Row_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/block__chain_2chain_2state_2Row_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classAnswerPeersMessage-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classAnswerPeersMessage-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classAnswerPeersMessage.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classAnswerPeersMessage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classAskPeersMessage-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classAskPeersMessage-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classAskPeersMessage.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classAskPeersMessage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classBlock-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classBlock-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classBlock.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classBlock.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classBlockAnswerMessage-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classBlockAnswerMessage-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classBlockAnswerMessage.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classBlockAnswerMessage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classBlockAnswerParser-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classBlockAnswerParser-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classBlockAnswerParser.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classBlockAnswerParser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classBlockAskMessage-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classBlockAskMessage-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classBlockAskMessage.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classBlockAskMessage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classBlockAskParser-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classBlockAskParser-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classBlockAskParser.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classBlockAskParser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classBlockMessage-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classBlockMessage-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classBlockMessage.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classBlockMessage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classBlockParser-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classBlockParser-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classBlockParser.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classBlockParser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classChain.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classChain.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classComponent-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classComponent-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classComponent.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classComponent.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classContentCreator-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classContentCreator-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classContentCreator.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classContentCreator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classContentParser-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classContentParser-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classContentParser.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classContentParser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classContentReader-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classContentReader-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classContentReader.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classContentReader.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classCustomRow-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classCustomRow-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classCustomRow.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classCustomRow.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classCustomSerializer-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classCustomSerializer-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classCustomSerializer.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classCustomSerializer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classDatabase-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classDatabase-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classDatabase.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classDatabase.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classJsonCreator-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classJsonCreator-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classJsonCreator.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classJsonCreator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classJsonParser-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classJsonParser-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classJsonParser.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classJsonParser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classMerkleTree-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classMerkleTree-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classMerkleTree.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classMerkleTree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classMessage-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classMessage-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classMessage.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classMessage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classMessageParser-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classMessageParser-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classMessageParser.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classMessageParser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classMessagesTransaction-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classMessagesTransaction-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classMessagesTransaction.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classMessagesTransaction.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classMetadata-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classMetadata-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classMetadata.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classMetadata.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classMoneyTransaction-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classMoneyTransaction-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classMoneyTransaction.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classMoneyTransaction.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classNodeState-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classNodeState-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classNodeState.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classNodeState.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classPeersAnswerParser-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classPeersAnswerParser-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classPeersAnswerParser.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classPeersAnswerParser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classPeersAskParser-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classPeersAskParser-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classPeersAskParser.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classPeersAskParser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classProof-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classProof-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classProof.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classProof.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classProofOfHold-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classProofOfHold-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classProofOfHold.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classProofOfHold.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classProofOfImportance-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classProofOfImportance-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classProofOfImportance.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classProofOfImportance.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classProofOfMinimumAgedStake-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classProofOfMinimumAgedStake-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classProofOfMinimumAgedStake.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classProofOfMinimumAgedStake.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classProofOfStake-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classProofOfStake-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classProofOfStake.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classProofOfStake.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classProofOfStakeTime-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classProofOfStakeTime-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classProofOfStakeTime.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classProofOfStakeTime.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classProofOfUse-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classProofOfUse-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classProofOfUse.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classProofOfUse.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classProofOfWork-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classProofOfWork-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classProofOfWork.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classProofOfWork.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classProofOfWorkMetadata-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classProofOfWorkMetadata-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classProofOfWorkMetadata.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classProofOfWorkMetadata.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classReward-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classReward-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classReward.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classReward.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classRewardTransaction-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classRewardTransaction-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classRewardTransaction.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classRewardTransaction.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classRow-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classRow-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classRow.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classRow.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classSerializer-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classSerializer-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classSerializer.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classSerializer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classSignInMessage-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classSignInMessage-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classSignInMessage.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classSignInMessage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classSignInParser-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classSignInParser-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classSignInParser.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classSignInParser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classSignMessage-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classSignMessage-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classSignMessage.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classSignMessage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classSignOutMessage-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classSignOutMessage-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classSignOutMessage.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classSignOutMessage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classSignOutParser-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classSignOutParser-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classSignOutParser.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classSignOutParser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classStatusTransaction-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classStatusTransaction-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classStatusTransaction.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classStatusTransaction.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classTransaction-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classTransaction-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classTransaction.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classTransaction.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classTransactionMessage-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classTransactionMessage-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classTransactionMessage.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classTransactionMessage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classTransactionParser-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classTransactionParser-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classTransactionParser.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classTransactionParser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/database_2Row_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/database_2Row_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/functions.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/functions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/functions_func.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/functions_func.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/functions_vars.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/functions_vars.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/menudata.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/menudata.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_10.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_10.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_11.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_11.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_12.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_12.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_14.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_14.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_4.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_6.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_7.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_7.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_8.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_8.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_a.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_a.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_c.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_c.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_d.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_d.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_e.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_e.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_f.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_f.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/functions_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/functions_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/functions_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/functions_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/functions_4.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/functions_5.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/functions_6.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/functions_7.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_7.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/functions_8.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_8.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/functions_9.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_9.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/functions_a.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_a.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/functions_b.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_b.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/functions_c.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_c.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/functions_d.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_d.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/functions_e.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_e.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/functions_f.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_f.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/searchdata.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/searchdata.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/variables_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/variables_2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/classAnswerPeersMessage.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/classAnswerPeersMessage.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/classAskPeersMessage.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/classAskPeersMessage.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/classBlock.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/classBlock.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/classBlockAnswerMessage.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/classBlockAnswerMessage.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/classBlockAnswerParser.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/classBlockAnswerParser.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/classBlockAskMessage.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/classBlockAskMessage.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/classBlockAskParser.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/classBlockAskParser.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/classBlockMessage.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/classBlockMessage.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/classBlockParser.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/classBlockParser.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/classChain.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/classChain.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/classComponent.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/classComponent.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/classContentCreator.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/classContentCreator.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/classContentParser.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/classContentParser.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/classContentReader.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/classContentReader.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/classCustomRow.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/classCustomRow.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/classCustomSerializer.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/classCustomSerializer.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/classDatabase.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/classDatabase.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/classJsonCreator.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/classJsonCreator.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/classJsonParser.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/classJsonParser.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/classMerkleTree.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/classMerkleTree.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/classMessage.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/classMessage.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/classMessageParser.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/classMessageParser.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/classMessagesTransaction.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/classMessagesTransaction.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/classMetadata.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/classMetadata.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/classMoneyTransaction.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/classMoneyTransaction.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/classNodeState.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/classNodeState.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/classPeersAnswerParser.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/classPeersAnswerParser.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/classPeersAskParser.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/classPeersAskParser.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/classProof.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/classProof.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/classProofOfHold.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/classProofOfHold.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/classProofOfImportance.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/classProofOfImportance.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/classProofOfMinimumAgedStake.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/classProofOfMinimumAgedStake.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/classProofOfStake.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/classProofOfStake.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/classProofOfStakeTime.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/classProofOfStakeTime.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/classProofOfUse.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/classProofOfUse.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/classProofOfWork.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/classProofOfWork.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/classProofOfWorkMetadata.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/classProofOfWorkMetadata.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/classReward.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/classReward.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/classRewardTransaction.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/classRewardTransaction.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/classRow.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/classRow.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/classSerializer.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/classSerializer.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/classSignInMessage.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/classSignInMessage.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/classSignInParser.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/classSignInParser.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/classSignMessage.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/classSignMessage.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/classSignOutMessage.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/classSignOutMessage.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/classSignOutParser.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/classSignOutParser.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/classStatusTransaction.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/classStatusTransaction.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/classTransaction.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/classTransaction.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/classTransactionMessage.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/classTransactionMessage.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/classTransactionParser.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/classTransactionParser.tex" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -74,19 +296,70 @@
       <file leaf-file-name="NodeState.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/block_chain/chain/NodeState.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+            <state relative-caret-position="408">
+              <caret line="83" column="21" selection-start-line="83" selection-start-column="21" selection-end-line="83" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Block.h" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/block_chain/chain/block/Block.h">
+      <file leaf-file-name="NodeState.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/block_chain/chain/NodeState.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="288">
+              <caret line="114" column="34" selection-start-line="114" selection-start-column="34" selection-end-line="114" selection-end-column="34" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Block.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/block_chain/chain/block/Block.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="112" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Chain.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/block_chain/chain/Chain.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="201">
+              <caret line="115" column="13" selection-start-line="115" selection-start-column="13" selection-end-line="115" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Chain.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/block_chain/chain/Chain.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="123">
+              <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="125" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Row.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/block_chain/chain/state/Row.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="18" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MerkleTree.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/block_chain/algorithm/MerkleTree.h">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="Hash.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/block_chain/algorithm/Hash.h">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="RSA.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/block_chain/algorithm/RSA.h">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="Serializer.cpp" pinned="false" current-in-tab="false">
@@ -94,15 +367,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="164">
               <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TransactionParser.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/block_chain/kernel/parsers/TransactionParser.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="26" column="82" selection-start-line="26" selection-start-column="82" selection-end-line="26" selection-end-column="82" />
             </state>
           </provider>
         </entry>
@@ -154,8 +418,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/block_chain/kernel/parsers/BlockAnswerParser.h" />
-        <option value="$PROJECT_DIR$/block_chain/kernel/parsers/PeersAnswerParser.h" />
         <option value="$PROJECT_DIR$/block_chain/kernel/parsers/PeersAskParser.h" />
         <option value="$PROJECT_DIR$/block_chain/kernel/parsers/SignInParser.h" />
         <option value="$PROJECT_DIR$/block_chain/kernel/parsers/TransactionParser.h" />
@@ -202,9 +464,11 @@
         <option value="$PROJECT_DIR$/block_chain/chain/block/transaction/Transaction.h" />
         <option value="$PROJECT_DIR$/block_chain/chain/block/Block.cpp" />
         <option value="$PROJECT_DIR$/block_chain/utils/serialization/Serializer.cpp" />
-        <option value="$PROJECT_DIR$/block_chain/chain/NodeState.cpp" />
         <option value="$PROJECT_DIR$/block_chain/kernel/parsers/TransactionParser.cpp" />
         <option value="$PROJECT_DIR$/block_chain/chain/block/Block.h" />
+        <option value="$PROJECT_DIR$/block_chain/chain/NodeState.cpp" />
+        <option value="$PROJECT_DIR$/block_chain/chain/Chain.h" />
+        <option value="$PROJECT_DIR$/block_chain/chain/NodeState.h" />
       </list>
     </option>
   </component>
@@ -267,24 +531,6 @@
               <item name="block" type="462c0819:PsiDirectoryNode" />
               <item name="transaction" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="block_chain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="kernel" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="block_chain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="kernel" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="block_chain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="transactions" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -344,20 +590,20 @@
       <workItem from="1523934016579" duration="11782000" />
       <workItem from="1523955909272" duration="13214000" />
       <workItem from="1524027116417" duration="4000" />
-      <workItem from="1524027135407" duration="60651000" />
+      <workItem from="1524027135407" duration="64395000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="230360000" />
+    <option name="totallyTimeSpent" value="234104000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49847096" visible="true" weight="0.2161725" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49847096" visible="true" weight="0.2161725" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.32889345" />
+      <window_info anchor="bottom" id="Messages" order="12" visible="true" weight="0.32889345" />
       <window_info anchor="bottom" id="CMake" order="11" weight="0.32889345" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32991803" />
@@ -388,47 +634,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/block_chain/kernel/messages/TransactionMessage.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="37" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/block_chain/kernel/messages/BlockMessage.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/block_chain/kernel/messages/SignInMessage.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="48" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/block_chain/kernel/messages/SignOutMessage.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/block_chain/kernel/messages/SignOutMessage.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="48" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/block_chain/kernel/messages/AskPeersMessage.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -492,13 +697,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="333">
           <caret line="51" column="6" lean-forward="true" selection-start-line="51" selection-start-column="6" selection-end-line="51" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/block_chain/chain/state/Row.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="18" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -703,13 +901,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/block_chain/chain/NodeState.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/block_chain/kernel/parsers/TransactionParser.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
@@ -731,10 +922,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/block_chain/algorithm/MerkleTree.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/block_chain/algorithm/Hash.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/block_chain/algorithm/RSA.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/block_chain/chain/state/Row.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="18" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/block_chain/chain/block/Block.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="156">
+          <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="112" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/block_chain/chain/NodeState.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="83" column="21" selection-start-line="83" selection-start-column="21" selection-end-line="83" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/block_chain/chain/Chain.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="115" column="13" selection-start-line="115" selection-start-column="13" selection-end-line="115" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/block_chain/chain/Chain.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="125" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/block_chain/chain/NodeState.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="114" column="34" selection-start-line="114" selection-start-column="34" selection-end-line="114" selection-end-column="34" />
         </state>
       </provider>
     </entry>

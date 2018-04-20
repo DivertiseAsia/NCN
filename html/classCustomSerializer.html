@@ -95,10 +95,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a64b858f0c2968e888cf796b6f09eed7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3bcdbd49167109de13e03878337018a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classElementObject.html">ElementObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSerializer.html#ab3bcdbd49167109de13e03878337018a">getElement</a> (std::string str, const char *encoding) const</td></tr>
 <tr class="separator:ab3bcdbd49167109de13e03878337018a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0258559787f09d3a7bfe6bb1c41cc118"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSerializer.html#a0258559787f09d3a7bfe6bb1c41cc118">set_serializer</a> (const char *encoding, <a class="el" href="classContentCreator.html">ContentCreator</a> *creator)</td></tr>
-<tr class="separator:a0258559787f09d3a7bfe6bb1c41cc118"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf32dca6325e4a613c4c7ba48a3de244"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSerializer.html#adf32dca6325e4a613c4c7ba48a3de244">set_unserializer</a> (const char *encoding, <a class="el" href="classContentParser.html">ContentParser</a> *parser)</td></tr>
-<tr class="separator:adf32dca6325e4a613c4c7ba48a3de244"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee483f1845ca1b7f7ac4243de9902750"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSerializer.html#aee483f1845ca1b7f7ac4243de9902750">set_serializer</a> (<a class="el" href="classContentCreator.html">ContentCreator</a> *creator)</td></tr>
+<tr class="separator:aee483f1845ca1b7f7ac4243de9902750"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74ea868b820b4a8472da98c0045418fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSerializer.html#a74ea868b820b4a8472da98c0045418fa">set_unserializer</a> (<a class="el" href="classContentParser.html">ContentParser</a> *parser)</td></tr>
+<tr class="separator:a74ea868b820b4a8472da98c0045418fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -249,8 +249,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a0258559787f09d3a7bfe6bb1c41cc118"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0258559787f09d3a7bfe6bb1c41cc118">&#9670;&nbsp;</a></span>set_serializer()</h2>
+<a id="aee483f1845ca1b7f7ac4243de9902750"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee483f1845ca1b7f7ac4243de9902750">&#9670;&nbsp;</a></span>set_serializer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -261,19 +261,9 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">void Serializer::set_serializer </td>
           <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>encoding</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="classContentCreator.html">ContentCreator</a> *&#160;</td>
-          <td class="paramname"><em>creator</em>&#160;</td>
-        </tr>
-        <tr>
+          <td class="paramname"><em>creator</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -285,16 +275,15 @@ Protected Attributes</h2></td></tr>
 <p class="">Add a custom creator to the list </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classContentCreator.html">ContentCreator</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">encoding</td><td>the corresponding encoding for the creator </td></tr>
-    <tr><td class="paramname">creator</td><td>the creator object to use with the key </td></tr>
+    <tr><td class="paramname">creator</td><td>the creator object to use </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="adf32dca6325e4a613c4c7ba48a3de244"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf32dca6325e4a613c4c7ba48a3de244">&#9670;&nbsp;</a></span>set_unserializer()</h2>
+<a id="a74ea868b820b4a8472da98c0045418fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74ea868b820b4a8472da98c0045418fa">&#9670;&nbsp;</a></span>set_unserializer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -305,19 +294,9 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">void Serializer::set_unserializer </td>
           <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>encoding</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="classContentParser.html">ContentParser</a> *&#160;</td>
-          <td class="paramname"><em>parser</em>&#160;</td>
-        </tr>
-        <tr>
+          <td class="paramname"><em>parser</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -329,8 +308,7 @@ Protected Attributes</h2></td></tr>
 <p class="">Add a custom parser to the list </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classContentParser.html">ContentParser</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">encoding</td><td>the corresponding encoding for the parser </td></tr>
-    <tr><td class="paramname">creator</td><td>the creator object to use with the key </td></tr>
+    <tr><td class="paramname">creator</td><td>the parser object </td></tr>
   </table>
   </dd>
 </dl>

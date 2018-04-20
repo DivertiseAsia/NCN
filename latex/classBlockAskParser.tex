@@ -1,5 +1,9 @@
 \hypertarget{classBlockAskParser}{}\section{Block\+Ask\+Parser Class Reference}
 \label{classBlockAskParser}\index{Block\+Ask\+Parser@{Block\+Ask\+Parser}}
+
+
+{\ttfamily \#include $<$Block\+Ask\+Parser.\+h$>$}
+
 Inheritance diagram for Block\+Ask\+Parser\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,12 +13,64 @@ Inheritance diagram for Block\+Ask\+Parser\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classBlockAskParser_a32d280786db26389f58175681ba35261}\label{classBlockAskParser_a32d280786db26389f58175681ba35261}} 
-void {\bfseries operator()} (\mbox{\hyperlink{classMessage}{Message}} $\ast$m, \mbox{\hyperlink{classNode}{Node}} $\ast$node) const final
+void \mbox{\hyperlink{classBlockAskParser_a32d280786db26389f58175681ba35261}{operator()}} (\mbox{\hyperlink{classMessage}{Message}} $\ast$m, \mbox{\hyperlink{classNode}{Node}} $\ast$node) const final
 \item 
-\mbox{\Hypertarget{classBlockAskParser_add75da897c34702c33790947c9754500}\label{classBlockAskParser_add75da897c34702c33790947c9754500}} 
-int {\bfseries get\+\_\+type} () const final
+int \mbox{\hyperlink{classBlockAskParser_add75da897c34702c33790947c9754500}{get\+\_\+type}} () const final
 \end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A message parser linked to a \mbox{\hyperlink{classBlockAskMessage}{Block\+Ask\+Message}}. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classMessage}{Message}} 
+
+\mbox{\hyperlink{classBlockAskMessage}{Block\+Ask\+Message}} 
+
+\mbox{\hyperlink{classMessageParser}{Message\+Parser}}
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Mathieu Lochet 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classBlockAskParser_add75da897c34702c33790947c9754500}\label{classBlockAskParser_add75da897c34702c33790947c9754500}} 
+\index{Block\+Ask\+Parser@{Block\+Ask\+Parser}!get\+\_\+type@{get\+\_\+type}}
+\index{get\+\_\+type@{get\+\_\+type}!Block\+Ask\+Parser@{Block\+Ask\+Parser}}
+\subsubsection{\texorpdfstring{get\+\_\+type()}{get\_type()}}
+{\footnotesize\ttfamily int Block\+Ask\+Parser\+::get\+\_\+type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+Get the type of message the parser is linked to \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classMessage}{Message}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{classMessageParser_aa7c495d7b28a394e5752ca25ffff69d8}{Message\+Parser}}.
+
+\mbox{\Hypertarget{classBlockAskParser_a32d280786db26389f58175681ba35261}\label{classBlockAskParser_a32d280786db26389f58175681ba35261}} 
+\index{Block\+Ask\+Parser@{Block\+Ask\+Parser}!operator()@{operator()}}
+\index{operator()@{operator()}!Block\+Ask\+Parser@{Block\+Ask\+Parser}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily void Block\+Ask\+Parser\+::operator() (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMessage}{Message}} $\ast$}]{m,  }\item[{\mbox{\hyperlink{classNode}{Node}} $\ast$}]{node }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+Process the message \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classMessage}{Message}} 
+
+\mbox{\hyperlink{classNode}{Node}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em m} & The received message \\
+\hline
+{\em node} & The peer receiving the message \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classMessageParser_a946f3b936dc01a75d6165329b159ecfe}{Message\+Parser}}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

@@ -1,5 +1,9 @@
 \hypertarget{classBlockParser}{}\section{Block\+Parser Class Reference}
 \label{classBlockParser}\index{Block\+Parser@{Block\+Parser}}
+
+
+{\ttfamily \#include $<$Block\+Parser.\+h$>$}
+
 Inheritance diagram for Block\+Parser\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,12 +13,64 @@ Inheritance diagram for Block\+Parser\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classBlockParser_acc2f5e6a6d3a30464454cfc85ff7ba9a}\label{classBlockParser_acc2f5e6a6d3a30464454cfc85ff7ba9a}} 
-void {\bfseries operator()} (\mbox{\hyperlink{classMessage}{Message}} $\ast$m, \mbox{\hyperlink{classNode}{Node}} $\ast$node) const final
+void \mbox{\hyperlink{classBlockParser_acc2f5e6a6d3a30464454cfc85ff7ba9a}{operator()}} (\mbox{\hyperlink{classMessage}{Message}} $\ast$m, \mbox{\hyperlink{classNode}{Node}} $\ast$node) const final
 \item 
-\mbox{\Hypertarget{classBlockParser_aa7334a81b976ec6244c0992cda44a824}\label{classBlockParser_aa7334a81b976ec6244c0992cda44a824}} 
-int {\bfseries get\+\_\+type} () const final
+int \mbox{\hyperlink{classBlockParser_aa7334a81b976ec6244c0992cda44a824}{get\+\_\+type}} () const final
 \end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A message parser linked to a \mbox{\hyperlink{classBlockMessage}{Block\+Message}}. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classMessage}{Message}} 
+
+\mbox{\hyperlink{classBlockMessage}{Block\+Message}} 
+
+\mbox{\hyperlink{classMessageParser}{Message\+Parser}}
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Mathieu Lochet 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classBlockParser_aa7334a81b976ec6244c0992cda44a824}\label{classBlockParser_aa7334a81b976ec6244c0992cda44a824}} 
+\index{Block\+Parser@{Block\+Parser}!get\+\_\+type@{get\+\_\+type}}
+\index{get\+\_\+type@{get\+\_\+type}!Block\+Parser@{Block\+Parser}}
+\subsubsection{\texorpdfstring{get\+\_\+type()}{get\_type()}}
+{\footnotesize\ttfamily int Block\+Parser\+::get\+\_\+type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+Get the type of message the parser is linked to \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classMessage}{Message}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{classMessageParser_aa7c495d7b28a394e5752ca25ffff69d8}{Message\+Parser}}.
+
+\mbox{\Hypertarget{classBlockParser_acc2f5e6a6d3a30464454cfc85ff7ba9a}\label{classBlockParser_acc2f5e6a6d3a30464454cfc85ff7ba9a}} 
+\index{Block\+Parser@{Block\+Parser}!operator()@{operator()}}
+\index{operator()@{operator()}!Block\+Parser@{Block\+Parser}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily void Block\+Parser\+::operator() (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMessage}{Message}} $\ast$}]{m,  }\item[{\mbox{\hyperlink{classNode}{Node}} $\ast$}]{node }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+Process the message \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classMessage}{Message}} 
+
+\mbox{\hyperlink{classNode}{Node}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em m} & The received message \\
+\hline
+{\em node} & The peer receiving the message \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classMessageParser_a946f3b936dc01a75d6165329b159ecfe}{Message\+Parser}}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

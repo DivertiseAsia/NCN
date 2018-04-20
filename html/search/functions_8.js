@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['object',['object',['../classElementCreator.html#a9ecb3456bf27d6f9b3c9f5f8130cfe63',1,'ElementCreator']]],
-  ['operator_3d_3d',['operator==',['../classPeer.html#a9a06bb1ad4da0564617bba731099a6eb',1,'Peer']]]
+  ['hash',['hash',['../classMetadata.html#a893b85a8fe38060c72bdda20818a7334',1,'Metadata::hash()'],['../classProofOfWorkMetadata.html#af29f8f40d4b438eaa9434b51c1aff7c6',1,'ProofOfWorkMetadata::hash()']]]
 ];

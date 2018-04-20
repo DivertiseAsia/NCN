@@ -9,54 +9,266 @@ Inheritance diagram for Reward\+Transaction\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classRewardTransaction_a414728d857fcf05295a7f3f4fa024dc1}\label{classRewardTransaction_a414728d857fcf05295a7f3f4fa024dc1}} 
-\mbox{\hyperlink{classTransaction}{Transaction}} $\ast$ {\bfseries clone} () override
+\mbox{\hyperlink{classTransaction}{Transaction}} $\ast$ \mbox{\hyperlink{classRewardTransaction_a414728d857fcf05295a7f3f4fa024dc1}{clone}} () override
 \item 
-\mbox{\Hypertarget{classRewardTransaction_ad43c1d706406f40d43f433b0d0b0b510}\label{classRewardTransaction_ad43c1d706406f40d43f433b0d0b0b510}} 
-\mbox{\hyperlink{classRow}{Row}} $\ast$ {\bfseries create\+Row} () const override
+\mbox{\hyperlink{classRow}{Row}} $\ast$ \mbox{\hyperlink{classRewardTransaction_ad43c1d706406f40d43f433b0d0b0b510}{create\+Row}} () const override
 \item 
-\mbox{\Hypertarget{classReward_a1d04370c094170b0d166c341daa1644e}\label{classReward_a1d04370c094170b0d166c341daa1644e}} 
-bool {\bfseries operator()} () const final
+\mbox{\hyperlink{classElement}{Element}} $\ast$ \mbox{\hyperlink{classReward_a0ecd536148463880f9980fe415b6eb1d}{to\+Element}} () const final
 \item 
-\mbox{\Hypertarget{classReward_a0ecd536148463880f9980fe415b6eb1d}\label{classReward_a0ecd536148463880f9980fe415b6eb1d}} 
-\mbox{\hyperlink{classElement}{Element}} $\ast$ {\bfseries to\+Element} () const final
-\item 
-\mbox{\Hypertarget{classReward_ab2cd65f16c670e3e9d8cfe84a6dc56cb}\label{classReward_ab2cd65f16c670e3e9d8cfe84a6dc56cb}} 
-bool {\bfseries operator==} (\mbox{\hyperlink{classTransaction}{Transaction}} $\ast$t) const final
+bool \mbox{\hyperlink{classReward_ab2cd65f16c670e3e9d8cfe84a6dc56cb}{operator==}} (\mbox{\hyperlink{classTransaction}{Transaction}} $\ast$t) const final
 \item 
 \mbox{\Hypertarget{classReward_a0d65cd39eb260091d1f2cf19e2e71de7}\label{classReward_a0d65cd39eb260091d1f2cf19e2e71de7}} 
 std\+::string {\bfseries to\+\_\+string} () const
 \item 
-\mbox{\Hypertarget{classReward_a494c9d6e0a220729f675fd6131cfb9af}\label{classReward_a494c9d6e0a220729f675fd6131cfb9af}} 
-void {\bfseries apply\+\_\+reverse} (\mbox{\hyperlink{classRow}{Row}} $\ast$row) final
+void \mbox{\hyperlink{classReward_a494c9d6e0a220729f675fd6131cfb9af}{apply\+\_\+reverse}} (\mbox{\hyperlink{classRow}{Row}} $\ast$row) final
 \item 
-\mbox{\Hypertarget{classReward_a9c9a3219ba6b8b068f7f1cccc779b1b5}\label{classReward_a9c9a3219ba6b8b068f7f1cccc779b1b5}} 
-bool {\bfseries validate} (\mbox{\hyperlink{classRow}{Row}} $\ast$row) const final
+bool \mbox{\hyperlink{classReward_a9c9a3219ba6b8b068f7f1cccc779b1b5}{validate}} (\mbox{\hyperlink{classRow}{Row}} $\ast$row) const final
 \item 
-\mbox{\Hypertarget{classReward_a1d3d05263d54771a314927d09585968c}\label{classReward_a1d3d05263d54771a314927d09585968c}} 
-int {\bfseries get\+\_\+type} () const final
+int \mbox{\hyperlink{classReward_a1d3d05263d54771a314927d09585968c}{get\+\_\+type}} () const final
 \item 
-\mbox{\Hypertarget{classReward_a95e98fc9dbbc9da47cee243adc1932d2}\label{classReward_a95e98fc9dbbc9da47cee243adc1932d2}} 
-std\+::string {\bfseries description} () const final
+std\+::string \mbox{\hyperlink{classReward_a95e98fc9dbbc9da47cee243adc1932d2}{description}} () const final
 \item 
-\mbox{\Hypertarget{classReward_a30a40e2eefd0aea969fab46d1e22d145}\label{classReward_a30a40e2eefd0aea969fab46d1e22d145}} 
-void {\bfseries fill\+\_\+data} () final
+void \mbox{\hyperlink{classReward_a30a40e2eefd0aea969fab46d1e22d145}{fill\+\_\+data}} () final
 \item 
-\mbox{\Hypertarget{classReward_aae55ec2aa2aa31cc365c80cb42be9ab5}\label{classReward_aae55ec2aa2aa31cc365c80cb42be9ab5}} 
-std\+::vector$<$ std\+::string $>$ {\bfseries apply} (\mbox{\hyperlink{classRow}{Row}} $\ast$row) override
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classReward_aae55ec2aa2aa31cc365c80cb42be9ab5}{apply}} (\mbox{\hyperlink{classRow}{Row}} $\ast$row) override
 \item 
-\mbox{\Hypertarget{classTransaction_a1f0df166c34d6a38a991544cf98c0356}\label{classTransaction_a1f0df166c34d6a38a991544cf98c0356}} 
-\mbox{\hyperlink{classHash}{Hash}} $\ast$ {\bfseries \+\_\+\+\_\+hash\+\_\+\+\_\+} (const \mbox{\hyperlink{classSerializer}{Serializer}} $\ast$serializer, const char $\ast$encoding) const
+\mbox{\hyperlink{classHash}{Hash}} $\ast$ \mbox{\hyperlink{classTransaction_a1f0df166c34d6a38a991544cf98c0356}{\+\_\+\+\_\+hash\+\_\+\+\_\+}} (const \mbox{\hyperlink{classSerializer}{Serializer}} $\ast$serializer, const char $\ast$encoding) const
 \item 
-\mbox{\Hypertarget{classComponent_a28212595f8ee85fe009bd233bc99b2fc}\label{classComponent_a28212595f8ee85fe009bd233bc99b2fc}} 
-void {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (\mbox{\hyperlink{classElementObject}{Element\+Object}} $\ast$element, const \mbox{\hyperlink{classSerializer}{Serializer}} $\ast$s, const char $\ast$encoding)
+void \mbox{\hyperlink{classComponent_a28212595f8ee85fe009bd233bc99b2fc}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (\mbox{\hyperlink{classElementObject}{Element\+Object}} $\ast$element, const \mbox{\hyperlink{classSerializer}{Serializer}} $\ast$s, const char $\ast$encoding)
 \end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classReward_a6d16e21b60b7f11c7aaf0098a53118a2}\label{classReward_a6d16e21b60b7f11c7aaf0098a53118a2}} 
-void {\bfseries from\+Element} (\mbox{\hyperlink{classElementObject}{Element\+Object}} $\ast$, const \mbox{\hyperlink{classSerializer}{Serializer}} $\ast$, const char $\ast$encoding) final
+void \mbox{\hyperlink{classReward_a6d16e21b60b7f11c7aaf0098a53118a2}{from\+Element}} (\mbox{\hyperlink{classElementObject}{Element\+Object}} $\ast$, const \mbox{\hyperlink{classSerializer}{Serializer}} $\ast$, const char $\ast$encoding) final
 \end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classTransaction_a1f0df166c34d6a38a991544cf98c0356}\label{classTransaction_a1f0df166c34d6a38a991544cf98c0356}} 
+\index{Reward\+Transaction@{Reward\+Transaction}!\+\_\+\+\_\+hash\+\_\+\+\_\+@{\+\_\+\+\_\+hash\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+hash\+\_\+\+\_\+@{\+\_\+\+\_\+hash\+\_\+\+\_\+}!Reward\+Transaction@{Reward\+Transaction}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+hash\+\_\+\+\_\+()}{\_\_hash\_\_()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHash}{Hash}} $\ast$ Transaction\+::\+\_\+\+\_\+hash\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSerializer}{Serializer}} $\ast$}]{serializer,  }\item[{const char $\ast$}]{encoding }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inherited]}}
+
+Generates the hash for the transaction \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classHash}{Hash}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em serializer} & The serializer \\
+\hline
+{\em encoding} & The encoding that has been used to create the \mbox{\hyperlink{classElement}{Element}} representation of the object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the \mbox{\hyperlink{classHash}{Hash}} of the \mbox{\hyperlink{classTransaction}{Transaction}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classComponent_a28212595f8ee85fe009bd233bc99b2fc}\label{classComponent_a28212595f8ee85fe009bd233bc99b2fc}} 
+\index{Reward\+Transaction@{Reward\+Transaction}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!Reward\+Transaction@{Reward\+Transaction}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily void Component\+::\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classElementObject}{Element\+Object}} $\ast$}]{element,  }\item[{const \mbox{\hyperlink{classSerializer}{Serializer}} $\ast$}]{s,  }\item[{const char $\ast$}]{encoding }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+The function called by the serializer to initialize the object if it is empty \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classElementObject}{Element\+Object}} 
+
+\mbox{\hyperlink{classSerializer}{Serializer}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em element} & The \mbox{\hyperlink{classElement}{Element}} representation of the object \\
+\hline
+{\em s} & The serializer (Can be used if serialization of some elements is needed) \\
+\hline
+{\em encoding} & The encoding that has been used to create the \mbox{\hyperlink{classElement}{Element}} representation of the object (Can be used if serialization of some elements is needed) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classReward_aae55ec2aa2aa31cc365c80cb42be9ab5}\label{classReward_aae55ec2aa2aa31cc365c80cb42be9ab5}} 
+\index{Reward\+Transaction@{Reward\+Transaction}!apply@{apply}}
+\index{apply@{apply}!Reward\+Transaction@{Reward\+Transaction}}
+\subsubsection{\texorpdfstring{apply()}{apply()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Reward\+::apply (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRow}{Row}} $\ast$}]{row }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+Apply the transaction to a row \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classRow}{Row}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em row} & The row to update \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The list of the peers that have to be updated by the reverse transaction 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classTransaction_a6ea269280c8cc641878f6e5775f270ca}{Transaction}}.
+
+\mbox{\Hypertarget{classReward_a494c9d6e0a220729f675fd6131cfb9af}\label{classReward_a494c9d6e0a220729f675fd6131cfb9af}} 
+\index{Reward\+Transaction@{Reward\+Transaction}!apply\+\_\+reverse@{apply\+\_\+reverse}}
+\index{apply\+\_\+reverse@{apply\+\_\+reverse}!Reward\+Transaction@{Reward\+Transaction}}
+\subsubsection{\texorpdfstring{apply\+\_\+reverse()}{apply\_reverse()}}
+{\footnotesize\ttfamily void Reward\+::apply\+\_\+reverse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRow}{Row}} $\ast$}]{row }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+Apply the reverse transaction than apply \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classRow}{Row}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em row} & The row to update \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classTransaction_a1ef3b245f37c217f50f8f76fceebca4a}{Transaction}}.
+
+\mbox{\Hypertarget{classRewardTransaction_a414728d857fcf05295a7f3f4fa024dc1}\label{classRewardTransaction_a414728d857fcf05295a7f3f4fa024dc1}} 
+\index{Reward\+Transaction@{Reward\+Transaction}!clone@{clone}}
+\index{clone@{clone}!Reward\+Transaction@{Reward\+Transaction}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTransaction}{Transaction}} $\ast$ Reward\+Transaction\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Creates an empty transaction from the same class
+
+\begin{DoxyReturn}{Returns}
+the newly created \mbox{\hyperlink{classTransaction}{Transaction}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classTransaction_ad6ee9c5e4067b2f5c950c6aad131b3e4}{Transaction}}.
+
+\mbox{\Hypertarget{classRewardTransaction_ad43c1d706406f40d43f433b0d0b0b510}\label{classRewardTransaction_ad43c1d706406f40d43f433b0d0b0b510}} 
+\index{Reward\+Transaction@{Reward\+Transaction}!create\+Row@{create\+Row}}
+\index{create\+Row@{create\+Row}!Reward\+Transaction@{Reward\+Transaction}}
+\subsubsection{\texorpdfstring{create\+Row()}{createRow()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRow}{Row}} $\ast$ Reward\+Transaction\+::create\+Row (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Creates a new row \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classRow}{Row}}
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+A newly created \mbox{\hyperlink{classRow}{Row}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classTransaction_aa80b621537fe480dcb4444bba703abe5}{Transaction}}.
+
+\mbox{\Hypertarget{classReward_a95e98fc9dbbc9da47cee243adc1932d2}\label{classReward_a95e98fc9dbbc9da47cee243adc1932d2}} 
+\index{Reward\+Transaction@{Reward\+Transaction}!description@{description}}
+\index{description@{description}!Reward\+Transaction@{Reward\+Transaction}}
+\subsubsection{\texorpdfstring{description()}{description()}}
+{\footnotesize\ttfamily std\+::string Reward\+::description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+Get the description of the transaction
+
+\begin{DoxyReturn}{Returns}
+The description of the transaction 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classTransaction_ad27fb61fcd91863c57ba96a7159b4e8a}{Transaction}}.
+
+\mbox{\Hypertarget{classReward_a30a40e2eefd0aea969fab46d1e22d145}\label{classReward_a30a40e2eefd0aea969fab46d1e22d145}} 
+\index{Reward\+Transaction@{Reward\+Transaction}!fill\+\_\+data@{fill\+\_\+data}}
+\index{fill\+\_\+data@{fill\+\_\+data}!Reward\+Transaction@{Reward\+Transaction}}
+\subsubsection{\texorpdfstring{fill\+\_\+data()}{fill\_data()}}
+{\footnotesize\ttfamily void Reward\+::fill\+\_\+data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+Ask the user\textquotesingle{}s input to fill the transaction 
+
+Implements \mbox{\hyperlink{classTransaction_a73b16e3d7e4c24e5b4da203740691e65}{Transaction}}.
+
+\mbox{\Hypertarget{classReward_a6d16e21b60b7f11c7aaf0098a53118a2}\label{classReward_a6d16e21b60b7f11c7aaf0098a53118a2}} 
+\index{Reward\+Transaction@{Reward\+Transaction}!from\+Element@{from\+Element}}
+\index{from\+Element@{from\+Element}!Reward\+Transaction@{Reward\+Transaction}}
+\subsubsection{\texorpdfstring{from\+Element()}{fromElement()}}
+{\footnotesize\ttfamily void Reward\+::from\+Element (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classElementObject}{Element\+Object}} $\ast$}]{,  }\item[{const \mbox{\hyperlink{classSerializer}{Serializer}} $\ast$}]{,  }\item[{const char $\ast$}]{encoding }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [protected]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+The function used to build the object from its element representation. the object if it is empty \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classElementObject}{Element\+Object}} 
+
+\mbox{\hyperlink{classSerializer}{Serializer}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em element} & The \mbox{\hyperlink{classElement}{Element}} representation of the object \\
+\hline
+{\em s} & The serializer (Can be used if serialization of some elements is needed) \\
+\hline
+{\em encoding} & The encoding that has been used to create the \mbox{\hyperlink{classElement}{Element}} representation of the object (Can be used if serialization of some elements is needed) \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classComponent_a2ded18881226d0077dc393e0e9304bb1}{Component}}.
+
+\mbox{\Hypertarget{classReward_a1d3d05263d54771a314927d09585968c}\label{classReward_a1d3d05263d54771a314927d09585968c}} 
+\index{Reward\+Transaction@{Reward\+Transaction}!get\+\_\+type@{get\+\_\+type}}
+\index{get\+\_\+type@{get\+\_\+type}!Reward\+Transaction@{Reward\+Transaction}}
+\subsubsection{\texorpdfstring{get\+\_\+type()}{get\_type()}}
+{\footnotesize\ttfamily int Reward\+::get\+\_\+type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+Get the type of the transaction
+
+\begin{DoxyReturn}{Returns}
+The type of the transaction 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classTransaction_a4cf9b81505b83a889bab80229f455589}{Transaction}}.
+
+\mbox{\Hypertarget{classReward_ab2cd65f16c670e3e9d8cfe84a6dc56cb}\label{classReward_ab2cd65f16c670e3e9d8cfe84a6dc56cb}} 
+\index{Reward\+Transaction@{Reward\+Transaction}!operator==@{operator==}}
+\index{operator==@{operator==}!Reward\+Transaction@{Reward\+Transaction}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Reward\+::operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTransaction}{Transaction}} $\ast$}]{s }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+Check if two transactions are the same
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \mbox{\hyperlink{classTransaction}{Transaction}} to compare to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the transactions are the same, false otherwise 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classTransaction_a9a17c97fdcda6791484ad6d07b34470e}{Transaction}}.
+
+\mbox{\Hypertarget{classReward_a0ecd536148463880f9980fe415b6eb1d}\label{classReward_a0ecd536148463880f9980fe415b6eb1d}} 
+\index{Reward\+Transaction@{Reward\+Transaction}!to\+Element@{to\+Element}}
+\index{to\+Element@{to\+Element}!Reward\+Transaction@{Reward\+Transaction}}
+\subsubsection{\texorpdfstring{to\+Element()}{toElement()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classElement}{Element}} $\ast$ Reward\+::to\+Element (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+The method used by the serializer to transform an object into an \mbox{\hyperlink{classElement}{Element}} representation. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classElement}{Element}}
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+The \mbox{\hyperlink{classElement}{Element}} representation of the object 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classComponent_a3e63d8c993e417a4af3f56d65ebfc7ea}{Component}}.
+
+\mbox{\Hypertarget{classReward_a9c9a3219ba6b8b068f7f1cccc779b1b5}\label{classReward_a9c9a3219ba6b8b068f7f1cccc779b1b5}} 
+\index{Reward\+Transaction@{Reward\+Transaction}!validate@{validate}}
+\index{validate@{validate}!Reward\+Transaction@{Reward\+Transaction}}
+\subsubsection{\texorpdfstring{validate()}{validate()}}
+{\footnotesize\ttfamily bool Reward\+::validate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRow}{Row}} $\ast$}]{row }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+Check if the transaction is valid compared to the current state of the row \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classRow}{Row}}
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+true if the transaction is validm false otherwise 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classTransaction_a638518143f0defde1c3c73e33db1b7f1}{Transaction}}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

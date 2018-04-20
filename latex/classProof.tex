@@ -1,5 +1,9 @@
 \hypertarget{classProof}{}\section{Proof Class Reference}
 \label{classProof}\index{Proof@{Proof}}
+
+
+{\ttfamily \#include $<$Proof.\+h$>$}
+
 Inheritance diagram for Proof\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,20 +13,16 @@ Inheritance diagram for Proof\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classProof_a8a43fcb7c997da54d627e0f257adb86f}\label{classProof_a8a43fcb7c997da54d627e0f257adb86f}} 
-virtual void {\bfseries run} (\mbox{\hyperlink{classBlock}{Block}} $\ast$block, std\+::string key)=0
+virtual void \mbox{\hyperlink{classProof_a8a43fcb7c997da54d627e0f257adb86f}{run}} (\mbox{\hyperlink{classBlock}{Block}} $\ast$block, std\+::string key)=0
 \item 
-\mbox{\Hypertarget{classProof_ad52fee058ea617a186133cb6a008fe6e}\label{classProof_ad52fee058ea617a186133cb6a008fe6e}} 
-virtual bool {\bfseries accept} (\mbox{\hyperlink{classBlock}{Block}} $\ast$block, \mbox{\hyperlink{classMessage}{Message}} $\ast$)=0
+virtual bool \mbox{\hyperlink{classProof_ad52fee058ea617a186133cb6a008fe6e}{accept}} (\mbox{\hyperlink{classBlock}{Block}} $\ast$block, \mbox{\hyperlink{classMessage}{Message}} $\ast$)=0
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classProof_a93208e5161d25f8533849ac2dac8d6b8}\label{classProof_a93208e5161d25f8533849ac2dac8d6b8}} 
-static void {\bfseries add\+\_\+proof} (int id, std\+::function$<$ \mbox{\hyperlink{classProof}{Proof}} $\ast$()$>$)
+static void \mbox{\hyperlink{classProof_a71874539fdbcc93c15594b889c95225b}{add\+\_\+proof}} (int id, std\+::function$<$ \mbox{\hyperlink{classProof}{Proof}} $\ast$()$>$ proof)
 \item 
-\mbox{\Hypertarget{classProof_a267f0f4587babb59884b5f280e2d54c8}\label{classProof_a267f0f4587babb59884b5f280e2d54c8}} 
-static \mbox{\hyperlink{classProof}{Proof}} $\ast$ {\bfseries generate} (int type)
+static \mbox{\hyperlink{classProof}{Proof}} $\ast$ \mbox{\hyperlink{classProof_a267f0f4587babb59884b5f280e2d54c8}{generate}} (int type)
 \end{DoxyCompactItemize}
 \subsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
@@ -48,6 +48,89 @@ static const int {\bfseries S\+T\+A\+K\+E\+\_\+\+T\+I\+ME} = 5
 \mbox{\Hypertarget{classProof_a3f6898fa1d652d32182c3c387c8e979c}\label{classProof_a3f6898fa1d652d32182c3c387c8e979c}} 
 static const int {\bfseries U\+SE} = 6
 \end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An abstract proof and a proof factory. A proof is used to avoid falsification of the block chain Some proofs are provided and a user can create its own proofs and add them into the factory.
+
+\begin{DoxyAuthor}{Author}
+Mathieu Lochet 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classProof_ad52fee058ea617a186133cb6a008fe6e}\label{classProof_ad52fee058ea617a186133cb6a008fe6e}} 
+\index{Proof@{Proof}!accept@{accept}}
+\index{accept@{accept}!Proof@{Proof}}
+\subsubsection{\texorpdfstring{accept()}{accept()}}
+{\footnotesize\ttfamily virtual bool Proof\+::accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBlock}{Block}} $\ast$}]{block,  }\item[{\mbox{\hyperlink{classMessage}{Message}} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Get a proof result and check if the result is correct Needs to be implemented
+
+
+\begin{DoxyParams}{Parameters}
+{\em block} & The block to check the proof \\
+\hline
+{\em The} & received message \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classProofOfHold_a2ca4ea3c1791c24d75e466ed0a9b6aaa}{Proof\+Of\+Hold}}, \mbox{\hyperlink{classProofOfImportance_ab40da85ecfe7b87f21c63641d255f94e}{Proof\+Of\+Importance}}, \mbox{\hyperlink{classProofOfMinimumAgedStake_add68213606b37c50390cf1a0dd16c17b}{Proof\+Of\+Minimum\+Aged\+Stake}}, \mbox{\hyperlink{classProofOfStake_a7c5939106f9dcb8bc9612a5974a43c88}{Proof\+Of\+Stake}}, \mbox{\hyperlink{classProofOfStakeTime_a7a681ba9510b3b11cd2269a69e64a66c}{Proof\+Of\+Stake\+Time}}, \mbox{\hyperlink{classProofOfUse_aad52f30c49109a8714181de0aaab8789}{Proof\+Of\+Use}}, and \mbox{\hyperlink{classProofOfWork_abe3dba92dad383eec07f70acccaa802d}{Proof\+Of\+Work}}.
+
+\mbox{\Hypertarget{classProof_a71874539fdbcc93c15594b889c95225b}\label{classProof_a71874539fdbcc93c15594b889c95225b}} 
+\index{Proof@{Proof}!add\+\_\+proof@{add\+\_\+proof}}
+\index{add\+\_\+proof@{add\+\_\+proof}!Proof@{Proof}}
+\subsubsection{\texorpdfstring{add\+\_\+proof()}{add\_proof()}}
+{\footnotesize\ttfamily void Proof\+::add\+\_\+proof (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{std\+::function$<$ \mbox{\hyperlink{classProof}{Proof}} $\ast$()$>$}]{proof }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Allows the user to add its own proof into the system He the proof id is required
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The proof id \\
+\hline
+{\em proof} & The lambda expression that creates a proof \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classProof_a267f0f4587babb59884b5f280e2d54c8}\label{classProof_a267f0f4587babb59884b5f280e2d54c8}} 
+\index{Proof@{Proof}!generate@{generate}}
+\index{generate@{generate}!Proof@{Proof}}
+\subsubsection{\texorpdfstring{generate()}{generate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classProof}{Proof}} $\ast$ Proof\+::generate (\begin{DoxyParamCaption}\item[{int}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Generates a proof for a given id
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The proof id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The created proof object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classProof_a8a43fcb7c997da54d627e0f257adb86f}\label{classProof_a8a43fcb7c997da54d627e0f257adb86f}} 
+\index{Proof@{Proof}!run@{run}}
+\index{run@{run}!Proof@{Proof}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily virtual void Proof\+::run (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBlock}{Block}} $\ast$}]{block,  }\item[{std\+::string}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Run a proof on a block to validate it Needs to be implemented
+
+
+\begin{DoxyParams}{Parameters}
+{\em block} & The block to run the proof on \\
+\hline
+{\em The} & user\textquotesingle{}s key to use in the process \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classProofOfHold_a56f59ff740518726db1667b39ae9451e}{Proof\+Of\+Hold}}, \mbox{\hyperlink{classProofOfImportance_afb53c930bf8afc5371ae91da04927415}{Proof\+Of\+Importance}}, \mbox{\hyperlink{classProofOfMinimumAgedStake_aa850369d6f8ebf7fa833821a43049147}{Proof\+Of\+Minimum\+Aged\+Stake}}, \mbox{\hyperlink{classProofOfStake_aed9baba95df4aba7e8bd0a3e70c44945}{Proof\+Of\+Stake}}, \mbox{\hyperlink{classProofOfStakeTime_ad4a49d7ccee740f307c03a13d314d3fb}{Proof\+Of\+Stake\+Time}}, \mbox{\hyperlink{classProofOfUse_a0673ae91f48264a85cb45e55d88e16b7}{Proof\+Of\+Use}}, and \mbox{\hyperlink{classProofOfWork_a80cbd012ee3f9e92a8497efac84bf689}{Proof\+Of\+Work}}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

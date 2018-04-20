@@ -97,6 +97,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7d4fad0f0947a74ca158dc1922c97355"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07a4f2b10547d5f2251bc1f7b09d02c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJsonParser.html#a07a4f2b10547d5f2251bc1f7b09d02c1">parseContent</a> (std::string &amp;text, <a class="el" href="classElementDouble.html">ElementDouble</a> *e) const override</td></tr>
 <tr class="separator:a07a4f2b10547d5f2251bc1f7b09d02c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a449d410175c5055eb171f00105305ec5"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJsonParser.html#a449d410175c5055eb171f00105305ec5">get_encoding</a> () const override</td></tr>
+<tr class="separator:a449d410175c5055eb171f00105305ec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af21abdfb0ceac731e44d897a0285f5d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJsonParser.html#af21abdfb0ceac731e44d897a0285f5d4">JsonParser</a> ()</td></tr>
 <tr class="separator:af21abdfb0ceac731e44d897a0285f5d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c0393b54c37f9ff30b6bb59f0ba92ce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJsonParser.html#a7c0393b54c37f9ff30b6bb59f0ba92ce">~JsonParser</a> ()</td></tr>
@@ -154,6 +156,35 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a449d410175c5055eb171f00105305ec5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a449d410175c5055eb171f00105305ec5">&#9670;&nbsp;</a></span>get_encoding()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * JsonParser::get_encoding </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p class="">Get the encoding corresponding to the reader</p>
+<dl class="section return"><dt>Returns</dt><dd>The corresponding encoding for serialization </dd></dl>
+
+<p>Implements <a class="el" href="classContentReader.html#a1495a4402c4fac02d8cd2542b61c6eed">ContentReader</a>.</p>
+
+</div>
+</div>
 <a id="a3ec3a9fcc8a63f987b4749d60b0568df"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3ec3a9fcc8a63f987b4749d60b0568df">&#9670;&nbsp;</a></span>parse()</h2>
 
@@ -187,7 +218,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p class="">The entry point of the parser: it reads the text and generate the first element according to rules. Calls the corresponding methods for recursive parsing. (opposite works as well) </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classJsonParser.html#ac80cf84ff2565f4c1f3a0f5ddb559c96">parseContent</a> </dd>
+<p class="">The entry point of the parser: it reads the text and generates the first element according to rules. Calls the corresponding methods for recursive parsing. (opposite works as well) </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classJsonParser.html#ac80cf84ff2565f4c1f3a0f5ddb559c96">parseContent</a> </dd>
 <dd>
 <a class="el" href="classElement.html">Element</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>

@@ -69,21 +69,19 @@ $(function() {
 <div class="title">Database Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="Database_8h_source.html">Database.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab00a6ec54927a6a80f5c09a926ee4611"><td class="memItemLeft" align="right" valign="top"><a id="ab00a6ec54927a6a80f5c09a926ee4611"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Database</b> (<a class="el" href="classReward.html">Reward</a> *r)</td></tr>
+<tr class="memitem:ab00a6ec54927a6a80f5c09a926ee4611"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDatabase.html#ab00a6ec54927a6a80f5c09a926ee4611">Database</a> (<a class="el" href="classReward.html">Reward</a> *r)</td></tr>
 <tr class="separator:ab00a6ec54927a6a80f5c09a926ee4611"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53798837997415704f1ce331aa93eda9"><td class="memItemLeft" align="right" valign="top"><a id="a53798837997415704f1ce331aa93eda9"></a>
-<a class="el" href="classDatabase.html">Database</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classDatabase.html">Database</a> const &amp;d)</td></tr>
-<tr class="separator:a53798837997415704f1ce331aa93eda9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a194c4d15c58a98ce7156afd33e64ae16"><td class="memItemLeft" align="right" valign="top"><a id="a194c4d15c58a98ce7156afd33e64ae16"></a>
-<a class="el" href="classRow.html">Row</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>get</b> (std::string key)</td></tr>
-<tr class="separator:a194c4d15c58a98ce7156afd33e64ae16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e8f5125a0db0c76d35bd4a36894e203"><td class="memItemLeft" align="right" valign="top"><a id="a3e8f5125a0db0c76d35bd4a36894e203"></a>
-<a class="el" href="classRow.html">Row</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>reward</b> (std::string winner)</td></tr>
-<tr class="separator:a3e8f5125a0db0c76d35bd4a36894e203"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab366035be8ad9836454da24f4a5e27ed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDatabase.html#ab366035be8ad9836454da24f4a5e27ed">Database</a> (<a class="el" href="classDatabase.html">Database</a> const &amp;d)</td></tr>
+<tr class="separator:ab366035be8ad9836454da24f4a5e27ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a748f2ce7df893cdb61d8418be907ac72"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRow.html">Row</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDatabase.html#a748f2ce7df893cdb61d8418be907ac72">get</a> (std::string key)</td></tr>
+<tr class="separator:a748f2ce7df893cdb61d8418be907ac72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bdce9dce60e4fdb4f04c7baa023c0b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRow.html">Row</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDatabase.html#a5bdce9dce60e4fdb4f04c7baa023c0b8">reward</a> (std::string winner)</td></tr>
+<tr class="separator:a5bdce9dce60e4fdb4f04c7baa023c0b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -91,8 +89,125 @@ Friends</h2></td></tr>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>Chain</b></td></tr>
 <tr class="separator:a65813570c30a3e0656fa523793ff1b86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p class="">A database object is filled by a list of rows It needs to be easily updated and duplicated </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classRow.html">Row</a></dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Mathieu Lochet </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>2 </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ab00a6ec54927a6a80f5c09a926ee4611"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab00a6ec54927a6a80f5c09a926ee4611">&#9670;&nbsp;</a></span>Database() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Database::Database </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classReward.html">Reward</a> *&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p class="">A constructor that accepts a reward transaction </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classReward.html">Reward</a></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">r</td><td>The reward transaction that will be used in the reward method </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab366035be8ad9836454da24f4a5e27ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab366035be8ad9836454da24f4a5e27ed">&#9670;&nbsp;</a></span>Database() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Database::Database </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDatabase.html">Database</a> const &amp;&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p class="">A constructor to clone a database with different pointers</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">d</td><td>The database to be duplicated </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a748f2ce7df893cdb61d8418be907ac72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a748f2ce7df893cdb61d8418be907ac72">&#9670;&nbsp;</a></span>get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classRow.html">Row</a> * Database::get </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p class="">Get the row corresponding to the user's key</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The users key </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The user's row representing its datas </dd></dl>
+
+</div>
+</div>
+<a id="a5bdce9dce60e4fdb4f04c7baa023c0b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bdce9dce60e4fdb4f04c7baa023c0b8">&#9670;&nbsp;</a></span>reward()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classRow.html">Row</a> * Database::reward </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>winner</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p class="">Get the row corresponding to the user's key. If the row is not found, it will create a new one</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">winner</td><td>The users key </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The user's row representing its datas </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>block_chain/chain/state/<a class="el" href="Database_8h_source.html">Database.h</a></li>
+<li>block_chain/chain/state/Database.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

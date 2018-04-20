@@ -91,8 +91,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a361a5f238249d4893b000560dcabacde"><td class="memItemLeft" align="right" valign="top"><a id="a361a5f238249d4893b000560dcabacde"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>MerkleTree</b> (<a class="el" href="classMerkleTree.html">MerkleTree</a> *l, <a class="el" href="classMerkleTree.html">MerkleTree</a> *r)</td></tr>
 <tr class="separator:a361a5f238249d4893b000560dcabacde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e72819c6cbc49ed8ce092f464711a5f"><td class="memItemLeft" align="right" valign="top"><a id="a4e72819c6cbc49ed8ce092f464711a5f"></a>
-<a class="el" href="classElement.html">Element</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>toElement</b> () const override</td></tr>
+<tr class="memitem:a4e72819c6cbc49ed8ce092f464711a5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classElement.html">Element</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMerkleTree.html#a4e72819c6cbc49ed8ce092f464711a5f">toElement</a> () const override</td></tr>
 <tr class="separator:a4e72819c6cbc49ed8ce092f464711a5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74d741770514ec323521ec6d79d250f2"><td class="memItemLeft" align="right" valign="top"><a id="a74d741770514ec323521ec6d79d250f2"></a>
 <a class="el" href="classHash.html">Hash</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>get_hash</b> (int i) const</td></tr>
@@ -103,14 +102,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () const</td>
 <tr class="memitem:a543fdfd1f1c4ded332cdeae2cd788aac"><td class="memItemLeft" align="right" valign="top"><a id="a543fdfd1f1c4ded332cdeae2cd788aac"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>generate_tree</b> (std::vector&lt; <a class="el" href="classTransaction.html">Transaction</a> *&gt; transactions, int begin, int end, const <a class="el" href="classSerializer.html">Serializer</a> *serializer, const char *encoding)</td></tr>
 <tr class="separator:a543fdfd1f1c4ded332cdeae2cd788aac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28212595f8ee85fe009bd233bc99b2fc"><td class="memItemLeft" align="right" valign="top"><a id="a28212595f8ee85fe009bd233bc99b2fc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>__init__</b> (<a class="el" href="classElementObject.html">ElementObject</a> *element, const <a class="el" href="classSerializer.html">Serializer</a> *s, const char *encoding)</td></tr>
+<tr class="memitem:a28212595f8ee85fe009bd233bc99b2fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponent.html#a28212595f8ee85fe009bd233bc99b2fc">__init__</a> (<a class="el" href="classElementObject.html">ElementObject</a> *element, const <a class="el" href="classSerializer.html">Serializer</a> *s, const char *encoding)</td></tr>
 <tr class="separator:a28212595f8ee85fe009bd233bc99b2fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a083ad348bfd770f2400f190112ff39a3"><td class="memItemLeft" align="right" valign="top"><a id="a083ad348bfd770f2400f190112ff39a3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>fromElement</b> (<a class="el" href="classElementObject.html">ElementObject</a> *, const <a class="el" href="classSerializer.html">Serializer</a> *, const char *encoding) override</td></tr>
+<tr class="memitem:a083ad348bfd770f2400f190112ff39a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMerkleTree.html#a083ad348bfd770f2400f190112ff39a3">fromElement</a> (<a class="el" href="classElementObject.html">ElementObject</a> *, const <a class="el" href="classSerializer.html">Serializer</a> *, const char *encoding) override</td></tr>
 <tr class="separator:a083ad348bfd770f2400f190112ff39a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
@@ -131,6 +128,144 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>TransactionParser</b
 class&#160;</td><td class="memItemRight" valign="bottom"><b>BlockMessage</b></td></tr>
 <tr class="separator:a9acb1bbbd9c9589da9453187cfb6a794"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a28212595f8ee85fe009bd233bc99b2fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28212595f8ee85fe009bd233bc99b2fc">&#9670;&nbsp;</a></span>__init__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Component::__init__ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classElementObject.html">ElementObject</a> *&#160;</td>
+          <td class="paramname"><em>element</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classSerializer.html">Serializer</a> *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>encoding</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p class="">The function called by the serializer to initialize the object if it is empty </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classElementObject.html">ElementObject</a> </dd>
+<dd>
+<a class="el" href="classSerializer.html">Serializer</a></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">element</td><td>The <a class="el" href="classElement.html">Element</a> representation of the object </td></tr>
+    <tr><td class="paramname">s</td><td>The serializer (Can be used if serialization of some elements is needed) </td></tr>
+    <tr><td class="paramname">encoding</td><td>The encoding that has been used to create the <a class="el" href="classElement.html">Element</a> representation of the object (Can be used if serialization of some elements is needed) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a083ad348bfd770f2400f190112ff39a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a083ad348bfd770f2400f190112ff39a3">&#9670;&nbsp;</a></span>fromElement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MerkleTree::fromElement </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classElementObject.html">ElementObject</a> *&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classSerializer.html">Serializer</a> *&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>encoding</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p class="">The function used to build the object from its element representation. the object if it is empty </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classElementObject.html">ElementObject</a> </dd>
+<dd>
+<a class="el" href="classSerializer.html">Serializer</a></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">element</td><td>The <a class="el" href="classElement.html">Element</a> representation of the object </td></tr>
+    <tr><td class="paramname">s</td><td>The serializer (Can be used if serialization of some elements is needed) </td></tr>
+    <tr><td class="paramname">encoding</td><td>The encoding that has been used to create the <a class="el" href="classElement.html">Element</a> representation of the object (Can be used if serialization of some elements is needed) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classComponent.html#a2ded18881226d0077dc393e0e9304bb1">Component</a>.</p>
+
+</div>
+</div>
+<a id="a4e72819c6cbc49ed8ce092f464711a5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e72819c6cbc49ed8ce092f464711a5f">&#9670;&nbsp;</a></span>toElement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classElement.html">Element</a> * MerkleTree::toElement </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p class="">The method used by the serializer to transform an object into an <a class="el" href="classElement.html">Element</a> representation. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classElement.html">Element</a></dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="classElement.html">Element</a> representation of the object </dd></dl>
+
+<p>Implements <a class="el" href="classComponent.html#a3e63d8c993e417a4af3f56d65ebfc7ea">Component</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>block_chain/algorithm/<a class="el" href="MerkleTree_8h_source.html">MerkleTree.h</a></li>
 <li>block_chain/algorithm/MerkleTree.cpp</li>

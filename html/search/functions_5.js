@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['fromhexa',['fromHexa',['../classEncoding.html#ada74f7af3be5feeebafe09ede785805a',1,'Encoding']]]
+  ['end',['end',['../classFactory.html#a8b583450f222b426ba2212365f49638f',1,'Factory']]]
 ];

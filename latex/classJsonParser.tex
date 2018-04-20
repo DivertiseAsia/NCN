@@ -27,6 +27,8 @@ void \mbox{\hyperlink{classJsonParser_a7d4fad0f0947a74ca158dc1922c97355}{parse\+
 \item 
 void \mbox{\hyperlink{classJsonParser_a07a4f2b10547d5f2251bc1f7b09d02c1}{parse\+Content}} (std\+::string \&text, \mbox{\hyperlink{classElementDouble}{Element\+Double}} $\ast$e) const override
 \item 
+const char $\ast$ \mbox{\hyperlink{classJsonParser_a449d410175c5055eb171f00105305ec5}{get\+\_\+encoding}} () const override
+\item 
 \mbox{\hyperlink{classJsonParser_af21abdfb0ceac731e44d897a0285f5d4}{Json\+Parser}} ()
 \item 
 \mbox{\hyperlink{classJsonParser_a7c0393b54c37f9ff30b6bb59f0ba92ce}{$\sim$\+Json\+Parser}} ()
@@ -63,13 +65,28 @@ The parser constructor\+: initialize the map of different possible elements \mbo
 The parser destructor\+: frees the map of elements 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{classJsonParser_a449d410175c5055eb171f00105305ec5}\label{classJsonParser_a449d410175c5055eb171f00105305ec5}} 
+\index{Json\+Parser@{Json\+Parser}!get\+\_\+encoding@{get\+\_\+encoding}}
+\index{get\+\_\+encoding@{get\+\_\+encoding}!Json\+Parser@{Json\+Parser}}
+\subsubsection{\texorpdfstring{get\+\_\+encoding()}{get\_encoding()}}
+{\footnotesize\ttfamily const char $\ast$ Json\+Parser\+::get\+\_\+encoding (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Get the encoding corresponding to the reader
+
+\begin{DoxyReturn}{Returns}
+The corresponding encoding for serialization 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classContentReader_a1495a4402c4fac02d8cd2542b61c6eed}{Content\+Reader}}.
+
 \mbox{\Hypertarget{classJsonParser_a3ec3a9fcc8a63f987b4749d60b0568df}\label{classJsonParser_a3ec3a9fcc8a63f987b4749d60b0568df}} 
 \index{Json\+Parser@{Json\+Parser}!parse@{parse}}
 \index{parse@{parse}!Json\+Parser@{Json\+Parser}}
 \subsubsection{\texorpdfstring{parse()}{parse()}}
 {\footnotesize\ttfamily void Json\+Parser\+::parse (\begin{DoxyParamCaption}\item[{std\+::string \&}]{text,  }\item[{\mbox{\hyperlink{classElement}{Element}} $\ast$$\ast$}]{e }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
-The entry point of the parser\+: it reads the text and generate the first element according to rules. Calls the corresponding methods for recursive parsing. (opposite works as well) \begin{DoxySeeAlso}{See also}
+The entry point of the parser\+: it reads the text and generates the first element according to rules. Calls the corresponding methods for recursive parsing. (opposite works as well) \begin{DoxySeeAlso}{See also}
 \mbox{\hyperlink{classJsonParser_ac80cf84ff2565f4c1f3a0f5ddb559c96}{parse\+Content}} 
 
 \mbox{\hyperlink{classElement}{Element}}

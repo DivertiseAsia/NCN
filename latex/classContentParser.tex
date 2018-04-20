@@ -26,6 +26,8 @@ virtual void \mbox{\hyperlink{classContentReader_a91fdd738983dcc7a246c3c163007df
 virtual void \mbox{\hyperlink{classContentReader_a59a8de2bf3436e46b4d029a9b3c3c9da}{parse\+Content}} (std\+::string \&text, \mbox{\hyperlink{classElementObject}{Element\+Object}} $\ast$e) const =0
 \item 
 virtual void \mbox{\hyperlink{classContentReader_ab4ba739ee5241848ae8af86e64e43a40}{parse\+Content}} (std\+::string \&text, \mbox{\hyperlink{classElementDouble}{Element\+Double}} $\ast$e) const =0
+\item 
+virtual const char $\ast$ \mbox{\hyperlink{classContentReader_a1495a4402c4fac02d8cd2542b61c6eed}{get\+\_\+encoding}} () const =0
 \end{DoxyCompactItemize}
 
 
@@ -44,13 +46,28 @@ Mathieu Lochet
 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{classContentReader_a1495a4402c4fac02d8cd2542b61c6eed}\label{classContentReader_a1495a4402c4fac02d8cd2542b61c6eed}} 
+\index{Content\+Parser@{Content\+Parser}!get\+\_\+encoding@{get\+\_\+encoding}}
+\index{get\+\_\+encoding@{get\+\_\+encoding}!Content\+Parser@{Content\+Parser}}
+\subsubsection{\texorpdfstring{get\+\_\+encoding()}{get\_encoding()}}
+{\footnotesize\ttfamily virtual const char$\ast$ Content\+Reader\+::get\+\_\+encoding (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [inherited]}}
+
+Get the encoding corresponding to the reader
+
+\begin{DoxyReturn}{Returns}
+The corresponding encoding for serialization 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classJsonCreator_ab7313de0040d40a26a9386eb3714120c}{Json\+Creator}}, and \mbox{\hyperlink{classJsonParser_a449d410175c5055eb171f00105305ec5}{Json\+Parser}}.
+
 \mbox{\Hypertarget{classContentReader_a7fff2e63a2e8fa216665604f69974e1d}\label{classContentReader_a7fff2e63a2e8fa216665604f69974e1d}} 
 \index{Content\+Parser@{Content\+Parser}!parse@{parse}}
 \index{parse@{parse}!Content\+Parser@{Content\+Parser}}
 \subsubsection{\texorpdfstring{parse()}{parse()}}
 {\footnotesize\ttfamily virtual void Content\+Reader\+::parse (\begin{DoxyParamCaption}\item[{std\+::string \&}]{text,  }\item[{\mbox{\hyperlink{classElement}{Element}} $\ast$$\ast$}]{e }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [inherited]}}
 
-The entry point of the parser\+: it reads the text and generate the first element according to rules. Calls the corresponding methods for recursive parsing. (opposite works as well) \begin{DoxySeeAlso}{See also}
+The entry point of the parser\+: it reads the text and generates the first element according to rules. Calls the corresponding methods for recursive parsing. (opposite works as well) \begin{DoxySeeAlso}{See also}
 \mbox{\hyperlink{classContentReader_a7eef37b8b9761e21c0a3907ff94c72f7}{parse\+Content}} 
 
 \mbox{\hyperlink{classElement}{Element}}

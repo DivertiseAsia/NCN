@@ -1,5 +1,9 @@
 \hypertarget{classRow}{}\section{Row Class Reference}
 \label{classRow}\index{Row@{Row}}
+
+
+{\ttfamily \#include $<$Row.\+h$>$}
+
 Inheritance diagram for Row\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,15 +13,78 @@ Inheritance diagram for Row\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classRow_ae3e9c3aaa17ebc4f0e280cdec722440a}\label{classRow_ae3e9c3aaa17ebc4f0e280cdec722440a}} 
-virtual \mbox{\hyperlink{classRow}{Row}} $\ast$ {\bfseries clone} () const =0
+virtual \mbox{\hyperlink{classRow_acce74b5e3df47d61a3a22388f6c1f552}{$\sim$\+Row}} ()=default
 \item 
-\mbox{\Hypertarget{classRow_ae7b1aba7a4c868914700432850c2848d}\label{classRow_ae7b1aba7a4c868914700432850c2848d}} 
-virtual std\+::string {\bfseries to\+\_\+string} () const =0
+virtual \mbox{\hyperlink{classRow}{Row}} $\ast$ \mbox{\hyperlink{classRow_ae3e9c3aaa17ebc4f0e280cdec722440a}{clone}} () const =0
 \item 
-\mbox{\Hypertarget{classRow_a851b728fa55ecb26f8ebbc87e614581b}\label{classRow_a851b728fa55ecb26f8ebbc87e614581b}} 
-virtual void {\bfseries reward} ()=0
+virtual std\+::string \mbox{\hyperlink{classRow_ae7b1aba7a4c868914700432850c2848d}{to\+\_\+string}} () const =0
+\item 
+virtual void \mbox{\hyperlink{classRow_a851b728fa55ecb26f8ebbc87e614581b}{reward}} ()=0
 \end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An abstract row in the database. Needs to be reimplemented so the user can create any representation of data he wants. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classDatabase}{Database}}
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Mathieu Lochet 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2 
+\end{DoxyVersion}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRow_acce74b5e3df47d61a3a22388f6c1f552}\label{classRow_acce74b5e3df47d61a3a22388f6c1f552}} 
+\index{Row@{Row}!````~Row@{$\sim$\+Row}}
+\index{````~Row@{$\sim$\+Row}!Row@{Row}}
+\subsubsection{\texorpdfstring{$\sim$\+Row()}{~Row()}}
+{\footnotesize\ttfamily virtual Row\+::$\sim$\+Row (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+A default virtual destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classRow_ae3e9c3aaa17ebc4f0e280cdec722440a}\label{classRow_ae3e9c3aaa17ebc4f0e280cdec722440a}} 
+\index{Row@{Row}!clone@{clone}}
+\index{clone@{clone}!Row@{Row}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classRow}{Row}}$\ast$ Row\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+A method to duplicate the row. It needs to be reimplemented and to do an exact copy of itself
+
+\begin{DoxyReturn}{Returns}
+Return the cloned \mbox{\hyperlink{classRow}{Row}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classCustomRow_a9d3c1b6bda5e63de382cc4a2aa29210d}{Custom\+Row}}.
+
+\mbox{\Hypertarget{classRow_a851b728fa55ecb26f8ebbc87e614581b}\label{classRow_a851b728fa55ecb26f8ebbc87e614581b}} 
+\index{Row@{Row}!reward@{reward}}
+\index{reward@{reward}!Row@{Row}}
+\subsubsection{\texorpdfstring{reward()}{reward()}}
+{\footnotesize\ttfamily virtual void Row\+::reward (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Change the row to add the reward for validating the block 
+
+Implemented in \mbox{\hyperlink{classCustomRow_a007002dc965ca2727ec8db0183404bf1}{Custom\+Row}}.
+
+\mbox{\Hypertarget{classRow_ae7b1aba7a4c868914700432850c2848d}\label{classRow_ae7b1aba7a4c868914700432850c2848d}} 
+\index{Row@{Row}!to\+\_\+string@{to\+\_\+string}}
+\index{to\+\_\+string@{to\+\_\+string}!Row@{Row}}
+\subsubsection{\texorpdfstring{to\+\_\+string()}{to\_string()}}
+{\footnotesize\ttfamily virtual std\+::string Row\+::to\+\_\+string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Generate the string representation of a database\textquotesingle{}s row It needs to be implemented
+
+\begin{DoxyReturn}{Returns}
+The string representation of the row 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classCustomRow_ae1e5a3b861829f8b295d3c743d6b3c7a}{Custom\+Row}}.
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

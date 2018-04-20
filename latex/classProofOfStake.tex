@@ -1,5 +1,9 @@
 \hypertarget{classProofOfStake}{}\section{Proof\+Of\+Stake Class Reference}
 \label{classProofOfStake}\index{Proof\+Of\+Stake@{Proof\+Of\+Stake}}
+
+
+{\ttfamily \#include $<$Proof\+Of\+Stake.\+h$>$}
+
 Inheritance diagram for Proof\+Of\+Stake\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,20 +13,16 @@ Inheritance diagram for Proof\+Of\+Stake\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classProofOfStake_aed9baba95df4aba7e8bd0a3e70c44945}\label{classProofOfStake_aed9baba95df4aba7e8bd0a3e70c44945}} 
-void {\bfseries run} (\mbox{\hyperlink{classBlock}{Block}} $\ast$block, std\+::string key) override
+void \mbox{\hyperlink{classProofOfStake_aed9baba95df4aba7e8bd0a3e70c44945}{run}} (\mbox{\hyperlink{classBlock}{Block}} $\ast$block, std\+::string key) override
 \item 
-\mbox{\Hypertarget{classProofOfStake_a7c5939106f9dcb8bc9612a5974a43c88}\label{classProofOfStake_a7c5939106f9dcb8bc9612a5974a43c88}} 
-bool {\bfseries accept} (\mbox{\hyperlink{classBlock}{Block}} $\ast$block, \mbox{\hyperlink{classMessage}{Message}} $\ast$message) override
+bool \mbox{\hyperlink{classProofOfStake_a7c5939106f9dcb8bc9612a5974a43c88}{accept}} (\mbox{\hyperlink{classBlock}{Block}} $\ast$block, \mbox{\hyperlink{classMessage}{Message}} $\ast$message) override
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classProof_a93208e5161d25f8533849ac2dac8d6b8}\label{classProof_a93208e5161d25f8533849ac2dac8d6b8}} 
-static void {\bfseries add\+\_\+proof} (int id, std\+::function$<$ \mbox{\hyperlink{classProof}{Proof}} $\ast$()$>$)
+static void \mbox{\hyperlink{classProof_a71874539fdbcc93c15594b889c95225b}{add\+\_\+proof}} (int id, std\+::function$<$ \mbox{\hyperlink{classProof}{Proof}} $\ast$()$>$ proof)
 \item 
-\mbox{\Hypertarget{classProof_a267f0f4587babb59884b5f280e2d54c8}\label{classProof_a267f0f4587babb59884b5f280e2d54c8}} 
-static \mbox{\hyperlink{classProof}{Proof}} $\ast$ {\bfseries generate} (int type)
+static \mbox{\hyperlink{classProof}{Proof}} $\ast$ \mbox{\hyperlink{classProof_a267f0f4587babb59884b5f280e2d54c8}{generate}} (int type)
 \end{DoxyCompactItemize}
 \subsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
@@ -48,6 +48,92 @@ static const int {\bfseries S\+T\+A\+K\+E\+\_\+\+T\+I\+ME} = 5
 \mbox{\Hypertarget{classProof_a3f6898fa1d652d32182c3c387c8e979c}\label{classProof_a3f6898fa1d652d32182c3c387c8e979c}} 
 static const int {\bfseries U\+SE} = 6
 \end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A basic proof of stake \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classProof}{Proof}} 
+
+Proof\+::\+S\+T\+A\+KE
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Mathieu Lochet 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classProofOfStake_a7c5939106f9dcb8bc9612a5974a43c88}\label{classProofOfStake_a7c5939106f9dcb8bc9612a5974a43c88}} 
+\index{Proof\+Of\+Stake@{Proof\+Of\+Stake}!accept@{accept}}
+\index{accept@{accept}!Proof\+Of\+Stake@{Proof\+Of\+Stake}}
+\subsubsection{\texorpdfstring{accept()}{accept()}}
+{\footnotesize\ttfamily bool Proof\+Of\+Stake\+::accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBlock}{Block}} $\ast$}]{block,  }\item[{\mbox{\hyperlink{classMessage}{Message}} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Get a proof result and check if the result is correct Needs to be implemented
+
+
+\begin{DoxyParams}{Parameters}
+{\em block} & The block to check the proof \\
+\hline
+{\em The} & received message \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classProof_ad52fee058ea617a186133cb6a008fe6e}{Proof}}.
+
+\mbox{\Hypertarget{classProof_a71874539fdbcc93c15594b889c95225b}\label{classProof_a71874539fdbcc93c15594b889c95225b}} 
+\index{Proof\+Of\+Stake@{Proof\+Of\+Stake}!add\+\_\+proof@{add\+\_\+proof}}
+\index{add\+\_\+proof@{add\+\_\+proof}!Proof\+Of\+Stake@{Proof\+Of\+Stake}}
+\subsubsection{\texorpdfstring{add\+\_\+proof()}{add\_proof()}}
+{\footnotesize\ttfamily void Proof\+::add\+\_\+proof (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{std\+::function$<$ \mbox{\hyperlink{classProof}{Proof}} $\ast$()$>$}]{proof }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [inherited]}}
+
+Allows the user to add its own proof into the system He the proof id is required
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The proof id \\
+\hline
+{\em proof} & The lambda expression that creates a proof \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classProof_a267f0f4587babb59884b5f280e2d54c8}\label{classProof_a267f0f4587babb59884b5f280e2d54c8}} 
+\index{Proof\+Of\+Stake@{Proof\+Of\+Stake}!generate@{generate}}
+\index{generate@{generate}!Proof\+Of\+Stake@{Proof\+Of\+Stake}}
+\subsubsection{\texorpdfstring{generate()}{generate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classProof}{Proof}} $\ast$ Proof\+::generate (\begin{DoxyParamCaption}\item[{int}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [inherited]}}
+
+Generates a proof for a given id
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The proof id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The created proof object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classProofOfStake_aed9baba95df4aba7e8bd0a3e70c44945}\label{classProofOfStake_aed9baba95df4aba7e8bd0a3e70c44945}} 
+\index{Proof\+Of\+Stake@{Proof\+Of\+Stake}!run@{run}}
+\index{run@{run}!Proof\+Of\+Stake@{Proof\+Of\+Stake}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Proof\+Of\+Stake\+::run (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBlock}{Block}} $\ast$}]{block,  }\item[{std\+::string}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Run a proof on a block to validate it Needs to be implemented
+
+
+\begin{DoxyParams}{Parameters}
+{\em block} & The block to run the proof on \\
+\hline
+{\em The} & user\textquotesingle{}s key to use in the process \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classProof_a8a43fcb7c997da54d627e0f257adb86f}{Proof}}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

@@ -68,6 +68,8 @@ $(function() {
 <div class="title">MessageParser Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="MessageParser_8h_source.html">MessageParser.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for MessageParser:</div>
 <div class="dyncontent">
@@ -87,13 +89,121 @@ Inheritance diagram for MessageParser:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a946f3b936dc01a75d6165329b159ecfe"><td class="memItemLeft" align="right" valign="top"><a id="a946f3b936dc01a75d6165329b159ecfe"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (<a class="el" href="classMessage.html">Message</a> *m, <a class="el" href="classNode.html">Node</a> *node) const =0</td></tr>
+<tr class="memitem:a6548628a6db83ec8913e5f17454e14f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMessageParser.html#a6548628a6db83ec8913e5f17454e14f0">MessageParser</a> ()=default</td></tr>
+<tr class="separator:a6548628a6db83ec8913e5f17454e14f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a946f3b936dc01a75d6165329b159ecfe"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMessageParser.html#a946f3b936dc01a75d6165329b159ecfe">operator()</a> (<a class="el" href="classMessage.html">Message</a> *m, <a class="el" href="classNode.html">Node</a> *node) const =0</td></tr>
 <tr class="separator:a946f3b936dc01a75d6165329b159ecfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7c495d7b28a394e5752ca25ffff69d8"><td class="memItemLeft" align="right" valign="top"><a id="aa7c495d7b28a394e5752ca25ffff69d8"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>get_type</b> () const =0</td></tr>
+<tr class="memitem:aa7c495d7b28a394e5752ca25ffff69d8"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMessageParser.html#aa7c495d7b28a394e5752ca25ffff69d8">get_type</a> () const =0</td></tr>
 <tr class="separator:aa7c495d7b28a394e5752ca25ffff69d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p class="">An abstract message parser. A message parser is linked to a particular type of message. Its goal is to receive the message, to parse it and to process it. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classMessage.html">Message</a></dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Mathieu Lochet </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1 </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a6548628a6db83ec8913e5f17454e14f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6548628a6db83ec8913e5f17454e14f0">&#9670;&nbsp;</a></span>MessageParser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MessageParser::MessageParser </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p class="">A default constructor: parsers don't need parameters </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa7c495d7b28a394e5752ca25ffff69d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7c495d7b28a394e5752ca25ffff69d8">&#9670;&nbsp;</a></span>get_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int MessageParser::get_type </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p class="">Get the type of message the parser is linked to </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classMessage.html">Message</a> </dd></dl>
+
+<p>Implemented in <a class="el" href="classSignOutParser.html#afe949de785ce36746d69e19515a72d24">SignOutParser</a>, <a class="el" href="classBlockAnswerParser.html#af29553ca77e4879f40f60a871105b6d4">BlockAnswerParser</a>, <a class="el" href="classBlockAskParser.html#add75da897c34702c33790947c9754500">BlockAskParser</a>, <a class="el" href="classBlockParser.html#aa7334a81b976ec6244c0992cda44a824">BlockParser</a>, <a class="el" href="classPeersAnswerParser.html#a5f88ed07616ae3d17726f27b263645a6">PeersAnswerParser</a>, <a class="el" href="classPeersAskParser.html#abda1a00fdca208592d3f7e7b039f9ba7">PeersAskParser</a>, <a class="el" href="classSignInParser.html#a30af4fa4b99e704e48848aab284d6a24">SignInParser</a>, and <a class="el" href="classTransactionParser.html#a34bed6ceb924ae378b3b2e89a29ae230">TransactionParser</a>.</p>
+
+</div>
+</div>
+<a id="a946f3b936dc01a75d6165329b159ecfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a946f3b936dc01a75d6165329b159ecfe">&#9670;&nbsp;</a></span>operator()()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void MessageParser::operator() </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMessage.html">Message</a> *&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classNode.html">Node</a> *&#160;</td>
+          <td class="paramname"><em>node</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p class="">Process the message </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classMessage.html">Message</a> </dd>
+<dd>
+<a class="el" href="classNode.html">Node</a></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td>The received message </td></tr>
+    <tr><td class="paramname">node</td><td>The peer receiving the message </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classSignOutParser.html#a29ec80b982d783c10d46a431947bb319">SignOutParser</a>, <a class="el" href="classBlockAnswerParser.html#a984cd68ad8878777f86cf6ed0892dd1d">BlockAnswerParser</a>, <a class="el" href="classBlockAskParser.html#a32d280786db26389f58175681ba35261">BlockAskParser</a>, <a class="el" href="classBlockParser.html#acc2f5e6a6d3a30464454cfc85ff7ba9a">BlockParser</a>, <a class="el" href="classPeersAnswerParser.html#ad566095c0594805919e7e4d14f8b076e">PeersAnswerParser</a>, <a class="el" href="classPeersAskParser.html#ac52c9f42fa449029d49faaf9255b2d0d">PeersAskParser</a>, <a class="el" href="classSignInParser.html#aa73b5113c2c03361469149c456ef9cc0">SignInParser</a>, and <a class="el" href="classTransactionParser.html#addb18b5cb23a07ef6a46c4d89a1c9f23">TransactionParser</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>block_chain/kernel/parsers/<a class="el" href="MessageParser_8h_source.html">MessageParser.h</a></li>
 </ul>

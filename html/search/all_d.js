@@ -14,6 +14,6 @@ var searchData=
   ['proofofstaketime',['ProofOfStakeTime',['../classProofOfStakeTime.html',1,'']]],
   ['proofofuse',['ProofOfUse',['../classProofOfUse.html',1,'']]],
   ['proofofwork',['ProofOfWork',['../classProofOfWork.html',1,'']]],
-  ['proofofworkmetadata',['ProofOfWorkMetadata',['../classProofOfWorkMetadata.html',1,'']]],
+  ['proofofworkmetadata',['ProofOfWorkMetadata',['../classProofOfWorkMetadata.html',1,'ProofOfWorkMetadata'],['../classProofOfWorkMetadata.html#a8fe975e4a12a0782becb25d1d5683a21',1,'ProofOfWorkMetadata::ProofOfWorkMetadata()']]],
   ['put',['put',['../classFactory.html#adeaad06fb30141096cc92f98cc3dffa1',1,'Factory::put()'],['../classElementObject.html#ab9dd82037b752ab2e6f4e3de53348483',1,'ElementObject::put()'],['../classElementCreator.html#a741ad4af271f1dcc1a113d2f49189bb4',1,'ElementCreator::put()']]]
 ];

@@ -1,19 +1,19 @@
 \hypertarget{classDatabase}{}\section{Database Class Reference}
 \label{classDatabase}\index{Database@{Database}}
+
+
+{\ttfamily \#include $<$Database.\+h$>$}
+
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classDatabase_ab00a6ec54927a6a80f5c09a926ee4611}\label{classDatabase_ab00a6ec54927a6a80f5c09a926ee4611}} 
-{\bfseries Database} (\mbox{\hyperlink{classReward}{Reward}} $\ast$r)
+\mbox{\hyperlink{classDatabase_ab00a6ec54927a6a80f5c09a926ee4611}{Database}} (\mbox{\hyperlink{classReward}{Reward}} $\ast$r)
 \item 
-\mbox{\Hypertarget{classDatabase_a53798837997415704f1ce331aa93eda9}\label{classDatabase_a53798837997415704f1ce331aa93eda9}} 
-\mbox{\hyperlink{classDatabase}{Database}} \& {\bfseries operator=} (\mbox{\hyperlink{classDatabase}{Database}} const \&d)
+\mbox{\hyperlink{classDatabase_ab366035be8ad9836454da24f4a5e27ed}{Database}} (\mbox{\hyperlink{classDatabase}{Database}} const \&d)
 \item 
-\mbox{\Hypertarget{classDatabase_a194c4d15c58a98ce7156afd33e64ae16}\label{classDatabase_a194c4d15c58a98ce7156afd33e64ae16}} 
-\mbox{\hyperlink{classRow}{Row}} $\ast$ {\bfseries get} (std\+::string key)
+\mbox{\hyperlink{classRow}{Row}} $\ast$ \mbox{\hyperlink{classDatabase_a748f2ce7df893cdb61d8418be907ac72}{get}} (std\+::string key)
 \item 
-\mbox{\Hypertarget{classDatabase_a3e8f5125a0db0c76d35bd4a36894e203}\label{classDatabase_a3e8f5125a0db0c76d35bd4a36894e203}} 
-\mbox{\hyperlink{classRow}{Row}} $\ast$ {\bfseries reward} (std\+::string winner)
+\mbox{\hyperlink{classRow}{Row}} $\ast$ \mbox{\hyperlink{classDatabase_a5bdce9dce60e4fdb4f04c7baa023c0b8}{reward}} (std\+::string winner)
 \end{DoxyCompactItemize}
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
@@ -23,6 +23,84 @@ class {\bfseries Chain}
 \end{DoxyCompactItemize}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\subsection{Detailed Description}
+A database object is filled by a list of rows It needs to be easily updated and duplicated \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classRow}{Row}}
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Mathieu Lochet 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2 
+\end{DoxyVersion}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDatabase_ab00a6ec54927a6a80f5c09a926ee4611}\label{classDatabase_ab00a6ec54927a6a80f5c09a926ee4611}} 
+\index{Database@{Database}!Database@{Database}}
+\index{Database@{Database}!Database@{Database}}
+\subsubsection{\texorpdfstring{Database()}{Database()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Database\+::\+Database (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classReward}{Reward}} $\ast$}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+A constructor that accepts a reward transaction \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classReward}{Reward}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em r} & The reward transaction that will be used in the reward method \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDatabase_ab366035be8ad9836454da24f4a5e27ed}\label{classDatabase_ab366035be8ad9836454da24f4a5e27ed}} 
+\index{Database@{Database}!Database@{Database}}
+\index{Database@{Database}!Database@{Database}}
+\subsubsection{\texorpdfstring{Database()}{Database()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Database\+::\+Database (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classDatabase}{Database}} const \&}]{d }\end{DoxyParamCaption})}
+
+A constructor to clone a database with different pointers
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & The database to be duplicated \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classDatabase_a748f2ce7df893cdb61d8418be907ac72}\label{classDatabase_a748f2ce7df893cdb61d8418be907ac72}} 
+\index{Database@{Database}!get@{get}}
+\index{get@{get}!Database@{Database}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRow}{Row}} $\ast$ Database\+::get (\begin{DoxyParamCaption}\item[{std\+::string}]{key }\end{DoxyParamCaption})}
+
+Get the row corresponding to the user\textquotesingle{}s key
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The users key \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The user\textquotesingle{}s row representing its datas 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDatabase_a5bdce9dce60e4fdb4f04c7baa023c0b8}\label{classDatabase_a5bdce9dce60e4fdb4f04c7baa023c0b8}} 
+\index{Database@{Database}!reward@{reward}}
+\index{reward@{reward}!Database@{Database}}
+\subsubsection{\texorpdfstring{reward()}{reward()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRow}{Row}} $\ast$ Database\+::reward (\begin{DoxyParamCaption}\item[{std\+::string}]{winner }\end{DoxyParamCaption})}
+
+Get the row corresponding to the user\textquotesingle{}s key. If the row is not found, it will create a new one
+
+
+\begin{DoxyParams}{Parameters}
+{\em winner} & The users key \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The user\textquotesingle{}s row representing its datas 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-block\+\_\+chain/chain/state/Database.\+h\end{DoxyCompactItemize}
+block\+\_\+chain/chain/state/Database.\+h\item 
+block\+\_\+chain/chain/state/Database.\+cpp\end{DoxyCompactItemize}
