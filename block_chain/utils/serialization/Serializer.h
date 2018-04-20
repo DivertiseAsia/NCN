@@ -21,7 +21,7 @@
  *  The class Serializer implements almost all of the
  *  serialization and unserialization methods.
  *  However, it doesn't implements the transaction
- *  unserialization, thereforem this class has to be
+ *  unserialization, therefore, this class has to be
  *  override.
  *  @see ContentCreator
  *  @see ContentParser
@@ -117,7 +117,7 @@ public:
     virtual Metadata* unserializeMetadata(std::string message, const char* encoding) const;
 
     /**
-     *  Unserialize an given string to obtain a Metadata
+     *  Unserialize a given string to obtain a Metadata
      *  @see ContentParser
      *  @see ElementObject
      *
