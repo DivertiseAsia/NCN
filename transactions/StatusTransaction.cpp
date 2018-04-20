@@ -7,10 +7,10 @@
 #include <cstring>
 #include <cstdlib>
 #include <utility>
-
+/*
 bool StatusTransaction::operator()() const {
     return true;
-}
+}*/
 
 StatusTransaction::StatusTransaction() = default;
 

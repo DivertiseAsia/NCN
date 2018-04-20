@@ -3,11 +3,11 @@
 //
 
 #include "Reward.h"
-
+/*
 bool Reward::operator()() const {
     return true;
 }
-
+*/
 Reward::Reward() = default;
 
 Element* Reward::toElement() const {

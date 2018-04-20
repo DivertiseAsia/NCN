@@ -22,23 +22,23 @@ Hash* Block::compute_fingerprint(const Serializer* s, const char* e) const {
     return new Hash(compute_hash(0, transactions.size() - 1, s, e), timestamp);
 }
 
-Block::Block(std::vector<std::pair<std::string, std::string>> t, Hash* parent, const Serializer* s, const char* e): serializer(s), encoding(e), transactions(
+Block::Block(std::vector<std::pair<std::string, std::string>> t, Hash* parent): transactions(
         std::move(
                 std::move(t))), parent_fingerprint(parent), data(nullptr), fingerprint(nullptr) {
     timestamp = std::chrono::duration_cast<std::chrono::milliseconds >(std::chrono::system_clock::now().time_since_epoch()).count();
 }
 
-void Block::update_fingerprint(){
-    fingerprint = new Hash(data->hash(), compute_fingerprint(serializer, encoding));
+void Block::update_fingerprint(const Serializer* s, const char* e){
+    fingerprint = new Hash(data->hash(), compute_fingerprint(s, e));
 }
 bool Block::checkFingerPrint(const Serializer* s, const char* e) const {
-    Hash* tmp = new Hash(data->hash(), compute_fingerprint(serializer, encoding));
+    Hash* tmp = new Hash(data->hash(), compute_fingerprint(s, e));
     bool b = *fingerprint == *tmp;
     delete tmp;
     return b;
 }
 
-Block::Block(const Serializer* s, const char* e): serializer(s), encoding(e), fingerprint(nullptr), data(nullptr) {
+Block::Block(): fingerprint(nullptr), data(nullptr) {
 
 }
 
@@ -84,9 +84,4 @@ void Block::fromElement(ElementObject* e, const Serializer* serializer, const ch
         elem->getItem("second", &second);
         transactions.emplace_back(std::pair<std::string, std::string>(first, second));
     }
-}
-
-std::string Block::to_string() const {
-    std::string res = "BLOCK";
-    return res;
 }

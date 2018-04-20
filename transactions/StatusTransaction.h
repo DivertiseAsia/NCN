@@ -14,7 +14,7 @@
 class StatusTransaction: public Transaction {
 public:
     explicit StatusTransaction();
-    bool operator()() const final;
+    //bool operator()() const final;
     Element* toElement() const override;
     bool operator==(Transaction* t) const override {
         auto * s = dynamic_cast<StatusTransaction*>(t);

@@ -8,7 +8,7 @@ NodeState::NodeState(Serializer* s, int si, const char* e, Reward* r): serialize
 }
 
 Block* NodeState::create_block() const {
-    return new Block(transactions, chain->top_fingerprint().second->fingerprint, serializer, encoding.c_str());
+    return new Block(transactions, chain->top_fingerprint().second->fingerprint);
 }
 
 Block* NodeState::add(std::string transaction, std::string public_key){

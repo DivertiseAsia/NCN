@@ -4,10 +4,10 @@
 
 #include "MessagesTransaction.h"
 #include <cstring>
-
+/*
 bool MessagesTransaction::operator()() const {
     return true;
-}
+}*/
 
 MessagesTransaction::MessagesTransaction() = default;
 

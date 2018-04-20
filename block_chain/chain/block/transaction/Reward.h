@@ -8,10 +8,19 @@
 
 #include "Transaction.h"
 
+/**
+ *  An abstract reward class. It is a special case of Transaction
+ *  With only a few method to override. It is needed to update
+ *  the database when there is a Block validation
+ *  @see Reward
+ *
+ *  @author Mathieu Lochet
+ *  @version 1
+ */
 class Reward: public Transaction {
 public:
     explicit Reward();
-    bool operator()() const final;
+    //bool operator()() const final;
     Element* toElement() const final;
     bool operator==(Transaction* t) const final {
         auto * s = dynamic_cast<Reward*>(t);

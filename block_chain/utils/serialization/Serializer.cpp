@@ -38,7 +38,7 @@ Message* Serializer::unserializeMessage(std::string message, const char* key) co
     return m;
 }
 Block* Serializer::unserializeBlock(std::string block, const char* key) const {
-    auto * b = new Block(this, key);
+    auto * b = new Block();
     b->__init__(getElement(std::move(block), key), this, key);
     return b;
 }

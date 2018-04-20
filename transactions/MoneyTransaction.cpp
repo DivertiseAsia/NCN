@@ -6,9 +6,10 @@
 #include <utility>
 #include "../database/Row.h"
 
+/*
 bool MoneyTransaction::operator()() const {
     return true;
-}
+}*/
 
 MoneyTransaction::MoneyTransaction() = default;
 

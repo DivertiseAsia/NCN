@@ -11,7 +11,7 @@
 class MoneyTransaction: public Transaction {
 public:
     explicit MoneyTransaction();
-    bool operator()() const final;
+    //bool operator()() const final;
 
     Element* toElement() const override;
     bool operator==(Transaction* t) const override {

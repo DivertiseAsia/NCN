@@ -24,7 +24,7 @@ void TransactionParser::operator()(Message* m, Node* node) const {
             if(block != nullptr){
                 node->queue++;
                 node->proof->run(block, Encoding::toHexa(node->rsa.getPublicKey()));
-                block->update_fingerprint();
+                block->update_fingerprint(node->serializer, node->encoding.c_str());
                 std::vector<Transaction*> transactions;
                 for(auto& t : block->transactions){
                     std::string cipher(Encoding::fromHexa(t.first));

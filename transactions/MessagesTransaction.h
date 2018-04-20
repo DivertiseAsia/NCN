@@ -13,7 +13,7 @@
 class MessagesTransaction: public Transaction {
 public:
     explicit MessagesTransaction();
-    bool operator()() const final;
+    //bool operator()() const final;
 
     Element* toElement() const override;
     bool operator==(Transaction* t) const override {
