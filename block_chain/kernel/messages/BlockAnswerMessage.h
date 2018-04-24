@@ -9,6 +9,7 @@
 #include "Message.h"
 
 /**
+ *  @class BlockAnswerMessage "block_chain/kernel/messages/BlockAnswerMessage.h"
  *  An answer containing the required block
  *  @see Message
  *
@@ -33,7 +34,7 @@ public:
     ~BlockAnswerMessage() override;
     Element* toElement() const override;
 protected:
-    void fromElement(ElementObject*, const Serializer* serializer, const char* encoding) override;
+    void fromElement(ElementObject* element, const Serializer* serializer, const char* encoding) override;
 
 private:
 

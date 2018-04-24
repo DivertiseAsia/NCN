@@ -68,15 +68,16 @@ $(function() {
 
 <p>This is the complete list of members for <a class="el" href="classChain.html">Chain</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classChain.html#a7a271a75a12aeae52a2645dcaa14549c">add</a>(Block *)</td><td class="entry"><a class="el" href="classChain.html">Chain</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classChain.html#ae70c386f5d7b2e333419296545656907">Chain</a>(Block *b, Chain *c)</td><td class="entry"><a class="el" href="classChain.html">Chain</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classChain.html#a97217102b89693d94c7c724cfcafa28f">Chain</a>(const Reward *r)</td><td class="entry"><a class="el" href="classChain.html">Chain</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classChain.html#a46a71e3afc2a06ecde4604d418946c1a">add</a>(Block *block, std::string creator)</td><td class="entry"><a class="el" href="classChain.html">Chain</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classChain.html#aff8fb1361af7ee2d958fc25aebf4e86c">Chain</a>(Block *b, Chain *c, std::string cr)</td><td class="entry"><a class="el" href="classChain.html">Chain</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classChain.html#a97217102b89693d94c7c724cfcafa28f">Chain</a>(const Reward *r)</td><td class="entry"><a class="el" href="classChain.html">Chain</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>
   <tr><td class="entry"><a class="el" href="classChain.html#a5725ffa89b1f0333536238951d9acd91">check_transaction</a>(Transaction *transaction, std::string k)</td><td class="entry"><a class="el" href="classChain.html">Chain</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classChain.html#ad06a7e312123831339b614a74ff5c9e0">count</a>() const</td><td class="entry"><a class="el" href="classChain.html">Chain</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>NodeState</b> (defined in <a class="el" href="classChain.html">Chain</a>)</td><td class="entry"><a class="el" href="classChain.html">Chain</a></td><td class="entry"><span class="mlabel">friend</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classChain.html#a5ee2e1efbfe8d2896b0ac836fb750362">top_fingerprint</a>()</td><td class="entry"><a class="el" href="classChain.html">Chain</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classChain.html#a19dda9a394df1d45b014c649eb77cb64">update_database</a>(Block *b, const Serializer *s, const char *encoding)</td><td class="entry"><a class="el" href="classChain.html">Chain</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classChain.html#a06b56afcf5b9ef0c6371b49ae2eef2da">~Chain</a>()</td><td class="entry"><a class="el" href="classChain.html">Chain</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classChain.html#a8e7a53b58774ad359b7e121814b08c11">find_creator</a>(std::string &amp;hash)</td><td class="entry"><a class="el" href="classChain.html">Chain</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>NodeState</b> (defined in <a class="el" href="classChain.html">Chain</a>)</td><td class="entry"><a class="el" href="classChain.html">Chain</a></td><td class="entry"><span class="mlabel">friend</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classChain.html#a5ee2e1efbfe8d2896b0ac836fb750362">top_fingerprint</a>()</td><td class="entry"><a class="el" href="classChain.html">Chain</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classChain.html#a19dda9a394df1d45b014c649eb77cb64">update_database</a>(Block *b, const Serializer *s, const char *encoding)</td><td class="entry"><a class="el" href="classChain.html">Chain</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classChain.html#a06b56afcf5b9ef0c6371b49ae2eef2da">~Chain</a>()</td><td class="entry"><a class="el" href="classChain.html">Chain</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

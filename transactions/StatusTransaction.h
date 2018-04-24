@@ -11,6 +11,14 @@
 #include "../database/Row.h"
 #include "../block_chain/chain/state/Row.h"
 
+/**
+ *  @class StatusTransaction "transactions/StatusTransaction.h"
+ *  A custom Transaction for testing
+ *  @see Transaction
+ *
+ *  @author Mathieu Lochet
+ *  @version 3
+ */
 class StatusTransaction: public Transaction {
 public:
     explicit StatusTransaction();
@@ -20,7 +28,6 @@ public:
         auto * s = dynamic_cast<StatusTransaction*>(t);
         return status == s->status;
     }
-    std::string to_string() const;
     std::vector<std::string> apply(Row* row) override;
     Row* createRow() const override;
     void apply_reverse(Row* row) override;

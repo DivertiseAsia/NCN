@@ -9,6 +9,14 @@
 #include <string>
 #include <vector>
 
+/**
+ *  @class CustomRow "database/Row.h"
+ *  A custom Row for testing
+ *  @see Serializer
+ *
+ *  @author Mathieu Lochet
+ *  @version 2
+ */
 class CustomRow: public Row {
     friend class StatusTransaction;
     friend class MessagesTransaction;

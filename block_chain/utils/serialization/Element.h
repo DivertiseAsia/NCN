@@ -6,6 +6,7 @@
 #include "Parser.h"
 
 /**
+ *  @class Element "block_chain/utils/serialization/Element.h"
  *  The Element base class for serialization
  *
  *  @author Mathieu Lochet
@@ -31,6 +32,7 @@ class Element
 };
 
 /**
+ *  @class ElementInt "block_chain/utils/serialization/Element.h"
  *  The int Element for serialization
  *
  *  @author Mathieu Lochet
@@ -48,6 +50,7 @@ class ElementInt: public Element
 
 
 /**
+ *  @class ElementDouble "block_chain/utils/serialization/Element.h"
  *  The double Element for serialization
  *
  *  @author Mathieu Lochet
@@ -65,6 +68,7 @@ class ElementDouble: public Element
 
 
 /**
+ *  @class ElementString "block_chain/utils/serialization/Element.h"
  *  The string Element for serialization
  *
  *  @author Mathieu Lochet
@@ -82,6 +86,7 @@ class ElementString: public Element
 
 
 /**
+ *  @class ElementBoolean "block_chain/utils/serialization/Element.h"
  *  The boolean Element for serialization
  *
  *  @author Mathieu Lochet
@@ -99,6 +104,7 @@ class ElementBoolean: public Element
 
 
 /**
+ *  @class ElementArray "block_chain/utils/serialization/Element.h"
  *  The array Element for serialization
  *
  *  @author Mathieu Lochet
@@ -133,6 +139,7 @@ class ElementArray: public Element
 
 
 /**
+ *  @class ElementObject "block_chain/utils/serialization/Element.h"
  *  The object Element for serialization
  *
  *  @author Mathieu Lochet

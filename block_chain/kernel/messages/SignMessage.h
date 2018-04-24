@@ -9,6 +9,7 @@
 #include "Message.h"
 
 /**
+ *  @class SignMessage "block_chain/kernel/messages/SignMessage.h"
  *  An basic message for simple communication.
  *  @see Message
  *
@@ -36,7 +37,7 @@ public:
     ~SignMessage() override;
     Element* toElement() const override;
 protected:
-    void fromElement(ElementObject*, const Serializer* serializer, const char* encoding) override;
+    void fromElement(ElementObject* element, const Serializer* serializer, const char* encoding) override;
 
 private:
 

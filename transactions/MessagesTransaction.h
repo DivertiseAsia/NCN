@@ -10,6 +10,14 @@
 #include "../block_chain/chain/block/transaction/Transaction.h"
 #include "../database/Row.h"
 
+/**
+ *  @class MessagesTransaction "transactions/MessagesTransaction.h"
+ *  A custom Transaction for testing
+ *  @see Transaction
+ *
+ *  @author Mathieu Lochet
+ *  @version 3
+ */
 class MessagesTransaction: public Transaction {
 public:
     explicit MessagesTransaction();
@@ -20,7 +28,6 @@ public:
         auto * s = dynamic_cast<MessagesTransaction*>(t);
         return message == s->message;
     }
-    std::string to_string() const;
     std::vector<std::string> apply(Row* row) override;
 
     Row* createRow() const override;

@@ -43,14 +43,14 @@ Block* Serializer::unserializeBlock(std::string block, const char* key) const {
     return b;
 }
 Metadata* Serializer::unserializeMetadata(std::string data, const char* key) const{
-    static std::map<int, std::function<Metadata*()>> datas;
-    if(datas.empty()) {
-        datas[0] = []() -> Metadata*{return new ProofOfWorkMetadata;};
+    static std::map<int, std::function<Metadata*()>> metadata;
+    if(metadata.empty()) {
+        metadata[0] = []() -> Metadata*{return new ProofOfWorkMetadata;};
     }
     ElementObject* o = getElement(std::move(data), key);
     int type;
     o->getItem("type", &type);
-    Metadata* m = datas.find(type)->second();
+    Metadata* m = metadata.find(type)->second();
     m->__init__(o, this, key);
     return m;
 }

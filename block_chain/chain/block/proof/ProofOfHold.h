@@ -9,6 +9,7 @@
 #include "Proof.h"
 
 /**
+ *  @class ProofOfHold "block_chain/chain/block/proof/ProofOfHold.h"
  *  A basic proof of hold
  *  @see Proof
  *  @see Proof::HOLD

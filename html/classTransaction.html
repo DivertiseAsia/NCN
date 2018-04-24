@@ -70,7 +70,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="Transaction_8h_source.html">Transaction.h</a>&gt;</code></p>
+<p><code>#include &quot;<a class="el" href="Transaction_8h_source.html">block_chain/chain/block/transaction/Transaction.h</a>&quot;</code></p>
 <div class="dynheader">
 Inheritance diagram for Transaction:</div>
 <div class="dyncontent">
@@ -115,8 +115,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a2ded18881226d0077dc393e0e9304bb1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponent.html#a2ded18881226d0077dc393e0e9304bb1">fromElement</a> (<a class="el" href="classElementObject.html">ElementObject</a> *, const <a class="el" href="classSerializer.html">Serializer</a> *, const char *encoding)=0</td></tr>
-<tr class="separator:a2ded18881226d0077dc393e0e9304bb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4963434fa82853534847bce22ba43a87"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponent.html#a4963434fa82853534847bce22ba43a87">fromElement</a> (<a class="el" href="classElementObject.html">ElementObject</a> *element, const <a class="el" href="classSerializer.html">Serializer</a> *serializer, const char *encoding)=0</td></tr>
+<tr class="separator:a4963434fa82853534847bce22ba43a87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p class="">A pure abstract <a class="el" href="classTransaction.html">Transaction</a> class. It is the most important class to be implemented. It is used to represent the transaction in a block chain.</p>
@@ -280,7 +280,7 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classReward.html#a494c9d6e0a220729f675fd6131cfb9af">Reward</a>, <a class="el" href="classMessagesTransaction.html#ad44d1a3d26383c153360d3836606b7ce">MessagesTransaction</a>, <a class="el" href="classMoneyTransaction.html#a9eaa71eed1cc8b06ef5773c76c814ad9">MoneyTransaction</a>, and <a class="el" href="classStatusTransaction.html#abbb21cfeacda7753503f1fabeb9a3a87">StatusTransaction</a>.</p>
+<p>Implemented in <a class="el" href="classMessagesTransaction.html#ad44d1a3d26383c153360d3836606b7ce">MessagesTransaction</a>, <a class="el" href="classMoneyTransaction.html#a9eaa71eed1cc8b06ef5773c76c814ad9">MoneyTransaction</a>, <a class="el" href="classStatusTransaction.html#abbb21cfeacda7753503f1fabeb9a3a87">StatusTransaction</a>, and <a class="el" href="classReward.html#a494c9d6e0a220729f675fd6131cfb9af">Reward</a>.</p>
 
 </div>
 </div>
@@ -367,7 +367,7 @@ Protected Member Functions</h2></td></tr>
 <p class="">Get the description of the transaction</p>
 <dl class="section return"><dt>Returns</dt><dd>The description of the transaction </dd></dl>
 
-<p>Implemented in <a class="el" href="classReward.html#a95e98fc9dbbc9da47cee243adc1932d2">Reward</a>, <a class="el" href="classMessagesTransaction.html#a8cf65215291254275a1dd989f0971bd4">MessagesTransaction</a>, <a class="el" href="classMoneyTransaction.html#a23b793077f5c5e3157155df148e0d5e1">MoneyTransaction</a>, and <a class="el" href="classStatusTransaction.html#a1f6c6fd3f04ba1483028aee23bd862da">StatusTransaction</a>.</p>
+<p>Implemented in <a class="el" href="classMessagesTransaction.html#a8cf65215291254275a1dd989f0971bd4">MessagesTransaction</a>, <a class="el" href="classMoneyTransaction.html#a23b793077f5c5e3157155df148e0d5e1">MoneyTransaction</a>, <a class="el" href="classStatusTransaction.html#a1f6c6fd3f04ba1483028aee23bd862da">StatusTransaction</a>, and <a class="el" href="classReward.html#a95e98fc9dbbc9da47cee243adc1932d2">Reward</a>.</p>
 
 </div>
 </div>
@@ -395,12 +395,12 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p class="">Ask the user's input to fill the transaction </p>
 
-<p>Implemented in <a class="el" href="classMessagesTransaction.html#aeca5802e7f1bd57e38468dc3394e2825">MessagesTransaction</a>, <a class="el" href="classReward.html#a30a40e2eefd0aea969fab46d1e22d145">Reward</a>, <a class="el" href="classMoneyTransaction.html#a8666737a342f5eb1856006cd970967bf">MoneyTransaction</a>, and <a class="el" href="classStatusTransaction.html#a5abd3cf04705bd7cd3f37b628dcf21a4">StatusTransaction</a>.</p>
+<p>Implemented in <a class="el" href="classMessagesTransaction.html#aeca5802e7f1bd57e38468dc3394e2825">MessagesTransaction</a>, <a class="el" href="classMoneyTransaction.html#a8666737a342f5eb1856006cd970967bf">MoneyTransaction</a>, <a class="el" href="classStatusTransaction.html#a5abd3cf04705bd7cd3f37b628dcf21a4">StatusTransaction</a>, and <a class="el" href="classReward.html#a30a40e2eefd0aea969fab46d1e22d145">Reward</a>.</p>
 
 </div>
 </div>
-<a id="a2ded18881226d0077dc393e0e9304bb1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ded18881226d0077dc393e0e9304bb1">&#9670;&nbsp;</a></span>fromElement()</h2>
+<a id="a4963434fa82853534847bce22ba43a87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4963434fa82853534847bce22ba43a87">&#9670;&nbsp;</a></span>fromElement()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -412,13 +412,13 @@ Protected Member Functions</h2></td></tr>
           <td class="memname">virtual void Component::fromElement </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classElementObject.html">ElementObject</a> *&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>element</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classSerializer.html">Serializer</a> *&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>serializer</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -444,13 +444,13 @@ Protected Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">element</td><td>The <a class="el" href="classElement.html">Element</a> representation of the object </td></tr>
-    <tr><td class="paramname">s</td><td>The serializer (Can be used if serialization of some elements is needed) </td></tr>
+    <tr><td class="paramname">serializer</td><td>The serializer (Can be used if serialization of some elements is needed) </td></tr>
     <tr><td class="paramname">encoding</td><td>The encoding that has been used to create the <a class="el" href="classElement.html">Element</a> representation of the object (Can be used if serialization of some elements is needed) </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classMerkleTree.html#a083ad348bfd770f2400f190112ff39a3">MerkleTree</a>, <a class="el" href="classBlock.html#ab21c6536cf7a26fdf2a2e889a84fcb9d">Block</a>, <a class="el" href="classTransactionMessage.html#a2fbe322d67154d3bcbcc44943eeeb1ef">TransactionMessage</a>, <a class="el" href="classBlockMessage.html#adda957e60057d72e1bc55d7b9c617188">BlockMessage</a>, <a class="el" href="classProofOfWorkMetadata.html#afac533eee3123bce72615ab90f7c9669">ProofOfWorkMetadata</a>, <a class="el" href="classSignMessage.html#a35855647925ec76036ed4602743ed118">SignMessage</a>, <a class="el" href="classMessagesTransaction.html#aa70ed75ff16f6afa61d82458488069d4">MessagesTransaction</a>, <a class="el" href="classReward.html#a6d16e21b60b7f11c7aaf0098a53118a2">Reward</a>, <a class="el" href="classMoneyTransaction.html#a6f4672dba3a75e2782d15366d9ed7a1e">MoneyTransaction</a>, <a class="el" href="classBlockAskMessage.html#a25875b2446d7ecc5f644c568c8f12df3">BlockAskMessage</a>, <a class="el" href="classBlockAnswerMessage.html#affa76e8a95365baf5c9eb409a0a19b9d">BlockAnswerMessage</a>, and <a class="el" href="classStatusTransaction.html#aa05e4be5f990e8a9533383b3b7dc1382">StatusTransaction</a>.</p>
+<p>Implemented in <a class="el" href="classMerkleTree.html#a083ad348bfd770f2400f190112ff39a3">MerkleTree</a>, <a class="el" href="classBlock.html#ab21c6536cf7a26fdf2a2e889a84fcb9d">Block</a>, <a class="el" href="classMetadata.html#a20b7aeeeee85cda0b2ebafde5936608d">Metadata</a>, <a class="el" href="classTransactionMessage.html#acfd0f3a9f865a9b4ea86eb5efdfdb3d0">TransactionMessage</a>, <a class="el" href="classBlockMessage.html#a0d88501e510a8b2c21654bb1617a8c27">BlockMessage</a>, <a class="el" href="classMessagesTransaction.html#aa70ed75ff16f6afa61d82458488069d4">MessagesTransaction</a>, <a class="el" href="classMoneyTransaction.html#a6f4672dba3a75e2782d15366d9ed7a1e">MoneyTransaction</a>, <a class="el" href="classProofOfWorkMetadata.html#afac533eee3123bce72615ab90f7c9669">ProofOfWorkMetadata</a>, <a class="el" href="classSignMessage.html#a553b8c0dbf0c81c9666a1a0a930b26aa">SignMessage</a>, <a class="el" href="classStatusTransaction.html#aa05e4be5f990e8a9533383b3b7dc1382">StatusTransaction</a>, <a class="el" href="classReward.html#a6d16e21b60b7f11c7aaf0098a53118a2">Reward</a>, <a class="el" href="classBlockAnswerMessage.html#ae119d2fa344f93ce5cdf5975f0165978">BlockAnswerMessage</a>, and <a class="el" href="classBlockAskMessage.html#ae3a679dc6f25ce8aedce17892620c3bf">BlockAskMessage</a>.</p>
 
 </div>
 </div>
@@ -479,7 +479,7 @@ Protected Member Functions</h2></td></tr>
 <p class="">Get the type of the transaction</p>
 <dl class="section return"><dt>Returns</dt><dd>The type of the transaction </dd></dl>
 
-<p>Implemented in <a class="el" href="classReward.html#a1d3d05263d54771a314927d09585968c">Reward</a>, <a class="el" href="classMessagesTransaction.html#a1893ac38468108811eb396366a3c0454">MessagesTransaction</a>, <a class="el" href="classMoneyTransaction.html#a705918a47c0471ee7cf82bcdf0aeb5ef">MoneyTransaction</a>, and <a class="el" href="classStatusTransaction.html#a3c92b20549b681508ae7f49d282fdedc">StatusTransaction</a>.</p>
+<p>Implemented in <a class="el" href="classMessagesTransaction.html#a1893ac38468108811eb396366a3c0454">MessagesTransaction</a>, <a class="el" href="classMoneyTransaction.html#a705918a47c0471ee7cf82bcdf0aeb5ef">MoneyTransaction</a>, <a class="el" href="classStatusTransaction.html#a3c92b20549b681508ae7f49d282fdedc">StatusTransaction</a>, and <a class="el" href="classReward.html#a1d3d05263d54771a314927d09585968c">Reward</a>.</p>
 
 </div>
 </div>
@@ -515,7 +515,7 @@ Protected Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the transactions are the same, false otherwise </dd></dl>
 
-<p>Implemented in <a class="el" href="classReward.html#ab2cd65f16c670e3e9d8cfe84a6dc56cb">Reward</a>, <a class="el" href="classMessagesTransaction.html#aeeffbaa69d8432b6c12ca8fdf66e2e8b">MessagesTransaction</a>, <a class="el" href="classStatusTransaction.html#a4d4c3a2be0d52e7f54675033cdf66881">StatusTransaction</a>, and <a class="el" href="classMoneyTransaction.html#a9cd0b36a92155e91a25eb1b1435516d3">MoneyTransaction</a>.</p>
+<p>Implemented in <a class="el" href="classMessagesTransaction.html#aeeffbaa69d8432b6c12ca8fdf66e2e8b">MessagesTransaction</a>, <a class="el" href="classStatusTransaction.html#a4d4c3a2be0d52e7f54675033cdf66881">StatusTransaction</a>, <a class="el" href="classReward.html#ab2cd65f16c670e3e9d8cfe84a6dc56cb">Reward</a>, and <a class="el" href="classMoneyTransaction.html#a9cd0b36a92155e91a25eb1b1435516d3">MoneyTransaction</a>.</p>
 
 </div>
 </div>
@@ -544,7 +544,7 @@ Protected Member Functions</h2></td></tr>
 <p class="">The method used by the serializer to transform an object into an <a class="el" href="classElement.html">Element</a> representation. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classElement.html">Element</a></dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="classElement.html">Element</a> representation of the object </dd></dl>
 
-<p>Implemented in <a class="el" href="classMerkleTree.html#a4e72819c6cbc49ed8ce092f464711a5f">MerkleTree</a>, <a class="el" href="classBlock.html#aa289363a40f0d3ba88720ad0bc71f34f">Block</a>, <a class="el" href="classTransactionMessage.html#ae20e7d6a7b5811bb56a32ec6af59b8e2">TransactionMessage</a>, <a class="el" href="classBlockMessage.html#ab47afd5cfb7d6d5c544d8def5d0f9737">BlockMessage</a>, <a class="el" href="classSignMessage.html#aee897c4bf78df966b8cca95e589566e4">SignMessage</a>, <a class="el" href="classProofOfWorkMetadata.html#a2aab4c26afb3a85a712cc065028274d9">ProofOfWorkMetadata</a>, <a class="el" href="classBlockAskMessage.html#a0bc20076f19423855ab5772003fb65f6">BlockAskMessage</a>, <a class="el" href="classBlockAnswerMessage.html#ac7f35ec9f7f2fbcd726628c2a984518b">BlockAnswerMessage</a>, <a class="el" href="classReward.html#a0ecd536148463880f9980fe415b6eb1d">Reward</a>, <a class="el" href="classMessagesTransaction.html#a0ef8ec080a2698a02ad8b1b95d243720">MessagesTransaction</a>, <a class="el" href="classStatusTransaction.html#aed42f2d61f2d50ec07bb6b35473f61f2">StatusTransaction</a>, and <a class="el" href="classMoneyTransaction.html#a84adc847266467965014cb04acd48bea">MoneyTransaction</a>.</p>
+<p>Implemented in <a class="el" href="classMetadata.html#a4c069355c3bd6a7edf677f010383f1d9">Metadata</a>, <a class="el" href="classMerkleTree.html#a4e72819c6cbc49ed8ce092f464711a5f">MerkleTree</a>, <a class="el" href="classBlock.html#aa289363a40f0d3ba88720ad0bc71f34f">Block</a>, <a class="el" href="classTransactionMessage.html#ae20e7d6a7b5811bb56a32ec6af59b8e2">TransactionMessage</a>, <a class="el" href="classBlockMessage.html#ab47afd5cfb7d6d5c544d8def5d0f9737">BlockMessage</a>, <a class="el" href="classProofOfWorkMetadata.html#a2aab4c26afb3a85a712cc065028274d9">ProofOfWorkMetadata</a>, <a class="el" href="classSignMessage.html#aee897c4bf78df966b8cca95e589566e4">SignMessage</a>, <a class="el" href="classBlockAnswerMessage.html#ac7f35ec9f7f2fbcd726628c2a984518b">BlockAnswerMessage</a>, <a class="el" href="classBlockAskMessage.html#a0bc20076f19423855ab5772003fb65f6">BlockAskMessage</a>, <a class="el" href="classMessagesTransaction.html#a0ef8ec080a2698a02ad8b1b95d243720">MessagesTransaction</a>, <a class="el" href="classStatusTransaction.html#aed42f2d61f2d50ec07bb6b35473f61f2">StatusTransaction</a>, <a class="el" href="classReward.html#a0ecd536148463880f9980fe415b6eb1d">Reward</a>, and <a class="el" href="classMoneyTransaction.html#a84adc847266467965014cb04acd48bea">MoneyTransaction</a>.</p>
 
 </div>
 </div>
@@ -574,7 +574,7 @@ Protected Member Functions</h2></td></tr>
 <p class="">Check if the transaction is valid compared to the current state of the row </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classRow.html">Row</a></dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the transaction is validm false otherwise </dd></dl>
 
-<p>Implemented in <a class="el" href="classReward.html#a9c9a3219ba6b8b068f7f1cccc779b1b5">Reward</a>, <a class="el" href="classMessagesTransaction.html#a59a0d03ac175701616ce341947f9cd64">MessagesTransaction</a>, <a class="el" href="classMoneyTransaction.html#a20c58901a2aa8c51b73d56000545e82c">MoneyTransaction</a>, and <a class="el" href="classStatusTransaction.html#a828dd6b4d51a33193b69454933be1cf4">StatusTransaction</a>.</p>
+<p>Implemented in <a class="el" href="classMessagesTransaction.html#a59a0d03ac175701616ce341947f9cd64">MessagesTransaction</a>, <a class="el" href="classMoneyTransaction.html#a20c58901a2aa8c51b73d56000545e82c">MoneyTransaction</a>, <a class="el" href="classStatusTransaction.html#a828dd6b4d51a33193b69454933be1cf4">StatusTransaction</a>, and <a class="el" href="classReward.html#a9c9a3219ba6b8b068f7f1cccc779b1b5">Reward</a>.</p>
 
 </div>
 </div>

@@ -28,7 +28,7 @@ void SocketServer::run(std::function<bool(Socket*, int, const Serializer*, Node*
     while(this->wait(func, serializer, node));
 }
 
-void SocketServer::run(Serializer* serializer, Node* node)
+void SocketServer::default_run(const Serializer* serializer, Node* node)
 {
     this->run(SocketServer::defaultCallback, serializer, node);
 }

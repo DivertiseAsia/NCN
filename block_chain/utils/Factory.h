@@ -6,6 +6,7 @@
 
 
 /**
+ *  @class Factory "block_chain/utils/Factory.h"
  *  A factory is a particular type of map.
  *  it takes a const char* as key and V as values.
  *  It does provide higher level manipulation than

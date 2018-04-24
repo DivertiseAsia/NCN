@@ -9,6 +9,7 @@
 #include "SignMessage.h"
 
 /**
+ *  @class SignInMessage "block_chain/kernel/messages/SignInMessage.h"
  *  An sign in message for signing out of a peer list
  *  @see SignMessage
  *

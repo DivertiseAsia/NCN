@@ -5,6 +5,14 @@
 #include "../transactions/MessagesTransaction.h"
 #include "../transactions/StatusTransaction.h"
 
+/**
+ *  @class CustomSerializer "serializer/CustomSerializer.h"
+ *  A custom Serializer for testing
+ *  @see Serializer
+ *
+ *  @author Mathieu Lochet
+ *  @version 1
+ */
 class CustomSerializer: public Serializer
 {
     public:

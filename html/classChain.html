@@ -70,18 +70,18 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="Chain_8h_source.html">Chain.h</a>&gt;</code></p>
+<p><code>#include &quot;<a class="el" href="Chain_8h_source.html">block_chain/chain/Chain.h</a>&quot;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae70c386f5d7b2e333419296545656907"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChain.html#ae70c386f5d7b2e333419296545656907">Chain</a> (<a class="el" href="classBlock.html">Block</a> *b, <a class="el" href="classChain.html">Chain</a> *c)</td></tr>
-<tr class="separator:ae70c386f5d7b2e333419296545656907"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff8fb1361af7ee2d958fc25aebf4e86c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChain.html#aff8fb1361af7ee2d958fc25aebf4e86c">Chain</a> (<a class="el" href="classBlock.html">Block</a> *b, <a class="el" href="classChain.html">Chain</a> *c, std::string cr)</td></tr>
+<tr class="separator:aff8fb1361af7ee2d958fc25aebf4e86c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97217102b89693d94c7c724cfcafa28f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChain.html#a97217102b89693d94c7c724cfcafa28f">Chain</a> (const <a class="el" href="classReward.html">Reward</a> *r)</td></tr>
 <tr class="separator:a97217102b89693d94c7c724cfcafa28f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06b56afcf5b9ef0c6371b49ae2eef2da"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChain.html#a06b56afcf5b9ef0c6371b49ae2eef2da">~Chain</a> ()</td></tr>
 <tr class="separator:a06b56afcf5b9ef0c6371b49ae2eef2da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a271a75a12aeae52a2645dcaa14549c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classChain.html">Chain</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChain.html#a7a271a75a12aeae52a2645dcaa14549c">add</a> (<a class="el" href="classBlock.html">Block</a> *)</td></tr>
-<tr class="separator:a7a271a75a12aeae52a2645dcaa14549c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46a71e3afc2a06ecde4604d418946c1a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classChain.html">Chain</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChain.html#a46a71e3afc2a06ecde4604d418946c1a">add</a> (<a class="el" href="classBlock.html">Block</a> *block, std::string creator)</td></tr>
+<tr class="separator:a46a71e3afc2a06ecde4604d418946c1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ee2e1efbfe8d2896b0ac836fb750362"><td class="memItemLeft" align="right" valign="top">std::pair&lt; int, <a class="el" href="classChain.html">Chain</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChain.html#a5ee2e1efbfe8d2896b0ac836fb750362">top_fingerprint</a> ()</td></tr>
 <tr class="separator:a5ee2e1efbfe8d2896b0ac836fb750362"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19dda9a394df1d45b014c649eb77cb64"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChain.html#a19dda9a394df1d45b014c649eb77cb64">update_database</a> (<a class="el" href="classBlock.html">Block</a> *b, const <a class="el" href="classSerializer.html">Serializer</a> *s, const char *encoding)</td></tr>
@@ -90,6 +90,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5725ffa89b1f0333536238951d9acd91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad06a7e312123831339b614a74ff5c9e0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChain.html#ad06a7e312123831339b614a74ff5c9e0">count</a> () const</td></tr>
 <tr class="separator:ad06a7e312123831339b614a74ff5c9e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e7a53b58774ad359b7e121814b08c11"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChain.html#a8e7a53b58774ad359b7e121814b08c11">find_creator</a> (std::string &amp;hash)</td></tr>
+<tr class="separator:a8e7a53b58774ad359b7e121814b08c11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -106,8 +108,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>NodeState</b></td></
 <dl class="section author"><dt>Author</dt><dd>Mathieu Lochet </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>1 </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ae70c386f5d7b2e333419296545656907"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae70c386f5d7b2e333419296545656907">&#9670;&nbsp;</a></span>Chain() <span class="overload">[1/2]</span></h2>
+<a id="aff8fb1361af7ee2d958fc25aebf4e86c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff8fb1361af7ee2d958fc25aebf4e86c">&#9670;&nbsp;</a></span>Chain() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -122,7 +124,13 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>NodeState</b></td></
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classChain.html">Chain</a> *&#160;</td>
-          <td class="paramname"><em>c</em>&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>cr</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -135,6 +143,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>NodeState</b></td></
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">b</td><td>The new <a class="el" href="classBlock.html">Block</a> to add on the chain </td></tr>
+    <tr><td class="paramname">cr</td><td>The creator of the string </td></tr>
     <tr><td class="paramname">c</td><td>The parent <a class="el" href="classChain.html">Chain</a> </td></tr>
   </table>
   </dd>
@@ -147,6 +156,9 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>NodeState</b></td></
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">Chain::Chain </td>
@@ -156,6 +168,11 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>NodeState</b></td></
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p class="">Creates the root chain, with a given <a class="el" href="classReward.html">Reward</a> object</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -186,8 +203,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>NodeState</b></td></
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a7a271a75a12aeae52a2645dcaa14549c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a271a75a12aeae52a2645dcaa14549c">&#9670;&nbsp;</a></span>add()</h2>
+<a id="a46a71e3afc2a06ecde4604d418946c1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46a71e3afc2a06ecde4604d418946c1a">&#9670;&nbsp;</a></span>add()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -196,12 +213,29 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>NodeState</b></td></
           <td class="memname"><a class="el" href="classChain.html">Chain</a> * Chain::add </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classBlock.html">Block</a> *&#160;</td>
-          <td class="paramname"><em>b</em></td><td>)</td>
+          <td class="paramname"><em>block</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>creator</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p class="">Add a new block on the chain, and links it with its parent's fingerprint</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">block</td><td>The new <a class="el" href="classBlock.html">Block</a> to add on the chain </td></tr>
+    <tr><td class="paramname">creator</td><td>The creator of the string </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>the newly created chain </dd></dl>
 
 </div>
@@ -259,6 +293,32 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>NodeState</b></td></
 </div><div class="memdoc">
 <p class="">Count the number of blocks in totalm including the ones on forks</p>
 <dl class="section return"><dt>Returns</dt><dd>The number of blocks in the <a class="el" href="classChain.html">Chain</a> </dd></dl>
+
+</div>
+</div>
+<a id="a8e7a53b58774ad359b7e121814b08c11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e7a53b58774ad359b7e121814b08c11">&#9670;&nbsp;</a></span>find_creator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Chain::find_creator </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>hash</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p class="">Get the original creator of the block</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hash</td><td>The fingerprint of the block </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The creator of the block </dd></dl>
 
 </div>
 </div>

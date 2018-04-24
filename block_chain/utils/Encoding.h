@@ -9,6 +9,7 @@
 #include <cstring>
 
 /**
+ *  @class Encoding "block_chain/utils/Encoding.h"
  *  An encoding util.
  *  The static class encoding allows to encode any string in
  *  hexadecimal and get any text from its hexadecimal form.

@@ -38,6 +38,7 @@ typedef struct in_addr IN_ADDR;*/
 class Node;
 
 /**
+ *  @class SocketServer "block_chain/utils/socket/SocketServer.h"
  *  The class that listen to the port
  *
  *  @author Mathieu Lochet
@@ -77,12 +78,11 @@ public:
      *  @param serializer the serializer to use to parse packets
      *  @param node the client that uses the server
      */
-    void run(Serializer* serializer, Node* node);
+    void default_run(const Serializer* serializer, Node* node);
 
     /**
      *  The destructor closes the connection with the other peers
      */
-
     virtual ~SocketServer();
 
     /**

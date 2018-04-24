@@ -9,6 +9,7 @@
 #include "Message.h"
 
 /**
+ *  @class TransactionMessage "block_chain/kernel/messages/TransactionMessage.h"
  *  An transaction message contains everything about a transaction:
  *  - the public key of the creator
  *  - the serialized transaction
@@ -33,7 +34,7 @@ public:
      *
      *  @param p The plain text.
      *  @param c The ciphered text.
-     *  @param p The user's key.
+     *  @param k The user's key.
      *  @param t The Merkle tree for that transaction.
      */
     TransactionMessage(std::string p, std::string c, std::string k, MerkleTree* t);
@@ -47,7 +48,7 @@ public:
      */
     std::string getCipher();
 protected:
-    void fromElement(ElementObject*, const Serializer* serializer, const char* encoding) override;
+    void fromElement(ElementObject* element, const Serializer* serializer, const char* encoding) override;
 
 private:
 

@@ -21,11 +21,6 @@ void MessagesTransaction::fromElement(ElementObject* e, const Serializer*, const
     e->getItem("message", &message);
 };
 
-std::string MessagesTransaction::to_string() const {
-    std::string res = "message:" + message;
-    return res;
-}
-
 std::vector<std::string> MessagesTransaction::apply(Row* row){
     auto * cr = dynamic_cast<CustomRow*>(row);
     cr->messages.emplace_back(message);

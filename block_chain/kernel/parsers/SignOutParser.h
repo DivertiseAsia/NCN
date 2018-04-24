@@ -10,6 +10,7 @@
 #include <algorithm>
 
 /**
+ *  @class SignOutParser "block_chain/kernel/parsers/SignOutParser.h"
  *  A message parser linked to a SignOutMessage.
  *  @see Message
  *  @see SignOutMessage

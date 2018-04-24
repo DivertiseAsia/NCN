@@ -13,6 +13,7 @@
 #include "../utils/serialization/Serializer.h"
 
 /**
+ *  @class Chain "block_chain/chain/Chain.h"
  *  The chain contains all of the blocks and
  *  builds the block chain. It also updates the
  *  current state of a system with temporal

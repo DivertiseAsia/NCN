@@ -209,16 +209,14 @@ utility
 /home/default/CLionProjects/block_chain/block_chain/kernel/messages/Message.h
 ../../algorithm/RSA.h
 /home/default/CLionProjects/block_chain/block_chain/algorithm/RSA.h
-proof/metadatas/ProofOfWorkMetadata.h
-/home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.h
 
 /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
 vector
 -
 ../../algorithm/Hash.h
 /home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h
-proof/metadatas/Metadata.h
-/home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/Metadata.h
+proof/metadata/Metadata.h
+/home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadata/Metadata.h
 ../../kernel/components/Component.h
 /home/default/CLionProjects/block_chain/block_chain/kernel/components/Component.h
 ../../algorithm/MerkleTree.h
@@ -311,8 +309,8 @@ Proof.h
 /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/ProofOfWork.cpp
 ProofOfWork.h
 /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/ProofOfWork.h
-metadatas/ProofOfWorkMetadata.h
-/home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.h
+metadata/ProofOfWorkMetadata.h
+/home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadata/ProofOfWorkMetadata.h
 ../../../kernel/messages/BlockMessage.h
 /home/default/CLionProjects/block_chain/block_chain/kernel/messages/BlockMessage.h
 
@@ -320,11 +318,11 @@ metadatas/ProofOfWorkMetadata.h
 Proof.h
 /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/Proof.h
 
-/home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/Metadata.cpp
+/home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadata/Metadata.cpp
 Metadata.h
-/home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/Metadata.h
+/home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadata/Metadata.h
 
-/home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/Metadata.h
+/home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadata/Metadata.h
 ../../../../utils/serialization/Element.h
 /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
 ../../../../kernel/components/Component.h
@@ -334,17 +332,17 @@ Metadata.h
 ../../../state/Database.h
 /home/default/CLionProjects/block_chain/block_chain/chain/state/Database.h
 
-/home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.cpp
+/home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadata/ProofOfWorkMetadata.cpp
 ProofOfWorkMetadata.h
-/home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.h
+/home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadata/ProofOfWorkMetadata.h
 ../../../../algorithm/Hash.h
 /home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h
 iostream
 -
 
-/home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.h
+/home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadata/ProofOfWorkMetadata.h
 Metadata.h
-/home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/Metadata.h
+/home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadata/Metadata.h
 
 /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Reward.cpp
 Reward.h
@@ -717,8 +715,8 @@ json/JsonParser.h
 /home/default/CLionProjects/block_chain/block_chain/utils/serialization/json/JsonParser.h
 utility
 -
-../../chain/block/proof/metadatas/ProofOfWorkMetadata.h
-/home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.h
+../../chain/block/proof/metadata/ProofOfWorkMetadata.h
+/home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadata/ProofOfWorkMetadata.h
 
 /home/default/CLionProjects/block_chain/block_chain/utils/serialization/json/JsonCreator.cpp
 JsonCreator.h

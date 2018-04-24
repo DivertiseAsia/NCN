@@ -9,6 +9,7 @@
 #include "Proof.h"
 
 /**
+ *  @class ProofOfWork "block_chain/chain/block/proof/ProofOfWork.h"
  *  A basic proof of work
  *  @see Proof
  *  @see Proof::WORK

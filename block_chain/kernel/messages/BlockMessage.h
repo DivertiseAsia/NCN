@@ -9,6 +9,7 @@
 #include "Message.h"
 
 /**
+ *  @class BlockMessage "block_chain/kernel/messages/BlockMessage.h"
  *  An block message contains everything about a block:
  *  - the serialized block
  *  - the key of the creator
@@ -45,7 +46,7 @@ public:
      */
     const std::string get_key() const;
 protected:
-    void fromElement(ElementObject*, const Serializer* serializer, const char* encoding) override;
+    void fromElement(ElementObject* element, const Serializer* serializer, const char* encoding) override;
 
 private:
 

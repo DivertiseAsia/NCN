@@ -24,11 +24,6 @@ void StatusTransaction::fromElement(ElementObject* e, const Serializer*, const c
     e->getItem("status", &status);
 };
 
-std::string StatusTransaction::to_string() const {
-    std::string res = "status:" + status;
-    return res;
-}
-
 std::vector<std::string> StatusTransaction::apply(Row* row){
     auto * cr = dynamic_cast<CustomRow*>(row);
     cr->status = status;

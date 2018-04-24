@@ -9,6 +9,7 @@
 #include "MessageParser.h"
 
 /**
+ *  @class PeersAskParser "block_chain/kernel/parsers/PeersAskParser.h"
  *  A message parser linked to a AskPeersMessage.
  *  @see Message
  *  @see AskPeersMessage

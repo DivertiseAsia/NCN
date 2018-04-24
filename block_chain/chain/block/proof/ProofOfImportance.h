@@ -9,6 +9,7 @@
 #include "Proof.h"
 
 /**
+ *  @class ProofOfImportance "block_chain/chain/block/proof/ProofOfImportance.h"
  *  A basic proof of importance
  *  @see Proof
  *  @see Proof::IMPORTANCE

@@ -36,6 +36,7 @@
 #include "kernel/components/Config.h"
 
 /**
+ *  @class Node "block_chain/Node.h"
  *  The node is the main entry point of the framework.
  *  It needs to be called to initialize the peer.
  *  Its work is to connect with peers, to exchange with
@@ -55,7 +56,6 @@
  *  @version 6
  */
 class Node{
-    friend class Parser;
     friend class PeersAnswerParser;
     friend class PeersAskParser;
     friend class SignInParser;
@@ -101,6 +101,7 @@ public:
 	 *  @see Serializer
 	 *
 	 *  @param socket The socket in charge of the connection
+	 *  @param port The port the node is listening to TODO: remove this field and use node->self._port instead
 	 *  @param serializer The serializer to serialize and unserialize the packets
 	 *  @param node The node to compute the requests
 	 *  @return true once it's done

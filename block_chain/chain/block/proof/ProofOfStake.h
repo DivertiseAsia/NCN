@@ -9,6 +9,7 @@
 #include "Proof.h"
 
 /**
+ *  @class ProofOfStake "block_chain/chain/block/proof/ProofOfStake.h"
  *  A basic proof of stake
  *  @see Proof
  *  @see Proof::STAKE

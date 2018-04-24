@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['reward',['reward',['../classConfig.html#a6b3fb8d8312246a1b204d04bd872a187',1,'Config']]]
+  ['encoding',['encoding',['../classConfig.html#a9391a8a86ed88a6fefd35ec89c10e861',1,'Config']]]
 ];

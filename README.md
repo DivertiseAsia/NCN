@@ -1,21 +1,56 @@
 # Block-chain Framework
-## Overview
-This project is a C++ Framework built to allow easy and fast development of any kind of block-chain. \
-The idea is to limit the development to transactions and data representation only. No need to implement anything else. \
-Of course, as a framework, it needs a big flexibility, therefore, it is possible to write much more advanced block-chain by configuring as many things as you want. \
+## Table of content
+1. [Overview](#section_overview)
+2. [Installation](#section_installation)
+3. [How to create a new block-chain](#section_create)
+    2. [Node](#section_node)
+    3. [Config](#section_config)
+    4. [Transaction](#section_transaction)
+        1. [Useful methods](#sub_section_useful)
+        2. [Serialization methods](#sub_section_serialization)
+        3. [UI methods](#sub_section_ui)
+        4. [Database methods](#sub_section_database)
+    5. [Reward](#section_reward)
+    6. [TransactionManager](#section_transactionManager)
+    7. [Serializer](#section_serializer)
+    8. [Proof](#section_proof)
+        1. [New proof](#sub_section_newproof)
+        2. [Feed the framework](#sub_section_feedframework)
+    9. [Database](#section_database)
+4. [TODO-List](#section_todo)
+    1. [Hash](#sub_section_hash)
+    2. [Cryptography](#sub_section_cryptography)
+    3. [Proof](#sub_section_proof)
+    4. [Metadata](#sub_section_metadata)
+    5. [Header files](#sub_section_header)
+
+
+
+
+## Overview <a name="section_overview"></a>
+This project is a C++ Framework built to allow easy and fast development of any kind of block-chain. <br/>
+The idea is to limit the development to transactions and data representation only. No need to implement anything else. <br/>
+Of course, as a framework, it provides a big flexibility, therefore, it is possible to write advanced block-chain by configuring as many things as you want. <br/>
 > Note that everything can change to allow more flexibility.
-## Node
+
+## Installation <a name="section_installation"></a>
+To install the framework, you just have to copy/paste the folder ```block_chain``` in your project's root folder
+
+## How to create a new block-chain <a name="section_create"></a>
+To create your own block-chain program, you just have to run the main objects provided by the framework.
+### Node <a name="section_node"></a>
 The node is the peer itself. You only have to create it and it will run.
 ```cpp
 Node node(config);
 ```
-## Config
+### Config <a name="section_config"></a>
 The node is the peer itself. You only have to create it and it will run.
 ```cpp
 Config config("configuration file path", serializer, Proof::WORK, reward);
 ```
-The file itself is a json file.
-##### Example:
+The file itself is a json file. <br/>
+
+<h6>Example:</h6>
 ```json
 {
   "port": 3423,
@@ -24,48 +59,48 @@ The file itself is a json file.
 }
 ```
 the parameters serializer, proof and reward are explained later.
-## Transaction
-Transactions are the most important thing to implement. \
+### Transaction <a name="section_transaction"></a>
+Transactions are the most important thing to implement. <br/>
 ```cpp
 #include "./block_chain/chain/block/transaction/Transaction.h"
 ```
 There is already a pure abstract class to implement, so you basicaly just have to fill the methods for your own Transaction class.
-### Useful methods
-#### get_type
+<h4>Useful methods <a name="sub_section_useful"></a></h4>
+<h5>Transaction::get_type</h5>
 ```cpp
 int get_type() const override;
 ```
 This method is used to give a type to a transaction. Each transaction type must have a different type. It is used as an ID.
-##### Example:
+<h6>Example:</h6>
 ```cpp
 int MoneyTransaction::get_type() const {
     return 2;
 }
 ```
-#### ==
+<h5>Transaction::operator==</h5>
 ```cpp
 bool operator==(Transaction* t) const override
 ```
 This method is used to check if two transactions are the same
-##### Example:
+<h6>Example:</h6>
 ```cpp
 bool operator==(Transaction* t) const override {
     auto * s = dynamic_cast<MoneyTransaction*>(t);
     return amount == s->amount && target == s->target;
 }
 ```
-### Serialization methods
-#### Constructor
+<h4>Serialization methods <a name="sub_section_serialization"></a></h4>
+<h5>Constructor</h5>
 ```cpp
 explicit Transaction();
 ```
 For serialization, you need an empty default constructor.
-#### toElement
+<h5>Transaction::toElement</h5>
 ```cpp
 Element* toElement() const override;
 ```
 This method is used to transform the object into an Element so it can easily be serialized
-##### Example:
+<h6>Example:</h6>
 ```cpp
 Element* MoneyTransaction::toElement() const {
     ElementObject* e = ElementCreator::object();
@@ -76,36 +111,36 @@ Element* MoneyTransaction::toElement() const {
 ```
 The Element system is the key for serialization. You just have to fill all of the fields and their values. If you are using many differents type of Transactions, you should use a type to help your serializer.
 
-#### fromElement (protected)
+<h5>Transaction::fromElement</h5>
 ```cpp
 void fromElement(ElementObject*, const Serializer*, const char* encoding) override;
 ```
 This method is the opposite than toElement. It is used to build the object with a given Element object.
-##### Example:
+<h6>Example:</h6>
 ```cpp
 void MoneyTransaction::fromElement(ElementObject* e, const Serializer*, const char*) {
     e->getItem("amount", &amount);
     e->getItem("target", &target);
 }
 ```
-### UI methods
-#### description
+### UI methods <a name="sub_section_ui"></a>
+<h5>Transaction::description</h5>
 ```cpp
 std::string description() const override;
 ```
 This method is used to show the description of the transaction in the UI for the user to choose.
-##### Example:
+<h6>Example:</h6>
 ```cpp
 std::string MoneyTransaction::description() const {
     return "give money";
 }
 ```
-#### fill_data
+<h5>Transaction::fill_data</h5>
 ```cpp
 void fill_data() override;
 ```
 This method is used to ask the user to fill the transaction's data
-##### Example:
+<h6>Example:</h6>
 ```cpp
 void MoneyTransaction::fill_data() {
     do {
@@ -117,25 +152,25 @@ void MoneyTransaction::fill_data() {
     std::cout << "Money transaction created" << std::endl;
 }
 ```
-#### clone
+<h5>Transaction::clone</h5>
 ```cpp
 Transaction* clone() override;
 ```
 This method is used to create a new object of the same class.
-##### Example:
+<h6>Example:</h6>
 ```cpp
 Transaction* MoneyTransaction::clone() {
     return new MoneyTransaction;
 }
 ```
-### Database methods
-#### apply
+<h4>Database methods <a name="sub_section_database"></a></h4>
+<h5>Transaction::apply</h5>
 ```cpp
 std::vector<std::string> apply(Row* row) override;
 ```
 This method is used to apply changes into a database.
 It returns a list of users to apply the reverse transaction
-##### Example:
+<h6>Example:</h6>
 ```cpp
 std::vector<std::string> MoneyTransaction::apply(Row* row){
     auto * cr = dynamic_cast<CustomRow*>(row);
@@ -145,45 +180,45 @@ std::vector<std::string> MoneyTransaction::apply(Row* row){
     return  targets;
 }
 ```
-#### apply_reverse
+<h5>Transaction::apply_reverse</h5>
 ```cpp
 void apply_reverse(Row* row) override;
 ```
 This method is used to apply the reverse transaction changes into a database.
-##### Example:
+<h6>Example:</h6>
 ```cpp
 void MoneyTransaction::apply_reverse(Row* row){
     auto * cr = dynamic_cast<CustomRow*>(row);
     cr->money += amount;
 }
 ```
-#### createRow
+<h5>Transaction::createRow</h5>
 ```cpp
 Row* createRow() const override;
 ```
-Creates a row in the database. Since Rows are custom objects from the developper, it cannot be generated by the framework, so the transactions are generating it.
-##### Example:
+Creates a row in the database. Since Rows are custom objects from the developer, it cannot be generated by the framework, so the transactions are generating it.
+<h6>Example:</h6>
 ```cpp
 Row* MoneyTransaction::createRow() const {
     return new CustomRow();
 };
 ```
-#### validate
+<h5>Transaction::validate</h5>
 ```cpp
 bool validate(Row *row) const override;
 ```
 This method is used to check if the transaction is valid and can be add to the block chain
-##### Example:
+<h5>Example:</h5>
 ```cpp
 bool MoneyTransaction::validate(Row *row) const {
     auto * cr = dynamic_cast<CustomRow*>(row);
     return amount >= cr->money;
 }
 ```
-## Reward
+### Reward <a name="section_reward"></a>
 The reward is a very particular kind of Transaction.
-You only have to override the methods ```clone``` and ```createRow```.
-## TransactionManager
+You only have to override the methods ```Reward::clone``` and ```Reward::createRow```.
+### TransactionManager <a name="section_transactionManager"></a>
 The transaction manager is a built in class from the framework. You only need to give it a list of transactions, and then to give it to the Node object.
 ```cpp
 TransactionManager manager;
@@ -192,14 +227,18 @@ manager.put(new MoneyTransaction);
 manager.put(new MessagesTransaction);
 node.start(manager);
 ```
-## Serializer
+The provided TransactionManager class allows you to easily run every type of transactions without implementing anything. <br />
+However, this class is a helper, you can easily manage the transactions creation by yourself without this class. <br />
+If you choose this solution, you only have to use the Node::request_transaction method in order to process your transactions.
+### Serializer <a name="section_serializer"></a>
 The serialization class is used to transfrom Objects into string using Elements and strings into Objects using Elements.
 One method from this class needs to be overridden:
+<h5>Serializer::unserializeTransaction</h5>
 ```cpp
 virtual Transaction* unserializeTransaction(std::string transaction, const char* encoding) const;
 ```
 It need to be overridden because the framework doesn't know about your transactions, therefore, you have to implement this method using the Serializer methods
-##### Example:
+<h6>Example:</h6>
 ```cpp
 Transaction* CustomSerializer::unserializeTransaction(std::string transaction, const char* key) const {
     ElementObject* e = getElement(transaction, key);
@@ -214,17 +253,16 @@ Transaction* CustomSerializer::unserializeTransaction(std::string transaction, c
     return t;
 }
 ```
-## Proof
-Proofs are ## run
-the basis of block chain validation. Some proofs are implemented, but not all of them. Therefore, you can create your own proof and send it to the framework.
-### New proof
+### Proof <a name="section_proof"></a>
+Proofs are the basis of block chain validation. Some proofs are implemented, but not all of them. Therefore, you can create your own proof and send it to the framework.
+<h4>New proof <a name="sub_section_newproof"></a></h4>
 A new proof class needs to implements 2 methods
-#### run
+<h5>Proof::run</h5>
 ```cpp
 virtual void run(Block* block, std::string key) = 0;
 ```
 This method will be called to generate the proof, and it will create a new Metadata for the current block.
-##### Example:
+<h6>Example:</h6>
 ```cpp
 void ProofOfWork::run(Block* block, std::string key){
     Hash tmp((block->parent_fingerprint != nullptr ? block->parent_fingerprint->to_string() : "0") + key);
@@ -240,13 +278,13 @@ void ProofOfWork::run(Block* block, std::string key){
     }
 }
 ```
-#### accept
+<h5>Proof::accept</h5>
 ```cpp
 virtual bool accept(Block* block, Message*) = 0;
 ```
-This method will be called to check is the metadata generated by the method run by another peer is correct. \
+This method will be called to check is the metadata generated by the method run by another peer is correct. <br/>
 If it is not correct, it means the peer is generating false data, therefore the block must be rejected
-##### Example:
+<h6>Example:</h6>
 ```cpp
 bool ProofOfWork::accept(Block* block, Message* m){
     auto data = dynamic_cast<ProofOfWorkMetadata*>(block->data);
@@ -256,25 +294,25 @@ bool ProofOfWork::accept(Block* block, Message* m){
     return h.to_string().substr(0, 1) == "0";
 }
 ```
-### Give the proof to the framework
-One your proof is done, you just have to give it to the framework using this method:
+<h4>Feed the framework <a name="sub_section_feedframework"></a></h4>
+Once your proof is done, you just have to give it to the framework using this method:
 ```cpp
 static void Proof::add_proof(int id, std::function<Proof*()> proof);
 ```
-The id needs to be passed to the Node object. The second parameter is a lambda that creates the proof.
-##### Example:
+The id needs to be passed to the Node object. The second parameter is a lambda expression that creates the proof.
+<h6>Example:</h6>
 ```cpp
 Proof::add_proof(Proof::WORK, []() -> Proof*{return new ProofOfWork;});
 ```
-## Database
-The database is basically a map of Row. Rows are pure abstract classes that needs to be implemented, because their structure depends of your implementation \
+### Database <a name="section_database"></a>
+The database is basically a map of Row. Rows are pure abstract classes that needs to be implemented, because their structure depends of your implementation <br/>
 There are 3 methods that must be implemented.
-#### clone
+<h5>Row::clone</h5>
 ```cpp
 virtual Row* clone() const = 0;
 ```
 Like Transactions, you need to duplicate the Row in order to accept differents states on differents blocks in the block chain
-##### Example:
+<h6>Example:</h6>
 ```cpp
 Row* CustomRow::clone() const{
     auto r = new CustomRow;
@@ -284,12 +322,12 @@ Row* CustomRow::clone() const{
     return r;
 }
 ```
-#### to_string
+<h5>Row::to_string</h5>
 ```cpp
 virtual std::string to_string() const = 0;
 ```
 Like Transactions, you need a visual representation of the database
-##### Example:
+<h6>Example:</h6>
 ```cpp
 std::string CustomRow::to_string() const {
     std::string str;
@@ -299,26 +337,35 @@ std::string CustomRow::to_string() const {
     return str;
 }
 ```
-#### reward
+<h5>Row::reward</h5>
 ```cpp
 virtual void reward() = 0;
 ```
 The reward method is called to reward the user who validated the block
-##### Example:
+<h6>Example:</h6>
 ```cpp
 void CustomRow::reward() {
     money += 1;
 }
 ```
-## TODO-List
-### Hash
-For now, there is only one hash class based on md5. \
+## TODO-List <a name="section_todo"></a>
+### Hash <a name="sub_section_hash"></a>
+For now, there is only one hash class based on md5. <br/>
 It will be changed to make this hash class abstract with the possibility for the user to create his own hash class (And to keep some basic hash functions).
 
-### Cryptography
-For now, there is only one cryptography class based on RSA. \
+### Cryptography <a name="sub_section_cryptography"></a>
+For now, there is only one cryptography class based on RSA. <br/>
 It will be changed to make this cryptography class abstract with the possibility for the user to create his own cryptography class (And to keep some basic cryptography functions).
 
-### Proofs
-For now, there is only one proof: the proof of work. \
+### Proof <a name="sub_section_proof"></a>
+For now, there is only one proof: the proof of work. <br/>
 The framework will be updated with new proofs
+
+### Metadata <a name="sub_section_metadata"></a>
+For now, new metadata types with new proofs require the developer to override the method Serializer::unserializeMetadata <br/>
+This is not generic enough and will be updated to inject new possible metadata type.
+
+### Header files <a name="sub_section_header"></a>
+For now, the installation of the framework is simple by copying files.<br/>
+A complete version of the program will run with header files and DLL files.
+

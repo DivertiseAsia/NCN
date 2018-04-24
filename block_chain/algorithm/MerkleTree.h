@@ -9,7 +9,9 @@
 #include "../chain/block/transaction/Transaction.h"
 
 class Block;
+
 /**
+ *  @class MerkleTree "block_chain/algorithm/MerkleTree.h"
  *  The Merkle tree representation for Hashes
  *  in a Block
  *  @see Block

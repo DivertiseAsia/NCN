@@ -6,6 +6,7 @@
 #include <map>
 
 /**
+ *  @class JsonParser "block_chain/utils/serialization/json/JsonParser.h"
  *  A parser conceived to parse any json file in an Element representation
  *  @see ContentParser
  *  @see Element

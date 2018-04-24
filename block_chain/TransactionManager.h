@@ -9,6 +9,7 @@
 #include "chain/block/transaction/Transaction.h"
 
 /**
+ *  @class TransactionManager "block_chain/TransactionManager.h"
  *  The manager class of all transactions.
  *  It generates transactions based on the ones
  *  it indexed

@@ -42,6 +42,7 @@ typedef struct in_addr IN_ADDR;*/
 #include <functional>
 
 /**
+ *  @class Socket "block_chain/utils/socket/Socket.h"
  *  The class that listen to the port
  *
  *  @author Mathieu Lochet

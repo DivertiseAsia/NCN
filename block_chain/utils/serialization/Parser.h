@@ -11,6 +11,7 @@ class ElementObject;
 class ElementDouble;
 
 /**
+ *  @class ContentReader "block_chain/utils/serialization/Parser.h"
  *  An abstract reader.
  *  A reader is a class that generates Elements with a given string. It work in the opposite way as well
  *  @see Element
@@ -116,6 +117,7 @@ class ContentReader
 };
 
 /**
+ *  @class ContentParser "block_chain/utils/serialization/Parser.h"
  *  An abstract parser.
  *  A parser is a particular reader that only works in the string to Element way.
  *  @see ContentReader
@@ -131,6 +133,7 @@ class ContentParser: public ContentReader
 };
 
 /**
+ *  @class ContentCreator "block_chain/utils/serialization/Parser.h"
  *  An abstract creator.
  *  A creator is a particular reader that only works in the Element to string way.
  *  @see ContentReader
@@ -146,6 +149,7 @@ class ContentCreator: public ContentReader
 };
 
 /**
+ *  @class ElementCreator "block_chain/utils/serialization/Parser.h"
  *  The Element creator class is a static factory that can generates Elements for
  *  different primitive types.
  *  @see ElementInt

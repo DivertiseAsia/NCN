@@ -11,6 +11,7 @@ class Node;
 class Message;
 
 /**
+ *  @class MessageParser "block_chain/kernel/parsers/MessageParser.h"
  *  An abstract message parser.
  *  A message parser is linked to a particular type of message.
  *  Its goal is to receive the message, to parse it and to

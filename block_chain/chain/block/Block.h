@@ -7,7 +7,7 @@
 
 #include <vector>
 #include "../../algorithm/Hash.h"
-#include "proof/metadatas/Metadata.h"
+#include "proof/metadata/Metadata.h"
 #include "../../kernel/components/Component.h"
 #include "../../algorithm/MerkleTree.h"
 #include <iostream>
@@ -16,6 +16,7 @@
 class Serializer;
 
 /**
+ *  @class Block "block_chain/chain/block/Block.h"
  *  The block is one of the most important element
  *  of the block chain.
  *

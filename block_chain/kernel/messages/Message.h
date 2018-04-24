@@ -9,6 +9,7 @@
 #include <functional>
 
 /**
+ *  @class Message "block_chain/kernel/messages/Message.h"
  *  An abstract message and a message factory.
  *  A message is a way to ask requests to an other peer.
  *  All different messages have different action on the

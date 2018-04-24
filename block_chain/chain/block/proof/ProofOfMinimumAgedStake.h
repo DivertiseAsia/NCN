@@ -9,6 +9,7 @@
 #include "Proof.h"
 
 /**
+ *  @class ProofOfMinimumAgedStake "block_chain/chain/block/proof/ProofOfMinimumAgedStake.h"
  *  A basic proof of minimum aged stake
  *  @see Proof
  *  @see Proof::MINIMUM_AGED_STAKE

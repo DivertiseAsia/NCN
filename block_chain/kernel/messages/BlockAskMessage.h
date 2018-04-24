@@ -9,6 +9,7 @@
 #include "Message.h"
 
 /**
+ *  @class BlockAskMessage "block_chain/kernel/messages/BlockAskMessage.h"
  *  A message to ask a missing block
  *  @see Message
  *
@@ -33,7 +34,7 @@ public:
     ~BlockAskMessage() override;
     Element* toElement() const override;
 protected:
-    void fromElement(ElementObject*, const Serializer* serializer, const char* encoding) override;
+    void fromElement(ElementObject* element, const Serializer* serializer, const char* encoding) override;
 
 private:
 

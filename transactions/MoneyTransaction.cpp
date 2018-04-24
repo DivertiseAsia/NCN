@@ -25,11 +25,6 @@ void MoneyTransaction::fromElement(ElementObject* e, const Serializer*, const ch
     e->getItem("target", &target);
 };
 
-std::string MoneyTransaction::to_string() const {
-    std::string res = "amount:" + std::to_string(amount) + " to" + target;
-    return res;
-}
-
 std::vector<std::string> MoneyTransaction::apply(Row* row){
     auto * cr = dynamic_cast<CustomRow*>(row);
     cr->money -= amount;

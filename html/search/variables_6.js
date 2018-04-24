@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['type',['type',['../classMessage.html#afbfb481c98b13d0deba0bac443bebe29',1,'Message']]]
+  ['importance',['IMPORTANCE',['../classProof.html#a4e71a5e5928900794353acdd169ca652',1,'Proof']]]
 ];

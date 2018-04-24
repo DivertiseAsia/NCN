@@ -17,11 +17,6 @@ Element* Reward::toElement() const {
 void Reward::fromElement(ElementObject* e, const Serializer*, const char*) {
 }
 
-std::string Reward::to_string() const {
-    return "";
-}
-
-
 void Reward::apply_reverse(Row*){
 
 }

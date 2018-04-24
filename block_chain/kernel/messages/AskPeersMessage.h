@@ -9,6 +9,7 @@
 #include "SignMessage.h"
 
 /**
+ *  @class AskPeersMessage "block_chain/kernel/messages/AskPeersMessage.h"
  *  An ask peers message for asking the peers list
  *  @see SignMessage
  *

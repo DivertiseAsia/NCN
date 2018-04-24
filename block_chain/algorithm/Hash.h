@@ -14,6 +14,7 @@
 class Serializer;
 
 /**
+ *  @class Hash "block_chain/algorithm/Hash.h"
  *  A class for md5 based hash, based on OpenSLL
  *
  *  @author Mathieu Lochet
@@ -117,10 +118,10 @@ public:
      *  @see Serializer
      *
      *  @param element The Element representation of the object
-     *  @param s The serializer (Can be used if serialization of some elements is needed)
+     *  @param serializer The serializer (Can be used if serialization of some elements is needed)
      *  @param encoding The encoding that has been used to create the Element representation of the object (Can be used if serialization of some elements is needed)
      */
-    void fromElement(ElementObject* e, const Serializer* serializer, const char* encoding);
+    void fromElement(ElementObject* element, const Serializer* serializer, const char* encoding);
 private:
 
     /**

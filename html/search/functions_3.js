@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['chain',['Chain',['../classChain.html#ae70c386f5d7b2e333419296545656907',1,'Chain::Chain(Block *b, Chain *c)'],['../classChain.html#a97217102b89693d94c7c724cfcafa28f',1,'Chain::Chain(const Reward *r)']]],
+  ['chain',['Chain',['../classChain.html#aff8fb1361af7ee2d958fc25aebf4e86c',1,'Chain::Chain(Block *b, Chain *c, std::string cr)'],['../classChain.html#a97217102b89693d94c7c724cfcafa28f',1,'Chain::Chain(const Reward *r)']]],
   ['check_5ftransaction',['check_transaction',['../classChain.html#a5725ffa89b1f0333536238951d9acd91',1,'Chain::check_transaction()'],['../classNodeState.html#ad8fac1372753ec35c9fcee92f71d75d6',1,'NodeState::check_transaction()']]],
   ['checkfingerprint',['checkFingerPrint',['../classBlock.html#a0755737dbbca68ee6a1ca62340843746',1,'Block']]],
   ['clear',['clear',['../classFactory.html#ab807366d94004ad2b1c88d5c95de1942',1,'Factory']]],

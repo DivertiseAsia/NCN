@@ -69,7 +69,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="SocketServer_8h_source.html">SocketServer.h</a>&gt;</code></p>
+<p><code>#include &quot;<a class="el" href="SocketServer_8h_source.html">block_chain/utils/socket/SocketServer.h</a>&quot;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -77,8 +77,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a73939197c857f63eede6fc2f0c6ab433"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2876604e63911e2097385e235a8592cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSocketServer.html#a2876604e63911e2097385e235a8592cb">run</a> (std::function&lt; bool(<a class="el" href="classSocket.html">Socket</a> *, int, const <a class="el" href="classSerializer.html">Serializer</a> *serializer, <a class="el" href="classNode.html">Node</a> *node)&gt; func, const <a class="el" href="classSerializer.html">Serializer</a> *serializer, <a class="el" href="classNode.html">Node</a> *node)</td></tr>
 <tr class="separator:a2876604e63911e2097385e235a8592cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaaa3c5145b286c3d492f9bf1bec5a5dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSocketServer.html#aaaa3c5145b286c3d492f9bf1bec5a5dc">run</a> (<a class="el" href="classSerializer.html">Serializer</a> *serializer, <a class="el" href="classNode.html">Node</a> *node)</td></tr>
-<tr class="separator:aaaa3c5145b286c3d492f9bf1bec5a5dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2931df43caecb1ada1c00f6b1943f24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSocketServer.html#ae2931df43caecb1ada1c00f6b1943f24">default_run</a> (const <a class="el" href="classSerializer.html">Serializer</a> *serializer, <a class="el" href="classNode.html">Node</a> *node)</td></tr>
+<tr class="separator:ae2931df43caecb1ada1c00f6b1943f24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0e595690e453ef4b8e8da174069aba9"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSocketServer.html#af0e595690e453ef4b8e8da174069aba9">~SocketServer</a> ()</td></tr>
 <tr class="separator:af0e595690e453ef4b8e8da174069aba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e673e526a459bdb3ca92e103ec212ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSocketServer.html#a1e673e526a459bdb3ca92e103ec212ae">close</a> ()</td></tr>
@@ -167,8 +167,47 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ae2931df43caecb1ada1c00f6b1943f24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2931df43caecb1ada1c00f6b1943f24">&#9670;&nbsp;</a></span>default_run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SocketServer::default_run </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classSerializer.html">Serializer</a> *&#160;</td>
+          <td class="paramname"><em>serializer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classNode.html">Node</a> *&#160;</td>
+          <td class="paramname"><em>node</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p class="">Run the server with a default callback </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd></dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classSerializer.html">Serializer</a> </dd>
+<dd>
+<a class="el" href="classNode.html">Node</a></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">serializer</td><td>the serializer to use to parse packets </td></tr>
+    <tr><td class="paramname">node</td><td>the client that uses the server </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a2876604e63911e2097385e235a8592cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2876604e63911e2097385e235a8592cb">&#9670;&nbsp;</a></span>run() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2876604e63911e2097385e235a8592cb">&#9670;&nbsp;</a></span>run()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -206,45 +245,6 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">func</td><td>the callback to use with each client. The callback must have a prototype such as "bool (Socket*, const Serializer*, Node*)" </td></tr>
-    <tr><td class="paramname">serializer</td><td>the serializer to use to parse packets </td></tr>
-    <tr><td class="paramname">node</td><td>the client that uses the server </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="aaaa3c5145b286c3d492f9bf1bec5a5dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaaa3c5145b286c3d492f9bf1bec5a5dc">&#9670;&nbsp;</a></span>run() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void SocketServer::run </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classSerializer.html">Serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classNode.html">Node</a> *&#160;</td>
-          <td class="paramname"><em>node</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p class="">Run the server with a default callback </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd></dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classSerializer.html">Serializer</a> </dd>
-<dd>
-<a class="el" href="classNode.html">Node</a></dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
     <tr><td class="paramname">serializer</td><td>the serializer to use to parse packets </td></tr>
     <tr><td class="paramname">node</td><td>the client that uses the server </td></tr>
   </table>

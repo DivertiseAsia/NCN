@@ -186,16 +186,16 @@
 		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/block/proof/ProofOfWork.h">
 			<Option target="block_chain"/>
 		</Unit>
-		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/Metadata.cpp">
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadata/Metadata.cpp">
 			<Option target="block_chain"/>
 		</Unit>
-		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/Metadata.h">
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadata/Metadata.h">
 			<Option target="block_chain"/>
 		</Unit>
-		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.cpp">
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadata/ProofOfWorkMetadata.cpp">
 			<Option target="block_chain"/>
 		</Unit>
-		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/ProofOfWorkMetadata.h">
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadata/ProofOfWorkMetadata.h">
 			<Option target="block_chain"/>
 		</Unit>
 		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain/block/transaction">

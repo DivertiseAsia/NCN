@@ -3,7 +3,7 @@
 //
 
 #include "ProofOfWork.h"
-#include "metadatas/ProofOfWorkMetadata.h"
+#include "metadata/ProofOfWorkMetadata.h"
 #include "../../../kernel/messages/BlockMessage.h"
 
 void ProofOfWork::run(Block* block, std::string key)const {

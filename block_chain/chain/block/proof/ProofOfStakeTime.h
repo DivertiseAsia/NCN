@@ -9,6 +9,7 @@
 #include "Proof.h"
 
 /**
+ *  @class ProofOfStakeTime "block_chain/chain/block/proof/ProofOfStakeTime.h"
  *  A basic proof of stake over time
  *  @see Proof
  *  @see Proof::STAKE_TIME

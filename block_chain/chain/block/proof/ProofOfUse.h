@@ -9,6 +9,7 @@
 #include "Proof.h"
 
 /**
+ *  @class ProofOfUse "block_chain/chain/block/proof/ProofOfUse.h"
  *  A basic proof of use
  *  @see Proof
  *  @see Proof::USE

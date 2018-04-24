@@ -5,6 +5,7 @@
 class Serializer;
 
 /**
+ *  @class Component "block_chain/kernel/components/Component.h"
  *  The main abstract class for serialization.
  *  All possible classes that can be serialized
  *  need to implement this interface.
@@ -57,10 +58,10 @@ class Component
          *  @see Serializer
          *
          *  @param element The Element representation of the object
-         *  @param s The serializer (Can be used if serialization of some elements is needed)
+         *  @param serializer The serializer (Can be used if serialization of some elements is needed)
          *  @param encoding The encoding that has been used to create the Element representation of the object (Can be used if serialization of some elements is needed)
          */
-        virtual void fromElement(ElementObject*, const Serializer*, const char* encoding) = 0;
+        virtual void fromElement(ElementObject* element, const Serializer* serializer, const char* encoding) = 0;
     private:
 
         /**

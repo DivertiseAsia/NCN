@@ -14,9 +14,10 @@
 #include "json/JsonCreator.h"
 #include "json/JsonParser.h"
 #include <utility>
-#include "../../chain/block/proof/metadatas/ProofOfWorkMetadata.h"
+#include "../../chain/block/proof/metadata/ProofOfWorkMetadata.h"
 
 /**
+ *  @class Serializer "block_chain/utils/serialization/Serializer.h"
  *  An abstract serializer.
  *  The class Serializer implements almost all of the
  *  serialization and unserialization methods.
@@ -122,7 +123,7 @@ public:
     virtual Metadata* unserializeMetadata(std::string message, const char* encoding) const;
 
     /**
-     *  Unserialize a given string to obtain a Metadata
+     *  Unserialize a given string to obtain an ElementObject
      *  @see ContentParser
      *  @see ElementObject
      *
@@ -144,7 +145,7 @@ public:
      *  Add a custom parser to the list
      *  @see ContentParser
      *
-     * 	@param creator the parser object
+     * 	@param parser the parser object
     */
     void set_unserializer(ContentParser* parser);
 protected:

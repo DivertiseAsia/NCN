@@ -8,6 +8,14 @@
 
 #include "../block_chain/chain/block/transaction/Transaction.h"
 
+/**
+ *  @class MoneyTransaction "transactions/MoneyTransaction.h"
+ *  A custom Transaction for testing
+ *  @see Transaction
+ *
+ *  @author Mathieu Lochet
+ *  @version 3
+ */
 class MoneyTransaction: public Transaction {
 public:
     explicit MoneyTransaction();
@@ -18,7 +26,6 @@ public:
         auto * s = dynamic_cast<MoneyTransaction*>(t);
         return amount == s->amount && target == s->target;
     }
-    std::string to_string() const;
     std::vector<std::string> apply(Row* row) override;
 
     Row* createRow() const override;

@@ -71,7 +71,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="Node_8h_source.html">Node.h</a>&gt;</code></p>
+<p><code>#include &quot;<a class="el" href="Node_8h_source.html">block_chain/Node.h</a>&quot;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -93,9 +93,6 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:ab80291af9c262f63b83fa9c16f12014d"><td class="memItemLeft" align="right" valign="top"><a id="ab80291af9c262f63b83fa9c16f12014d"></a>
-class&#160;</td><td class="memItemRight" valign="bottom"><b>Parser</b></td></tr>
-<tr class="separator:ab80291af9c262f63b83fa9c16f12014d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e3cdec4aeecdf3e8af4ce55247056b5"><td class="memItemLeft" align="right" valign="top"><a id="a9e3cdec4aeecdf3e8af4ce55247056b5"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>PeersAnswerParser</b></td></tr>
 <tr class="separator:a9e3cdec4aeecdf3e8af4ce55247056b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -259,6 +256,7 @@ Message_action </dd>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">socket</td><td>The socket in charge of the connection </td></tr>
+    <tr><td class="paramname">port</td><td>The port the node is listening to TODO: remove this field and use node-&gt;self._port instead </td></tr>
     <tr><td class="paramname">serializer</td><td>The serializer to serialize and unserialize the packets </td></tr>
     <tr><td class="paramname">node</td><td>The node to compute the requests </td></tr>
   </table>

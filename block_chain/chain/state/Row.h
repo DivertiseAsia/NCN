@@ -9,6 +9,7 @@
 #include <string>
 
 /**
+ *  @class Row "block_chain/chain/state/Row.h"
  *  An abstract row in the database.
  *  Needs to be reimplemented so the user can
  *  create any representation of data he wants.

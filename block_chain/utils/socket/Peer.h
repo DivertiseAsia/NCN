@@ -12,6 +12,7 @@
 
 
 /**
+ *  @class Peer "block_chain/utils/socket/Peer.h"
  *  A peer is a member of a network.
  *
  *  @author Mathieu Lochet

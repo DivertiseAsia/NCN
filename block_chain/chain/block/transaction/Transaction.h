@@ -11,6 +11,7 @@
 class Serializer;
 
 /**
+ *  @class Transaction "block_chain/chain/block/transaction/Transaction.h"
  *  A pure abstract Transaction class. It is the most important
  *  class to be implemented. It is used to represent the
  *  transaction in a block chain.

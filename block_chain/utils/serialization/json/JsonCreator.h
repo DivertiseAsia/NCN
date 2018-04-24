@@ -12,6 +12,7 @@
 
 
 /**
+ *  @class JsonCreator "block_chain/utils/serialization/json/JsonCreator.h"
  *  A creator conceived to create any json file for given Elements
  *  @see ContentCreator
  *  @see Element

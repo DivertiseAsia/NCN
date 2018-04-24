@@ -10,6 +10,7 @@
 #include "../../chain/block/proof/Proof.h"
 
 /**
+ *  @class Config "block_chain/kernel/components/Config.h"
  *  The config is the object that contains all of the important data to run the program.
  *  @see Serializer
  *  @see Reward

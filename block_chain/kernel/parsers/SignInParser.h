@@ -9,6 +9,7 @@
 #include "MessageParser.h"
 
 /**
+ *  @class SignInParser "block_chain/kernel/parsers/SignInParser.h"
  *  A message parser linked to a SignInMessage.
  *  @see Message
  *  @see SignInMessage

@@ -12,6 +12,7 @@
 #include "../block/transaction/Reward.h"
 
 /**
+ *  @class Database "block_chain/chain/state/Database.h"
  *  A database object is filled by a list of rows
  *  It needs to be easily updated and duplicated
  *  @see Row

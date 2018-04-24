@@ -8,6 +8,14 @@
 
 #include "../block_chain/chain/block/transaction/Reward.h"
 
+/**
+ *  @class RewardTransaction "reward/RewardTransaction.h"
+ *  A custom Reward for testing
+ *  @see Serializer
+ *
+ *  @author Mathieu Lochet
+ *  @version 1
+ */
 class RewardTransaction: public Reward
 {
 public:

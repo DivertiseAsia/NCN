@@ -8,6 +8,7 @@
 #include <cstring>
 
 /**
+ *  @class RSA_Cryptography "block_chain/algorithm/RSA.h"
  *  A class for RSA cryptography, based on OpenSLL
  *
  *  @author Mathieu Lochet

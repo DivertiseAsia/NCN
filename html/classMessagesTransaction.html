@@ -69,6 +69,8 @@ $(function() {
 <div class="title">MessagesTransaction Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &quot;<a class="el" href="MessagesTransaction_8h_source.html">transactions/MessagesTransaction.h</a>&quot;</code></p>
 <div class="dynheader">
 Inheritance diagram for MessagesTransaction:</div>
 <div class="dyncontent">
@@ -86,9 +88,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0ef8ec080a2698a02ad8b1b95d243720"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeeffbaa69d8432b6c12ca8fdf66e2e8b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMessagesTransaction.html#aeeffbaa69d8432b6c12ca8fdf66e2e8b">operator==</a> (<a class="el" href="classTransaction.html">Transaction</a> *t) const override</td></tr>
 <tr class="separator:aeeffbaa69d8432b6c12ca8fdf66e2e8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac29f29d1f9d168eb82411438805a11ee"><td class="memItemLeft" align="right" valign="top"><a id="ac29f29d1f9d168eb82411438805a11ee"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>to_string</b> () const</td></tr>
-<tr class="separator:ac29f29d1f9d168eb82411438805a11ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af39b2220f345169fa3276597f38681d5"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMessagesTransaction.html#af39b2220f345169fa3276597f38681d5">apply</a> (<a class="el" href="classRow.html">Row</a> *row) override</td></tr>
 <tr class="separator:af39b2220f345169fa3276597f38681d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3eec18f09aa102b3cee7f215c225a8fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRow.html">Row</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMessagesTransaction.html#a3eec18f09aa102b3cee7f215c225a8fb">createRow</a> () const override</td></tr>
@@ -115,7 +114,11 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:aa70ed75ff16f6afa61d82458488069d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMessagesTransaction.html#aa70ed75ff16f6afa61d82458488069d4">fromElement</a> (<a class="el" href="classElementObject.html">ElementObject</a> *, const <a class="el" href="classSerializer.html">Serializer</a> *, const char *encoding) override</td></tr>
 <tr class="separator:aa70ed75ff16f6afa61d82458488069d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p class="">A custom <a class="el" href="classTransaction.html">Transaction</a> for testing </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classTransaction.html">Transaction</a></dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Mathieu Lochet </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>3 </dd></dl>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a1f0df166c34d6a38a991544cf98c0356"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1f0df166c34d6a38a991544cf98c0356">&#9670;&nbsp;</a></span>__hash__()</h2>
 
@@ -413,13 +416,13 @@ Protected Member Functions</h2></td></tr>
           <td class="memname">void MessagesTransaction::fromElement </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classElementObject.html">ElementObject</a> *&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>element</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classSerializer.html">Serializer</a> *&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>serializer</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -445,13 +448,13 @@ Protected Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">element</td><td>The <a class="el" href="classElement.html">Element</a> representation of the object </td></tr>
-    <tr><td class="paramname">s</td><td>The serializer (Can be used if serialization of some elements is needed) </td></tr>
+    <tr><td class="paramname">serializer</td><td>The serializer (Can be used if serialization of some elements is needed) </td></tr>
     <tr><td class="paramname">encoding</td><td>The encoding that has been used to create the <a class="el" href="classElement.html">Element</a> representation of the object (Can be used if serialization of some elements is needed) </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classComponent.html#a2ded18881226d0077dc393e0e9304bb1">Component</a>.</p>
+<p>Implements <a class="el" href="classComponent.html#a4963434fa82853534847bce22ba43a87">Component</a>.</p>
 
 </div>
 </div>

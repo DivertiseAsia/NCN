@@ -29,6 +29,7 @@
 #include "../utils/socket/Peer.h"
 
 /**
+ *  @class NodeState "block_chain/chain/NodeState.h"
  *  The NodeState class contains all the data at a time T.
  *  It is in charge of block generation and validation
  *  builds the block chain. It also updates the
