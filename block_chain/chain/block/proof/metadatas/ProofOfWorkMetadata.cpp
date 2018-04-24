@@ -6,30 +6,31 @@
 #include "../../../../algorithm/Hash.h"
 #include <iostream>
 
-ProofOfWorkMetadata::ProofOfWorkMetadata(long long int i, long long int j, std::string s): first(i), second(j), winner(s){
+ProofOfWorkMetadata::ProofOfWorkMetadata(long long int i, long long int j, std::string s): Metadata(s), first(i), second(j){
 
 }
 ProofOfWorkMetadata::ProofOfWorkMetadata() = default;
 
 Element* ProofOfWorkMetadata::toElement() const{
-    ElementObject* e = ElementCreator::object();
-    return e->put("first", ElementCreator::create(first))
+    Element* e = Metadata::toElement();
+    auto o = dynamic_cast<ElementObject*>(e);
+    return o->put("first", ElementCreator::create(first))
             ->put("second", ElementCreator::create(second))
-            ->put("winner", ElementCreator::create(winner))
             ->put("type", ElementCreator::create(0));
 }
-void ProofOfWorkMetadata::fromElement(ElementObject* e,  const Serializer*, const char*){
+void ProofOfWorkMetadata::fromElement(ElementObject* e,  const Serializer* serializer, const char* encoding){
+    Metadata::fromElement(e, serializer, encoding);
     e->getItem("first", &first);
-    e->getItem("winner", &winner);
+    e->getItem("creator", &creator);
     e->getItem("second", &second);
 }
 
 Hash* ProofOfWorkMetadata::hash() {
-    return new Hash(winner);
+    return new Hash(creator);
 }
 
 void ProofOfWorkMetadata::update_database(Database *pDatabase){
-    Row* r = pDatabase->reward(winner);
+    Row* r = pDatabase->reward(creator);
     if(r)
         r->reward();
 }

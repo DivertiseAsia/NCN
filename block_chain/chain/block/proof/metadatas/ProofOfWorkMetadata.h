@@ -31,7 +31,7 @@ public:
     ProofOfWorkMetadata(long long int i1, long long int i2, std::string str);
     bool operator==(Metadata& m) const override {
         auto pwm = dynamic_cast<ProofOfWorkMetadata*>(&m);
-        return pwm->first == first && pwm->second == second && pwm->winner == winner;
+        return pwm->first == first && pwm->second == second && pwm->creator == creator;
     }
     Element* toElement() const override;
     Hash* hash() override;
@@ -49,11 +49,6 @@ private:
      *  The first second parameter
      */
     long long int second;
-
-    /**
-     *  The winner's public key
-     */
-    std::string winner;
 };
 
 

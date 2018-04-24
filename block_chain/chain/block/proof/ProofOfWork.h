@@ -18,8 +18,8 @@
  */
 class ProofOfWork: public Proof {
 public:
-    void run(Block* block, std::string key) override;
-    bool accept(Block* block, Message*) override;
+    void run(Block* block, std::string key) const override;
+    bool accept(Block* block, Message*) const override;
 };
 
 

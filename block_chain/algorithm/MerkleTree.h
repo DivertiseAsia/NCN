@@ -8,6 +8,7 @@
 #include "Hash.h"
 #include "../chain/block/transaction/Transaction.h"
 
+class Block;
 /**
  *  The Merkle tree representation for Hashes
  *  in a Block
@@ -34,6 +35,14 @@ public:
      *  @param encoding The encoding to serialize the component
      */
     MerkleTree(Transaction* transaction, const Serializer* serializer, const char* encoding);
+    /**
+     *  Generates the tree of a single transaction
+     *
+     *  @param block The block to put in the tree
+     *  @param serializer The serializer to serialize the component
+     *  @param encoding The encoding to serialize the component
+     */
+    MerkleTree(Block* block, const Serializer* serializer, const char* encoding);
 
     /**
      *  Generates the tree of a list of transactions

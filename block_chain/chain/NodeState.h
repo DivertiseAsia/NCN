@@ -56,7 +56,7 @@ public:
      *  @param e The used encoding
      *  @param r The reward object
      */
-    explicit NodeState(Serializer* s, int si = 64, const char* e = "json", Reward* r = nullptr);
+    explicit NodeState(const Serializer* s, int si = 64, const char* e = "json", const Reward* r = nullptr);
 
     /**
      *  Creates a block using the stored transactions
@@ -84,8 +84,9 @@ public:
      *  @see Block
      *
      *  @param block the block to add to the block chain
+     *  @param creator the creator of the block
      */
-    void add(Block* block);
+    void add(Block* block, std::string creator);
 
     /**
      *  Read all of the block files and memorize all of it
@@ -120,12 +121,22 @@ public:
      *  @return The corresponding block if it is found, nullptr otherwise
      */
     Block *get(std::string& hash);
+
+
+    /**
+     *  Get the original creator of the block
+     *
+     *  @param hash The fingerprint of the block
+     *  @return The creator of the block
+     */
+    std::string get_creator(std::string& hash);
+
 private:
 
     /**
      *  The serializer
      */
-    Serializer* serializer;
+    const Serializer* serializer;
 
     /**
      *  The chosen encoding for serialization

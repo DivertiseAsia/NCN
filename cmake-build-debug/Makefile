@@ -744,6 +744,33 @@ block_chain/kernel/components/Component.cpp.s:
 	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/components/Component.cpp.s
 .PHONY : block_chain/kernel/components/Component.cpp.s
 
+block_chain/kernel/components/Config.o: block_chain/kernel/components/Config.cpp.o
+
+.PHONY : block_chain/kernel/components/Config.o
+
+# target to build an object file
+block_chain/kernel/components/Config.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/components/Config.cpp.o
+.PHONY : block_chain/kernel/components/Config.cpp.o
+
+block_chain/kernel/components/Config.i: block_chain/kernel/components/Config.cpp.i
+
+.PHONY : block_chain/kernel/components/Config.i
+
+# target to preprocess a source file
+block_chain/kernel/components/Config.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/components/Config.cpp.i
+.PHONY : block_chain/kernel/components/Config.cpp.i
+
+block_chain/kernel/components/Config.s: block_chain/kernel/components/Config.cpp.s
+
+.PHONY : block_chain/kernel/components/Config.s
+
+# target to generate assembly for a file
+block_chain/kernel/components/Config.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/kernel/components/Config.cpp.s
+.PHONY : block_chain/kernel/components/Config.cpp.s
+
 block_chain/kernel/messages/AnswerPeersMessage.o: block_chain/kernel/messages/AnswerPeersMessage.cpp.o
 
 .PHONY : block_chain/kernel/messages/AnswerPeersMessage.o
@@ -1740,6 +1767,9 @@ help:
 	@echo "... block_chain/kernel/components/Component.o"
 	@echo "... block_chain/kernel/components/Component.i"
 	@echo "... block_chain/kernel/components/Component.s"
+	@echo "... block_chain/kernel/components/Config.o"
+	@echo "... block_chain/kernel/components/Config.i"
+	@echo "... block_chain/kernel/components/Config.s"
 	@echo "... block_chain/kernel/messages/AnswerPeersMessage.o"
 	@echo "... block_chain/kernel/messages/AnswerPeersMessage.i"
 	@echo "... block_chain/kernel/messages/AnswerPeersMessage.s"

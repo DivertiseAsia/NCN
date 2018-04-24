@@ -4,7 +4,7 @@
 
 #include "NodeState.h"
 
-NodeState::NodeState(Serializer* s, int si, const char* e, Reward* r): serializer(s), encoding(e), size(si), chain(new Chain(r)) {
+NodeState::NodeState(const Serializer* s, int si, const char* e, const Reward* r): serializer(s), encoding(e), size(si), chain(new Chain(r)) {
 }
 
 Block* NodeState::create_block() const {
@@ -18,7 +18,7 @@ Block* NodeState::add(std::string transaction, std::string public_key){
     }
     return nullptr;
 }
-void NodeState::add(Block* block){
+void NodeState::add(Block* block, std::string creator){
     for(auto& a : block->transactions){
         auto i = find(transactions.begin(), transactions.end(), a);
         if(i != transactions.end())
@@ -27,7 +27,7 @@ void NodeState::add(Block* block){
     std::string dir(block->parent_fingerprint->to_string());
     std::string id(block->fingerprint->to_string());
     Chain* c = nullptr;
-    if((c = chain->add(block)) != nullptr)
+    if((c = chain->add(block, creator)) != nullptr)
         c->update_database(block, serializer, encoding.c_str());
     std::string line;
     #if defined _WIN32
@@ -65,9 +65,10 @@ void NodeState::read_blocks() {
                     while (std::getline(block_file, line))
                         serialized += line;
                     Block *block = serializer->unserializeBlock(serialized, encoding.c_str());
+                    std::string creator = block->data->get_creator();
                     block_file.close();
                     Chain* c = nullptr;
-                    if((c = chain->add(block)) != nullptr)
+                    if((c = chain->add(block, creator)) != nullptr)
                         c->update_database(block, serializer, encoding.c_str());
                 }
             }
@@ -138,5 +139,9 @@ bool NodeState::get(Hash *pHash) {
 
 Block* NodeState::get(std::string& hash) {
     return chain->find(hash);
+}
+
+std::string NodeState::get_creator(std::string& hash) {
+    return chain->find_creator(hash);
 }
 

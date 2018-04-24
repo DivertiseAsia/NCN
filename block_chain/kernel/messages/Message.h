@@ -20,13 +20,45 @@
 class Message: public Component
 {
     public:
+
+        /**
+         *  The ID for Transaction message
+         */
         static const int TRANSACTION;
+
+        /**
+         *  The ID for a block message
+         */
         static const int BLOCK;
+
+        /**
+         *  The ID for asking the list of peers message
+         */
         static const int ASK_PEERS;
+
+        /**
+         *  The ID for answering to the peers list asking message
+         */
         static const int ANSWER_PEERS;
+
+        /**
+         *  The ID for signing in the network
+         */
         static const int SIGN_IN;
+
+        /**
+         *  The ID for signing out the network
+         */
         static const int SIGN_OUT;
+
+        /**
+         *  The ID for asking a missing block
+         */
         static const int ASK_BLOCK;
+
+        /**
+         *  The ID for answering the request of a missing block
+         */
         static const int ANSWER_BLOCK;
 
         /**

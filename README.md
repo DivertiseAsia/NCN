@@ -3,14 +3,28 @@
 This project is a C++ Framework built to allow easy and fast development of any kind of block-chain. \
 The idea is to limit the development to transactions and data representation only. No need to implement anything else. \
 Of course, as a framework, it needs a big flexibility, therefore, it is possible to write much more advanced block-chain by configuring as many things as you want. \
-> Node that everything can change to allow more flexibility.
+> Note that everything can change to allow more flexibility.
 ## Node
 The node is the peer itself. You only have to create it and it will run.
 ```cpp
-Node node(serializer, port, "json", Proof::WORK, false, reward);
+Node node(config);
+```
+## Config
+The node is the peer itself. You only have to create it and it will run.
+```cpp
+Config config("configuration file path", serializer, Proof::WORK, reward);
+```
+The file itself is a json file.
+##### Example:
+```json
+{
+  "port": 3423,
+  "encoding": "json",
+  "debug": true
+}
 ```
 the parameters serializer, proof and reward are explained later.
-## Transactions
+## Transaction
 Transactions are the most important thing to implement. \
 ```cpp
 #include "./block_chain/chain/block/transaction/Transaction.h"
@@ -169,7 +183,7 @@ bool MoneyTransaction::validate(Row *row) const {
 ## Reward
 The reward is a very particular kind of Transaction.
 You only have to override the methods ```clone``` and ```createRow```.
-## Transactions Manager
+## TransactionManager
 The transaction manager is a built in class from the framework. You only need to give it a list of transactions, and then to give it to the Node object.
 ```cpp
 TransactionManager manager;
@@ -178,7 +192,7 @@ manager.put(new MoneyTransaction);
 manager.put(new MessagesTransaction);
 node.start(manager);
 ```
-## Serialization
+## Serializer
 The serialization class is used to transfrom Objects into string using Elements and strings into Objects using Elements.
 One method from this class needs to be overridden:
 ```cpp
@@ -200,7 +214,7 @@ Transaction* CustomSerializer::unserializeTransaction(std::string transaction, c
     return t;
 }
 ```
-## Proofs
+## Proof
 Proofs are ## run
 the basis of block chain validation. Some proofs are implemented, but not all of them. Therefore, you can create your own proof and send it to the framework.
 ### New proof

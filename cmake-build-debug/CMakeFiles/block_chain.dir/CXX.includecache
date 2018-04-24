@@ -67,6 +67,8 @@ kernel/messages/SignOutMessage.h
 /home/default/CLionProjects/block_chain/block_chain/kernel/messages/SignOutMessage.h
 kernel/messages/AskPeersMessage.h
 /home/default/CLionProjects/block_chain/block_chain/kernel/messages/AskPeersMessage.h
+kernel/components/Config.h
+/home/default/CLionProjects/block_chain/block_chain/kernel/components/Config.h
 
 /home/default/CLionProjects/block_chain/block_chain/TransactionManager.cpp
 TransactionManager.h
@@ -99,6 +101,10 @@ iostream
 /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.cpp
 MerkleTree.h
 /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
+../utils/serialization/Serializer.h
+/home/default/CLionProjects/block_chain/block_chain/utils/serialization/Serializer.h
+RSA.h
+/home/default/CLionProjects/block_chain/block_chain/algorithm/RSA.h
 
 /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
 Hash.h
@@ -163,6 +169,14 @@ vector
 -
 sys/stat.h
 -
+windows.h
+-
+tchar.h
+-
+stdio.h
+-
+strsafe.h
+-
 dirent.h
 -
 algorithm
@@ -207,6 +221,8 @@ proof/metadatas/Metadata.h
 /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadatas/Metadata.h
 ../../kernel/components/Component.h
 /home/default/CLionProjects/block_chain/block_chain/kernel/components/Component.h
+../../algorithm/MerkleTree.h
+/home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
 iostream
 -
 chrono
@@ -384,6 +400,16 @@ Component.h
 ../../utils/serialization/Element.h
 /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
 
+/home/default/CLionProjects/block_chain/block_chain/kernel/components/Config.cpp
+Config.h
+/home/default/CLionProjects/block_chain/block_chain/kernel/components/Config.h
+
+/home/default/CLionProjects/block_chain/block_chain/kernel/components/Config.h
+../../utils/serialization/Serializer.h
+/home/default/CLionProjects/block_chain/block_chain/utils/serialization/Serializer.h
+../../chain/block/proof/Proof.h
+/home/default/CLionProjects/block_chain/block_chain/chain/block/proof/Proof.h
+
 /home/default/CLionProjects/block_chain/block_chain/kernel/messages/AnswerPeersMessage.cpp
 AnswerPeersMessage.h
 /home/default/CLionProjects/block_chain/block_chain/kernel/messages/AnswerPeersMessage.h
@@ -497,6 +523,8 @@ Message.h
 /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/BlockAnswerParser.cpp
 BlockAnswerParser.h
 /home/default/CLionProjects/block_chain/block_chain/kernel/parsers/BlockAnswerParser.h
+BlockParser.h
+/home/default/CLionProjects/block_chain/block_chain/kernel/parsers/BlockParser.h
 ../../Node.h
 /home/default/CLionProjects/block_chain/block_chain/Node.h
 ../messages/Message.h
@@ -855,6 +883,8 @@ transactions/MoneyTransaction.h
 /home/default/CLionProjects/block_chain/transactions/MoneyTransaction.h
 reward/RewardTransaction.h
 /home/default/CLionProjects/block_chain/reward/RewardTransaction.h
+block_chain/kernel/components/Config.h
+/home/default/CLionProjects/block_chain/block_chain/kernel/components/Config.h
 
 /home/default/CLionProjects/block_chain/reward/RewardTransaction.cpp
 RewardTransaction.h

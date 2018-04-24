@@ -4,9 +4,9 @@
 
 #include "ProofOfStakeTime.h"
 
-void ProofOfStakeTime::run(Block* block, std::string key){
+void ProofOfStakeTime::run(Block* block, std::string key)const{
 
 }
-bool ProofOfStakeTime::accept(Block* block, Message* message){
+bool ProofOfStakeTime::accept(Block* block, Message* message)const{
     return true;
 }

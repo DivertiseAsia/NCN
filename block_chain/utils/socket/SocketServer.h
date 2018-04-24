@@ -62,11 +62,11 @@ public:
      *  @see Serializer
      *  @see Node
      *
-     *  @param func the callback to use with each client. The callback must have a prototype such as "bool (Socket*, Serializer*, Node*)"
+     *  @param func the callback to use with each client. The callback must have a prototype such as "bool (Socket*, const Serializer*, Node*)"
      *  @param serializer the serializer to use to parse packets
      *  @param node the client that uses the server
      */
-    void run(std::function<bool(Socket*, int, Serializer* serializer, Node* node)> func, Serializer* serializer, Node* node);
+    void run(std::function<bool(Socket*, int, const Serializer* serializer, Node* node)> func, const Serializer* serializer, Node* node);
 
     /**
      *  Run the server with a default callback
@@ -109,7 +109,7 @@ private:
      *  @param node the client that receive the messages
      *  @return true
      */
-    bool static defaultCallback(Socket* socket, int port, Serializer* serializer, Node* node);
+    bool static defaultCallback(Socket* socket, int port, const Serializer* serializer, Node* node);
 
     /**
      *  Wait for a connection and calls the callback each time
@@ -117,12 +117,12 @@ private:
      *  @see Serializer
      *  @see Node
      *
-     *  @param func the callback to use with each client. The callback must have a prototype such as "bool (Socket*, Serializer*, Node*)"
+     *  @param func the callback to use with each client. The callback must have a prototype such as "bool (Socket*, const Serializer*, Node*)"
      *  @param serializer the serializer to use to parse packets
      *  @param node the client that uses the server
      *  @return true if the server runs, false otherwise
      */
-    bool wait(std::function<bool(Socket*, int port, Serializer* serializer, Node* node)> func, Serializer* serializer, Node* node);
+    bool wait(std::function<bool(Socket*, int port, const Serializer* serializer, Node* node)> func, const Serializer* serializer, Node* node);
 
     /**
      *  The port on which to listen to

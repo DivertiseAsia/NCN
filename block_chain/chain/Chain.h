@@ -33,16 +33,17 @@ public:
      *  @see Block
      *
      *  @param b The new Block to add on the chain
+     *  @param cr The creator of the string
      *  @param c The parent Chain
      */
-    Chain(Block* b, Chain* c);
+    Chain(Block* b, Chain* c, std::string cr);
 
     /**
      *  Creates the root chain, with a given Reward object
      *
      *  @param r The reward object used to update the database when a block is added
      */
-    Chain(Reward* r);
+    explicit Chain(const Reward* r);
 
     /**
      *  A destructor which destroy all of the child and database
@@ -52,9 +53,11 @@ public:
     /**
      *  Add a new block on the chain, and links it with its parent's fingerprint
      *
+     *  @param block The new Block to add on the chain
+     *  @param creator The creator of the string
      *  @return the newly created chain
      */
-    Chain * add(Block*);
+    Chain * add(Block* block, std::string creator);
 
     /**
      *  Get the top chain in the block chain
@@ -89,6 +92,14 @@ public:
      *  @return The number of blocks in the Chain
      */
     int count() const;
+
+    /**
+     *  Get the original creator of the block
+     *
+     *  @param hash The fingerprint of the block
+     *  @return The creator of the block
+     */
+    std::string find_creator(std::string &hash);
 private:
 
     /**
@@ -130,6 +141,11 @@ private:
      *  The corresponding block
      */
     Block *block;
+
+    /**
+     *  The creator of the block
+     */
+     std::string creator;
 };
 
 

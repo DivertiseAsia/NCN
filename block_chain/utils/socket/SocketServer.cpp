@@ -23,7 +23,7 @@ SocketServer::SocketServer(int p): master(nullptr)
     std::cout << "Server listening on port " << port << std::endl;
 }
 
-void SocketServer::run(std::function<bool(Socket*, int, Serializer*, Node* node)> func, Serializer* serializer, Node* node)
+void SocketServer::run(std::function<bool(Socket*, int, const Serializer*, Node* node)> func, const Serializer* serializer, Node* node)
 {
     while(this->wait(func, serializer, node));
 }
@@ -33,7 +33,7 @@ void SocketServer::run(Serializer* serializer, Node* node)
     this->run(SocketServer::defaultCallback, serializer, node);
 }
 
-bool SocketServer::wait(std::function<bool(Socket*, int port, Serializer* serializer, Node* node)> func, Serializer* serial, Node* node)
+bool SocketServer::wait(std::function<bool(Socket*, int port, const Serializer* serializer, Node* node)> func, const Serializer* serial, Node* node)
 {
     sockaddr_in c_sin = { 0 };
     Socket* socket;
@@ -59,7 +59,7 @@ bool SocketServer::wait(std::function<bool(Socket*, int port, Serializer* serial
     return socket->socket != 0;
 }
 
-bool SocketServer::defaultCallback(Socket* socket, int port, Serializer*, Node*)
+bool SocketServer::defaultCallback(Socket* socket, int port, const Serializer*, Node*)
 {
     return true;
 }

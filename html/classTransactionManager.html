@@ -68,16 +68,114 @@ $(function() {
 <div class="title">TransactionManager Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="TransactionManager_8h_source.html">TransactionManager.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7956f511249bba3466ce3f3b57ee4518"><td class="memItemLeft" align="right" valign="top"><a id="a7956f511249bba3466ce3f3b57ee4518"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>put</b> (<a class="el" href="classTransaction.html">Transaction</a> *t)</td></tr>
+<tr class="memitem:ac5ced818a8f63f5981ab0e1e2dbf2e5c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransactionManager.html#ac5ced818a8f63f5981ab0e1e2dbf2e5c">TransactionManager</a> ()</td></tr>
+<tr class="separator:ac5ced818a8f63f5981ab0e1e2dbf2e5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab48dc6bf966c5c98e0734e1b1d819ef9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransactionManager.html#ab48dc6bf966c5c98e0734e1b1d819ef9">~TransactionManager</a> ()</td></tr>
+<tr class="separator:ab48dc6bf966c5c98e0734e1b1d819ef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7956f511249bba3466ce3f3b57ee4518"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransactionManager.html#a7956f511249bba3466ce3f3b57ee4518">put</a> (<a class="el" href="classTransaction.html">Transaction</a> *t)</td></tr>
 <tr class="separator:a7956f511249bba3466ce3f3b57ee4518"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27147afb36545b306a277697cd9a773d"><td class="memItemLeft" align="right" valign="top"><a id="a27147afb36545b306a277697cd9a773d"></a>
-<a class="el" href="classTransaction.html">Transaction</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> ()</td></tr>
+<tr class="memitem:a27147afb36545b306a277697cd9a773d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTransaction.html">Transaction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTransactionManager.html#a27147afb36545b306a277697cd9a773d">run</a> ()</td></tr>
 <tr class="separator:a27147afb36545b306a277697cd9a773d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p class="">The manager class of all transactions. It generates transactions based on the ones it indexed </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classTransaction.html">Transaction</a></dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Mathieu Lochet </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1 </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ac5ced818a8f63f5981ab0e1e2dbf2e5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5ced818a8f63f5981ab0e1e2dbf2e5c">&#9670;&nbsp;</a></span>TransactionManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TransactionManager::TransactionManager </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p class="">Default constructor to initialize the manager </p>
+
+</div>
+</div>
+<a id="ab48dc6bf966c5c98e0734e1b1d819ef9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab48dc6bf966c5c98e0734e1b1d819ef9">&#9670;&nbsp;</a></span>~TransactionManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TransactionManager::~TransactionManager </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p class="">The destructor frees all of the indexed transactions </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a7956f511249bba3466ce3f3b57ee4518"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7956f511249bba3466ce3f3b57ee4518">&#9670;&nbsp;</a></span>put()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TransactionManager::put </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTransaction.html">Transaction</a> *&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p class="">Add a new transaction to the list of transactions </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classTransaction.html">Transaction</a></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>The new transaction to add to the manager's index </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a27147afb36545b306a277697cd9a773d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27147afb36545b306a277697cd9a773d">&#9670;&nbsp;</a></span>run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTransaction.html">Transaction</a> * TransactionManager::run </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p class="">Run the manager and generates transactions based on user's input_iterator </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classTransaction.html">Transaction</a></dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The newly created <a class="el" href="classTransaction.html">Transaction</a> (-1 if show the database and nullptr otherwise) </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>block_chain/<a class="el" href="TransactionManager_8h_source.html">TransactionManager.h</a></li>
 <li>block_chain/TransactionManager.cpp</li>

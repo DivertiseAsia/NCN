@@ -13,9 +13,9 @@ Inheritance diagram for Proof\+Of\+Stake\+Time\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{classProofOfStakeTime_ad4a49d7ccee740f307c03a13d314d3fb}{run}} (\mbox{\hyperlink{classBlock}{Block}} $\ast$block, std\+::string key) override
+void \mbox{\hyperlink{classProofOfStakeTime_a4081abb2bc76f8039995a73e9617086c}{run}} (\mbox{\hyperlink{classBlock}{Block}} $\ast$block, std\+::string key) const override
 \item 
-bool \mbox{\hyperlink{classProofOfStakeTime_a7a681ba9510b3b11cd2269a69e64a66c}{accept}} (\mbox{\hyperlink{classBlock}{Block}} $\ast$block, \mbox{\hyperlink{classMessage}{Message}} $\ast$message) override
+bool \mbox{\hyperlink{classProofOfStakeTime_ae05431416e9157fb8af8247b8e756794}{accept}} (\mbox{\hyperlink{classBlock}{Block}} $\ast$block, \mbox{\hyperlink{classMessage}{Message}} $\ast$message) const override
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -65,11 +65,11 @@ Mathieu Lochet
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classProofOfStakeTime_a7a681ba9510b3b11cd2269a69e64a66c}\label{classProofOfStakeTime_a7a681ba9510b3b11cd2269a69e64a66c}} 
+\mbox{\Hypertarget{classProofOfStakeTime_ae05431416e9157fb8af8247b8e756794}\label{classProofOfStakeTime_ae05431416e9157fb8af8247b8e756794}} 
 \index{Proof\+Of\+Stake\+Time@{Proof\+Of\+Stake\+Time}!accept@{accept}}
 \index{accept@{accept}!Proof\+Of\+Stake\+Time@{Proof\+Of\+Stake\+Time}}
 \subsubsection{\texorpdfstring{accept()}{accept()}}
-{\footnotesize\ttfamily bool Proof\+Of\+Stake\+Time\+::accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBlock}{Block}} $\ast$}]{block,  }\item[{\mbox{\hyperlink{classMessage}{Message}} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily bool Proof\+Of\+Stake\+Time\+::accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBlock}{Block}} $\ast$}]{block,  }\item[{\mbox{\hyperlink{classMessage}{Message}} $\ast$}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 Get a proof result and check if the result is correct Needs to be implemented
 
@@ -82,7 +82,7 @@ Get a proof result and check if the result is correct Needs to be implemented
 \end{DoxyParams}
 
 
-Implements \mbox{\hyperlink{classProof_ad52fee058ea617a186133cb6a008fe6e}{Proof}}.
+Implements \mbox{\hyperlink{classProof_a358b3883eb33b8ecc93f74cb6313679a}{Proof}}.
 
 \mbox{\Hypertarget{classProof_a71874539fdbcc93c15594b889c95225b}\label{classProof_a71874539fdbcc93c15594b889c95225b}} 
 \index{Proof\+Of\+Stake\+Time@{Proof\+Of\+Stake\+Time}!add\+\_\+proof@{add\+\_\+proof}}
@@ -115,11 +115,11 @@ Generates a proof for a given id
 \begin{DoxyReturn}{Returns}
 The created proof object 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classProofOfStakeTime_ad4a49d7ccee740f307c03a13d314d3fb}\label{classProofOfStakeTime_ad4a49d7ccee740f307c03a13d314d3fb}} 
+\mbox{\Hypertarget{classProofOfStakeTime_a4081abb2bc76f8039995a73e9617086c}\label{classProofOfStakeTime_a4081abb2bc76f8039995a73e9617086c}} 
 \index{Proof\+Of\+Stake\+Time@{Proof\+Of\+Stake\+Time}!run@{run}}
 \index{run@{run}!Proof\+Of\+Stake\+Time@{Proof\+Of\+Stake\+Time}}
 \subsubsection{\texorpdfstring{run()}{run()}}
-{\footnotesize\ttfamily void Proof\+Of\+Stake\+Time\+::run (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBlock}{Block}} $\ast$}]{block,  }\item[{std\+::string}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Proof\+Of\+Stake\+Time\+::run (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBlock}{Block}} $\ast$}]{block,  }\item[{std\+::string}]{key }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 Run a proof on a block to validate it Needs to be implemented
 
@@ -132,7 +132,7 @@ Run a proof on a block to validate it Needs to be implemented
 \end{DoxyParams}
 
 
-Implements \mbox{\hyperlink{classProof_a8a43fcb7c997da54d627e0f257adb86f}{Proof}}.
+Implements \mbox{\hyperlink{classProof_a6ab9f6c3f603447e3a9c7c932b5deac4}{Proof}}.
 
 
 

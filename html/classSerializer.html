@@ -85,6 +85,8 @@ Inheritance diagram for Serializer:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9fe7f31924098f75278d059f8443fd5b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSerializer.html#a9fe7f31924098f75278d059f8443fd5b">Serializer</a> ()</td></tr>
 <tr class="separator:a9fe7f31924098f75278d059f8443fd5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42a7d2d8e622ad1ef5f869813b498aa9"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSerializer.html#a42a7d2d8e622ad1ef5f869813b498aa9">~Serializer</a> ()</td></tr>
+<tr class="separator:a42a7d2d8e622ad1ef5f869813b498aa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cfe31eb70f4d0c92f2d68c22f39e885"><td class="memItemLeft" align="right" valign="top">virtual char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSerializer.html#a5cfe31eb70f4d0c92f2d68c22f39e885">serialize</a> (const <a class="el" href="classComponent.html">Component</a> *component, const char *encoding) const</td></tr>
 <tr class="separator:a5cfe31eb70f4d0c92f2d68c22f39e885"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38bec517fb3b3cc0778c75b807cb930c"><td class="memItemLeft" align="right" valign="top">virtual char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSerializer.html#a38bec517fb3b3cc0778c75b807cb930c">serialize</a> (<a class="el" href="classElement.html">Element</a> *element, const char *encoding) const</td></tr>
@@ -112,7 +114,7 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a96f96c01e6a471513669621751591fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p class="">An abstract serializer. The class <a class="el" href="classSerializer.html">Serializer</a> implements almost all of the serialization and unserialization methods. However, it doesn't implements the transaction unserialization, thereforem this class has to be override. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classContentCreator.html">ContentCreator</a> </dd>
+<div class="textblock"><p class="">An abstract serializer. The class <a class="el" href="classSerializer.html">Serializer</a> implements almost all of the serialization and unserialization methods. However, it doesn't implements the transaction unserialization, therefore, this class has to be override. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classContentCreator.html">ContentCreator</a> </dd>
 <dd>
 <a class="el" href="classContentParser.html">ContentParser</a> </dd>
 <dd>
@@ -156,6 +158,32 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a42a7d2d8e622ad1ef5f869813b498aa9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42a7d2d8e622ad1ef5f869813b498aa9">&#9670;&nbsp;</a></span>~Serializer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Serializer::~Serializer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p class="">Default destructor that clears the factories </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ab3bcdbd49167109de13e03878337018a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab3bcdbd49167109de13e03878337018a">&#9670;&nbsp;</a></span>getElement()</h2>
@@ -182,7 +210,7 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p class="">Unserialize an given string to obtain a <a class="el" href="classMetadata.html">Metadata</a> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classContentParser.html">ContentParser</a> </dd>
+<p class="">Unserialize a given string to obtain a <a class="el" href="classMetadata.html">Metadata</a> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classContentParser.html">ContentParser</a> </dd>
 <dd>
 <a class="el" href="classElementObject.html">ElementObject</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>

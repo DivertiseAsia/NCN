@@ -1,0 +1,190 @@
+\hypertarget{classConfig}{}\section{Config Class Reference}
+\label{classConfig}\index{Config@{Config}}
+
+
+{\ttfamily \#include $<$Config.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classConfig_a215344f9d1452f24df7c0508a23fd15b}{Config}} (const char $\ast$filename, \mbox{\hyperlink{classSerializer}{Serializer}} $\ast$s, int p, \mbox{\hyperlink{classReward}{Reward}} $\ast$r)
+\item 
+virtual const char $\ast$ \mbox{\hyperlink{classConfig_a23f39330cd594b8855d371368adc80e4}{get\+\_\+encoding}} () const
+\item 
+virtual const \mbox{\hyperlink{classSerializer}{Serializer}} $\ast$ \mbox{\hyperlink{classConfig_a00399f1751e2dfa032d99208bf925ab0}{get\+\_\+serializer}} () const
+\item 
+virtual const \mbox{\hyperlink{classProof}{Proof}} $\ast$ \mbox{\hyperlink{classConfig_a23b6ece178053913f232eeda4ab7c7c8}{get\+\_\+proof}} () const
+\item 
+virtual const \mbox{\hyperlink{classReward}{Reward}} $\ast$ \mbox{\hyperlink{classConfig_a3467e8914f0a0730277cf4732443116d}{get\+\_\+reward}} () const
+\item 
+virtual const int \mbox{\hyperlink{classConfig_a516e5e6665ad519ab23ac4c57fb99cb6}{get\+\_\+port}} () const
+\item 
+virtual const bool \mbox{\hyperlink{classConfig_afc60cc21dfa15f3642f8ac1f45403450}{is\+\_\+debug}} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classConfig_a9b99e069f6e78fcb906d5effbb600e97}{port}}
+\item 
+std\+::string \mbox{\hyperlink{classConfig_a9391a8a86ed88a6fefd35ec89c10e861}{encoding}}
+\item 
+\mbox{\hyperlink{classSerializer}{Serializer}} $\ast$ \mbox{\hyperlink{classConfig_afcd74e506e51f57020bce34fe92cb9dc}{serializer}}
+\item 
+\mbox{\hyperlink{classProof}{Proof}} $\ast$ \mbox{\hyperlink{classConfig_ac220c43cceafde6291b29d44f61c3785}{proof}}
+\item 
+\mbox{\hyperlink{classReward}{Reward}} $\ast$ \mbox{\hyperlink{classConfig_a6b3fb8d8312246a1b204d04bd872a187}{reward}}
+\item 
+bool \mbox{\hyperlink{classConfig_a8ecbe763ad856693ff85cba5182e1f2e}{debug}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The config is the object that contains all of the important data to run the program. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classSerializer}{Serializer}} 
+
+\mbox{\hyperlink{classReward}{Reward}} 
+
+\mbox{\hyperlink{classProof}{Proof}}
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Mathieu Lochet 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classConfig_a215344f9d1452f24df7c0508a23fd15b}\label{classConfig_a215344f9d1452f24df7c0508a23fd15b}} 
+\index{Config@{Config}!Config@{Config}}
+\index{Config@{Config}!Config@{Config}}
+\subsubsection{\texorpdfstring{Config()}{Config()}}
+{\footnotesize\ttfamily Config\+::\+Config (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filename,  }\item[{\mbox{\hyperlink{classSerializer}{Serializer}} $\ast$}]{s,  }\item[{int}]{p,  }\item[{\mbox{\hyperlink{classReward}{Reward}} $\ast$}]{r }\end{DoxyParamCaption})}
+
+Read a file and list all the parameters
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The config file. file must be a json file and at the root of the program \\
+\hline
+{\em s} & The serializer to use \\
+\hline
+{\em p} & The proof id \\
+\hline
+{\em r} & The reward object \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classConfig_a23f39330cd594b8855d371368adc80e4}\label{classConfig_a23f39330cd594b8855d371368adc80e4}} 
+\index{Config@{Config}!get\+\_\+encoding@{get\+\_\+encoding}}
+\index{get\+\_\+encoding@{get\+\_\+encoding}!Config@{Config}}
+\subsubsection{\texorpdfstring{get\+\_\+encoding()}{get\_encoding()}}
+{\footnotesize\ttfamily const char $\ast$ Config\+::get\+\_\+encoding (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Get the encoding value
+
+\begin{DoxyReturn}{Returns}
+The encoding for serialization 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classConfig_a516e5e6665ad519ab23ac4c57fb99cb6}\label{classConfig_a516e5e6665ad519ab23ac4c57fb99cb6}} 
+\index{Config@{Config}!get\+\_\+port@{get\+\_\+port}}
+\index{get\+\_\+port@{get\+\_\+port}!Config@{Config}}
+\subsubsection{\texorpdfstring{get\+\_\+port()}{get\_port()}}
+{\footnotesize\ttfamily const int Config\+::get\+\_\+port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Get the port value
+
+\begin{DoxyReturn}{Returns}
+The port the server needs to listen to 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classConfig_a23b6ece178053913f232eeda4ab7c7c8}\label{classConfig_a23b6ece178053913f232eeda4ab7c7c8}} 
+\index{Config@{Config}!get\+\_\+proof@{get\+\_\+proof}}
+\index{get\+\_\+proof@{get\+\_\+proof}!Config@{Config}}
+\subsubsection{\texorpdfstring{get\+\_\+proof()}{get\_proof()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classProof}{Proof}} $\ast$ Config\+::get\+\_\+proof (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Get the proof object
+
+\begin{DoxyReturn}{Returns}
+The proof object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classConfig_a3467e8914f0a0730277cf4732443116d}\label{classConfig_a3467e8914f0a0730277cf4732443116d}} 
+\index{Config@{Config}!get\+\_\+reward@{get\+\_\+reward}}
+\index{get\+\_\+reward@{get\+\_\+reward}!Config@{Config}}
+\subsubsection{\texorpdfstring{get\+\_\+reward()}{get\_reward()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classReward}{Reward}} $\ast$ Config\+::get\+\_\+reward (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Get the reward object
+
+\begin{DoxyReturn}{Returns}
+The reward object for block validation 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classConfig_a00399f1751e2dfa032d99208bf925ab0}\label{classConfig_a00399f1751e2dfa032d99208bf925ab0}} 
+\index{Config@{Config}!get\+\_\+serializer@{get\+\_\+serializer}}
+\index{get\+\_\+serializer@{get\+\_\+serializer}!Config@{Config}}
+\subsubsection{\texorpdfstring{get\+\_\+serializer()}{get\_serializer()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classSerializer}{Serializer}} $\ast$ Config\+::get\+\_\+serializer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Get the serializer
+
+\begin{DoxyReturn}{Returns}
+The serializer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classConfig_afc60cc21dfa15f3642f8ac1f45403450}\label{classConfig_afc60cc21dfa15f3642f8ac1f45403450}} 
+\index{Config@{Config}!is\+\_\+debug@{is\+\_\+debug}}
+\index{is\+\_\+debug@{is\+\_\+debug}!Config@{Config}}
+\subsubsection{\texorpdfstring{is\+\_\+debug()}{is\_debug()}}
+{\footnotesize\ttfamily const bool Config\+::is\+\_\+debug (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Is the program in debug mode
+
+\begin{DoxyReturn}{Returns}
+True if the program runs in debug mode 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classConfig_a8ecbe763ad856693ff85cba5182e1f2e}\label{classConfig_a8ecbe763ad856693ff85cba5182e1f2e}} 
+\index{Config@{Config}!debug@{debug}}
+\index{debug@{debug}!Config@{Config}}
+\subsubsection{\texorpdfstring{debug}{debug}}
+{\footnotesize\ttfamily bool Config\+::debug\hspace{0.3cm}{\ttfamily [protected]}}
+
+Is the program in debug mode \mbox{\Hypertarget{classConfig_a9391a8a86ed88a6fefd35ec89c10e861}\label{classConfig_a9391a8a86ed88a6fefd35ec89c10e861}} 
+\index{Config@{Config}!encoding@{encoding}}
+\index{encoding@{encoding}!Config@{Config}}
+\subsubsection{\texorpdfstring{encoding}{encoding}}
+{\footnotesize\ttfamily std\+::string Config\+::encoding\hspace{0.3cm}{\ttfamily [protected]}}
+
+The encoding for serialization \mbox{\Hypertarget{classConfig_a9b99e069f6e78fcb906d5effbb600e97}\label{classConfig_a9b99e069f6e78fcb906d5effbb600e97}} 
+\index{Config@{Config}!port@{port}}
+\index{port@{port}!Config@{Config}}
+\subsubsection{\texorpdfstring{port}{port}}
+{\footnotesize\ttfamily int Config\+::port\hspace{0.3cm}{\ttfamily [protected]}}
+
+The port the server needs to listen to \mbox{\Hypertarget{classConfig_ac220c43cceafde6291b29d44f61c3785}\label{classConfig_ac220c43cceafde6291b29d44f61c3785}} 
+\index{Config@{Config}!proof@{proof}}
+\index{proof@{proof}!Config@{Config}}
+\subsubsection{\texorpdfstring{proof}{proof}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classProof}{Proof}}$\ast$ Config\+::proof\hspace{0.3cm}{\ttfamily [protected]}}
+
+The proof object for validation \mbox{\Hypertarget{classConfig_a6b3fb8d8312246a1b204d04bd872a187}\label{classConfig_a6b3fb8d8312246a1b204d04bd872a187}} 
+\index{Config@{Config}!reward@{reward}}
+\index{reward@{reward}!Config@{Config}}
+\subsubsection{\texorpdfstring{reward}{reward}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classReward}{Reward}}$\ast$ Config\+::reward\hspace{0.3cm}{\ttfamily [protected]}}
+
+The reward object for validation \mbox{\Hypertarget{classConfig_afcd74e506e51f57020bce34fe92cb9dc}\label{classConfig_afcd74e506e51f57020bce34fe92cb9dc}} 
+\index{Config@{Config}!serializer@{serializer}}
+\index{serializer@{serializer}!Config@{Config}}
+\subsubsection{\texorpdfstring{serializer}{serializer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSerializer}{Serializer}}$\ast$ Config\+::serializer\hspace{0.3cm}{\ttfamily [protected]}}
+
+The serializer 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+block\+\_\+chain/kernel/components/Config.\+h\item 
+block\+\_\+chain/kernel/components/Config.\+cpp\end{DoxyCompactItemize}

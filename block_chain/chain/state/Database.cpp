@@ -11,7 +11,7 @@ Database::Database(Database const& d){
     reward_transaction = d.reward_transaction;
 }
 
-Database::Database(Reward* r): reward_transaction(r) {
+Database::Database(const Reward* r): reward_transaction(r) {
 }
 
 Row* Database::get(std::string key) {

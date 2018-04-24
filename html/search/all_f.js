@@ -1,18 +1,11 @@
 var searchData=
 [
-  ['send',['send',['../classPeer.html#a0f591fdb4807871049e9471f7464fc6a',1,'Peer']]],
-  ['serialize',['serialize',['../classSerializer.html#a5cfe31eb70f4d0c92f2d68c22f39e885',1,'Serializer::serialize(const Component *component, const char *encoding) const'],['../classSerializer.html#a38bec517fb3b3cc0778c75b807cb930c',1,'Serializer::serialize(Element *element, const char *encoding) const']]],
-  ['serializer',['Serializer',['../classSerializer.html',1,'Serializer'],['../classSerializer.html#a9fe7f31924098f75278d059f8443fd5b',1,'Serializer::Serializer()']]],
-  ['set_5fserializer',['set_serializer',['../classSerializer.html#aee483f1845ca1b7f7ac4243de9902750',1,'Serializer']]],
-  ['set_5funserializer',['set_unserializer',['../classSerializer.html#a74ea868b820b4a8472da98c0045418fa',1,'Serializer']]],
-  ['show_5fcurrent_5fstate',['show_current_state',['../classNodeState.html#aedd8b10b2ca3f51e5c95b7ebed70464c',1,'NodeState']]],
-  ['signinmessage',['SignInMessage',['../classSignInMessage.html',1,'SignInMessage'],['../classSignInMessage.html#accb3dfaad2cca80d6709873a783f895b',1,'SignInMessage::SignInMessage()']]],
-  ['signinparser',['SignInParser',['../classSignInParser.html',1,'']]],
-  ['signmessage',['SignMessage',['../classSignMessage.html',1,'SignMessage'],['../classSignMessage.html#ac1df326e20a41acee483fc8893e791ae',1,'SignMessage::SignMessage()']]],
-  ['signoutmessage',['SignOutMessage',['../classSignOutMessage.html',1,'SignOutMessage'],['../classSignOutMessage.html#afbc16960cf71f0259ed990e88cf19f38',1,'SignOutMessage::SignOutMessage()']]],
-  ['signoutparser',['SignOutParser',['../classSignOutParser.html',1,'']]],
-  ['size',['size',['../classMerkleTree.html#aac309360fa4653451af713a8ce9684bd',1,'MerkleTree']]],
-  ['socket',['Socket',['../classSocket.html',1,'Socket'],['../classSocket.html#a4c7a40e6c1513edf63e53b74b4f32b80',1,'Socket::Socket(std::string i, int port)'],['../classSocket.html#a7e2193bd6a9b6846f90eaf4786cfc41b',1,'Socket::Socket(SOCKET s)']]],
-  ['socketserver',['SocketServer',['../classSocketServer.html',1,'SocketServer'],['../classSocketServer.html#a73939197c857f63eede6fc2f0c6ab433',1,'SocketServer::SocketServer()']]],
-  ['statustransaction',['StatusTransaction',['../classStatusTransaction.html',1,'']]]
+  ['read',['read',['../classElement.html#ab468bd37a9558f5227837a9236bc9e4b',1,'Element::read()'],['../classElementInt.html#ab5a7d87743dbdc52910c59bc4b93e6da',1,'ElementInt::read()'],['../classElementDouble.html#a11bf3651edd2cbcdf04610b113accf90',1,'ElementDouble::read()'],['../classElementString.html#a781fe545117610d945772b240f24ac44',1,'ElementString::read()'],['../classElementBoolean.html#afca7544719a8e13fb38f62d57df343b7',1,'ElementBoolean::read()'],['../classElementArray.html#a5353c82d5c132acdad69858884e3e334',1,'ElementArray::read()'],['../classElementObject.html#a2217d9754771964af5e590a5fabe2c4e',1,'ElementObject::read()'],['../classSocket.html#a74fc13f1e87009d84871d73949a664b2',1,'Socket::read()']]],
+  ['read_5fblocks',['read_blocks',['../classNodeState.html#ae2e3a8a54ab5276bf469af2cf2107f2b',1,'NodeState']]],
+  ['request_5ftransaction',['request_transaction',['../classNode.html#a3a3c8197be701cb23a3c9b2a2c981e94',1,'Node']]],
+  ['reward',['Reward',['../classReward.html',1,'Reward'],['../classConfig.html#a6b3fb8d8312246a1b204d04bd872a187',1,'Config::reward()'],['../classDatabase.html#a5bdce9dce60e4fdb4f04c7baa023c0b8',1,'Database::reward()'],['../classRow.html#a851b728fa55ecb26f8ebbc87e614581b',1,'Row::reward()'],['../classCustomRow.html#a007002dc965ca2727ec8db0183404bf1',1,'CustomRow::reward()']]],
+  ['rewardtransaction',['RewardTransaction',['../classRewardTransaction.html',1,'']]],
+  ['row',['Row',['../classRow.html',1,'']]],
+  ['rsa_5fcryptography',['RSA_Cryptography',['../classRSA__Cryptography.html',1,'RSA_Cryptography'],['../classRSA__Cryptography.html#aeca5b9b416a49fea20e7fc69ca18d641',1,'RSA_Cryptography::RSA_Cryptography()'],['../classRSA__Cryptography.html#ae2cd6fb565102dc8007de9d305026e45',1,'RSA_Cryptography::RSA_Cryptography(std::string key)']]],
+  ['run',['run',['../classProof.html#a6ab9f6c3f603447e3a9c7c932b5deac4',1,'Proof::run()'],['../classProofOfHold.html#a3daccb372774a6b4f6ed758be624eaf2',1,'ProofOfHold::run()'],['../classProofOfImportance.html#a08f72d852cefc73c21bc22cbdaf956ff',1,'ProofOfImportance::run()'],['../classProofOfMinimumAgedStake.html#aab3c754b7bc7c1c1e2ccebdaa764249b',1,'ProofOfMinimumAgedStake::run()'],['../classProofOfStake.html#ab5062d721fffffadfd9a599496d939dd',1,'ProofOfStake::run()'],['../classProofOfStakeTime.html#a4081abb2bc76f8039995a73e9617086c',1,'ProofOfStakeTime::run()'],['../classProofOfUse.html#aefccdad0aa3344b6331acecc05299cc0',1,'ProofOfUse::run()'],['../classProofOfWork.html#a31d9107577bafc58c5ce2374e79f2b3c',1,'ProofOfWork::run()'],['../classTransactionManager.html#a27147afb36545b306a277697cd9a773d',1,'TransactionManager::run()'],['../classSocketServer.html#a2876604e63911e2097385e235a8592cb',1,'SocketServer::run(std::function&lt; bool(Socket *, int, const Serializer *serializer, Node *node)&gt; func, const Serializer *serializer, Node *node)'],['../classSocketServer.html#aaaa3c5145b286c3d492f9bf1bec5a5dc',1,'SocketServer::run(Serializer *serializer, Node *node)']]]
 ];

@@ -4,9 +4,9 @@
 
 #include "ProofOfImportance.h"
 
-void ProofOfImportance::run(Block* block, std::string key){
+void ProofOfImportance::run(Block* block, std::string key) const {
 
 }
-bool ProofOfImportance::accept(Block* block, Message* message){
+bool ProofOfImportance::accept(Block* block, Message* message)const {
     return true;
 }

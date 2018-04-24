@@ -54,7 +54,7 @@ public:
      *  @param block The block to run the proof on
      *  @param The user's key to use in the process
      */
-    virtual void run(Block* block, std::string key) = 0;
+    virtual void run(Block* block, std::string key) const = 0;
 
     /**
      *  Get a proof result and check if the result is correct
@@ -63,7 +63,7 @@ public:
      *  @param block The block to check the proof
      *  @param The received message
      */
-    virtual bool accept(Block* block, Message*) = 0;
+    virtual bool accept(Block* block, Message*) const = 0;
 
     /**
      * Default destructor

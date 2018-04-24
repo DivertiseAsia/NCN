@@ -1,0 +1,312 @@
+\subsection*{Overview}
+
+This project is a C++ Framework built to allow easy and fast development of any kind of block-\/chain. \textbackslash{} The idea is to limit the development to transactions and data representation only. No need to implement anything else. \textbackslash{} Of course, as a framework, it needs a big flexibility, therefore, it is possible to write much more advanced block-\/chain by configuring as many things as you want. \textbackslash{} \begin{quote}
+Note that everything can change to allow more flexibility. \end{quote}
+\subsection*{\mbox{\hyperlink{classNode}{Node}}}
+
+The node is the peer itself. You only have to create it and it will run. 
+\begin{DoxyCode}
+\mbox{\hyperlink{classNode}{Node}} node(config);
+\end{DoxyCode}
+ \subsection*{\mbox{\hyperlink{classConfig}{Config}}}
+
+The node is the peer itself. You only have to create it and it will run. 
+\begin{DoxyCode}
+\mbox{\hyperlink{classConfig}{Config}} config(\textcolor{stringliteral}{"configuration file path"}, serializer, Proof::WORK, reward);
+\end{DoxyCode}
+ The file itself is a json file. \#\#\#\#\# Example\+: 
+\begin{DoxyCode}
+\{
+  "port": 3423,
+  "encoding": "json",
+  "debug": true
+\}
+\end{DoxyCode}
+ the parameters serializer, proof and reward are explained later. \subsection*{\mbox{\hyperlink{classTransaction}{Transaction}}}
+
+Transactions are the most important thing to implement. \textbackslash{} 
+\begin{DoxyCode}
+\textcolor{preprocessor}{\#include "./block\_chain/chain/block/transaction/Transaction.h"}
+\end{DoxyCode}
+ There is already a pure abstract class to implement, so you basicaly just have to fill the methods for your own \mbox{\hyperlink{classTransaction}{Transaction}} class. \subsubsection*{Useful methods}
+
+\#\#\#\# get\+\_\+type 
+\begin{DoxyCode}
+\textcolor{keywordtype}{int} get\_type() \textcolor{keyword}{const override};
+\end{DoxyCode}
+ This method is used to give a type to a transaction. Each transaction type must have a different type. It is used as an ID. \#\#\#\#\# Example\+: 
+\begin{DoxyCode}
+\textcolor{keywordtype}{int} \mbox{\hyperlink{classMoneyTransaction_a705918a47c0471ee7cf82bcdf0aeb5ef}{MoneyTransaction::get\_type}}()\textcolor{keyword}{ const }\{
+    \textcolor{keywordflow}{return} 2;
+\}
+\end{DoxyCode}
+ \#\#\#\# == 
+\begin{DoxyCode}
+\textcolor{keywordtype}{bool} operator==(\mbox{\hyperlink{classTransaction}{Transaction}}* t) \textcolor{keyword}{const} \textcolor{keyword}{override}
+\end{DoxyCode}
+ This method is used to check if two transactions are the same \#\#\#\#\# Example\+: 
+\begin{DoxyCode}
+\textcolor{keywordtype}{bool} operator==(\mbox{\hyperlink{classTransaction}{Transaction}}* t)\textcolor{keyword}{ const override }\{
+    \textcolor{keyword}{auto} * s = \textcolor{keyword}{dynamic\_cast<}\mbox{\hyperlink{classMoneyTransaction}{MoneyTransaction}}*\textcolor{keyword}{>}(t);
+    \textcolor{keywordflow}{return} amount == s->amount \&\& target == s->target;
+\}
+\end{DoxyCode}
+ \subsubsection*{Serialization methods}
+
+\#\#\#\# Constructor 
+\begin{DoxyCode}
+\textcolor{keyword}{explicit} \mbox{\hyperlink{classTransaction}{Transaction}}();
+\end{DoxyCode}
+ For serialization, you need an empty default constructor. \#\#\#\# to\+Element 
+\begin{DoxyCode}
+\mbox{\hyperlink{classElement}{Element}}* toElement() \textcolor{keyword}{const override};
+\end{DoxyCode}
+ This method is used to transform the object into an \mbox{\hyperlink{classElement}{Element}} so it can easily be serialized \#\#\#\#\# Example\+: 
+\begin{DoxyCode}
+\mbox{\hyperlink{classElement}{Element}}* \mbox{\hyperlink{classMoneyTransaction_a84adc847266467965014cb04acd48bea}{MoneyTransaction::toElement}}()\textcolor{keyword}{ const }\{
+    \mbox{\hyperlink{classElementObject}{ElementObject}}* e = \mbox{\hyperlink{classElementCreator_a9ecb3456bf27d6f9b3c9f5f8130cfe63}{ElementCreator::object}}();
+    \textcolor{keywordflow}{return} e->\mbox{\hyperlink{classElementObject_ab9dd82037b752ab2e6f4e3de53348483}{put}}(\textcolor{stringliteral}{"type"}, \mbox{\hyperlink{classElementCreator_a4d2ee7d169ec568eb76e41dc0baaf314}{ElementCreator::create}}(
+      \mbox{\hyperlink{classMoneyTransaction_a705918a47c0471ee7cf82bcdf0aeb5ef}{get\_type}}()))
+            ->\mbox{\hyperlink{classElementObject_ab9dd82037b752ab2e6f4e3de53348483}{put}}(\textcolor{stringliteral}{"amount"}, \mbox{\hyperlink{classElementCreator_a4d2ee7d169ec568eb76e41dc0baaf314}{ElementCreator::create}}(amount))
+            ->\mbox{\hyperlink{classElementObject_ab9dd82037b752ab2e6f4e3de53348483}{put}}(\textcolor{stringliteral}{"target"}, \mbox{\hyperlink{classElementCreator_a4d2ee7d169ec568eb76e41dc0baaf314}{ElementCreator::create}}(target));
+\}
+\end{DoxyCode}
+ The \mbox{\hyperlink{classElement}{Element}} system is the key for serialization. You just have to fill all of the fields and their values. If you are using many differents type of Transactions, you should use a type to help your serializer.
+
+\#\#\#\# from\+Element (protected) 
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} fromElement(\mbox{\hyperlink{classElementObject}{ElementObject}}*, \textcolor{keyword}{const} \mbox{\hyperlink{classSerializer}{Serializer}}*, \textcolor{keyword}{const} \textcolor{keywordtype}{char}* encoding) \textcolor{keyword}{override};
+\end{DoxyCode}
+ This method is the opposite than to\+Element. It is used to build the object with a given \mbox{\hyperlink{classElement}{Element}} object. \#\#\#\#\# Example\+: 
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} \mbox{\hyperlink{classMoneyTransaction_a6f4672dba3a75e2782d15366d9ed7a1e}{MoneyTransaction::fromElement}}(\mbox{\hyperlink{classElementObject}{ElementObject}}* e, \textcolor{keyword}{const} 
+      \mbox{\hyperlink{classSerializer}{Serializer}}*, \textcolor{keyword}{const} \textcolor{keywordtype}{char}*) \{
+    e->\mbox{\hyperlink{classElementObject_a7b3a1ef505e63d87ad39309c5ae1b5b3}{getItem}}(\textcolor{stringliteral}{"amount"}, \&amount);
+    e->\mbox{\hyperlink{classElementObject_a7b3a1ef505e63d87ad39309c5ae1b5b3}{getItem}}(\textcolor{stringliteral}{"target"}, \&target);
+\}
+\end{DoxyCode}
+ \subsubsection*{UI methods}
+
+\#\#\#\# description 
+\begin{DoxyCode}
+std::string description() \textcolor{keyword}{const override};
+\end{DoxyCode}
+ This method is used to show the description of the transaction in the UI for the user to choose. \#\#\#\#\# Example\+: 
+\begin{DoxyCode}
+std::string \mbox{\hyperlink{classMoneyTransaction_a23b793077f5c5e3157155df148e0d5e1}{MoneyTransaction::description}}()\textcolor{keyword}{ const }\{
+    \textcolor{keywordflow}{return} \textcolor{stringliteral}{"give money"};
+\}
+\end{DoxyCode}
+ \#\#\#\# fill\+\_\+data 
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} fill\_data() \textcolor{keyword}{override};
+\end{DoxyCode}
+ This method is used to ask the user to fill the transaction\textquotesingle{}s data \#\#\#\#\# Example\+: 
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} \mbox{\hyperlink{classMoneyTransaction_a8666737a342f5eb1856006cd970967bf}{MoneyTransaction::fill\_data}}() \{
+    \textcolor{keywordflow}{do} \{
+        std::cout << \textcolor{stringliteral}{"Amount of money: "} << std::endl;
+        std::cin >> amount;
+    \}\textcolor{keywordflow}{while}(amount < 0);
+    std::cout << \textcolor{stringliteral}{"Target key: "} << std::endl;
+    std::cin >> target;
+    std::cout << \textcolor{stringliteral}{"Money transaction created"} << std::endl;
+\}
+\end{DoxyCode}
+ \#\#\#\# clone 
+\begin{DoxyCode}
+\mbox{\hyperlink{classTransaction}{Transaction}}* clone() \textcolor{keyword}{override};
+\end{DoxyCode}
+ This method is used to create a new object of the same class. \#\#\#\#\# Example\+: 
+\begin{DoxyCode}
+\mbox{\hyperlink{classTransaction}{Transaction}}* \mbox{\hyperlink{classMoneyTransaction_af777b46f577df3c089a44c78c1aebc40}{MoneyTransaction::clone}}() \{
+    \textcolor{keywordflow}{return} \textcolor{keyword}{new} \mbox{\hyperlink{classMoneyTransaction}{MoneyTransaction}};
+\}
+\end{DoxyCode}
+ \subsubsection*{\mbox{\hyperlink{classDatabase}{Database}} methods}
+
+\#\#\#\# apply 
+\begin{DoxyCode}
+std::vector<std::string> apply(\mbox{\hyperlink{classRow}{Row}}* row) \textcolor{keyword}{override};
+\end{DoxyCode}
+ This method is used to apply changes into a database. It returns a list of users to apply the reverse transaction \#\#\#\#\# Example\+: 
+\begin{DoxyCode}
+std::vector<std::string> \mbox{\hyperlink{classMoneyTransaction_a8aa6f693c524d8e1e052b616546f9647}{MoneyTransaction::apply}}(\mbox{\hyperlink{classRow}{Row}}* row)\{
+    \textcolor{keyword}{auto} * cr = \textcolor{keyword}{dynamic\_cast<}\mbox{\hyperlink{classCustomRow}{CustomRow}}*\textcolor{keyword}{>}(row);
+    cr->money -= amount;
+    std::vector<std::string> targets;
+    targets.push\_back(target);
+    \textcolor{keywordflow}{return}  targets;
+\}
+\end{DoxyCode}
+ \#\#\#\# apply\+\_\+reverse 
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} apply\_reverse(\mbox{\hyperlink{classRow}{Row}}* row) \textcolor{keyword}{override};
+\end{DoxyCode}
+ This method is used to apply the reverse transaction changes into a database. \#\#\#\#\# Example\+: 
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} \mbox{\hyperlink{classMoneyTransaction_a9eaa71eed1cc8b06ef5773c76c814ad9}{MoneyTransaction::apply\_reverse}}(\mbox{\hyperlink{classRow}{Row}}* row)\{
+    \textcolor{keyword}{auto} * cr = \textcolor{keyword}{dynamic\_cast<}\mbox{\hyperlink{classCustomRow}{CustomRow}}*\textcolor{keyword}{>}(row);
+    cr->money += amount;
+\}
+\end{DoxyCode}
+ \#\#\#\# create\+Row 
+\begin{DoxyCode}
+\mbox{\hyperlink{classRow}{Row}}* createRow() \textcolor{keyword}{const override};
+\end{DoxyCode}
+ Creates a row in the database. Since Rows are custom objects from the developper, it cannot be generated by the framework, so the transactions are generating it. \#\#\#\#\# Example\+: 
+\begin{DoxyCode}
+\mbox{\hyperlink{classRow}{Row}}* \mbox{\hyperlink{classMoneyTransaction_a53b636ba053baae7705976efce629d21}{MoneyTransaction::createRow}}()\textcolor{keyword}{ const }\{
+    \textcolor{keywordflow}{return} \textcolor{keyword}{new} \mbox{\hyperlink{classCustomRow}{CustomRow}}();
+\};
+\end{DoxyCode}
+ \#\#\#\# validate 
+\begin{DoxyCode}
+\textcolor{keywordtype}{bool} validate(\mbox{\hyperlink{classRow}{Row}} *row) \textcolor{keyword}{const override};
+\end{DoxyCode}
+ This method is used to check if the transaction is valid and can be add to the block chain \#\#\#\#\# Example\+: 
+\begin{DoxyCode}
+\textcolor{keywordtype}{bool} \mbox{\hyperlink{classMoneyTransaction_a20c58901a2aa8c51b73d56000545e82c}{MoneyTransaction::validate}}(\mbox{\hyperlink{classRow}{Row}} *row)\textcolor{keyword}{ const }\{
+    \textcolor{keyword}{auto} * cr = \textcolor{keyword}{dynamic\_cast<}\mbox{\hyperlink{classCustomRow}{CustomRow}}*\textcolor{keyword}{>}(row);
+    \textcolor{keywordflow}{return} amount >= cr->money;
+\}
+\end{DoxyCode}
+ \subsection*{\mbox{\hyperlink{classReward}{Reward}}}
+
+The reward is a very particular kind of \mbox{\hyperlink{classTransaction}{Transaction}}. You only have to override the methods {\ttfamily clone} and {\ttfamily create\+Row}. \subsection*{\mbox{\hyperlink{classTransactionManager}{Transaction\+Manager}}}
+
+The transaction manager is a built in class from the framework. You only need to give it a list of transactions, and then to give it to the \mbox{\hyperlink{classNode}{Node}} object. 
+\begin{DoxyCode}
+\mbox{\hyperlink{classTransactionManager}{TransactionManager}} manager;
+manager.\mbox{\hyperlink{classTransactionManager_a7956f511249bba3466ce3f3b57ee4518}{put}}(\textcolor{keyword}{new} \mbox{\hyperlink{classStatusTransaction}{StatusTransaction}});
+manager.\mbox{\hyperlink{classTransactionManager_a7956f511249bba3466ce3f3b57ee4518}{put}}(\textcolor{keyword}{new} \mbox{\hyperlink{classMoneyTransaction}{MoneyTransaction}});
+manager.\mbox{\hyperlink{classTransactionManager_a7956f511249bba3466ce3f3b57ee4518}{put}}(\textcolor{keyword}{new} \mbox{\hyperlink{classMessagesTransaction}{MessagesTransaction}});
+node.start(manager);
+\end{DoxyCode}
+ \subsection*{\mbox{\hyperlink{classSerializer}{Serializer}}}
+
+The serialization class is used to transfrom Objects into string using Elements and strings into Objects using Elements. One method from this class needs to be overridden\+: 
+\begin{DoxyCode}
+\textcolor{keyword}{virtual} \mbox{\hyperlink{classTransaction}{Transaction}}* unserializeTransaction(std::string transaction, \textcolor{keyword}{const} \textcolor{keywordtype}{char}* encoding) \textcolor{keyword}{const}
+      ;
+\end{DoxyCode}
+ It need to be overridden because the framework doesn\textquotesingle{}t know about your transactions, therefore, you have to implement this method using the \mbox{\hyperlink{classSerializer}{Serializer}} methods \#\#\#\#\# Example\+: 
+\begin{DoxyCode}
+\mbox{\hyperlink{classTransaction}{Transaction}}* \mbox{\hyperlink{classCustomSerializer_abff58f1a955c2f399127b7e3cae23223}{CustomSerializer::unserializeTransaction}}(
+      std::string transaction, \textcolor{keyword}{const} \textcolor{keywordtype}{char}* key)\textcolor{keyword}{ const }\{
+    \mbox{\hyperlink{classElementObject}{ElementObject}}* e = \mbox{\hyperlink{classSerializer_ab3bcdbd49167109de13e03878337018a}{getElement}}(transaction, key);
+    \textcolor{keywordtype}{int} type;
+    e->\mbox{\hyperlink{classElementObject_a7b3a1ef505e63d87ad39309c5ae1b5b3}{getItem}}(\textcolor{stringliteral}{"type"}, \&type);
+    \mbox{\hyperlink{classTransaction}{Transaction}}* t;
+    \textcolor{keywordflow}{if}(!type)
+        t = \textcolor{keyword}{new} \mbox{\hyperlink{classStatusTransaction}{StatusTransaction}}();
+    \textcolor{keywordflow}{else}
+        t = \textcolor{keyword}{new} \mbox{\hyperlink{classMessagesTransaction}{MessagesTransaction}}();
+    t->\mbox{\hyperlink{classComponent_a28212595f8ee85fe009bd233bc99b2fc}{\_\_init\_\_}}(e, \textcolor{keyword}{this}, key);
+    \textcolor{keywordflow}{return} t;
+\}
+\end{DoxyCode}
+ \subsection*{\mbox{\hyperlink{classProof}{Proof}}}
+
+Proofs are \#\# run the basis of block chain validation. Some proofs are implemented, but not all of them. Therefore, you can create your own proof and send it to the framework. \subsubsection*{New proof}
+
+A new proof class needs to implements 2 methods \#\#\#\# run 
+\begin{DoxyCode}
+\textcolor{keyword}{virtual} \textcolor{keywordtype}{void} run(\mbox{\hyperlink{classBlock}{Block}}* block, std::string key) = 0;
+\end{DoxyCode}
+ This method will be called to generate the proof, and it will create a new \mbox{\hyperlink{classMetadata}{Metadata}} for the current block. \#\#\#\#\# Example\+: 
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} \mbox{\hyperlink{classProofOfWork_a31d9107577bafc58c5ce2374e79f2b3c}{ProofOfWork::run}}(\mbox{\hyperlink{classBlock}{Block}}* block, std::string key)\{
+    \mbox{\hyperlink{classHash}{Hash}} tmp((block->parent\_fingerprint != \textcolor{keyword}{nullptr} ? block->parent\_fingerprint->
+      \mbox{\hyperlink{classHash_ab1c275871d3d81cd38d58dac5c634042}{to\_string}}() : \textcolor{stringliteral}{"0"}) + key);
+    \textcolor{keywordflow}{for}(\textcolor{keywordtype}{long} \textcolor{keywordtype}{long} \textcolor{keywordtype}{int} i = 1; i > 0 ; i++)\{
+        \mbox{\hyperlink{classHash}{Hash}} t(\&tmp, i);
+        \textcolor{keywordflow}{for}(\textcolor{keywordtype}{long} \textcolor{keywordtype}{long} \textcolor{keywordtype}{int} j = 1; j > 0 ; j++) \{
+            \mbox{\hyperlink{classHash}{Hash}} h(\&t, j);
+            \textcolor{keywordflow}{if}(h.to\_string().substr(0, 1) == \textcolor{stringliteral}{"0"})\{
+                block->data = \textcolor{keyword}{new} \mbox{\hyperlink{classProofOfWorkMetadata}{ProofOfWorkMetadata}}(i, j, key);
+                \textcolor{keywordflow}{return};
+            \}
+        \}
+    \}
+\}
+\end{DoxyCode}
+ \#\#\#\# accept 
+\begin{DoxyCode}
+\textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} accept(\mbox{\hyperlink{classBlock}{Block}}* block, \mbox{\hyperlink{classMessage}{Message}}*) = 0;
+\end{DoxyCode}
+ This method will be called to check is the metadata generated by the method run by another peer is correct. \textbackslash{} If it is not correct, it means the peer is generating false data, therefore the block must be rejected \#\#\#\#\# Example\+: 
+\begin{DoxyCode}
+\textcolor{keywordtype}{bool} \mbox{\hyperlink{classProofOfWork_aa414484a6dc03fec583996a591f36856}{ProofOfWork::accept}}(\mbox{\hyperlink{classBlock}{Block}}* block, \mbox{\hyperlink{classMessage}{Message}}* m)\{
+    \textcolor{keyword}{auto} data = \textcolor{keyword}{dynamic\_cast<}\mbox{\hyperlink{classProofOfWorkMetadata}{ProofOfWorkMetadata}}*\textcolor{keyword}{>}(block->data);
+    \mbox{\hyperlink{classHash}{Hash}} tmp((block->parent\_fingerprint != \textcolor{keyword}{nullptr} ? block->parent\_fingerprint->
+      \mbox{\hyperlink{classHash_ab1c275871d3d81cd38d58dac5c634042}{to\_string}}() : \textcolor{stringliteral}{"0"}) + data->winner);
+    \mbox{\hyperlink{classHash}{Hash}} t(\&tmp, data->first);
+    \mbox{\hyperlink{classHash}{Hash}} h(\&t, data->second);
+    \textcolor{keywordflow}{return} h.to\_string().substr(0, 1) == \textcolor{stringliteral}{"0"};
+\}
+\end{DoxyCode}
+ \subsubsection*{Give the proof to the framework}
+
+One your proof is done, you just have to give it to the framework using this method\+: 
+\begin{DoxyCode}
+\textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classProof_a71874539fdbcc93c15594b889c95225b}{Proof::add\_proof}}(\textcolor{keywordtype}{int} \textcolor{keywordtype}{id}, std::function<\mbox{\hyperlink{classProof}{Proof}}*()> proof);
+\end{DoxyCode}
+ The id needs to be passed to the \mbox{\hyperlink{classNode}{Node}} object. The second parameter is a lambda that creates the proof. \#\#\#\#\# Example\+: 
+\begin{DoxyCode}
+\mbox{\hyperlink{classProof_a71874539fdbcc93c15594b889c95225b}{Proof::add\_proof}}(Proof::WORK, []() -> \mbox{\hyperlink{classProof}{Proof}}*\{\textcolor{keywordflow}{return} \textcolor{keyword}{new} 
+      \mbox{\hyperlink{classProofOfWork}{ProofOfWork}};\});
+\end{DoxyCode}
+ \subsection*{\mbox{\hyperlink{classDatabase}{Database}}}
+
+The database is basically a map of \mbox{\hyperlink{classRow}{Row}}. Rows are pure abstract classes that needs to be implemented, because their structure depends of your implementation \textbackslash{} There are 3 methods that must be implemented. \#\#\#\# clone 
+\begin{DoxyCode}
+\textcolor{keyword}{virtual} \mbox{\hyperlink{classRow}{Row}}* clone() \textcolor{keyword}{const} = 0;
+\end{DoxyCode}
+ Like Transactions, you need to duplicate the \mbox{\hyperlink{classRow}{Row}} in order to accept differents states on differents blocks in the block chain \#\#\#\#\# Example\+: 
+\begin{DoxyCode}
+\mbox{\hyperlink{classRow}{Row}}* \mbox{\hyperlink{classCustomRow_a9d3c1b6bda5e63de382cc4a2aa29210d}{CustomRow::clone}}()\textcolor{keyword}{ const}\{
+    \textcolor{keyword}{auto} r = \textcolor{keyword}{new} \mbox{\hyperlink{classCustomRow}{CustomRow}};
+    r->money = money;
+    r->status = status;
+    r->messages = messages;
+    \textcolor{keywordflow}{return} r;
+\}
+\end{DoxyCode}
+ \#\#\#\# to\+\_\+string 
+\begin{DoxyCode}
+\textcolor{keyword}{virtual} std::string to\_string() \textcolor{keyword}{const} = 0;
+\end{DoxyCode}
+ Like Transactions, you need a visual representation of the database \#\#\#\#\# Example\+: 
+\begin{DoxyCode}
+std::string \mbox{\hyperlink{classCustomRow_ae1e5a3b861829f8b295d3c743d6b3c7a}{CustomRow::to\_string}}()\textcolor{keyword}{ const }\{
+    std::string str;
+    str += \textcolor{stringliteral}{"["} + status + \textcolor{stringliteral}{"] (value: "} + std::to\_string(money) + \textcolor{stringliteral}{")\(\backslash\)n"};
+    \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\& a : messages)
+        str += \textcolor{stringliteral}{" - "} + a + \textcolor{stringliteral}{"\(\backslash\)n"};
+    \textcolor{keywordflow}{return} str;
+\}
+\end{DoxyCode}
+ \#\#\#\# reward 
+\begin{DoxyCode}
+\textcolor{keyword}{virtual} \textcolor{keywordtype}{void} reward() = 0;
+\end{DoxyCode}
+ The reward method is called to reward the user who validated the block \#\#\#\#\# Example\+: 
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} \mbox{\hyperlink{classCustomRow_a007002dc965ca2727ec8db0183404bf1}{CustomRow::reward}}() \{
+    money += 1;
+\}
+\end{DoxyCode}
+ \subsection*{T\+O\+D\+O-\/\+List}
+
+\subsubsection*{\mbox{\hyperlink{classHash}{Hash}}}
+
+For now, there is only one hash class based on md5. \textbackslash{} It will be changed to make this hash class abstract with the possibility for the user to create his own hash class (And to keep some basic hash functions).
+
+\subsubsection*{Cryptography}
+
+For now, there is only one cryptography class based on R\+SA. \textbackslash{} It will be changed to make this cryptography class abstract with the possibility for the user to create his own cryptography class (And to keep some basic cryptography functions).
+
+\subsubsection*{Proofs}
+
+For now, there is only one proof\+: the proof of work. \textbackslash{} The framework will be updated with new proofs 

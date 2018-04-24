@@ -13,9 +13,9 @@ Inheritance diagram for Proof\+Of\+Importance\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{classProofOfImportance_afb53c930bf8afc5371ae91da04927415}{run}} (\mbox{\hyperlink{classBlock}{Block}} $\ast$block, std\+::string key) override
+void \mbox{\hyperlink{classProofOfImportance_a08f72d852cefc73c21bc22cbdaf956ff}{run}} (\mbox{\hyperlink{classBlock}{Block}} $\ast$block, std\+::string key) const override
 \item 
-bool \mbox{\hyperlink{classProofOfImportance_ab40da85ecfe7b87f21c63641d255f94e}{accept}} (\mbox{\hyperlink{classBlock}{Block}} $\ast$block, \mbox{\hyperlink{classMessage}{Message}} $\ast$message) override
+bool \mbox{\hyperlink{classProofOfImportance_a42a29f16c0c9e5e097fd734b7ee3fcf8}{accept}} (\mbox{\hyperlink{classBlock}{Block}} $\ast$block, \mbox{\hyperlink{classMessage}{Message}} $\ast$message) const override
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -65,11 +65,11 @@ Mathieu Lochet
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classProofOfImportance_ab40da85ecfe7b87f21c63641d255f94e}\label{classProofOfImportance_ab40da85ecfe7b87f21c63641d255f94e}} 
+\mbox{\Hypertarget{classProofOfImportance_a42a29f16c0c9e5e097fd734b7ee3fcf8}\label{classProofOfImportance_a42a29f16c0c9e5e097fd734b7ee3fcf8}} 
 \index{Proof\+Of\+Importance@{Proof\+Of\+Importance}!accept@{accept}}
 \index{accept@{accept}!Proof\+Of\+Importance@{Proof\+Of\+Importance}}
 \subsubsection{\texorpdfstring{accept()}{accept()}}
-{\footnotesize\ttfamily bool Proof\+Of\+Importance\+::accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBlock}{Block}} $\ast$}]{block,  }\item[{\mbox{\hyperlink{classMessage}{Message}} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily bool Proof\+Of\+Importance\+::accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBlock}{Block}} $\ast$}]{block,  }\item[{\mbox{\hyperlink{classMessage}{Message}} $\ast$}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 Get a proof result and check if the result is correct Needs to be implemented
 
@@ -82,7 +82,7 @@ Get a proof result and check if the result is correct Needs to be implemented
 \end{DoxyParams}
 
 
-Implements \mbox{\hyperlink{classProof_ad52fee058ea617a186133cb6a008fe6e}{Proof}}.
+Implements \mbox{\hyperlink{classProof_a358b3883eb33b8ecc93f74cb6313679a}{Proof}}.
 
 \mbox{\Hypertarget{classProof_a71874539fdbcc93c15594b889c95225b}\label{classProof_a71874539fdbcc93c15594b889c95225b}} 
 \index{Proof\+Of\+Importance@{Proof\+Of\+Importance}!add\+\_\+proof@{add\+\_\+proof}}
@@ -115,11 +115,11 @@ Generates a proof for a given id
 \begin{DoxyReturn}{Returns}
 The created proof object 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classProofOfImportance_afb53c930bf8afc5371ae91da04927415}\label{classProofOfImportance_afb53c930bf8afc5371ae91da04927415}} 
+\mbox{\Hypertarget{classProofOfImportance_a08f72d852cefc73c21bc22cbdaf956ff}\label{classProofOfImportance_a08f72d852cefc73c21bc22cbdaf956ff}} 
 \index{Proof\+Of\+Importance@{Proof\+Of\+Importance}!run@{run}}
 \index{run@{run}!Proof\+Of\+Importance@{Proof\+Of\+Importance}}
 \subsubsection{\texorpdfstring{run()}{run()}}
-{\footnotesize\ttfamily void Proof\+Of\+Importance\+::run (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBlock}{Block}} $\ast$}]{block,  }\item[{std\+::string}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Proof\+Of\+Importance\+::run (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBlock}{Block}} $\ast$}]{block,  }\item[{std\+::string}]{key }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 Run a proof on a block to validate it Needs to be implemented
 
@@ -132,7 +132,7 @@ Run a proof on a block to validate it Needs to be implemented
 \end{DoxyParams}
 
 
-Implements \mbox{\hyperlink{classProof_a8a43fcb7c997da54d627e0f257adb86f}{Proof}}.
+Implements \mbox{\hyperlink{classProof_a6ab9f6c3f603447e3a9c7c932b5deac4}{Proof}}.
 
 
 

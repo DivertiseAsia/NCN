@@ -27,6 +27,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/default/CLionProjects/block_chain/block_chain/chain/state/Database.cpp" "/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/state/Database.cpp.o"
   "/home/default/CLionProjects/block_chain/block_chain/chain/state/Row.cpp" "/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/state/Row.cpp.o"
   "/home/default/CLionProjects/block_chain/block_chain/kernel/components/Component.cpp" "/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/components/Component.cpp.o"
+  "/home/default/CLionProjects/block_chain/block_chain/kernel/components/Config.cpp" "/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/components/Config.cpp.o"
   "/home/default/CLionProjects/block_chain/block_chain/kernel/messages/AnswerPeersMessage.cpp" "/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/messages/AnswerPeersMessage.cpp.o"
   "/home/default/CLionProjects/block_chain/block_chain/kernel/messages/AskPeersMessage.cpp" "/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/messages/AskPeersMessage.cpp.o"
   "/home/default/CLionProjects/block_chain/block_chain/kernel/messages/BlockAnswerMessage.cpp" "/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/messages/BlockAnswerMessage.cpp.o"

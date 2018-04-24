@@ -17,8 +17,9 @@ void BlockAskParser::operator()(Message* m, Node* node) const {
         std::cout << "\033[1;34m[INFO] Block "<< Encoding::fromHexa(message->fingerprint) << " asked by " << node->self._ip << ":" << node->self._port<<"\033[0m\n";
     std::string hash = Encoding::fromHexa(message->fingerprint);
     Block* b = node->block_chain.get(hash);
+    std::string creator = node->block_chain.get_creator(hash);
     std::string serialized_block(node->serializer->serialize(b, node->encoding.c_str()));
-    BlockAnswerMessage answer(serialized_block);
+    BlockAnswerMessage answer(serialized_block, creator);
     char* text = node->serializer->serialize(&answer, node->encoding.c_str());
     Peer peer(ip, port);
     peer.send(Encoding::toHexa(std::string(text)).c_str());

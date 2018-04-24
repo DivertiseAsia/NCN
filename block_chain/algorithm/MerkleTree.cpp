@@ -3,6 +3,8 @@
 //
 
 #include "MerkleTree.h"
+#include "../utils/serialization/Serializer.h"
+#include "RSA.h"
 
 MerkleTree::MerkleTree(Transaction* transaction, const Serializer* serializer, const char* encoding): left(nullptr), right(nullptr), value(transaction->__hash__(serializer, encoding)){
 
@@ -10,6 +12,17 @@ MerkleTree::MerkleTree(Transaction* transaction, const Serializer* serializer, c
 MerkleTree::MerkleTree(MerkleTree* l, MerkleTree* r): left(l), right(r), value(new Hash(left->value, right->value)) {
 
 }
+MerkleTree::MerkleTree(Block* block, const Serializer* serializer, const char* encoding): left(nullptr), right(nullptr), value(nullptr)
+{
+    std::vector<Transaction*> transactions;
+    for(auto& p : block->transactions){
+        RSA_Cryptography crypto(Encoding::fromHexa(p.first));
+        std::string t(crypto.decrypt(p.second, p.second.size()));
+        transactions.emplace_back(serializer->unserializeTransaction(t, encoding));
+    }
+    generate_tree(transactions, 0, (int)transactions.size() - 1, serializer, encoding);
+}
+
 MerkleTree::MerkleTree(std::vector<Transaction*> transactions, const Serializer* serializer, const char* encoding): left(nullptr), right(nullptr), value(nullptr)
 {
     generate_tree(transactions, 0, (int)transactions.size() - 1, serializer, encoding);

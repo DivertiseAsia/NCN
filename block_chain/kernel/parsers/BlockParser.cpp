@@ -35,7 +35,7 @@ void BlockParser::operator()(Message* m, Node* node) const {
             node->queue--;
             if(node->queue < 0)
                 node->queue = 0;
-            node->block_chain.add(block);
+            node->block_chain.add(block, message->get_key());
         }
         else if(node->debug)
             std::cout << "\033[1;32m[INFO] Invalid proof\033[0m\n";

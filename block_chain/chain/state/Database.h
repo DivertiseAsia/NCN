@@ -29,7 +29,7 @@ public:
      *
      *  @param r The reward transaction that will be used in the reward method
      */
-    explicit Database(Reward* r);
+    explicit Database(const Reward* r);
 
     /**
      *  A constructor to clone a database with different pointers
@@ -65,7 +65,7 @@ private:
     /**
      *  The reward transaction to be used
      */
-    Reward* reward_transaction;
+    const Reward* reward_transaction;
 };
 
 

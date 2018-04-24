@@ -33,6 +33,7 @@
 #include "kernel/messages/BlockAskMessage.h"
 #include "kernel/messages/SignOutMessage.h"
 #include "kernel/messages/AskPeersMessage.h"
+#include "kernel/components/Config.h"
 
 /**
  *  The node is the main entry point of the framework.
@@ -66,18 +67,11 @@ class Node{
 public:
 	/**
 	 *  Initialize the Node with all of its parameters
-	 *  @see serializer
-	 *  @see Proof
-	 *  @see Reward
+	 *  @see Config
 	 *
-	 *  @param serializer The serializer used everywhere in the app
-	 *  @param p The port the client will listen to
-	 *  @param e The encoding to use with the serializer
-	 *  @param pr The ID of the Proof to be used
-	 *  @param d Is the app runs in debug more
-	 *  @param r The reward transaction object
+	 *  @param config The config that contains all of the needed data
 	 */
-    Node(Serializer* serializer, int p = 3000, const char* e = "json", int pr = Proof::WORK, bool d = false, Reward* r = nullptr);
+    Node(Config& config);
 
 	/**
 	 *  A destructor to delete all of the objects and signing out
@@ -111,7 +105,7 @@ public:
 	 *  @param node The node to compute the requests
 	 *  @return true once it's done
 	 */
-    bool static defaultCallback(Socket* socket, int port, Serializer* serializer, Node* node);
+    bool static defaultCallback(Socket* socket, int port, const Serializer* serializer, Node* node);
 
 	/**
 	 *  Starts to run the manager and loop on its request, until
@@ -127,7 +121,7 @@ private:
 	/**
 	 *  The serializer
 	 */
-    Serializer* serializer;
+    const Serializer* serializer;
 
 	/**
 	 *  Add all of the different parsers into the index of parsers
@@ -156,7 +150,7 @@ private:
 	/**
 	 *  The used proof for block validation
 	 */
-    Proof* proof;
+    const Proof* proof;
 
 	/**
 	 *  Read the network file and ask for the list of peers

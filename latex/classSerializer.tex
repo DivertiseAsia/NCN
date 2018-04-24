@@ -15,6 +15,8 @@ Inheritance diagram for Serializer\+:\begin{figure}[H]
 \item 
 \mbox{\hyperlink{classSerializer_a9fe7f31924098f75278d059f8443fd5b}{Serializer}} ()
 \item 
+virtual \mbox{\hyperlink{classSerializer_a42a7d2d8e622ad1ef5f869813b498aa9}{$\sim$\+Serializer}} ()
+\item 
 virtual char $\ast$ \mbox{\hyperlink{classSerializer_a5cfe31eb70f4d0c92f2d68c22f39e885}{serialize}} (const \mbox{\hyperlink{classComponent}{Component}} $\ast$component, const char $\ast$encoding) const
 \item 
 virtual char $\ast$ \mbox{\hyperlink{classSerializer_a38bec517fb3b3cc0778c75b807cb930c}{serialize}} (\mbox{\hyperlink{classElement}{Element}} $\ast$element, const char $\ast$encoding) const
@@ -43,7 +45,7 @@ void \mbox{\hyperlink{classSerializer_a74ea868b820b4a8472da98c0045418fa}{set\+\_
 
 
 \subsection{Detailed Description}
-An abstract serializer. The class \mbox{\hyperlink{classSerializer}{Serializer}} implements almost all of the serialization and unserialization methods. However, it doesn\textquotesingle{}t implements the transaction unserialization, thereforem this class has to be override. \begin{DoxySeeAlso}{See also}
+An abstract serializer. The class \mbox{\hyperlink{classSerializer}{Serializer}} implements almost all of the serialization and unserialization methods. However, it doesn\textquotesingle{}t implements the transaction unserialization, therefore, this class has to be override. \begin{DoxySeeAlso}{See also}
 \mbox{\hyperlink{classContentCreator}{Content\+Creator}} 
 
 \mbox{\hyperlink{classContentParser}{Content\+Parser}} 
@@ -86,7 +88,13 @@ Initialize the \mbox{\hyperlink{classSerializer}{Serializer}} with default reade
 \mbox{\hyperlink{classJsonParser}{Json\+Parser}} 
 \end{DoxySeeAlso}
 
-\end{DoxyItemize}
+\end{DoxyItemize}\mbox{\Hypertarget{classSerializer_a42a7d2d8e622ad1ef5f869813b498aa9}\label{classSerializer_a42a7d2d8e622ad1ef5f869813b498aa9}} 
+\index{Serializer@{Serializer}!````~Serializer@{$\sim$\+Serializer}}
+\index{````~Serializer@{$\sim$\+Serializer}!Serializer@{Serializer}}
+\subsubsection{\texorpdfstring{$\sim$\+Serializer()}{~Serializer()}}
+{\footnotesize\ttfamily Serializer\+::$\sim$\+Serializer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Default destructor that clears the factories 
 
 \subsection{Member Function Documentation}
 \mbox{\Hypertarget{classSerializer_ab3bcdbd49167109de13e03878337018a}\label{classSerializer_ab3bcdbd49167109de13e03878337018a}} 
@@ -95,7 +103,7 @@ Initialize the \mbox{\hyperlink{classSerializer}{Serializer}} with default reade
 \subsubsection{\texorpdfstring{get\+Element()}{getElement()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classElementObject}{Element\+Object}} $\ast$ Serializer\+::get\+Element (\begin{DoxyParamCaption}\item[{std\+::string}]{str,  }\item[{const char $\ast$}]{encoding }\end{DoxyParamCaption}) const}
 
-Unserialize an given string to obtain a \mbox{\hyperlink{classMetadata}{Metadata}} \begin{DoxySeeAlso}{See also}
+Unserialize a given string to obtain a \mbox{\hyperlink{classMetadata}{Metadata}} \begin{DoxySeeAlso}{See also}
 \mbox{\hyperlink{classContentParser}{Content\+Parser}} 
 
 \mbox{\hyperlink{classElementObject}{Element\+Object}}

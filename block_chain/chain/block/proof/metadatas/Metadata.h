@@ -23,6 +23,16 @@ class Metadata:public Component{
 public:
 
     /**
+     *  A simple constructor with creator
+     */
+    explicit Metadata(std::string c);
+
+    /**
+     *  A default constructor
+     */
+    explicit Metadata();
+
+    /**
      *  A virtual default destructor
      */
     virtual ~Metadata();
@@ -51,5 +61,23 @@ public:
      *  @return The hash ofthe user who validated the block
      */
     virtual Hash* hash() = 0;
+
+    /**
+     *  Get the block's creator
+     *
+     *  @return The block's creator
+     */
+    virtual std::string get_creator();
+
+    Element* toElement() const override;
+
+    void fromElement(ElementObject* e, const Serializer* serializer, const char* encoding) override;
+
+protected:
+
+    /**
+     *  The block's creator
+     */
+    std::string creator;
 };
 #endif //BLOCK_CHAIN_METADATA_H

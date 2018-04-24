@@ -27,8 +27,9 @@ public:
      *  @see Message::ANSWER_BLOCK
      *
      *  @param p The serialized block
+     *  @param k The key of the creator
      */
-    BlockAnswerMessage(std::string p);
+    BlockAnswerMessage(std::string p, std::string k);
     ~BlockAnswerMessage() override;
     Element* toElement() const override;
 protected:
@@ -40,6 +41,11 @@ private:
      * The serialized required block
      */
     std::string block;
+
+    /**
+     * The key of the creator
+     */
+    std::string key;
 };
 
 

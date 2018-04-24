@@ -6,7 +6,7 @@
 #include "metadatas/ProofOfWorkMetadata.h"
 #include "../../../kernel/messages/BlockMessage.h"
 
-void ProofOfWork::run(Block* block, std::string key){
+void ProofOfWork::run(Block* block, std::string key)const {
     Hash tmp((block->parent_fingerprint != nullptr ? block->parent_fingerprint->to_string() : "0") + key);
     for(long long int i = 1; i > 0 ; i++){
         Hash t(&tmp, i);
@@ -20,9 +20,9 @@ void ProofOfWork::run(Block* block, std::string key){
     }
 }
 
-bool ProofOfWork::accept(Block* block, Message* m){
+bool ProofOfWork::accept(Block* block, Message* m)const {
     auto data = dynamic_cast<ProofOfWorkMetadata*>(block->data);
-    Hash tmp((block->parent_fingerprint != nullptr ? block->parent_fingerprint->to_string() : "0") + data->winner);
+    Hash tmp((block->parent_fingerprint != nullptr ? block->parent_fingerprint->to_string() : "0") + data->get_creator());
     Hash t(&tmp, data->first);
     Hash h(&t, data->second);
     return h.to_string().substr(0, 1) == "0";

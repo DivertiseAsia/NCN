@@ -90,10 +90,12 @@ Inheritance diagram for Proof:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8a43fcb7c997da54d627e0f257adb86f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProof.html#a8a43fcb7c997da54d627e0f257adb86f">run</a> (<a class="el" href="classBlock.html">Block</a> *block, std::string key)=0</td></tr>
-<tr class="separator:a8a43fcb7c997da54d627e0f257adb86f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad52fee058ea617a186133cb6a008fe6e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProof.html#ad52fee058ea617a186133cb6a008fe6e">accept</a> (<a class="el" href="classBlock.html">Block</a> *block, <a class="el" href="classMessage.html">Message</a> *)=0</td></tr>
-<tr class="separator:ad52fee058ea617a186133cb6a008fe6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ab9f6c3f603447e3a9c7c932b5deac4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProof.html#a6ab9f6c3f603447e3a9c7c932b5deac4">run</a> (<a class="el" href="classBlock.html">Block</a> *block, std::string key) const =0</td></tr>
+<tr class="separator:a6ab9f6c3f603447e3a9c7c932b5deac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a358b3883eb33b8ecc93f74cb6313679a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProof.html#a358b3883eb33b8ecc93f74cb6313679a">accept</a> (<a class="el" href="classBlock.html">Block</a> *block, <a class="el" href="classMessage.html">Message</a> *) const =0</td></tr>
+<tr class="separator:a358b3883eb33b8ecc93f74cb6313679a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d4b4e1b7e891dc1d437ef4095f778df"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProof.html#a7d4b4e1b7e891dc1d437ef4095f778df">~Proof</a> ()=default</td></tr>
+<tr class="separator:a7d4b4e1b7e891dc1d437ef4095f778df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -130,9 +132,36 @@ static const int&#160;</td><td class="memItemRight" valign="bottom"><b>USE</b> =
 <div class="textblock"><p class="">An abstract proof and a proof factory. A proof is used to avoid falsification of the block chain Some proofs are provided and a user can create its own proofs and add them into the factory.</p>
 <dl class="section author"><dt>Author</dt><dd>Mathieu Lochet </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>1 </dd></dl>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad52fee058ea617a186133cb6a008fe6e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad52fee058ea617a186133cb6a008fe6e">&#9670;&nbsp;</a></span>accept()</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a7d4b4e1b7e891dc1d437ef4095f778df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d4b4e1b7e891dc1d437ef4095f778df">&#9670;&nbsp;</a></span>~Proof()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual Proof::~Proof </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p class="">Default destructor </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a358b3883eb33b8ecc93f74cb6313679a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a358b3883eb33b8ecc93f74cb6313679a">&#9670;&nbsp;</a></span>accept()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -155,7 +184,7 @@ static const int&#160;</td><td class="memItemRight" valign="bottom"><b>USE</b> =
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -173,7 +202,7 @@ static const int&#160;</td><td class="memItemRight" valign="bottom"><b>USE</b> =
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classProofOfHold.html#a2ca4ea3c1791c24d75e466ed0a9b6aaa">ProofOfHold</a>, <a class="el" href="classProofOfImportance.html#ab40da85ecfe7b87f21c63641d255f94e">ProofOfImportance</a>, <a class="el" href="classProofOfMinimumAgedStake.html#add68213606b37c50390cf1a0dd16c17b">ProofOfMinimumAgedStake</a>, <a class="el" href="classProofOfStake.html#a7c5939106f9dcb8bc9612a5974a43c88">ProofOfStake</a>, <a class="el" href="classProofOfStakeTime.html#a7a681ba9510b3b11cd2269a69e64a66c">ProofOfStakeTime</a>, <a class="el" href="classProofOfUse.html#aad52f30c49109a8714181de0aaab8789">ProofOfUse</a>, and <a class="el" href="classProofOfWork.html#abe3dba92dad383eec07f70acccaa802d">ProofOfWork</a>.</p>
+<p>Implemented in <a class="el" href="classProofOfHold.html#a4aa0ee52c0a6dcac18ab5ed84aae92e1">ProofOfHold</a>, <a class="el" href="classProofOfImportance.html#a42a29f16c0c9e5e097fd734b7ee3fcf8">ProofOfImportance</a>, <a class="el" href="classProofOfMinimumAgedStake.html#aa42f7b715bb986143b5dda841782745b">ProofOfMinimumAgedStake</a>, <a class="el" href="classProofOfStake.html#a5ee2b37cb25c63e1baa5c5b04e2dfca2">ProofOfStake</a>, <a class="el" href="classProofOfStakeTime.html#ae05431416e9157fb8af8247b8e756794">ProofOfStakeTime</a>, <a class="el" href="classProofOfUse.html#a315614eb2b05b40367bdc11e60b7b8be">ProofOfUse</a>, and <a class="el" href="classProofOfWork.html#aa414484a6dc03fec583996a591f36856">ProofOfWork</a>.</p>
 
 </div>
 </div>
@@ -255,8 +284,8 @@ static const int&#160;</td><td class="memItemRight" valign="bottom"><b>USE</b> =
 
 </div>
 </div>
-<a id="a8a43fcb7c997da54d627e0f257adb86f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a43fcb7c997da54d627e0f257adb86f">&#9670;&nbsp;</a></span>run()</h2>
+<a id="a6ab9f6c3f603447e3a9c7c932b5deac4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ab9f6c3f603447e3a9c7c932b5deac4">&#9670;&nbsp;</a></span>run()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -279,7 +308,7 @@ static const int&#160;</td><td class="memItemRight" valign="bottom"><b>USE</b> =
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -297,7 +326,7 @@ static const int&#160;</td><td class="memItemRight" valign="bottom"><b>USE</b> =
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classProofOfHold.html#a56f59ff740518726db1667b39ae9451e">ProofOfHold</a>, <a class="el" href="classProofOfImportance.html#afb53c930bf8afc5371ae91da04927415">ProofOfImportance</a>, <a class="el" href="classProofOfMinimumAgedStake.html#aa850369d6f8ebf7fa833821a43049147">ProofOfMinimumAgedStake</a>, <a class="el" href="classProofOfStake.html#aed9baba95df4aba7e8bd0a3e70c44945">ProofOfStake</a>, <a class="el" href="classProofOfStakeTime.html#ad4a49d7ccee740f307c03a13d314d3fb">ProofOfStakeTime</a>, <a class="el" href="classProofOfUse.html#a0673ae91f48264a85cb45e55d88e16b7">ProofOfUse</a>, and <a class="el" href="classProofOfWork.html#a80cbd012ee3f9e92a8497efac84bf689">ProofOfWork</a>.</p>
+<p>Implemented in <a class="el" href="classProofOfHold.html#a3daccb372774a6b4f6ed758be624eaf2">ProofOfHold</a>, <a class="el" href="classProofOfImportance.html#a08f72d852cefc73c21bc22cbdaf956ff">ProofOfImportance</a>, <a class="el" href="classProofOfMinimumAgedStake.html#aab3c754b7bc7c1c1e2ccebdaa764249b">ProofOfMinimumAgedStake</a>, <a class="el" href="classProofOfStake.html#ab5062d721fffffadfd9a599496d939dd">ProofOfStake</a>, <a class="el" href="classProofOfStakeTime.html#a4081abb2bc76f8039995a73e9617086c">ProofOfStakeTime</a>, <a class="el" href="classProofOfUse.html#aefccdad0aa3344b6331acecc05299cc0">ProofOfUse</a>, and <a class="el" href="classProofOfWork.html#a31d9107577bafc58c5ce2374e79f2b3c">ProofOfWork</a>.</p>
 
 </div>
 </div>

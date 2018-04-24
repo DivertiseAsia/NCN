@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['type',['type',['../classMessage.html#afbfb481c98b13d0deba0bac443bebe29',1,'Message']]]
+  ['encoding',['encoding',['../classConfig.html#a9391a8a86ed88a6fefd35ec89c10e861',1,'Config']]]
 ];

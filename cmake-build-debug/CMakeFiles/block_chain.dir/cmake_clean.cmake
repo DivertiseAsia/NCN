@@ -56,6 +56,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/block_chain.dir/block_chain/kernel/messages/AskPeersMessage.cpp.o"
   "CMakeFiles/block_chain.dir/block_chain/kernel/messages/AnswerPeersMessage.cpp.o"
   "CMakeFiles/block_chain.dir/block_chain/kernel/messages/BlockMessage.cpp.o"
+  "CMakeFiles/block_chain.dir/block_chain/kernel/components/Config.cpp.o"
   "block_chain.pdb"
   "block_chain"
 )

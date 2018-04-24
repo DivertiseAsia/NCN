@@ -9,6 +9,7 @@
 #include "../../algorithm/Hash.h"
 #include "proof/metadatas/Metadata.h"
 #include "../../kernel/components/Component.h"
+#include "../../algorithm/MerkleTree.h"
 #include <iostream>
 #include <chrono>
 
@@ -22,6 +23,7 @@ class Serializer;
  *  @version 4
  */
 class Block: public Component{
+    friend class MerkleTree;
     friend class NodeState;
     friend class Node;
     friend class ProofOfWork;

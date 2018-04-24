@@ -3,15 +3,24 @@
 //
 
 #include "Metadata.h"
-/*
+
 Element* Metadata::toElement() const {
     ElementObject* e = ElementCreator::object();
-    return e;
+    return e->put("creator", ElementCreator::create(creator));
 }
 
 void Metadata::fromElement(ElementObject* e, const Serializer* serializer, const char* encoding) {
+    e->getItem("creator", &creator);
 }
-*/
-Metadata::~Metadata() {
+
+Metadata::Metadata() = default;
+
+Metadata::~Metadata() = default;
+
+std::string Metadata::get_creator() {
+    return creator;
+}
+
+Metadata::Metadata(std::string c): creator(std::move(c)) {
 
 }

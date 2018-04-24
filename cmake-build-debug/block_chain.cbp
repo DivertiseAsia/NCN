@@ -231,6 +231,12 @@
 		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/kernel/components/Component.h">
 			<Option target="block_chain"/>
 		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/kernel/components/Config.cpp">
+			<Option target="block_chain"/>
+		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/kernel/components/Config.h">
+			<Option target="block_chain"/>
+		</Unit>
 		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/kernel/messages/AnswerPeersMessage.cpp">
 			<Option target="block_chain"/>
 		</Unit>

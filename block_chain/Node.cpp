@@ -4,10 +4,10 @@
 
 #include "Node.h"
 
-void run(SocketServer* server, Serializer* serializer, Node* node) {
+void run(SocketServer* server, const Serializer* serializer, Node* node) {
     server->run(Node::defaultCallback, serializer, node);
 }
-Node::Node(Serializer* s, int p, const char* e, int pr, bool d, Reward* r): serializer(s), encoding(e), proof(Proof::generate(pr)), server(p), block_chain(s, 1, encoding.c_str(), r), self(Socket::getIP(), p), running(run, &server, s, this), queue(0), debug(d) {
+Node::Node(Config& config): serializer(config.get_serializer()), encoding(config.get_encoding()), proof(config.get_proof()), server(config.get_port()), block_chain(serializer, 1, encoding.c_str(), config.get_reward()), self(Socket::getIP(), config.get_port()), running(run, &server, serializer, this), queue(0), debug(config.is_debug()) {
     init_parsers();
     OpenSSL_add_all_algorithms();
     ERR_load_BIO_strings();
@@ -122,7 +122,7 @@ void Node::async(Message* message, Node* node){
     delete message;
 }
 
-bool Node::defaultCallback(Socket* socket, int port, Serializer* serializer, Node* node) {
+bool Node::defaultCallback(Socket* socket, int port, const Serializer* serializer, Node* node) {
     std::string buffer;
     std::vector<std::thread*> threads;
     while(socket->read(buffer)) {

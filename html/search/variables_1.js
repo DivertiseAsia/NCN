@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['parsers',['parsers',['../classSerializer.html#a96f96c01e6a471513669621751591fd9',1,'Serializer']]]
+  ['debug',['debug',['../classConfig.html#a8ecbe763ad856693ff85cba5182e1f2e',1,'Config']]]
 ];

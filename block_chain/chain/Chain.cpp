@@ -5,30 +5,30 @@
 #include "Chain.h"
 #include "../algorithm/RSA.h"
 
-Chain::Chain(Block* b, Chain* c): database(c->database), fingerprint(b->fingerprint), block(b) {
+Chain::Chain(Block* b, Chain* c, std::string cr): database(c->database), fingerprint(b->fingerprint), block(b), creator(std::move(cr)) {
     b->data->update_database(&database);
 }
 
-Chain::Chain(Reward* r): database(r), fingerprint(nullptr){
+Chain::Chain(const Reward* r): database(r), fingerprint(nullptr){
 }
 
 Chain::~Chain(){
     chain.clear();
 }
 
-Chain* Chain::add(Block* b){
+Chain* Chain::add(Block* b, std::string creator){
     if(b->parent_fingerprint == nullptr || b->parent_fingerprint->to_string() == "0" || (fingerprint != nullptr && b->parent_fingerprint->to_string() == fingerprint->to_string())){
         for(auto& a : chain)
             if(a->fingerprint->to_string() == b->fingerprint->to_string())
                 return nullptr;
-        Chain* c = new Chain(b, this);
+        Chain* c = new Chain(b, this, creator);
         chain.emplace_back(c);
         return c;
     }
     else{
         Chain* c = nullptr;
         for(auto& a : chain){
-            c = a->add(b);
+            c = a->add(b, creator);
             if(c)
                 return c;
         }
@@ -129,6 +129,18 @@ Block* Chain::find(std::string str) {
             Block* b = a->find(str);
             if(b != nullptr)
                 return b;
+        }
+    return nullptr;
+}
+
+std::string Chain::find_creator(std::string& hash) {
+    if(fingerprint != nullptr && fingerprint->to_string() == hash)
+        return creator;
+    else
+        for(auto& a : chain) {
+            Block* b = a->find(hash);
+            if(b != nullptr)
+                return creator;
         }
     return nullptr;
 }
