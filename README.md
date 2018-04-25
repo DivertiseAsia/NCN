@@ -45,9 +45,11 @@ The node is the peer itself. You only have to create it and it will run.
 ```cpp
 Config config("configuration file path", serializer, reward, Proof::WORK, Hash::HASH_MD5, Cryptography::CRYPTOGRAPHY_RSA);
 ```
-The file itself is a json file. <br />
+The file needs to be a json file. <br />
 
 <h6>Example:</h6>
+
+
 ```cpp
 {
   "port": 3423,
