@@ -12,7 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b337953f-6d17-4d79-bf7d-640c27a86937" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libeay32.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssleay32.dll" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,7 +54,7 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="494">
-              <caret line="558" lean-forward="true" selection-start-line="558" selection-end-line="558" />
+              <caret line="558" selection-start-line="558" selection-end-line="558" />
             </state>
           </provider>
         </entry>
@@ -345,12 +346,12 @@
       <workItem from="1524467047533" duration="2000" />
       <workItem from="1524551160780" duration="10528000" />
       <workItem from="1524562026131" duration="5975000" />
-      <workItem from="1524625878628" duration="19301000" />
+      <workItem from="1524625878628" duration="19852000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="272770000" />
+    <option name="totallyTimeSpent" value="273321000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -363,11 +364,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49847096" visible="true" weight="0.2161725" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49847096" visible="true" weight="0.2161725" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32991803" />
-      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.32889345" />
+      <window_info anchor="bottom" id="Messages" order="12" visible="true" weight="0.32889345" />
       <window_info anchor="bottom" id="CMake" order="11" weight="0.32889345" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32991803" />
@@ -830,7 +830,7 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
-          <caret line="558" lean-forward="true" selection-start-line="558" selection-end-line="558" />
+          <caret line="558" selection-start-line="558" selection-end-line="558" />
         </state>
       </provider>
     </entry>
