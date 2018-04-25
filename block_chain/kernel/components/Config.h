@@ -30,7 +30,7 @@ public:
      *  @param p The proof id
      *  @param r The reward object
      */
-    Config(const char* filename, Serializer* s, int p, Reward* r);
+    Config(const char* filename, const Serializer* s, int p, Reward* r);
 
     /**
      *  Get the encoding value
@@ -88,7 +88,7 @@ protected:
     /**
      *  The serializer
      */
-    Serializer* serializer;
+    const Serializer* serializer;
 
     /**
      *  The proof object for validation

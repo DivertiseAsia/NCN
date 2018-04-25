@@ -10,5 +10,5 @@ var searchData=
   ['transactionmessage',['TransactionMessage',['../classTransactionMessage.html',1,'TransactionMessage'],['../classTransactionMessage.html#a1be404df5185ea0912d23da9f2918649',1,'TransactionMessage::TransactionMessage()']]],
   ['transactionparser',['TransactionParser',['../classTransactionParser.html',1,'']]],
   ['transactions_5findex',['transactions_index',['../classSerializer.html#a96da32c7f25fb4a26d2f3ff3d64c77df',1,'Serializer']]],
-  ['type',['type',['../classMessage.html#afbfb481c98b13d0deba0bac443bebe29',1,'Message::type()'],['../classProofOfWorkMetadata.html#ae5578fcd70e092c45ff0e999a9dfc06e',1,'ProofOfWorkMetadata::TYPE()']]]
+  ['type',['TYPE',['../classProofOfWorkMetadata.html#ae5578fcd70e092c45ff0e999a9dfc06e',1,'ProofOfWorkMetadata::TYPE()'],['../classMessage.html#afbfb481c98b13d0deba0bac443bebe29',1,'Message::type()']]]
 ];

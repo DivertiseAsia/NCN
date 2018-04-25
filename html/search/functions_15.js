@@ -6,6 +6,7 @@ var searchData=
   ['_7eelement',['~Element',['../classElement.html#aa153979c5d46fff8e2b9ee8b48dd863f',1,'Element']]],
   ['_7eelementarray',['~ElementArray',['../classElementArray.html#a30d544b599922612d29e48a0cc0e3305',1,'ElementArray']]],
   ['_7eelementobject',['~ElementObject',['../classElementObject.html#a4bec4155f2f99e6ec30e3d44a4d84fa4',1,'ElementObject']]],
+  ['_7eframework',['~Framework',['../classFramework.html#ac23600a259027d0edcdb12a4f2b51aba',1,'Framework']]],
   ['_7ejsoncreator',['~JsonCreator',['../classJsonCreator.html#a061eaa469894ab51ae6c046016da9e40',1,'JsonCreator']]],
   ['_7ejsonparser',['~JsonParser',['../classJsonParser.html#a7c0393b54c37f9ff30b6bb59f0ba92ce',1,'JsonParser']]],
   ['_7emerkletree',['~MerkleTree',['../classMerkleTree.html#a3f27e1251262e736106a9a2fba75f72f',1,'MerkleTree']]],

@@ -6,6 +6,20 @@
 
 #IncludeRegexTransform: 
 
+/home/default/CLionProjects/block_chain/block_chain/Framework.cpp
+Framework.h
+/home/default/CLionProjects/block_chain/block_chain/Framework.h
+utils/serialization/Serializer.h
+/home/default/CLionProjects/block_chain/block_chain/utils/serialization/Serializer.h
+
+/home/default/CLionProjects/block_chain/block_chain/Framework.h
+vector
+-
+chain/block/transaction/Transaction.h
+/home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
+TransactionManager.h
+/home/default/CLionProjects/block_chain/block_chain/TransactionManager.h
+
 /home/default/CLionProjects/block_chain/block_chain/Node.cpp
 Node.h
 /home/default/CLionProjects/block_chain/block_chain/Node.h
@@ -881,6 +895,8 @@ reward/RewardTransaction.h
 /home/default/CLionProjects/block_chain/reward/RewardTransaction.h
 block_chain/kernel/components/Config.h
 /home/default/CLionProjects/block_chain/block_chain/kernel/components/Config.h
+block_chain/Framework.h
+/home/default/CLionProjects/block_chain/block_chain/Framework.h
 
 /home/default/CLionProjects/block_chain/reward/RewardTransaction.cpp
 RewardTransaction.h

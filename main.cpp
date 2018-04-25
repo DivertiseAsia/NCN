@@ -8,6 +8,7 @@
 #include "transactions/MoneyTransaction.h"
 #include "reward/RewardTransaction.h"
 #include "block_chain/kernel/components/Config.h"
+#include "block_chain/Framework.h"
 /*
  * ls -R ./block_chain | awk '
 /:$/&&f{s=$0;f=0}
@@ -18,22 +19,18 @@ NF&&f{ print s"/"$0 }'| sed ':a;N;$!ba;s/\n/ /g'
 
 int main() {
 
+
     //Possible transactions
-    Transaction* status = new StatusTransaction;
-    Transaction* money = new MoneyTransaction;
-    Transaction* message = new MessagesTransaction;
+    Framework block_chain;
+    block_chain.add_transaction(new StatusTransaction);
+    block_chain.add_transaction(new MoneyTransaction);
+    block_chain.add_transaction(new MessagesTransaction);
 
-    //Update in the manager
-    TransactionManager manager;
-    manager.put(status);
-    manager.put(money);
-    manager.put(message);
+    //Get the manager
+    auto manager = block_chain.generate_manager();
 
-    //Serializer initialization
-    auto serial = new Serializer();
-    serial->add_transaction(status->get_type(), []() -> Transaction*{return new StatusTransaction;});
-    serial->add_transaction(money->get_type(), []() -> Transaction*{return new MoneyTransaction;});
-    serial->add_transaction(message->get_type(), []() -> Transaction*{return new MessagesTransaction;});
+    //Get the serializer
+    auto serial = block_chain.generate_serializer();
 
     //Reward object
     Reward* reward = new RewardTransaction();

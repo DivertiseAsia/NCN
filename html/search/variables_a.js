@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['serializer',['serializer',['../classConfig.html#afcd74e506e51f57020bce34fe92cb9dc',1,'Config']]],
+  ['serializer',['serializer',['../classConfig.html#a33047aa9c7f0aceab68b2d327820039f',1,'Config']]],
   ['sign_5fin',['SIGN_IN',['../classMessage.html#a64b7688dfdd50a6254bf45b51d2118d4',1,'Message']]],
   ['sign_5fout',['SIGN_OUT',['../classMessage.html#aba70c352293fee66004d729ccef3ee48',1,'Message']]],
   ['stake',['STAKE',['../classProof.html#acf157976c3c86ef2fd0e838b8c4ac992',1,'Proof']]],

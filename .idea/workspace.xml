@@ -12,35 +12,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b337953f-6d17-4d79-bf7d-640c27a86937" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block_chain/Framework.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block_chain/Framework.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/chain/block/proof/metadata/ProofOfWorkMetadata.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/chain/block/proof/metadata/ProofOfWorkMetadata.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/chain/block/proof/metadata/ProofOfWorkMetadata.h" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/chain/block/proof/metadata/ProofOfWorkMetadata.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/block_chain/kernel/components/Config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/kernel/components/Config.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/block_chain/kernel/components/Config.h" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/kernel/components/Config.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/block_chain/utils/serialization/Serializer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/utils/serialization/Serializer.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/block_chain/utils/serialization/Serializer.h" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/utils/serialization/Serializer.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/Node.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/Node.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/algorithm/Hash.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/algorithm/Hash.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/Chain.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/Chain.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfWork.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/proof/ProofOfWork.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/proof/metadata/ProofOfWorkMetadata.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/proof/metadata/ProofOfWorkMetadata.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/components/Config.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/components/Config.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAnswerParser.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAnswerParser.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAskParser.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAskParser.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockParser.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockParser.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAnswerParser.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAnswerParser.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAskParser.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAskParser.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignInParser.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignInParser.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignOutParser.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignOutParser.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/TransactionParser.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/TransactionParser.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/utils/serialization/Serializer.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/utils/serialization/Serializer.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/utils/socket/SocketServer.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/utils/socket/SocketServer.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/build.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/cmake_clean.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/depend.internal" afterDir="false" />
@@ -48,63 +35,51 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/link.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/main.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/block_chain" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/block_chain" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/block_chain.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/block_chain.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/BlockAnswerMessage_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/BlockAnswerMessage_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/BlockAskMessage_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/BlockAskMessage_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/BlockMessage_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/BlockMessage_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/Block_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/Block_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/Chain_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/Chain_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/Component_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/Component_8h_source.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/Config_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/Config_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/Hash_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/Hash_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/MerkleTree_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/MerkleTree_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/MessagesTransaction_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/MessagesTransaction_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/Metadata_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/Metadata_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/MoneyTransaction_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/MoneyTransaction_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/NodeState_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/NodeState_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/Node_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/Node_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/ProofOfWorkMetadata_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/ProofOfWorkMetadata_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/Reward_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/Reward_8h_source.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/Serializer_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/Serializer_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/SignMessage_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/SignMessage_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/SocketServer_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/SocketServer_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/StatusTransaction_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/StatusTransaction_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/TransactionMessage_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/TransactionMessage_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/Transaction_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/Transaction_8h_source.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/annotated.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/annotated.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/classProofOfWorkMetadata-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classProofOfWorkMetadata-members.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/classProofOfWorkMetadata.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classProofOfWorkMetadata.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classConfig-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classConfig-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/classConfig.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classConfig.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/classSerializer-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classSerializer-members.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/classSerializer.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classSerializer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classes.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/files.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/files.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/functions_a.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/functions_a.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/functions_c.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/functions_c.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/functions_f.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/functions_f.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/functions_func_a.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/functions_func_a.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/functions_func_u.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/functions_func_u.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/functions_m.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/functions_m.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/functions_t.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/functions_t.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/functions_u.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/functions_u.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/functions_func_c.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/functions_func_c.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/functions_func_f.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/functions_func_f.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/functions_func_g.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/functions_func_g.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/functions_func_s.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/functions_func_s.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/functions_func_~.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/functions_func_~.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/functions_g.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/functions_g.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/functions_s.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/functions_s.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/functions_vars.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/functions_vars.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/functions_~.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/functions_~.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/hierarchy.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/hierarchy.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/search/all_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_10.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_10.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/search/all_11.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_11.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_12.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_12.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_15.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_15.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/search/all_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_b.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_b.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/classes_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/classes_2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_6.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_7.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_7.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/classes_5.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/classes_5.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/search/functions_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/functions_12.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_12.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/variables_7.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/variables_7.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/functions_10.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_10.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/functions_15.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_15.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/functions_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/functions_6.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/functions_7.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_7.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/variables_a.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/variables_a.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/search/variables_b.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/variables_b.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serializer/CustomSerializer.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/serializer/CustomSerializer.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/warnings.txt" beforeDir="false" afterPath="$PROJECT_DIR$/warnings.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -117,29 +92,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Element.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/block_chain/utils/serialization/Element.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3225">
-              <caret line="215" column="10" selection-start-line="215" selection-start-column="10" selection-end-line="215" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Serializer.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/block_chain/utils/serialization/Serializer.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="155" column="4" selection-start-line="155" selection-start-column="4" selection-end-line="155" selection-end-column="67" />
+            <state relative-caret-position="411">
+              <caret line="140" column="7" selection-start-line="140" selection-start-column="7" selection-end-line="140" selection-end-column="7" />
               <folding>
                 <element signature="e#109#145#0" expanded="true" />
               </folding>
@@ -147,20 +104,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Proof.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/block_chain/chain/block/proof/Proof.h">
+      <file leaf-file-name="Serializer.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/block_chain/utils/serialization/Serializer.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="100" column="8" selection-start-line="100" selection-start-column="8" selection-end-line="105" selection-end-column="56" />
+            <state relative-caret-position="183">
+              <caret line="62" column="1" selection-start-line="62" selection-start-column="1" selection-end-line="62" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Serializer.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/block_chain/utils/serialization/Serializer.cpp">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="80" column="32" selection-start-line="80" selection-start-column="17" selection-end-line="80" selection-end-column="32" />
+            <state relative-caret-position="274">
+              <caret line="244" column="3" lean-forward="true" selection-start-line="244" selection-start-column="3" selection-end-line="244" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -168,8 +125,8 @@
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="34" column="99" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="99" />
+            <state relative-caret-position="195">
+              <caret line="23" selection-start-line="23" selection-end-line="32" selection-end-column="52" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -177,36 +134,60 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Config.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/block_chain/kernel/components/Config.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="32" column="6" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Config.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/block_chain/kernel/components/Config.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Framework.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/block_chain/Framework.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+              <folding>
+                <element signature="e#43#65#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Framework.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/block_chain/Framework.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="42" column="51" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="51" />
+              <folding>
+                <element signature="e#109#126#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TransactionManager.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/block_chain/TransactionManager.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" selection-start-line="10" selection-end-line="19" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="warnings.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/warnings.txt">
           <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="ProofOfWorkMetadata.h" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/block_chain/chain/block/proof/metadata/ProofOfWorkMetadata.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProofOfWorkMetadata.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/block_chain/chain/block/proof/metadata/ProofOfWorkMetadata.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="17" column="57" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Metadata.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/block_chain/chain/block/proof/metadata/Metadata.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-507">
-              <caret line="16" column="67" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
-            </state>
-          </provider>
         </entry>
       </file>
     </leaf>
@@ -256,13 +237,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/block_chain/kernel/messages/Message.h" />
-        <option value="$PROJECT_DIR$/block_chain/kernel/messages/BlockMessage.h" />
-        <option value="$PROJECT_DIR$/block_chain/kernel/messages/BlockAskMessage.h" />
         <option value="$PROJECT_DIR$/block_chain/kernel/messages/BlockAnswerMessage.h" />
         <option value="$PROJECT_DIR$/block_chain/kernel/messages/AskPeersMessage.h" />
         <option value="$PROJECT_DIR$/block_chain/kernel/messages/AnswerPeersMessage.h" />
-        <option value="$PROJECT_DIR$/block_chain/kernel/components/Config.h" />
         <option value="$PROJECT_DIR$/block_chain/kernel/components/Component.h" />
         <option value="$PROJECT_DIR$/block_chain/algorithm/MerkleTree.h" />
         <option value="$PROJECT_DIR$/block_chain/algorithm/Hash.h" />
@@ -302,11 +279,15 @@
         <option value="$PROJECT_DIR$/block_chain/utils/serialization/Parser.h" />
         <option value="$PROJECT_DIR$/database/Row.h" />
         <option value="$PROJECT_DIR$/block_chain/chain/block/proof/metadata/ProofOfWorkMetadata.cpp" />
-        <option value="$PROJECT_DIR$/block_chain/utils/serialization/Serializer.cpp" />
-        <option value="$PROJECT_DIR$/main.cpp" />
-        <option value="$PROJECT_DIR$/block_chain/utils/serialization/Serializer.h" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/block_chain/chain/block/proof/metadata/ProofOfWorkMetadata.h" />
+        <option value="$PROJECT_DIR$/block_chain/utils/serialization/Serializer.h" />
+        <option value="$PROJECT_DIR$/block_chain/utils/serialization/Serializer.cpp" />
+        <option value="$PROJECT_DIR$/block_chain/kernel/components/Config.cpp" />
+        <option value="$PROJECT_DIR$/block_chain/kernel/components/Config.h" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/block_chain/Framework.h" />
+        <option value="$PROJECT_DIR$/block_chain/Framework.cpp" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -345,89 +326,7 @@
             <path>
               <item name="block_chain" type="b2602c69:ProjectViewProjectNode" />
               <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="block_chain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="chain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="block_chain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="chain" type="462c0819:PsiDirectoryNode" />
-              <item name="block" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="block_chain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="chain" type="462c0819:PsiDirectoryNode" />
-              <item name="block" type="462c0819:PsiDirectoryNode" />
-              <item name="proof" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="block_chain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="chain" type="462c0819:PsiDirectoryNode" />
-              <item name="block" type="462c0819:PsiDirectoryNode" />
-              <item name="proof" type="462c0819:PsiDirectoryNode" />
-              <item name="metadata" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="block_chain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="kernel" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="block_chain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="kernel" type="462c0819:PsiDirectoryNode" />
-              <item name="parsers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="block_chain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="block_chain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="serialization" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="block_chain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="serialization" type="462c0819:PsiDirectoryNode" />
-              <item name="json" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="block_chain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="socket" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="block_chain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
               <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="block_chain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="reward" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="block_chain" type="b2602c69:ProjectViewProjectNode" />
@@ -501,12 +400,12 @@
       <workItem from="1524467047533" duration="2000" />
       <workItem from="1524551160780" duration="10528000" />
       <workItem from="1524562026131" duration="5975000" />
-      <workItem from="1524625878628" duration="2703000" />
+      <workItem from="1524625878628" duration="4952000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="256172000" />
+    <option name="totallyTimeSpent" value="258421000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -554,34 +453,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/block_chain/kernel/messages/Message.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="11" column="58" selection-start-line="10" selection-start-column="3" selection-end-line="11" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/block_chain/kernel/messages/BlockMessage.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="11" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/block_chain/kernel/messages/BlockAskMessage.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/block_chain/kernel/messages/BlockAnswerMessage.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="11" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/block_chain/kernel/messages/AskPeersMessage.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -593,13 +464,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="11" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/block_chain/kernel/components/Config.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="12" selection-end-column="58" />
         </state>
       </provider>
     </entry>
@@ -868,16 +732,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="34" column="99" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="99" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/block_chain/chain/block/proof/Proof.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="363">
@@ -885,37 +739,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/block_chain/utils/serialization/Serializer.cpp">
+    <entry file="file://$PROJECT_DIR$/block_chain/chain/block/proof/metadata/ProofOfWorkMetadata.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="80" column="32" selection-start-line="80" selection-start-column="17" selection-end-line="80" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/block_chain/utils/serialization/Serializer.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="155" column="4" selection-start-line="155" selection-start-column="4" selection-end-line="155" selection-end-column="67" />
-          <folding>
-            <element signature="e#109#145#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+        <state relative-caret-position="213">
+          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/warnings.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/block_chain/chain/block/proof/metadata/ProofOfWorkMetadata.h">
+    <entry file="file://$PROJECT_DIR$/block_chain/kernel/components/Config.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="276">
+          <caret line="32" column="6" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/block_chain/kernel/components/Config.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/block_chain/TransactionManager.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="19" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/block_chain/Framework.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+          <folding>
+            <element signature="e#43#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/block_chain/Framework.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="42" column="51" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="51" />
+          <folding>
+            <element signature="e#109#126#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/block_chain/utils/serialization/Serializer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="62" column="1" selection-start-line="62" selection-start-column="1" selection-end-line="62" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/block_chain/utils/serialization/Serializer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="140" column="7" selection-start-line="140" selection-start-column="7" selection-end-line="140" selection-end-column="7" />
+          <folding>
+            <element signature="e#109#145#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="23" selection-start-line="23" selection-end-line="32" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="244" column="3" lean-forward="true" selection-start-line="244" selection-start-column="3" selection-end-line="244" selection-end-column="3" />
         </state>
       </provider>
     </entry>

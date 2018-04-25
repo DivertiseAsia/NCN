@@ -123,6 +123,33 @@ block_chain/fast:
 	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/build
 .PHONY : block_chain/fast
 
+block_chain/Framework.o: block_chain/Framework.cpp.o
+
+.PHONY : block_chain/Framework.o
+
+# target to build an object file
+block_chain/Framework.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/Framework.cpp.o
+.PHONY : block_chain/Framework.cpp.o
+
+block_chain/Framework.i: block_chain/Framework.cpp.i
+
+.PHONY : block_chain/Framework.i
+
+# target to preprocess a source file
+block_chain/Framework.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/Framework.cpp.i
+.PHONY : block_chain/Framework.cpp.i
+
+block_chain/Framework.s: block_chain/Framework.cpp.s
+
+.PHONY : block_chain/Framework.s
+
+# target to generate assembly for a file
+block_chain/Framework.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/Framework.cpp.s
+.PHONY : block_chain/Framework.cpp.s
+
 block_chain/Node.o: block_chain/Node.cpp.o
 
 .PHONY : block_chain/Node.o
@@ -1671,6 +1698,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... block_chain"
+	@echo "... block_chain/Framework.o"
+	@echo "... block_chain/Framework.i"
+	@echo "... block_chain/Framework.s"
 	@echo "... block_chain/Node.o"
 	@echo "... block_chain/Node.i"
 	@echo "... block_chain/Node.s"

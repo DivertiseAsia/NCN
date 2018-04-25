@@ -1,6 +1,8 @@
 var searchData=
 [
   ['generate',['generate',['../classRSA__Cryptography.html#aaf500fcdcc050fa8d18a0dbe43176d17',1,'RSA_Cryptography::generate()'],['../classProof.html#a267f0f4587babb59884b5f280e2d54c8',1,'Proof::generate()'],['../classMessage.html#ad92a0e1cfa5b5a503ec9c61833e3e5ea',1,'Message::generate()']]],
+  ['generate_5fmanager',['generate_manager',['../classFramework.html#ac40d7e3f2510b3a8fcb2fdece53e2677',1,'Framework']]],
+  ['generate_5fserializer',['generate_serializer',['../classFramework.html#a6f09bafd5ac80cddbd89829924972127',1,'Framework']]],
   ['generate_5ftree',['generate_tree',['../classMerkleTree.html#a543fdfd1f1c4ded332cdeae2cd788aac',1,'MerkleTree']]],
   ['get',['get',['../classNodeState.html#a771321e4b2c56515ffb79e57da71db30',1,'NodeState::get(Hash *pHash)'],['../classNodeState.html#a130cf13803990afc44bee6bed8dd4e05',1,'NodeState::get(std::string &amp;hash)'],['../classDatabase.html#a748f2ce7df893cdb61d8418be907ac72',1,'Database::get()'],['../classFactory.html#a8a13e5edc3e0c102a1e2fb85047e99d8',1,'Factory::get()']]],
   ['get_5fcreator',['get_creator',['../classMetadata.html#a301e5ca467ff02ad9a8efb7c9bf1d7ce',1,'Metadata::get_creator()'],['../classNodeState.html#a7cd6b9b78313d4887c2068efba397231',1,'NodeState::get_creator()']]],

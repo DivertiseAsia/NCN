@@ -136,7 +136,7 @@ public:
      *
      * 	@param creator the creator object to use
     */
-    void set_serializer(ContentCreator* creator);
+    void add_serializer(ContentCreator* creator);
 
     /**
      *  Add a custom parser to the list
@@ -144,7 +144,7 @@ public:
      *
      * 	@param parser the parser object
     */
-    void set_unserializer(ContentParser* parser);
+    void add_unserializer(ContentParser* parser);
 
     /**
      *  Add a new possible metadata

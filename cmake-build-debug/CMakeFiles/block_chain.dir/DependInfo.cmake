@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/default/CLionProjects/block_chain/block_chain/Framework.cpp" "/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/Framework.cpp.o"
   "/home/default/CLionProjects/block_chain/block_chain/Node.cpp" "/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/Node.cpp.o"
   "/home/default/CLionProjects/block_chain/block_chain/TransactionManager.cpp" "/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/TransactionManager.cpp.o"
   "/home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.cpp" "/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/algorithm/Hash.cpp.o"

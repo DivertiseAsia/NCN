@@ -54,17 +54,17 @@ Metadata* Serializer::unserializeMetadata(std::string data, const char* key) con
     return m;
 }
 
-void Serializer::set_serializer(ContentCreator* creator) {
+void Serializer::add_serializer(ContentCreator* creator) {
     creators.put(creator->get_encoding(), creator);
 }
 
-void Serializer::set_unserializer(ContentParser* parser) {
+void Serializer::add_unserializer(ContentParser* parser) {
     parsers.put(parser->get_encoding(), parser);
 }
 
 Serializer::Serializer() {
-    set_serializer(new JsonCreator());
-    set_unserializer(new JsonParser());
+    add_serializer(new JsonCreator());
+    add_unserializer(new JsonParser());
     add_metadata(ProofOfWorkMetadata::TYPE, []() -> Metadata*{return new ProofOfWorkMetadata;});
 }
 

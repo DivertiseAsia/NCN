@@ -5,7 +5,7 @@
 #include "Config.h"
 
 
-ElementObject* read_config(const char* filename, Serializer* serial, const char* encoding){
+ElementObject* read_config(const char* filename, const Serializer* serial, const char* encoding){
     std::ifstream block_file(filename);
     std::string line;
     std::string serialized;
@@ -16,7 +16,7 @@ ElementObject* read_config(const char* filename, Serializer* serial, const char*
     return serial->getElement(serialized, encoding);
 }
 
-Config::Config(const char* filename, Serializer* s, int pr, Reward* r): serializer(s), reward(r), proof(Proof::generate(pr)){
+Config::Config(const char* filename, const Serializer* s, int pr, Reward* r): serializer(s), reward(r), proof(Proof::generate(pr)){
     ElementObject* o = read_config(filename, s, "json");
     o->getItem("port", &port);
     o->getItem("encoding", &encoding);

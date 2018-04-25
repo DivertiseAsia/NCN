@@ -3,21 +3,22 @@
 1. [Overview](#section_overview)
 2. [Installation](#section_installation)
 3. [How to create a new block-chain](#section_create)
-    2. [Node](#section_node)
-    3. [Config](#section_config)
-    4. [Transaction](#section_transaction)
+    1. [Node](#section_node)
+    2. [Config](#section_config)
+    3. [Transaction](#section_transaction)
         1. [Useful methods](#sub_section_useful)
         2. [Serialization methods](#sub_section_serialization)
         3. [UI methods](#sub_section_ui)
         4. [Database methods](#sub_section_database)
-    5. [Reward](#section_reward)
-    6. [TransactionManager](#section_transactionManager)
-    7. [Serializer](#section_serializer)
-    8. [Proof](#section_proof)
+    4. [Reward](#section_reward)
+    5. [TransactionManager](#section_transactionManager)
+    6. [Serializer](#section_serializer)
+    7. [Proof](#section_proof)
         1. [New proof](#sub_section_newproof)
         2. [Feed the framework](#sub_section_feedframework)
         3. [New metadata](#sub_section_newmetadata)
-    9. [Database](#section_database)
+    8. [Database](#section_database)
+    9. [Framework](#section_framework)
 4. [TODO-List](#section_todo)
     1. [Hash](#sub_section_hash)
     2. [Cryptography](#sub_section_cryptography)
@@ -229,7 +230,8 @@ node.start(manager);
 ```
 The provided TransactionManager class allows you to easily run every type of transactions without implementing anything. <br />
 However, this class is a helper, you can easily manage the transactions creation by yourself without this class. <br />
-If you choose this solution, you only have to use the Node::request_transaction method in order to process your transactions.
+If you choose this solution, you only have to use the Node::request_transaction method in order to process your transactions.<br />
+It can also be replaced by the [Framework helper](#section_framework).
 ### Serializer <a name="section_serializer"></a>
 The serialization class is used to transform Objects into string using Elements and strings into Objects using Elements.
 To use this class, you need to register your own transactions with a lambda expression
@@ -241,6 +243,7 @@ void add_transaction(int id, std::function<Transaction*()> transaction);
 ```cpp
 serial->add_transaction(money->get_type(), []() -> Transaction*{return new MoneyTransaction;});
 ```
+It can also be replaced by the [Framework helper](#section_framework).
 ### Proof <a name="section_proof"></a>
 Proofs are the basis of block chain validation. Some proofs are implemented, but not all of them. Therefore, you can create your own proof and send it to the framework.
 <h4>New proof <a name="sub_section_newproof"></a></h4>
@@ -344,6 +347,25 @@ The reward method is called to reward the user who validated the block
 void CustomRow::reward() {
     money += 1;
 }
+```
+### Framework <a name="section_framework"></a>
+In order to make the creation of the different tools easier, the framework provides an important (but not required) helper class, Framework. <br />
+This class only needs a list of Transaction as input and generates both TransactionManager and Serializer.
+```cpp
+void Framework::add_transaction(Transaction* transaction);
+```
+<h6>Example:</h6>
+```cpp
+Framework block_chain;
+block_chain.add_transaction(new StatusTransaction);
+block_chain.add_transaction(new MoneyTransaction);
+block_chain.add_transaction(new MessagesTransaction);
+
+//Get the manager
+auto manager = block_chain.generate_manager();
+
+//Get the serializer
+auto serial = block_chain.generate_serializer();
 ```
 ## TODO-List <a name="section_todo"></a>
 ### Hash <a name="sub_section_hash"></a>
