@@ -5,6 +5,7 @@ var searchData=
   ['messageparser',['MessageParser',['../classMessageParser.html',1,'MessageParser'],['../classMessageParser.html#a6548628a6db83ec8913e5f17454e14f0',1,'MessageParser::MessageParser()']]],
   ['messagestransaction',['MessagesTransaction',['../classMessagesTransaction.html',1,'']]],
   ['metadata',['Metadata',['../classMetadata.html',1,'Metadata'],['../classMetadata.html#adcdaf5133982f31d2230a19a97120f97',1,'Metadata::Metadata(std::string c)'],['../classMetadata.html#a21a1a8f0861128ad03cc8d31eeb1298a',1,'Metadata::Metadata()']]],
+  ['metadata_5findex',['metadata_index',['../classSerializer.html#a45e217667c057e3a900ae7654fd04257',1,'Serializer']]],
   ['minimum_5faged_5fstake',['MINIMUM_AGED_STAKE',['../classProof.html#a1a08ffc465f4fcfde396d4c4feb22eb0',1,'Proof']]],
   ['moneytransaction',['MoneyTransaction',['../classMoneyTransaction.html',1,'']]]
 ];

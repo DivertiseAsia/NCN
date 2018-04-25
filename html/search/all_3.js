@@ -18,6 +18,5 @@ var searchData=
   ['createrow',['createRow',['../classTransaction.html#aa80b621537fe480dcb4444bba703abe5',1,'Transaction::createRow()'],['../classRewardTransaction.html#ad43c1d706406f40d43f433b0d0b0b510',1,'RewardTransaction::createRow()'],['../classMessagesTransaction.html#a3eec18f09aa102b3cee7f215c225a8fb',1,'MessagesTransaction::createRow()'],['../classMoneyTransaction.html#a53b636ba053baae7705976efce629d21',1,'MoneyTransaction::createRow()'],['../classStatusTransaction.html#adbd4d2730ccd884e64f9a6bd30487a3c',1,'StatusTransaction::createRow()']]],
   ['creator',['creator',['../classMetadata.html#aba012cb0c27e95a21c349a259ac96b22',1,'Metadata']]],
   ['creators',['creators',['../classSerializer.html#a7d26e865966b304350653b1246ec3340',1,'Serializer']]],
-  ['customrow',['CustomRow',['../classCustomRow.html',1,'']]],
-  ['customserializer',['CustomSerializer',['../classCustomSerializer.html',1,'']]]
+  ['customrow',['CustomRow',['../classCustomRow.html',1,'']]]
 ];

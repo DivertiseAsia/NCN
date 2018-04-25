@@ -1581,33 +1581,6 @@ reward/RewardTransaction.cpp.s:
 	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/reward/RewardTransaction.cpp.s
 .PHONY : reward/RewardTransaction.cpp.s
 
-serializer/CustomSerializer.o: serializer/CustomSerializer.cpp.o
-
-.PHONY : serializer/CustomSerializer.o
-
-# target to build an object file
-serializer/CustomSerializer.cpp.o:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o
-.PHONY : serializer/CustomSerializer.cpp.o
-
-serializer/CustomSerializer.i: serializer/CustomSerializer.cpp.i
-
-.PHONY : serializer/CustomSerializer.i
-
-# target to preprocess a source file
-serializer/CustomSerializer.cpp.i:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.i
-.PHONY : serializer/CustomSerializer.cpp.i
-
-serializer/CustomSerializer.s: serializer/CustomSerializer.cpp.s
-
-.PHONY : serializer/CustomSerializer.s
-
-# target to generate assembly for a file
-serializer/CustomSerializer.cpp.s:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.s
-.PHONY : serializer/CustomSerializer.cpp.s
-
 transactions/MessagesTransaction.o: transactions/MessagesTransaction.cpp.o
 
 .PHONY : transactions/MessagesTransaction.o
@@ -1860,9 +1833,6 @@ help:
 	@echo "... reward/RewardTransaction.o"
 	@echo "... reward/RewardTransaction.i"
 	@echo "... reward/RewardTransaction.s"
-	@echo "... serializer/CustomSerializer.o"
-	@echo "... serializer/CustomSerializer.i"
-	@echo "... serializer/CustomSerializer.s"
 	@echo "... transactions/MessagesTransaction.o"
 	@echo "... transactions/MessagesTransaction.i"
 	@echo "... transactions/MessagesTransaction.s"

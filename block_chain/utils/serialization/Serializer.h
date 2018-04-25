@@ -18,12 +18,9 @@
 
 /**
  *  @class Serializer "block_chain/utils/serialization/Serializer.h"
- *  An abstract serializer.
- *  The class Serializer implements almost all of the
+ *  A basic serializer.
+ *  The class Serializer implements all of the
  *  serialization and unserialization methods.
- *  However, it doesn't implements the transaction
- *  unserialization, therefore, this class has to be
- *  override.
  *  @see ContentCreator
  *  @see ContentParser
  *  @see Element
@@ -79,7 +76,7 @@ public:
     virtual char* serialize(Element* element, const char* encoding) const;
 
     /**
-     *  Unserialize an given string to obtain a Transaction (needs override)
+     *  Unserialize an given string to obtain a Transaction
      *  @see ContentParser
      *  @see Transaction
      *
@@ -148,6 +145,24 @@ public:
      * 	@param parser the parser object
     */
     void set_unserializer(ContentParser* parser);
+
+    /**
+     *  Add a new possible metadata
+     *  @see Metadata
+     *
+     * 	@param id The type of the metadata
+     * 	@param metadata The lambda expression generating the metadata
+    */
+    void add_metadata(int id, std::function<Metadata*()> metadata);
+
+    /**
+     *  Add a new possible transaction
+     *  @see Transaction
+     *
+     * 	@param id The type of the metadata
+     * 	@param transaction The lambda expression generating the transaction
+    */
+    void add_transaction(int id, std::function<Transaction*()> transaction);
 protected:
 
     /**
@@ -163,6 +178,16 @@ protected:
      * @see ContentParser
      */
     Factory<ContentParser*> parsers;
+
+    /**
+     *  The list of all possible unserializable metadata
+     */
+    std::map<int, std::function<Metadata*()>> metadata_index;
+
+    /**
+     *  The list of all possible unserializable transactions
+     */
+    std::map<int, std::function<Transaction*()>> transactions_index;
 };
 
 

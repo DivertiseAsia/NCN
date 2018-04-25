@@ -1050,7 +1050,6 @@ CMakeFiles/block_chain.dir/main.cpp.o: ../block_chain/utils/socket/SocketServer.
 CMakeFiles/block_chain.dir/main.cpp.o: ../database/Row.h
 CMakeFiles/block_chain.dir/main.cpp.o: ../main.cpp
 CMakeFiles/block_chain.dir/main.cpp.o: ../reward/RewardTransaction.h
-CMakeFiles/block_chain.dir/main.cpp.o: ../serializer/CustomSerializer.h
 CMakeFiles/block_chain.dir/main.cpp.o: ../transactions/MessagesTransaction.h
 CMakeFiles/block_chain.dir/main.cpp.o: ../transactions/MoneyTransaction.h
 CMakeFiles/block_chain.dir/main.cpp.o: ../transactions/StatusTransaction.h
@@ -1066,30 +1065,6 @@ CMakeFiles/block_chain.dir/reward/RewardTransaction.cpp.o: ../block_chain/utils/
 CMakeFiles/block_chain.dir/reward/RewardTransaction.cpp.o: ../database/Row.h
 CMakeFiles/block_chain.dir/reward/RewardTransaction.cpp.o: ../reward/RewardTransaction.cpp
 CMakeFiles/block_chain.dir/reward/RewardTransaction.cpp.o: ../reward/RewardTransaction.h
-
-CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: ../block_chain/algorithm/Hash.h
-CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: ../block_chain/algorithm/MerkleTree.h
-CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: ../block_chain/chain/block/Block.h
-CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: ../block_chain/chain/block/proof/metadata/Metadata.h
-CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: ../block_chain/chain/block/proof/metadata/ProofOfWorkMetadata.h
-CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: ../block_chain/chain/block/transaction/Reward.h
-CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: ../block_chain/chain/block/transaction/Transaction.h
-CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: ../block_chain/chain/state/Database.h
-CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: ../block_chain/chain/state/Row.h
-CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: ../block_chain/kernel/components/Component.h
-CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: ../block_chain/kernel/messages/Message.h
-CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: ../block_chain/utils/Encoding.h
-CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: ../block_chain/utils/Factory.h
-CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: ../block_chain/utils/serialization/Element.h
-CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: ../block_chain/utils/serialization/Parser.h
-CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: ../block_chain/utils/serialization/Serializer.h
-CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: ../block_chain/utils/serialization/json/JsonCreator.h
-CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: ../block_chain/utils/serialization/json/JsonParser.h
-CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: ../database/Row.h
-CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: ../serializer/CustomSerializer.cpp
-CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: ../serializer/CustomSerializer.h
-CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: ../transactions/MessagesTransaction.h
-CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o: ../transactions/StatusTransaction.h
 
 CMakeFiles/block_chain.dir/transactions/MessagesTransaction.cpp.o: ../block_chain/algorithm/Hash.h
 CMakeFiles/block_chain.dir/transactions/MessagesTransaction.cpp.o: ../block_chain/chain/block/transaction/Transaction.h

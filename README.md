@@ -16,13 +16,13 @@
     8. [Proof](#section_proof)
         1. [New proof](#sub_section_newproof)
         2. [Feed the framework](#sub_section_feedframework)
+        3. [New metadata](#sub_section_newmetadata)
     9. [Database](#section_database)
 4. [TODO-List](#section_todo)
     1. [Hash](#sub_section_hash)
     2. [Cryptography](#sub_section_cryptography)
     3. [Proof](#sub_section_proof)
-    4. [Metadata](#sub_section_metadata)
-    5. [Header files](#sub_section_header)
+    4. [Header files](#sub_section_header)
 
 
 
@@ -231,27 +231,15 @@ The provided TransactionManager class allows you to easily run every type of tra
 However, this class is a helper, you can easily manage the transactions creation by yourself without this class. <br />
 If you choose this solution, you only have to use the Node::request_transaction method in order to process your transactions.
 ### Serializer <a name="section_serializer"></a>
-The serialization class is used to transfrom Objects into string using Elements and strings into Objects using Elements.
-One method from this class needs to be overridden:
+The serialization class is used to transform Objects into string using Elements and strings into Objects using Elements.
+To use this class, you need to register your own transactions with a lambda expression
 <h5>Serializer::unserializeTransaction</h5>
 ```cpp
-virtual Transaction* unserializeTransaction(std::string transaction, const char* encoding) const;
+void add_transaction(int id, std::function<Transaction*()> transaction);
 ```
-It need to be overridden because the framework doesn't know about your transactions, therefore, you have to implement this method using the Serializer methods
 <h6>Example:</h6>
 ```cpp
-Transaction* CustomSerializer::unserializeTransaction(std::string transaction, const char* key) const {
-    ElementObject* e = getElement(transaction, key);
-    int type;
-    e->getItem("type", &type);
-    Transaction* t;
-    if(!type)
-        t = new StatusTransaction();
-    else
-        t = new MessagesTransaction();
-    t->__init__(e, this, key);
-    return t;
-}
+serial->add_transaction(money->get_type(), []() -> Transaction*{return new MoneyTransaction;});
 ```
 ### Proof <a name="section_proof"></a>
 Proofs are the basis of block chain validation. Some proofs are implemented, but not all of them. Therefore, you can create your own proof and send it to the framework.
@@ -303,6 +291,15 @@ The id needs to be passed to the Node object. The second parameter is a lambda e
 <h6>Example:</h6>
 ```cpp
 Proof::add_proof(Proof::WORK, []() -> Proof*{return new ProofOfWork;});
+```
+<h4>New metadata <a name="sub_section_newmetadata"></a></h4>
+If your proof require a new metadata class, you just have to provide this metadata to the serializer using this method.
+```cpp
+void add_metadata(int id, std::function<Metadata*()> metadata);
+```
+<h6>Example:</h6>
+```cpp
+serial->add_metadata(CustomMetadata::TYPE, []() -> Metadata*{return new CustomMetadata;});
 ```
 ### Database <a name="section_database"></a>
 The database is basically a map of Row. Rows are pure abstract classes that needs to be implemented, because their structure depends of your implementation <br/>
@@ -360,10 +357,6 @@ It will be changed to make this cryptography class abstract with the possibility
 ### Proof <a name="sub_section_proof"></a>
 For now, there is only one proof: the proof of work. <br/>
 The framework will be updated with new proofs
-
-### Metadata <a name="sub_section_metadata"></a>
-For now, new metadata types with new proofs require the developer to override the method Serializer::unserializeMetadata <br/>
-This is not generic enough and will be updated to inject new possible metadata type.
 
 ### Header files <a name="sub_section_header"></a>
 For now, the installation of the framework is simple by copying files.<br/>

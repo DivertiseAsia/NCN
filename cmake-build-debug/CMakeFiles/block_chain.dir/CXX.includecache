@@ -865,8 +865,6 @@ vector
 /home/default/CLionProjects/block_chain/main.cpp
 iostream
 -
-serializer/CustomSerializer.h
-/home/default/CLionProjects/block_chain/serializer/CustomSerializer.h
 block_chain/Node.h
 /home/default/CLionProjects/block_chain/block_chain/Node.h
 block_chain/TransactionManager.h
@@ -893,18 +891,6 @@ RewardTransaction.h
 /home/default/CLionProjects/block_chain/reward/RewardTransaction.h
 ../block_chain/chain/block/transaction/Reward.h
 /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Reward.h
-
-/home/default/CLionProjects/block_chain/serializer/CustomSerializer.cpp
-CustomSerializer.h
-/home/default/CLionProjects/block_chain/serializer/CustomSerializer.h
-
-/home/default/CLionProjects/block_chain/serializer/CustomSerializer.h
-../block_chain/utils/serialization/Serializer.h
-/home/default/CLionProjects/block_chain/block_chain/utils/serialization/Serializer.h
-../transactions/MessagesTransaction.h
-/home/default/CLionProjects/block_chain/transactions/MessagesTransaction.h
-../transactions/StatusTransaction.h
-/home/default/CLionProjects/block_chain/transactions/StatusTransaction.h
 
 /home/default/CLionProjects/block_chain/transactions/MessagesTransaction.cpp
 MessagesTransaction.h

@@ -6,6 +6,5 @@ var searchData=
   ['contentcreator',['ContentCreator',['../classContentCreator.html',1,'']]],
   ['contentparser',['ContentParser',['../classContentParser.html',1,'']]],
   ['contentreader',['ContentReader',['../classContentReader.html',1,'']]],
-  ['customrow',['CustomRow',['../classCustomRow.html',1,'']]],
-  ['customserializer',['CustomSerializer',['../classCustomSerializer.html',1,'']]]
+  ['customrow',['CustomRow',['../classCustomRow.html',1,'']]]
 ];

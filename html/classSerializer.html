@@ -71,15 +71,6 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &quot;<a class="el" href="Serializer_8h_source.html">block_chain/utils/serialization/Serializer.h</a>&quot;</code></p>
-<div class="dynheader">
-Inheritance diagram for Serializer:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="classSerializer.png" usemap="#Serializer_map" alt=""/>
-  <map id="Serializer_map" name="Serializer_map">
-<area href="classCustomSerializer.html" alt="CustomSerializer" shape="rect" coords="0,56,107,80"/>
-</map>
- </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -105,6 +96,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aee483f1845ca1b7f7ac4243de9902750"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74ea868b820b4a8472da98c0045418fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSerializer.html#a74ea868b820b4a8472da98c0045418fa">set_unserializer</a> (<a class="el" href="classContentParser.html">ContentParser</a> *parser)</td></tr>
 <tr class="separator:a74ea868b820b4a8472da98c0045418fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad274399c02bb5217a52ac994b9a37857"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSerializer.html#ad274399c02bb5217a52ac994b9a37857">add_metadata</a> (int id, std::function&lt; <a class="el" href="classMetadata.html">Metadata</a> *()&gt; metadata)</td></tr>
+<tr class="separator:ad274399c02bb5217a52ac994b9a37857"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c8a3cc4cda238220d613f1ae0d69534"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSerializer.html#a7c8a3cc4cda238220d613f1ae0d69534">add_transaction</a> (int id, std::function&lt; <a class="el" href="classTransaction.html">Transaction</a> *()&gt; transaction)</td></tr>
+<tr class="separator:a7c8a3cc4cda238220d613f1ae0d69534"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -112,9 +107,13 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a7d26e865966b304350653b1246ec3340"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96f96c01e6a471513669621751591fd9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFactory.html">Factory</a>&lt; <a class="el" href="classContentParser.html">ContentParser</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSerializer.html#a96f96c01e6a471513669621751591fd9">parsers</a></td></tr>
 <tr class="separator:a96f96c01e6a471513669621751591fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45e217667c057e3a900ae7654fd04257"><td class="memItemLeft" align="right" valign="top">std::map&lt; int, std::function&lt; <a class="el" href="classMetadata.html">Metadata</a> *()&gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSerializer.html#a45e217667c057e3a900ae7654fd04257">metadata_index</a></td></tr>
+<tr class="separator:a45e217667c057e3a900ae7654fd04257"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96da32c7f25fb4a26d2f3ff3d64c77df"><td class="memItemLeft" align="right" valign="top">std::map&lt; int, std::function&lt; <a class="el" href="classTransaction.html">Transaction</a> *()&gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSerializer.html#a96da32c7f25fb4a26d2f3ff3d64c77df">transactions_index</a></td></tr>
+<tr class="separator:a96da32c7f25fb4a26d2f3ff3d64c77df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p class="">An abstract serializer. The class <a class="el" href="classSerializer.html">Serializer</a> implements almost all of the serialization and unserialization methods. However, it doesn't implements the transaction unserialization, therefore, this class has to be override. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classContentCreator.html">ContentCreator</a> </dd>
+<div class="textblock"><p class="">A basic serializer. The class <a class="el" href="classSerializer.html">Serializer</a> implements all of the serialization and unserialization methods. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classContentCreator.html">ContentCreator</a> </dd>
 <dd>
 <a class="el" href="classContentParser.html">ContentParser</a> </dd>
 <dd>
@@ -185,6 +184,78 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad274399c02bb5217a52ac994b9a37857"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad274399c02bb5217a52ac994b9a37857">&#9670;&nbsp;</a></span>add_metadata()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Serializer::add_metadata </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; <a class="el" href="classMetadata.html">Metadata</a> *()&gt;&#160;</td>
+          <td class="paramname"><em>metadata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p class="">Add a new possible metadata </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classMetadata.html">Metadata</a></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>The type of the metadata </td></tr>
+    <tr><td class="paramname">metadata</td><td>The lambda expression generating the metadata </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7c8a3cc4cda238220d613f1ae0d69534"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c8a3cc4cda238220d613f1ae0d69534">&#9670;&nbsp;</a></span>add_transaction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Serializer::add_transaction </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; <a class="el" href="classTransaction.html">Transaction</a> *()&gt;&#160;</td>
+          <td class="paramname"><em>transaction</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p class="">Add a new possible transaction </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classTransaction.html">Transaction</a></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>The type of the metadata </td></tr>
+    <tr><td class="paramname">transaction</td><td>The lambda expression generating the transaction </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ab3bcdbd49167109de13e03878337018a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab3bcdbd49167109de13e03878337018a">&#9670;&nbsp;</a></span>getElement()</h2>
 
@@ -542,7 +613,7 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p class="">Unserialize an given string to obtain a <a class="el" href="classTransaction.html">Transaction</a> (needs override) </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classContentParser.html">ContentParser</a> </dd>
+<p class="">Unserialize an given string to obtain a <a class="el" href="classTransaction.html">Transaction</a> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classContentParser.html">ContentParser</a> </dd>
 <dd>
 <a class="el" href="classTransaction.html">Transaction</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -553,8 +624,6 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="classTransaction.html">Transaction</a> object </dd></dl>
-
-<p>Reimplemented in <a class="el" href="classCustomSerializer.html#abff58f1a955c2f399127b7e3cae23223">CustomSerializer</a>.</p>
 
 </div>
 </div>
@@ -584,6 +653,29 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a45e217667c057e3a900ae7654fd04257"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45e217667c057e3a900ae7654fd04257">&#9670;&nbsp;</a></span>metadata_index</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;int, std::function&lt;<a class="el" href="classMetadata.html">Metadata</a>*()&gt; &gt; Serializer::metadata_index</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p class="">The list of all possible unserializable metadata </p>
+
+</div>
+</div>
 <a id="a96f96c01e6a471513669621751591fd9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a96f96c01e6a471513669621751591fd9">&#9670;&nbsp;</a></span>parsers</h2>
 
@@ -606,6 +698,29 @@ Protected Attributes</h2></td></tr>
 <p class="">The factory of different parsers </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classFactory.html">Factory</a> </dd>
 <dd>
 <a class="el" href="classContentParser.html">ContentParser</a> </dd></dl>
+
+</div>
+</div>
+<a id="a96da32c7f25fb4a26d2f3ff3d64c77df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96da32c7f25fb4a26d2f3ff3d64c77df">&#9670;&nbsp;</a></span>transactions_index</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;int, std::function&lt;<a class="el" href="classTransaction.html">Transaction</a>*()&gt; &gt; Serializer::transactions_index</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p class="">The list of all possible unserializable transactions </p>
 
 </div>
 </div>

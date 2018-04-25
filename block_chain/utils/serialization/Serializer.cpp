@@ -25,9 +25,12 @@ char* Serializer::serialize(Element* element, const char* key) const{
 }
 
 Transaction* Serializer::unserializeTransaction(std::string transaction, const char* key) const {
-    auto * element = new Element();
-    creators.get(key)->parse(transaction, &element);
-    return nullptr;
+    ElementObject* o = getElement(std::move(transaction), key);
+    int type;
+    o->getItem("type", &type);
+    Transaction* t = transactions_index.find(type)->second();
+    t->__init__(o, this, key);
+    return t;
 }
 Message* Serializer::unserializeMessage(std::string message, const char* key) const {
     ElementObject* o = getElement(std::move(message), key);
@@ -43,14 +46,10 @@ Block* Serializer::unserializeBlock(std::string block, const char* key) const {
     return b;
 }
 Metadata* Serializer::unserializeMetadata(std::string data, const char* key) const{
-    static std::map<int, std::function<Metadata*()>> metadata;
-    if(metadata.empty()) {
-        metadata[0] = []() -> Metadata*{return new ProofOfWorkMetadata;};
-    }
     ElementObject* o = getElement(std::move(data), key);
     int type;
     o->getItem("type", &type);
-    Metadata* m = metadata.find(type)->second();
+    Metadata* m = metadata_index.find(type)->second();
     m->__init__(o, this, key);
     return m;
 }
@@ -66,9 +65,20 @@ void Serializer::set_unserializer(ContentParser* parser) {
 Serializer::Serializer() {
     set_serializer(new JsonCreator());
     set_unserializer(new JsonParser());
+    add_metadata(ProofOfWorkMetadata::TYPE, []() -> Metadata*{return new ProofOfWorkMetadata;});
 }
 
 Serializer::~Serializer(){
     creators.clear();
     parsers.clear();
+}
+
+
+void Serializer::add_metadata(int id, std::function<Metadata*()> metadata){
+    metadata_index[id] = metadata;
+}
+
+void Serializer::add_transaction(int id, std::function<Transaction*()> transaction){
+    transactions_index[id] = transaction;
+
 }

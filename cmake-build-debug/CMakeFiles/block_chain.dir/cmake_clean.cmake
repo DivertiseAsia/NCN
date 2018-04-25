@@ -18,7 +18,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/block_chain.dir/block_chain/utils/serialization/json/JsonParser.cpp.o"
   "CMakeFiles/block_chain.dir/transactions/StatusTransaction.cpp.o"
   "CMakeFiles/block_chain.dir/transactions/MessagesTransaction.cpp.o"
-  "CMakeFiles/block_chain.dir/serializer/CustomSerializer.cpp.o"
   "CMakeFiles/block_chain.dir/block_chain/utils/Encoding.cpp.o"
   "CMakeFiles/block_chain.dir/block_chain/chain/block/proof/metadata/Metadata.cpp.o"
   "CMakeFiles/block_chain.dir/block_chain/algorithm/MerkleTree.cpp.o"

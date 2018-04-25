@@ -21,6 +21,11 @@
 class ProofOfWorkMetadata: public Metadata {
     friend class ProofOfWork;
 public:
+
+    /**
+     *  The type of the particular metadata
+     */
+    static const int TYPE;
     ProofOfWorkMetadata();
 
     /**
