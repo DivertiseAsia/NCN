@@ -28,7 +28,8 @@ CMakeFiles/block_chain.dir/block_chain/Node.cpp.o: ../block_chain/Node.cpp
 CMakeFiles/block_chain.dir/block_chain/Node.cpp.o: ../block_chain/Node.h
 CMakeFiles/block_chain.dir/block_chain/Node.cpp.o: ../block_chain/TransactionManager.h
 CMakeFiles/block_chain.dir/block_chain/Node.cpp.o: ../block_chain/algorithm/MerkleTree.h
-CMakeFiles/block_chain.dir/block_chain/Node.cpp.o: ../block_chain/algorithm/RSA.h
+CMakeFiles/block_chain.dir/block_chain/Node.cpp.o: ../block_chain/algorithm/cryptography/Cryptography.h
+CMakeFiles/block_chain.dir/block_chain/Node.cpp.o: ../block_chain/algorithm/cryptography/RSA.h
 CMakeFiles/block_chain.dir/block_chain/Node.cpp.o: ../block_chain/algorithm/hash/Hash.h
 CMakeFiles/block_chain.dir/block_chain/Node.cpp.o: ../block_chain/algorithm/hash/Hash_MD5.h
 CMakeFiles/block_chain.dir/block_chain/Node.cpp.o: ../block_chain/chain/Chain.h
@@ -83,7 +84,8 @@ CMakeFiles/block_chain.dir/block_chain/TransactionManager.cpp.o: ../block_chain/
 
 CMakeFiles/block_chain.dir/block_chain/algorithm/MerkleTree.cpp.o: ../block_chain/algorithm/MerkleTree.cpp
 CMakeFiles/block_chain.dir/block_chain/algorithm/MerkleTree.cpp.o: ../block_chain/algorithm/MerkleTree.h
-CMakeFiles/block_chain.dir/block_chain/algorithm/MerkleTree.cpp.o: ../block_chain/algorithm/RSA.h
+CMakeFiles/block_chain.dir/block_chain/algorithm/MerkleTree.cpp.o: ../block_chain/algorithm/cryptography/Cryptography.h
+CMakeFiles/block_chain.dir/block_chain/algorithm/MerkleTree.cpp.o: ../block_chain/algorithm/cryptography/RSA.h
 CMakeFiles/block_chain.dir/block_chain/algorithm/MerkleTree.cpp.o: ../block_chain/algorithm/hash/Hash.h
 CMakeFiles/block_chain.dir/block_chain/algorithm/MerkleTree.cpp.o: ../block_chain/algorithm/hash/Hash_MD5.h
 CMakeFiles/block_chain.dir/block_chain/algorithm/MerkleTree.cpp.o: ../block_chain/chain/block/Block.h
@@ -103,8 +105,13 @@ CMakeFiles/block_chain.dir/block_chain/algorithm/MerkleTree.cpp.o: ../block_chai
 CMakeFiles/block_chain.dir/block_chain/algorithm/MerkleTree.cpp.o: ../block_chain/utils/serialization/json/JsonCreator.h
 CMakeFiles/block_chain.dir/block_chain/algorithm/MerkleTree.cpp.o: ../block_chain/utils/serialization/json/JsonParser.h
 
-CMakeFiles/block_chain.dir/block_chain/algorithm/RSA.cpp.o: ../block_chain/algorithm/RSA.cpp
-CMakeFiles/block_chain.dir/block_chain/algorithm/RSA.cpp.o: ../block_chain/algorithm/RSA.h
+CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/Cryptography.cpp.o: ../block_chain/algorithm/cryptography/Cryptography.cpp
+CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/Cryptography.cpp.o: ../block_chain/algorithm/cryptography/Cryptography.h
+CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/Cryptography.cpp.o: ../block_chain/algorithm/cryptography/RSA.h
+
+CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/RSA.cpp.o: ../block_chain/algorithm/cryptography/Cryptography.h
+CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/RSA.cpp.o: ../block_chain/algorithm/cryptography/RSA.cpp
+CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/RSA.cpp.o: ../block_chain/algorithm/cryptography/RSA.h
 
 CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash.cpp.o: ../block_chain/algorithm/MerkleTree.h
 CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash.cpp.o: ../block_chain/algorithm/hash/Hash.cpp
@@ -149,7 +156,8 @@ CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash_MD5.cpp.o: ../block_c
 CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash_MD5.cpp.o: ../block_chain/utils/serialization/json/JsonParser.h
 
 CMakeFiles/block_chain.dir/block_chain/chain/Chain.cpp.o: ../block_chain/algorithm/MerkleTree.h
-CMakeFiles/block_chain.dir/block_chain/chain/Chain.cpp.o: ../block_chain/algorithm/RSA.h
+CMakeFiles/block_chain.dir/block_chain/chain/Chain.cpp.o: ../block_chain/algorithm/cryptography/Cryptography.h
+CMakeFiles/block_chain.dir/block_chain/chain/Chain.cpp.o: ../block_chain/algorithm/cryptography/RSA.h
 CMakeFiles/block_chain.dir/block_chain/chain/Chain.cpp.o: ../block_chain/algorithm/hash/Hash.h
 CMakeFiles/block_chain.dir/block_chain/chain/Chain.cpp.o: ../block_chain/algorithm/hash/Hash_MD5.h
 CMakeFiles/block_chain.dir/block_chain/chain/Chain.cpp.o: ../block_chain/chain/Chain.cpp
@@ -172,7 +180,8 @@ CMakeFiles/block_chain.dir/block_chain/chain/Chain.cpp.o: ../block_chain/utils/s
 CMakeFiles/block_chain.dir/block_chain/chain/Chain.cpp.o: ../block_chain/utils/serialization/json/JsonParser.h
 
 CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o: ../block_chain/algorithm/MerkleTree.h
-CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o: ../block_chain/algorithm/RSA.h
+CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o: ../block_chain/algorithm/cryptography/Cryptography.h
+CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o: ../block_chain/algorithm/cryptography/RSA.h
 CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o: ../block_chain/algorithm/hash/Hash.h
 CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o: ../block_chain/algorithm/hash/Hash_MD5.h
 CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o: ../block_chain/chain/Chain.h
@@ -198,7 +207,8 @@ CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o: ../block_chain/uti
 CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o: ../block_chain/utils/socket/Socket.h
 
 CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o: ../block_chain/algorithm/MerkleTree.h
-CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o: ../block_chain/algorithm/RSA.h
+CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o: ../block_chain/algorithm/cryptography/Cryptography.h
+CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o: ../block_chain/algorithm/cryptography/RSA.h
 CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o: ../block_chain/algorithm/hash/Hash.h
 CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o: ../block_chain/algorithm/hash/Hash_MD5.h
 CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o: ../block_chain/chain/block/Block.cpp
@@ -458,6 +468,7 @@ CMakeFiles/block_chain.dir/block_chain/kernel/components/Component.cpp.o: ../blo
 CMakeFiles/block_chain.dir/block_chain/kernel/components/Component.cpp.o: ../block_chain/utils/serialization/Parser.h
 
 CMakeFiles/block_chain.dir/block_chain/kernel/components/Config.cpp.o: ../block_chain/algorithm/MerkleTree.h
+CMakeFiles/block_chain.dir/block_chain/kernel/components/Config.cpp.o: ../block_chain/algorithm/cryptography/Cryptography.h
 CMakeFiles/block_chain.dir/block_chain/kernel/components/Config.cpp.o: ../block_chain/algorithm/hash/Hash.h
 CMakeFiles/block_chain.dir/block_chain/kernel/components/Config.cpp.o: ../block_chain/algorithm/hash/Hash_MD5.h
 CMakeFiles/block_chain.dir/block_chain/kernel/components/Config.cpp.o: ../block_chain/chain/block/Block.h
@@ -626,7 +637,8 @@ CMakeFiles/block_chain.dir/block_chain/kernel/messages/TransactionMessage.cpp.o:
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAnswerParser.cpp.o: ../block_chain/Node.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAnswerParser.cpp.o: ../block_chain/TransactionManager.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAnswerParser.cpp.o: ../block_chain/algorithm/MerkleTree.h
-CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAnswerParser.cpp.o: ../block_chain/algorithm/RSA.h
+CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAnswerParser.cpp.o: ../block_chain/algorithm/cryptography/Cryptography.h
+CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAnswerParser.cpp.o: ../block_chain/algorithm/cryptography/RSA.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAnswerParser.cpp.o: ../block_chain/algorithm/hash/Hash.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAnswerParser.cpp.o: ../block_chain/algorithm/hash/Hash_MD5.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAnswerParser.cpp.o: ../block_chain/chain/Chain.h
@@ -673,7 +685,8 @@ CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAnswerParser.cpp.o: .
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAskParser.cpp.o: ../block_chain/Node.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAskParser.cpp.o: ../block_chain/TransactionManager.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAskParser.cpp.o: ../block_chain/algorithm/MerkleTree.h
-CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAskParser.cpp.o: ../block_chain/algorithm/RSA.h
+CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAskParser.cpp.o: ../block_chain/algorithm/cryptography/Cryptography.h
+CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAskParser.cpp.o: ../block_chain/algorithm/cryptography/RSA.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAskParser.cpp.o: ../block_chain/algorithm/hash/Hash.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAskParser.cpp.o: ../block_chain/algorithm/hash/Hash_MD5.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAskParser.cpp.o: ../block_chain/chain/Chain.h
@@ -720,7 +733,8 @@ CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAskParser.cpp.o: ../b
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockParser.cpp.o: ../block_chain/Node.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockParser.cpp.o: ../block_chain/TransactionManager.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockParser.cpp.o: ../block_chain/algorithm/MerkleTree.h
-CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockParser.cpp.o: ../block_chain/algorithm/RSA.h
+CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockParser.cpp.o: ../block_chain/algorithm/cryptography/Cryptography.h
+CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockParser.cpp.o: ../block_chain/algorithm/cryptography/RSA.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockParser.cpp.o: ../block_chain/algorithm/hash/Hash.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockParser.cpp.o: ../block_chain/algorithm/hash/Hash_MD5.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockParser.cpp.o: ../block_chain/chain/Chain.h
@@ -766,7 +780,8 @@ CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockParser.cpp.o: ../bloc
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAnswerParser.cpp.o: ../block_chain/Node.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAnswerParser.cpp.o: ../block_chain/TransactionManager.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAnswerParser.cpp.o: ../block_chain/algorithm/MerkleTree.h
-CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAnswerParser.cpp.o: ../block_chain/algorithm/RSA.h
+CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAnswerParser.cpp.o: ../block_chain/algorithm/cryptography/Cryptography.h
+CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAnswerParser.cpp.o: ../block_chain/algorithm/cryptography/RSA.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAnswerParser.cpp.o: ../block_chain/algorithm/hash/Hash.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAnswerParser.cpp.o: ../block_chain/algorithm/hash/Hash_MD5.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAnswerParser.cpp.o: ../block_chain/chain/Chain.h
@@ -813,7 +828,8 @@ CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAnswerParser.cpp.o: .
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAskParser.cpp.o: ../block_chain/Node.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAskParser.cpp.o: ../block_chain/TransactionManager.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAskParser.cpp.o: ../block_chain/algorithm/MerkleTree.h
-CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAskParser.cpp.o: ../block_chain/algorithm/RSA.h
+CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAskParser.cpp.o: ../block_chain/algorithm/cryptography/Cryptography.h
+CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAskParser.cpp.o: ../block_chain/algorithm/cryptography/RSA.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAskParser.cpp.o: ../block_chain/algorithm/hash/Hash.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAskParser.cpp.o: ../block_chain/algorithm/hash/Hash_MD5.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAskParser.cpp.o: ../block_chain/chain/Chain.h
@@ -860,7 +876,8 @@ CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAskParser.cpp.o: ../b
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignInParser.cpp.o: ../block_chain/Node.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignInParser.cpp.o: ../block_chain/TransactionManager.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignInParser.cpp.o: ../block_chain/algorithm/MerkleTree.h
-CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignInParser.cpp.o: ../block_chain/algorithm/RSA.h
+CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignInParser.cpp.o: ../block_chain/algorithm/cryptography/Cryptography.h
+CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignInParser.cpp.o: ../block_chain/algorithm/cryptography/RSA.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignInParser.cpp.o: ../block_chain/algorithm/hash/Hash.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignInParser.cpp.o: ../block_chain/algorithm/hash/Hash_MD5.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignInParser.cpp.o: ../block_chain/chain/Chain.h
@@ -906,7 +923,8 @@ CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignInParser.cpp.o: ../blo
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignOutParser.cpp.o: ../block_chain/Node.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignOutParser.cpp.o: ../block_chain/TransactionManager.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignOutParser.cpp.o: ../block_chain/algorithm/MerkleTree.h
-CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignOutParser.cpp.o: ../block_chain/algorithm/RSA.h
+CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignOutParser.cpp.o: ../block_chain/algorithm/cryptography/Cryptography.h
+CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignOutParser.cpp.o: ../block_chain/algorithm/cryptography/RSA.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignOutParser.cpp.o: ../block_chain/algorithm/hash/Hash.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignOutParser.cpp.o: ../block_chain/algorithm/hash/Hash_MD5.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignOutParser.cpp.o: ../block_chain/chain/Chain.h
@@ -952,7 +970,8 @@ CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignOutParser.cpp.o: ../bl
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/TransactionParser.cpp.o: ../block_chain/Node.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/TransactionParser.cpp.o: ../block_chain/TransactionManager.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/TransactionParser.cpp.o: ../block_chain/algorithm/MerkleTree.h
-CMakeFiles/block_chain.dir/block_chain/kernel/parsers/TransactionParser.cpp.o: ../block_chain/algorithm/RSA.h
+CMakeFiles/block_chain.dir/block_chain/kernel/parsers/TransactionParser.cpp.o: ../block_chain/algorithm/cryptography/Cryptography.h
+CMakeFiles/block_chain.dir/block_chain/kernel/parsers/TransactionParser.cpp.o: ../block_chain/algorithm/cryptography/RSA.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/TransactionParser.cpp.o: ../block_chain/algorithm/hash/Hash.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/TransactionParser.cpp.o: ../block_chain/algorithm/hash/Hash_MD5.h
 CMakeFiles/block_chain.dir/block_chain/kernel/parsers/TransactionParser.cpp.o: ../block_chain/chain/Chain.h
@@ -1094,7 +1113,8 @@ CMakeFiles/block_chain.dir/main.cpp.o: ../block_chain/Framework.h
 CMakeFiles/block_chain.dir/main.cpp.o: ../block_chain/Node.h
 CMakeFiles/block_chain.dir/main.cpp.o: ../block_chain/TransactionManager.h
 CMakeFiles/block_chain.dir/main.cpp.o: ../block_chain/algorithm/MerkleTree.h
-CMakeFiles/block_chain.dir/main.cpp.o: ../block_chain/algorithm/RSA.h
+CMakeFiles/block_chain.dir/main.cpp.o: ../block_chain/algorithm/cryptography/Cryptography.h
+CMakeFiles/block_chain.dir/main.cpp.o: ../block_chain/algorithm/cryptography/RSA.h
 CMakeFiles/block_chain.dir/main.cpp.o: ../block_chain/algorithm/hash/Hash.h
 CMakeFiles/block_chain.dir/main.cpp.o: ../block_chain/algorithm/hash/Hash_MD5.h
 CMakeFiles/block_chain.dir/main.cpp.o: ../block_chain/chain/Chain.h

@@ -345,28 +345,28 @@ CMakeFiles/block_chain.dir/block_chain/utils/socket/SocketServer.cpp.o.provides:
 CMakeFiles/block_chain.dir/block_chain/utils/socket/SocketServer.cpp.o.provides.build: CMakeFiles/block_chain.dir/block_chain/utils/socket/SocketServer.cpp.o
 
 
-CMakeFiles/block_chain.dir/block_chain/algorithm/RSA.cpp.o: CMakeFiles/block_chain.dir/flags.make
-CMakeFiles/block_chain.dir/block_chain/algorithm/RSA.cpp.o: ../block_chain/algorithm/RSA.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/block_chain.dir/block_chain/algorithm/RSA.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/block_chain.dir/block_chain/algorithm/RSA.cpp.o -c /home/default/CLionProjects/block_chain/block_chain/algorithm/RSA.cpp
+CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/RSA.cpp.o: CMakeFiles/block_chain.dir/flags.make
+CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/RSA.cpp.o: ../block_chain/algorithm/cryptography/RSA.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/RSA.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/RSA.cpp.o -c /home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/RSA.cpp
 
-CMakeFiles/block_chain.dir/block_chain/algorithm/RSA.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/block_chain.dir/block_chain/algorithm/RSA.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/default/CLionProjects/block_chain/block_chain/algorithm/RSA.cpp > CMakeFiles/block_chain.dir/block_chain/algorithm/RSA.cpp.i
+CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/RSA.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/RSA.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/RSA.cpp > CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/RSA.cpp.i
 
-CMakeFiles/block_chain.dir/block_chain/algorithm/RSA.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/block_chain.dir/block_chain/algorithm/RSA.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/default/CLionProjects/block_chain/block_chain/algorithm/RSA.cpp -o CMakeFiles/block_chain.dir/block_chain/algorithm/RSA.cpp.s
+CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/RSA.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/RSA.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/RSA.cpp -o CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/RSA.cpp.s
 
-CMakeFiles/block_chain.dir/block_chain/algorithm/RSA.cpp.o.requires:
+CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/RSA.cpp.o.requires:
 
-.PHONY : CMakeFiles/block_chain.dir/block_chain/algorithm/RSA.cpp.o.requires
+.PHONY : CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/RSA.cpp.o.requires
 
-CMakeFiles/block_chain.dir/block_chain/algorithm/RSA.cpp.o.provides: CMakeFiles/block_chain.dir/block_chain/algorithm/RSA.cpp.o.requires
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/algorithm/RSA.cpp.o.provides.build
-.PHONY : CMakeFiles/block_chain.dir/block_chain/algorithm/RSA.cpp.o.provides
+CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/RSA.cpp.o.provides: CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/RSA.cpp.o.requires
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/RSA.cpp.o.provides.build
+.PHONY : CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/RSA.cpp.o.provides
 
-CMakeFiles/block_chain.dir/block_chain/algorithm/RSA.cpp.o.provides.build: CMakeFiles/block_chain.dir/block_chain/algorithm/RSA.cpp.o
+CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/RSA.cpp.o.provides.build: CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/RSA.cpp.o
 
 
 CMakeFiles/block_chain.dir/block_chain/utils/serialization/Element.cpp.o: CMakeFiles/block_chain.dir/flags.make
@@ -1473,6 +1473,30 @@ CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash.cpp.o.provides: CMake
 CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash.cpp.o.provides.build: CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash.cpp.o
 
 
+CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/Cryptography.cpp.o: CMakeFiles/block_chain.dir/flags.make
+CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/Cryptography.cpp.o: ../block_chain/algorithm/cryptography/Cryptography.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/Cryptography.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/Cryptography.cpp.o -c /home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/Cryptography.cpp
+
+CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/Cryptography.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/Cryptography.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/Cryptography.cpp > CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/Cryptography.cpp.i
+
+CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/Cryptography.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/Cryptography.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/Cryptography.cpp -o CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/Cryptography.cpp.s
+
+CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/Cryptography.cpp.o.requires:
+
+.PHONY : CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/Cryptography.cpp.o.requires
+
+CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/Cryptography.cpp.o.provides: CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/Cryptography.cpp.o.requires
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/Cryptography.cpp.o.provides.build
+.PHONY : CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/Cryptography.cpp.o.provides
+
+CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/Cryptography.cpp.o.provides.build: CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/Cryptography.cpp.o
+
+
 # Object files for target block_chain
 block_chain_OBJECTS = \
 "CMakeFiles/block_chain.dir/main.cpp.o" \
@@ -1487,7 +1511,7 @@ block_chain_OBJECTS = \
 "CMakeFiles/block_chain.dir/block_chain/utils/socket/Peer.cpp.o" \
 "CMakeFiles/block_chain.dir/block_chain/utils/socket/Socket.cpp.o" \
 "CMakeFiles/block_chain.dir/block_chain/utils/socket/SocketServer.cpp.o" \
-"CMakeFiles/block_chain.dir/block_chain/algorithm/RSA.cpp.o" \
+"CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/RSA.cpp.o" \
 "CMakeFiles/block_chain.dir/block_chain/utils/serialization/Element.cpp.o" \
 "CMakeFiles/block_chain.dir/block_chain/utils/serialization/ElementCreator.cpp.o" \
 "CMakeFiles/block_chain.dir/block_chain/utils/serialization/json/JsonCreator.cpp.o" \
@@ -1533,7 +1557,8 @@ block_chain_OBJECTS = \
 "CMakeFiles/block_chain.dir/block_chain/kernel/messages/BlockMessage.cpp.o" \
 "CMakeFiles/block_chain.dir/block_chain/kernel/components/Config.cpp.o" \
 "CMakeFiles/block_chain.dir/block_chain/Framework.cpp.o" \
-"CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash.cpp.o"
+"CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash.cpp.o" \
+"CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/Cryptography.cpp.o"
 
 # External object files for target block_chain
 block_chain_EXTERNAL_OBJECTS =
@@ -1550,7 +1575,7 @@ block_chain: CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Tran
 block_chain: CMakeFiles/block_chain.dir/block_chain/utils/socket/Peer.cpp.o
 block_chain: CMakeFiles/block_chain.dir/block_chain/utils/socket/Socket.cpp.o
 block_chain: CMakeFiles/block_chain.dir/block_chain/utils/socket/SocketServer.cpp.o
-block_chain: CMakeFiles/block_chain.dir/block_chain/algorithm/RSA.cpp.o
+block_chain: CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/RSA.cpp.o
 block_chain: CMakeFiles/block_chain.dir/block_chain/utils/serialization/Element.cpp.o
 block_chain: CMakeFiles/block_chain.dir/block_chain/utils/serialization/ElementCreator.cpp.o
 block_chain: CMakeFiles/block_chain.dir/block_chain/utils/serialization/json/JsonCreator.cpp.o
@@ -1597,11 +1622,12 @@ block_chain: CMakeFiles/block_chain.dir/block_chain/kernel/messages/BlockMessage
 block_chain: CMakeFiles/block_chain.dir/block_chain/kernel/components/Config.cpp.o
 block_chain: CMakeFiles/block_chain.dir/block_chain/Framework.cpp.o
 block_chain: CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash.cpp.o
+block_chain: CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/Cryptography.cpp.o
 block_chain: CMakeFiles/block_chain.dir/build.make
 block_chain: /usr/lib/x86_64-linux-gnu/libssl.so
 block_chain: /usr/lib/x86_64-linux-gnu/libcrypto.so
 block_chain: CMakeFiles/block_chain.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Linking CXX executable block_chain"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Linking CXX executable block_chain"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/block_chain.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -1621,7 +1647,7 @@ CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/chai
 CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/utils/socket/Peer.cpp.o.requires
 CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/utils/socket/Socket.cpp.o.requires
 CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/utils/socket/SocketServer.cpp.o.requires
-CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/algorithm/RSA.cpp.o.requires
+CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/RSA.cpp.o.requires
 CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/utils/serialization/Element.cpp.o.requires
 CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/utils/serialization/ElementCreator.cpp.o.requires
 CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/utils/serialization/json/JsonCreator.cpp.o.requires
@@ -1668,6 +1694,7 @@ CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/kern
 CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/kernel/components/Config.cpp.o.requires
 CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/Framework.cpp.o.requires
 CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash.cpp.o.requires
+CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/Cryptography.cpp.o.requires
 
 .PHONY : CMakeFiles/block_chain.dir/requires
 

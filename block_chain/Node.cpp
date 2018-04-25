@@ -7,15 +7,15 @@
 void run(SocketServer* server, const Serializer* serializer, Node* node) {
     server->run(Node::defaultCallback, serializer, node);
 }
-Node::Node(Config& config): serializer(config.get_serializer()), encoding(config.get_encoding()), proof(config.get_proof()), server(config.get_port()), block_chain(serializer, 1, encoding.c_str(), config.get_reward()), self(Socket::getIP(), config.get_port()), running(run, &server, serializer, this), queue(0), debug(config.is_debug()) {
+Node::Node(Config& config): crypto(Cryptography::generate(config.get_crypto())), serializer(config.get_serializer()), encoding(config.get_encoding()), proof(config.get_proof()), server(config.get_port()), block_chain(serializer, 1, encoding.c_str(), config.get_reward()), self(Socket::getIP(), config.get_port()), running(run, &server, serializer, this), queue(0), debug(config.is_debug()), crypto_id(config.get_crypto()) {
     init_parsers();
     OpenSSL_add_all_algorithms();
     ERR_load_BIO_strings();
     ERR_load_crypto_strings();
-    if(!rsa.backup("./network/private.pem", "./network/public.pem"))
-        rsa.generate("./network/private.pem", "./network/public.pem");
+    if(!crypto->backup("./network/private.pem", "./network/public.pem"))
+        crypto->generate("./network/private.pem", "./network/public.pem");
     store();
-    block_chain.read_blocks();
+    block_chain.read_blocks(crypto_id);
 }
 
 void Node::init_parsers(){
@@ -39,6 +39,7 @@ Node::~Node(){
     running.detach();
     #endif // _WIN32
     delete serializer;
+    delete crypto;
     std::this_thread::sleep_for(std::chrono::microseconds(1000000));
     std::cout<< "Connection closed" <<std::endl;
 }
@@ -49,7 +50,6 @@ void Node::add_parser(MessageParser* p){
 
 void Node::store(){
     std::ifstream peers_file;
-    int i = 0;
     peers_file.open("./network/network.nfo", std::ifstream::in);
     if(peers_file.is_open()){
         std::string line;
@@ -62,7 +62,6 @@ void Node::store(){
             if(self._ip != ip || self._port != port){
                 Peer peer(ip, port);
                 if(peer.send(Encoding::toHexa(std::string(m)).c_str())) {
-                    i = 1;
                     break;
                 }
             }
@@ -70,8 +69,6 @@ void Node::store(){
         peers_file.close();
         free(m);
     }
-    if(!i)
-        block_chain.read_blocks();
 }
 
 void Node::close(){
@@ -87,7 +84,7 @@ void Node::request_transaction(Transaction* transaction){
         std::cout << "\033[1;34m[INFO] Transaction requested by " << self._ip << ":" << self._port<<"\033[0m\n";
     MerkleTree tree(transaction, serializer, encoding.c_str());
     const char* serialized = serializer->serialize(transaction, encoding.c_str());
-    TransactionMessage message(serialized, rsa.encrypt(serialized), rsa.getPublicKey(), &tree);
+    TransactionMessage message(serialized, crypto->encrypt(serialized), crypto->getPublicKey(), &tree);
     char* m = serializer->serialize(&message, encoding.c_str());
     Encoding::toHexa(std::string(m));
     for (auto &peer : peers)

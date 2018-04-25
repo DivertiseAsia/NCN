@@ -4,6 +4,7 @@ var searchData=
   ['serialize',['serialize',['../classSerializer.html#a5cfe31eb70f4d0c92f2d68c22f39e885',1,'Serializer::serialize(const Component *component, const char *encoding) const'],['../classSerializer.html#a38bec517fb3b3cc0778c75b807cb930c',1,'Serializer::serialize(Element *element, const char *encoding) const']]],
   ['serializer',['Serializer',['../classSerializer.html#a9fe7f31924098f75278d059f8443fd5b',1,'Serializer']]],
   ['set_5fhash',['set_hash',['../classHash.html#aeb00b10f67d0badc923ded4e8a6a3b2d',1,'Hash']]],
+  ['set_5fpublic_5fkey',['set_public_key',['../classCryptography.html#ac997921c1a720bdb03e385ed8caeded2',1,'Cryptography::set_public_key()'],['../classRSA__Cryptography.html#adc7e7c8a810a8b3abcbb13d6ece2db56',1,'RSA_Cryptography::set_public_key()']]],
   ['show_5fcurrent_5fstate',['show_current_state',['../classNodeState.html#aedd8b10b2ca3f51e5c95b7ebed70464c',1,'NodeState']]],
   ['signinmessage',['SignInMessage',['../classSignInMessage.html#accb3dfaad2cca80d6709873a783f895b',1,'SignInMessage']]],
   ['signmessage',['SignMessage',['../classSignMessage.html#ac1df326e20a41acee483fc8893e791ae',1,'SignMessage']]],

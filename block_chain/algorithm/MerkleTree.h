@@ -43,8 +43,9 @@ public:
      *  @param block The block to put in the tree
      *  @param serializer The serializer to serialize the component
      *  @param encoding The encoding to serialize the component
+     *  @param crypto The cryptography index to use
      */
-    MerkleTree(Block* block, const Serializer* serializer, const char* encoding);
+    MerkleTree(Block* block, const Serializer* serializer, const char* encoding, int crypto);
 
     /**
      *  Generates the tree of a list of transactions

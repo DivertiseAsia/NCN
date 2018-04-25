@@ -86,8 +86,8 @@ Inheritance diagram for MerkleTree:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a257abaf20fa542b29dfdab95294ae578"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMerkleTree.html#a257abaf20fa542b29dfdab95294ae578">MerkleTree</a> (<a class="el" href="classTransaction.html">Transaction</a> *transaction, const <a class="el" href="classSerializer.html">Serializer</a> *serializer, const char *encoding)</td></tr>
 <tr class="separator:a257abaf20fa542b29dfdab95294ae578"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7cf363c1f81c8a07e284b813d109884b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMerkleTree.html#a7cf363c1f81c8a07e284b813d109884b">MerkleTree</a> (<a class="el" href="classBlock.html">Block</a> *block, const <a class="el" href="classSerializer.html">Serializer</a> *serializer, const char *encoding)</td></tr>
-<tr class="separator:a7cf363c1f81c8a07e284b813d109884b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac13953ca82e74201f36afdb1fed952b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMerkleTree.html#ac13953ca82e74201f36afdb1fed952b1">MerkleTree</a> (<a class="el" href="classBlock.html">Block</a> *block, const <a class="el" href="classSerializer.html">Serializer</a> *serializer, const char *encoding, int crypto)</td></tr>
+<tr class="separator:ac13953ca82e74201f36afdb1fed952b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc65d820b1b59f00350b2f4a4bc580bd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMerkleTree.html#abc65d820b1b59f00350b2f4a4bc580bd">MerkleTree</a> (std::vector&lt; <a class="el" href="classTransaction.html">Transaction</a> *&gt; transactions, const <a class="el" href="classSerializer.html">Serializer</a> *serializer, const char *encoding)</td></tr>
 <tr class="separator:abc65d820b1b59f00350b2f4a4bc580bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a361a5f238249d4893b000560dcabacde"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMerkleTree.html#a361a5f238249d4893b000560dcabacde">MerkleTree</a> (<a class="el" href="classMerkleTree.html">MerkleTree</a> *l, <a class="el" href="classMerkleTree.html">MerkleTree</a> *r)</td></tr>
@@ -182,8 +182,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>BlockMessage</b></td
 
 </div>
 </div>
-<a id="a7cf363c1f81c8a07e284b813d109884b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7cf363c1f81c8a07e284b813d109884b">&#9670;&nbsp;</a></span>MerkleTree() <span class="overload">[2/5]</span></h2>
+<a id="ac13953ca82e74201f36afdb1fed952b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac13953ca82e74201f36afdb1fed952b1">&#9670;&nbsp;</a></span>MerkleTree() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -204,7 +204,13 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>BlockMessage</b></td
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>encoding</em>&#160;</td>
+          <td class="paramname"><em>encoding</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>crypto</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -219,6 +225,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>BlockMessage</b></td
     <tr><td class="paramname">block</td><td>The block to put in the tree </td></tr>
     <tr><td class="paramname">serializer</td><td>The serializer to serialize the component </td></tr>
     <tr><td class="paramname">encoding</td><td>The encoding to serialize the component </td></tr>
+    <tr><td class="paramname">crypto</td><td>The cryptography index to use </td></tr>
   </table>
   </dd>
 </dl>

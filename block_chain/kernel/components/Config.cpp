@@ -16,7 +16,7 @@ ElementObject* read_config(const char* filename, const Serializer* serial, const
     return serial->getElement(serialized, encoding);
 }
 
-Config::Config(const char* filename, const Serializer* s, int pr, int h, Reward* r): serializer(s), reward(r), proof(Proof::generate(pr)){
+Config::Config(const char* filename, const Serializer* s, Reward* r, int pr, int h, int c): crypto(c), serializer(s), reward(r), proof(Proof::generate(pr)){
     Hash::set_hash(Hash::generate(h));
     ElementObject* o = read_config(filename, s, "json");
     o->getItem("port", &port);
@@ -42,6 +42,10 @@ const Reward* Config::get_reward() const{
 
 const int Config::get_port() const{
     return port;
+}
+
+const int Config::get_crypto() const{
+    return crypto;
 }
 
 const bool Config::is_debug() const{

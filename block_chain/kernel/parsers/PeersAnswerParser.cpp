@@ -26,7 +26,6 @@ void PeersAnswerParser::operator()(Message* m, Node* node) const {
         }
     }
     free(text);
-    node->block_chain.read_blocks();
 }
 
 int PeersAnswerParser::get_type() const {

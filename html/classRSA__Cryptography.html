@@ -63,36 +63,59 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classRSA__Cryptography-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">RSA_Cryptography Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &quot;<a class="el" href="RSA_8h_source.html">block_chain/algorithm/RSA.h</a>&quot;</code></p>
+<p><code>#include &quot;<a class="el" href="RSA_8h_source.html">block_chain/algorithm/cryptography/RSA.h</a>&quot;</code></p>
+<div class="dynheader">
+Inheritance diagram for RSA_Cryptography:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classRSA__Cryptography.png" usemap="#RSA_5FCryptography_map" alt=""/>
+  <map id="RSA_5FCryptography_map" name="RSA_5FCryptography_map">
+<area href="classCryptography.html" alt="Cryptography" shape="rect" coords="0,0,122,24"/>
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aeca5b9b416a49fea20e7fc69ca18d641"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRSA__Cryptography.html#aeca5b9b416a49fea20e7fc69ca18d641">RSA_Cryptography</a> ()</td></tr>
 <tr class="separator:aeca5b9b416a49fea20e7fc69ca18d641"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2cd6fb565102dc8007de9d305026e45"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRSA__Cryptography.html#ae2cd6fb565102dc8007de9d305026e45">RSA_Cryptography</a> (std::string key)</td></tr>
-<tr class="separator:ae2cd6fb565102dc8007de9d305026e45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ea8d421dcb5012ffc8fd23660bae1bc"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRSA__Cryptography.html#a8ea8d421dcb5012ffc8fd23660bae1bc">encrypt</a> (std::string message)</td></tr>
-<tr class="separator:a8ea8d421dcb5012ffc8fd23660bae1bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03760e4f7eae8e7b961f8b948c0dafb1"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRSA__Cryptography.html#a03760e4f7eae8e7b961f8b948c0dafb1">decrypt</a> (std::string message, int size)</td></tr>
-<tr class="separator:a03760e4f7eae8e7b961f8b948c0dafb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc7e7c8a810a8b3abcbb13d6ece2db56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRSA__Cryptography.html#adc7e7c8a810a8b3abcbb13d6ece2db56">set_public_key</a> (std::string key) override</td></tr>
+<tr class="separator:adc7e7c8a810a8b3abcbb13d6ece2db56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa227108ccae648f2744681ed0559f72"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRSA__Cryptography.html#aaa227108ccae648f2744681ed0559f72">encrypt</a> (std::string message) override</td></tr>
+<tr class="separator:aaa227108ccae648f2744681ed0559f72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a519b570003d9ffa110dc762142706a7a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRSA__Cryptography.html#a519b570003d9ffa110dc762142706a7a">decrypt</a> (std::string message, int size) override</td></tr>
+<tr class="separator:a519b570003d9ffa110dc762142706a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7772b886bb2f27b95df33019d04eee69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRSA__Cryptography.html#a7772b886bb2f27b95df33019d04eee69">write</a> (void(*fun)(BIO *, RSA *), std::string file)</td></tr>
 <tr class="separator:a7772b886bb2f27b95df33019d04eee69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9692bde79db1e43da95511fe0d0c1a0b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRSA__Cryptography.html#a9692bde79db1e43da95511fe0d0c1a0b">getPublicKey</a> ()</td></tr>
-<tr class="separator:a9692bde79db1e43da95511fe0d0c1a0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecdd6715cb222a98b5810f49103c34d7"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRSA__Cryptography.html#aecdd6715cb222a98b5810f49103c34d7">getPrivateKey</a> ()</td></tr>
-<tr class="separator:aecdd6715cb222a98b5810f49103c34d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf500fcdcc050fa8d18a0dbe43176d17"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRSA__Cryptography.html#aaf500fcdcc050fa8d18a0dbe43176d17">generate</a> (const char *private_file, const char *public_file)</td></tr>
-<tr class="separator:aaf500fcdcc050fa8d18a0dbe43176d17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3ccf77d8754acdfb444dbab6fb6a4dd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRSA__Cryptography.html#ae3ccf77d8754acdfb444dbab6fb6a4dd">backup</a> (const char *private_file, const char *public_file)</td></tr>
-<tr class="separator:ae3ccf77d8754acdfb444dbab6fb6a4dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a827cfbeac1763fdb396a7f1fa3f95a4e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRSA__Cryptography.html#a827cfbeac1763fdb396a7f1fa3f95a4e">getPublicKey</a> () override</td></tr>
+<tr class="separator:a827cfbeac1763fdb396a7f1fa3f95a4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb7d1f930ecc671a17582bebcfce9a54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRSA__Cryptography.html#abb7d1f930ecc671a17582bebcfce9a54">generate</a> (const char *private_file, const char *public_file) override</td></tr>
+<tr class="separator:abb7d1f930ecc671a17582bebcfce9a54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0138996dd3607fbd04a64a402fb5a81"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRSA__Cryptography.html#af0138996dd3607fbd04a64a402fb5a81">backup</a> (const char *private_file, const char *public_file) override</td></tr>
+<tr class="separator:af0138996dd3607fbd04a64a402fb5a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8a837cfb0a55afd707af939261acc52"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRSA__Cryptography.html#ae8a837cfb0a55afd707af939261acc52">~RSA_Cryptography</a> ()</td></tr>
 <tr class="separator:ae8a837cfb0a55afd707af939261acc52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a4be2ee9f650b03ded4d2a53a110163e1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCryptography.html">Cryptography</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCryptography.html#a4be2ee9f650b03ded4d2a53a110163e1">generate</a> (int type)</td></tr>
+<tr class="separator:a4be2ee9f650b03ded4d2a53a110163e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9de66e770b342901f4de77eb9089bddb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classCryptography.html">Cryptography</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCryptography.html#a9de66e770b342901f4de77eb9089bddb">generate</a> (int type, std::string key)</td></tr>
+<tr class="separator:a9de66e770b342901f4de77eb9089bddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeead5d0f6b199c1520483b17132d1462"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCryptography.html#aeead5d0f6b199c1520483b17132d1462">add_cryptography</a> (int id, std::function&lt; <a class="el" href="classCryptography.html">Cryptography</a> *()&gt; crypto)</td></tr>
+<tr class="separator:aeead5d0f6b199c1520483b17132d1462"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a7b1517afae62f8d7a89b988814a440da"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCryptography.html#a7b1517afae62f8d7a89b988814a440da">CRYPTOGRAPHY_RSA</a> = 0</td></tr>
+<tr class="separator:a7b1517afae62f8d7a89b988814a440da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p class="">A class for RSA cryptography, based on OpenSLL</p>
@@ -100,7 +123,7 @@ Public Member Functions</h2></td></tr>
 <dl class="section version"><dt>Version</dt><dd>2 </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aeca5b9b416a49fea20e7fc69ca18d641"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeca5b9b416a49fea20e7fc69ca18d641">&#9670;&nbsp;</a></span>RSA_Cryptography() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aeca5b9b416a49fea20e7fc69ca18d641">&#9670;&nbsp;</a></span>RSA_Cryptography()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -114,39 +137,6 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p class="">A default constructor initializing the size of the key </p>
-
-</div>
-</div>
-<a id="ae2cd6fb565102dc8007de9d305026e45"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2cd6fb565102dc8007de9d305026e45">&#9670;&nbsp;</a></span>RSA_Cryptography() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">RSA_Cryptography::RSA_Cryptography </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>key</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p class="">A constructor with a given public key. It creates an object that can decrypt or encrypt using public key</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">key</td><td>The known public key </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -177,11 +167,58 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae3ccf77d8754acdfb444dbab6fb6a4dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3ccf77d8754acdfb444dbab6fb6a4dd">&#9670;&nbsp;</a></span>backup()</h2>
+<a id="aeead5d0f6b199c1520483b17132d1462"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeead5d0f6b199c1520483b17132d1462">&#9670;&nbsp;</a></span>add_cryptography()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Cryptography::add_cryptography </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; <a class="el" href="classCryptography.html">Cryptography</a> *()&gt;&#160;</td>
+          <td class="paramname"><em>crypto</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p class="">Allows the user to add its own cryptography into the system</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>The cryptography id </td></tr>
+    <tr><td class="paramname">crypto</td><td>The lambda expression that creates a cryptography </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af0138996dd3607fbd04a64a402fb5a81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0138996dd3607fbd04a64a402fb5a81">&#9670;&nbsp;</a></span>backup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool RSA_Cryptography::backup </td>
@@ -201,6 +238,11 @@ Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p class="">Read the key from files</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -211,13 +253,18 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
+<p>Implements <a class="el" href="classCryptography.html#a005171dbba22ffcb2364c7d995996ba8">Cryptography</a>.</p>
+
 </div>
 </div>
-<a id="a03760e4f7eae8e7b961f8b948c0dafb1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03760e4f7eae8e7b961f8b948c0dafb1">&#9670;&nbsp;</a></span>decrypt()</h2>
+<a id="a519b570003d9ffa110dc762142706a7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a519b570003d9ffa110dc762142706a7a">&#9670;&nbsp;</a></span>decrypt()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">std::string RSA_Cryptography::decrypt </td>
@@ -237,6 +284,11 @@ Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p class="">Decrypt a message using private key</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -248,13 +300,18 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The decrypted message </dd></dl>
 
+<p>Implements <a class="el" href="classCryptography.html#a149ef6d3ce1cb7b33d7716d627d6824d">Cryptography</a>.</p>
+
 </div>
 </div>
-<a id="a8ea8d421dcb5012ffc8fd23660bae1bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ea8d421dcb5012ffc8fd23660bae1bc">&#9670;&nbsp;</a></span>encrypt()</h2>
+<a id="aaa227108ccae648f2744681ed0559f72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa227108ccae648f2744681ed0559f72">&#9670;&nbsp;</a></span>encrypt()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">std::string RSA_Cryptography::encrypt </td>
@@ -264,6 +321,11 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p class="">Encrypt a message using private key</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -274,13 +336,18 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The encrypted message </dd></dl>
 
+<p>Implements <a class="el" href="classCryptography.html#ac98175dd6bf76686be458d240bcf2bd4">Cryptography</a>.</p>
+
 </div>
 </div>
-<a id="aaf500fcdcc050fa8d18a0dbe43176d17"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf500fcdcc050fa8d18a0dbe43176d17">&#9670;&nbsp;</a></span>generate()</h2>
+<a id="abb7d1f930ecc671a17582bebcfce9a54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb7d1f930ecc671a17582bebcfce9a54">&#9670;&nbsp;</a></span>generate() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void RSA_Cryptography::generate </td>
@@ -300,6 +367,11 @@ Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p class="">Generates new RSA key and writes it into a file</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -310,32 +382,97 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
+<p>Implements <a class="el" href="classCryptography.html#a39a21b22097823d23d77e5489e6d060c">Cryptography</a>.</p>
+
 </div>
 </div>
-<a id="aecdd6715cb222a98b5810f49103c34d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aecdd6715cb222a98b5810f49103c34d7">&#9670;&nbsp;</a></span>getPrivateKey()</h2>
+<a id="a4be2ee9f650b03ded4d2a53a110163e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4be2ee9f650b03ded4d2a53a110163e1">&#9670;&nbsp;</a></span>generate() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string RSA_Cryptography::getPrivateKey </td>
+          <td class="memname"><a class="el" href="classCryptography.html">Cryptography</a> * Cryptography::generate </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p class="">Get the private key</p>
-<dl class="section return"><dt>Returns</dt><dd>The private key </dd></dl>
+<p class="">Generates a <a class="el" href="classCryptography.html">Cryptography</a> object for a given id</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>The cryptography id </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The created cryptography object </dd></dl>
 
 </div>
 </div>
-<a id="a9692bde79db1e43da95511fe0d0c1a0b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9692bde79db1e43da95511fe0d0c1a0b">&#9670;&nbsp;</a></span>getPublicKey()</h2>
+<a id="a9de66e770b342901f4de77eb9089bddb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9de66e770b342901f4de77eb9089bddb">&#9670;&nbsp;</a></span>generate() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCryptography.html">Cryptography</a> * Cryptography::generate </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p class="">Generates a <a class="el" href="classCryptography.html">Cryptography</a> object for a given id and a public key</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>The cryptography id </td></tr>
+    <tr><td class="paramname">key</td><td>The public key </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The created cryptography object </dd></dl>
+
+</div>
+</div>
+<a id="a827cfbeac1763fdb396a7f1fa3f95a4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a827cfbeac1763fdb396a7f1fa3f95a4e">&#9670;&nbsp;</a></span>getPublicKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">std::string RSA_Cryptography::getPublicKey </td>
@@ -344,9 +481,51 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p class="">Get the public key</p>
 <dl class="section return"><dt>Returns</dt><dd>The public key </dd></dl>
+
+<p>Implements <a class="el" href="classCryptography.html#a5e5e3c295cd64b2e6ab54beb0a79bf10">Cryptography</a>.</p>
+
+</div>
+</div>
+<a id="adc7e7c8a810a8b3abcbb13d6ece2db56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc7e7c8a810a8b3abcbb13d6ece2db56">&#9670;&nbsp;</a></span>set_public_key()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RSA_Cryptography::set_public_key </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p class="">Creates the cryptography object with a given public key.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The known public key </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classCryptography.html#ac997921c1a720bdb03e385ed8caeded2">Cryptography</a>.</p>
 
 </div>
 </div>
@@ -386,9 +565,33 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a7b1517afae62f8d7a89b988814a440da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b1517afae62f8d7a89b988814a440da">&#9670;&nbsp;</a></span>CRYPTOGRAPHY_RSA</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int Cryptography::CRYPTOGRAPHY_RSA = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p class="">The ID for the RSA cryptography </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>block_chain/algorithm/<a class="el" href="RSA_8h_source.html">RSA.h</a></li>
-<li>block_chain/algorithm/RSA.cpp</li>
+<li>block_chain/algorithm/cryptography/<a class="el" href="RSA_8h_source.html">RSA.h</a></li>
+<li>block_chain/algorithm/cryptography/RSA.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

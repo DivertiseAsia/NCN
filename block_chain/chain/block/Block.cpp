@@ -6,19 +6,22 @@
 #include <utility>
 #include "../../utils/serialization/Serializer.h"
 #include "../../kernel/messages/Message.h"
-#include "../../algorithm/RSA.h"
+#include "../../algorithm/cryptography/RSA.h"
 
-std::string Block::compute_hash(int begin, int end, const Serializer* s, const char* e) const{
+std::string Block::compute_hash(int begin, int end, const Serializer* s, const char* e, int c) const{
     if(begin == end) {
         std::string cipher(Encoding::fromHexa(transactions[begin].first));
-        RSA_Cryptography crypto(Encoding::fromHexa(transactions[begin].second));
-        return s->unserializeTransaction(crypto.decrypt(cipher, cipher.size()), e)->__hash__(s, e);
+        std::string key = Encoding::fromHexa(transactions[begin].second);
+        Cryptography* crypto(Cryptography::generate(c, key));
+        std::string str = s->unserializeTransaction(crypto->decrypt(cipher, cipher.size()), e)->__hash__(s, e);
+        delete crypto;
+        return str;
     }
     else
-        return Hash::get_hash()->generate_hash(compute_hash(begin, begin + (end - begin) / 2, s, e), compute_hash(begin + (end - begin) / 2 + 1, end, s, e));
+        return Hash::get_hash()->generate_hash(compute_hash(begin, begin + (end - begin) / 2, s, e, c), compute_hash(begin + (end - begin) / 2 + 1, end, s, e, c));
 }
-std::string Block::compute_fingerprint(const Serializer* s, const char* e) const {
-    return Hash::get_hash()->generate_hash(compute_hash(0, transactions.size() - 1, s, e), timestamp);
+std::string Block::compute_fingerprint(const Serializer* s, const char* e, int c) const {
+    return Hash::get_hash()->generate_hash(compute_hash(0, transactions.size() - 1, s, e, c), timestamp);
 }
 
 Block::Block(std::vector<std::pair<std::string, std::string>> t, std::string parent): data(nullptr), transactions(
@@ -27,11 +30,11 @@ Block::Block(std::vector<std::pair<std::string, std::string>> t, std::string par
     timestamp = std::chrono::duration_cast<std::chrono::milliseconds >(std::chrono::system_clock::now().time_since_epoch()).count();
 }
 
-void Block::update_fingerprint(const Serializer* s, const char* e){
-    fingerprint = Hash::get_hash()->generate_hash(data->hash(), compute_fingerprint(s, e));
+void Block::update_fingerprint(const Serializer* s, const char* e, int c){
+    fingerprint = Hash::get_hash()->generate_hash(data->hash(), compute_fingerprint(s, e, c));
 }
-bool Block::checkFingerPrint(const Serializer* s, const char* e) const {
-    std::string tmp = Hash::get_hash()->generate_hash(data->hash(), compute_fingerprint(s, e));
+bool Block::checkFingerPrint(const Serializer* s, const char* e, int c) const {
+    std::string tmp = Hash::get_hash()->generate_hash(data->hash(), compute_fingerprint(s, e, c));
     bool b = fingerprint == tmp;
     return b;
 }

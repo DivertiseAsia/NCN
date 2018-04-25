@@ -94,12 +94,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8e35c9089e806962b83bca4e5e288142"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24fef11a9eaf9b23490a734be5e30f30"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a24fef11a9eaf9b23490a734be5e30f30">operator==</a> (<a class="el" href="classBlock.html">Block</a> *block) const</td></tr>
 <tr class="separator:a24fef11a9eaf9b23490a734be5e30f30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21e4a982ffd8d223108b5e04e454d550"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a21e4a982ffd8d223108b5e04e454d550">compute_fingerprint</a> (const <a class="el" href="classSerializer.html">Serializer</a> *s, const char *e) const</td></tr>
-<tr class="separator:a21e4a982ffd8d223108b5e04e454d550"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0755737dbbca68ee6a1ca62340843746"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a0755737dbbca68ee6a1ca62340843746">checkFingerPrint</a> (const <a class="el" href="classSerializer.html">Serializer</a> *s, const char *e) const</td></tr>
-<tr class="separator:a0755737dbbca68ee6a1ca62340843746"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94171fbe52bfc48542058749f1611228"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a94171fbe52bfc48542058749f1611228">update_fingerprint</a> (const <a class="el" href="classSerializer.html">Serializer</a> *s, const char *e)</td></tr>
-<tr class="separator:a94171fbe52bfc48542058749f1611228"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3724387a19cd829f7db9457241d39bd9"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a3724387a19cd829f7db9457241d39bd9">compute_fingerprint</a> (const <a class="el" href="classSerializer.html">Serializer</a> *s, const char *e, int crypto) const</td></tr>
+<tr class="separator:a3724387a19cd829f7db9457241d39bd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b1ad8876308d536644aafbc99756fa7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a0b1ad8876308d536644aafbc99756fa7">checkFingerPrint</a> (const <a class="el" href="classSerializer.html">Serializer</a> *s, const char *e, int crypto) const</td></tr>
+<tr class="separator:a0b1ad8876308d536644aafbc99756fa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a508c5165012dad7df09ec5509457f088"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlock.html#a508c5165012dad7df09ec5509457f088">update_fingerprint</a> (const <a class="el" href="classSerializer.html">Serializer</a> *s, const char *e, int crypto)</td></tr>
+<tr class="separator:a508c5165012dad7df09ec5509457f088"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28212595f8ee85fe009bd233bc99b2fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponent.html#a28212595f8ee85fe009bd233bc99b2fc">__init__</a> (<a class="el" href="classElementObject.html">ElementObject</a> *element, const <a class="el" href="classSerializer.html">Serializer</a> *s, const char *encoding)</td></tr>
 <tr class="separator:a28212595f8ee85fe009bd233bc99b2fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -282,8 +282,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>BlockParser</b></td>
 
 </div>
 </div>
-<a id="a0755737dbbca68ee6a1ca62340843746"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0755737dbbca68ee6a1ca62340843746">&#9670;&nbsp;</a></span>checkFingerPrint()</h2>
+<a id="a0b1ad8876308d536644aafbc99756fa7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b1ad8876308d536644aafbc99756fa7">&#9670;&nbsp;</a></span>checkFingerPrint()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -298,7 +298,13 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>BlockParser</b></td>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>e</em>&#160;</td>
+          <td class="paramname"><em>e</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>crypto</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -314,6 +320,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>BlockParser</b></td>
   <table class="params">
     <tr><td class="paramname">s</td><td>The serializer </td></tr>
     <tr><td class="paramname">e</td><td>The encoding that has been used to create the <a class="el" href="classElement.html">Element</a> representation of the object </td></tr>
+    <tr><td class="paramname">crypto</td><td>The cryptography index to use </td></tr>
   </table>
   </dd>
 </dl>
@@ -321,8 +328,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>BlockParser</b></td>
 
 </div>
 </div>
-<a id="a21e4a982ffd8d223108b5e04e454d550"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21e4a982ffd8d223108b5e04e454d550">&#9670;&nbsp;</a></span>compute_fingerprint()</h2>
+<a id="a3724387a19cd829f7db9457241d39bd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3724387a19cd829f7db9457241d39bd9">&#9670;&nbsp;</a></span>compute_fingerprint()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -337,7 +344,13 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>BlockParser</b></td>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>e</em>&#160;</td>
+          <td class="paramname"><em>e</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>crypto</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -353,6 +366,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>BlockParser</b></td>
   <table class="params">
     <tr><td class="paramname">s</td><td>The serializer </td></tr>
     <tr><td class="paramname">e</td><td>The encoding that has been used to create the <a class="el" href="classElement.html">Element</a> representation of the object </td></tr>
+    <tr><td class="paramname">crypto</td><td>The cryptography index to use </td></tr>
   </table>
   </dd>
 </dl>
@@ -478,8 +492,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>BlockParser</b></td>
 
 </div>
 </div>
-<a id="a94171fbe52bfc48542058749f1611228"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a94171fbe52bfc48542058749f1611228">&#9670;&nbsp;</a></span>update_fingerprint()</h2>
+<a id="a508c5165012dad7df09ec5509457f088"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a508c5165012dad7df09ec5509457f088">&#9670;&nbsp;</a></span>update_fingerprint()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -494,7 +508,13 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>BlockParser</b></td>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>e</em>&#160;</td>
+          <td class="paramname"><em>e</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>crypto</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -508,6 +528,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>BlockParser</b></td>
   <table class="params">
     <tr><td class="paramname">s</td><td>The serializer </td></tr>
     <tr><td class="paramname">e</td><td>The encoding that has been used to create the <a class="el" href="classElement.html">Element</a> representation of the object </td></tr>
+    <tr><td class="paramname">crypto</td><td>The cryptography index to use </td></tr>
   </table>
   </dd>
 </dl>

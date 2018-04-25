@@ -19,14 +19,16 @@
     7. [Hash](#section_hash)
         1. [New hash](#sub_section_newhash)
         2. [Feed the framework](#sub_section_feedframeworkhash)
-    8. [Database](#section_database)
+    8. [Cryptography](#section_cryptography)
+        1. [New cryptography](#sub_section_newcrypto)
+        2. [Feed the framework](#sub_section_feedframeworkcrypto)
+    9. [Database](#section_database)
 4. [Helpers](#section_helpers)
     1. [TransactionManager](#section_transactionManager)
     2. [Framework](#section_framework)
 5. [TODO-List](#section_todo)
-    1. [Cryptography](#sub_section_cryptography)
-    2. [Proof](#sub_section_proof)
-    3. [Header files](#sub_section_header)
+    1. [Proof](#sub_section_proof)
+    2. [Header files](#sub_section_header)
 
 
 
@@ -50,7 +52,7 @@ Node node(config);
 ### Config <a name="section_config"></a>
 The node is the peer itself. You only have to create it and it will run.
 ```cpp
-Config config("configuration file path", serializer, Proof::WORK, Hash::HASH_MD5, reward);
+Config config("configuration file path", serializer, reward, Proof::WORK, Hash::HASH_MD5, Cryptography::CRYPTOGRAPHY_RSA);
 ```
 The file itself is a json file. <br/>
 
@@ -62,7 +64,7 @@ The file itself is a json file. <br/>
   "debug": true
 }
 ```
-the parameters serializer, proof, hash and reward are explained later.
+the parameters serializer, proof, hash, cryptography and reward are explained later.
 ### Transaction <a name="section_transaction"></a>
 Transactions are the most important thing to implement. <br/>
 ```cpp
@@ -268,7 +270,7 @@ Once your proof is done, you just have to give it to the framework using this me
 ```cpp
 static void Proof::add_proof(int id, std::function<Proof*()> proof);
 ```
-The id needs to be passed to the Node object. The second parameter is a lambda expression that creates the proof.
+The id needs to be passed to the Config object. The second parameter is a lambda expression that creates the proof.
 <h6>Example:</h6>
 ```cpp
 Proof::add_proof(Proof::WORK, []() -> Proof*{return new ProofOfWork;});
@@ -316,10 +318,98 @@ Once your hash is done, you just have to give it to the framework using this met
 ```cpp
 static void Hash::add_hash(int id, std::function<Hash*()> h);
 ```
-The id needs to be passed to the Node object. The second parameter is a lambda expression that creates the hash.
+The id needs to be passed to the Config object. The second parameter is a lambda expression that creates the hash.
 <h6>Example:</h6>
 ```cpp
 Hash::add_hash(Hash::HASH_MD5, []() -> Hash*{return new Hash_MD5;});
+```
+### Cryptography <a name="section_cryptography"></a>
+The Cryptography objects are used to cipher transactions to assure their authenticity. <br />
+The framework provides the RSA cryptography, but it is possible to create new ones.
+<h4>New Cryptography <a name="sub_section_newcrypto"></a></h4>
+A new Cryptography class needs to implement a few methods
+<h5>Cryptography::set_public_key</h5>
+```cpp
+virtual void set_public_key(std::string key) = 0;
+```
+This method will be called to register the given public public key.
+<h6>Example:</h6>
+```cpp
+void RSA_Cryptography::set_public_key(std::string key)
+{
+    size = 4096;
+    BIO* bo = BIO_new_mem_buf( (void*) key.c_str(), (int) key.size());
+    BIO_set_flags( bo, BIO_FLAGS_BASE64_NO_NL ) ; // NO NL
+    rsa = PEM_read_bio_RSAPublicKey(bo, nullptr, nullptr, nullptr);
+    BIO_free(bo);
+}
+```
+<h5>Cryptography::encrypt</h5>
+```cpp
+virtual std::string encrypt(std::string message) = 0;
+```
+This method will be called to encrypt a given text with the private key
+<h6>Example:</h6>
+```cpp
+std::string RSA_Cryptography::encrypt(std::string message) {
+    auto encrypt = (unsigned char*)malloc((size_t) RSA_size(rsa));
+    int encrypt_len;
+    if((encrypt_len = RSA_private_encrypt((int)message.size()+1, (const unsigned char*)message.c_str(), encrypt, rsa, RSA_PKCS1_PADDING)) == -1) {
+        std::cout << "\033[1;31m[ERR] ERROR ENCRYPT\033[0m" << std::endl;
+    }
+    std::string str;
+    str.assign((const char*)encrypt, (unsigned long)encrypt_len);
+    return str;
+}
+```
+<h5>Cryptography::decrypt</h5>
+```cpp
+virtual std::string decrypt(std::string message, int size) = 0;
+```
+This method will be called to decrypt a given text with the public key
+<h6>Example:</h6>
+```cpp
+std::string RSA_Cryptography::decrypt(std::string message, int size) {
+    auto decrypt = (unsigned char*)malloc((size_t) size);
+    if(RSA_public_decrypt((int)message.size(), (const unsigned char*) message.c_str(), decrypt, rsa, RSA_PKCS1_PADDING) == -1) {
+        std::cout << "\033[1;31m[ERR] ERROR DECRYPT\033[0m" << std::endl;
+    }
+    return std::string((const char*)decrypt);
+}
+```
+<h5>Cryptography::getPublicKey</h5>
+```cpp
+virtual std::string getPublicKey() = 0;
+```
+This method will be called to send the public key of the creator to the other peers
+<h6>Example:</h6>
+```cpp
+std::string getKey(void (* fun)(BIO*, RSA*), RSA* rsa){
+    int len;
+    char   *key;
+    BIO *p = BIO_new(BIO_s_mem());
+    fun(p, rsa);
+    len = BIO_pending(p);
+    key = (char*)malloc((size_t) len + 1);
+    BIO_read(p, key, len);
+    key[len] = '\0';
+    std::string final_key = key;
+    free(key);
+    return final_key;
+}
+std::string RSA_Cryptography::getPublicKey(){
+    return getKey(public_action, rsa);
+}
+```
+<h4>Feed the framework <a name="sub_section_feedframeworkcrypto"></a></h4>
+Once your cryptography object is done, you just have to give it to the framework using this method:
+```cpp
+static void Cryptography::add_cryptography(int id, std::function<Cryptography*()> crypto);
+```
+The id needs to be passed to the Config object. The second parameter is a lambda expression that creates the cryptography.
+<h6>Example:</h6>
+```cpp
+Cryptography::add_cryptography(Cryptography::CRYPTOGRAPHY_RSA, []() -> Hash*{return new RSA_Cryptography;});
 ```
 ### Database <a name="section_database"></a>
 The database is basically a map of Row. Rows are pure abstract classes that needs to be implemented, because their structure depends of your implementation <br/>
@@ -411,10 +501,6 @@ auto manager = block_chain.generate_manager();
 auto serial = block_chain.generate_serializer();
 ```
 ## TODO-List <a name="section_todo"></a>
-### Cryptography <a name="sub_section_cryptography"></a>
-For now, there is only one cryptography class based on RSA. <br/>
-It will be changed to make this cryptography class abstract with the possibility for the user to create his own cryptography class (And to keep some basic cryptography functions).
-
 ### Proof <a name="sub_section_proof"></a>
 For now, there is only one proof: the proof of work. <br/>
 The framework will be updated with new proofs

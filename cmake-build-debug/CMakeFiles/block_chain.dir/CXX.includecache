@@ -47,8 +47,8 @@ utils/socket/SocketServer.h
 /home/default/CLionProjects/block_chain/block_chain/utils/socket/SocketServer.h
 utils/socket/Peer.h
 /home/default/CLionProjects/block_chain/block_chain/utils/socket/Peer.h
-algorithm/RSA.h
-/home/default/CLionProjects/block_chain/block_chain/algorithm/RSA.h
+algorithm/cryptography/RSA.h
+/home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/RSA.h
 kernel/messages/Message.h
 /home/default/CLionProjects/block_chain/block_chain/kernel/messages/Message.h
 chain/block/proof/Proof.h
@@ -97,8 +97,8 @@ MerkleTree.h
 /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
 ../utils/serialization/Serializer.h
 /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Serializer.h
-RSA.h
-/home/default/CLionProjects/block_chain/block_chain/algorithm/RSA.h
+cryptography/RSA.h
+/home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/RSA.h
 
 /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
 hash/Hash_MD5.h
@@ -106,15 +106,25 @@ hash/Hash_MD5.h
 ../chain/block/transaction/Transaction.h
 /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
 
-/home/default/CLionProjects/block_chain/block_chain/algorithm/RSA.cpp
+/home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/Cryptography.cpp
+Cryptography.h
+/home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/Cryptography.h
 RSA.h
-/home/default/CLionProjects/block_chain/block_chain/algorithm/RSA.h
-iostream
+/home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/RSA.h
+
+/home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/Cryptography.h
+string
 -
-openssl/engine.h
+functional
+-
+map
 -
 
-/home/default/CLionProjects/block_chain/block_chain/algorithm/RSA.h
+/home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/RSA.cpp
+RSA.h
+/home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/RSA.h
+
+/home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/RSA.h
 string
 -
 openssl/rsa.h
@@ -123,9 +133,15 @@ openssl/pem.h
 -
 openssl/bio.h
 -
+openssl/engine.h
+-
 fstream
 -
 cstring
+-
+Cryptography.h
+/home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/Cryptography.h
+iostream
 -
 
 /home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash.cpp
@@ -169,8 +185,8 @@ iostream
 /home/default/CLionProjects/block_chain/block_chain/chain/Chain.cpp
 Chain.h
 /home/default/CLionProjects/block_chain/block_chain/chain/Chain.h
-../algorithm/RSA.h
-/home/default/CLionProjects/block_chain/block_chain/algorithm/RSA.h
+../algorithm/cryptography/RSA.h
+/home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/RSA.h
 
 /home/default/CLionProjects/block_chain/block_chain/chain/Chain.h
 vector
@@ -223,8 +239,8 @@ Chain.h
 /home/default/CLionProjects/block_chain/block_chain/chain/Chain.h
 ../algorithm/hash/Hash_MD5.h
 /home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash_MD5.h
-../algorithm/RSA.h
-/home/default/CLionProjects/block_chain/block_chain/algorithm/RSA.h
+../algorithm/cryptography/RSA.h
+/home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/RSA.h
 ../utils/serialization/Serializer.h
 /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Serializer.h
 ../utils/socket/Peer.h
@@ -239,8 +255,8 @@ utility
 /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Serializer.h
 ../../kernel/messages/Message.h
 /home/default/CLionProjects/block_chain/block_chain/kernel/messages/Message.h
-../../algorithm/RSA.h
-/home/default/CLionProjects/block_chain/block_chain/algorithm/RSA.h
+../../algorithm/cryptography/RSA.h
+/home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/RSA.h
 
 /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
 vector
@@ -439,6 +455,8 @@ Config.h
 /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Serializer.h
 ../../chain/block/proof/Proof.h
 /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/Proof.h
+../../algorithm/cryptography/Cryptography.h
+/home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/Cryptography.h
 
 /home/default/CLionProjects/block_chain/block_chain/kernel/messages/AnswerPeersMessage.cpp
 AnswerPeersMessage.h

@@ -18,7 +18,7 @@ Block* NodeState::add(std::string transaction, std::string public_key){
     }
     return nullptr;
 }
-void NodeState::add(Block* block, std::string creator){
+void NodeState::add(Block* block, std::string creator, int crypto){
     for(auto& a : block->transactions){
         auto i = find(transactions.begin(), transactions.end(), a);
         if(i != transactions.end())
@@ -28,7 +28,7 @@ void NodeState::add(Block* block, std::string creator){
     std::string id(block->fingerprint);
     Chain* c = nullptr;
     if((c = chain->add(block, creator)) != nullptr)
-        c->update_database(block, serializer, encoding.c_str());
+        c->update_database(block, serializer, encoding.c_str(), crypto);
     std::string line;
     #if defined _WIN32
     _mkdir(std::string("./network/blocks/"+dir).c_str());
@@ -43,7 +43,7 @@ void NodeState::add(Block* block, std::string creator){
     }
 }
 
-void NodeState::read_blocks() {
+void NodeState::read_blocks(int crypto) {
     #ifndef _WIN32
     std::vector<std::string> list;
     list.emplace_back("0");
@@ -69,7 +69,7 @@ void NodeState::read_blocks() {
                     block_file.close();
                     Chain* c = nullptr;
                     if((c = chain->add(block, creator)) != nullptr)
-                        c->update_database(block, serializer, encoding.c_str());
+                        c->update_database(block, serializer, encoding.c_str(), crypto);
                 }
             }
         }

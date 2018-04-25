@@ -231,32 +231,59 @@ block_chain/algorithm/MerkleTree.cpp.s:
 	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/algorithm/MerkleTree.cpp.s
 .PHONY : block_chain/algorithm/MerkleTree.cpp.s
 
-block_chain/algorithm/RSA.o: block_chain/algorithm/RSA.cpp.o
+block_chain/algorithm/cryptography/Cryptography.o: block_chain/algorithm/cryptography/Cryptography.cpp.o
 
-.PHONY : block_chain/algorithm/RSA.o
+.PHONY : block_chain/algorithm/cryptography/Cryptography.o
 
 # target to build an object file
-block_chain/algorithm/RSA.cpp.o:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/algorithm/RSA.cpp.o
-.PHONY : block_chain/algorithm/RSA.cpp.o
+block_chain/algorithm/cryptography/Cryptography.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/Cryptography.cpp.o
+.PHONY : block_chain/algorithm/cryptography/Cryptography.cpp.o
 
-block_chain/algorithm/RSA.i: block_chain/algorithm/RSA.cpp.i
+block_chain/algorithm/cryptography/Cryptography.i: block_chain/algorithm/cryptography/Cryptography.cpp.i
 
-.PHONY : block_chain/algorithm/RSA.i
+.PHONY : block_chain/algorithm/cryptography/Cryptography.i
 
 # target to preprocess a source file
-block_chain/algorithm/RSA.cpp.i:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/algorithm/RSA.cpp.i
-.PHONY : block_chain/algorithm/RSA.cpp.i
+block_chain/algorithm/cryptography/Cryptography.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/Cryptography.cpp.i
+.PHONY : block_chain/algorithm/cryptography/Cryptography.cpp.i
 
-block_chain/algorithm/RSA.s: block_chain/algorithm/RSA.cpp.s
+block_chain/algorithm/cryptography/Cryptography.s: block_chain/algorithm/cryptography/Cryptography.cpp.s
 
-.PHONY : block_chain/algorithm/RSA.s
+.PHONY : block_chain/algorithm/cryptography/Cryptography.s
 
 # target to generate assembly for a file
-block_chain/algorithm/RSA.cpp.s:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/algorithm/RSA.cpp.s
-.PHONY : block_chain/algorithm/RSA.cpp.s
+block_chain/algorithm/cryptography/Cryptography.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/Cryptography.cpp.s
+.PHONY : block_chain/algorithm/cryptography/Cryptography.cpp.s
+
+block_chain/algorithm/cryptography/RSA.o: block_chain/algorithm/cryptography/RSA.cpp.o
+
+.PHONY : block_chain/algorithm/cryptography/RSA.o
+
+# target to build an object file
+block_chain/algorithm/cryptography/RSA.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/RSA.cpp.o
+.PHONY : block_chain/algorithm/cryptography/RSA.cpp.o
+
+block_chain/algorithm/cryptography/RSA.i: block_chain/algorithm/cryptography/RSA.cpp.i
+
+.PHONY : block_chain/algorithm/cryptography/RSA.i
+
+# target to preprocess a source file
+block_chain/algorithm/cryptography/RSA.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/RSA.cpp.i
+.PHONY : block_chain/algorithm/cryptography/RSA.cpp.i
+
+block_chain/algorithm/cryptography/RSA.s: block_chain/algorithm/cryptography/RSA.cpp.s
+
+.PHONY : block_chain/algorithm/cryptography/RSA.s
+
+# target to generate assembly for a file
+block_chain/algorithm/cryptography/RSA.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/RSA.cpp.s
+.PHONY : block_chain/algorithm/cryptography/RSA.cpp.s
 
 block_chain/algorithm/hash/Hash.o: block_chain/algorithm/hash/Hash.cpp.o
 
@@ -1737,9 +1764,12 @@ help:
 	@echo "... block_chain/algorithm/MerkleTree.o"
 	@echo "... block_chain/algorithm/MerkleTree.i"
 	@echo "... block_chain/algorithm/MerkleTree.s"
-	@echo "... block_chain/algorithm/RSA.o"
-	@echo "... block_chain/algorithm/RSA.i"
-	@echo "... block_chain/algorithm/RSA.s"
+	@echo "... block_chain/algorithm/cryptography/Cryptography.o"
+	@echo "... block_chain/algorithm/cryptography/Cryptography.i"
+	@echo "... block_chain/algorithm/cryptography/Cryptography.s"
+	@echo "... block_chain/algorithm/cryptography/RSA.o"
+	@echo "... block_chain/algorithm/cryptography/RSA.i"
+	@echo "... block_chain/algorithm/cryptography/RSA.s"
 	@echo "... block_chain/algorithm/hash/Hash.o"
 	@echo "... block_chain/algorithm/hash/Hash.i"
 	@echo "... block_chain/algorithm/hash/Hash.s"

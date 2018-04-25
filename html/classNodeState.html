@@ -79,10 +79,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a132d657fd8413e9f7eb92237cc66b38c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a010b7e7cb6d050a2d78962e6532aea9d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBlock.html">Block</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNodeState.html#a010b7e7cb6d050a2d78962e6532aea9d">add</a> (std::string transaction, std::string public_key)</td></tr>
 <tr class="separator:a010b7e7cb6d050a2d78962e6532aea9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a945134cbe7aedbb7683657953b5fb052"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNodeState.html#a945134cbe7aedbb7683657953b5fb052">add</a> (<a class="el" href="classBlock.html">Block</a> *block, std::string creator)</td></tr>
-<tr class="separator:a945134cbe7aedbb7683657953b5fb052"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2e3a8a54ab5276bf469af2cf2107f2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNodeState.html#ae2e3a8a54ab5276bf469af2cf2107f2b">read_blocks</a> ()</td></tr>
-<tr class="separator:ae2e3a8a54ab5276bf469af2cf2107f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77853200941770178f36adc1f9048fca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNodeState.html#a77853200941770178f36adc1f9048fca">add</a> (<a class="el" href="classBlock.html">Block</a> *block, std::string creator, int crypto)</td></tr>
+<tr class="separator:a77853200941770178f36adc1f9048fca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fc17dd96578e9df670de78ac6bd51eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNodeState.html#a1fc17dd96578e9df670de78ac6bd51eb">read_blocks</a> (int crypto)</td></tr>
+<tr class="separator:a1fc17dd96578e9df670de78ac6bd51eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8fac1372753ec35c9fcee92f71d75d6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNodeState.html#ad8fac1372753ec35c9fcee92f71d75d6">check_transaction</a> (<a class="el" href="classTransaction.html">Transaction</a> *transaction, std::string k)</td></tr>
 <tr class="separator:ad8fac1372753ec35c9fcee92f71d75d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aedd8b10b2ca3f51e5c95b7ebed70464c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNodeState.html#aedd8b10b2ca3f51e5c95b7ebed70464c">show_current_state</a> ()</td></tr>
@@ -201,8 +201,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a945134cbe7aedbb7683657953b5fb052"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a945134cbe7aedbb7683657953b5fb052">&#9670;&nbsp;</a></span>add() <span class="overload">[2/2]</span></h2>
+<a id="a77853200941770178f36adc1f9048fca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77853200941770178f36adc1f9048fca">&#9670;&nbsp;</a></span>add() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -217,7 +217,13 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>creator</em>&#160;</td>
+          <td class="paramname"><em>creator</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>crypto</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -231,6 +237,7 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">block</td><td>the block to add to the block chain </td></tr>
     <tr><td class="paramname">creator</td><td>the creator of the block </td></tr>
+    <tr><td class="paramname">crypto</td><td>The cryptography index to use </td></tr>
   </table>
   </dd>
 </dl>
@@ -339,8 +346,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae2e3a8a54ab5276bf469af2cf2107f2b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2e3a8a54ab5276bf469af2cf2107f2b">&#9670;&nbsp;</a></span>read_blocks()</h2>
+<a id="a1fc17dd96578e9df670de78ac6bd51eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fc17dd96578e9df670de78ac6bd51eb">&#9670;&nbsp;</a></span>read_blocks()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -348,12 +355,19 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void NodeState::read_blocks </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>crypto</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p class="">Read all of the block files and memorize all of it </p>
+<p class="">Read all of the block files and memorize all of it</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">crypto</td><td>The cryptography index to use </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

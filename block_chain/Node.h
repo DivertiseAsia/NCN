@@ -16,7 +16,7 @@
 #include "chain/NodeState.h"
 #include "utils/socket/SocketServer.h"
 #include "utils/socket/Peer.h"
-#include "algorithm/RSA.h"
+#include "algorithm/cryptography/RSA.h"
 #include "kernel/messages/Message.h"
 #include "chain/block/proof/Proof.h"
 #include "TransactionManager.h"
@@ -187,7 +187,7 @@ private:
 	/**
 	 *  The cryptography object to use to encrypt the messages and objects
 	 */
-    RSA_Cryptography rsa;
+    Cryptography* crypto;
 
 	/**
 	 * Counter to see if it received a block before it sends its own
@@ -225,10 +225,15 @@ private:
 	 */
     int load(Block *pBlock);
 
-	/**
-	 *  If the Node runs in a debug mode
-	 */
+    /**
+     *  If the Node runs in a debug mode
+     */
     bool debug;
+
+    /**
+     *  The cryptography object to use
+     */
+    int crypto_id;
 };
 
 #endif //BLOCK_CHAIN_CLIENT_H

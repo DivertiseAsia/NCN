@@ -74,8 +74,9 @@ public:
      *  @param b The block to use for update
      *  @param s The serializer
      *  @param encoding The encoding that has been used to create the Element representation of the object
+     *  @param crypto The cryptography index to use
      */
-    void update_database(Block* b, const Serializer* s, const char* encoding);
+    void update_database(Block* b, const Serializer* s, const char* encoding, int crypto);
 
     /**
      *  Check if the transaction can be applied in a new block

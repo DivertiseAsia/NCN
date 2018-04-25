@@ -29,7 +29,8 @@ CMakeFiles/block_chain.dir/block_chain/Node.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/Node.h
  /home/default/CLionProjects/block_chain/block_chain/TransactionManager.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
- /home/default/CLionProjects/block_chain/block_chain/algorithm/RSA.h
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/Cryptography.h
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/RSA.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash_MD5.h
  /home/default/CLionProjects/block_chain/block_chain/chain/Chain.h
@@ -84,7 +85,8 @@ CMakeFiles/block_chain.dir/block_chain/TransactionManager.cpp.o
 CMakeFiles/block_chain.dir/block_chain/algorithm/MerkleTree.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.cpp
  /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
- /home/default/CLionProjects/block_chain/block_chain/algorithm/RSA.h
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/Cryptography.h
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/RSA.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash_MD5.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
@@ -103,9 +105,14 @@ CMakeFiles/block_chain.dir/block_chain/algorithm/MerkleTree.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Serializer.h
  /home/default/CLionProjects/block_chain/block_chain/utils/serialization/json/JsonCreator.h
  /home/default/CLionProjects/block_chain/block_chain/utils/serialization/json/JsonParser.h
-CMakeFiles/block_chain.dir/block_chain/algorithm/RSA.cpp.o
- /home/default/CLionProjects/block_chain/block_chain/algorithm/RSA.cpp
- /home/default/CLionProjects/block_chain/block_chain/algorithm/RSA.h
+CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/Cryptography.cpp.o
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/Cryptography.cpp
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/Cryptography.h
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/RSA.h
+CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/RSA.cpp.o
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/Cryptography.h
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/RSA.cpp
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/RSA.h
 CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash.cpp
@@ -150,7 +157,8 @@ CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash_MD5.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/utils/serialization/json/JsonParser.h
 CMakeFiles/block_chain.dir/block_chain/chain/Chain.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
- /home/default/CLionProjects/block_chain/block_chain/algorithm/RSA.h
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/Cryptography.h
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/RSA.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash_MD5.h
  /home/default/CLionProjects/block_chain/block_chain/chain/Chain.cpp
@@ -173,7 +181,8 @@ CMakeFiles/block_chain.dir/block_chain/chain/Chain.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/utils/serialization/json/JsonParser.h
 CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
- /home/default/CLionProjects/block_chain/block_chain/algorithm/RSA.h
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/Cryptography.h
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/RSA.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash_MD5.h
  /home/default/CLionProjects/block_chain/block_chain/chain/Chain.h
@@ -199,7 +208,8 @@ CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/utils/socket/Socket.h
 CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
- /home/default/CLionProjects/block_chain/block_chain/algorithm/RSA.h
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/Cryptography.h
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/RSA.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash_MD5.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.cpp
@@ -459,6 +469,7 @@ CMakeFiles/block_chain.dir/block_chain/kernel/components/Component.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Parser.h
 CMakeFiles/block_chain.dir/block_chain/kernel/components/Config.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/Cryptography.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash_MD5.h
  /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
@@ -627,7 +638,8 @@ CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAnswerParser.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/Node.h
  /home/default/CLionProjects/block_chain/block_chain/TransactionManager.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
- /home/default/CLionProjects/block_chain/block_chain/algorithm/RSA.h
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/Cryptography.h
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/RSA.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash_MD5.h
  /home/default/CLionProjects/block_chain/block_chain/chain/Chain.h
@@ -674,7 +686,8 @@ CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAskParser.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/Node.h
  /home/default/CLionProjects/block_chain/block_chain/TransactionManager.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
- /home/default/CLionProjects/block_chain/block_chain/algorithm/RSA.h
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/Cryptography.h
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/RSA.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash_MD5.h
  /home/default/CLionProjects/block_chain/block_chain/chain/Chain.h
@@ -721,7 +734,8 @@ CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockParser.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/Node.h
  /home/default/CLionProjects/block_chain/block_chain/TransactionManager.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
- /home/default/CLionProjects/block_chain/block_chain/algorithm/RSA.h
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/Cryptography.h
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/RSA.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash_MD5.h
  /home/default/CLionProjects/block_chain/block_chain/chain/Chain.h
@@ -767,7 +781,8 @@ CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAnswerParser.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/Node.h
  /home/default/CLionProjects/block_chain/block_chain/TransactionManager.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
- /home/default/CLionProjects/block_chain/block_chain/algorithm/RSA.h
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/Cryptography.h
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/RSA.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash_MD5.h
  /home/default/CLionProjects/block_chain/block_chain/chain/Chain.h
@@ -814,7 +829,8 @@ CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAskParser.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/Node.h
  /home/default/CLionProjects/block_chain/block_chain/TransactionManager.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
- /home/default/CLionProjects/block_chain/block_chain/algorithm/RSA.h
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/Cryptography.h
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/RSA.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash_MD5.h
  /home/default/CLionProjects/block_chain/block_chain/chain/Chain.h
@@ -861,7 +877,8 @@ CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignInParser.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/Node.h
  /home/default/CLionProjects/block_chain/block_chain/TransactionManager.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
- /home/default/CLionProjects/block_chain/block_chain/algorithm/RSA.h
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/Cryptography.h
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/RSA.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash_MD5.h
  /home/default/CLionProjects/block_chain/block_chain/chain/Chain.h
@@ -907,7 +924,8 @@ CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignOutParser.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/Node.h
  /home/default/CLionProjects/block_chain/block_chain/TransactionManager.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
- /home/default/CLionProjects/block_chain/block_chain/algorithm/RSA.h
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/Cryptography.h
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/RSA.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash_MD5.h
  /home/default/CLionProjects/block_chain/block_chain/chain/Chain.h
@@ -953,7 +971,8 @@ CMakeFiles/block_chain.dir/block_chain/kernel/parsers/TransactionParser.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/Node.h
  /home/default/CLionProjects/block_chain/block_chain/TransactionManager.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
- /home/default/CLionProjects/block_chain/block_chain/algorithm/RSA.h
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/Cryptography.h
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/RSA.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash_MD5.h
  /home/default/CLionProjects/block_chain/block_chain/chain/Chain.h
@@ -1095,7 +1114,8 @@ CMakeFiles/block_chain.dir/main.cpp.o
  /home/default/CLionProjects/block_chain/block_chain/Node.h
  /home/default/CLionProjects/block_chain/block_chain/TransactionManager.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
- /home/default/CLionProjects/block_chain/block_chain/algorithm/RSA.h
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/Cryptography.h
+ /home/default/CLionProjects/block_chain/block_chain/algorithm/cryptography/RSA.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash.h
  /home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash_MD5.h
  /home/default/CLionProjects/block_chain/block_chain/chain/Chain.h

@@ -84,8 +84,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a46a71e3afc2a06ecde4604d418946c1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ee2e1efbfe8d2896b0ac836fb750362"><td class="memItemLeft" align="right" valign="top">std::pair&lt; int, <a class="el" href="classChain.html">Chain</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChain.html#a5ee2e1efbfe8d2896b0ac836fb750362">top_fingerprint</a> ()</td></tr>
 <tr class="separator:a5ee2e1efbfe8d2896b0ac836fb750362"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19dda9a394df1d45b014c649eb77cb64"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChain.html#a19dda9a394df1d45b014c649eb77cb64">update_database</a> (<a class="el" href="classBlock.html">Block</a> *b, const <a class="el" href="classSerializer.html">Serializer</a> *s, const char *encoding)</td></tr>
-<tr class="separator:a19dda9a394df1d45b014c649eb77cb64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e66bfeac4382a2b86bac14fb005bb80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChain.html#a3e66bfeac4382a2b86bac14fb005bb80">update_database</a> (<a class="el" href="classBlock.html">Block</a> *b, const <a class="el" href="classSerializer.html">Serializer</a> *s, const char *encoding, int crypto)</td></tr>
+<tr class="separator:a3e66bfeac4382a2b86bac14fb005bb80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5725ffa89b1f0333536238951d9acd91"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChain.html#a5725ffa89b1f0333536238951d9acd91">check_transaction</a> (<a class="el" href="classTransaction.html">Transaction</a> *transaction, std::string k)</td></tr>
 <tr class="separator:a5725ffa89b1f0333536238951d9acd91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad06a7e312123831339b614a74ff5c9e0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChain.html#ad06a7e312123831339b614a74ff5c9e0">count</a> () const</td></tr>
@@ -341,8 +341,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>NodeState</b></td></
 
 </div>
 </div>
-<a id="a19dda9a394df1d45b014c649eb77cb64"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19dda9a394df1d45b014c649eb77cb64">&#9670;&nbsp;</a></span>update_database()</h2>
+<a id="a3e66bfeac4382a2b86bac14fb005bb80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e66bfeac4382a2b86bac14fb005bb80">&#9670;&nbsp;</a></span>update_database()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -363,7 +363,13 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>NodeState</b></td></
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>encoding</em>&#160;</td>
+          <td class="paramname"><em>encoding</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>crypto</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -378,6 +384,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>NodeState</b></td></
     <tr><td class="paramname">b</td><td>The block to use for update </td></tr>
     <tr><td class="paramname">s</td><td>The serializer </td></tr>
     <tr><td class="paramname">encoding</td><td>The encoding that has been used to create the <a class="el" href="classElement.html">Element</a> representation of the object </td></tr>
+    <tr><td class="paramname">crypto</td><td>The cryptography index to use </td></tr>
   </table>
   </dd>
 </dl>

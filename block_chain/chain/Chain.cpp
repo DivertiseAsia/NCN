@@ -3,7 +3,7 @@
 //
 
 #include "Chain.h"
-#include "../algorithm/RSA.h"
+#include "../algorithm/cryptography/RSA.h"
 
 Chain::Chain(Block* b, Chain* c, std::string cr): database(c->database), fingerprint(b->fingerprint), block(b), creator(std::move(cr)) {
     b->data->update_database(&database);
@@ -53,13 +53,13 @@ std::pair<int, Chain*> Chain::top_fingerprint(){
     }
 }
 
-void Chain::update_database(Block* block, const Serializer* serializer, const char* encoding) {
+void Chain::update_database(Block* block, const Serializer* serializer, const char* encoding, int c) {
 
     for(auto& pair : block->transactions){
         std::string key(Encoding::fromHexa(pair.second));
-        RSA_Cryptography crypto(key);
+        Cryptography* crypto(Cryptography::generate(c, key));
         std::string t(Encoding::fromHexa(pair.first));
-        Transaction* transaction = serializer->unserializeTransaction(crypto.decrypt(t, t.size()), encoding);
+        Transaction* transaction = serializer->unserializeTransaction(crypto->decrypt(t, t.size()), encoding);
         auto it = database.rows.find(pair.second);
         Row* row;
         if(it == database.rows.end()) {
@@ -80,6 +80,7 @@ void Chain::update_database(Block* block, const Serializer* serializer, const ch
                 updated_row = iterator->second;
             transaction->apply_reverse(updated_row);
         }
+        delete crypto;
     }
 }
 

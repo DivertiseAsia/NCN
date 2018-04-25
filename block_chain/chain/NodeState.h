@@ -24,7 +24,7 @@
 #include "state/Database.h"
 #include "Chain.h"
 #include "../algorithm/hash/Hash_MD5.h"
-#include "../algorithm/RSA.h"
+#include "../algorithm/cryptography/RSA.h"
 #include "../utils/serialization/Serializer.h"
 #include "../utils/socket/Peer.h"
 
@@ -86,13 +86,16 @@ public:
      *
      *  @param block the block to add to the block chain
      *  @param creator the creator of the block
+     *  @param crypto The cryptography index to use
      */
-    void add(Block* block, std::string creator);
+    void add(Block* block, std::string creator, int crypto);
 
     /**
      *  Read all of the block files and memorize all of it
+     *
+     *  @param crypto The cryptography index to use
      */
-    void read_blocks();
+    void read_blocks(int crypto);
 
     /**
      *  Check if a transaction is valid or not
@@ -107,7 +110,7 @@ public:
      *  Print the state of the top chain
      */
     void show_current_state();
-    
+
     /**
      *  Try to find a given hash in the database
      *

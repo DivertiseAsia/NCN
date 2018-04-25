@@ -72,9 +72,10 @@ public:
      *
      *  @param s The serializer
      *  @param e The encoding that has been used to create the Element representation of the object
+     *  @param crypto The cryptography index to use
      *  @return The computed Hash of the array
      */
-    std::string compute_fingerprint(const Serializer* s, const char* e) const;
+    std::string compute_fingerprint(const Serializer* s, const char* e, int crypto) const;
 
     /**
      *  Check if the given fingerprint is the same than the newly computed fingerprint
@@ -83,17 +84,19 @@ public:
      *
      *  @param s The serializer
      *  @param e The encoding that has been used to create the Element representation of the object
+     *  @param crypto The cryptography index to use
      *  @return true if both fingerprints are the same, false otherwise
      */
-    bool checkFingerPrint(const Serializer* s, const char* e) const;
+    bool checkFingerPrint(const Serializer* s, const char* e, int crypto) const;
 
     /**
      *  Update the block's fingerprint
      *
      *  @param s The serializer
      *  @param e The encoding that has been used to create the Element representation of the object
+     *  @param crypto The cryptography index to use
      */
-    void update_fingerprint(const Serializer* s, const char* e);
+    void update_fingerprint(const Serializer* s, const char* e, int crypto);
 protected:
     void fromElement(ElementObject* e, const Serializer* s, const char* encoding) override;
 private:
@@ -136,8 +139,9 @@ private:
      *  @param end The last index of the array
      *  @param s The serializer
      *  @param e The encoding that has been used to create the Element representation of the object
+     *  @param crypto The cryptography index to use
      *  @return The computed Hash of the array
      */
-    std::string compute_hash(int begin, int end, const Serializer* s, const char* e) const;
+    std::string compute_hash(int begin, int end, const Serializer* s, const char* e, int crypto) const;
 };
 #endif //BLOCK_CHAIN_BLOCK_H

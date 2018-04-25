@@ -11,7 +11,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/block_chain.dir/block_chain/utils/socket/Peer.cpp.o"
   "CMakeFiles/block_chain.dir/block_chain/utils/socket/Socket.cpp.o"
   "CMakeFiles/block_chain.dir/block_chain/utils/socket/SocketServer.cpp.o"
-  "CMakeFiles/block_chain.dir/block_chain/algorithm/RSA.cpp.o"
+  "CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/RSA.cpp.o"
   "CMakeFiles/block_chain.dir/block_chain/utils/serialization/Element.cpp.o"
   "CMakeFiles/block_chain.dir/block_chain/utils/serialization/ElementCreator.cpp.o"
   "CMakeFiles/block_chain.dir/block_chain/utils/serialization/json/JsonCreator.cpp.o"
@@ -58,6 +58,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/block_chain.dir/block_chain/kernel/components/Config.cpp.o"
   "CMakeFiles/block_chain.dir/block_chain/Framework.cpp.o"
   "CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash.cpp.o"
+  "CMakeFiles/block_chain.dir/block_chain/algorithm/cryptography/Cryptography.cpp.o"
   "block_chain.pdb"
   "block_chain"
 )

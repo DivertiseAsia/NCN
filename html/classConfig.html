@@ -74,8 +74,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4cf9c47b94f4ef8912691db9653322ca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfig.html#a4cf9c47b94f4ef8912691db9653322ca">Config</a> (const char *filename, const <a class="el" href="classSerializer.html">Serializer</a> *s, int p, int h, <a class="el" href="classReward.html">Reward</a> *r)</td></tr>
-<tr class="separator:a4cf9c47b94f4ef8912691db9653322ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3073149c7bcde06f6fd1e758a102afc9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfig.html#a3073149c7bcde06f6fd1e758a102afc9">Config</a> (const char *filename, const <a class="el" href="classSerializer.html">Serializer</a> *s, <a class="el" href="classReward.html">Reward</a> *r, int p=<a class="el" href="classProof.html#a457d231986439ee6bcc945daacfc28fc">Proof::WORK</a>, int h=<a class="el" href="classHash.html#aa394d3eb7121cee0b285606664257209">Hash::HASH_MD5</a>, int c=<a class="el" href="classCryptography.html#a7b1517afae62f8d7a89b988814a440da">Cryptography::CRYPTOGRAPHY_RSA</a>)</td></tr>
+<tr class="separator:a3073149c7bcde06f6fd1e758a102afc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23f39330cd594b8855d371368adc80e4"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfig.html#a23f39330cd594b8855d371368adc80e4">get_encoding</a> () const</td></tr>
 <tr class="separator:a23f39330cd594b8855d371368adc80e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00399f1751e2dfa032d99208bf925ab0"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="classSerializer.html">Serializer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfig.html#a00399f1751e2dfa032d99208bf925ab0">get_serializer</a> () const</td></tr>
@@ -86,6 +86,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3467e8914f0a0730277cf4732443116d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a516e5e6665ad519ab23ac4c57fb99cb6"><td class="memItemLeft" align="right" valign="top">virtual const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfig.html#a516e5e6665ad519ab23ac4c57fb99cb6">get_port</a> () const</td></tr>
 <tr class="separator:a516e5e6665ad519ab23ac4c57fb99cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3370fb7b06195716c99c3a8bc96a304b"><td class="memItemLeft" align="right" valign="top">virtual const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfig.html#a3370fb7b06195716c99c3a8bc96a304b">get_crypto</a> () const</td></tr>
+<tr class="separator:a3370fb7b06195716c99c3a8bc96a304b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc60cc21dfa15f3642f8ac1f45403450"><td class="memItemLeft" align="right" valign="top">virtual const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfig.html#afc60cc21dfa15f3642f8ac1f45403450">is_debug</a> () const</td></tr>
 <tr class="separator:afc60cc21dfa15f3642f8ac1f45403450"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -93,6 +95,8 @@ Public Member Functions</h2></td></tr>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a9b99e069f6e78fcb906d5effbb600e97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfig.html#a9b99e069f6e78fcb906d5effbb600e97">port</a></td></tr>
 <tr class="separator:a9b99e069f6e78fcb906d5effbb600e97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d07732579b5031b4af612ff1c5ddc28"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfig.html#a6d07732579b5031b4af612ff1c5ddc28">crypto</a></td></tr>
+<tr class="separator:a6d07732579b5031b4af612ff1c5ddc28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9391a8a86ed88a6fefd35ec89c10e861"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfig.html#a9391a8a86ed88a6fefd35ec89c10e861">encoding</a></td></tr>
 <tr class="separator:a9391a8a86ed88a6fefd35ec89c10e861"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33047aa9c7f0aceab68b2d327820039f"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classSerializer.html">Serializer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfig.html#a33047aa9c7f0aceab68b2d327820039f">serializer</a></td></tr>
@@ -113,8 +117,8 @@ Protected Attributes</h2></td></tr>
 <dl class="section author"><dt>Author</dt><dd>Mathieu Lochet </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>1 </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a4cf9c47b94f4ef8912691db9653322ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4cf9c47b94f4ef8912691db9653322ca">&#9670;&nbsp;</a></span>Config()</h2>
+<a id="a3073149c7bcde06f6fd1e758a102afc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3073149c7bcde06f6fd1e758a102afc9">&#9670;&nbsp;</a></span>Config()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -134,20 +138,26 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>p</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>h</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="classReward.html">Reward</a> *&#160;</td>
-          <td class="paramname"><em>r</em>&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>p</em> = <code><a class="el" href="classProof.html#a457d231986439ee6bcc945daacfc28fc">Proof::WORK</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>h</em> = <code><a class="el" href="classHash.html#aa394d3eb7121cee0b285606664257209">Hash::HASH_MD5</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>c</em> = <code><a class="el" href="classCryptography.html#a7b1517afae62f8d7a89b988814a440da">Cryptography::CRYPTOGRAPHY_RSA</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -163,6 +173,7 @@ Protected Attributes</h2></td></tr>
     <tr><td class="paramname">s</td><td>The serializer to use </td></tr>
     <tr><td class="paramname">p</td><td>The proof id </td></tr>
     <tr><td class="paramname">h</td><td>The hash id </td></tr>
+    <tr><td class="paramname">c</td><td>Thge crypto id </td></tr>
     <tr><td class="paramname">r</td><td>The reward object </td></tr>
   </table>
   </dd>
@@ -171,6 +182,33 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3370fb7b06195716c99c3a8bc96a304b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3370fb7b06195716c99c3a8bc96a304b">&#9670;&nbsp;</a></span>get_crypto()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int Config::get_crypto </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p class="">Get the crypto value</p>
+<dl class="section return"><dt>Returns</dt><dd>The cryptography id to use </dd></dl>
+
+</div>
+</div>
 <a id="a23f39330cd594b8855d371368adc80e4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a23f39330cd594b8855d371368adc80e4">&#9670;&nbsp;</a></span>get_encoding()</h2>
 
@@ -334,6 +372,29 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a6d07732579b5031b4af612ff1c5ddc28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d07732579b5031b4af612ff1c5ddc28">&#9670;&nbsp;</a></span>crypto</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Config::crypto</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p class="">The crypto id </p>
+
+</div>
+</div>
 <a id="a8ecbe763ad856693ff85cba5182e1f2e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8ecbe763ad856693ff85cba5182e1f2e">&#9670;&nbsp;</a></span>debug</h2>
 

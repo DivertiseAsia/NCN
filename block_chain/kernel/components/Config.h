@@ -8,6 +8,7 @@
 
 #include "../../utils/serialization/Serializer.h"
 #include "../../chain/block/proof/Proof.h"
+#include "../../algorithm/cryptography/Cryptography.h"
 
 /**
  *  @class Config "block_chain/kernel/components/Config.h"
@@ -29,9 +30,10 @@ public:
      *  @param s The serializer to use
      *  @param p The proof id
      *  @param h The hash id
+     *  @param c Thge crypto id
      *  @param r The reward object
      */
-    Config(const char* filename, const Serializer* s, int p, int h, Reward* r);
+    Config(const char* filename, const Serializer* s, Reward* r, int p = Proof::WORK, int h = Hash::HASH_MD5, int c = Cryptography::CRYPTOGRAPHY_RSA);
 
     /**
      *  Get the encoding value
@@ -69,6 +71,13 @@ public:
     virtual const int get_port() const;
 
     /**
+     *  Get the crypto value
+     *
+     *  @return The cryptography id to use
+     */
+    virtual const int get_crypto() const;
+
+    /**
      *  Is the program in debug mode
      *
      *  @return True if the program runs in debug mode
@@ -80,6 +89,11 @@ protected:
      *  The port the server needs to listen to
      */
     int port;
+
+    /**
+     *  The crypto id
+     */
+    int crypto;
 
     /**
      *  The encoding for serialization

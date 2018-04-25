@@ -20,7 +20,7 @@ void BlockAnswerParser::operator()(Message* m, Node* node) const {
             //node->block_chain.add(a);
 
             std::string serialized_block(node->serializer->serialize(a, node->encoding.c_str()));
-            MerkleTree tree(a, node->serializer, node->encoding.c_str());
+            MerkleTree tree(a, node->serializer, node->encoding.c_str(), node->crypto_id);
             BlockMessage answer(serialized_block, message->key, &tree);
             (*parser)(message, node);
         }

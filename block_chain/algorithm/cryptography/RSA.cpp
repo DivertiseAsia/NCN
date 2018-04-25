@@ -12,9 +12,8 @@ RSA_Cryptography::RSA_Cryptography()
 {
     size = 4096;
 }
-#include <iostream>
-#include <openssl/engine.h>
-RSA_Cryptography::RSA_Cryptography(std::string key)
+
+void RSA_Cryptography::set_public_key(std::string key)
 {
     size = 4096;
     BIO* bo = BIO_new_mem_buf( (void*) key.c_str(), (int) key.size());
@@ -98,6 +97,7 @@ std::string RSA_Cryptography::encrypt(std::string message) {
     str.assign((const char*)encrypt, (unsigned long)encrypt_len);
     return str;
 }
+
 std::string RSA_Cryptography::decrypt(std::string message, int size) {
     auto decrypt = (unsigned char*)malloc((size_t) size);
     if(RSA_public_decrypt((int)message.size(), (const unsigned char*) message.c_str(), decrypt, rsa, RSA_PKCS1_PADDING) == -1) {
@@ -130,8 +130,4 @@ void public_action(BIO* bio, RSA* rsa) {
 
 std::string RSA_Cryptography::getPublicKey(){
     return getKey(public_action, rsa);
-}
-
-std::string RSA_Cryptography::getPrivateKey(){
-    return getKey(private_action, rsa);
 }
