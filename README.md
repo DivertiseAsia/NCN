@@ -44,17 +44,17 @@ Node node(config);
 The node is the peer itself. You only have to create it and it will run.
 ```cpp
 Config config("configuration file path", serializer, reward, Proof::WORK, Hash::HASH_MD5, Cryptography::CRYPTOGRAPHY_RSA);
-``` <br />
+```
 The file itself is a json file. <br/>
 
 <h6>Example:</h6>
-```json
+```cpp
 {
   "port": 3423,
   "encoding": "json",
   "debug": true
 }
-```<br />
+```
 the parameters serializer, proof, hash, cryptography and reward are explained later.
 
 ### Serializer <a name="section_serializer"></a>
@@ -63,11 +63,11 @@ To use this class, you need to register your own transactions with a lambda expr
 <h5>Serializer::unserializeTransaction</h5>
 ```cpp
 void add_transaction(int id, std::function<Transaction*()> transaction);
-```<br />
+```
 <h6>Example:</h6>
 ```cpp
 serial->add_transaction(money->get_type(), []() -> Transaction*{return new MoneyTransaction;});
-```<br />
+```
 It can also be replaced by the [Framework helper](#section_framework).
 ## Main classes to implement <a name="section_create"></a>
 In addition to these main classes, you need to implement some interfaces.
