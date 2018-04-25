@@ -2,31 +2,22 @@
 ## Table of content
 1. [Overview](#section_overview)
 2. [Installation](#section_installation)
-3. [How to create a new block-chain](#section_create)
+3. [Basic framework utilization](#section_basis)
     1. [Node](#section_node)
     2. [Config](#section_config)
-    3. [Transaction](#section_transaction)
-        1. [Useful methods](#sub_section_useful)
-        2. [Serialization methods](#sub_section_serialization)
-        3. [UI methods](#sub_section_ui)
-        4. [Database methods](#sub_section_database)
-    4. [Reward](#section_reward)
-    5. [Serializer](#section_serializer)
-    6. [Proof](#section_proof)
-        1. [New proof](#sub_section_newproof)
-        2. [Feed the framework](#sub_section_feedframework)
-        3. [New metadata](#sub_section_newmetadata)
-    7. [Hash](#section_hash)
-        1. [New hash](#sub_section_newhash)
-        2. [Feed the framework](#sub_section_feedframeworkhash)
-    8. [Cryptography](#section_cryptography)
-        1. [New cryptography](#sub_section_newcrypto)
-        2. [Feed the framework](#sub_section_feedframeworkcrypto)
-    9. [Database](#section_database)
-4. [Helpers](#section_helpers)
+    3. [Serializer](#section_serializer)
+4. [Main classes to implement](#section_create)
+    1. [Transaction](#section_transaction)
+    2. [Reward](#section_reward)
+    3. [Database](#section_database)
+5. [Advanced utilization](#section_advanced)
+    1. [Proof](#section_proof)
+    2. [Hash](#section_hash)
+    3. [Cryptography](#section_cryptography)
+6. [Helpers](#section_helpers)
     1. [TransactionManager](#section_transactionManager)
     2. [Framework](#section_framework)
-5. [TODO-List](#section_todo)
+7. [TODO-List](#section_todo)
     1. [Proof](#sub_section_proof)
     2. [Header files](#sub_section_header)
 
@@ -34,7 +25,7 @@
 
 
 ## Overview <a name="section_overview"></a>
-This project is a C++ Framework built to allow easy and fast development of any kind of block-chain. <br/>
+This project is a C++ framework built to allow easy and fast development of any kind of block-chain. <br/>
 The idea is to limit the development to transactions and data representation only. No need to implement anything else. <br/>
 Of course, as a framework, it provides a big flexibility, therefore, it is possible to write advanced block-chain by configuring as many things as you want. <br/>
 > Note that everything can change to allow more flexibility.
@@ -42,7 +33,7 @@ Of course, as a framework, it provides a big flexibility, therefore, it is possi
 ## Installation <a name="section_installation"></a>
 To install the framework, you just have to copy/paste the folder ```block_chain``` in your project's root folder
 
-## How to create a new block-chain <a name="section_create"></a>
+## Basic framework utilization <a name="section_basis"></a>
 To create your own block-chain program, you just have to run the main objects provided by the framework.
 ### Node <a name="section_node"></a>
 The node is the peer itself. You only have to create it and it will run.
@@ -53,7 +44,7 @@ Node node(config);
 The node is the peer itself. You only have to create it and it will run.
 ```cpp
 Config config("configuration file path", serializer, reward, Proof::WORK, Hash::HASH_MD5, Cryptography::CRYPTOGRAPHY_RSA);
-```
+``` <br />
 The file itself is a json file. <br/>
 
 <h6>Example:</h6>
@@ -63,8 +54,23 @@ The file itself is a json file. <br/>
   "encoding": "json",
   "debug": true
 }
-```
+```<br />
 the parameters serializer, proof, hash, cryptography and reward are explained later.
+
+### Serializer <a name="section_serializer"></a>
+The serialization class is used to transform objects into string using Elements and strings into Objects using Elements.
+To use this class, you need to register your own transactions with a lambda expression
+<h5>Serializer::unserializeTransaction</h5>
+```cpp
+void add_transaction(int id, std::function<Transaction*()> transaction);
+```<br />
+<h6>Example:</h6>
+```cpp
+serial->add_transaction(money->get_type(), []() -> Transaction*{return new MoneyTransaction;});
+```<br />
+It can also be replaced by the [Framework helper](#section_framework).
+## Main classes to implement <a name="section_create"></a>
+In addition to these main classes, you need to implement some interfaces.
 ### Transaction <a name="section_transaction"></a>
 Transactions are the most important thing to implement. <br/>
 ```cpp
@@ -129,7 +135,7 @@ void MoneyTransaction::fromElement(ElementObject* e, const Serializer*, const ch
     e->getItem("target", &target);
 }
 ```
-### UI methods <a name="sub_section_ui"></a>
+<h4>UI methods <a name="sub_section_ui"></a></h4>
 <h5>Transaction::description</h5>
 ```cpp
 std::string description() const override;
@@ -224,6 +230,52 @@ bool MoneyTransaction::validate(Row *row) const {
 ### Reward <a name="section_reward"></a>
 The reward is a very particular kind of Transaction.
 You only have to override the methods ```Reward::clone``` and ```Reward::createRow```.
+
+### Database <a name="section_database"></a>
+The database is basically a map of Row. Rows are pure abstract classes that needs to be implemented, because their structure depends of your implementation <br/>
+There are 3 methods that must be implemented.
+<h5>Row::clone</h5>
+```cpp
+virtual Row* clone() const = 0;
+```
+Like Transactions, you need to duplicate the Row in order to accept differents states on differents blocks in the block chain
+<h6>Example:</h6>
+```cpp
+Row* CustomRow::clone() const{
+    auto r = new CustomRow;
+    r->money = money;
+    r->status = status;
+    r->messages = messages;
+    return r;
+}
+```
+<h5>Row::to_string</h5>
+```cpp
+virtual std::string to_string() const = 0;
+```
+Like Transactions, you need a visual representation of the database
+<h6>Example:</h6>
+```cpp
+std::string CustomRow::to_string() const {
+    std::string str;
+    str += "[" + status + "] (value: " + std::to_string(money) + ")\n";
+    for(auto& a : messages)
+        str += " - " + a + "\n";
+    return str;
+}
+```
+<h5>Row::reward</h5>
+```cpp
+virtual void reward() = 0;
+```
+The reward method is called to reward the user who validated the block
+<h6>Example:</h6>
+```cpp
+void CustomRow::reward() {
+    money += 1;
+}
+```
+## Advanced utilization <a name="section_advanced"></a>
 ### Proof <a name="section_proof"></a>
 Proofs are the basis of block chain validation. Some proofs are implemented, but not all of them. Therefore, you can create your own proof and send it to the framework.
 <h4>New proof <a name="sub_section_newproof"></a></h4>
@@ -411,50 +463,6 @@ The id needs to be passed to the Config object. The second parameter is a lambda
 ```cpp
 Cryptography::add_cryptography(Cryptography::CRYPTOGRAPHY_RSA, []() -> Hash*{return new RSA_Cryptography;});
 ```
-### Database <a name="section_database"></a>
-The database is basically a map of Row. Rows are pure abstract classes that needs to be implemented, because their structure depends of your implementation <br/>
-There are 3 methods that must be implemented.
-<h5>Row::clone</h5>
-```cpp
-virtual Row* clone() const = 0;
-```
-Like Transactions, you need to duplicate the Row in order to accept differents states on differents blocks in the block chain
-<h6>Example:</h6>
-```cpp
-Row* CustomRow::clone() const{
-    auto r = new CustomRow;
-    r->money = money;
-    r->status = status;
-    r->messages = messages;
-    return r;
-}
-```
-<h5>Row::to_string</h5>
-```cpp
-virtual std::string to_string() const = 0;
-```
-Like Transactions, you need a visual representation of the database
-<h6>Example:</h6>
-```cpp
-std::string CustomRow::to_string() const {
-    std::string str;
-    str += "[" + status + "] (value: " + std::to_string(money) + ")\n";
-    for(auto& a : messages)
-        str += " - " + a + "\n";
-    return str;
-}
-```
-<h5>Row::reward</h5>
-```cpp
-virtual void reward() = 0;
-```
-The reward method is called to reward the user who validated the block
-<h6>Example:</h6>
-```cpp
-void CustomRow::reward() {
-    money += 1;
-}
-```
 ## Helpers  <a name="section_helpers"></a>
 ### TransactionManager <a name="section_transactionManager"></a>
 The transaction manager is a built in class from the framework. You only need to give it a list of transactions, and then to give it to the Node object.
@@ -468,18 +476,6 @@ node.start(manager);
 The provided TransactionManager class allows you to easily run every type of transactions without implementing anything. <br />
 However, this class is a helper, you can easily manage the transactions creation by yourself without this class. <br />
 If you choose this solution, you only have to use the Node::request_transaction method in order to process your transactions.<br />
-It can also be replaced by the [Framework helper](#section_framework).
-### Serializer <a name="section_serializer"></a>
-The serialization class is used to transform Objects into string using Elements and strings into Objects using Elements.
-To use this class, you need to register your own transactions with a lambda expression
-<h5>Serializer::unserializeTransaction</h5>
-```cpp
-void add_transaction(int id, std::function<Transaction*()> transaction);
-```
-<h6>Example:</h6>
-```cpp
-serial->add_transaction(money->get_type(), []() -> Transaction*{return new MoneyTransaction;});
-```
 It can also be replaced by the [Framework helper](#section_framework).
 ### Framework <a name="section_framework"></a>
 In order to make the creation of the different tools easier, the framework provides an important (but not required) helper class, Framework. <br />

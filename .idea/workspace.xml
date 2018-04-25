@@ -12,128 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b337953f-6d17-4d79-bf7d-640c27a86937" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/block_chain/algorithm/cryptography/Cryptography.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/block_chain/algorithm/cryptography/Cryptography.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/Node.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/Node.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/Node.h" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/Node.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/algorithm/MerkleTree.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/algorithm/MerkleTree.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/algorithm/MerkleTree.h" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/algorithm/MerkleTree.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/algorithm/RSA.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/algorithm/cryptography/RSA.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/algorithm/RSA.h" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/algorithm/cryptography/RSA.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/chain/Chain.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/chain/Chain.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/chain/Chain.h" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/chain/Chain.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/chain/NodeState.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/chain/NodeState.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/chain/NodeState.h" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/chain/NodeState.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/chain/block/Block.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/chain/block/Block.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/chain/block/Block.h" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/chain/block/Block.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/kernel/components/Config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/kernel/components/Config.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/kernel/components/Config.h" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/kernel/components/Config.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/kernel/parsers/BlockAnswerParser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/kernel/parsers/BlockAnswerParser.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/kernel/parsers/BlockParser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/kernel/parsers/BlockParser.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/kernel/parsers/PeersAnswerParser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/kernel/parsers/PeersAnswerParser.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/kernel/parsers/TransactionParser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/kernel/parsers/TransactionParser.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/Node.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/Node.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/algorithm/MerkleTree.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/algorithm/MerkleTree.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/algorithm/RSA.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash_MD5.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash_MD5.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/Chain.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/Chain.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/components/Config.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/components/Config.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAnswerParser.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAnswerParser.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAskParser.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockAskParser.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockParser.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/BlockParser.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAnswerParser.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAnswerParser.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAskParser.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/PeersAskParser.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignInParser.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignInParser.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignOutParser.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/SignOutParser.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/TransactionParser.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/kernel/parsers/TransactionParser.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/block_chain" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/block_chain" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/block_chain.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/block_chain.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/Block_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/Block_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/Chain_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/Chain_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/Config_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/Config_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/MerkleTree_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/MerkleTree_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/NodeState_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/NodeState_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/Node_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/Node_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/PeersAnswerParser_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/PeersAnswerParser_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/RSA_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/RSA_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/TransactionParser_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/TransactionParser_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/annotated.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/annotated.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/classBlock-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classBlock-members.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/classBlock.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classBlock.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/classChain-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classChain-members.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/classChain.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classChain.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/classConfig-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classConfig-members.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/classConfig.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classConfig.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/classMerkleTree-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classMerkleTree-members.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/classMerkleTree.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classMerkleTree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/classNodeState-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classNodeState-members.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/classNodeState.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classNodeState.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/classRSA__Cryptography-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classRSA__Cryptography-members.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/classRSA__Cryptography.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classRSA__Cryptography.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/classes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/files.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/files.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/functions_a.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/functions_a.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/functions_b.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/functions_b.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/functions_c.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/functions_c.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/functions_d.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/functions_d.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/functions_e.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/functions_e.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/functions_func_a.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/functions_func_a.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/functions_func_b.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/functions_func_b.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/functions_func_c.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/functions_func_c.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/functions_func_d.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/functions_func_d.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/functions_func_e.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/functions_func_e.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/functions_func_g.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/functions_func_g.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/functions_func_r.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/functions_func_r.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/functions_func_s.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/functions_func_s.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/functions_func_u.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/functions_func_u.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/functions_g.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/functions_g.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/functions_r.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/functions_r.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/functions_s.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/functions_s.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/functions_u.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/functions_u.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/functions_vars.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/functions_vars.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/hierarchy.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/hierarchy.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_10.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_10.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_12.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_12.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_4.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_5.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_7.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_7.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_b.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_b.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_f.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_f.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/classes_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/classes_2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/functions_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/functions_10.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_10.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/functions_12.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_12.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/functions_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/functions_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/functions_4.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/functions_5.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/functions_7.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_7.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/functions_b.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_b.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/functions_f.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_f.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/variables_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/variables_2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -145,108 +26,83 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.3968363">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="Cryptography.h" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/block_chain/algorithm/cryptography/Cryptography.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-9">
-                  <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-                  <folding>
-                    <element signature="e#114#131#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Cryptography.cpp" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/block_chain/algorithm/cryptography/Cryptography.cpp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="105">
-                  <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-                  <folding>
-                    <element signature="e#43#68#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/main.cpp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="433">
-                  <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
-                  <folding>
-                    <element signature="e#0#19#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Config.h" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/block_chain/kernel/components/Config.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="591">
-                  <caret line="46" column="6" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
-                  <folding>
-                    <element signature="e#103#152#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Config.cpp" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/block_chain/kernel/components/Config.cpp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="63">
-                  <caret line="18" column="67" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="RSA.cpp" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/block_chain/algorithm/cryptography/RSA.cpp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="191">
-                  <caret line="108" selection-start-line="108" selection-end-line="121" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/README.md">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="289">
-                  <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="warnings.txt" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/warnings.txt">
-              <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
-          <file leaf-file-name="RSA.h" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/block_chain/algorithm/cryptography/RSA.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="133">
-                  <caret line="12" column="64" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
-                  <folding>
-                    <element signature="e#52#69#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Cryptography.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/block_chain/algorithm/cryptography/Cryptography.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-9">
+              <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+              <folding>
+                <element signature="e#114#131#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Cryptography.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/block_chain/algorithm/cryptography/Cryptography.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+              <folding>
+                <element signature="e#43#68#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="69" column="9" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="433">
+              <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Config.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/block_chain/kernel/components/Config.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="591">
+              <caret line="46" column="6" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
+              <folding>
+                <element signature="e#103#152#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Config.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/block_chain/kernel/components/Config.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="18" column="67" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RSA.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/block_chain/algorithm/cryptography/RSA.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="191">
+              <caret line="108" selection-start-line="108" selection-end-line="121" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -340,10 +196,10 @@
         <option value="$PROJECT_DIR$/block_chain/algorithm/cryptography/Cryptography.cpp" />
         <option value="$PROJECT_DIR$/block_chain/algorithm/cryptography/Cryptography.h" />
         <option value="$PROJECT_DIR$/block_chain/algorithm/cryptography/RSA.h" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/block_chain/kernel/components/Config.h" />
         <option value="$PROJECT_DIR$/block_chain/kernel/components/Config.cpp" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -491,12 +347,12 @@
       <workItem from="1524467047533" duration="2000" />
       <workItem from="1524551160780" duration="10528000" />
       <workItem from="1524562026131" duration="5975000" />
-      <workItem from="1524625878628" duration="17074000" />
+      <workItem from="1524625878628" duration="18249000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="270543000" />
+    <option name="totallyTimeSpent" value="271718000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -933,19 +789,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/warnings.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/block_chain/algorithm/cryptography/RSA.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="12" column="64" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
-          <folding>
-            <element signature="e#52#69#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="433">
@@ -966,6 +809,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/warnings.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/block_chain/algorithm/cryptography/RSA.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="12" column="64" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
+          <folding>
+            <element signature="e#52#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/block_chain/kernel/components/Config.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
@@ -975,8 +831,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+        <state relative-caret-position="495">
+          <caret line="69" column="9" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
         </state>
       </provider>
     </entry>
