@@ -49,7 +49,6 @@ The file needs to be a json file. <br />
 
 <h6>Example:</h6>
 
-
 ```cpp
 {
   "port": 3423,
