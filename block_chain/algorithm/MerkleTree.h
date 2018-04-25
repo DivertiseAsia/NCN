@@ -5,7 +5,7 @@
 #ifndef BLOCK_CHAIN_MERKLE_TREE_H
 #define BLOCK_CHAIN_MERKLE_TREE_H
 
-#include "Hash.h"
+#include "hash/Hash_MD5.h"
 #include "../chain/block/transaction/Transaction.h"
 
 class Block;
@@ -76,7 +76,7 @@ public:
      *  @param i The index of the given element
      *  @return The hash of the asked index
      */
-    Hash* get_hash(int i) const;
+    std::string get_hash(int i) const;
 
     /**
      *  Get the number of Hashes in the tree
@@ -120,7 +120,7 @@ private:
     /**
      *  The hash value of the MerkleTree node
      */
-    Hash* value;
+    std::string value;
 };
 
 

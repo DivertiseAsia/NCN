@@ -8,7 +8,7 @@
 
 #include "../../../../utils/serialization/Element.h"
 #include "../../../../kernel/components/Component.h"
-#include "../../../../algorithm/Hash.h"
+#include "../../../../algorithm/hash/Hash_MD5.h"
 #include "../../../state/Database.h"
 
 /**
@@ -61,7 +61,7 @@ public:
      *
      *  @return The hash ofthe user who validated the block
      */
-    virtual Hash* hash() = 0;
+    virtual std::string hash() = 0;
 
     /**
      *  Get the block's creator

@@ -6,7 +6,7 @@
 #define BLOCK_CHAIN_BLOCK_H
 
 #include <vector>
-#include "../../algorithm/Hash.h"
+#include "../../algorithm/hash/Hash_MD5.h"
 #include "proof/metadata/Metadata.h"
 #include "../../kernel/components/Component.h"
 #include "../../algorithm/MerkleTree.h"
@@ -44,7 +44,7 @@ public:
      *  @param transactions list of transactions contained into the block
      *  @param h Parent's fingerprint
      */
-    explicit Block(std::vector<std::pair<std::string, std::string>> transactions, Hash* h);
+    explicit Block(std::vector<std::pair<std::string, std::string>> transactions, std::string h);
     Element* toElement() const override;
 
     /**
@@ -62,7 +62,7 @@ public:
      *  @return true if they are the same, false otherwise
      */
     bool operator==(Block* block) const{
-        return data == block->data && *fingerprint == *block->fingerprint && *parent_fingerprint == *block->parent_fingerprint;
+        return data == block->data && fingerprint == block->fingerprint && parent_fingerprint == block->parent_fingerprint;
     }
 
     /**
@@ -74,7 +74,7 @@ public:
      *  @param e The encoding that has been used to create the Element representation of the object
      *  @return The computed Hash of the array
      */
-    Hash* compute_fingerprint(const Serializer* s, const char* e) const;
+    std::string compute_fingerprint(const Serializer* s, const char* e) const;
 
     /**
      *  Check if the given fingerprint is the same than the newly computed fingerprint
@@ -119,12 +119,12 @@ private:
     /**
      *  The fingerprint of the block
      */
-    Hash* fingerprint;
+    std::string fingerprint;
 
     /**
      *  The fingerprint of the parent's block
      */
-    Hash* parent_fingerprint;
+    std::string parent_fingerprint;
 
     /**
      *  The method that will generate the Hash with the list
@@ -138,6 +138,6 @@ private:
      *  @param e The encoding that has been used to create the Element representation of the object
      *  @return The computed Hash of the array
      */
-    Hash* compute_hash(int begin, int end, const Serializer* s, const char* e) const;
+    std::string compute_hash(int begin, int end, const Serializer* s, const char* e) const;
 };
 #endif //BLOCK_CHAIN_BLOCK_H

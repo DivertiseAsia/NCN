@@ -204,33 +204,6 @@ block_chain/TransactionManager.cpp.s:
 	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/TransactionManager.cpp.s
 .PHONY : block_chain/TransactionManager.cpp.s
 
-block_chain/algorithm/Hash.o: block_chain/algorithm/Hash.cpp.o
-
-.PHONY : block_chain/algorithm/Hash.o
-
-# target to build an object file
-block_chain/algorithm/Hash.cpp.o:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/algorithm/Hash.cpp.o
-.PHONY : block_chain/algorithm/Hash.cpp.o
-
-block_chain/algorithm/Hash.i: block_chain/algorithm/Hash.cpp.i
-
-.PHONY : block_chain/algorithm/Hash.i
-
-# target to preprocess a source file
-block_chain/algorithm/Hash.cpp.i:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/algorithm/Hash.cpp.i
-.PHONY : block_chain/algorithm/Hash.cpp.i
-
-block_chain/algorithm/Hash.s: block_chain/algorithm/Hash.cpp.s
-
-.PHONY : block_chain/algorithm/Hash.s
-
-# target to generate assembly for a file
-block_chain/algorithm/Hash.cpp.s:
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/algorithm/Hash.cpp.s
-.PHONY : block_chain/algorithm/Hash.cpp.s
-
 block_chain/algorithm/MerkleTree.o: block_chain/algorithm/MerkleTree.cpp.o
 
 .PHONY : block_chain/algorithm/MerkleTree.o
@@ -284,6 +257,60 @@ block_chain/algorithm/RSA.s: block_chain/algorithm/RSA.cpp.s
 block_chain/algorithm/RSA.cpp.s:
 	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/algorithm/RSA.cpp.s
 .PHONY : block_chain/algorithm/RSA.cpp.s
+
+block_chain/algorithm/hash/Hash.o: block_chain/algorithm/hash/Hash.cpp.o
+
+.PHONY : block_chain/algorithm/hash/Hash.o
+
+# target to build an object file
+block_chain/algorithm/hash/Hash.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash.cpp.o
+.PHONY : block_chain/algorithm/hash/Hash.cpp.o
+
+block_chain/algorithm/hash/Hash.i: block_chain/algorithm/hash/Hash.cpp.i
+
+.PHONY : block_chain/algorithm/hash/Hash.i
+
+# target to preprocess a source file
+block_chain/algorithm/hash/Hash.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash.cpp.i
+.PHONY : block_chain/algorithm/hash/Hash.cpp.i
+
+block_chain/algorithm/hash/Hash.s: block_chain/algorithm/hash/Hash.cpp.s
+
+.PHONY : block_chain/algorithm/hash/Hash.s
+
+# target to generate assembly for a file
+block_chain/algorithm/hash/Hash.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash.cpp.s
+.PHONY : block_chain/algorithm/hash/Hash.cpp.s
+
+block_chain/algorithm/hash/Hash_MD5.o: block_chain/algorithm/hash/Hash_MD5.cpp.o
+
+.PHONY : block_chain/algorithm/hash/Hash_MD5.o
+
+# target to build an object file
+block_chain/algorithm/hash/Hash_MD5.cpp.o:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash_MD5.cpp.o
+.PHONY : block_chain/algorithm/hash/Hash_MD5.cpp.o
+
+block_chain/algorithm/hash/Hash_MD5.i: block_chain/algorithm/hash/Hash_MD5.cpp.i
+
+.PHONY : block_chain/algorithm/hash/Hash_MD5.i
+
+# target to preprocess a source file
+block_chain/algorithm/hash/Hash_MD5.cpp.i:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash_MD5.cpp.i
+.PHONY : block_chain/algorithm/hash/Hash_MD5.cpp.i
+
+block_chain/algorithm/hash/Hash_MD5.s: block_chain/algorithm/hash/Hash_MD5.cpp.s
+
+.PHONY : block_chain/algorithm/hash/Hash_MD5.s
+
+# target to generate assembly for a file
+block_chain/algorithm/hash/Hash_MD5.cpp.s:
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash_MD5.cpp.s
+.PHONY : block_chain/algorithm/hash/Hash_MD5.cpp.s
 
 block_chain/chain/Chain.o: block_chain/chain/Chain.cpp.o
 
@@ -1707,15 +1734,18 @@ help:
 	@echo "... block_chain/TransactionManager.o"
 	@echo "... block_chain/TransactionManager.i"
 	@echo "... block_chain/TransactionManager.s"
-	@echo "... block_chain/algorithm/Hash.o"
-	@echo "... block_chain/algorithm/Hash.i"
-	@echo "... block_chain/algorithm/Hash.s"
 	@echo "... block_chain/algorithm/MerkleTree.o"
 	@echo "... block_chain/algorithm/MerkleTree.i"
 	@echo "... block_chain/algorithm/MerkleTree.s"
 	@echo "... block_chain/algorithm/RSA.o"
 	@echo "... block_chain/algorithm/RSA.i"
 	@echo "... block_chain/algorithm/RSA.s"
+	@echo "... block_chain/algorithm/hash/Hash.o"
+	@echo "... block_chain/algorithm/hash/Hash.i"
+	@echo "... block_chain/algorithm/hash/Hash.s"
+	@echo "... block_chain/algorithm/hash/Hash_MD5.o"
+	@echo "... block_chain/algorithm/hash/Hash_MD5.i"
+	@echo "... block_chain/algorithm/hash/Hash_MD5.s"
 	@echo "... block_chain/chain/Chain.o"
 	@echo "... block_chain/chain/Chain.i"
 	@echo "... block_chain/chain/Chain.s"

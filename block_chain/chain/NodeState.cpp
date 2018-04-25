@@ -24,8 +24,8 @@ void NodeState::add(Block* block, std::string creator){
         if(i != transactions.end())
             transactions.erase(i);
     }
-    std::string dir(block->parent_fingerprint->to_string());
-    std::string id(block->fingerprint->to_string());
+    std::string dir(block->parent_fingerprint);
+    std::string id(block->fingerprint);
     Chain* c = nullptr;
     if((c = chain->add(block, creator)) != nullptr)
         c->update_database(block, serializer, encoding.c_str());
@@ -131,10 +131,6 @@ bool NodeState::check_transaction(Transaction* transaction, std::string k) {
 
 void NodeState::show_current_state() {
     chain->top_fingerprint().second->show();
-}
-
-bool NodeState::get(Hash *pHash) {
-    return chain->find(pHash) != 0;
 }
 
 Block* NodeState::get(std::string& hash) {

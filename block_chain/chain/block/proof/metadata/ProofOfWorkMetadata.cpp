@@ -3,7 +3,7 @@
 //
 
 #include "ProofOfWorkMetadata.h"
-#include "../../../../algorithm/Hash.h"
+#include "../../../../algorithm/hash/Hash_MD5.h"
 #include <iostream>
 
 const int ProofOfWorkMetadata::TYPE = 0;
@@ -26,8 +26,8 @@ void ProofOfWorkMetadata::fromElement(ElementObject* e,  const Serializer* seria
     e->getItem("second", &second);
 }
 
-Hash* ProofOfWorkMetadata::hash() {
-    return new Hash(creator);
+std::string ProofOfWorkMetadata::hash() {
+    return Hash::get_hash()->generate_hash(creator);
 }
 
 void ProofOfWorkMetadata::update_database(Database *pDatabase){

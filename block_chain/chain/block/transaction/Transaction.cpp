@@ -6,6 +6,6 @@
 #include "../../../utils/serialization/Serializer.h"
 
 
-Hash* Transaction::__hash__(const Serializer* serializer, const char* encoding) const{
-    return new Hash(this, serializer, encoding);
+std::string Transaction::__hash__(const Serializer* serializer, const char* encoding) const{
+    return Hash::get_hash()->generate_hash(this, serializer, encoding);
 }

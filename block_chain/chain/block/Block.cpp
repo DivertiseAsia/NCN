@@ -8,32 +8,31 @@
 #include "../../kernel/messages/Message.h"
 #include "../../algorithm/RSA.h"
 
-Hash* Block::compute_hash(int begin, int end, const Serializer* s, const char* e) const{
+std::string Block::compute_hash(int begin, int end, const Serializer* s, const char* e) const{
     if(begin == end) {
         std::string cipher(Encoding::fromHexa(transactions[begin].first));
         RSA_Cryptography crypto(Encoding::fromHexa(transactions[begin].second));
         return s->unserializeTransaction(crypto.decrypt(cipher, cipher.size()), e)->__hash__(s, e);
     }
     else
-        return new Hash(compute_hash(begin, begin + (end - begin) / 2, s, e), compute_hash(begin + (end - begin) / 2 + 1, end, s, e));
+        return Hash::get_hash()->generate_hash(compute_hash(begin, begin + (end - begin) / 2, s, e), compute_hash(begin + (end - begin) / 2 + 1, end, s, e));
 }
-Hash* Block::compute_fingerprint(const Serializer* s, const char* e) const {
-    return new Hash(compute_hash(0, transactions.size() - 1, s, e), timestamp);
+std::string Block::compute_fingerprint(const Serializer* s, const char* e) const {
+    return Hash::get_hash()->generate_hash(compute_hash(0, transactions.size() - 1, s, e), timestamp);
 }
 
-Block::Block(std::vector<std::pair<std::string, std::string>> t, Hash* parent): data(nullptr), transactions(
+Block::Block(std::vector<std::pair<std::string, std::string>> t, std::string parent): data(nullptr), transactions(
         std::move(
                 std::move(t))), fingerprint(nullptr), parent_fingerprint(parent) {
     timestamp = std::chrono::duration_cast<std::chrono::milliseconds >(std::chrono::system_clock::now().time_since_epoch()).count();
 }
 
 void Block::update_fingerprint(const Serializer* s, const char* e){
-    fingerprint = new Hash(data->hash(), compute_fingerprint(s, e));
+    fingerprint = Hash::get_hash()->generate_hash(data->hash(), compute_fingerprint(s, e));
 }
 bool Block::checkFingerPrint(const Serializer* s, const char* e) const {
-    Hash* tmp = new Hash(data->hash(), compute_fingerprint(s, e));
-    bool b = *fingerprint == *tmp;
-    delete tmp;
+    std::string tmp = Hash::get_hash()->generate_hash(data->hash(), compute_fingerprint(s, e));
+    bool b = fingerprint == tmp;
     return b;
 }
 
@@ -42,7 +41,6 @@ Block::Block(): data(nullptr), fingerprint(nullptr) {
 }
 
 Block::~Block() {
-    delete fingerprint;
     delete data;
 };
 
@@ -55,8 +53,8 @@ Element* Block::toElement() const{
         array->add(object);
     }
     ElementObject* e = ElementCreator::object();
-    return e->put("fingerprint", fingerprint ? fingerprint->toElement() : ElementCreator::object())
-            ->put("parent_fingerprint", parent_fingerprint ? parent_fingerprint->toElement() : ElementCreator::object())
+    return e->put("fingerprint", ElementCreator::create(fingerprint))
+            ->put("parent_fingerprint", ElementCreator::create(parent_fingerprint))
             ->put("timestamp", ElementCreator::create(timestamp))
             ->put("transactions", array)
             ->put("data", data->toElement()/*ElementCreator::create(serializer->serialize(data, encoding))*/);
@@ -65,12 +63,8 @@ Element* Block::toElement() const{
 void Block::fromElement(ElementObject* e, const Serializer* serializer, const char* encoding) {
     e->getItem("timestamp", &timestamp);
     ElementObject* o = nullptr;
-    fingerprint = new Hash();
-    e->getItem("fingerprint", &o);
-    fingerprint->fromElement(o, serializer, encoding);
-    parent_fingerprint = new Hash();
-    e->getItem("parent_fingerprint", &o);
-    parent_fingerprint->fromElement(o, serializer, encoding);
+    e->getItem("fingerprint", &fingerprint);
+    e->getItem("parent_fingerprint", &parent_fingerprint);
     e->getItem("data", &o);
     data = serializer->unserializeMetadata(serializer->serialize(o, encoding), encoding);
     ElementArray* a = nullptr;

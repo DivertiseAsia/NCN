@@ -28,9 +28,10 @@ public:
      *  @param filename The config file. file must be a json file and at the root of the program
      *  @param s The serializer to use
      *  @param p The proof id
+     *  @param h The hash id
      *  @param r The reward object
      */
-    Config(const char* filename, const Serializer* s, int p, Reward* r);
+    Config(const char* filename, const Serializer* s, int p, int h, Reward* r);
 
     /**
      *  Get the encoding value

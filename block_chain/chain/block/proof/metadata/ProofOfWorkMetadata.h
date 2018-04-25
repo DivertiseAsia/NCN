@@ -41,7 +41,7 @@ public:
         return pwm->first == first && pwm->second == second && pwm->creator == creator;
     }
     Element* toElement() const override;
-    Hash* hash() override;
+    std::string hash() override;
     void update_database(Database *pDatabase) override;
 protected:
     void fromElement(ElementObject* e, const Serializer* s, const char* encoding) override;

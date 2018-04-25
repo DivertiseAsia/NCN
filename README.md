@@ -11,19 +11,22 @@
         3. [UI methods](#sub_section_ui)
         4. [Database methods](#sub_section_database)
     4. [Reward](#section_reward)
-    5. [TransactionManager](#section_transactionManager)
-    6. [Serializer](#section_serializer)
-    7. [Proof](#section_proof)
+    5. [Serializer](#section_serializer)
+    6. [Proof](#section_proof)
         1. [New proof](#sub_section_newproof)
         2. [Feed the framework](#sub_section_feedframework)
         3. [New metadata](#sub_section_newmetadata)
+    7. [Hash](#section_hash)
+        1. [New hash](#sub_section_newhash)
+        2. [Feed the framework](#sub_section_feedframeworkhash)
     8. [Database](#section_database)
-    9. [Framework](#section_framework)
-4. [TODO-List](#section_todo)
-    1. [Hash](#sub_section_hash)
-    2. [Cryptography](#sub_section_cryptography)
-    3. [Proof](#sub_section_proof)
-    4. [Header files](#sub_section_header)
+4. [Helpers](#section_helpers)
+    1. [TransactionManager](#section_transactionManager)
+    2. [Framework](#section_framework)
+5. [TODO-List](#section_todo)
+    1. [Cryptography](#sub_section_cryptography)
+    2. [Proof](#sub_section_proof)
+    3. [Header files](#sub_section_header)
 
 
 
@@ -47,7 +50,7 @@ Node node(config);
 ### Config <a name="section_config"></a>
 The node is the peer itself. You only have to create it and it will run.
 ```cpp
-Config config("configuration file path", serializer, Proof::WORK, reward);
+Config config("configuration file path", serializer, Proof::WORK, Hash::HASH_MD5, reward);
 ```
 The file itself is a json file. <br/>
 
@@ -59,7 +62,7 @@ The file itself is a json file. <br/>
   "debug": true
 }
 ```
-the parameters serializer, proof and reward are explained later.
+the parameters serializer, proof, hash and reward are explained later.
 ### Transaction <a name="section_transaction"></a>
 Transactions are the most important thing to implement. <br/>
 ```cpp
@@ -219,31 +222,6 @@ bool MoneyTransaction::validate(Row *row) const {
 ### Reward <a name="section_reward"></a>
 The reward is a very particular kind of Transaction.
 You only have to override the methods ```Reward::clone``` and ```Reward::createRow```.
-### TransactionManager <a name="section_transactionManager"></a>
-The transaction manager is a built in class from the framework. You only need to give it a list of transactions, and then to give it to the Node object.
-```cpp
-TransactionManager manager;
-manager.put(new StatusTransaction);
-manager.put(new MoneyTransaction);
-manager.put(new MessagesTransaction);
-node.start(manager);
-```
-The provided TransactionManager class allows you to easily run every type of transactions without implementing anything. <br />
-However, this class is a helper, you can easily manage the transactions creation by yourself without this class. <br />
-If you choose this solution, you only have to use the Node::request_transaction method in order to process your transactions.<br />
-It can also be replaced by the [Framework helper](#section_framework).
-### Serializer <a name="section_serializer"></a>
-The serialization class is used to transform Objects into string using Elements and strings into Objects using Elements.
-To use this class, you need to register your own transactions with a lambda expression
-<h5>Serializer::unserializeTransaction</h5>
-```cpp
-void add_transaction(int id, std::function<Transaction*()> transaction);
-```
-<h6>Example:</h6>
-```cpp
-serial->add_transaction(money->get_type(), []() -> Transaction*{return new MoneyTransaction;});
-```
-It can also be replaced by the [Framework helper](#section_framework).
 ### Proof <a name="section_proof"></a>
 Proofs are the basis of block chain validation. Some proofs are implemented, but not all of them. Therefore, you can create your own proof and send it to the framework.
 <h4>New proof <a name="sub_section_newproof"></a></h4>
@@ -304,6 +282,45 @@ void add_metadata(int id, std::function<Metadata*()> metadata);
 ```cpp
 serial->add_metadata(CustomMetadata::TYPE, []() -> Metadata*{return new CustomMetadata;});
 ```
+### Hash <a name="section_hash"></a>
+Hash are the results of hashing function. There are some implemented hashing functions and you can create your own.
+<h4>New Hash <a name="sub_section_newhash"></a></h4>
+A new hash class needs to implements 6 methods, but this method is always the same, with different parameters type
+<h5>Hash::generate_hash</h5>
+```cpp
+virtual std::string generate_hash(std::string hash1, double value) = 0;
+
+virtual std::string generate_hash(std::string hash1, int value) = 0;
+
+virtual std::string generate_hash(std::string hash1, long long int value) = 0;
+
+virtual std::string generate_hash(std::string hash1, std::string value) = 0;
+
+virtual std::string generate_hash(std::string value) = 0;
+
+virtual std::string generate_hash(const Component* component, const Serializer* serializer, const char* encoding) = 0;
+```
+This method will be called to generate the hash according to the algorithm you chose.
+<h6>Example:</h6>
+```cpp
+std::string Hash_MD5::generate_hash(std::string hash1, std::string value){
+    unsigned char digest[MD5_DIGEST_LENGTH + 1];
+    std::string str = hash1 + value;
+    MD5((const unsigned char*) str.c_str(), str.size(), digest);
+    digest[MD5_DIGEST_LENGTH] = 0;
+    return Encoding::toHexa(std::string((const char*)digest));
+}
+```
+<h4>Feed the framework <a name="sub_section_feedframeworkhash"></a></h4>
+Once your hash is done, you just have to give it to the framework using this method:
+```cpp
+static void Hash::add_hash(int id, std::function<Hash*()> h);
+```
+The id needs to be passed to the Node object. The second parameter is a lambda expression that creates the hash.
+<h6>Example:</h6>
+```cpp
+Hash::add_hash(Hash::HASH_MD5, []() -> Hash*{return new Hash_MD5;});
+```
 ### Database <a name="section_database"></a>
 The database is basically a map of Row. Rows are pure abstract classes that needs to be implemented, because their structure depends of your implementation <br/>
 There are 3 methods that must be implemented.
@@ -348,6 +365,32 @@ void CustomRow::reward() {
     money += 1;
 }
 ```
+## Helpers  <a name="section_helpers"></a>
+### TransactionManager <a name="section_transactionManager"></a>
+The transaction manager is a built in class from the framework. You only need to give it a list of transactions, and then to give it to the Node object.
+```cpp
+TransactionManager manager;
+manager.put(new StatusTransaction);
+manager.put(new MoneyTransaction);
+manager.put(new MessagesTransaction);
+node.start(manager);
+```
+The provided TransactionManager class allows you to easily run every type of transactions without implementing anything. <br />
+However, this class is a helper, you can easily manage the transactions creation by yourself without this class. <br />
+If you choose this solution, you only have to use the Node::request_transaction method in order to process your transactions.<br />
+It can also be replaced by the [Framework helper](#section_framework).
+### Serializer <a name="section_serializer"></a>
+The serialization class is used to transform Objects into string using Elements and strings into Objects using Elements.
+To use this class, you need to register your own transactions with a lambda expression
+<h5>Serializer::unserializeTransaction</h5>
+```cpp
+void add_transaction(int id, std::function<Transaction*()> transaction);
+```
+<h6>Example:</h6>
+```cpp
+serial->add_transaction(money->get_type(), []() -> Transaction*{return new MoneyTransaction;});
+```
+It can also be replaced by the [Framework helper](#section_framework).
 ### Framework <a name="section_framework"></a>
 In order to make the creation of the different tools easier, the framework provides an important (but not required) helper class, Framework. <br />
 This class only needs a list of Transaction as input and generates both TransactionManager and Serializer.
@@ -368,10 +411,6 @@ auto manager = block_chain.generate_manager();
 auto serial = block_chain.generate_serializer();
 ```
 ## TODO-List <a name="section_todo"></a>
-### Hash <a name="sub_section_hash"></a>
-For now, there is only one hash class based on md5. <br/>
-It will be changed to make this hash class abstract with the possibility for the user to create his own hash class (And to keep some basic hash functions).
-
 ### Cryptography <a name="sub_section_cryptography"></a>
 For now, there is only one cryptography class based on RSA. <br/>
 It will be changed to make this cryptography class abstract with the possibility for the user to create his own cryptography class (And to keep some basic cryptography functions).

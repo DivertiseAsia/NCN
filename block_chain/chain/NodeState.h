@@ -23,7 +23,7 @@
 #include "block/Block.h"
 #include "state/Database.h"
 #include "Chain.h"
-#include "../algorithm/Hash.h"
+#include "../algorithm/hash/Hash_MD5.h"
 #include "../algorithm/RSA.h"
 #include "../utils/serialization/Serializer.h"
 #include "../utils/socket/Peer.h"
@@ -107,15 +107,7 @@ public:
      *  Print the state of the top chain
      */
     void show_current_state();
-
-    /**
-     *  Try to find a given hash in the database
-     *  @see Hash
-     *
-     *  @return 1 if the fingerprint has been found, 0 otherwise
-     */
-    bool get(Hash *pHash);
-
+    
     /**
      *  Try to find a given hash in the database
      *

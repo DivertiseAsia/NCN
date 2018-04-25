@@ -17,9 +17,9 @@ Chain::~Chain(){
 }
 
 Chain* Chain::add(Block* b, std::string creator){
-    if(b->parent_fingerprint == nullptr || b->parent_fingerprint->to_string() == "0" || (fingerprint != nullptr && b->parent_fingerprint->to_string() == fingerprint->to_string())){
+    if(b->parent_fingerprint == "" || b->parent_fingerprint == "0" || (b->parent_fingerprint == fingerprint)){
         for(auto& a : chain)
-            if(a->fingerprint->to_string() == b->fingerprint->to_string())
+            if(a->fingerprint == b->fingerprint)
                 return nullptr;
         Chain* c = new Chain(b, this, creator);
         chain.emplace_back(c);
@@ -97,7 +97,7 @@ bool Chain::check_transaction(Transaction* transaction, std::string k){
 }
 
 int Chain::count() const {
-    int cpt = fingerprint != nullptr;
+    int cpt = !(fingerprint == "0" || fingerprint.empty());
     for(auto& a : chain)
         cpt += a->count();
     return cpt;
@@ -109,20 +109,8 @@ void Chain::show() {
     }
 }
 
-int Chain::find(Hash *pHash) {
-    if(pHash == nullptr || pHash->to_string() == "0")
-        return 1;
-    else if(fingerprint != nullptr && fingerprint->to_string() == pHash->to_string())
-        return 1;
-    else
-        for(auto& a : chain)
-            if(a->find(pHash))
-                return 1;
-    return 0;
-}
-
 Block* Chain::find(std::string str) {
-    if(fingerprint != nullptr && fingerprint->to_string() == str)
+    if(fingerprint == str)
         return block;
     else
         for(auto& a : chain) {
@@ -134,7 +122,7 @@ Block* Chain::find(std::string str) {
 }
 
 std::string Chain::find_creator(std::string& hash) {
-    if(fingerprint != nullptr && fingerprint->to_string() == hash)
+    if(fingerprint == hash)
         return creator;
     else
         for(auto& a : chain) {

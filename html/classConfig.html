@@ -74,8 +74,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aaa40ae6907d2315f75b3a0ca2ac7a214"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfig.html#aaa40ae6907d2315f75b3a0ca2ac7a214">Config</a> (const char *filename, const <a class="el" href="classSerializer.html">Serializer</a> *s, int p, <a class="el" href="classReward.html">Reward</a> *r)</td></tr>
-<tr class="separator:aaa40ae6907d2315f75b3a0ca2ac7a214"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cf9c47b94f4ef8912691db9653322ca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfig.html#a4cf9c47b94f4ef8912691db9653322ca">Config</a> (const char *filename, const <a class="el" href="classSerializer.html">Serializer</a> *s, int p, int h, <a class="el" href="classReward.html">Reward</a> *r)</td></tr>
+<tr class="separator:a4cf9c47b94f4ef8912691db9653322ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23f39330cd594b8855d371368adc80e4"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfig.html#a23f39330cd594b8855d371368adc80e4">get_encoding</a> () const</td></tr>
 <tr class="separator:a23f39330cd594b8855d371368adc80e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00399f1751e2dfa032d99208bf925ab0"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="classSerializer.html">Serializer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConfig.html#a00399f1751e2dfa032d99208bf925ab0">get_serializer</a> () const</td></tr>
@@ -113,8 +113,8 @@ Protected Attributes</h2></td></tr>
 <dl class="section author"><dt>Author</dt><dd>Mathieu Lochet </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>1 </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aaa40ae6907d2315f75b3a0ca2ac7a214"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa40ae6907d2315f75b3a0ca2ac7a214">&#9670;&nbsp;</a></span>Config()</h2>
+<a id="a4cf9c47b94f4ef8912691db9653322ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cf9c47b94f4ef8912691db9653322ca">&#9670;&nbsp;</a></span>Config()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -140,6 +140,12 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype"><a class="el" href="classReward.html">Reward</a> *&#160;</td>
           <td class="paramname"><em>r</em>&#160;</td>
         </tr>
@@ -156,6 +162,7 @@ Protected Attributes</h2></td></tr>
     <tr><td class="paramname">filename</td><td>The config file. file must be a json file and at the root of the program </td></tr>
     <tr><td class="paramname">s</td><td>The serializer to use </td></tr>
     <tr><td class="paramname">p</td><td>The proof id </td></tr>
+    <tr><td class="paramname">h</td><td>The hash id </td></tr>
     <tr><td class="paramname">r</td><td>The reward object </td></tr>
   </table>
   </dd>

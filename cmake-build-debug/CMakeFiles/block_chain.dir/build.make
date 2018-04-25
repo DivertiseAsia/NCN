@@ -225,28 +225,28 @@ CMakeFiles/block_chain.dir/block_chain/kernel/components/Component.cpp.o.provide
 CMakeFiles/block_chain.dir/block_chain/kernel/components/Component.cpp.o.provides.build: CMakeFiles/block_chain.dir/block_chain/kernel/components/Component.cpp.o
 
 
-CMakeFiles/block_chain.dir/block_chain/algorithm/Hash.cpp.o: CMakeFiles/block_chain.dir/flags.make
-CMakeFiles/block_chain.dir/block_chain/algorithm/Hash.cpp.o: ../block_chain/algorithm/Hash.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/block_chain.dir/block_chain/algorithm/Hash.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/block_chain.dir/block_chain/algorithm/Hash.cpp.o -c /home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.cpp
+CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash_MD5.cpp.o: CMakeFiles/block_chain.dir/flags.make
+CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash_MD5.cpp.o: ../block_chain/algorithm/hash/Hash_MD5.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash_MD5.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash_MD5.cpp.o -c /home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash_MD5.cpp
 
-CMakeFiles/block_chain.dir/block_chain/algorithm/Hash.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/block_chain.dir/block_chain/algorithm/Hash.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.cpp > CMakeFiles/block_chain.dir/block_chain/algorithm/Hash.cpp.i
+CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash_MD5.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash_MD5.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash_MD5.cpp > CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash_MD5.cpp.i
 
-CMakeFiles/block_chain.dir/block_chain/algorithm/Hash.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/block_chain.dir/block_chain/algorithm/Hash.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.cpp -o CMakeFiles/block_chain.dir/block_chain/algorithm/Hash.cpp.s
+CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash_MD5.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash_MD5.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash_MD5.cpp -o CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash_MD5.cpp.s
 
-CMakeFiles/block_chain.dir/block_chain/algorithm/Hash.cpp.o.requires:
+CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash_MD5.cpp.o.requires:
 
-.PHONY : CMakeFiles/block_chain.dir/block_chain/algorithm/Hash.cpp.o.requires
+.PHONY : CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash_MD5.cpp.o.requires
 
-CMakeFiles/block_chain.dir/block_chain/algorithm/Hash.cpp.o.provides: CMakeFiles/block_chain.dir/block_chain/algorithm/Hash.cpp.o.requires
-	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/algorithm/Hash.cpp.o.provides.build
-.PHONY : CMakeFiles/block_chain.dir/block_chain/algorithm/Hash.cpp.o.provides
+CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash_MD5.cpp.o.provides: CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash_MD5.cpp.o.requires
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash_MD5.cpp.o.provides.build
+.PHONY : CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash_MD5.cpp.o.provides
 
-CMakeFiles/block_chain.dir/block_chain/algorithm/Hash.cpp.o.provides.build: CMakeFiles/block_chain.dir/block_chain/algorithm/Hash.cpp.o
+CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash_MD5.cpp.o.provides.build: CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash_MD5.cpp.o
 
 
 CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o: CMakeFiles/block_chain.dir/flags.make
@@ -1449,6 +1449,30 @@ CMakeFiles/block_chain.dir/block_chain/Framework.cpp.o.provides: CMakeFiles/bloc
 CMakeFiles/block_chain.dir/block_chain/Framework.cpp.o.provides.build: CMakeFiles/block_chain.dir/block_chain/Framework.cpp.o
 
 
+CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash.cpp.o: CMakeFiles/block_chain.dir/flags.make
+CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash.cpp.o: ../block_chain/algorithm/hash/Hash.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash.cpp.o -c /home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash.cpp
+
+CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash.cpp > CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash.cpp.i
+
+CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash.cpp -o CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash.cpp.s
+
+CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash.cpp.o.requires:
+
+.PHONY : CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash.cpp.o.requires
+
+CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash.cpp.o.provides: CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash.cpp.o.requires
+	$(MAKE) -f CMakeFiles/block_chain.dir/build.make CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash.cpp.o.provides.build
+.PHONY : CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash.cpp.o.provides
+
+CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash.cpp.o.provides.build: CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash.cpp.o
+
+
 # Object files for target block_chain
 block_chain_OBJECTS = \
 "CMakeFiles/block_chain.dir/main.cpp.o" \
@@ -1458,7 +1482,7 @@ block_chain_OBJECTS = \
 "CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o" \
 "CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o" \
 "CMakeFiles/block_chain.dir/block_chain/kernel/components/Component.cpp.o" \
-"CMakeFiles/block_chain.dir/block_chain/algorithm/Hash.cpp.o" \
+"CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash_MD5.cpp.o" \
 "CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o" \
 "CMakeFiles/block_chain.dir/block_chain/utils/socket/Peer.cpp.o" \
 "CMakeFiles/block_chain.dir/block_chain/utils/socket/Socket.cpp.o" \
@@ -1508,7 +1532,8 @@ block_chain_OBJECTS = \
 "CMakeFiles/block_chain.dir/block_chain/kernel/messages/AnswerPeersMessage.cpp.o" \
 "CMakeFiles/block_chain.dir/block_chain/kernel/messages/BlockMessage.cpp.o" \
 "CMakeFiles/block_chain.dir/block_chain/kernel/components/Config.cpp.o" \
-"CMakeFiles/block_chain.dir/block_chain/Framework.cpp.o"
+"CMakeFiles/block_chain.dir/block_chain/Framework.cpp.o" \
+"CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash.cpp.o"
 
 # External object files for target block_chain
 block_chain_EXTERNAL_OBJECTS =
@@ -1520,7 +1545,7 @@ block_chain: CMakeFiles/block_chain.dir/block_chain/utils/serialization/Serializ
 block_chain: CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o
 block_chain: CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o
 block_chain: CMakeFiles/block_chain.dir/block_chain/kernel/components/Component.cpp.o
-block_chain: CMakeFiles/block_chain.dir/block_chain/algorithm/Hash.cpp.o
+block_chain: CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash_MD5.cpp.o
 block_chain: CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o
 block_chain: CMakeFiles/block_chain.dir/block_chain/utils/socket/Peer.cpp.o
 block_chain: CMakeFiles/block_chain.dir/block_chain/utils/socket/Socket.cpp.o
@@ -1571,11 +1596,12 @@ block_chain: CMakeFiles/block_chain.dir/block_chain/kernel/messages/AnswerPeersM
 block_chain: CMakeFiles/block_chain.dir/block_chain/kernel/messages/BlockMessage.cpp.o
 block_chain: CMakeFiles/block_chain.dir/block_chain/kernel/components/Config.cpp.o
 block_chain: CMakeFiles/block_chain.dir/block_chain/Framework.cpp.o
+block_chain: CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash.cpp.o
 block_chain: CMakeFiles/block_chain.dir/build.make
 block_chain: /usr/lib/x86_64-linux-gnu/libssl.so
 block_chain: /usr/lib/x86_64-linux-gnu/libcrypto.so
 block_chain: CMakeFiles/block_chain.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Linking CXX executable block_chain"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/default/CLionProjects/block_chain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Linking CXX executable block_chain"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/block_chain.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -1590,7 +1616,7 @@ CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/util
 CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o.requires
 CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o.requires
 CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/kernel/components/Component.cpp.o.requires
-CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/algorithm/Hash.cpp.o.requires
+CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash_MD5.cpp.o.requires
 CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o.requires
 CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/utils/socket/Peer.cpp.o.requires
 CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/utils/socket/Socket.cpp.o.requires
@@ -1641,6 +1667,7 @@ CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/kern
 CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/kernel/messages/BlockMessage.cpp.o.requires
 CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/kernel/components/Config.cpp.o.requires
 CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/Framework.cpp.o.requires
+CMakeFiles/block_chain.dir/requires: CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash.cpp.o.requires
 
 .PHONY : CMakeFiles/block_chain.dir/requires
 

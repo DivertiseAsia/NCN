@@ -6,7 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/block_chain.dir/block_chain/chain/NodeState.cpp.o"
   "CMakeFiles/block_chain.dir/block_chain/chain/block/Block.cpp.o"
   "CMakeFiles/block_chain.dir/block_chain/kernel/components/Component.cpp.o"
-  "CMakeFiles/block_chain.dir/block_chain/algorithm/Hash.cpp.o"
+  "CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash_MD5.cpp.o"
   "CMakeFiles/block_chain.dir/block_chain/chain/block/transaction/Transaction.cpp.o"
   "CMakeFiles/block_chain.dir/block_chain/utils/socket/Peer.cpp.o"
   "CMakeFiles/block_chain.dir/block_chain/utils/socket/Socket.cpp.o"
@@ -57,6 +57,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/block_chain.dir/block_chain/kernel/messages/BlockMessage.cpp.o"
   "CMakeFiles/block_chain.dir/block_chain/kernel/components/Config.cpp.o"
   "CMakeFiles/block_chain.dir/block_chain/Framework.cpp.o"
+  "CMakeFiles/block_chain.dir/block_chain/algorithm/hash/Hash.cpp.o"
   "block_chain.pdb"
   "block_chain"
 )

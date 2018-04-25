@@ -102,12 +102,6 @@
 		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/TransactionManager.h">
 			<Option target="block_chain"/>
 		</Unit>
-		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.cpp">
-			<Option target="block_chain"/>
-		</Unit>
-		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h">
-			<Option target="block_chain"/>
-		</Unit>
 		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.cpp">
 			<Option target="block_chain"/>
 		</Unit>
@@ -118,6 +112,18 @@
 			<Option target="block_chain"/>
 		</Unit>
 		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/algorithm/RSA.h">
+			<Option target="block_chain"/>
+		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash.cpp">
+			<Option target="block_chain"/>
+		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash.h">
+			<Option target="block_chain"/>
+		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash_MD5.cpp">
+			<Option target="block_chain"/>
+		</Unit>
+		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash_MD5.h">
 			<Option target="block_chain"/>
 		</Unit>
 		<Unit filename="/home/default/CLionProjects/block_chain/block_chain/chain">

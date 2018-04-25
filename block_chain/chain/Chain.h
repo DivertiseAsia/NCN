@@ -7,7 +7,7 @@
 
 
 #include <vector>
-#include "../algorithm/Hash.h"
+#include "../algorithm/hash/Hash_MD5.h"
 #include "block/Block.h"
 #include "state/Database.h"
 #include "../utils/serialization/Serializer.h"
@@ -111,7 +111,7 @@ private:
     /**
      *  The fingerprint of the block
      */
-    Hash* fingerprint;
+    std::string fingerprint;
 
     /**
      *  The list of possible following chain
@@ -122,14 +122,6 @@ private:
      *  Print the current database
      */
     void show();
-
-    /**
-     *  Try to find a given hash in the database
-     *  @see Hash
-     *
-     *  @return 1 if the fingerprint has been found, 0 otherwise
-     */
-    int find(Hash *pHash);
 
     /**
      *  Try to find a given hash in the database

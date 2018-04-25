@@ -9,7 +9,7 @@
 MerkleTree::MerkleTree(Transaction* transaction, const Serializer* serializer, const char* encoding): left(nullptr), right(nullptr), value(transaction->__hash__(serializer, encoding)){
 
 }
-MerkleTree::MerkleTree(MerkleTree* l, MerkleTree* r): left(l), right(r), value(new Hash(left->value, right->value)) {
+MerkleTree::MerkleTree(MerkleTree* l, MerkleTree* r): left(l), right(r), value(Hash::get_hash()->generate_hash(left->value, right->value)) {
 
 }
 MerkleTree::MerkleTree(Block* block, const Serializer* serializer, const char* encoding): left(nullptr), right(nullptr), value(nullptr)
@@ -43,23 +43,20 @@ MerkleTree::MerkleTree(): left(nullptr), right(nullptr), value(nullptr){
 
 }
 MerkleTree::~MerkleTree(){
-    delete value;
     delete left;
     delete right;
 }
 
 Element* MerkleTree::toElement() const{
     ElementObject* e = ElementCreator::object();
-    return e->put("value", value ? value->toElement() : ElementCreator::object())
+    return e->put("value", ElementCreator::create(value))
             ->put("left", left ? left->toElement() : ElementCreator::object())
             ->put("right", right ? right->toElement() : ElementCreator::object());
 }
 
 void MerkleTree::fromElement(ElementObject* e, const Serializer* serializer, const char* encoding) {
     ElementObject *o = nullptr;
-    value = new Hash();
-    e->getItem("value", &o);
-    value->fromElement(o, serializer, encoding);
+    e->getItem("value", &value);
 
     e->getItem("left", &o);
     if(o && !o->values.empty()) {
@@ -89,7 +86,7 @@ int MerkleTree::size() const{
     return i;
 }
 
-Hash* MerkleTree::get_hash(const int i) const {
+std::string MerkleTree::get_hash(const int i) const {
     if(left == nullptr && right == nullptr)
         return value;
     else if(i < size()/2)

@@ -25,7 +25,7 @@ void BlockParser::operator()(Message* m, Node* node) const {
                 std::string cipher(Encoding::fromHexa(t.first));
                 RSA_Cryptography crypto(Encoding::fromHexa(t.second));
                 Transaction *transaction = node->serializer->unserializeTransaction(crypto.decrypt(cipher, cipher.size()), node->encoding.c_str());
-                bool valid = *message->tree->get_hash(i) == *transaction->__hash__(node->serializer, node->encoding.c_str());
+                bool valid = message->tree->get_hash(i) == transaction->__hash__(node->serializer, node->encoding.c_str());
                 if (!valid)
                     return;
                 i++;

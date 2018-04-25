@@ -100,7 +100,7 @@ int Node::load(Block *pBlock) {
     if(!block_chain.get(pBlock->parent_fingerprint)){
         if(!peers.empty()) {
             srand(time(NULL));
-            BlockAskMessage answer(self.to_string(), pBlock->parent_fingerprint->to_string());
+            BlockAskMessage answer(self.to_string(), pBlock->parent_fingerprint);
             char* m = serializer->serialize(&answer, encoding.c_str());
             int index = (int) (rand() % peers.size());
             peers[index].send(Encoding::toHexa(m).c_str());

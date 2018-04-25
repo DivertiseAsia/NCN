@@ -18,7 +18,7 @@ void TransactionParser::operator()(Message* m, Node* node) const {
     if(*deciphered == transaction){
         if(node->debug)
             std::cout << "\033[1;32m[INFO] Transaction computed by " << node->self._ip << ":" << node->self._port<<"\033[0m\n";
-        bool valid = (*message->tree->value == *transaction->__hash__(node->serializer, node->encoding.c_str()) && node->block_chain.check_transaction(transaction, message->public_key));
+        bool valid = (message->tree->value == transaction->__hash__(node->serializer, node->encoding.c_str()) && node->block_chain.check_transaction(transaction, message->public_key));
         if(valid) {
             Block *block = node->block_chain.add(message->cipher, Encoding::toHexa(message->public_key));
             if(block != nullptr){

@@ -7,12 +7,12 @@
 #include "../../../kernel/messages/BlockMessage.h"
 
 void ProofOfWork::run(Block* block, std::string key)const {
-    Hash tmp((block->parent_fingerprint != nullptr ? block->parent_fingerprint->to_string() : "0") + key);
+    std::string tmp = Hash::get_hash()->generate_hash((block->parent_fingerprint != "" ? block->parent_fingerprint : "0") + key);
     for(long long int i = 1; i > 0 ; i++){
-        Hash t(&tmp, i);
+        std::string t = Hash::get_hash()->generate_hash(tmp, i);
         for(long long int j = 1; j > 0 ; j++) {
-            Hash h(&t, j);
-            if(h.to_string().substr(0, 1) == "0"){
+            std::string h = Hash::get_hash()->generate_hash(t, j);
+            if(h.substr(0, 1) == "0"){
                 block->data = new ProofOfWorkMetadata(i, j, key);
                 return;
             }
@@ -22,8 +22,8 @@ void ProofOfWork::run(Block* block, std::string key)const {
 
 bool ProofOfWork::accept(Block* block, Message* m)const {
     auto data = dynamic_cast<ProofOfWorkMetadata*>(block->data);
-    Hash tmp((block->parent_fingerprint != nullptr ? block->parent_fingerprint->to_string() : "0") + data->get_creator());
-    Hash t(&tmp, data->first);
-    Hash h(&t, data->second);
-    return h.to_string().substr(0, 1) == "0";
+    std::string tmp = Hash::get_hash()->generate_hash((block->parent_fingerprint != "" ? block->parent_fingerprint : "0") + data->get_creator());
+    std::string t = Hash::get_hash()->generate_hash(tmp, data->first);
+    std::string h = Hash::get_hash()->generate_hash(t, data->second);
+    return h.substr(0, 1) == "0";
 }

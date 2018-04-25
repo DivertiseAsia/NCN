@@ -36,7 +36,7 @@ int main() {
     Reward* reward = new RewardTransaction();
 
     //Block chain initialization
-    Config config("./config.json", serial, Proof::WORK, reward);
+    Config config("./config.json", serial, Proof::WORK, Hash::HASH_MD5, reward);
     Node client(config);
 
     //launching the loop

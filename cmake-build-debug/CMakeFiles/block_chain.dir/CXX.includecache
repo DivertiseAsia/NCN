@@ -92,26 +92,6 @@ TransactionManager.h
 chain/block/transaction/Transaction.h
 /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
 
-/home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.cpp
-Hash.h
-/home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h
-utility
--
-../utils/serialization/Serializer.h
-/home/default/CLionProjects/block_chain/block_chain/utils/serialization/Serializer.h
-
-/home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h
-string
--
-openssl/md5.h
--
-../kernel/components/Component.h
-/home/default/CLionProjects/block_chain/block_chain/kernel/components/Component.h
-../utils/Encoding.h
-/home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
-iostream
--
-
 /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.cpp
 MerkleTree.h
 /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
@@ -121,8 +101,8 @@ RSA.h
 /home/default/CLionProjects/block_chain/block_chain/algorithm/RSA.h
 
 /home/default/CLionProjects/block_chain/block_chain/algorithm/MerkleTree.h
-Hash.h
-/home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h
+hash/Hash_MD5.h
+/home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash_MD5.h
 ../chain/block/transaction/Transaction.h
 /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
 
@@ -148,6 +128,44 @@ fstream
 cstring
 -
 
+/home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash.cpp
+Hash.h
+/home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash.h
+utility
+-
+../../utils/serialization/Serializer.h
+/home/default/CLionProjects/block_chain/block_chain/utils/serialization/Serializer.h
+
+/home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash.h
+string
+-
+functional
+-
+../../kernel/components/Component.h
+/home/default/CLionProjects/block_chain/block_chain/kernel/components/Component.h
+
+/home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash_MD5.cpp
+Hash_MD5.h
+/home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash_MD5.h
+utility
+-
+../../utils/serialization/Serializer.h
+/home/default/CLionProjects/block_chain/block_chain/utils/serialization/Serializer.h
+
+/home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash_MD5.h
+string
+-
+openssl/md5.h
+-
+../../kernel/components/Component.h
+/home/default/CLionProjects/block_chain/block_chain/kernel/components/Component.h
+../../utils/Encoding.h
+/home/default/CLionProjects/block_chain/block_chain/utils/Encoding.h
+Hash.h
+/home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash.h
+iostream
+-
+
 /home/default/CLionProjects/block_chain/block_chain/chain/Chain.cpp
 Chain.h
 /home/default/CLionProjects/block_chain/block_chain/chain/Chain.h
@@ -157,8 +175,8 @@ Chain.h
 /home/default/CLionProjects/block_chain/block_chain/chain/Chain.h
 vector
 -
-../algorithm/Hash.h
-/home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h
+../algorithm/hash/Hash_MD5.h
+/home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash_MD5.h
 block/Block.h
 /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
 state/Database.h
@@ -203,8 +221,8 @@ state/Database.h
 /home/default/CLionProjects/block_chain/block_chain/chain/state/Database.h
 Chain.h
 /home/default/CLionProjects/block_chain/block_chain/chain/Chain.h
-../algorithm/Hash.h
-/home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h
+../algorithm/hash/Hash_MD5.h
+/home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash_MD5.h
 ../algorithm/RSA.h
 /home/default/CLionProjects/block_chain/block_chain/algorithm/RSA.h
 ../utils/serialization/Serializer.h
@@ -227,8 +245,8 @@ utility
 /home/default/CLionProjects/block_chain/block_chain/chain/block/Block.h
 vector
 -
-../../algorithm/Hash.h
-/home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h
+../../algorithm/hash/Hash_MD5.h
+/home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash_MD5.h
 proof/metadata/Metadata.h
 /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadata/Metadata.h
 ../../kernel/components/Component.h
@@ -341,16 +359,16 @@ Metadata.h
 /home/default/CLionProjects/block_chain/block_chain/utils/serialization/Element.h
 ../../../../kernel/components/Component.h
 /home/default/CLionProjects/block_chain/block_chain/kernel/components/Component.h
-../../../../algorithm/Hash.h
-/home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h
+../../../../algorithm/hash/Hash_MD5.h
+/home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash_MD5.h
 ../../../state/Database.h
 /home/default/CLionProjects/block_chain/block_chain/chain/state/Database.h
 
 /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadata/ProofOfWorkMetadata.cpp
 ProofOfWorkMetadata.h
 /home/default/CLionProjects/block_chain/block_chain/chain/block/proof/metadata/ProofOfWorkMetadata.h
-../../../../algorithm/Hash.h
-/home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h
+../../../../algorithm/hash/Hash_MD5.h
+/home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash_MD5.h
 iostream
 -
 
@@ -375,8 +393,8 @@ Transaction.h
 /home/default/CLionProjects/block_chain/block_chain/chain/block/transaction/Transaction.h
 ../../../kernel/components/Component.h
 /home/default/CLionProjects/block_chain/block_chain/kernel/components/Component.h
-../../../algorithm/Hash.h
-/home/default/CLionProjects/block_chain/block_chain/algorithm/Hash.h
+../../../algorithm/hash/Hash_MD5.h
+/home/default/CLionProjects/block_chain/block_chain/algorithm/hash/Hash_MD5.h
 ../../state/Row.h
 /home/default/CLionProjects/block_chain/block_chain/chain/state/Row.h
 

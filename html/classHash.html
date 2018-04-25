@@ -63,48 +63,65 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classHash-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Hash Class Reference</div>  </div>
+<div class="title">Hash Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &quot;<a class="el" href="Hash_8h_source.html">block_chain/algorithm/Hash.h</a>&quot;</code></p>
+<p><code>#include &quot;<a class="el" href="Hash_8h_source.html">block_chain/algorithm/hash/Hash.h</a>&quot;</code></p>
+<div class="dynheader">
+Inheritance diagram for Hash:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classHash.png" usemap="#Hash_map" alt=""/>
+  <map id="Hash_map" name="Hash_map">
+<area href="classHash__MD5.html" alt="Hash_MD5" shape="rect" coords="0,56,75,80"/>
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:abc9d5b49c4098928379cac62d9242a54"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHash.html#abc9d5b49c4098928379cac62d9242a54">generate_hash</a> (std::string hash1, double value)=0</td></tr>
+<tr class="separator:abc9d5b49c4098928379cac62d9242a54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a796b43da5e0457dc0082624ed926693f"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHash.html#a796b43da5e0457dc0082624ed926693f">generate_hash</a> (std::string hash1, int value)=0</td></tr>
+<tr class="separator:a796b43da5e0457dc0082624ed926693f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a916f3a3d86a866a47cd22164298222c9"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHash.html#a916f3a3d86a866a47cd22164298222c9">generate_hash</a> (std::string hash1, long long int value)=0</td></tr>
+<tr class="separator:a916f3a3d86a866a47cd22164298222c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad82376eafb911e3ca6090fd3bdfe2625"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHash.html#ad82376eafb911e3ca6090fd3bdfe2625">generate_hash</a> (std::string hash1, std::string value)=0</td></tr>
+<tr class="separator:ad82376eafb911e3ca6090fd3bdfe2625"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28cee3e1b1e688ec2bde38a680876681"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHash.html#a28cee3e1b1e688ec2bde38a680876681">generate_hash</a> (std::string value)=0</td></tr>
+<tr class="separator:a28cee3e1b1e688ec2bde38a680876681"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58b5c143b53d7fd64575ac284dff454f"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHash.html#a58b5c143b53d7fd64575ac284dff454f">generate_hash</a> (const <a class="el" href="classComponent.html">Component</a> *component, const <a class="el" href="classSerializer.html">Serializer</a> *serializer, const char *encoding)=0</td></tr>
+<tr class="separator:a58b5c143b53d7fd64575ac284dff454f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af482880ad75b67a09d2dcb5e86244d80"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHash.html#af482880ad75b67a09d2dcb5e86244d80">Hash</a> ()</td></tr>
 <tr class="separator:af482880ad75b67a09d2dcb5e86244d80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e10d81c96b90a36443999a820e29136"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHash.html#a0e10d81c96b90a36443999a820e29136">Hash</a> (<a class="el" href="classHash.html">Hash</a> *hash1, <a class="el" href="classHash.html">Hash</a> *value)</td></tr>
-<tr class="separator:a0e10d81c96b90a36443999a820e29136"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae324d51c4ee733ef8f7656e6f1afbbd0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHash.html#ae324d51c4ee733ef8f7656e6f1afbbd0">Hash</a> (<a class="el" href="classHash.html">Hash</a> *hash1, double value)</td></tr>
-<tr class="separator:ae324d51c4ee733ef8f7656e6f1afbbd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa86acb0f09e74c9e6c75adc063539454"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHash.html#aa86acb0f09e74c9e6c75adc063539454">Hash</a> (<a class="el" href="classHash.html">Hash</a> *hash1, int value)</td></tr>
-<tr class="separator:aa86acb0f09e74c9e6c75adc063539454"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a523bc61e293e280273dbcd51d6b13905"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHash.html#a523bc61e293e280273dbcd51d6b13905">Hash</a> (<a class="el" href="classHash.html">Hash</a> *hash1, long long int value)</td></tr>
-<tr class="separator:a523bc61e293e280273dbcd51d6b13905"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3c5c785c59f0df2549e25a671370452"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHash.html#af3c5c785c59f0df2549e25a671370452">Hash</a> (<a class="el" href="classHash.html">Hash</a> *hash1, std::string value)</td></tr>
-<tr class="separator:af3c5c785c59f0df2549e25a671370452"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a529370f2a9baaf470323284364707a88"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHash.html#a529370f2a9baaf470323284364707a88">Hash</a> (std::string value)</td></tr>
-<tr class="separator:a529370f2a9baaf470323284364707a88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d2f0230c2cfe4d6aaab6d9a055faaf5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHash.html#a1d2f0230c2cfe4d6aaab6d9a055faaf5">Hash</a> (const <a class="el" href="classComponent.html">Component</a> *component, const <a class="el" href="classSerializer.html">Serializer</a> *serializer, const char *encoding)</td></tr>
-<tr class="separator:a1d2f0230c2cfe4d6aaab6d9a055faaf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1c275871d3d81cd38d58dac5c634042"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHash.html#ab1c275871d3d81cd38d58dac5c634042">to_string</a> () const</td></tr>
-<tr class="separator:ab1c275871d3d81cd38d58dac5c634042"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8aafc6563e964ff47dcbba955b0c28f2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHash.html#a8aafc6563e964ff47dcbba955b0c28f2">operator==</a> (<a class="el" href="classHash.html">Hash</a> const &amp;h) const</td></tr>
-<tr class="separator:a8aafc6563e964ff47dcbba955b0c28f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35e01449aedb17a0172837c87986181e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classElement.html">Element</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHash.html#a35e01449aedb17a0172837c87986181e">toElement</a> ()</td></tr>
-<tr class="separator:a35e01449aedb17a0172837c87986181e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab04df77259eb827f2dfe8a84937fa3c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHash.html#ab04df77259eb827f2dfe8a84937fa3c1">fromElement</a> (<a class="el" href="classElementObject.html">ElementObject</a> *element, const <a class="el" href="classSerializer.html">Serializer</a> *serializer, const char *encoding)</td></tr>
-<tr class="separator:ab04df77259eb827f2dfe8a84937fa3c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a2ef75bdc8a6e4eec5e235b16a2601208"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classHash.html">Hash</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHash.html#a2ef75bdc8a6e4eec5e235b16a2601208">get_hash</a> ()</td></tr>
+<tr class="separator:a2ef75bdc8a6e4eec5e235b16a2601208"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb00b10f67d0badc923ded4e8a6a3b2d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHash.html#aeb00b10f67d0badc923ded4e8a6a3b2d">set_hash</a> (<a class="el" href="classHash.html">Hash</a> *h)</td></tr>
+<tr class="separator:aeb00b10f67d0badc923ded4e8a6a3b2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ef31c937ec2ff1c73c800cc0e4ddf5d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHash.html#a0ef31c937ec2ff1c73c800cc0e4ddf5d">add_hash</a> (int id, std::function&lt; <a class="el" href="classHash.html">Hash</a> *()&gt; hash)</td></tr>
+<tr class="separator:a0ef31c937ec2ff1c73c800cc0e4ddf5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17b894a8d05c007864aef2018391e5e7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classHash.html">Hash</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHash.html#a17b894a8d05c007864aef2018391e5e7">generate</a> (int type)</td></tr>
+<tr class="separator:a17b894a8d05c007864aef2018391e5e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:aa394d3eb7121cee0b285606664257209"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHash.html#aa394d3eb7121cee0b285606664257209">HASH_MD5</a> = 0</td></tr>
+<tr class="separator:aa394d3eb7121cee0b285606664257209"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p class="">A class for md5 based hash, based on OpenSLL</p>
+<div class="textblock"><p class="">An abstract class for hash, need to be implemented</p>
 <dl class="section author"><dt>Author</dt><dd>Mathieu Lochet </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>2 </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>3 </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af482880ad75b67a09d2dcb5e86244d80"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af482880ad75b67a09d2dcb5e86244d80">&#9670;&nbsp;</a></span>Hash() <span class="overload">[1/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af482880ad75b67a09d2dcb5e86244d80">&#9670;&nbsp;</a></span>Hash()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -129,23 +146,27 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a0e10d81c96b90a36443999a820e29136"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e10d81c96b90a36443999a820e29136">&#9670;&nbsp;</a></span>Hash() <span class="overload">[2/8]</span></h2>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0ef31c937ec2ff1c73c800cc0e4ddf5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ef31c937ec2ff1c73c800cc0e4ddf5d">&#9670;&nbsp;</a></span>add_hash()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Hash::Hash </td>
+          <td class="memname">void Hash::add_hash </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classHash.html">Hash</a> *&#160;</td>
-          <td class="paramname"><em>hash1</em>, </td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classHash.html">Hash</a> *&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
+          <td class="paramtype">std::function&lt; <a class="el" href="classHash.html">Hash</a> *()&gt;&#160;</td>
+          <td class="paramname"><em>hash</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -153,28 +174,70 @@ Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p class="">A Constructor that hash the two parameters together</p>
+<p class="">Allows the user to add its own hash into the system</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">hash1</td><td>First element to hash </td></tr>
-    <tr><td class="paramname">value</td><td>Second element to hash </td></tr>
+    <tr><td class="paramname">id</td><td>The proof id </td></tr>
+    <tr><td class="paramname">hash</td><td>The lambda expression that creates a proof </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="ae324d51c4ee733ef8f7656e6f1afbbd0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae324d51c4ee733ef8f7656e6f1afbbd0">&#9670;&nbsp;</a></span>Hash() <span class="overload">[3/8]</span></h2>
+<a id="a17b894a8d05c007864aef2018391e5e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17b894a8d05c007864aef2018391e5e7">&#9670;&nbsp;</a></span>generate()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Hash::Hash </td>
+          <td class="memname"><a class="el" href="classHash.html">Hash</a> * Hash::generate </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classHash.html">Hash</a> *&#160;</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p class="">Generates a hash for a given id</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>The hash id </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The created hash object </dd></dl>
+
+</div>
+</div>
+<a id="abc9d5b49c4098928379cac62d9242a54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc9d5b49c4098928379cac62d9242a54">&#9670;&nbsp;</a></span>generate_hash() <span class="overload">[1/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string Hash::generate_hash </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
           <td class="paramname"><em>hash1</em>, </td>
         </tr>
         <tr>
@@ -189,8 +252,13 @@ Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p class="">A Constructor that hash the two parameters together</p>
+<p class="">A method that hash the two parameters together</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">hash1</td><td>First element to hash </td></tr>
@@ -198,19 +266,25 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The generated hash </dd></dl>
+
+<p>Implemented in <a class="el" href="classHash__MD5.html#a979e64b139fc15d07563d9fac3d9260d">Hash_MD5</a>.</p>
 
 </div>
 </div>
-<a id="aa86acb0f09e74c9e6c75adc063539454"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa86acb0f09e74c9e6c75adc063539454">&#9670;&nbsp;</a></span>Hash() <span class="overload">[4/8]</span></h2>
+<a id="a796b43da5e0457dc0082624ed926693f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a796b43da5e0457dc0082624ed926693f">&#9670;&nbsp;</a></span>generate_hash() <span class="overload">[2/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Hash::Hash </td>
+          <td class="memname">virtual std::string Hash::generate_hash </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classHash.html">Hash</a> *&#160;</td>
+          <td class="paramtype">std::string&#160;</td>
           <td class="paramname"><em>hash1</em>, </td>
         </tr>
         <tr>
@@ -225,8 +299,13 @@ Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p class="">A Constructor that hash the two parameters together</p>
+<p class="">A method that hash the two parameters together</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">hash1</td><td>First element to hash </td></tr>
@@ -234,19 +313,25 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The generated hash </dd></dl>
+
+<p>Implemented in <a class="el" href="classHash__MD5.html#a6bbf663535258264e6bbbd4f29f8f1d6">Hash_MD5</a>.</p>
 
 </div>
 </div>
-<a id="a523bc61e293e280273dbcd51d6b13905"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a523bc61e293e280273dbcd51d6b13905">&#9670;&nbsp;</a></span>Hash() <span class="overload">[5/8]</span></h2>
+<a id="a916f3a3d86a866a47cd22164298222c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a916f3a3d86a866a47cd22164298222c9">&#9670;&nbsp;</a></span>generate_hash() <span class="overload">[3/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Hash::Hash </td>
+          <td class="memname">virtual std::string Hash::generate_hash </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classHash.html">Hash</a> *&#160;</td>
+          <td class="paramtype">std::string&#160;</td>
           <td class="paramname"><em>hash1</em>, </td>
         </tr>
         <tr>
@@ -261,8 +346,13 @@ Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p class="">A Constructor that hash the two parameters together</p>
+<p class="">A method that hash the two parameters together</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">hash1</td><td>First element to hash </td></tr>
@@ -270,19 +360,25 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The generated hash </dd></dl>
+
+<p>Implemented in <a class="el" href="classHash__MD5.html#ad47f3c04f0f57ff1bd250ddc2318cf32">Hash_MD5</a>.</p>
 
 </div>
 </div>
-<a id="af3c5c785c59f0df2549e25a671370452"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af3c5c785c59f0df2549e25a671370452">&#9670;&nbsp;</a></span>Hash() <span class="overload">[6/8]</span></h2>
+<a id="ad82376eafb911e3ca6090fd3bdfe2625"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad82376eafb911e3ca6090fd3bdfe2625">&#9670;&nbsp;</a></span>generate_hash() <span class="overload">[4/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Hash::Hash </td>
+          <td class="memname">virtual std::string Hash::generate_hash </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classHash.html">Hash</a> *&#160;</td>
+          <td class="paramtype">std::string&#160;</td>
           <td class="paramname"><em>hash1</em>, </td>
         </tr>
         <tr>
@@ -297,8 +393,13 @@ Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p class="">A Constructor that hash the two parameters together</p>
+<p class="">A method that hash the two parameters together</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">hash1</td><td>First element to hash </td></tr>
@@ -306,42 +407,59 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The generated hash </dd></dl>
+
+<p>Implemented in <a class="el" href="classHash__MD5.html#a9eacb3ae4ed04063d77d0a1b2b0165f6">Hash_MD5</a>.</p>
 
 </div>
 </div>
-<a id="a529370f2a9baaf470323284364707a88"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a529370f2a9baaf470323284364707a88">&#9670;&nbsp;</a></span>Hash() <span class="overload">[7/8]</span></h2>
+<a id="a28cee3e1b1e688ec2bde38a680876681"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28cee3e1b1e688ec2bde38a680876681">&#9670;&nbsp;</a></span>generate_hash() <span class="overload">[5/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Hash::Hash </td>
+          <td class="memname">virtual std::string Hash::generate_hash </td>
           <td>(</td>
           <td class="paramtype">std::string&#160;</td>
           <td class="paramname"><em>value</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p class="">A Constructor that hash a string value</p>
+<p class="">A method that hash a string value</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">value</td><td><a class="el" href="classElement.html">Element</a> to <a class="el" href="classHash.html">Hash</a> </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The generated hash </dd></dl>
+
+<p>Implemented in <a class="el" href="classHash__MD5.html#aa515effd69130473cb7a8a1e0ded5f54">Hash_MD5</a>.</p>
 
 </div>
 </div>
-<a id="a1d2f0230c2cfe4d6aaab6d9a055faaf5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d2f0230c2cfe4d6aaab6d9a055faaf5">&#9670;&nbsp;</a></span>Hash() <span class="overload">[8/8]</span></h2>
+<a id="a58b5c143b53d7fd64575ac284dff454f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58b5c143b53d7fd64575ac284dff454f">&#9670;&nbsp;</a></span>generate_hash() <span class="overload">[6/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Hash::Hash </td>
+          <td class="memname">virtual std::string Hash::generate_hash </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classComponent.html">Component</a> *&#160;</td>
           <td class="paramname"><em>component</em>, </td>
@@ -364,8 +482,13 @@ Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p class="">Constructor that <a class="el" href="classHash.html">Hash</a> a component object</p>
+<p class="">A method that <a class="el" href="classHash.html">Hash</a> a component object</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">component</td><td>The component to hash </td></tr>
@@ -374,57 +497,14 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The generated hash </dd></dl>
+
+<p>Implemented in <a class="el" href="classHash__MD5.html#afedecfcc6e0ed6cce4f00a60df783f11">Hash_MD5</a>.</p>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab04df77259eb827f2dfe8a84937fa3c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab04df77259eb827f2dfe8a84937fa3c1">&#9670;&nbsp;</a></span>fromElement()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Hash::fromElement </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classElementObject.html">ElementObject</a> *&#160;</td>
-          <td class="paramname"><em>element</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classSerializer.html">Serializer</a> *&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>encoding</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p class="">The function used to build the object from its element representation. the object if it is empty </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classElementObject.html">ElementObject</a> </dd>
-<dd>
-<a class="el" href="classSerializer.html">Serializer</a></dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">element</td><td>The <a class="el" href="classElement.html">Element</a> representation of the object </td></tr>
-    <tr><td class="paramname">serializer</td><td>The serializer (Can be used if serialization of some elements is needed) </td></tr>
-    <tr><td class="paramname">encoding</td><td>The encoding that has been used to create the <a class="el" href="classElement.html">Element</a> representation of the object (Can be used if serialization of some elements is needed) </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a8aafc6563e964ff47dcbba955b0c28f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8aafc6563e964ff47dcbba955b0c28f2">&#9670;&nbsp;</a></span>operator==()</h2>
+<a id="a2ef75bdc8a6e4eec5e235b16a2601208"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ef75bdc8a6e4eec5e235b16a2601208">&#9670;&nbsp;</a></span>get_hash()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -433,71 +513,83 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Hash::operator== </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classHash.html">Hash</a> const &amp;&#160;</td>
-          <td class="paramname"><em>h</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p class="">Compare two different Hashes</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">h</td><td>The <a class="el" href="classHash.html">Hash</a> to compare to </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if both Hashes are the same, false otherwise </dd></dl>
-
-</div>
-</div>
-<a id="ab1c275871d3d81cd38d58dac5c634042"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab1c275871d3d81cd38d58dac5c634042">&#9670;&nbsp;</a></span>to_string()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string Hash::to_string </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p class="">Get a string representation of the hash</p>
-<dl class="section return"><dt>Returns</dt><dd>The string representation of the hash </dd></dl>
-
-</div>
-</div>
-<a id="a35e01449aedb17a0172837c87986181e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a35e01449aedb17a0172837c87986181e">&#9670;&nbsp;</a></span>toElement()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classElement.html">Element</a> * Hash::toElement </td>
+          <td class="memname"><a class="el" href="classHash.html">Hash</a> * Hash::get_hash </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p class="">The method used by the serializer to transform an object into an <a class="el" href="classElement.html">Element</a> representation. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classElement.html">Element</a></dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="classElement.html">Element</a> representation of the object </dd></dl>
+<p class="">Get the hash object used by the block chain</p>
+<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="classHash.html">Hash</a> object used to hash values </dd></dl>
+
+</div>
+</div>
+<a id="aeb00b10f67d0badc923ded4e8a6a3b2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb00b10f67d0badc923ded4e8a6a3b2d">&#9670;&nbsp;</a></span>set_hash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Hash::set_hash </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHash.html">Hash</a> *&#160;</td>
+          <td class="paramname"><em>h</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p class="">Set the used <a class="el" href="classHash.html">Hash</a> for the block chain</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">h</td><td>The hash to use </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aa394d3eb7121cee0b285606664257209"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa394d3eb7121cee0b285606664257209">&#9670;&nbsp;</a></span>HASH_MD5</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int Hash::HASH_MD5 = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p class="">The ID for the md5 hash </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>block_chain/algorithm/<a class="el" href="Hash_8h_source.html">Hash.h</a></li>
-<li>block_chain/algorithm/Hash.cpp</li>
+<li>block_chain/algorithm/hash/<a class="el" href="Hash_8h_source.html">Hash.h</a></li>
+<li>block_chain/algorithm/hash/Hash.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

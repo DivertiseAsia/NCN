@@ -5,7 +5,7 @@
 #ifndef BLOCK_CHAIN_TRANSACTION_H
 #define BLOCK_CHAIN_TRANSACTION_H
 #include "../../../kernel/components/Component.h"
-#include "../../../algorithm/Hash.h"
+#include "../../../algorithm/hash/Hash_MD5.h"
 #include "../../state/Row.h"
 
 class Serializer;
@@ -38,7 +38,7 @@ public:
      *  @param encoding The encoding that has been used to create the Element representation of the object
      *  @return the Hash of the Transaction
      */
-    Hash* __hash__(const Serializer* serializer, const char* encoding) const;
+    std::string __hash__(const Serializer* serializer, const char* encoding) const;
 
     /**
      *  Apply the transaction to a row

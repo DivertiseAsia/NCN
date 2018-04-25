@@ -61,7 +61,6 @@ public:
 
     /**
      *  Allows the user to add its own proof into the system
-     *  He the proof id is required
      *
      *  @param id The proof id
      *  @param proof The lambda expression that creates a proof
