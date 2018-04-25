@@ -52,8 +52,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+            <state relative-caret-position="-226">
+              <caret line="561" lean-forward="true" selection-start-line="561" selection-end-line="561" />
             </state>
           </provider>
         </entry>
@@ -345,12 +345,12 @@
       <workItem from="1524467047533" duration="2000" />
       <workItem from="1524551160780" duration="10528000" />
       <workItem from="1524562026131" duration="5975000" />
-      <workItem from="1524625878628" duration="18808000" />
+      <workItem from="1524625878628" duration="19074000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="272277000" />
+    <option name="totallyTimeSpent" value="272543000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -829,8 +829,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+        <state relative-caret-position="-226">
+          <caret line="561" lean-forward="true" selection-start-line="561" selection-end-line="561" />
         </state>
       </provider>
     </entry>
