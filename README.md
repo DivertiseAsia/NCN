@@ -45,7 +45,7 @@ The node is the peer itself. You only have to create it and it will run.
 ```cpp
 Config config("configuration file path", serializer, reward, Proof::WORK, Hash::HASH_MD5, Cryptography::CRYPTOGRAPHY_RSA);
 ```
-The file itself is a json file. <br/>
+The file itself is a json file. <br />
 
 <h6>Example:</h6>
 ```cpp
@@ -55,7 +55,7 @@ The file itself is a json file. <br/>
   "debug": true
 }
 ```
-the parameters serializer, proof, hash, cryptography and reward are explained later.
+The parameters serializer, proof, hash, cryptography and reward are explained later.
 
 ### Serializer <a name="section_serializer"></a>
 The serialization class is used to transform objects into string using Elements and strings into Objects using Elements.
