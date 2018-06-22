@@ -363,6 +363,7 @@ bool ProofOfWork::accept(Block* block, Message* m){
 ```
 <h4>Feed the framework <a name="sub_section_feedframework"></a></h4>
 Once your proof is done, you just have to give it to the framework using this method:
+
 ```cpp
 static void Proof::add_proof(int id, std::function<Proof*()> proof);
 ```
@@ -374,6 +375,7 @@ Proof::add_proof(Proof::WORK, []() -> Proof*{return new ProofOfWork;});
 ```
 <h4>New metadata <a name="sub_section_newmetadata"></a></h4>
 If your proof require a new metadata class, you just have to provide this metadata to the serializer using this method.
+
 ```cpp
 void add_metadata(int id, std::function<Metadata*()> metadata);
 ```
@@ -415,6 +417,7 @@ std::string Hash_MD5::generate_hash(std::string hash1, std::string value){
 ```
 <h4>Feed the framework <a name="sub_section_feedframeworkhash"></a></h4>
 Once your hash is done, you just have to give it to the framework using this method:
+
 ```cpp
 static void Hash::add_hash(int id, std::function<Hash*()> h);
 ```
@@ -512,6 +515,7 @@ std::string RSA_Cryptography::getPublicKey(){
 ```
 <h4>Feed the framework <a name="sub_section_feedframeworkcrypto"></a></h4>
 Once your cryptography object is done, you just have to give it to the framework using this method:
+
 ```cpp
 static void Cryptography::add_cryptography(int id, std::function<Cryptography*()> crypto);
 ```
