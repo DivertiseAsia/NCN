@@ -1,0 +1,1 @@
+/home/default/CLionProjects/block_chain/block_chain/utils/serialization/Serializer.h:168: warning: argument 'id' of command @param is not found in the argument list of Serializer::add_transaction()

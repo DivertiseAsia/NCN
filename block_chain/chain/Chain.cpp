@@ -9,7 +9,7 @@ Chain::Chain(Block* b, Chain* c, std::string cr): database(c->database), fingerp
     b->data->update_database(&database);
 }
 
-Chain::Chain(const Reward* r): database(r), fingerprint(nullptr){
+Chain::Chain(const Reward* r): database(r), fingerprint("0"){
 }
 
 Chain::~Chain(){

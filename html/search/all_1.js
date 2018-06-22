@@ -7,7 +7,7 @@ var searchData=
   ['add_5fmetadata',['add_metadata',['../classSerializer.html#ad274399c02bb5217a52ac994b9a37857',1,'Serializer']]],
   ['add_5fproof',['add_proof',['../classProof.html#a71874539fdbcc93c15594b889c95225b',1,'Proof']]],
   ['add_5fserializer',['add_serializer',['../classSerializer.html#ad1c1cec677cf2efaf5c10e4551faf61e',1,'Serializer']]],
-  ['add_5ftransaction',['add_transaction',['../classFramework.html#ad6ef9b255453a080747e1a018f87eaa0',1,'Framework::add_transaction()'],['../classSerializer.html#a7c8a3cc4cda238220d613f1ae0d69534',1,'Serializer::add_transaction()']]],
+  ['add_5ftransaction',['add_transaction',['../classFramework.html#ad6ef9b255453a080747e1a018f87eaa0',1,'Framework::add_transaction()'],['../classSerializer.html#a7c8a3cc4cda238220d613f1ae0d69534',1,'Serializer::add_transaction(int id, std::function&lt; Transaction *()&gt; transaction)'],['../classSerializer.html#ab08471ca012923d42c06cb56e07b1b82',1,'Serializer::add_transaction()']]],
   ['add_5funserializer',['add_unserializer',['../classSerializer.html#a1b767c8a754afb529343f91538082473',1,'Serializer']]],
   ['answer_5fblock',['ANSWER_BLOCK',['../classMessage.html#a1580f4a26d125f71e2af1ef6001ac656',1,'Message']]],
   ['answer_5fpeers',['ANSWER_PEERS',['../classMessage.html#aa33f42e5795c4df01c7437961d512eaa',1,'Message']]],

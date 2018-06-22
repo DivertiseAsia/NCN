@@ -9,6 +9,7 @@
 #include "reward/RewardTransaction.h"
 #include "block_chain/kernel/components/Config.h"
 #include "block_chain/Framework.h"
+
 /*
  * ls -R ./block_chain | awk '
 /:$/&&f{s=$0;f=0}
@@ -18,7 +19,6 @@ NF&&f{ print s"/"$0 }'| sed ':a;N;$!ba;s/\n/ /g'
 /*rand() % 1000+3000*/
 
 int main() {
-
 
     //Possible transactions
     Framework block_chain;
@@ -34,12 +34,12 @@ int main() {
 
     //Reward object
     Reward* reward = new RewardTransaction();
-
     //Block chain initialization
     Config config("./config.json", serial, reward, Proof::WORK, Hash::HASH_MD5, Cryptography::CRYPTOGRAPHY_RSA);
     Node client(config);
 
     //launching the loop
     client.start(manager);
+
     return 0;
 }

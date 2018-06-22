@@ -163,6 +163,17 @@ public:
      * 	@param transaction The lambda expression generating the transaction
     */
     void add_transaction(int id, std::function<Transaction*()> transaction);
+
+    /**
+     *  Add a new possible transaction
+     *  @see Transaction
+     *
+     * 	@param id The type of the metadata
+    */
+    template<class T, class = std::enable_if<std::is_base_of<Transaction, T>::value>>
+    void add_transaction(){
+        transactions_index[T().get_type()] = []() -> Transaction*{return new T;};
+    };
 protected:
 
     /**

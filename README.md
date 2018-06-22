@@ -71,6 +71,14 @@ void add_transaction(int id, std::function<Transaction*()> transaction);
 ```cpp
 serial->add_transaction(money->get_type(), []() -> Transaction*{return new MoneyTransaction;});
 ```
+
+This method can be replaced by another method:
+
+```cpp
+serial->add_transaction<MoneyTransaction>();
+```
+
+
 It can also be replaced by the [Framework helper](#section_framework).
 ## Main classes to implement <a name="section_create"></a>
 In addition to these main classes, you need to implement some interfaces.

@@ -100,6 +100,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad274399c02bb5217a52ac994b9a37857"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c8a3cc4cda238220d613f1ae0d69534"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSerializer.html#a7c8a3cc4cda238220d613f1ae0d69534">add_transaction</a> (int id, std::function&lt; <a class="el" href="classTransaction.html">Transaction</a> *()&gt; transaction)</td></tr>
 <tr class="separator:a7c8a3cc4cda238220d613f1ae0d69534"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab08471ca012923d42c06cb56e07b1b82"><td class="memTemplParams" colspan="2">template&lt;class T , class  = std::enable_if&lt;std::is_base_of&lt;Transaction, T&gt;::value&gt;&gt; </td></tr>
+<tr class="memitem:ab08471ca012923d42c06cb56e07b1b82"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classSerializer.html#ab08471ca012923d42c06cb56e07b1b82">add_transaction</a> ()</td></tr>
+<tr class="separator:ab08471ca012923d42c06cb56e07b1b82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -246,7 +249,7 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a7c8a3cc4cda238220d613f1ae0d69534"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c8a3cc4cda238220d613f1ae0d69534">&#9670;&nbsp;</a></span>add_transaction()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c8a3cc4cda238220d613f1ae0d69534">&#9670;&nbsp;</a></span>add_transaction() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -275,6 +278,40 @@ Protected Attributes</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">id</td><td>The type of the metadata </td></tr>
     <tr><td class="paramname">transaction</td><td>The lambda expression generating the transaction </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab08471ca012923d42c06cb56e07b1b82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab08471ca012923d42c06cb56e07b1b82">&#9670;&nbsp;</a></span>add_transaction() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , class  = std::enable_if&lt;std::is_base_of&lt;Transaction, T&gt;::value&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Serializer::add_transaction </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p class="">Add a new possible transaction </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classTransaction.html">Transaction</a></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>The type of the metadata </td></tr>
   </table>
   </dd>
 </dl>
