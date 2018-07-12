@@ -40,6 +40,6 @@ int main() {
 
     //launching the loop
     client.start(manager);
-
+    delete reward;
     return 0;
 }

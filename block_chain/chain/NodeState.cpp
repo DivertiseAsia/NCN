@@ -108,9 +108,10 @@ void NodeState::read_blocks(int crypto) {
                         while (std::getline(block_file, line))
                             serialized += line;
                         Block *block = serializer->unserializeBlock(serialized, encoding.c_str());
+                        std::string creator = block->data->get_creator();
                         block_file.close();
                         Chain* c = nullptr;
-                        if((c = chain->add(block)) != nullptr)
+                        if((c = chain->add(block, creator)) != nullptr)
                             c->update_database(block, serializer, encoding.c_str());
                     }
                 }
