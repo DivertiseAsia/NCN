@@ -86,12 +86,14 @@ Inheritance diagram for Cryptography:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af635b3099804e7501562f020bf858c73"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCryptography.html#af635b3099804e7501562f020bf858c73">Cryptography</a> ()=default</td></tr>
 <tr class="separator:af635b3099804e7501562f020bf858c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a601e11cc910c1fb339a7154884341433"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCryptography.html#a601e11cc910c1fb339a7154884341433">~Cryptography</a> ()=default</td></tr>
+<tr class="separator:a601e11cc910c1fb339a7154884341433"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac997921c1a720bdb03e385ed8caeded2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCryptography.html#ac997921c1a720bdb03e385ed8caeded2">set_public_key</a> (std::string key)=0</td></tr>
 <tr class="separator:ac997921c1a720bdb03e385ed8caeded2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac98175dd6bf76686be458d240bcf2bd4"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCryptography.html#ac98175dd6bf76686be458d240bcf2bd4">encrypt</a> (std::string message)=0</td></tr>
 <tr class="separator:ac98175dd6bf76686be458d240bcf2bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a149ef6d3ce1cb7b33d7716d627d6824d"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCryptography.html#a149ef6d3ce1cb7b33d7716d627d6824d">decrypt</a> (std::string message, int size)=0</td></tr>
-<tr class="separator:a149ef6d3ce1cb7b33d7716d627d6824d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd5048b0daa67beab17f9a373fd9a590"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCryptography.html#acd5048b0daa67beab17f9a373fd9a590">decrypt</a> (std::string message, unsigned long size)=0</td></tr>
+<tr class="separator:acd5048b0daa67beab17f9a373fd9a590"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e5e3c295cd64b2e6ab54beb0a79bf10"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCryptography.html#a5e5e3c295cd64b2e6ab54beb0a79bf10">getPublicKey</a> ()=0</td></tr>
 <tr class="separator:a5e5e3c295cd64b2e6ab54beb0a79bf10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39a21b22097823d23d77e5489e6d060c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCryptography.html#a39a21b22097823d23d77e5489e6d060c">generate</a> (const char *private_file, const char *public_file)=0</td></tr>
@@ -141,6 +143,32 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p class="">A default constructor </p>
+
+</div>
+</div>
+<a id="a601e11cc910c1fb339a7154884341433"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a601e11cc910c1fb339a7154884341433">&#9670;&nbsp;</a></span>~Cryptography()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual Cryptography::~Cryptography </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p class="">A default destructor </p>
 
 </div>
 </div>
@@ -235,8 +263,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a149ef6d3ce1cb7b33d7716d627d6824d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a149ef6d3ce1cb7b33d7716d627d6824d">&#9670;&nbsp;</a></span>decrypt()</h2>
+<a id="acd5048b0daa67beab17f9a373fd9a590"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd5048b0daa67beab17f9a373fd9a590">&#9670;&nbsp;</a></span>decrypt()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -253,7 +281,7 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">unsigned long&#160;</td>
           <td class="paramname"><em>size</em>&#160;</td>
         </tr>
         <tr>
@@ -278,7 +306,7 @@ Static Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The decrypted message </dd></dl>
 
-<p>Implemented in <a class="el" href="classRSA__Cryptography.html#a519b570003d9ffa110dc762142706a7a">RSA_Cryptography</a>.</p>
+<p>Implemented in <a class="el" href="classRSA__Cryptography.html#a682c51bb274a552092b2f5d1f03eeff1">RSA_Cryptography</a>.</p>
 
 </div>
 </div>
