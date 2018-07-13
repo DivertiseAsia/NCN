@@ -68,7 +68,6 @@ void SocketServer::close(){
 }
 SocketServer::~SocketServer()
 {
-    std::cout << " closed server "<< std::endl;
     peers.clear();
 
     delete master;

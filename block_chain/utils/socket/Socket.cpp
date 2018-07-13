@@ -167,7 +167,6 @@ int Socket::write(const char* buffer){
 }
 
 Socket::~Socket(){
-    std::cout<<"Closed socket"<< std::endl;
     close_socket(socket);
 }
 
