@@ -38,7 +38,6 @@ Node::~Node(){
     #ifndef _WIN32
     running.detach();
     #endif // _WIN32
-    delete serializer;
     delete crypto;
     std::this_thread::sleep_for(std::chrono::microseconds(1000000));
     std::cout<< "Connection closed" <<std::endl;

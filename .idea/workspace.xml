@@ -13,7 +13,14 @@
   <component name="ChangeListManager">
     <list default="true" id="b337953f-6d17-4d79-bf7d-640c27a86937" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block_chain/utils/serialization/json/JsonParser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/utils/serialization/json/JsonParser.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/block_chain/Node.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/block_chain/Node.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/Node.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/Node.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/utils/socket/Peer.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/utils/socket/Peer.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/utils/socket/Socket.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/block_chain/utils/socket/Socket.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/block_chain.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/block_chain" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/block_chain" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,98 +33,20 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Chain.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/block_chain/chain/Chain.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2040">
-              <caret line="136" column="7" selection-start-line="136" selection-start-column="7" selection-end-line="136" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Block.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/block_chain/chain/block/Block.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1665">
-              <caret line="111" column="7" selection-start-line="111" selection-start-column="7" selection-end-line="111" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Metadata.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/block_chain/chain/block/proof/metadata/Metadata.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Transaction.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/block_chain/chain/block/transaction/Transaction.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1110">
-              <caret line="74" selection-start-line="74" selection-end-line="74" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="45" selection-start-line="45" selection-end-line="45" />
+            <state relative-caret-position="420">
+              <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Chain.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/block_chain/chain/Chain.cpp">
+      <file leaf-file-name="Node.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/block_chain/Node.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="17" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NodeState.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/block_chain/chain/NodeState.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1170">
-              <caret line="78" column="5" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
-              <folding>
-                <element signature="e#3034#4767#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Hash_MD5.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/block_chain/algorithm/hash/Hash_MD5.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JsonParser.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/block_chain/utils/serialization/json/JsonParser.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="156" column="30" selection-start-line="156" selection-start-column="30" selection-end-line="156" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Row.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/block_chain/chain/state/Row.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+            <state relative-caret-position="450">
+              <caret line="38" column="21" lean-forward="true" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -169,8 +98,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/block_chain/kernel/parsers/PeersAskParser.h" />
-        <option value="$PROJECT_DIR$/block_chain/kernel/parsers/SignInParser.h" />
         <option value="$PROJECT_DIR$/block_chain/kernel/parsers/SignOutParser.h" />
         <option value="$PROJECT_DIR$/block_chain/kernel/parsers/TransactionParser.h" />
         <option value="$PROJECT_DIR$/block_chain/utils/serialization/json/JsonParser.h" />
@@ -184,7 +111,6 @@
         <option value="$PROJECT_DIR$/block_chain/algorithm/Hash.h" />
         <option value="$PROJECT_DIR$/block_chain/algorithm/Hash.cpp" />
         <option value="$PROJECT_DIR$/block_chain/chain/block/transaction/Transaction.cpp" />
-        <option value="$PROJECT_DIR$/block_chain/chain/block/transaction/Transaction.h" />
         <option value="$PROJECT_DIR$/block_chain/algorithm/hash/Hash_MD5.cpp" />
         <option value="$PROJECT_DIR$/block_chain/chain/block/proof/metadata/Metadata.h" />
         <option value="$PROJECT_DIR$/block_chain/chain/block/proof/metadata/ProofOfWorkMetadata.h" />
@@ -214,12 +140,15 @@
         <option value="$PROJECT_DIR$/block_chain/kernel/components/Config.h" />
         <option value="$PROJECT_DIR$/block_chain/kernel/components/Config.cpp" />
         <option value="$PROJECT_DIR$/block_chain/chain/Chain.cpp" />
-        <option value="$PROJECT_DIR$/block_chain/Node.cpp" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/block_chain/utils/serialization/Serializer.h" />
-        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/block_chain/chain/NodeState.cpp" />
         <option value="$PROJECT_DIR$/block_chain/utils/serialization/json/JsonParser.cpp" />
+        <option value="$PROJECT_DIR$/block_chain/chain/block/transaction/Transaction.h" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/block_chain/utils/socket/Socket.cpp" />
+        <option value="$PROJECT_DIR$/block_chain/utils/socket/Peer.cpp" />
+        <option value="$PROJECT_DIR$/block_chain/Node.cpp" />
       </list>
     </option>
   </component>
@@ -258,63 +187,7 @@
               <item name="block_chain" type="b2602c69:ProjectViewProjectNode" />
               <item name="block_chain" type="462c0819:PsiDirectoryNode" />
               <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="block_chain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="hash" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="block_chain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="chain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="block_chain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="chain" type="462c0819:PsiDirectoryNode" />
-              <item name="block" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="block_chain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="chain" type="462c0819:PsiDirectoryNode" />
-              <item name="block" type="462c0819:PsiDirectoryNode" />
-              <item name="transaction" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="block_chain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="chain" type="462c0819:PsiDirectoryNode" />
-              <item name="state" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="block_chain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="block_chain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="serialization" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="block_chain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="block_chain" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="serialization" type="462c0819:PsiDirectoryNode" />
-              <item name="json" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="block_chain" type="b2602c69:ProjectViewProjectNode" />
@@ -406,12 +279,12 @@
       <workItem from="1530855644676" duration="5000" />
       <workItem from="1531194013361" duration="608000" />
       <workItem from="1531368997455" duration="1351000" />
-      <workItem from="1531456277307" duration="91000" />
+      <workItem from="1531456277307" duration="3152000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="287793000" />
+    <option name="totallyTimeSpent" value="290854000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -426,13 +299,13 @@
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49847096" visible="true" weight="0.2161725" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49847096" visible="true" weight="0.2161725" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32991803" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32889345" />
       <window_info anchor="bottom" id="CMake" order="11" weight="0.32889345" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3135246" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3135246" />
       <window_info id="Structure" order="1" sideWeight="0.50152904" side_tool="true" weight="0.18867925" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -459,41 +332,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/block_chain/chain/block/transaction/Transaction.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="64" column="7" selection-start-line="64" selection-start-column="7" selection-end-line="64" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/block_chain/chain/block/transaction/Transaction.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="63" column="35" lean-forward="true" selection-start-line="63" selection-start-column="35" selection-end-line="63" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/block_chain/algorithm/hash/Hash_MD5.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="40" selection-start-line="40" selection-end-line="41" selection-end-column="119" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/block_chain/algorithm/hash/Hash.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="115" selection-start-line="115" selection-end-line="119" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/include/openssl/ossl_typ.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="145" column="22" selection-start-line="145" selection-start-column="22" selection-end-line="145" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/include/openssl/rsa.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -688,24 +526,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/block_chain/Framework.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/block_chain/chain/block/transaction/Transaction.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/block_chain/Node.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -763,27 +587,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/block_chain/chain/block/proof/metadata/Metadata.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/block_chain/chain/block/transaction/Transaction.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1110">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/block_chain/chain/Chain.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -815,6 +618,72 @@
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/block_chain.cbp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="90" column="79" lean-forward="true" selection-start-line="90" selection-start-column="79" selection-end-line="90" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/block_chain/chain/block/transaction/Transaction.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="35" column="6" lean-forward="true" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/block_chain/chain/block/proof/metadata/Metadata.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/x86_64-linux-gnu/sys/socket.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="148" column="15" selection-start-line="148" selection-start-column="15" selection-end-line="148" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/block_chain/utils/socket/Socket.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="163" lean-forward="true" selection-start-line="163" selection-end-line="163" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/block_chain/utils/socket/Peer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/block_chain/TransactionManager.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/block_chain/Framework.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/block_chain/Node.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="38" column="21" lean-forward="true" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
         </state>
       </provider>
     </entry>

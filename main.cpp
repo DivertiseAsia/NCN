@@ -36,10 +36,10 @@ int main() {
     Reward* reward = new RewardTransaction();
     //Block chain initialization
     Config config("./config.json", serial, reward, Proof::WORK, Hash::HASH_MD5, Cryptography::CRYPTOGRAPHY_RSA);
-    Node client(config);
-
+    Node* client = new Node(config);
     //launching the loop
-    client.start(manager);
+    client->start(manager);
     delete reward;
+    delete client;
     return 0;
 }
