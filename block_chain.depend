@@ -859,3 +859,831 @@
 1531374026 source:d:\divertise\block_chain\block_chain\kernel\components\config.cpp
 	"Config.h"
 
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\algorithm\cryptography\cryptography.cpp
+	"Cryptography.h"
+	"RSA.h"
+
+1531445597 d:\mathieu\trsdt\dg\block_chain\algorithm\cryptography\cryptography.h
+	<string>
+	<functional>
+	<map>
+
+1531445411 d:\mathieu\trsdt\dg\block_chain\algorithm\cryptography\rsa.h
+	<string>
+	<openssl/rsa.h>
+	<openssl/pem.h>
+	<openssl/bio.h>
+	<openssl/engine.h>
+	<fstream>
+	<cstring>
+	"Cryptography.h"
+	<iostream>
+
+1522115204 c:\openssl-win32\include\openssl\rsa.h
+	<openssl/asn1.h>
+	<openssl/bio.h>
+	<openssl/crypto.h>
+	<openssl/ossl_typ.h>
+	<openssl/bn.h>
+
+1522115204 c:\openssl-win32\include\openssl\asn1.h
+	<time.h>
+	<openssl/e_os2.h>
+	<openssl/bio.h>
+	<openssl/stack.h>
+	<openssl/safestack.h>
+	<openssl/symhacks.h>
+	<openssl/ossl_typ.h>
+	<openssl/bn.h>
+
+1522115204 c:\openssl-win32\include\openssl\e_os2.h
+	<openssl/opensslconf.h>
+	<sys/socket.h>
+
+1522115204 c:\openssl-win32\include\openssl\opensslconf.h
+
+1522115204 c:\openssl-win32\include\openssl\bio.h
+	<openssl/e_os2.h>
+	<stdio.h>
+	<stdarg.h>
+	<openssl/crypto.h>
+	<stdint.h>
+	<inttypes.h>
+
+1522115204 c:\openssl-win32\include\openssl\crypto.h
+	<stdlib.h>
+	<openssl/e_os2.h>
+	<stdio.h>
+	<openssl/stack.h>
+	<openssl/safestack.h>
+	<openssl/opensslv.h>
+	<openssl/ossl_typ.h>
+	<openssl/ebcdic.h>
+	<openssl/symhacks.h>
+
+1522115204 c:\openssl-win32\include\openssl\stack.h
+
+1522115204 c:\openssl-win32\include\openssl\safestack.h
+	<openssl/stack.h>
+
+1522115204 c:\openssl-win32\include\openssl\opensslv.h
+
+1522115204 c:\openssl-win32\include\openssl\ossl_typ.h
+	<openssl/e_os2.h>
+
+1522115204 c:\openssl-win32\include\openssl\ebcdic.h
+	<sys/types.h>
+
+1522115204 c:\openssl-win32\include\openssl\symhacks.h
+	<openssl/e_os2.h>
+
+1522115204 c:\openssl-win32\include\openssl\bn.h
+	<limits.h>
+	<openssl/e_os2.h>
+	<stdio.h>
+	<openssl/ossl_typ.h>
+	<openssl/crypto.h>
+	<assert.h>
+
+1522115204 c:\openssl-win32\include\openssl\pem.h
+	<openssl/e_os2.h>
+	<openssl/bio.h>
+	<openssl/stack.h>
+	<openssl/evp.h>
+	<openssl/x509.h>
+	<openssl/pem2.h>
+	<openssl/symhacks.h>
+
+1522115204 c:\openssl-win32\include\openssl\evp.h
+	<openssl/opensslconf.h>
+	<openssl/opensslconf.h>
+	<openssl/ossl_typ.h>
+	<openssl/symhacks.h>
+	<openssl/bio.h>
+	<openssl/objects.h>
+
+1522115204 c:\openssl-win32\include\openssl\objects.h
+	<openssl/obj_mac.h>
+	<openssl/bio.h>
+	<openssl/asn1.h>
+
+1522115204 c:\openssl-win32\include\openssl\obj_mac.h
+
+1522115204 c:\openssl-win32\include\openssl\x509.h
+	<openssl/e_os2.h>
+	<openssl/symhacks.h>
+	<openssl/buffer.h>
+	<openssl/evp.h>
+	<openssl/bio.h>
+	<openssl/stack.h>
+	<openssl/asn1.h>
+	<openssl/safestack.h>
+	<openssl/ec.h>
+	<openssl/ecdsa.h>
+	<openssl/ecdh.h>
+	<openssl/rsa.h>
+	<openssl/dsa.h>
+	<openssl/dh.h>
+	<openssl/sha.h>
+	<openssl/ossl_typ.h>
+	<openssl/x509_vfy.h>
+	<openssl/pkcs7.h>
+
+1522115204 c:\openssl-win32\include\openssl\buffer.h
+	<openssl/ossl_typ.h>
+	<stddef.h>
+	<sys/types.h>
+
+1522115204 c:\openssl-win32\include\openssl\ec.h
+	<openssl/opensslconf.h>
+	<openssl/asn1.h>
+	<openssl/symhacks.h>
+	<openssl/bn.h>
+
+1522115204 c:\openssl-win32\include\openssl\ecdsa.h
+	<openssl/opensslconf.h>
+	<openssl/ec.h>
+	<openssl/ossl_typ.h>
+	<openssl/bn.h>
+
+1522115204 c:\openssl-win32\include\openssl\ecdh.h
+	<openssl/opensslconf.h>
+	<openssl/ec.h>
+	<openssl/ossl_typ.h>
+	<openssl/bn.h>
+
+1522115204 c:\openssl-win32\include\openssl\dsa.h
+	<openssl/e_os2.h>
+	<openssl/bio.h>
+	<openssl/crypto.h>
+	<openssl/ossl_typ.h>
+	<openssl/bn.h>
+	<openssl/dh.h>
+
+1522115204 c:\openssl-win32\include\openssl\dh.h
+	<openssl/e_os2.h>
+	<openssl/bio.h>
+	<openssl/ossl_typ.h>
+	<openssl/bn.h>
+
+1522115204 c:\openssl-win32\include\openssl\sha.h
+	<openssl/e_os2.h>
+	<stddef.h>
+
+1522115204 c:\openssl-win32\include\openssl\x509_vfy.h
+	<openssl/x509.h>
+	<openssl/opensslconf.h>
+	<openssl/lhash.h>
+	<openssl/bio.h>
+	<openssl/crypto.h>
+	<openssl/symhacks.h>
+
+1522115204 c:\openssl-win32\include\openssl\lhash.h
+	<openssl/e_os2.h>
+	<stdio.h>
+	<openssl/bio.h>
+
+1522115204 c:\openssl-win32\include\openssl\pkcs7.h
+	<openssl/asn1.h>
+	<openssl/bio.h>
+	<openssl/e_os2.h>
+	<openssl/symhacks.h>
+	<openssl/ossl_typ.h>
+
+1522115204 c:\openssl-win32\include\openssl\pem2.h
+
+1522115204 c:\openssl-win32\include\openssl\engine.h
+	<openssl/opensslconf.h>
+	<openssl/bn.h>
+	<openssl/rsa.h>
+	<openssl/dsa.h>
+	<openssl/dh.h>
+	<openssl/ecdh.h>
+	<openssl/ecdsa.h>
+	<openssl/rand.h>
+	<openssl/ui.h>
+	<openssl/err.h>
+	<openssl/ossl_typ.h>
+	<openssl/symhacks.h>
+	<openssl/x509.h>
+
+1522115204 c:\openssl-win32\include\openssl\rand.h
+	<stdlib.h>
+	<openssl/ossl_typ.h>
+	<openssl/e_os2.h>
+	<windows.h>
+
+1522115204 c:\openssl-win32\include\openssl\ui.h
+	<openssl/crypto.h>
+	<openssl/safestack.h>
+	<openssl/ossl_typ.h>
+
+1522115204 c:\openssl-win32\include\openssl\err.h
+	<openssl/e_os2.h>
+	<stdio.h>
+	<stdlib.h>
+	<openssl/ossl_typ.h>
+	<openssl/bio.h>
+	<openssl/lhash.h>
+	<errno.h>
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\algorithm\cryptography\rsa.cpp
+	"RSA.h"
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\algorithm\hash\hash.cpp
+	"Hash.h"
+	<utility>
+	"../../utils/serialization/Serializer.h"
+
+1531445411 d:\mathieu\trsdt\dg\block_chain\algorithm\hash\hash.h
+	<string>
+	<functional>
+	"../../kernel/components/Component.h"
+
+1531445411 d:\mathieu\trsdt\dg\block_chain\kernel\components\component.h
+	"../../utils/serialization/Element.h"
+
+1531445411 d:\mathieu\trsdt\dg\block_chain\utils\serialization\element.h
+	<vector>
+	<map>
+	<cstring>
+	"Parser.h"
+
+1531445411 d:\mathieu\trsdt\dg\block_chain\utils\serialization\parser.h
+	<string>
+
+1531445411 d:\mathieu\trsdt\dg\block_chain\utils\serialization\serializer.h
+	"../../chain/block/Block.h"
+	"../../chain/block/transaction/Transaction.h"
+	"../Factory.h"
+	"Parser.h"
+	"../../kernel/messages/Message.h"
+	<cstdlib>
+	"json/JsonCreator.h"
+	"json/JsonParser.h"
+	<utility>
+	"../../chain/block/proof/metadata/ProofOfWorkMetadata.h"
+
+1531445411 d:\mathieu\trsdt\dg\block_chain\chain\block\block.h
+	<vector>
+	"../../algorithm/hash/Hash_MD5.h"
+	"proof/metadata/Metadata.h"
+	"../../kernel/components/Component.h"
+	"../../algorithm/MerkleTree.h"
+	<iostream>
+	<chrono>
+
+1531445411 d:\mathieu\trsdt\dg\block_chain\algorithm\hash\hash_md5.h
+	<string>
+	<openssl/md5.h>
+	"../../kernel/components/Component.h"
+	"../../utils/Encoding.h"
+	"Hash.h"
+	<iostream>
+
+1522115204 c:\openssl-win32\include\openssl\md5.h
+	<openssl/e_os2.h>
+	<stddef.h>
+
+1531445411 d:\mathieu\trsdt\dg\block_chain\utils\encoding.h
+	"string"
+	<cstring>
+
+1531445411 d:\mathieu\trsdt\dg\block_chain\chain\block\proof\metadata\metadata.h
+	"../../../../utils/serialization/Element.h"
+	"../../../../kernel/components/Component.h"
+	"../../../../algorithm/hash/Hash_MD5.h"
+	"../../../state/Database.h"
+
+1531445411 d:\mathieu\trsdt\dg\block_chain\chain\state\database.h
+	<map>
+	<string>
+	"Row.h"
+	"../block/transaction/Transaction.h"
+	"../block/transaction/Reward.h"
+
+1531445411 d:\mathieu\trsdt\dg\block_chain\chain\state\row.h
+	<string>
+
+1531445411 d:\mathieu\trsdt\dg\block_chain\chain\block\transaction\transaction.h
+	"../../../kernel/components/Component.h"
+	"../../../algorithm/hash/Hash_MD5.h"
+	"../../state/Row.h"
+
+1531445411 d:\mathieu\trsdt\dg\block_chain\chain\block\transaction\reward.h
+	"Transaction.h"
+
+1531445411 d:\mathieu\trsdt\dg\block_chain\algorithm\merkletree.h
+	"hash/Hash_MD5.h"
+	"../chain/block/transaction/Transaction.h"
+
+1531445411 d:\mathieu\trsdt\dg\block_chain\utils\factory.h
+	<iostream>
+	<map>
+	<cstring>
+
+1531445411 d:\mathieu\trsdt\dg\block_chain\kernel\messages\message.h
+	"../components/Component.h"
+	<sstream>
+	<fstream>
+	"../../utils/Encoding.h"
+	"../../algorithm/MerkleTree.h"
+	<functional>
+
+1531445411 d:\mathieu\trsdt\dg\block_chain\utils\serialization\json\jsoncreator.h
+	"../Parser.h"
+	<functional>
+	<map>
+	<iostream>
+	<algorithm>
+	<sstream>
+	<vector>
+	<iterator>
+	<cstring>
+
+1531445411 d:\mathieu\trsdt\dg\block_chain\utils\serialization\json\jsonparser.h
+	"../Parser.h"
+	<functional>
+	<map>
+
+1531445411 d:\mathieu\trsdt\dg\block_chain\chain\block\proof\metadata\proofofworkmetadata.h
+	"Metadata.h"
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\algorithm\hash\hash_md5.cpp
+	"Hash_MD5.h"
+	<utility>
+	"../../utils/serialization/Serializer.h"
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\algorithm\merkletree.cpp
+	"MerkleTree.h"
+	"../utils/serialization/Serializer.h"
+	"cryptography/RSA.h"
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\chain\block\block.cpp
+	"Block.h"
+	<utility>
+	"../../utils/serialization/Serializer.h"
+	"../../kernel/messages/Message.h"
+	"../../algorithm/cryptography/RSA.h"
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\chain\block\proof\metadata\metadata.cpp
+	"Metadata.h"
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\chain\block\proof\metadata\proofofworkmetadata.cpp
+	"ProofOfWorkMetadata.h"
+	"../../../../algorithm/hash/Hash_MD5.h"
+	<iostream>
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\chain\block\proof\proof.cpp
+	"Proof.h"
+	<utility>
+	"ProofOfStake.h"
+	"ProofOfWork.h"
+	"ProofOfHold.h"
+	"ProofOfImportance.h"
+	"ProofOfMinimumAgedStake.h"
+	"ProofOfStakeTime.h"
+	"ProofOfUse.h"
+
+1531445411 d:\mathieu\trsdt\dg\block_chain\chain\block\proof\proof.h
+	<map>
+	<functional>
+	"../Block.h"
+	"../../../kernel/messages/Message.h"
+	"../../../kernel/messages/BlockMessage.h"
+
+1531445411 d:\mathieu\trsdt\dg\block_chain\kernel\messages\blockmessage.h
+	"Message.h"
+
+1531445411 d:\mathieu\trsdt\dg\block_chain\chain\block\proof\proofofstake.h
+	"Proof.h"
+
+1531445411 d:\mathieu\trsdt\dg\block_chain\chain\block\proof\proofofwork.h
+	"Proof.h"
+
+1531445411 d:\mathieu\trsdt\dg\block_chain\chain\block\proof\proofofhold.h
+	"Proof.h"
+
+1531445411 d:\mathieu\trsdt\dg\block_chain\chain\block\proof\proofofimportance.h
+	"Proof.h"
+
+1531445411 d:\mathieu\trsdt\dg\block_chain\chain\block\proof\proofofminimumagedstake.h
+	"Proof.h"
+
+1531445411 d:\mathieu\trsdt\dg\block_chain\chain\block\proof\proofofstaketime.h
+	"Proof.h"
+
+1531445411 d:\mathieu\trsdt\dg\block_chain\chain\block\proof\proofofuse.h
+	"Proof.h"
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\chain\block\proof\proofofhold.cpp
+	"ProofOfHold.h"
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\chain\block\proof\proofofimportance.cpp
+	"ProofOfImportance.h"
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\chain\block\proof\proofofminimumagedstake.cpp
+	"ProofOfMinimumAgedStake.h"
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\chain\block\proof\proofofstake.cpp
+	"ProofOfStake.h"
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\chain\block\proof\proofofstaketime.cpp
+	"ProofOfStakeTime.h"
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\chain\block\proof\proofofuse.cpp
+	"ProofOfUse.h"
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\chain\block\proof\proofofwork.cpp
+	"ProofOfWork.h"
+	"metadata/ProofOfWorkMetadata.h"
+	"../../../kernel/messages/BlockMessage.h"
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\chain\block\transaction\reward.cpp
+	"Reward.h"
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\chain\block\transaction\transaction.cpp
+	"Transaction.h"
+	"../../../utils/serialization/Serializer.h"
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\chain\chain.cpp
+	"Chain.h"
+	"../algorithm/cryptography/RSA.h"
+
+1531445411 d:\mathieu\trsdt\dg\block_chain\chain\chain.h
+	<vector>
+	"../algorithm/hash/Hash_MD5.h"
+	"block/Block.h"
+	"state/Database.h"
+	"../utils/serialization/Serializer.h"
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\chain\nodestate.cpp
+	"NodeState.h"
+
+1531445411 d:\mathieu\trsdt\dg\block_chain\chain\nodestate.h
+	<fstream>
+	<iostream>
+	<string>
+	<map>
+	<vector>
+	<sys/stat.h>
+	<windows.h>
+	<tchar.h>
+	<stdio.h>
+	<strsafe.h>
+	<dirent.h>
+	<algorithm>
+	<utility>
+	"block/Block.h"
+	"state/Database.h"
+	"Chain.h"
+	"../algorithm/hash/Hash_MD5.h"
+	"../algorithm/cryptography/RSA.h"
+	"../utils/serialization/Serializer.h"
+	"../utils/socket/Peer.h"
+
+1531445411 d:\mathieu\trsdt\dg\block_chain\utils\socket\peer.h
+	<string>
+	"Socket.h"
+	"../serialization/Serializer.h"
+	"../../chain/block/transaction/Transaction.h"
+
+1531445411 d:\mathieu\trsdt\dg\block_chain\utils\socket\socket.h
+	<winsock2.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<net/if.h>
+	<arpa/inet.h>
+	<unistd.h>
+	<netdb.h>
+	<string>
+	<cstring>
+	<iostream>
+	<functional>
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\chain\state\database.cpp
+	"Database.h"
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\chain\state\row.cpp
+	"Row.h"
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\framework.cpp
+	"Framework.h"
+	"utils/serialization/Serializer.h"
+
+1531445411 d:\mathieu\trsdt\dg\block_chain\framework.h
+	<vector>
+	"chain/block/transaction/Transaction.h"
+	"TransactionManager.h"
+
+1531445411 d:\mathieu\trsdt\dg\block_chain\transactionmanager.h
+	"chain/block/transaction/Transaction.h"
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\kernel\components\component.cpp
+	"Component.h"
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\kernel\components\config.cpp
+	"Config.h"
+
+1531445612 d:\mathieu\trsdt\dg\block_chain\kernel\components\config.h
+	"../../utils/serialization/Serializer.h"
+	"../../chain/block/proof/Proof.h"
+	"../../algorithm/cryptography/Cryptography.h"
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\kernel\messages\answerpeersmessage.cpp
+	"AnswerPeersMessage.h"
+
+1531445411 d:\mathieu\trsdt\dg\block_chain\kernel\messages\answerpeersmessage.h
+	"SignMessage.h"
+
+1531445411 d:\mathieu\trsdt\dg\block_chain\kernel\messages\signmessage.h
+	"Message.h"
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\kernel\messages\askpeersmessage.cpp
+	"AskPeersMessage.h"
+
+1531445411 d:\mathieu\trsdt\dg\block_chain\kernel\messages\askpeersmessage.h
+	"SignMessage.h"
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\kernel\messages\blockanswermessage.cpp
+	"BlockAnswerMessage.h"
+
+1531445411 d:\mathieu\trsdt\dg\block_chain\kernel\messages\blockanswermessage.h
+	"Message.h"
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\kernel\messages\blockaskmessage.cpp
+	"BlockAskMessage.h"
+
+1531445411 d:\mathieu\trsdt\dg\block_chain\kernel\messages\blockaskmessage.h
+	"Message.h"
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\kernel\messages\blockmessage.cpp
+	"BlockMessage.h"
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\kernel\messages\message.cpp
+	"Message.h"
+	"TransactionMessage.h"
+	"BlockAskMessage.h"
+	"SignInMessage.h"
+	"SignOutMessage.h"
+	"BlockAnswerMessage.h"
+	"AskPeersMessage.h"
+	"AnswerPeersMessage.h"
+	"BlockMessage.h"
+	<iostream>
+	<utility>
+
+1531445411 d:\mathieu\trsdt\dg\block_chain\kernel\messages\transactionmessage.h
+	"Message.h"
+
+1531445411 d:\mathieu\trsdt\dg\block_chain\kernel\messages\signinmessage.h
+	"SignMessage.h"
+
+1531445411 d:\mathieu\trsdt\dg\block_chain\kernel\messages\signoutmessage.h
+	"SignMessage.h"
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\kernel\messages\signinmessage.cpp
+	"SignInMessage.h"
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\kernel\messages\signmessage.cpp
+	"SignMessage.h"
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\kernel\messages\signoutmessage.cpp
+	"SignOutMessage.h"
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\kernel\messages\transactionmessage.cpp
+	"TransactionMessage.h"
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\kernel\parsers\blockanswerparser.cpp
+	"BlockAnswerParser.h"
+	"BlockParser.h"
+	"../../Node.h"
+	"../messages/Message.h"
+	"../messages/BlockAnswerMessage.h"
+
+1531445411 d:\mathieu\trsdt\dg\block_chain\kernel\parsers\blockanswerparser.h
+	"MessageParser.h"
+
+1531445706 d:\mathieu\trsdt\dg\block_chain\kernel\parsers\messageparser.h
+
+1531445411 d:\mathieu\trsdt\dg\block_chain\kernel\parsers\blockparser.h
+	"MessageParser.h"
+
+1531445672 d:\mathieu\trsdt\dg\block_chain\node.h
+	<algorithm>
+	<openssl/rsa.h>
+	<openssl/pem.h>
+	<openssl/bio.h>
+	<openssl/err.h>
+	<openssl/pem.h>
+	<openssl/x509.h>
+	<iostream>
+	"chain/NodeState.h"
+	"utils/socket/SocketServer.h"
+	"utils/socket/Peer.h"
+	"algorithm/cryptography/RSA.h"
+	"kernel/messages/Message.h"
+	"chain/block/proof/Proof.h"
+	"TransactionManager.h"
+	"kernel/parsers/MessageParser.h"
+	"kernel/parsers/BlockAskParser.h"
+	"kernel/parsers/BlockAnswerParser.h"
+	"kernel/parsers/BlockParser.h"
+	"kernel/parsers/SignInParser.h"
+	"kernel/parsers/SignOutParser.h"
+	"kernel/parsers/TransactionParser.h"
+	"kernel/parsers/PeersAnswerParser.h"
+	"kernel/parsers/PeersAskParser.h"
+	"kernel/messages/TransactionMessage.h"
+	"kernel/messages/BlockAskMessage.h"
+	"kernel/messages/SignOutMessage.h"
+	"kernel/messages/AskPeersMessage.h"
+	"kernel/components/Config.h"
+
+1531445411 d:\mathieu\trsdt\dg\block_chain\utils\socket\socketserver.h
+	<thread>
+	<winsock2.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	<unistd.h>
+	<netdb.h>
+	"../serialization/Serializer.h"
+	<iostream>
+	<functional>
+	"Socket.h"
+	<chrono>
+
+1531445411 d:\mathieu\trsdt\dg\block_chain\kernel\parsers\blockaskparser.h
+	"MessageParser.h"
+
+1531445411 d:\mathieu\trsdt\dg\block_chain\kernel\parsers\signinparser.h
+	"MessageParser.h"
+
+1531445411 d:\mathieu\trsdt\dg\block_chain\kernel\parsers\signoutparser.h
+	"MessageParser.h"
+	<algorithm>
+
+1531445411 d:\mathieu\trsdt\dg\block_chain\kernel\parsers\transactionparser.h
+	"MessageParser.h"
+
+1531445411 d:\mathieu\trsdt\dg\block_chain\kernel\parsers\peersanswerparser.h
+	"MessageParser.h"
+
+1531445411 d:\mathieu\trsdt\dg\block_chain\kernel\parsers\peersaskparser.h
+	"MessageParser.h"
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\kernel\parsers\blockaskparser.cpp
+	"BlockAskParser.h"
+	"../../Node.h"
+	"../messages/Message.h"
+	"../messages/BlockAskMessage.h"
+	"../messages/BlockAnswerMessage.h"
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\kernel\parsers\blockparser.cpp
+	"BlockParser.h"
+	"../../Node.h"
+	"../messages/Message.h"
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\kernel\parsers\peersanswerparser.cpp
+	"PeersAnswerParser.h"
+	"../../Node.h"
+	"../messages/Message.h"
+	"../messages/SignInMessage.h"
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\kernel\parsers\peersaskparser.cpp
+	"PeersAskParser.h"
+	"../../Node.h"
+	"../messages/Message.h"
+	"../messages/AnswerPeersMessage.h"
+	"../messages/AskPeersMessage.h"
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\kernel\parsers\signinparser.cpp
+	"SignInParser.h"
+	"../../Node.h"
+	"../messages/Message.h"
+	"../messages/SignMessage.h"
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\kernel\parsers\signoutparser.cpp
+	"SignOutParser.h"
+	"../../Node.h"
+	"../messages/Message.h"
+	"../messages/SignMessage.h"
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\kernel\parsers\transactionparser.cpp
+	"TransactionParser.h"
+	"../../Node.h"
+	"../messages/Message.h"
+	"../messages/TransactionMessage.h"
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\node.cpp
+	"Node.h"
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\transactionmanager.cpp
+	"TransactionManager.h"
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\utils\encoding.cpp
+	"Encoding.h"
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\utils\serialization\element.cpp
+	"Element.h"
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\utils\serialization\elementcreator.cpp
+	"Parser.h"
+	"Element.h"
+	<iostream>
+	<algorithm>
+	<sstream>
+	<vector>
+	<iterator>
+	<cstring>
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\utils\serialization\json\jsoncreator.cpp
+	"JsonCreator.h"
+	"../Element.h"
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\utils\serialization\json\jsonparser.cpp
+	"JsonParser.h"
+	"../Element.h"
+	<iostream>
+	<algorithm>
+	<sstream>
+	<vector>
+	<iterator>
+	<cstring>
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\utils\serialization\serializer.cpp
+	"Serializer.h"
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\utils\socket\peer.cpp
+	"Peer.h"
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\utils\socket\socket.cpp
+	<fcntl.h>
+	"Socket.h"
+
+1531445411 source:d:\mathieu\trsdt\dg\block_chain\utils\socket\socketserver.cpp
+	"SocketServer.h"
+
+1531445411 source:d:\mathieu\trsdt\dg\database\row.cpp
+	"Row.h"
+
+1531445411 d:\mathieu\trsdt\dg\database\row.h
+	"../block_chain/chain/state/Row.h"
+	<string>
+	<vector>
+
+1531445414 source:d:\mathieu\trsdt\dg\main.cpp
+	<iostream>
+	"block_chain/Node.h"
+	"block_chain/TransactionManager.h"
+	"block_chain/chain/block/proof/Proof.h"
+	"transactions/StatusTransaction.h"
+	"transactions/MessagesTransaction.h"
+	"transactions/MoneyTransaction.h"
+	"reward/RewardTransaction.h"
+	"block_chain/kernel/components/Config.h"
+	"block_chain/Framework.h"
+
+1531445414 d:\mathieu\trsdt\dg\transactions\statustransaction.h
+	<string>
+	"../block_chain/chain/block/transaction/Transaction.h"
+	<iostream>
+	"../database/Row.h"
+	"../block_chain/chain/state/Row.h"
+
+1531445414 d:\mathieu\trsdt\dg\transactions\messagestransaction.h
+	<string>
+	<cstdlib>
+	"../block_chain/chain/block/transaction/Transaction.h"
+	"../database/Row.h"
+
+1531445414 d:\mathieu\trsdt\dg\transactions\moneytransaction.h
+	"../block_chain/chain/block/transaction/Transaction.h"
+
+1531445414 d:\mathieu\trsdt\dg\reward\rewardtransaction.h
+	"../block_chain/chain/block/transaction/Reward.h"
+
+1531445414 source:d:\mathieu\trsdt\dg\reward\rewardtransaction.cpp
+	"RewardTransaction.h"
+	"../database/Row.h"
+
+1531445414 source:d:\mathieu\trsdt\dg\transactions\messagestransaction.cpp
+	"MessagesTransaction.h"
+	<cstring>
+
+1531445414 source:d:\mathieu\trsdt\dg\transactions\moneytransaction.cpp
+	"MoneyTransaction.h"
+	<utility>
+	"../database/Row.h"
+
+1531445414 source:d:\mathieu\trsdt\dg\transactions\statustransaction.cpp
+	"StatusTransaction.h"
+	<iostream>
+	<cstring>
+	<cstdlib>
+	<utility>
+

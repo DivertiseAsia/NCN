@@ -120,6 +120,11 @@ public:
 private:
 
 	/**
+	 *  The cryptography object to use to encrypt the messages and objects
+	 */
+    Cryptography* crypto;
+
+	/**
 	 *  The serializer
 	 */
     const Serializer* serializer;
@@ -183,11 +188,6 @@ private:
 	 *  The thread that will run the socket server and listen to the port
 	 */
     std::thread running;
-
-	/**
-	 *  The cryptography object to use to encrypt the messages and objects
-	 */
-    Cryptography* crypto;
 
 	/**
 	 * Counter to see if it received a block before it sends its own

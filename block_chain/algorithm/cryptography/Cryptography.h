@@ -32,6 +32,11 @@ public:
     Cryptography() = default;
 
     /**
+     *  A default destructor
+     */
+    virtual ~Cryptography() {};
+
+    /**
      *  Creates the cryptography object with a given public key.
      *
      *  @param key The known public key

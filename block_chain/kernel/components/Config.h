@@ -106,14 +106,14 @@ protected:
     const Serializer* serializer;
 
     /**
-     *  The proof object for validation
-     */
-    Proof* proof;
-
-    /**
      *  The reward object for validation
      */
     Reward* reward;
+
+    /**
+     *  The proof object for validation
+     */
+    Proof* proof;
 
     /**
      *  Is the program in debug mode

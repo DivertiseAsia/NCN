@@ -31,6 +31,11 @@ public:
     explicit MessageParser() = default;
 
     /**
+     *  A default destructor
+     */
+    virtual ~MessageParser() {};
+
+    /**
      *  Process the message
      *  @see Message
      *  @see Node
