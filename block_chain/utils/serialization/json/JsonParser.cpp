@@ -154,7 +154,8 @@ void JsonParser::parseContent(std::string& text, ElementObject* e) const
                 }
             }
         }
-        text = text.substr((unsigned long)i + 2);
+        while(text[i++] != ':');
+        text = text.substr((unsigned long)i);
         parse(text, &child);
         for(i = 0;text[i] == '\t' || text[i] == ' ' || text[i] == ','; i++);
         text = text.substr((unsigned long)i);

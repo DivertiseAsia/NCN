@@ -1,5 +1,5 @@
 {
-  "port": 3423,
-  "encoding": "json",
-  "debug": true
+  "port": 3424,
+  "encoding"   : "json",
+  "debug"   : true
 }
