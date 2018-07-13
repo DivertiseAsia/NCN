@@ -167,8 +167,6 @@ public:
     /**
      *  Add a new possible transaction
      *  @see Transaction
-     *
-     * 	@param id The type of the metadata
     */
     template<class T, class = std::enable_if<std::is_base_of<Transaction, T>::value>>
     void add_transaction(){
