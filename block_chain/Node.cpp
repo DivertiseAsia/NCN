@@ -93,10 +93,10 @@ void Node::request_transaction(Transaction* transaction){
 int Node::load(Block *pBlock) {
     if(!block_chain.get(pBlock->parent_fingerprint)){
         if(!peers.empty()) {
-            srand(time(NULL));
+            srand((unsigned int)time(nullptr));
             BlockAskMessage answer(self.to_string(), pBlock->parent_fingerprint);
             char* m = serializer->serialize(&answer, encoding.c_str());
-            int index = (int) (rand() % peers.size());
+            auto index = (int) (rand() % peers.size());
             peers[index].send(Encoding::toHexa(m).c_str());
             waiting.emplace(waiting.begin(), pBlock);
             free(m);
@@ -125,6 +125,7 @@ bool Node::defaultCallback(Socket* socket, int port, const Serializer* serialize
             if(node->debug)
                 std::cout << "\033[1;36m[RECV] Request received on port " << port << " >> " << buffer << "\033[0m\n";
             Message *message = serializer->unserializeMessage(buffer, node->encoding.c_str());
+
             threads.emplace_back(new std::thread(async, message, node));
         }
     }

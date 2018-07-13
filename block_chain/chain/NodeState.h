@@ -57,7 +57,7 @@ public:
      *  @param e The used encoding
      *  @param r The reward object
      */
-    explicit NodeState(const Serializer* s, int si = 64, const char* e = "json", const Reward* r = nullptr);
+    explicit NodeState(const Serializer* s, unsigned int si = 64, const char* e = "json", const Reward* r = nullptr);
 
     /**
      *  Creates a block using the stored transactions

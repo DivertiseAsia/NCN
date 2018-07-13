@@ -4,7 +4,7 @@
 
 #include "AnswerPeersMessage.h"
 
-AnswerPeersMessage::AnswerPeersMessage(std::string p): SignMessage(p, Message::ANSWER_PEERS){
+AnswerPeersMessage::AnswerPeersMessage(std::string p): SignMessage(std::move(p), Message::ANSWER_PEERS){
 
 }
 

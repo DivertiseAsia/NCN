@@ -4,9 +4,9 @@
 
 #include "ProofOfHold.h"
 
-void ProofOfHold::run(Block* block, std::string key) const {
+void ProofOfHold::run(Block*, std::string) const {
 
 }
-bool ProofOfHold::accept(Block* block, Message* message) const {
+bool ProofOfHold::accept(Block*, Message*) const {
     return true;
 }

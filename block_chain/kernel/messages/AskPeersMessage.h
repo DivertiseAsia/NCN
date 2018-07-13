@@ -27,7 +27,7 @@ public:
      *
      *  @param p The users's peer representation
      */
-    AskPeersMessage(std::string p);
+    explicit AskPeersMessage(std::string p);
 };
 
 #endif //BLOCK_CHAIN_ASKPEERSMESSAGE_H

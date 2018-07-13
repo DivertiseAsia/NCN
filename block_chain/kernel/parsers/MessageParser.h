@@ -33,7 +33,7 @@ public:
     /**
      *  A default destructor
      */
-    virtual ~MessageParser() {};
+    virtual ~MessageParser() = default;
 
     /**
      *  Process the message

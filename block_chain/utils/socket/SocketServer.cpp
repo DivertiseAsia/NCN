@@ -59,7 +59,7 @@ bool SocketServer::wait(std::function<bool(Socket*, int port, const Serializer* 
     return socket->socket != 0;
 }
 
-bool SocketServer::defaultCallback(Socket* socket, int port, const Serializer*, Node*)
+bool SocketServer::defaultCallback(Socket*, int, const Serializer*, Node*)
 {
     return true;
 }

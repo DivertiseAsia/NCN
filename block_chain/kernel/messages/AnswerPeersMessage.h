@@ -27,7 +27,7 @@ public:
      *
      *  @param p The list of peers as a string value
      */
-    AnswerPeersMessage(std::string p);
+    explicit AnswerPeersMessage(std::string p);
 };
 
 

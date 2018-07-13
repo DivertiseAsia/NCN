@@ -34,7 +34,7 @@ public:
     /**
      *  A default destructor
      */
-    virtual ~Cryptography() {};
+    virtual ~Cryptography() = default;
 
     /**
      *  Creates the cryptography object with a given public key.
@@ -58,7 +58,7 @@ public:
      *  @param size The size of the message to decrypt
      *  @return The decrypted message
      */
-    virtual std::string decrypt(std::string message, int size) = 0;
+    virtual std::string decrypt(std::string message, unsigned long size) = 0;
 
     /**
      *  Get the public key

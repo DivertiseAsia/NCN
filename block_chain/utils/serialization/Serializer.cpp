@@ -75,10 +75,10 @@ Serializer::~Serializer(){
 
 
 void Serializer::add_metadata(int id, std::function<Metadata*()> metadata){
-    metadata_index[id] = metadata;
+    metadata_index[id] = std::move(metadata);
 }
 
 void Serializer::add_transaction(int id, std::function<Transaction*()> transaction){
-    transactions_index[id] = transaction;
+    transactions_index[id] = std::move(transaction);
 
 }

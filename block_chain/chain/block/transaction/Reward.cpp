@@ -14,14 +14,14 @@ Element* Reward::toElement() const {
     return nullptr;
 }
 
-void Reward::fromElement(ElementObject* e, const Serializer*, const char*) {
+void Reward::fromElement(ElementObject*, const Serializer*, const char*) {
 }
 
 void Reward::apply_reverse(Row*){
 
 }
 
-bool Reward::validate(Row *row) const {
+bool Reward::validate(Row*) const {
     return true;
 }
 

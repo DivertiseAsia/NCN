@@ -22,7 +22,7 @@ const char* JsonParser::get_encoding() const{
 
 void JsonParser::parse(std::string& text, Element** e) const
 {
-    int i = 0;
+    unsigned long i = 0;
     for(i = 0;text[i] == '\t' || text[i] == ' ' || text[i] == ','; i++);
     text = text.substr(i);
     char first = text[0];
@@ -44,7 +44,7 @@ void JsonParser::parseContent(std::string& text, ElementDouble* e) const
 {
     double total = 0;
     int div = 0;
-    int i;
+    unsigned long i;
     for(i = 0; (text[i] < 0x3A && text[i] > 0x2F) || text[i] == '.' ; i++)
     {
         if(text[i] == '.')
@@ -62,7 +62,7 @@ void JsonParser::parseContent(std::string& text, ElementDouble* e) const
 void JsonParser::parseContent(std::string& text, ElementInt* e) const
 {
     long long int total = 0;
-    int i;
+    unsigned long i;
     for(i = 0; text[i] < 0x3A && text[i] > 0x2F ; i++)
         total = total*10 + (text[i] - 0x30);
     e->value = total;
@@ -73,7 +73,7 @@ void JsonParser::parseContent(std::string& text, ElementString* e) const
 {
     unsigned int cpt = 0;
     std::string value;
-    int i;
+    unsigned long i;
     for(i = 1; text[i] != '"' || (cpt&1)  ; i++)
     {
         if(text[i] == '\\')
@@ -97,7 +97,7 @@ void JsonParser::parseContent(std::string& text, ElementString* e) const
 
 void JsonParser::parseContent(std::string& text, ElementBoolean* e) const
 {
-    int i;
+    unsigned long i;
     for(i = 0; text[i] < 0x7B && text[i] > 0x60 ; i++);
     e->value = text.substr(0, i) == "true";
     text = text.substr(i);
@@ -154,6 +154,7 @@ void JsonParser::parseContent(std::string& text, ElementObject* e) const
                 }
             }
         }
+        int tmp = i;
         while(text[i++] != ':');
         text = text.substr((unsigned long)i);
         parse(text, &child);

@@ -4,7 +4,7 @@
 
 #include "SignOutMessage.h"
 
-SignOutMessage::SignOutMessage(std::string p): SignMessage(p, Message::SIGN_OUT){
+SignOutMessage::SignOutMessage(std::string p): SignMessage(std::move(p), Message::SIGN_OUT){
 
 }
 

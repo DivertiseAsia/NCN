@@ -4,9 +4,9 @@
 
 #include "ProofOfStake.h"
 
-void ProofOfStake::run(Block* block, std::string key)const {
+void ProofOfStake::run(Block*, std::string)const {
 
 }
-bool ProofOfStake::accept(Block* block, Message* message)const{
+bool ProofOfStake::accept(Block*, Message*)const{
     return true;
 }

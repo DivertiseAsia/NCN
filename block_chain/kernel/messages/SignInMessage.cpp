@@ -4,7 +4,7 @@
 
 #include "SignInMessage.h"
 
-SignInMessage::SignInMessage(std::string p): SignMessage(p, Message::SIGN_IN){
+SignInMessage::SignInMessage(std::string p): SignMessage(std::move(p), Message::SIGN_IN){
 
 }
 

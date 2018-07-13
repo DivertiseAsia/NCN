@@ -28,7 +28,7 @@ public:
      *
      *  @param p The users's peer representation
      */
-    SignOutMessage(std::string p);
+    explicit SignOutMessage(std::string p);
 };
 
 

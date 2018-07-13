@@ -17,7 +17,7 @@ Element* SignMessage::toElement() const {
             ->put("type", ElementCreator::create(type));
 }
 
-void SignMessage::fromElement(ElementObject* e, const Serializer* serializer, const char* encoding) {
+void SignMessage::fromElement(ElementObject* e, const Serializer*, const char*) {
     e->getItem("peer", &peer);
     e->getItem("type", &type);
 }

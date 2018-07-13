@@ -27,7 +27,7 @@ class RSA_Cryptography:public Cryptography {
 
         std::string encrypt(std::string message) override;
 
-        std::string decrypt(std::string message, int size) override;
+        std::string decrypt(std::string message, unsigned long size) override;
 
         /**
          *  Write a key inside a file
@@ -46,7 +46,7 @@ class RSA_Cryptography:public Cryptography {
         /**
          *  Frees RSA key ressources
          */
-        virtual ~RSA_Cryptography();
+        ~RSA_Cryptography() override;
     private:
 
         /**

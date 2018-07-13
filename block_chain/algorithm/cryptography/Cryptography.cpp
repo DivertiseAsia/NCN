@@ -17,7 +17,7 @@ Cryptography* Cryptography::generate(const int type) {
 
 Cryptography* Cryptography::generate(const int type, std::string key) {
     Cryptography* c = generate(type);
-    c->set_public_key(key);
+    c->set_public_key(std::move(key));
     return c;
 }
 

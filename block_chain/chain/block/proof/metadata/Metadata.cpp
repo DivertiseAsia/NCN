@@ -9,7 +9,7 @@ Element* Metadata::toElement() const {
     return e->put("creator", ElementCreator::create(creator));
 }
 
-void Metadata::fromElement(ElementObject* e, const Serializer* serializer, const char* encoding) {
+void Metadata::fromElement(ElementObject* e, const Serializer*, const char*) {
     e->getItem("creator", &creator);
 }
 

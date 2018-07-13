@@ -25,8 +25,7 @@ std::string Hash_MD5::generate_hash(std::string hash1, std::string timestamp){
 
 std::string Hash_MD5::generate_hash(std::string timestamp){
     unsigned char digest[MD5_DIGEST_LENGTH + 1];
-    std::string str = timestamp;
-    MD5((const unsigned char*) str.c_str(), str.size(), digest);
+    MD5((const unsigned char*) timestamp.c_str(), timestamp.size(), digest);
     digest[MD5_DIGEST_LENGTH] = 0;
     return Encoding::toHexa(std::string((const char*)digest));
 }

@@ -8,7 +8,7 @@
 #include "../../kernel/messages/Message.h"
 #include "../../algorithm/cryptography/RSA.h"
 
-std::string Block::compute_hash(int begin, int end, const Serializer* s, const char* e, int c) const{
+std::string Block::compute_hash(long begin, long end, const Serializer* s, const char* e, int c) const{
     if(begin == end) {
         std::string cipher(Encoding::fromHexa(transactions[begin].first));
         std::string key = Encoding::fromHexa(transactions[begin].second);
@@ -25,8 +25,7 @@ std::string Block::compute_fingerprint(const Serializer* s, const char* e, int c
 }
 
 Block::Block(std::vector<std::pair<std::string, std::string>> t, std::string parent): data(nullptr), transactions(
-        std::move(
-                std::move(t))), fingerprint(nullptr), parent_fingerprint(parent) {
+        std::move(t)), fingerprint(""), parent_fingerprint(std::move(parent)) {
     timestamp = std::chrono::duration_cast<std::chrono::milliseconds >(std::chrono::system_clock::now().time_since_epoch()).count();
 }
 
@@ -39,7 +38,7 @@ bool Block::checkFingerPrint(const Serializer* s, const char* e, int c) const {
     return b;
 }
 
-Block::Block(): data(nullptr), fingerprint(nullptr) {
+Block::Block(): data(nullptr), fingerprint("") {
 
 }
 

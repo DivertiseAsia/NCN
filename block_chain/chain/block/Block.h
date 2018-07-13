@@ -142,6 +142,6 @@ private:
      *  @param crypto The cryptography index to use
      *  @return The computed Hash of the array
      */
-    std::string compute_hash(int begin, int end, const Serializer* s, const char* e, int crypto) const;
+    std::string compute_hash(long begin, long end, const Serializer* s, const char* e, int crypto) const;
 };
 #endif //BLOCK_CHAIN_BLOCK_H

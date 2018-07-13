@@ -17,7 +17,7 @@ Chain::~Chain(){
 }
 
 Chain* Chain::add(Block* b, std::string creator){
-    if(b->parent_fingerprint == "" || b->parent_fingerprint == "0" || (b->parent_fingerprint == fingerprint)){
+    if(b->parent_fingerprint.empty() || b->parent_fingerprint == "0" || (b->parent_fingerprint == fingerprint)){
         for(auto& a : chain)
             if(a->fingerprint == b->fingerprint)
                 return nullptr;
@@ -38,7 +38,7 @@ Chain* Chain::add(Block* b, std::string creator){
 
 std::pair<int, Chain*> Chain::top_fingerprint(){
     if(chain.empty())
-        return std::pair<int, Chain*>(1, this);
+        return {1, this};//std::pair<int, Chain*>
     else{
         int size = 0;
         Chain* h(nullptr);
@@ -49,7 +49,7 @@ std::pair<int, Chain*> Chain::top_fingerprint(){
                 h = tmp.second;
             }
         }
-        return std::pair<int, Chain*>(size + 1, h);
+        return {size + 1, h};
     }
 }
 

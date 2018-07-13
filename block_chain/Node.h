@@ -71,7 +71,7 @@ public:
 	 *
 	 *  @param config The config that contains all of the needed data
 	 */
-    Node(Config& config);
+    explicit Node(Config& config);
 
 	/**
 	 *  A destructor to delete all of the objects and signing out

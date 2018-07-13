@@ -4,9 +4,9 @@
 
 #include "ProofOfUse.h"
 
-void ProofOfUse::run(Block* block, std::string key)const{
+void ProofOfUse::run(Block*, std::string)const{
 
 }
-bool ProofOfUse::accept(Block* block, Message* message)const{
+bool ProofOfUse::accept(Block*, Message*) const{
     return true;
 }

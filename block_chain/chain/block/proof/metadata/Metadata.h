@@ -36,7 +36,7 @@ public:
     /**
      *  A virtual default destructor
      */
-    virtual ~Metadata();
+    ~Metadata() override;
 
     /**
      *  Overriding the == operator

@@ -7,7 +7,7 @@
 #include <iostream>
 
 const int ProofOfWorkMetadata::TYPE = 0;
-ProofOfWorkMetadata::ProofOfWorkMetadata(long long int i, long long int j, std::string s): Metadata(s), first(i), second(j){
+ProofOfWorkMetadata::ProofOfWorkMetadata(long long int i, long long int j, std::string s): Metadata(std::move(s)), first(i), second(j){
 
 }
 ProofOfWorkMetadata::ProofOfWorkMetadata() = default;
@@ -17,7 +17,7 @@ Element* ProofOfWorkMetadata::toElement() const{
     auto o = dynamic_cast<ElementObject*>(e);
     return o->put("first", ElementCreator::create(first))
             ->put("second", ElementCreator::create(second))
-            ->put("type", ElementCreator::create(ProofOfWorkMetadata::TYPE));
+            ->put("type", ElementCreator::create(TYPE));
 }
 void ProofOfWorkMetadata::fromElement(ElementObject* e,  const Serializer* serializer, const char* encoding){
     Metadata::fromElement(e, serializer, encoding);

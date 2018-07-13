@@ -18,7 +18,7 @@ Element* BlockAskMessage::toElement() const {
             ->put("type", ElementCreator::create(type));
 }
 
-void BlockAskMessage::fromElement(ElementObject* e, const Serializer* serializer, const char* encoding) {
+void BlockAskMessage::fromElement(ElementObject* e, const Serializer*, const char*) {
     e->getItem("peer", &peer);
     e->getItem("fingerprint", &fingerprint);
     e->getItem("type", &type);

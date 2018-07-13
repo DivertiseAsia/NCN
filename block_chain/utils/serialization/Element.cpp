@@ -84,6 +84,8 @@ void ElementObject::getItem(const char* key, ElementArray** value) {
         }
     }
 }
+
+
 void ElementObject::getItem(const char* key, std::string* value) {
     for(std::map<std::string*, Element*>::const_iterator it = values.begin(); it != values.end(); it++)
     {

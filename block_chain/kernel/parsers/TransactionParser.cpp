@@ -13,7 +13,7 @@ void TransactionParser::operator()(Message* m, Node* node) const {
         std::cout << "\033[1;32m[INFO] Transaction parsed by " << node->self._ip << ":" << node->self._port<<"\033[0m\n";
     Cryptography* crypto(Cryptography::generate(node->crypto_id, message->public_key));
     std::string str(message->getCipher());
-    Transaction* deciphered(node->serializer->unserializeTransaction(crypto->decrypt(str, (int)str.size()), node->encoding.c_str()));
+    Transaction* deciphered(node->serializer->unserializeTransaction(crypto->decrypt(str, str.size()), node->encoding.c_str()));
     Transaction* transaction(node->serializer->unserializeTransaction(message->plain_text, node->encoding.c_str()));
     if(*deciphered == transaction){
         if(node->debug)
@@ -35,13 +35,13 @@ void TransactionParser::operator()(Message* m, Node* node) const {
                 std::string serialized_block(node->serializer->serialize(block, node->encoding.c_str()));
                 MerkleTree tree(transactions, node->serializer, node->encoding.c_str());
                 BlockMessage answer(serialized_block, node->crypto->getPublicKey(), &tree);
-                char* m = node->serializer->serialize(&answer, node->encoding.c_str());
+                char* mess = node->serializer->serialize(&answer, node->encoding.c_str());
                 if(node->queue > 0) {
                     for (auto &peer : node->peers)
-                        peer.send(Encoding::toHexa(std::string(m)).c_str());
-                    node->self.send(Encoding::toHexa(std::string(m)).c_str());
+                        peer.send(Encoding::toHexa(std::string(mess)).c_str());
+                    node->self.send(Encoding::toHexa(std::string(mess)).c_str());
                 }
-                free(m);
+                free(mess);
             }
         }
     }

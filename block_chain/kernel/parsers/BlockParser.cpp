@@ -14,7 +14,7 @@ void BlockParser::operator()(Message* m, Node* node) const {
     Block* block(node->serializer->unserializeBlock(message->block, node->encoding.c_str()));
     if(node->debug)
         std::cout << "\033[1;32m[INFO] Block computed by " << node->self._ip << ":" << node->self._port<<"\033[0m\n";
-    if(node->load(block) && block->checkFingerPrint(node->serializer, node->encoding.c_str(), node->crypto_id))
+    if((block->parent_fingerprint == "0" || node->load(block)) && block->checkFingerPrint(node->serializer, node->encoding.c_str(), node->crypto_id))
     {
         if(node->debug)
             std::cout << "\033[1;32m[INFO] Block accepted\033[0m\n";

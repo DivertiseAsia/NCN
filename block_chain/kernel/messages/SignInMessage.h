@@ -27,7 +27,7 @@ public:
      *
      *  @param p The users's peer representation
      */
-    SignInMessage(std::string p);
+    explicit SignInMessage(std::string p);
 };
 
 

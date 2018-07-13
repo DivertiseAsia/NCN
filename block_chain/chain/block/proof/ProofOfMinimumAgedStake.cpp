@@ -4,9 +4,9 @@
 
 #include "ProofOfMinimumAgedStake.h"
 
-void ProofOfMinimumAgedStake::run(Block* block, std::string key)const{
+void ProofOfMinimumAgedStake::run(Block*, std::string)const{
 
 }
-bool ProofOfMinimumAgedStake::accept(Block* block, Message* message)const{
+bool ProofOfMinimumAgedStake::accept(Block*, Message*)const{
     return true;
 }

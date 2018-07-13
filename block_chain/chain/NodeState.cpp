@@ -4,7 +4,7 @@
 
 #include "NodeState.h"
 
-NodeState::NodeState(const Serializer* s, int si, const char* e, const Reward* r): serializer(s), encoding(e), size(si), chain(new Chain(r)) {
+NodeState::NodeState(const Serializer* s, unsigned int si, const char* e, const Reward* r): serializer(s), encoding(e), size(si), chain(new Chain(r)) {
 }
 
 Block* NodeState::create_block() const {
@@ -27,7 +27,7 @@ void NodeState::add(Block* block, std::string creator, int crypto){
     std::string dir(block->parent_fingerprint);
     std::string id(block->fingerprint);
     Chain* c = nullptr;
-    if((c = chain->add(block, creator)) != nullptr)
+    if((c = chain->add(block, std::move(creator))) != nullptr)
         c->update_database(block, serializer, encoding.c_str(), crypto);
     std::string line;
     #if defined _WIN32
@@ -127,7 +127,7 @@ void NodeState::read_blocks(int crypto) {
 }
 
 bool NodeState::check_transaction(Transaction* transaction, std::string k) {
-    return chain->top_fingerprint().second->check_transaction(transaction, k);
+    return chain->top_fingerprint().second->check_transaction(transaction, std::move(k));
 }
 
 void NodeState::show_current_state() {
