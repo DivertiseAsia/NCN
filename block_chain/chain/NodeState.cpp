@@ -112,7 +112,7 @@ void NodeState::read_blocks(int crypto) {
                         block_file.close();
                         Chain* c = nullptr;
                         if((c = chain->add(block, creator)) != nullptr)
-                            c->update_database(block, serializer, encoding.c_str());
+                            c->update_database(block, serializer, encoding.c_str(), crypto);
                     }
                 }
             }
